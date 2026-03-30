@@ -139,11 +139,20 @@ export default function DashboardPage() {
                 <ChevronLeft size={20} color={idx===0?'#1F2937':'#6B7280'}/>
               </button>
               <div style={{ flex:1, display:'flex', justifyContent:'center', gap:5, alignItems:'center' }}>
-                {available.slice(0, 7).map((_, i) => (
-                  <button key={i} onClick={() => setIdx(i)}
-                    style={{ width:i===idx?20:7, height:7, borderRadius:4, border:'none', cursor:'pointer', transition:'all 0.2s', background:i===idx?'#2563EB':'#1F2937' }}/>
-                ))}
-                {available.length > 7 && <span style={{ fontSize:10, color:'#374151' }}>+{available.length-7}</span>}
+                {(() => {
+                  const total = available.length
+                  const maxDots = 7
+                  let start = Math.max(0, idx - Math.floor(maxDots/2))
+                  let end = Math.min(total, start + maxDots)
+                  if (end - start < maxDots) start = Math.max(0, end - maxDots)
+                  return available.slice(start, end).map((_, i) => {
+                    const realI = start + i
+                    return (
+                      <button key={realI} onClick={() => setIdx(realI)}
+                        style={{ width:realI===idx?20:7, height:7, borderRadius:4, border:'none', cursor:'pointer', transition:'all 0.2s', background:realI===idx?'#2563EB':'#1F2937' }}/>
+                    )
+                  })
+                })()}
               </div>
               <button onClick={() => setIdx(i => Math.min(available.length-1, i+1))} disabled={idx === available.length-1}
                 style={{ width:44, height:44, background:'#0C111D', border:'1px solid #1F2937', borderRadius:13, display:'flex', alignItems:'center', justifyContent:'center', cursor:idx===available.length-1?'default':'pointer', flexShrink:0 }}>

@@ -47,7 +47,7 @@ export default function RiepilogoPage() {
       {/* Header */}
       <div style={{ padding:'18px 18px 14px', flexShrink:0 }}>
         <div style={{ fontSize:10, fontWeight:700, color:'#3B82F6', letterSpacing:2, textTransform:'uppercase', marginBottom:4 }}>Patente C · CE</div>
-        <h1 style={{ fontSize:30, fontWeight:900, margin:0, letterSpacing:-1, color:'#F9FAFB' }}>Riepilogo</h1>
+        <h1 style={{ fontSize:30, fontWeight:900, margin:0, letterSpacing:-1, color:'#F9FAFB', textTransform:'uppercase' }}>RIEPILOGO</h1>
       </div>
 
       {/* Stats sommario */}
