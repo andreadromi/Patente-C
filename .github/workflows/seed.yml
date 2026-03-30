@@ -1,0 +1,44 @@
+name: Seed Database
+
+on:
+  workflow_dispatch: # Esecuzione manuale da GitHub
+  push:
+    branches: [main]
+    paths:
+      - 'data/domande_patente_c.json'
+      - 'data/simulations_patente_c.json'
+      - 'prisma/schema.prisma'
+      - '.github/workflows/seed.yml'
+
+jobs:
+  seed:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate Prisma Client
+        run: npx prisma generate
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
+      - name: Push schema to database
+        run: npx prisma db push --accept-data-loss
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
+      - name: Run seed
+        run: npm run db:seed
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
