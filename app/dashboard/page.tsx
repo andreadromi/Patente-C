@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
-interface Simulation { id: string; number: number; _count: { userSimulations: number } }
-interface UserSim { id: string; simulationId: string; status: string; passed: boolean | null; score: number | null; errors: number | null; startedAt: string }
+interface Simulation { id: string; number: number }
+interface UserSim { id: string; simulationId: string; status: string; passed: boolean | null; score: number | null; errors: number | null }
 
 export default function DashboardPage() {
   const router = useRouter()
@@ -23,7 +23,7 @@ export default function DashboardPage() {
       if (!userData.user) { router.push('/login'); return }
       setUser(userData.user)
       setSimulations(simsData.simulations || [])
-      setUserSims(userSimsData || [])
+      setUserSims(Array.isArray(userSimsData) ? userSimsData : [])
       setLoading(false)
     })
   }, [router])
@@ -33,94 +33,137 @@ export default function DashboardPage() {
     router.push('/login')
   }
 
-  const getSimStatus = (simId: string) => {
+  const getLastAttempt = (simId: string) => {
     const attempts = userSims.filter(us => us.simulationId === simId)
-    if (!attempts.length) return null
-    return attempts[attempts.length - 1]
+    return attempts.length ? attempts[0] : null
   }
 
   if (loading) return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-950 text-white">
-      <div className="w-10 h-10 border-4 border-amber-500 border-t-transparent rounded-full animate-spin" />
+    <div style={{ minHeight: '100vh', background: 'var(--bg)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ width: 40, height: 40, border: '3px solid var(--border)', borderTopColor: '#2563EB', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }} />
     </div>
   )
 
   const completed = userSims.filter(us => us.status === 'COMPLETED').length
   const passed = userSims.filter(us => us.passed).length
+  const accuracy = completed > 0
+    ? Math.round((userSims.filter(us => us.passed).length / completed) * 100)
+    : 0
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white">
+    <div style={{ minHeight: '100vh', background: 'var(--bg)', color: 'var(--text)', fontFamily: 'inherit' }}>
+
       {/* Header */}
-      <div className="bg-gray-900 border-b border-gray-800 px-4 py-4">
-        <div className="max-w-2xl mx-auto flex items-center justify-between">
+      <div style={{ background: 'var(--bg-card)', borderBottom: '1px solid var(--border)', padding: '16px' }}>
+        <div style={{ maxWidth: 600, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div>
-            <span className="bg-amber-500 text-black text-xs font-black px-2 py-1 rounded tracking-widest">PATENTE C</span>
-            <h1 className="text-lg font-bold mt-1">Ciao, {user?.username}! 👋</h1>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2 }}>
+              <div style={{ background: 'linear-gradient(135deg, #2563EB, #06B6D4)', borderRadius: 6, padding: '2px 10px', fontSize: 10, fontWeight: 800, letterSpacing: 2, color: '#fff' }}>
+                PATENTE C
+              </div>
+            </div>
+            <p style={{ color: 'var(--text)', fontSize: 16, fontWeight: 700, margin: 0 }}>
+              Ciao, {user?.username}! 👋
+            </p>
           </div>
-          <div className="flex gap-2">
-            <Link href="/weak-points" className="text-xs px-3 py-2 bg-gray-800 text-gray-300 rounded-lg font-medium">
+          <div style={{ display: 'flex', gap: 8 }}>
+            <Link href="/weak-points" style={{
+              fontSize: 12, padding: '8px 14px',
+              background: 'var(--bg)', border: '1px solid var(--border)',
+              borderRadius: 10, color: 'var(--subtext)', textDecoration: 'none', fontWeight: 600
+            }}>
               📚 Punti deboli
             </Link>
-            <button onClick={handleLogout} className="text-xs px-3 py-2 bg-gray-800 text-gray-400 rounded-lg">
-              Esci
-            </button>
+            <button onClick={handleLogout} style={{
+              fontSize: 12, padding: '8px 12px',
+              background: 'transparent', border: '1px solid var(--border)',
+              borderRadius: 10, color: 'var(--muted)', cursor: 'pointer'
+            }}>Esci</button>
           </div>
         </div>
       </div>
 
-      <div className="max-w-2xl mx-auto px-4 py-5">
-        {/* Stats */}
-        <div className="grid grid-cols-3 gap-3 mb-6">
+      <div style={{ maxWidth: 600, margin: '0 auto', padding: '20px 16px' }}>
+
+        {/* Stats bar */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10, marginBottom: 24 }}>
           {[
-            { label: 'Simulate', value: completed, color: 'text-amber-400' },
-            { label: 'Promosse', value: passed, color: 'text-green-400' },
-            { label: 'Disponibili', value: simulations.length, color: 'text-blue-400' },
+            { label: 'Simulate', value: completed, color: '#3B82F6' },
+            { label: 'Promosse', value: passed, color: '#10B981' },
+            { label: 'Precisione', value: `${accuracy}%`, color: '#8B5CF6' },
           ].map(s => (
-            <div key={s.label} className="bg-gray-900 border border-gray-800 rounded-xl p-3 text-center">
-              <div className={`text-2xl font-black ${s.color}`}>{s.value}</div>
-              <div className="text-xs text-gray-500">{s.label}</div>
+            <div key={s.label} style={{
+              background: 'var(--bg-card)', border: '1px solid var(--border)',
+              borderRadius: 16, padding: '16px 12px', textAlign: 'center'
+            }}>
+              <div style={{ fontSize: 24, fontWeight: 900, color: s.color, lineHeight: 1 }}>{s.value}</div>
+              <div style={{ fontSize: 11, color: 'var(--muted)', marginTop: 4 }}>{s.label}</div>
             </div>
           ))}
         </div>
 
-        {/* Lista simulazioni */}
-        <h2 className="text-sm font-bold text-gray-400 tracking-widest uppercase mb-3">
-          Simulazioni · 40 domande · 40 minuti · max 4 errori
-        </h2>
-        <div className="space-y-2">
+        {/* Simulazioni */}
+        <div style={{ marginBottom: 8 }}>
+          <h2 style={{ fontSize: 12, fontWeight: 700, color: 'var(--muted)', letterSpacing: 2, textTransform: 'uppercase', marginBottom: 12 }}>
+            {simulations.length} Simulazioni disponibili
+          </h2>
+        </div>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
           {simulations.map(sim => {
-            const lastAttempt = getSimStatus(sim.id)
-            const isDone = lastAttempt?.status === 'COMPLETED'
+            const last = getLastAttempt(sim.id)
+            const done = last?.status === 'COMPLETED'
+            const inProgress = last?.status === 'IN_PROGRESS'
             return (
-              <div key={sim.id} className="bg-gray-900 border border-gray-800 rounded-xl p-4 flex items-center justify-between">
+              <div key={sim.id} style={{
+                background: 'var(--bg-card)',
+                border: `1px solid ${done && last.passed ? '#10B98133' : done ? '#EF444433' : 'var(--border)'}`,
+                borderRadius: 16,
+                padding: '16px 18px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }}>
                 <div>
-                  <div className="font-bold text-sm">Simulazione #{sim.number}</div>
-                  {isDone && (
-                    <div className="text-xs mt-0.5">
-                      <span className={lastAttempt.passed ? 'text-green-400' : 'text-red-400'}>
-                        {lastAttempt.passed ? '✓ Promosso' : '✗ Non sufficiente'}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
+                    <span style={{ fontWeight: 700, fontSize: 15 }}>Simulazione #{sim.number}</span>
+                    {inProgress && <span style={{ fontSize: 10, background: '#78350F', color: '#FCD34D', padding: '2px 8px', borderRadius: 6, fontWeight: 700 }}>IN CORSO</span>}
+                  </div>
+                  {done ? (
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                      <span style={{ fontSize: 12, color: last.passed ? 'var(--green)' : 'var(--red)', fontWeight: 700 }}>
+                        {last.passed ? '✓ Promosso' : '✗ Non suff.'}
                       </span>
-                      <span className="text-gray-500 ml-2">
-                        {lastAttempt.score}/40 ({lastAttempt.errors} errori)
+                      <span style={{ fontSize: 12, color: 'var(--muted)' }}>
+                        {last.score}/40 · {last.errors} errori
                       </span>
                     </div>
-                  )}
-                  {!isDone && lastAttempt?.status === 'IN_PROGRESS' && (
-                    <div className="text-xs text-amber-400 mt-0.5">⏸ In corso</div>
-                  )}
-                  {!lastAttempt && (
-                    <div className="text-xs text-gray-500 mt-0.5">Non ancora eseguita</div>
-                  )}
+                  ) : !inProgress ? (
+                    <span style={{ fontSize: 12, color: 'var(--muted)' }}>Non ancora eseguita</span>
+                  ) : null}
                 </div>
-                <Link href={`/simulations/${sim.id}`}
-                  className="px-4 py-2 bg-amber-500 text-black font-black text-xs rounded-lg">
-                  {isDone ? 'Riprova' : lastAttempt ? 'Continua' : 'Inizia'}
+                <Link href={`/simulations/${sim.id}`} style={{
+                  padding: '10px 18px',
+                  background: 'linear-gradient(135deg, #2563EB, #1D4ED8)',
+                  color: '#fff',
+                  borderRadius: 10,
+                  fontWeight: 800,
+                  fontSize: 13,
+                  textDecoration: 'none',
+                  boxShadow: '0 2px 10px rgba(37,99,235,0.3)',
+                  whiteSpace: 'nowrap',
+                }}>
+                  {done ? 'Riprova' : inProgress ? 'Continua' : 'Inizia'}
                 </Link>
               </div>
             )
           })}
         </div>
       </div>
+
+      <style>{`
+        @keyframes spin { to { transform: rotate(360deg); } }
+      `}</style>
     </div>
   )
 }
