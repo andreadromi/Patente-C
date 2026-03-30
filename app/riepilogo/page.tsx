@@ -1,5 +1,4 @@
 'use client'
-
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
@@ -19,15 +18,15 @@ export default function RiepilogoPage() {
       fetch('/api/auth/me').then(r => r.json()),
       fetch('/api/simulations').then(r => r.json()),
       fetch('/api/user-simulations').then(r => r.json()).catch(() => []),
-    ]).then(([userData, simsData, userSimsData]) => {
-      if (!userData.user) { router.push('/login'); return }
-      setSimulations(simsData.simulations || [])
-      setUserSims(Array.isArray(userSimsData) ? userSimsData : [])
+    ]).then(([u, s, us]) => {
+      if (!u.user) { router.push('/login'); return }
+      setSimulations(s.simulations || [])
+      setUserSims(Array.isArray(us) ? us : [])
       setLoading(false)
     })
   }, [router])
 
-  const getLast = (simId: string) => userSims.filter(us => us.simulationId === simId)[0] || null
+  const getLast = (id: string) => userSims.filter(u => u.simulationId === id)[0] || null
 
   if (loading) return (
     <div style={{ height:'100dvh', background:'#030712', display:'flex', alignItems:'center', justifyContent:'center' }}>
@@ -36,98 +35,84 @@ export default function RiepilogoPage() {
     </div>
   )
 
-  const completed = userSims.filter(us => us.status === 'COMPLETED').length
-  const passed = userSims.filter(us => us.passed).length
-  const failed = completed - passed
+  const completed = userSims.filter(u => u.status === 'COMPLETED').length
+  const passed = userSims.filter(u => u.passed).length
   const pct = simulations.length > 0 ? Math.round((completed / simulations.length) * 100) : 0
 
   return (
     <div style={{ height:'100dvh', background:'#030712', color:'#F9FAFB', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
 
       {/* Header */}
-      <div style={{ padding:'18px 18px 14px', flexShrink:0 }}>
-        <div style={{ fontSize:10, fontWeight:700, color:'#3B82F6', letterSpacing:2, textTransform:'uppercase', marginBottom:4 }}>Patente C · CE</div>
-        <h1 style={{ fontSize:30, fontWeight:900, margin:0, letterSpacing:-1, color:'#F9FAFB', textTransform:'uppercase' }}>RIEPILOGO</h1>
+      <div style={{ padding:'18px 18px 12px', flexShrink:0 }}>
+        <div style={{ fontSize:10, fontWeight:700, color:'#3B82F6', letterSpacing:2, marginBottom:4 }}>PATENTE C · CE</div>
+        <h1 style={{ fontSize:30, fontWeight:900, margin:0, letterSpacing:-1, textTransform:'uppercase' }}>RIEPILOGO</h1>
       </div>
 
-      {/* Stats sommario */}
-      <div style={{ padding:'0 16px', marginBottom:16, flexShrink:0 }}>
-        <div style={{ background:'#0C111D', border:'1px solid #1F2937', borderRadius:18, padding:'16px', display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', gap:8 }}>
+      {/* Stats + progress */}
+      <div style={{ padding:'0 16px 12px', flexShrink:0 }}>
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:6, marginBottom:12 }}>
           {[
-            { v:simulations.length, label:'Totali', color:'#6B7280' },
-            { v:completed, label:'Fatti', color:'#3B82F6' },
-            { v:passed, label:'Promossi', color:'#4ADE80' },
-            { v:failed, label:'Falliti', color:'#F87171' },
+            { v:simulations.length, label:'TOTALI', color:'#6B7280' },
+            { v:completed, label:'FATTI', color:'#3B82F6' },
+            { v:passed, label:'PASSATI', color:'#4ADE80' },
+            { v:completed-passed, label:'FALLITI', color:'#F87171' },
           ].map((s,i) => (
-            <div key={i} style={{ textAlign:'center' }}>
-              <div style={{ fontSize:20, fontWeight:900, color:s.color, lineHeight:1 }}>{s.v}</div>
-              <div style={{ fontSize:10, color:'#4B5563', marginTop:3, fontWeight:600 }}>{s.label}</div>
+            <div key={i} style={{ background:'#0C111D', border:'1px solid #1F2937', borderRadius:12, padding:'10px 6px', textAlign:'center' }}>
+              <div style={{ fontSize:20, fontWeight:900, color:s.color, letterSpacing:-0.5 }}>{s.v}</div>
+              <div style={{ fontSize:8, fontWeight:700, color:'#374151', marginTop:3, letterSpacing:1 }}>{s.label}</div>
             </div>
           ))}
         </div>
-        {/* Progress bar */}
-        <div style={{ marginTop:10 }}>
-          <div style={{ display:'flex', justifyContent:'space-between', fontSize:11, color:'#4B5563', marginBottom:5 }}>
-            <span>Progresso complessivo</span>
-            <span style={{ color:'#3B82F6', fontWeight:700 }}>{pct}%</span>
-          </div>
-          <div style={{ height:5, background:'#1F2937', borderRadius:3, overflow:'hidden' }}>
+        <div style={{ display:'flex', alignItems:'center', gap:10 }}>
+          <div style={{ flex:1, height:6, background:'#1F2937', borderRadius:3, overflow:'hidden' }}>
             <div style={{ height:'100%', background:'linear-gradient(90deg,#2563EB,#06B6D4)', width:`${pct}%`, borderRadius:3, transition:'width 1s ease' }}/>
           </div>
+          <span style={{ fontSize:12, fontWeight:700, color:'#3B82F6', minWidth:35 }}>{pct}%</span>
         </div>
       </div>
 
-      {/* Griglia quiz — scrollabile */}
-      <div style={{ flex:1, overflowY:'auto', padding:'0 16px 16px' }}>
-        <div style={{ fontSize:10, fontWeight:700, color:'#374151', letterSpacing:2, textTransform:'uppercase', marginBottom:12 }}>
-          Tutti i quiz
-        </div>
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(5,1fr)', gap:8 }}>
+      {/* Griglia — 4 colonne, celle più grandi */}
+      <div style={{ flex:1, overflowY:'auto', padding:'0 16px 12px' }}>
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:7 }}>
           {simulations.map(sim => {
             const last = getLast(sim.id)
             const done = last?.status === 'COMPLETED'
-            const inProgress = last?.status === 'IN_PROGRESS'
-            const isPassed = last?.passed
+            const inProg = last?.status === 'IN_PROGRESS'
+            const ok = last?.passed
 
-            let bg = '#0C111D'
-            let border = '#1F2937'
-            let color = '#374151'
-            let Icon = Lock
+            let bg = '#0C111D', border = '#1F2937', numColor = '#374151'
+            let Icon = Lock, iconColor = '#374151'
 
-            if (done && isPassed) { bg = '#052E16'; border = '#166534'; color = '#4ADE80'; Icon = CheckCircle2 }
-            else if (done && !isPassed) { bg = '#450A0A'; border = '#7F1D1D'; color = '#F87171'; Icon = XCircle }
-            else if (inProgress) { bg = '#1E3A5F'; border = '#1D4ED8'; color = '#93C5FD'; Icon = Clock }
+            if (done && ok)     { bg='#052E16'; border='#166534'; numColor='#4ADE80'; Icon=CheckCircle2; iconColor='#4ADE80' }
+            else if (done && !ok) { bg='#450A0A'; border='#7F1D1D'; numColor='#F87171'; Icon=XCircle; iconColor='#F87171' }
+            else if (inProg)    { bg='#0F2147'; border='#1D4ED8'; numColor='#93C5FD'; Icon=Clock; iconColor='#93C5FD' }
 
             return (
               <Link key={sim.id} href={`/simulations/${sim.id}`} style={{ textDecoration:'none' }}>
-                <div style={{ background:bg, border:`1px solid ${border}`, borderRadius:14, padding:'12px 6px', textAlign:'center', transition:'all 0.15s', display:'flex', flexDirection:'column', alignItems:'center', gap:5 }}>
-                  <Icon size={16} color={color}/>
-                  <div style={{ fontSize:13, fontWeight:800, color, lineHeight:1 }}>{sim.number}</div>
-                  {done && (
-                    <div style={{ fontSize:9, color: isPassed ? '#166534' : '#7F1D1D', fontWeight:700 }}>
-                      {last?.score}/40
-                    </div>
-                  )}
+                <div style={{ background:bg, border:`1px solid ${border}`, borderRadius:14, padding:'12px 8px', textAlign:'center', display:'flex', flexDirection:'column', alignItems:'center', gap:5 }}>
+                  <Icon size={15} color={iconColor}/>
+                  <div style={{ fontSize:16, fontWeight:900, color:numColor, lineHeight:1 }}>{sim.number}</div>
+                  {done && <div style={{ fontSize:9, color:ok?'#166534':'#7F1D1D', fontWeight:700 }}>{last?.score}/40</div>}
                 </div>
               </Link>
             )
           })}
         </div>
+      </div>
 
-        {/* Legenda */}
-        <div style={{ display:'flex', gap:16, marginTop:16, flexWrap:'wrap' }}>
-          {[
-            { Icon: CheckCircle2, color:'#4ADE80', label:'Promosso' },
-            { Icon: XCircle, color:'#F87171', label:'Non suff.' },
-            { Icon: Clock, color:'#93C5FD', label:'In corso' },
-            { Icon: Lock, color:'#374151', label:'Non fatto' },
-          ].map(({ Icon, color, label }) => (
-            <div key={label} style={{ display:'flex', alignItems:'center', gap:5 }}>
-              <Icon size={12} color={color}/>
-              <span style={{ fontSize:11, color:'#4B5563' }}>{label}</span>
-            </div>
-          ))}
-        </div>
+      {/* Legenda */}
+      <div style={{ padding:'8px 16px', borderTop:'1px solid #111827', display:'flex', gap:14, flexShrink:0 }}>
+        {[
+          { Icon:CheckCircle2, color:'#4ADE80', label:'Passato' },
+          { Icon:XCircle, color:'#F87171', label:'Fallito' },
+          { Icon:Clock, color:'#93C5FD', label:'In corso' },
+          { Icon:Lock, color:'#374151', label:'Da fare' },
+        ].map(({ Icon, color, label }) => (
+          <div key={label} style={{ display:'flex', alignItems:'center', gap:4 }}>
+            <Icon size={11} color={color}/>
+            <span style={{ fontSize:10, color:'#4B5563' }}>{label}</span>
+          </div>
+        ))}
       </div>
 
       {/* Bottom nav */}
