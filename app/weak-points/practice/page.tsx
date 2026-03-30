@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
@@ -23,6 +23,7 @@ export default function WPPracticePage() {
   const [correct, setCorrect] = useState(0)
   const [removed, setRemoved] = useState(0)
   const [done, setDone] = useState(false)
+  const autoAdvanceRef = useRef<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
     fetch('/api/weak-points/start', { method: 'POST' })
@@ -33,6 +34,14 @@ export default function WPPracticePage() {
         setLoading(false)
       })
   }, [router])
+
+  const goNext = () => {
+    if (autoAdvanceRef.current) clearTimeout(autoAdvanceRef.current)
+    setAnswered(null)
+    setFeedback(null)
+    if (idx + 1 >= questions.length) setDone(true)
+    else setIdx(i => i + 1)
+  }
 
   const handleAnswer = async (value: boolean) => {
     if (answered !== null) return
@@ -48,13 +57,11 @@ export default function WPPracticePage() {
     setFeedback(data)
     if (data.isCorrect) setCorrect(c => c + 1)
     if (data.removed) setRemoved(r => r + 1)
-  }
 
-  const goNext = () => {
-    setAnswered(null)
-    setFeedback(null)
-    if (idx + 1 >= questions.length) setDone(true)
-    else setIdx(i => i + 1)
+    // Avanza automaticamente dopo 1.2s se risposta corretta
+    if (data.isCorrect) {
+      autoAdvanceRef.current = setTimeout(() => goNext(), 1200)
+    }
   }
 
   if (loading) return (
@@ -116,10 +123,13 @@ export default function WPPracticePage() {
         <div className="bg-gray-900 border border-gray-800 rounded-xl p-5 mb-4">
           <div className="flex items-center justify-between mb-3">
             <span className="text-xs text-amber-500 uppercase tracking-widest font-bold">{q.capitolo}</span>
-            <div className="flex gap-1">
-              {[0, 1, 2].map(i => (
-                <div key={i} className={`w-2 h-2 rounded-full ${i < q.consecutiveCorrect ? 'bg-green-400' : 'bg-gray-700'}`} />
-              ))}
+            <div className="flex items-center gap-2">
+              <span className="text-xs text-gray-500">{q.consecutiveCorrect}/3</span>
+              <div className="flex gap-1">
+                {[0, 1, 2].map(i => (
+                  <div key={i} className={`w-2 h-2 rounded-full transition-all ${i < q.consecutiveCorrect ? 'bg-green-400' : 'bg-gray-700'}`} />
+                ))}
+              </div>
             </div>
           </div>
           <p className="text-base leading-relaxed text-gray-100" style={{ fontFamily: 'Georgia, serif' }}>
@@ -127,7 +137,7 @@ export default function WPPracticePage() {
           </p>
         </div>
 
-        {/* Bottoni */}
+        {/* Bottoni V/F */}
         <div className="grid grid-cols-2 gap-3 mb-4">
           {[
             { value: true, label: 'VERO', color: 'green' },
@@ -158,14 +168,15 @@ export default function WPPracticePage() {
           <div className={`rounded-xl border p-4 mb-4 ${feedback.isCorrect ? 'bg-green-950 border-green-700' : 'bg-red-950 border-red-700'}`}>
             <p className={`font-bold text-sm ${feedback.isCorrect ? 'text-green-400' : 'text-red-400'}`}>
               {feedback.isCorrect
-                ? `✓ Corretto! ${feedback.removed ? '🎉 Punto debole eliminato!' : `(${q.consecutiveCorrect + 1}/3 per eliminarlo)`}`
+                ? `✓ Corretto! ${feedback.removed ? '🎉 Punto debole eliminato!' : `(${q.consecutiveCorrect + 1}/3)`}${feedback.isCorrect ? ' — Prossima...' : ''}`
                 : `✗ Sbagliato — risposta: ${feedback.correctAnswer ? 'VERO' : 'FALSO'} · Contatore azzerato`
               }
             </p>
           </div>
         )}
 
-        {answered !== null && (
+        {/* Bottone avanti solo se sbagliato */}
+        {answered !== null && !feedback?.isCorrect && (
           <button onClick={goNext}
             className="w-full py-3 bg-amber-500 text-black font-black rounded-xl text-sm tracking-wide">
             {idx + 1 >= questions.length ? 'Fine sessione →' : 'Prossima →'}

@@ -11,7 +11,7 @@ interface Question {
 }
 
 const TOTAL = 40
-const TIME_LIMIT = 40 * 60 // 40 minuti
+const TIME_LIMIT = 40 * 60
 
 export default function SimulationPage() {
   const router = useRouter()
@@ -26,7 +26,7 @@ export default function SimulationPage() {
   const [loading, setLoading] = useState(true)
   const [submitting, setSubmitting] = useState(false)
   const [timeLeft, setTimeLeft] = useState(TIME_LIMIT)
-  const [answered, setAnswered] = useState<boolean | null>(null) // risposta appena data
+  const [answered, setAnswered] = useState<boolean | null>(null)
   const timerRef = useRef<NodeJS.Timeout | null>(null)
 
   const startSimulation = useCallback(async () => {
@@ -40,7 +40,6 @@ export default function SimulationPage() {
 
   useEffect(() => { startSimulation() }, [startSimulation])
 
-  // Timer countdown
   useEffect(() => {
     if (loading) return
     timerRef.current = setInterval(() => {
@@ -59,7 +58,6 @@ export default function SimulationPage() {
     if (!userSimId || answered !== null) return
     const q = questions[currentIdx]
     setAnswered(value)
-
     const res = await fetch(`/api/user-simulations/${userSimId}/answer`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -104,6 +102,7 @@ export default function SimulationPage() {
   const errorCount = Object.values(feedback).filter(v => v === false).length
   const currentFeedback = feedback[q?.id]
   const timeWarning = timeLeft < 300
+  const errorWarning = errorCount >= 3 // avvisa a 3 errori
 
   return (
     <div className="min-h-screen bg-gray-950 text-white flex flex-col">
@@ -112,15 +111,24 @@ export default function SimulationPage() {
         <div className="max-w-2xl mx-auto flex items-center justify-between">
           <div>
             <span className="bg-amber-500 text-black text-xs font-black px-2 py-1 rounded tracking-widest">PATENTE C</span>
-            <div className="text-xs text-gray-400 mt-1">Simulazione #{questions.length > 0 ? simulationId.slice(-4) : '...'}</div>
+            <div className="text-xs text-gray-400 mt-1 truncate max-w-[160px]">{q?.capitolo}</div>
           </div>
-          <div className={`font-mono text-xl font-bold px-4 py-2 rounded-lg border ${timeWarning ? 'text-red-400 border-red-800 bg-red-950' : 'text-amber-400 border-gray-700 bg-gray-800'}`}>
+          <div className={`font-mono text-xl font-bold px-4 py-2 rounded-lg border ${timeWarning ? 'text-red-400 border-red-800 bg-red-950 animate-pulse' : 'text-amber-400 border-gray-700 bg-gray-800'}`}>
             {fmtTime(timeLeft)}
           </div>
         </div>
       </div>
 
-      {/* Progress bar */}
+      {/* Avviso errori */}
+      {errorWarning && (
+        <div className={`px-4 py-2 text-center text-xs font-bold ${errorCount >= 4 ? 'bg-red-900 text-red-300' : 'bg-orange-950 text-orange-300'}`}>
+          {errorCount >= 4
+            ? `⚠️ Hai già ${errorCount} errori — al prossimo sei fuori!`
+            : `⚠️ Attenzione: ${errorCount} errori su 4 massimi`}
+        </div>
+      )}
+
+      {/* Progress */}
       <div className="bg-gray-900 px-4 pb-3">
         <div className="max-w-2xl mx-auto">
           <div className="h-1.5 bg-gray-800 rounded-full overflow-hidden mb-2">
@@ -129,8 +137,8 @@ export default function SimulationPage() {
           </div>
           <div className="flex justify-between text-xs text-gray-500">
             <span className="text-green-400">✓ {correctCount}</span>
-            <span className="text-gray-400">{answeredCount}/{TOTAL} risposte</span>
-            <span className="text-red-400">✗ {errorCount}</span>
+            <span className="text-gray-400">{answeredCount}/{TOTAL}</span>
+            <span className={errorCount >= 4 ? 'text-red-400 font-bold' : 'text-red-400'}>✗ {errorCount}</span>
           </div>
         </div>
       </div>
@@ -140,7 +148,7 @@ export default function SimulationPage() {
         <div className="max-w-2xl mx-auto">
           <div className="bg-gray-900 border border-gray-800 rounded-xl p-5 mb-4">
             <div className="text-amber-500 text-xs tracking-widest font-bold mb-3 uppercase">
-              Domanda {currentIdx + 1} · {q?.capitolo}
+              Domanda {currentIdx + 1}
             </div>
             <p className="text-base leading-relaxed text-gray-100" style={{ fontFamily: 'Georgia, serif' }}>
               {q?.text}
@@ -150,14 +158,14 @@ export default function SimulationPage() {
           {/* Bottoni V/F */}
           <div className="grid grid-cols-2 gap-3 mb-4">
             {[
-              { value: true, label: 'VERO', color: 'green' },
-              { value: false, label: 'FALSO', color: 'red' },
-            ].map(({ value, label, color }) => {
+              { value: true, label: 'VERO' },
+              { value: false, label: 'FALSO' },
+            ].map(({ value, label }) => {
               const isSelected = answered === value
-              const isCorrectAnswer = currentFeedback !== undefined && value === questions.find(qq => qq.id === q?.id) // unused
+              const color = value ? 'green' : 'red'
               let cls = `flex-1 py-4 rounded-xl border-2 font-black text-sm tracking-widest transition-all `
               if (answered === null) {
-                cls += color === 'green'
+                cls += value
                   ? 'border-green-600 text-green-400 bg-gray-900 hover:bg-green-950'
                   : 'border-red-600 text-red-400 bg-gray-900 hover:bg-red-950'
               } else if (isSelected) {
@@ -181,9 +189,11 @@ export default function SimulationPage() {
           {/* Feedback */}
           {answered !== null && (
             <div className={`rounded-xl border p-4 mb-4 ${currentFeedback ? 'bg-green-950 border-green-700' : 'bg-red-950 border-red-700'}`}>
-              <p className={`font-bold text-sm ${currentFeedback ? 'text-green-400' : 'text-red-400'}`}>
-                {currentFeedback ? '✓ Risposta corretta!' : `✗ Sbagliato — la risposta è ${answers[q?.id] === true ? 'FALSO' : 'VERO'}`}
-              </p>
+              <div className={`font-bold text-sm ${currentFeedback ? 'text-green-400' : 'text-red-400'}`}>
+                {currentFeedback
+                  ? '✓ Risposta corretta!'
+                  : `✗ Sbagliato — la risposta è ${answers[q?.id] === true ? 'FALSO' : 'VERO'}`}
+              </div>
             </div>
           )}
 
@@ -191,19 +201,19 @@ export default function SimulationPage() {
           <div className="flex gap-3">
             {answered !== null && currentIdx < TOTAL - 1 && (
               <button onClick={goNext}
-                className="flex-1 py-3 bg-amber-500 text-black font-black rounded-xl text-sm tracking-wide">
+                className="flex-1 py-3 bg-amber-500 text-black font-black rounded-xl text-sm">
                 Avanti →
               </button>
             )}
             {(answeredCount === TOTAL || (answered !== null && currentIdx === TOTAL - 1)) && (
               <button onClick={handleComplete} disabled={submitting}
-                className="flex-1 py-3 bg-green-600 text-white font-black rounded-xl text-sm tracking-wide disabled:opacity-50">
-                {submitting ? 'Calcolo...' : '✓ Termina e vedi risultati'}
+                className="flex-1 py-3 bg-green-600 text-white font-black rounded-xl text-sm disabled:opacity-50">
+                {submitting ? 'Calcolo...' : '✓ Termina'}
               </button>
             )}
           </div>
 
-          {/* Navigazione rapida domande */}
+          {/* Griglia domande */}
           <div className="mt-4 flex flex-wrap gap-1.5">
             {questions.map((_, i) => {
               const qId = questions[i]?.id

@@ -1,21 +1,24 @@
 import { redirect } from 'next/navigation'
 import { getCurrentUser } from '@/lib/auth'
 import { prisma } from '@/lib/prisma'
+import Link from 'next/link'
 
 export default async function AdminDashboardPage() {
   const user = await getCurrentUser()
+  if (!user || !user.isAdmin) redirect('/login')
 
-  if (!user || !user.isAdmin) {
-    redirect('/login')
-  }
-
-  // Statistiche globali
-  const [totalUsers, totalQuestions, totalSimulations, totalCompletedSims] =
+  const [totalUsers, totalQuestions, totalSimulations, totalCompleted, recentUsers] =
     await Promise.all([
       prisma.user.count({ where: { isAdmin: false } }),
       prisma.question.count(),
       prisma.simulation.count(),
       prisma.userSimulation.count({ where: { status: 'COMPLETED' } }),
+      prisma.user.findMany({
+        where: { isAdmin: false },
+        orderBy: { createdAt: 'desc' },
+        take: 5,
+        include: { _count: { select: { userSimulations: true } } }
+      })
     ])
 
   async function handleLogout() {
@@ -27,201 +30,73 @@ export default async function AdminDashboardPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-950 text-white">
       {/* Header */}
-      <header className="bg-gray-900 shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <div className="bg-gray-900 border-b border-gray-800 px-4 py-4">
+        <div className="max-w-4xl mx-auto flex items-center justify-between">
           <div>
-            <h1 className="text-2xl font-bold text-white">
-              Area Admin - Simulazioni Esami
-            </h1>
-            <p className="text-sm text-gray-300 mt-1">
-              Amministratore: <span className="font-medium">{user.username}</span>
-            </p>
+            <span className="bg-amber-500 text-black text-xs font-black px-2 py-1 rounded tracking-widest">ADMIN</span>
+            <h1 className="text-lg font-black mt-1">Pannello Amministrazione</h1>
+            <p className="text-xs text-gray-500">{user.username}</p>
           </div>
           <form action={handleLogout}>
-            <button
-              type="submit"
-              className="px-4 py-2 text-sm font-medium text-white hover:text-gray-200 border border-gray-600 rounded-lg hover:bg-gray-800"
-            >
-              Logout
+            <button className="text-xs px-3 py-2 bg-gray-800 text-gray-400 rounded-lg border border-gray-700">
+              Esci
             </button>
           </form>
         </div>
-      </header>
+      </div>
 
-      {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Stats Overview */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          <div className="bg-white rounded-lg shadow p-6">
-            <div className="flex items-center">
-              <div className="flex-shrink-0 bg-blue-100 rounded-md p-3">
-                <svg
-                  className="h-6 w-6 text-blue-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-              </div>
-              <div className="ml-4">
-                <p className="text-sm font-medium text-gray-500">Utenti</p>
-                <p className="text-2xl font-bold text-gray-900">{totalUsers}</p>
-              </div>
+      <div className="max-w-4xl mx-auto px-4 py-6">
+        {/* Stats */}
+        <div className="grid grid-cols-2 gap-3 mb-6">
+          {[
+            { label: 'Utenti', value: totalUsers, icon: '👤', color: 'text-blue-400' },
+            { label: 'Domande', value: totalQuestions.toLocaleString(), icon: '📝', color: 'text-amber-400' },
+            { label: 'Simulazioni', value: totalSimulations, icon: '🎯', color: 'text-purple-400' },
+            { label: 'Completate', value: totalCompleted, icon: '✅', color: 'text-green-400' },
+          ].map(s => (
+            <div key={s.label} className="bg-gray-900 border border-gray-800 rounded-xl p-4">
+              <div className="text-2xl mb-1">{s.icon}</div>
+              <div className={`text-2xl font-black ${s.color}`}>{s.value}</div>
+              <div className="text-xs text-gray-500">{s.label}</div>
             </div>
-          </div>
-
-          <div className="bg-white rounded-lg shadow p-6">
-            <div className="flex items-center">
-              <div className="flex-shrink-0 bg-green-100 rounded-md p-3">
-                <svg
-                  className="h-6 w-6 text-green-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-              <div className="ml-4">
-                <p className="text-sm font-medium text-gray-500">Domande</p>
-                <p className="text-2xl font-bold text-gray-900">
-                  {totalQuestions}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg shadow p-6">
-            <div className="flex items-center">
-              <div className="flex-shrink-0 bg-purple-100 rounded-md p-3">
-                <svg
-                  className="h-6 w-6 text-purple-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                  />
-                </svg>
-              </div>
-              <div className="ml-4">
-                <p className="text-sm font-medium text-gray-500">Simulazioni</p>
-                <p className="text-2xl font-bold text-gray-900">
-                  {totalSimulations}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-lg shadow p-6">
-            <div className="flex items-center">
-              <div className="flex-shrink-0 bg-yellow-100 rounded-md p-3">
-                <svg
-                  className="h-6 w-6 text-yellow-600"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-              </div>
-              <div className="ml-4">
-                <p className="text-sm font-medium text-gray-500">
-                  Sim. Completate
-                </p>
-                <p className="text-2xl font-bold text-gray-900">
-                  {totalCompletedSims}
-                </p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
 
-        {/* Management Sections */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Gestione Utenti */}
-          <div className="bg-white rounded-lg shadow overflow-hidden">
-            <div className="px-6 py-4 bg-blue-600">
-              <h3 className="text-lg font-semibold text-white">
-                Gestione Utenti
-              </h3>
-            </div>
-            <div className="p-6">
-              <p className="text-sm text-gray-600 mb-4">
-                Visualizza, crea, modifica ed elimina utenti del sistema.
-              </p>
-              <a
-                href="/admin/users"
-                className="block w-full px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors text-center"
-              >
-                Gestisci Utenti
-              </a>
-            </div>
-          </div>
-
-          {/* Gestione Domande */}
-          <div className="bg-white rounded-lg shadow overflow-hidden">
-            <div className="px-6 py-4 bg-green-600">
-              <h3 className="text-lg font-semibold text-white">
-                Gestione Domande
-              </h3>
-            </div>
-            <div className="p-6">
-              <p className="text-sm text-gray-600 mb-4">
-                CRUD completo delle 872 domande con filtri e ricerca.
-              </p>
-              <a
-                href="/admin/questions"
-                className="block w-full px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-medium rounded-lg transition-colors text-center"
-              >
-                Gestisci Domande
-              </a>
-            </div>
-          </div>
-
-          {/* Gestione Simulazioni */}
-          <div className="bg-white rounded-lg shadow overflow-hidden">
-            <div className="px-6 py-4 bg-purple-600">
-              <h3 className="text-lg font-semibold text-white">
-                Gestione Simulazioni
-              </h3>
-            </div>
-            <div className="p-6">
-              <p className="text-sm text-gray-600 mb-4">
-                Visualizza, crea e modifica le 19 simulazioni pre-generate.
-              </p>
-              <a
-                href="/admin/simulations"
-                className="block w-full px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium rounded-lg transition-colors text-center"
-              >
-                Gestisci Simulazioni
-              </a>
-            </div>
-          </div>
+        {/* Nav */}
+        <div className="grid grid-cols-1 gap-3 mb-6">
+          {[
+            { href: '/admin/questions', label: '📝 Gestione Domande', desc: `${totalQuestions.toLocaleString()} domande nel database` },
+            { href: '/admin/simulations', label: '🎯 Gestione Simulazioni', desc: `${totalSimulations} simulazioni disponibili` },
+            { href: '/admin/users', label: '👤 Gestione Utenti', desc: `${totalUsers} utenti registrati` },
+          ].map(item => (
+            <Link key={item.href} href={item.href}
+              className="bg-gray-900 border border-gray-800 hover:border-amber-500 rounded-xl p-4 flex items-center justify-between transition-colors">
+              <div>
+                <div className="font-bold text-sm">{item.label}</div>
+                <div className="text-xs text-gray-500 mt-0.5">{item.desc}</div>
+              </div>
+              <span className="text-gray-600 text-lg">→</span>
+            </Link>
+          ))}
         </div>
-      </main>
+
+        {/* Ultimi utenti */}
+        {recentUsers.length > 0 && (
+          <div className="bg-gray-900 border border-gray-800 rounded-xl p-4">
+            <h3 className="text-xs text-amber-400 tracking-widest uppercase font-bold mb-3">Ultimi utenti registrati</h3>
+            <div className="space-y-2">
+              {recentUsers.map(u => (
+                <div key={u.id} className="flex justify-between items-center text-sm">
+                  <span className="text-gray-300">{u.username}</span>
+                  <span className="text-gray-600 text-xs">{u._count.userSimulations} simulazioni</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   )
 }
