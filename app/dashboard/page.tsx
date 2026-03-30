@@ -13,6 +13,7 @@ export default function DashboardPage() {
   const [simulations, setSimulations] = useState<Simulation[]>([])
   const [userSims, setUserSims] = useState<UserSim[]>([])
   const [loading, setLoading] = useState(true)
+  const [showAll, setShowAll] = useState(false)
 
   useEffect(() => {
     Promise.all([
@@ -33,137 +34,190 @@ export default function DashboardPage() {
     router.push('/login')
   }
 
-  const getLastAttempt = (simId: string) => {
-    const attempts = userSims.filter(us => us.simulationId === simId)
-    return attempts.length ? attempts[0] : null
-  }
+  const getLastAttempt = (simId: string) =>
+    userSims.filter(us => us.simulationId === simId)[0] || null
 
   if (loading) return (
     <div style={{ minHeight: '100vh', background: 'var(--bg)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <div style={{ width: 40, height: 40, border: '3px solid var(--border)', borderTopColor: '#2563EB', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }} />
+      <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
     </div>
   )
 
   const completed = userSims.filter(us => us.status === 'COMPLETED').length
   const passed = userSims.filter(us => us.passed).length
-  const accuracy = completed > 0
-    ? Math.round((userSims.filter(us => us.passed).length / completed) * 100)
-    : 0
+  const accuracy = completed > 0 ? Math.round((passed / completed) * 100) : 0
+
+  // Trova prossima simulazione non ancora completata
+  const nextSim = simulations.find(sim => {
+    const last = getLastAttempt(sim.id)
+    return !last || last.status !== 'COMPLETED'
+  })
+  const inProgressSim = simulations.find(sim => getLastAttempt(sim.id)?.status === 'IN_PROGRESS')
+  const activeSim = inProgressSim || nextSim
+
+  const completedSims = simulations.filter(sim => getLastAttempt(sim.id)?.status === 'COMPLETED')
+  const recentCompleted = completedSims.slice(0, showAll ? completedSims.length : 3)
 
   return (
-    <div style={{ minHeight: '100vh', background: 'var(--bg)', color: 'var(--text)', fontFamily: 'inherit' }}>
+    <div style={{ minHeight: '100vh', background: 'var(--bg)', color: 'var(--text)' }}>
 
       {/* Header */}
-      <div style={{ background: 'var(--bg-card)', borderBottom: '1px solid var(--border)', padding: '16px' }}>
+      <div style={{ background: 'var(--bg-card)', borderBottom: '1px solid var(--border)', padding: '14px 16px' }}>
         <div style={{ maxWidth: 600, margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 2 }}>
-              <div style={{ background: 'linear-gradient(135deg, #2563EB, #06B6D4)', borderRadius: 6, padding: '2px 10px', fontSize: 10, fontWeight: 800, letterSpacing: 2, color: '#fff' }}>
-                PATENTE C
-              </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <span style={{ fontSize: 28 }}>🚛</span>
+            <div>
+              <div style={{ fontSize: 10, fontWeight: 800, letterSpacing: 2, color: '#3B82F6' }}>PATENTE C · CE</div>
+              <div style={{ fontSize: 15, fontWeight: 700 }}>Ciao, {user?.username}!</div>
             </div>
-            <p style={{ color: 'var(--text)', fontSize: 16, fontWeight: 700, margin: 0 }}>
-              Ciao, {user?.username}! 👋
-            </p>
           </div>
           <div style={{ display: 'flex', gap: 8 }}>
-            <Link href="/weak-points" style={{
-              fontSize: 12, padding: '8px 14px',
-              background: 'var(--bg)', border: '1px solid var(--border)',
-              borderRadius: 10, color: 'var(--subtext)', textDecoration: 'none', fontWeight: 600
-            }}>
-              📚 Punti deboli
+            <Link href="/weak-points" style={{ fontSize: 12, padding: '8px 12px', background: 'var(--bg)', border: '1px solid var(--border)', borderRadius: 10, color: 'var(--subtext)', textDecoration: 'none', fontWeight: 600 }}>
+              📚
             </Link>
-            <button onClick={handleLogout} style={{
-              fontSize: 12, padding: '8px 12px',
-              background: 'transparent', border: '1px solid var(--border)',
-              borderRadius: 10, color: 'var(--muted)', cursor: 'pointer'
-            }}>Esci</button>
+            <button onClick={handleLogout} style={{ fontSize: 12, padding: '8px 12px', background: 'transparent', border: '1px solid var(--border)', borderRadius: 10, color: 'var(--muted)', cursor: 'pointer', fontFamily: 'inherit' }}>
+              Esci
+            </button>
           </div>
         </div>
       </div>
 
       <div style={{ maxWidth: 600, margin: '0 auto', padding: '20px 16px' }}>
 
-        {/* Stats bar */}
+        {/* Stats */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 10, marginBottom: 24 }}>
           {[
-            { label: 'Simulate', value: completed, color: '#3B82F6' },
+            { label: 'Simulate', value: completed, color: '#3B82F6', total: simulations.length },
             { label: 'Promosse', value: passed, color: '#10B981' },
             { label: 'Precisione', value: `${accuracy}%`, color: '#8B5CF6' },
           ].map(s => (
-            <div key={s.label} style={{
-              background: 'var(--bg-card)', border: '1px solid var(--border)',
-              borderRadius: 16, padding: '16px 12px', textAlign: 'center'
-            }}>
-              <div style={{ fontSize: 24, fontWeight: 900, color: s.color, lineHeight: 1 }}>{s.value}</div>
-              <div style={{ fontSize: 11, color: 'var(--muted)', marginTop: 4 }}>{s.label}</div>
+            <div key={s.label} style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 16, padding: '14px 10px', textAlign: 'center' }}>
+              <div style={{ fontSize: 22, fontWeight: 900, color: s.color }}>
+                {s.value}{s.total ? <span style={{ fontSize: 12, color: 'var(--muted)', fontWeight: 400 }}>/{s.total}</span> : ''}
+              </div>
+              <div style={{ fontSize: 11, color: 'var(--muted)', marginTop: 3 }}>{s.label}</div>
             </div>
           ))}
         </div>
 
-        {/* Simulazioni */}
-        <div style={{ marginBottom: 8 }}>
-          <h2 style={{ fontSize: 12, fontWeight: 700, color: 'var(--muted)', letterSpacing: 2, textTransform: 'uppercase', marginBottom: 12 }}>
-            {simulations.length} Simulazioni disponibili
-          </h2>
-        </div>
+        {/* Card prossima simulazione */}
+        {activeSim && (
+          <div style={{
+            background: 'linear-gradient(135deg, #1E3A5F, #1E2D4A)',
+            border: '1px solid #2563EB44',
+            borderRadius: 20, padding: '24px 20px', marginBottom: 20,
+          }}>
+            <div style={{ fontSize: 11, fontWeight: 800, letterSpacing: 2, color: '#60A5FA', marginBottom: 6 }}>
+              {inProgressSim ? '⏸ IN CORSO' : '▶ PROSSIMA'}
+            </div>
+            <h2 style={{ fontSize: 22, fontWeight: 900, margin: '0 0 4px 0' }}>
+              Simulazione #{activeSim.number}
+            </h2>
+            <p style={{ color: 'var(--muted)', fontSize: 13, margin: '0 0 20px 0' }}>
+              40 domande · 40 minuti · max 4 errori
+            </p>
+            <Link href={`/simulations/${activeSim.id}`} style={{
+              display: 'block', textAlign: 'center', padding: '14px 0',
+              background: 'linear-gradient(135deg, #2563EB, #1D4ED8)',
+              color: '#fff', borderRadius: 12, fontWeight: 800, fontSize: 16,
+              textDecoration: 'none', boxShadow: '0 4px 20px rgba(37,99,235,0.5)',
+            }}>
+              {inProgressSim ? 'Continua simulazione →' : 'Inizia simulazione →'}
+            </Link>
+          </div>
+        )}
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-          {simulations.map(sim => {
-            const last = getLastAttempt(sim.id)
-            const done = last?.status === 'COMPLETED'
-            const inProgress = last?.status === 'IN_PROGRESS'
-            return (
-              <div key={sim.id} style={{
-                background: 'var(--bg-card)',
-                border: `1px solid ${done && last.passed ? '#10B98133' : done ? '#EF444433' : 'var(--border)'}`,
-                borderRadius: 16,
-                padding: '16px 18px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-              }}>
-                <div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-                    <span style={{ fontWeight: 700, fontSize: 15 }}>Simulazione #{sim.number}</span>
-                    {inProgress && <span style={{ fontSize: 10, background: '#78350F', color: '#FCD34D', padding: '2px 8px', borderRadius: 6, fontWeight: 700 }}>IN CORSO</span>}
-                  </div>
-                  {done ? (
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                      <span style={{ fontSize: 12, color: last.passed ? 'var(--green)' : 'var(--red)', fontWeight: 700 }}>
-                        {last.passed ? '✓ Promosso' : '✗ Non suff.'}
-                      </span>
-                      <span style={{ fontSize: 12, color: 'var(--muted)' }}>
-                        {last.score}/40 · {last.errors} errori
-                      </span>
+        {/* Progress bar simulazioni */}
+        {simulations.length > 0 && (
+          <div style={{ background: 'var(--bg-card)', border: '1px solid var(--border)', borderRadius: 16, padding: '16px', marginBottom: 20 }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 10 }}>
+              <span style={{ fontSize: 13, fontWeight: 700 }}>Progresso</span>
+              <span style={{ fontSize: 13, color: 'var(--muted)' }}>{completed}/{simulations.length}</span>
+            </div>
+            <div style={{ height: 8, background: 'var(--bg)', borderRadius: 4, overflow: 'hidden', marginBottom: 10 }}>
+              <div style={{
+                height: '100%', borderRadius: 4,
+                background: 'linear-gradient(90deg, #2563EB, #06B6D4)',
+                width: `${(completed / simulations.length) * 100}%`,
+                transition: 'width 1s ease'
+              }} />
+            </div>
+            <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
+              {simulations.map(sim => {
+                const last = getLastAttempt(sim.id)
+                const done = last?.status === 'COMPLETED'
+                const active = last?.status === 'IN_PROGRESS'
+                return (
+                  <Link key={sim.id} href={`/simulations/${sim.id}`} style={{
+                    width: 28, height: 28, borderRadius: 6, display: 'flex',
+                    alignItems: 'center', justifyContent: 'center',
+                    fontSize: 10, fontWeight: 800, textDecoration: 'none',
+                    background: done ? (last.passed ? '#022C22' : '#2D0A0A') : active ? '#1E3A5F' : 'var(--bg)',
+                    color: done ? (last.passed ? '#10B981' : '#EF4444') : active ? '#60A5FA' : 'var(--muted)',
+                    border: `1px solid ${done ? (last.passed ? '#10B98144' : '#EF444444') : active ? '#2563EB' : 'var(--border)'}`,
+                  }}>
+                    {sim.number}
+                  </Link>
+                )
+              })}
+            </div>
+          </div>
+        )}
+
+        {/* Ultime completate */}
+        {completedSims.length > 0 && (
+          <div>
+            <h3 style={{ fontSize: 12, fontWeight: 700, color: 'var(--muted)', letterSpacing: 2, textTransform: 'uppercase', marginBottom: 12 }}>
+              Completate
+            </h3>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+              {recentCompleted.map(sim => {
+                const last = getLastAttempt(sim.id)!
+                return (
+                  <div key={sim.id} style={{
+                    background: 'var(--bg-card)', border: `1px solid ${last.passed ? '#10B98122' : '#EF444422'}`,
+                    borderRadius: 14, padding: '14px 16px',
+                    display: 'flex', alignItems: 'center', justifyContent: 'space-between'
+                  }}>
+                    <div>
+                      <div style={{ fontWeight: 700, fontSize: 14 }}>Simulazione #{sim.number}</div>
+                      <div style={{ display: 'flex', gap: 10, marginTop: 3 }}>
+                        <span style={{ fontSize: 12, color: last.passed ? '#10B981' : '#EF4444', fontWeight: 700 }}>
+                          {last.passed ? '✓ Promosso' : '✗ Non suff.'}
+                        </span>
+                        <span style={{ fontSize: 12, color: 'var(--muted)' }}>{last.score}/40 · {last.errors} errori</span>
+                      </div>
                     </div>
-                  ) : !inProgress ? (
-                    <span style={{ fontSize: 12, color: 'var(--muted)' }}>Non ancora eseguita</span>
-                  ) : null}
-                </div>
-                <Link href={`/simulations/${sim.id}`} style={{
-                  padding: '10px 18px',
-                  background: 'linear-gradient(135deg, #2563EB, #1D4ED8)',
-                  color: '#fff',
-                  borderRadius: 10,
-                  fontWeight: 800,
-                  fontSize: 13,
-                  textDecoration: 'none',
-                  boxShadow: '0 2px 10px rgba(37,99,235,0.3)',
-                  whiteSpace: 'nowrap',
+                    <Link href={`/simulations/${sim.id}`} style={{
+                      fontSize: 12, padding: '8px 14px',
+                      background: 'var(--bg)', border: '1px solid var(--border)',
+                      borderRadius: 8, color: 'var(--subtext)', textDecoration: 'none', fontWeight: 600
+                    }}>Riprova</Link>
+                  </div>
+                )
+              })}
+              {completedSims.length > 3 && (
+                <button onClick={() => setShowAll(v => !v)} style={{
+                  background: 'none', border: 'none', color: '#3B82F6', fontSize: 13,
+                  fontWeight: 600, cursor: 'pointer', textAlign: 'center', padding: '8px',
+                  fontFamily: 'inherit'
                 }}>
-                  {done ? 'Riprova' : inProgress ? 'Continua' : 'Inizia'}
-                </Link>
-              </div>
-            )
-          })}
-        </div>
-      </div>
+                  {showAll ? 'Mostra meno ↑' : `Mostra tutte (${completedSims.length}) ↓`}
+                </button>
+              )}
+            </div>
+          </div>
+        )}
 
-      <style>{`
-        @keyframes spin { to { transform: rotate(360deg); } }
-      `}</style>
+        {/* Nessuna simulazione completata */}
+        {completed === 0 && !activeSim && (
+          <div style={{ textAlign: 'center', padding: '40px 20px', color: 'var(--muted)' }}>
+            <div style={{ fontSize: 40, marginBottom: 12 }}>🎯</div>
+            <p>Nessuna simulazione ancora!</p>
+          </div>
+        )}
+      </div>
     </div>
   )
 }

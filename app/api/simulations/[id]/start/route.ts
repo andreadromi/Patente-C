@@ -15,37 +15,57 @@ export async function POST(
 
   const questionIds: string[] = JSON.parse(simulation.questions)
 
-  // Crea UserSimulation
-  const userSim = await prisma.userSimulation.create({
-    data: {
-      userId: user.id,
-      simulationId: id,
-      status: 'IN_PROGRESS',
-      questionOrder: JSON.stringify(questionIds),
-    }
+  // Controlla se esiste già una simulazione in corso per questo utente
+  let userSim = await prisma.userSimulation.findFirst({
+    where: { userId: user.id, simulationId: id, status: 'IN_PROGRESS' },
+    orderBy: { startedAt: 'desc' }
   })
 
-  // Carica domande nell'ordine fisso
-  const questionMap = new Map<string, any>()
+  // Se non esiste, creane una nuova
+  if (!userSim) {
+    userSim = await prisma.userSimulation.create({
+      data: {
+        userId: user.id,
+        simulationId: id,
+        status: 'IN_PROGRESS',
+        questionOrder: JSON.stringify(questionIds),
+      }
+    })
+  }
+
+  const savedOrder: string[] = userSim.questionOrder
+    ? JSON.parse(userSim.questionOrder)
+    : questionIds
+
+  // Carica domande
   const questions = await prisma.question.findMany({
-    where: { id: { in: questionIds } },
+    where: { id: { in: savedOrder } },
     include: { capitolo: true }
   })
-  questions.forEach(q => questionMap.set(q.id, q))
+  const questionMap = new Map(questions.map(q => [q.id, q]))
 
-  const orderedQuestions = questionIds
+  const orderedQuestions = savedOrder
     .map(qid => questionMap.get(qid))
     .filter(Boolean)
-    .map(q => ({
+    .map((q: any) => ({
       id: q.id,
       text: q.text,
       capitolo: q.capitolo.name,
       capitoloCode: q.capitolo.code,
     }))
 
+  // Carica risposte già date
+  const existingAnswers = await prisma.answer.findMany({
+    where: { userSimulationId: userSim.id }
+  })
+  const answersMap = Object.fromEntries(
+    existingAnswers.map(a => [a.questionId, { userAnswer: a.userAnswer, isCorrect: a.isCorrect }])
+  )
+
   return NextResponse.json({
     userSimulationId: userSim.id,
     questions: orderedQuestions,
     totalQuestions: 40,
+    existingAnswers: answersMap,
   })
 }
