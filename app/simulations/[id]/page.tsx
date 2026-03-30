@@ -185,7 +185,7 @@ export default function SimulationPage() {
               const cur = i === idx
               return (
                 <button key={i} onClick={() => goTo(i)} style={{
-                  minWidth:32, height:32, borderRadius:8, border:'none', fontSize:11, fontWeight:800,
+                  minWidth:36, height:36, borderRadius:9, border:'none', fontSize:12, fontWeight:800,
                   cursor:'pointer', flexShrink:0, fontFamily:'inherit', transition:'all 0.15s',
                   background: cur ? '#2563EB' : done ? (ok ? '#14532D' : '#450A0A') : '#111827',
                   color: cur ? '#fff' : done ? (ok ? '#4ADE80' : '#F87171') : '#374151',
@@ -202,7 +202,7 @@ export default function SimulationPage() {
 
       {/* Domanda — scrollabile */}
       <div style={{ flex:1, padding:'18px 18px 0', overflowY:'auto' }}>
-        <p style={{ fontSize:17, lineHeight:1.75, color:'#F9FAFB', margin:0, fontWeight:500 }}>{q.text}</p>
+        <p style={{ fontSize:19, lineHeight:1.8, color:'#F9FAFB', margin:0, fontWeight:500 }}>{q.text}</p>
       </div>
 
       {/* Zona fissa bottoni — sempre nella stessa posizione */}
@@ -247,16 +247,11 @@ export default function SimulationPage() {
           })}
         </div>
 
-        {/* Prossima — solo se sbagliato */}
-        {isAnswered && lastResult === false && idx < TOTAL - 1 && (
-          <button onClick={goNext} style={{ width:'100%', marginTop:10, padding:'13px 0', background:'#1F2937', color:'#9CA3AF', border:'none', borderRadius:14, fontSize:14, fontWeight:700, cursor:'pointer', fontFamily:'inherit' }}>
-            Avanti →
-          </button>
-        )}
+
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', flexShrink:0 }}>
+      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', flexShrink:0, paddingBottom:'env(safe-area-inset-bottom,0px)' }}>
         {[
           { href:'/dashboard', Icon:Home, label:'Home' },
           { href:'/riepilogo', Icon:BarChart3, label:'Riepilogo' },

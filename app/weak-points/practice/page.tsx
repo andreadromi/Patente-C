@@ -120,7 +120,7 @@ export default function WPPracticePage() {
       {/* Contenuto */}
       <div style={{ flex:1, padding:'20px 18px', overflowY:'auto', display:'flex', flexDirection:'column', gap:14 }}>
         <div style={{ background:'#0C111D', border:'1px solid #1F2937', borderRadius:20, padding:'20px 18px' }}>
-          <p style={{ fontSize:17, lineHeight:1.75, color:'#F9FAFB', margin:0, fontWeight:500 }}>{q.text}</p>
+          <p style={{ fontSize:19, lineHeight:1.8, color:'#F9FAFB', margin:0, fontWeight:500 }}>{q.text}</p>
         </div>
 
         {feedback && (
