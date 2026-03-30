@@ -25,7 +25,7 @@ export default function SimulationPage() {
   const [error, setError] = useState<string | null>(null)
   const [submitting, setSubmitting] = useState(false)
   const [timeLeft, setTimeLeft] = useState(TIME_LIMIT)
-  const [lastFeedback, setLastFeedback] = useState<{correct: boolean, show: boolean} | null>(null)
+  const [lastResult, setLastResult] = useState<boolean | null>(null)
   const timerRef = useRef<NodeJS.Timeout | null>(null)
 
   const handleComplete = useCallback(async () => {
@@ -71,7 +71,6 @@ export default function SimulationPage() {
     return () => clearInterval(timerRef.current!)
   }, [loading, error, handleComplete])
 
-  // Auto-complete quando tutte risposte date
   useEffect(() => {
     if (!loading && Object.keys(answers).length === TOTAL && questions.length === TOTAL) {
       setTimeout(() => handleComplete(), 800)
@@ -88,37 +87,35 @@ export default function SimulationPage() {
   const fmtTime = (s: number) => `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`
 
   const goNext = useCallback(() => {
-    setLastFeedback(null)
+    setLastResult(null)
     if (idx < TOTAL - 1) setIdx(i => i + 1)
   }, [idx])
 
   const handleAnswer = async (value: boolean) => {
     if (!userSimId || q.id in answers) return
-    const q2 = questions[idx]
     const res = await fetch(`/api/user-simulations/${userSimId}/answer`, {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ questionId: q2.id, userAnswer: value })
+      body: JSON.stringify({ questionId: q.id, userAnswer: value })
     })
     const data = await res.json()
-    setAnswers(p => ({ ...p, [q2.id]: value }))
-    setFeedback(p => ({ ...p, [q2.id]: data.isCorrect }))
-    setLastFeedback({ correct: data.isCorrect, show: true })
-
-    if (idx < TOTAL - 1) {
-      autoRef.current = setTimeout(() => goNext(), data.isCorrect ? 900 : 1400)
+    setAnswers(p => ({ ...p, [q.id]: value }))
+    setFeedback(p => ({ ...p, [q.id]: data.isCorrect }))
+    setLastResult(data.isCorrect)
+    if (data.isCorrect && idx < TOTAL - 1) {
+      autoRef.current = setTimeout(() => goNext(), 900)
     }
   }
 
   const goTo = (i: number) => {
     clearTimeout(autoRef.current!)
-    setLastFeedback(null)
+    setLastResult(null)
     setIdx(i)
   }
 
   if (loading) return (
     <div style={{ minHeight:'100vh', background:'#030712', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:14, fontFamily:'system-ui' }}>
-      <div style={{ width:40, height:40, border:'3px solid #1E2D4A', borderTopColor:'#2563EB', borderRadius:'50%', animation:'spin 0.7s linear infinite' }}/>
-      <p style={{ color:'#4B5563', fontSize:13 }}>Preparazione quiz...</p>
+      <div style={{ width:40, height:40, border:'3px solid #1F2937', borderTopColor:'#2563EB', borderRadius:'50%', animation:'spin 0.7s linear infinite' }}/>
+      <p style={{ color:'#4B5563', fontSize:13 }}>Caricamento...</p>
       <style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style>
     </div>
   )
@@ -129,7 +126,7 @@ export default function SimulationPage() {
       <p style={{ color:'#F1F5F9', fontWeight:800, margin:0, fontSize:20 }}>Errore</p>
       <p style={{ color:'#6B7280', fontSize:14, textAlign:'center', maxWidth:280 }}>{error}</p>
       <button onClick={() => { setError(null); setLoading(true); startSimulation() }}
-        style={{ padding:'12px 28px', background:'#2563EB', color:'#fff', border:'none', borderRadius:12, fontWeight:700, cursor:'pointer', fontFamily:'inherit', fontSize:14 }}>Riprova</button>
+        style={{ padding:'12px 28px', background:'#2563EB', color:'#fff', border:'none', borderRadius:12, fontWeight:700, cursor:'pointer', fontFamily:'inherit' }}>Riprova</button>
       <Link href="/dashboard" style={{ color:'#4B5563', fontSize:13 }}>← Home</Link>
     </div>
   )
@@ -140,8 +137,9 @@ export default function SimulationPage() {
   const answeredCount = Object.keys(answers).length
   const errorCount = Object.values(feedback).filter(v => !v).length
   const correctCount = Object.values(feedback).filter(v => v).length
-  const timeWarn = timeLeft < 300
   const isAnswered = q.id in answers
+  const isCorrect = feedback[q.id]
+  const timeWarn = timeLeft < 300
 
   return (
     <div style={{ height:'100dvh', background:'#030712', color:'#F9FAFB', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
@@ -154,8 +152,8 @@ export default function SimulationPage() {
         </div>
         <div style={{ display:'flex', alignItems:'center', gap:8 }}>
           {errorCount >= 3 && (
-            <div style={{ background: errorCount >= 4 ? '#450A0A' : '#431407', borderRadius:8, padding:'4px 10px', fontSize:11, fontWeight:700, color: errorCount >= 4 ? '#FCA5A5' : '#FED7AA', display:'flex', alignItems:'center', gap:4 }}>
-              <XCircle size={11} color={errorCount >= 4 ? '#FCA5A5' : '#FED7AA'}/>
+            <div style={{ background:'#450A0A', borderRadius:8, padding:'4px 10px', fontSize:11, fontWeight:700, color:'#F87171', display:'flex', alignItems:'center', gap:4 }}>
+              <XCircle size={11} color="#F87171"/>
               {errorCount}/4
             </div>
           )}
@@ -168,12 +166,12 @@ export default function SimulationPage() {
         </div>
       </div>
 
-      {/* Progress bar sottile */}
+      {/* Progress bar */}
       <div style={{ height:3, background:'#111827', flexShrink:0 }}>
         <div style={{ height:'100%', background:'linear-gradient(90deg,#2563EB,#06B6D4)', width:`${(answeredCount/TOTAL)*100}%`, transition:'width 0.4s' }}/>
       </div>
 
-      {/* Numeri domande scrollabili */}
+      {/* Numeri domande */}
       <div style={{ background:'#0C111D', padding:'8px 0', flexShrink:0, borderBottom:'1px solid #111827' }}>
         <div style={{ display:'flex', alignItems:'center' }}>
           <button onClick={() => goTo(Math.max(0,idx-1))} style={{ padding:'0 10px', background:'none', border:'none', cursor:'pointer' }}>
@@ -187,7 +185,8 @@ export default function SimulationPage() {
               const cur = i === idx
               return (
                 <button key={i} onClick={() => goTo(i)} style={{
-                  minWidth:32, height:32, borderRadius:8, border:'none', fontSize:11, fontWeight:800, cursor:'pointer', flexShrink:0, fontFamily:'inherit', transition:'all 0.15s',
+                  minWidth:32, height:32, borderRadius:8, border:'none', fontSize:11, fontWeight:800,
+                  cursor:'pointer', flexShrink:0, fontFamily:'inherit', transition:'all 0.15s',
                   background: cur ? '#2563EB' : done ? (ok ? '#14532D' : '#450A0A') : '#111827',
                   color: cur ? '#fff' : done ? (ok ? '#4ADE80' : '#F87171') : '#374151',
                   boxShadow: cur ? '0 0 10px rgba(37,99,235,0.5)' : 'none',
@@ -199,75 +198,79 @@ export default function SimulationPage() {
             <ChevronRight size={16} color={idx < TOTAL-1 ? '#4B5563' : '#1F2937'}/>
           </button>
         </div>
-
-
       </div>
 
-      {/* Domanda */}
-      <div style={{ flex:1, padding:'20px 18px', overflowY:'auto', display:'flex', flexDirection:'column', gap:14 }}>
+      {/* Domanda — scrollabile */}
+      <div style={{ flex:1, padding:'18px 18px 0', overflowY:'auto' }}>
+        <p style={{ fontSize:17, lineHeight:1.75, color:'#F9FAFB', margin:0, fontWeight:500 }}>{q.text}</p>
+      </div>
 
-        {/* Testo domanda */}
-        <div style={{ background:'#0C111D', border:'1px solid #1F2937', borderRadius:20, padding:'20px 18px' }}>
-          <p style={{ fontSize:17, lineHeight:1.75, color:'#F9FAFB', margin:0, fontWeight:500 }}>{q.text}</p>
+      {/* Zona fissa bottoni — sempre nella stessa posizione */}
+      <div style={{ padding:'14px 18px', flexShrink:0 }}>
+
+        {/* Feedback testo — senza riquadro, solo testo colorato */}
+        <div style={{ height:24, display:'flex', alignItems:'center', marginBottom:10 }}>
+          {isAnswered && lastResult !== null && (
+            <div style={{ display:'flex', alignItems:'center', gap:6 }}>
+              {lastResult
+                ? <CheckCircle2 size={15} color="#4ADE80"/>
+                : <XCircle size={15} color="#F87171"/>}
+              <span style={{ fontSize:13, fontWeight:700, color: lastResult ? '#4ADE80' : '#F87171' }}>
+                {lastResult ? 'Corretto!' : `Sbagliato — risposta: ${answers[q.id] ? 'FALSO' : 'VERO'}`}
+              </span>
+            </div>
+          )}
         </div>
 
-        {/* Feedback mini sotto domanda — solo quando risposta data */}
-        {isAnswered && lastFeedback?.show && (
-          <div style={{ display:'flex', alignItems:'center', gap:10, padding:'12px 16px', background: feedback[q.id] ? '#14532D' : '#450A0A', borderRadius:14, border:`1px solid ${feedback[q.id]?'#166534':'#7F1D1D'}` }}>
-            {feedback[q.id]
-              ? <CheckCircle2 size={18} color="#4ADE80"/>
-              : <XCircle size={18} color="#F87171"/>}
-            <span style={{ fontSize:14, fontWeight:700, color: feedback[q.id] ? '#4ADE80' : '#F87171' }}>
-              {feedback[q.id] ? 'Corretto!' : `Sbagliato — risposta: ${answers[q.id] ? 'FALSO' : 'VERO'}`}
-            </span>
-          </div>
-        )}
+        {/* Bottoni VERO / FALSO */}
+        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10 }}>
+          {[
+            { val:true, label:'VERO', activeColor:'#4ADE80', activeBg:'#052E16', activeBorder:'#166534' },
+            { val:false, label:'FALSO', activeColor:'#F87171', activeBg:'#450A0A', activeBorder:'#7F1D1D' },
+          ].map(({ val, label, activeColor, activeBg, activeBorder }) => {
+            const isSelected = isAnswered && answers[q.id] === val
+            const isRight = isAnswered && isCorrect === (val === answers[q.id] ? isCorrect : !isCorrect)
 
-        {/* Bottoni */}
-        {!isAnswered ? (
-          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10 }}>
-            {[
-              { val:true, label:'VERO', c:'#4ADE80', border:'#14532D', hover:'#052E16' },
-              { val:false, label:'FALSO', c:'#F87171', border:'#7F1D1D', hover:'#450A0A' },
-            ].map(({ val, label, c, border, hover }) => (
-              <button key={label} onClick={() => handleAnswer(val)}
-                style={{ padding:'18px 0', borderRadius:16, border:`1.5px solid ${border}`, background:'#0C111D', color:c, fontSize:16, fontWeight:900, letterSpacing:2, cursor:'pointer', fontFamily:'inherit' }}
-                onMouseEnter={e => (e.currentTarget.style.background = hover)}
-                onMouseLeave={e => (e.currentTarget.style.background = '#0C111D')}>
+            return (
+              <button key={label} onClick={() => !isAnswered && handleAnswer(val)}
+                style={{
+                  padding:'17px 0', borderRadius:16, fontSize:16, fontWeight:900, letterSpacing:2,
+                  cursor: isAnswered ? 'default' : 'pointer', fontFamily:'inherit', transition:'all 0.2s',
+                  background: isAnswered ? (isSelected ? activeBg : '#0C111D') : '#0C111D',
+                  border: `1.5px solid ${isAnswered ? (isSelected ? activeBorder : '#1F2937') : '#1F2937'}`,
+                  color: isAnswered ? (isSelected ? activeColor : '#374151') : (label === 'VERO' ? '#4ADE80' : '#F87171'),
+                  opacity: isAnswered && !isSelected ? 0.4 : 1,
+                }}>
                 {label}
               </button>
-            ))}
-          </div>
-        ) : (
-          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10 }}>
-            <div style={{ padding:'18px 0', borderRadius:16, border:`1.5px solid ${feedback[q.id]?'#14532D':'#1F2937'}`, background: feedback[q.id] ? '#052E16' : '#0C111D', color:'#4ADE80', fontSize:16, fontWeight:900, letterSpacing:2, textAlign:'center', opacity: answers[q.id] === true ? 1 : 0.3 }}>
-              VERO
-            </div>
-            <div style={{ padding:'18px 0', borderRadius:16, border:`1.5px solid ${!feedback[q.id]?'#7F1D1D':'#1F2937'}`, background: !feedback[q.id] ? '#450A0A' : '#0C111D', color:'#F87171', fontSize:16, fontWeight:900, letterSpacing:2, textAlign:'center', opacity: answers[q.id] === false ? 1 : 0.3 }}>
-              FALSO
-            </div>
-          </div>
+            )
+          })}
+        </div>
+
+        {/* Prossima — solo se sbagliato */}
+        {isAnswered && lastResult === false && idx < TOTAL - 1 && (
+          <button onClick={goNext} style={{ width:'100%', marginTop:10, padding:'13px 0', background:'#1F2937', color:'#9CA3AF', border:'none', borderRadius:14, fontSize:14, fontWeight:700, cursor:'pointer', fontFamily:'inherit' }}>
+            Avanti →
+          </button>
         )}
       </div>
 
       {/* Bottom nav */}
       <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', flexShrink:0 }}>
-        <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
-          <Home size={20} color="#4B5563"/>
-          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Home</span>
-        </Link>
-        <Link href="/riepilogo" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <BarChart3 size={19} color="#4B5563"/>
-          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Riepilogo</span>
-        </Link>
-        <Link href="/weak-points" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <BookOpen size={19} color="#4B5563"/>
-          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Deboli</span>
-        </Link>
+        {[
+          { href:'/dashboard', Icon:Home, label:'Home' },
+          { href:'/riepilogo', Icon:BarChart3, label:'Riepilogo' },
+          { href:'/weak-points', Icon:BookOpen, label:'Deboli' },
+        ].map(({ href, Icon, label }) => (
+          <Link key={href} href={href} style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
+            <Icon size={19} color="#4B5563"/>
+            <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>{label}</span>
+          </Link>
+        ))}
         <button onClick={handleComplete} disabled={submitting}
-          style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:4, padding:'10px 0', background:'none', border:'none', cursor:'pointer', fontFamily:'inherit' }}>
-          <Flag size={20} color={submitting ? '#4B5563' : '#6B7280'}/>
-          <span style={{ fontSize:10, color: submitting ? '#4B5563' : '#6B7280', fontWeight:600 }}>
+          style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', background:'none', border:'none', cursor:'pointer', fontFamily:'inherit' }}>
+          <Flag size={19} color={submitting ? '#374151' : '#6B7280'}/>
+          <span style={{ fontSize:9, color: submitting ? '#374151' : '#6B7280', fontWeight:600 }}>
             {submitting ? '...' : 'Termina'}
           </span>
         </button>
