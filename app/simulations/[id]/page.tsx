@@ -101,8 +101,8 @@ export default function SimulationPage() {
     setAnswers(p => ({ ...p, [q.id]: value }))
     setFeedback(p => ({ ...p, [q.id]: data.isCorrect }))
     setLastResult(data.isCorrect)
-    if (data.isCorrect && idx < TOTAL - 1) {
-      autoRef.current = setTimeout(() => goNext(), 900)
+    if (idx < TOTAL - 1) {
+      autoRef.current = setTimeout(() => goNext(), data.isCorrect ? 900 : 1800)
     }
   }
 
