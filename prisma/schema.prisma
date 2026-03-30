@@ -40,6 +40,7 @@ model Question {
   capitoloId Int
   text       String
   risposta   Boolean // true = VERO, false = FALSO
+  immagine   String?  // path immagine opzionale (es. /segnali/abc.png)
 
   capitolo   Capitolo    @relation(fields: [capitoloId], references: [id])
   answers    Answer[]
