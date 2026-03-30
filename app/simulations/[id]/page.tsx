@@ -199,7 +199,7 @@ export default function SimulationPage() {
             <ChevronRight size={16} color={idx < TOTAL-1 ? '#4B5563' : '#1F2937'}/>
           </button>
         </div>
-        <div style={{ display:'flex', justifyContent:'center', gap:14, fontSize:11, marginTop:4, color:'#374151' }}>
+
           <span style={{ color:'#4ADE80', fontWeight:700 }}>✓ {correctCount}</span>
           <span>{answeredCount}/{TOTAL}</span>
           <span style={{ color: errorCount >= 3 ? '#F87171' : '#374151', fontWeight: errorCount >= 3 ? 700 : 400 }}>✗ {errorCount}</span>
