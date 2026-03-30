@@ -3,7 +3,7 @@ import { prisma } from '@/lib/prisma'
 import { requireAuth } from '@/lib/auth'
 
 export async function GET(request: NextRequest) {
-  const user = await requireAuth(request)
+  const user = await requireAuth()
   if (!user) return NextResponse.json([], { status: 200 })
 
   const userSims = await prisma.userSimulation.findMany({

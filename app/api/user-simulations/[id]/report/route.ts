@@ -7,7 +7,7 @@ export async function GET(
   { params }: { params: Promise<{ id: string }> }
 ) {
   const { id } = await params
-  const user = await requireAuth(request)
+  const user = await requireAuth()
   if (!user) return NextResponse.json({ error: 'Non autorizzato' }, { status: 401 })
 
   const userSim = await prisma.userSimulation.findUnique({

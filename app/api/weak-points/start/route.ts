@@ -3,7 +3,7 @@ import { prisma } from '@/lib/prisma'
 import { requireAuth } from '@/lib/auth'
 
 export async function POST(request: NextRequest) {
-  const user = await requireAuth(request)
+  const user = await requireAuth()
   if (!user) return NextResponse.json({ error: 'Non autorizzato' }, { status: 401 })
 
   const weakPoints = await prisma.weakPoint.findMany({

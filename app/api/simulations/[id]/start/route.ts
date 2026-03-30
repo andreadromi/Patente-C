@@ -8,7 +8,7 @@ export async function POST(
 ) {
   try {
     const { id } = await params
-    const user = await requireAuth(request)
+    const user = await requireAuth()
     if (!user) return NextResponse.json({ error: 'Non autorizzato' }, { status: 401 })
 
     const simulation = await prisma.simulation.findUnique({ where: { id } })
