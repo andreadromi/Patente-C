@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { useRouter, useParams } from 'next/navigation'
 import Link from 'next/link'
-import { Home, BookOpen, Flag, ChevronLeft, ChevronRight, CheckCircle2, XCircle } from 'lucide-react'
+import { Home, BookOpen, Flag, BarChart3, ChevronLeft, ChevronRight, CheckCircle2, XCircle } from 'lucide-react'
 
 interface Question { id: string; text: string; capitolo: string }
 const TOTAL = 40
@@ -251,14 +251,18 @@ export default function SimulationPage() {
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0 }}>
+      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', flexShrink:0 }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
           <Home size={20} color="#4B5563"/>
           <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Home</span>
         </Link>
-        <Link href="/weak-points" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
-          <BookOpen size={20} color="#4B5563"/>
-          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Deboli</span>
+        <Link href="/riepilogo" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
+          <BarChart3 size={19} color="#4B5563"/>
+          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Riepilogo</span>
+        </Link>
+        <Link href="/weak-points" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
+          <BookOpen size={19} color="#4B5563"/>
+          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Deboli</span>
         </Link>
         <button onClick={handleComplete} disabled={submitting}
           style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:4, padding:'10px 0', background:'none', border:'none', cursor:'pointer', fontFamily:'inherit' }}>

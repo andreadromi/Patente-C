@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { Truck, BookOpen, LogOut, ChevronLeft, ChevronRight, CheckCircle2, XCircle, Play, Clock, Home } from 'lucide-react'
+import { Truck, BookOpen, LogOut, ChevronLeft, ChevronRight, CheckCircle2, XCircle, Play, Clock, Home , BarChart3 } from 'lucide-react'
 
 interface Simulation { id: string; number: number }
 interface UserSim { id: string; simulationId: string; status: string; passed: boolean | null; score: number | null; errors: number | null }
@@ -141,7 +141,7 @@ export default function DashboardPage() {
               <div style={{ flex:1, display:'flex', justifyContent:'center', gap:5, alignItems:'center' }}>
                 {available.slice(0, 7).map((_, i) => (
                   <button key={i} onClick={() => setIdx(i)}
-                    style={{ width:i===safeIdx?20:7, height:7, borderRadius:4, border:'none', cursor:'pointer', transition:'all 0.2s', background:i===safeIdx?'#2563EB':'#1F2937' }}/>
+                    style={{ width:i===idx?20:7, height:7, borderRadius:4, border:'none', cursor:'pointer', transition:'all 0.2s', background:i===idx?'#2563EB':'#1F2937' }}/>
                 ))}
                 {available.length > 7 && <span style={{ fontSize:10, color:'#374151' }}>+{available.length-7}</span>}
               </div>
@@ -192,14 +192,18 @@ export default function DashboardPage() {
       )}
 
       {/* Bottom nav */}
-      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr', flexShrink:0 }}>
+      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0 }}>
         <div style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0' }}>
           <Home size={20} color="#2563EB"/>
           <span style={{ fontSize:10, color:'#2563EB', fontWeight:700 }}>Home</span>
         </div>
+        <Link href="/riepilogo" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
+          <BarChart3 size={20} color="#4B5563"/>
+          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Riepilogo</span>
+        </Link>
         <Link href="/weak-points" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
           <BookOpen size={20} color="#4B5563"/>
-          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Punti deboli</span>
+          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Deboli</span>
         </Link>
       </div>
     </div>

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { BookOpen, Home, Target, ChevronRight } from 'lucide-react'
+import { BookOpen, Home, BarChart3, Target, ChevronRight } from 'lucide-react'
 
 export default function WeakPointsPage() {
   const [data, setData] = useState<any>(null)
@@ -77,7 +77,7 @@ export default function WeakPointsPage() {
       </div>
 
       {/* Bottom nav */}
-      <div style={{ position:'fixed', bottom:0, left:0, right:0, background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr' }}>
+      <div style={{ position:'fixed', bottom:0, left:0, right:0, background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr' }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
           <Home size={20} color="#4B5563"/>
           <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Home</span>
