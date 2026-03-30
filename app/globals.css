@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --accent: #2563EB;
@@ -30,7 +32,6 @@ body {
   from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes shake {
   0%, 100% { transform: translateX(0); }
   20% { transform: translateX(-6px); }
@@ -38,24 +39,16 @@ body {
   60% { transform: translateX(-4px); }
   80% { transform: translateX(4px); }
 }
-
 @keyframes pop {
   0% { transform: scale(1); }
   50% { transform: scale(1.06); }
   100% { transform: scale(1); }
 }
 
-@keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 0 0 var(--accent-glow); }
-  50% { box-shadow: 0 0 20px 4px var(--accent-glow); }
-}
-
 .animate-slide-up { animation: slideUp 0.3s ease forwards; }
 .animate-shake { animation: shake 0.4s ease; }
 .animate-pop { animation: pop 0.25s ease; }
-.animate-glow { animation: pulse-glow 2s infinite; }
 
-/* Scrollbar */
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
