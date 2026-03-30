@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { Home, BookOpen, BarChart3, CheckCircle2, XCircle, Clock, Lock } from 'lucide-react'
+import { Home, BookOpen, BarChart3 } from 'lucide-react'
 
 interface Simulation { id: string; number: number }
 interface UserSim { id: string; simulationId: string; status: string; passed: boolean | null; score: number | null; errors: number | null }
@@ -37,62 +37,85 @@ export default function RiepilogoPage() {
 
   const completed = userSims.filter(u => u.status === 'COMPLETED').length
   const passed = userSims.filter(u => u.passed).length
+  const failed = completed - passed
   const pct = simulations.length > 0 ? Math.round((completed / simulations.length) * 100) : 0
 
   return (
     <div style={{ height:'100dvh', background:'#030712', color:'#F9FAFB', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
 
-      {/* Header */}
-      <div style={{ padding:'18px 18px 12px', flexShrink:0 }}>
-        <div style={{ fontSize:10, fontWeight:700, color:'#3B82F6', letterSpacing:2, marginBottom:4 }}>PATENTE C · CE</div>
-        <h1 style={{ fontSize:30, fontWeight:900, margin:0, letterSpacing:-1, textTransform:'uppercase' }}>RIEPILOGO</h1>
+      {/* Header compatto */}
+      <div style={{ padding:'16px 18px 10px', flexShrink:0 }}>
+        <div style={{ fontSize:10, fontWeight:700, color:'#3B82F6', letterSpacing:2, marginBottom:3 }}>PATENTE C · CE</div>
+        <h1 style={{ fontSize:28, fontWeight:900, margin:0, letterSpacing:-1, textTransform:'uppercase' }}>RIEPILOGO</h1>
       </div>
 
-      {/* Stats + progress */}
-      <div style={{ padding:'0 16px 12px', flexShrink:0 }}>
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:6, marginBottom:12 }}>
+      {/* Stats in una riga + progress */}
+      <div style={{ padding:'0 16px 10px', flexShrink:0 }}>
+        <div style={{ display:'flex', gap:6, marginBottom:10 }}>
           {[
-            { v:simulations.length, label:'TOTALI', color:'#6B7280' },
-            { v:completed, label:'FATTI', color:'#3B82F6' },
-            { v:passed, label:'PASSATI', color:'#4ADE80' },
-            { v:completed-passed, label:'FALLITI', color:'#F87171' },
+            { v:simulations.length, label:'Tot.', color:'#6B7280' },
+            { v:completed, label:'Fatti', color:'#3B82F6' },
+            { v:passed, label:'Pass.', color:'#4ADE80' },
+            { v:failed, label:'Fall.', color:'#F87171' },
           ].map((s,i) => (
-            <div key={i} style={{ background:'#0C111D', border:'1px solid #1F2937', borderRadius:12, padding:'10px 6px', textAlign:'center' }}>
-              <div style={{ fontSize:20, fontWeight:900, color:s.color, letterSpacing:-0.5 }}>{s.v}</div>
-              <div style={{ fontSize:8, fontWeight:700, color:'#374151', marginTop:3, letterSpacing:1 }}>{s.label}</div>
+            <div key={i} style={{ flex:1, background:'#0C111D', border:'1px solid #1F2937', borderRadius:12, padding:'9px 6px', textAlign:'center' }}>
+              <div style={{ fontSize:20, fontWeight:900, color:s.color, lineHeight:1 }}>{s.v}</div>
+              <div style={{ fontSize:9, color:'#374151', marginTop:3, fontWeight:600, letterSpacing:0.5 }}>{s.label}</div>
             </div>
           ))}
         </div>
+
+        {/* Progress bar spessa */}
         <div style={{ display:'flex', alignItems:'center', gap:10 }}>
-          <div style={{ flex:1, height:6, background:'#1F2937', borderRadius:3, overflow:'hidden' }}>
-            <div style={{ height:'100%', background:'linear-gradient(90deg,#2563EB,#06B6D4)', width:`${pct}%`, borderRadius:3, transition:'width 1s ease' }}/>
+          <div style={{ flex:1, height:8, background:'#1F2937', borderRadius:4, overflow:'hidden' }}>
+            <div style={{ height:'100%', background:'linear-gradient(90deg,#2563EB,#06B6D4)', width:`${pct}%`, borderRadius:4, transition:'width 1s ease' }}/>
           </div>
-          <span style={{ fontSize:12, fontWeight:700, color:'#3B82F6', minWidth:35 }}>{pct}%</span>
+          <span style={{ fontSize:13, fontWeight:800, color:'#3B82F6', minWidth:38, textAlign:'right' }}>{pct}%</span>
         </div>
       </div>
 
-      {/* Griglia — 4 colonne, celle più grandi */}
-      <div style={{ flex:1, overflowY:'auto', padding:'0 16px 12px' }}>
-        <div style={{ display:'grid', gridTemplateColumns:'repeat(4,1fr)', gap:7 }}>
+      {/* Griglia 5 colonne */}
+      <div style={{ flex:1, overflowY:'auto', padding:'4px 16px 8px' }}>
+        <style>{`
+          .grid-cell { transition: transform 0.1s; }
+          .grid-cell:active { transform: scale(0.94); }
+        `}</style>
+        <div style={{ display:'grid', gridTemplateColumns:'repeat(5,1fr)', gap:6 }}>
           {simulations.map(sim => {
             const last = getLast(sim.id)
             const done = last?.status === 'COMPLETED'
             const inProg = last?.status === 'IN_PROGRESS'
             const ok = last?.passed
 
-            let bg = '#0C111D', border = '#1F2937', numColor = '#374151'
-            let Icon = Lock, iconColor = '#374151'
+            // Stili per stato
+            let bg = '#0C111D'
+            let borderColor = '#1F2937'
+            let numColor = '#374151'
+            let scoreColor = 'transparent'
+            let dotColor = 'transparent'
 
-            if (done && ok)     { bg='#052E16'; border='#166534'; numColor='#4ADE80'; Icon=CheckCircle2; iconColor='#4ADE80' }
-            else if (done && !ok) { bg='#450A0A'; border='#7F1D1D'; numColor='#F87171'; Icon=XCircle; iconColor='#F87171' }
-            else if (inProg)    { bg='#0F2147'; border='#1D4ED8'; numColor='#93C5FD'; Icon=Clock; iconColor='#93C5FD' }
+            if (done && ok)      { bg='#052E16'; borderColor='#166534'; numColor='#4ADE80'; scoreColor='#166534' }
+            else if (done && !ok){ bg='#2D0A0A'; borderColor='#7F1D1D'; numColor='#F87171'; scoreColor='#7F1D1D' }
+            else if (inProg)     { bg='#0F1E3D'; borderColor='#2563EB'; numColor='#93C5FD'; dotColor='#2563EB' }
 
             return (
-              <Link key={sim.id} href={`/simulations/${sim.id}`} style={{ textDecoration:'none' }}>
-                <div style={{ background:bg, border:`1px solid ${border}`, borderRadius:14, padding:'12px 8px', textAlign:'center', display:'flex', flexDirection:'column', alignItems:'center', gap:5 }}>
-                  <Icon size={15} color={iconColor}/>
-                  <div style={{ fontSize:16, fontWeight:900, color:numColor, lineHeight:1 }}>{sim.number}</div>
-                  {done && <div style={{ fontSize:9, color:ok?'#166534':'#7F1D1D', fontWeight:700 }}>{last?.score}/40</div>}
+              <Link key={sim.id} href={`/simulations/${sim.id}`} style={{ textDecoration:'none' }} className="grid-cell">
+                <div style={{ background:bg, border:`1.5px solid ${borderColor}`, borderRadius:12, padding:'10px 4px 8px', textAlign:'center', display:'flex', flexDirection:'column', alignItems:'center', gap:4, position:'relative' }}>
+
+                  {/* Dot pulsante per "in corso" */}
+                  {inProg && (
+                    <div style={{ position:'absolute', top:6, right:6, width:6, height:6, borderRadius:'50%', background:'#2563EB', boxShadow:'0 0 6px #2563EB' }}/>
+                  )}
+
+                  {/* Numero */}
+                  <div style={{ fontSize:17, fontWeight:900, color:numColor, lineHeight:1 }}>{sim.number}</div>
+
+                  {/* Score se completato */}
+                  {done && (
+                    <div style={{ fontSize:9, fontWeight:700, color: ok ? '#4ADE80' : '#F87171', lineHeight:1 }}>
+                      {last?.score}/40
+                    </div>
+                  )}
                 </div>
               </Link>
             )
@@ -100,16 +123,16 @@ export default function RiepilogoPage() {
         </div>
       </div>
 
-      {/* Legenda */}
-      <div style={{ padding:'8px 16px', borderTop:'1px solid #111827', display:'flex', gap:14, flexShrink:0 }}>
+      {/* Legenda compatta */}
+      <div style={{ padding:'6px 16px 8px', borderTop:'1px solid #111827', display:'flex', gap:16, flexShrink:0 }}>
         {[
-          { Icon:CheckCircle2, color:'#4ADE80', label:'Passato' },
-          { Icon:XCircle, color:'#F87171', label:'Fallito' },
-          { Icon:Clock, color:'#93C5FD', label:'In corso' },
-          { Icon:Lock, color:'#374151', label:'Da fare' },
-        ].map(({ Icon, color, label }) => (
-          <div key={label} style={{ display:'flex', alignItems:'center', gap:4 }}>
-            <Icon size={11} color={color}/>
+          { color:'#4ADE80', label:'Passato' },
+          { color:'#F87171', label:'Fallito' },
+          { color:'#2563EB', label:'In corso' },
+          { color:'#374151', label:'Da fare' },
+        ].map(({ color, label }) => (
+          <div key={label} style={{ display:'flex', alignItems:'center', gap:5 }}>
+            <div style={{ width:8, height:8, borderRadius:2, background:color }}/>
             <span style={{ fontSize:10, color:'#4B5563' }}>{label}</span>
           </div>
         ))}
