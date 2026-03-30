@@ -8,10 +8,12 @@ const prisma = new PrismaClient()
 async function main() {
   console.log('🌱 Seeding database patente C...')
 
-  // Carica dati
   const dataPath = path.join(process.cwd(), 'data', 'domande_patente_c.json')
   const raw = JSON.parse(fs.readFileSync(dataPath, 'utf-8'))
   const { capitoli, domande } = raw
+
+  const simsPath = path.join(process.cwd(), 'data', 'simulations_patente_c.json')
+  const simData = JSON.parse(fs.readFileSync(simsPath, 'utf-8'))
 
   // 1. Admin
   const adminHash = await bcrypt.hash('Admin2025', 10)
@@ -22,8 +24,17 @@ async function main() {
   })
   console.log('✅ Admin creato')
 
-  // 2. Capitoli
+  // 2. Cancella nell'ordine corretto (rispettando FK)
+  await prisma.answer.deleteMany()
+  await prisma.capitoloResult.deleteMany()
+  await prisma.weakPoint.deleteMany()
+  await prisma.userSimulation.deleteMany()
+  await prisma.simulation.deleteMany()
+  await prisma.question.deleteMany()
   await prisma.capitolo.deleteMany()
+  console.log('✅ Dati vecchi rimossi')
+
+  // 3. Capitoli
   for (let i = 0; i < capitoli.length; i++) {
     const cap = capitoli[i]
     await prisma.capitolo.create({
@@ -32,8 +43,7 @@ async function main() {
   }
   console.log(`✅ ${capitoli.length} capitoli creati`)
 
-  // 3. Domande
-  await prisma.question.deleteMany()
+  // 4. Domande in batch
   const capMap: Record<string, number> = {}
   capitoli.forEach((c: any, i: number) => { capMap[c.code] = i + 1 })
 
@@ -53,16 +63,11 @@ async function main() {
   }
   console.log(`\n✅ ${domande.length} domande create`)
 
-  // 4. Simulazioni
-  const simsPath = path.join(process.cwd(), 'data', 'simulations_patente_c.json')
-  const simData = JSON.parse(fs.readFileSync(simsPath, 'utf-8'))
-
-  // Mappa testo -> id domanda
+  // 5. Simulazioni
   const allQuestions = await prisma.question.findMany({ select: { id: true, text: true } })
   const textToId: Record<string, string> = {}
   allQuestions.forEach(q => { textToId[q.text] = q.id })
 
-  await prisma.simulation.deleteMany()
   let simCreated = 0
   for (const sim of simData) {
     const ids = sim.questionTexts
