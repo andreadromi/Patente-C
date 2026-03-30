@@ -19,14 +19,14 @@ export async function POST(
 
     // Cerca simulazione in corso
     let userSim = await prisma.userSimulation.findFirst({
-      where: { userId: user.id, simulationId: id, status: 'IN_PROGRESS' },
+      where: { userId: user.userId, simulationId: id, status: 'IN_PROGRESS' },
       orderBy: { startedAt: 'desc' }
     })
 
     if (!userSim) {
       userSim = await prisma.userSimulation.create({
         data: {
-          userId: user.id,
+          userId: user.userId,
           simulationId: id,
           status: 'IN_PROGRESS',
           questionOrder: JSON.stringify(questionIds),

@@ -7,7 +7,7 @@ export async function POST(request: NextRequest) {
   if (!user) return NextResponse.json({ error: 'Non autorizzato' }, { status: 401 })
 
   const weakPoints = await prisma.weakPoint.findMany({
-    where: { userId: user.id },
+    where: { userId: user.userId },
     include: { question: { include: { capitolo: true } } },
     orderBy: { consecutiveCorrect: 'asc' }
   })

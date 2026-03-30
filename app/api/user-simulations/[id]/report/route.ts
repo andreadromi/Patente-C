@@ -19,7 +19,7 @@ export async function GET(
     }
   })
 
-  if (!userSim || userSim.userId !== user.id) {
+  if (!userSim || userSim.userId !== user.userId) {
     return NextResponse.json({ error: 'Non trovata' }, { status: 404 })
   }
 

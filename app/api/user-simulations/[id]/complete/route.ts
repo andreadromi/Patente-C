@@ -18,7 +18,7 @@ export async function POST(
     }
   })
 
-  if (!userSim || userSim.userId !== user.id) {
+  if (!userSim || userSim.userId !== user.userId) {
     return NextResponse.json({ error: 'Simulazione non trovata' }, { status: 404 })
   }
   if (userSim.status === 'COMPLETED') {
@@ -87,9 +87,9 @@ export async function POST(
   for (const answer of userSim.answers) {
     if (!answer.isCorrect) {
       await prisma.weakPoint.upsert({
-        where: { userId_questionId: { userId: user.id, questionId: answer.questionId } },
+        where: { userId_questionId: { userId: user.userId, questionId: answer.questionId } },
         update: { consecutiveCorrect: 0, totalAttempts: { increment: 1 } },
-        create: { userId: user.id, questionId: answer.questionId, totalAttempts: 1 }
+        create: { userId: user.userId, questionId: answer.questionId, totalAttempts: 1 }
       })
     }
   }

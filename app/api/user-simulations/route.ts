@@ -7,7 +7,7 @@ export async function GET(request: NextRequest) {
   if (!user) return NextResponse.json([], { status: 200 })
 
   const userSims = await prisma.userSimulation.findMany({
-    where: { userId: user.id },
+    where: { userId: user.userId },
     orderBy: { startedAt: 'desc' },
     select: {
       id: true, simulationId: true, status: true,

@@ -14,7 +14,7 @@ export async function POST(
   const { questionId, userAnswer } = body // userAnswer: true | false | null
 
   const userSim = await prisma.userSimulation.findUnique({ where: { id } })
-  if (!userSim || userSim.userId !== user.id || userSim.status === 'COMPLETED') {
+  if (!userSim || userSim.userId !== user.userId || userSim.status === 'COMPLETED') {
     return NextResponse.json({ error: 'Simulazione non valida' }, { status: 400 })
   }
 

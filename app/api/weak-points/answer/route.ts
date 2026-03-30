@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
   const isCorrect = userAnswer === question.risposta
 
   const weakPoint = await prisma.weakPoint.findUnique({
-    where: { userId_questionId: { userId: user.id, questionId } }
+    where: { userId_questionId: { userId: user.userId, questionId } }
   })
   if (!weakPoint) return NextResponse.json({ error: 'Punto debole non trovato' }, { status: 404 })
 
