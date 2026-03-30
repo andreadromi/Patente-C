@@ -462,12 +462,6 @@
     {
       "capitolo_id": "guida_riposo",
       "capitolo": "Periodi di guida e riposo",
-      "domanda": "Il regolamento 561/2006/CE si applica al trasporto su strada di passeggeri effettuato con taxi o autobus",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "guida_riposo",
-      "capitolo": "Periodi di guida e riposo",
       "domanda": "Il regolamento 561/2006/CE si applica anche al trasporto su ferrovia",
       "risposta": false
     },
@@ -1626,37 +1620,7 @@
     {
       "capitolo_id": "trasporto_persone",
       "capitolo": "Trasporto persone",
-      "domanda": "In presenza del segnale raffigurato, i conducenti di autobus devono ridurre sensibilmente la velocità per evitare cadute dei passeggeri, soprattutto se viaggiano in piedi",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "trasporto_persone",
-      "capitolo": "Trasporto persone",
-      "domanda": "In presenza del segnale raffigurato, i conducenti di autobus devono ridurre sensibilmente la velocità per non peggiorare il confort di marcia dei passeggeri",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "trasporto_persone",
-      "capitolo": "Trasporto persone",
-      "domanda": "In presenza del segnale raffigurato, i conducenti di autobus devono ridurre sensibilmente la velocità per evitare urti tra i passeggeri, soprattutto se viaggiano in piedi",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "trasporto_persone",
-      "capitolo": "Trasporto persone",
       "domanda": "Gli autoveicoli adibiti al trasporto di cose in conto terzi di massa complessiva a pieno carico superiore a 6 tonnellate, devono esporre una striscia obliqua di colore rosso avanti e dietro il veicolo",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "trasporto_persone",
-      "capitolo": "Trasporto persone",
-      "domanda": "In presenza del segnale raffigurato, i conducenti di autobus devono dare un annuncio via microfono a tutti i passeggeri del sopraggiungente pericolo",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "trasporto_persone",
-      "capitolo": "Trasporto persone",
-      "domanda": "In presenza del segnale raffigurato, i conducenti di autobus devono accelerare per passare il tratto di strada nel minor tempo possibile",
       "risposta": false
     },
     {
@@ -2094,12 +2058,6 @@
     {
       "capitolo_id": "trasporto_persone",
       "capitolo": "Trasporto persone",
-      "domanda": "Il pannello raffigurato va messo anche sugli autobus, quando trasportano scolari",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "trasporto_persone",
-      "capitolo": "Trasporto persone",
       "domanda": "Il segnale raffigurato impone un limite di velocità di 30 km/h",
       "risposta": false
     },
@@ -2184,18 +2142,6 @@
     {
       "capitolo_id": "trasporto_persone",
       "capitolo": "Trasporto persone",
-      "domanda": "Il pannello a sfondo verde con impressa in nero la lettera \"d\" è posto su autobus che trasportano persone disabili",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "trasporto_persone",
-      "capitolo": "Trasporto persone",
-      "domanda": "Il pannello a sfondo verde con impressa in nero la lettera \"d\" può essere posto su veicoli che trasportano imbarcazioni da diporto",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "trasporto_persone",
-      "capitolo": "Trasporto persone",
       "domanda": "Il pannello a sfondo giallo con impressa in nero la lettera \"R\" è posto su veicoli che trasportano prodotti alimentari refrigerati",
       "risposta": false
     },
@@ -2268,12 +2214,6 @@
     {
       "capitolo_id": "trasporto_persone",
       "capitolo": "Trasporto persone",
-      "domanda": "Il pannello integrativo in figura non vale per gli autobus extraurbani",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "trasporto_persone",
-      "capitolo": "Trasporto persone",
       "domanda": "Il segnale raffigurato vieta ai veicoli per trasporto specifico, di massa complessiva a pieno carico superiore a 3,5 tonnellate e non adibiti al trasporto di persone, di sorpassare veicoli a motore",
       "risposta": true
     },
@@ -2298,19 +2238,7 @@
     {
       "capitolo_id": "trasporto_persone",
       "capitolo": "Trasporto persone",
-      "domanda": "In assenza di altri divieti, in presenza del segnale raffigurato, gli autobus, anche se di massa a pieno carico superiore a 3,5 tonnellate, possono sorpassare veicoli sia senza motore che a motore",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "trasporto_persone",
-      "capitolo": "Trasporto persone",
       "domanda": "In assenza di altri divieti, il segnale raffigurato consente agli autocarri, di massa complessiva a pieno carico fino a 3,5 tonnellate, di sorpassare veicoli a motore",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "trasporto_persone",
-      "capitolo": "Trasporto persone",
-      "domanda": "In assenza di altri divieti, in presenza del segnale raffigurato, gli autobus, anche se di massa a pieno carico superiore a 3,5 tonnellate, possono sorpassare gli autoarticolati",
       "risposta": true
     },
     {
@@ -2353,12 +2281,6 @@
       "capitolo_id": "trasporto_persone",
       "capitolo": "Trasporto persone",
       "domanda": "Il segnale raffigurato prescrive, ai veicoli di massa complessiva a pieno carico superiore a 3,5 tonnellate che trasportano persone, di non sorpassare i veicoli a motore",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "trasporto_persone",
-      "capitolo": "Trasporto persone",
-      "domanda": "Il segnale raffigurato, si riferisce ai conducenti di autobus di qualunque massa",
       "risposta": false
     },
     {
@@ -2490,12 +2412,6 @@
     {
       "capitolo_id": "trasporto_persone",
       "capitolo": "Trasporto persone",
-      "domanda": "Il segnale raffigurato deve essere rispettato anche dai conducenti di autobus",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "trasporto_persone",
-      "capitolo": "Trasporto persone",
       "domanda": "Il segnale raffigurato vige anche di notte",
       "risposta": true
     },
@@ -2550,12 +2466,6 @@
     {
       "capitolo_id": "trasporto_persone",
       "capitolo": "Trasporto persone",
-      "domanda": "In presenza del segnale raffigurato è consentito il transito di autobus di massa superiore a 7 tonnellate",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "trasporto_persone",
-      "capitolo": "Trasporto persone",
       "domanda": "Il segnale raffigurato vieta il transito a tutti i veicoli aventi una massa complessiva a pieno carico superiore a 7 tonnellate, senza tener conto della loro massa al momento del transito",
       "risposta": false
     },
@@ -2600,12 +2510,6 @@
       "capitolo": "Trasporto persone",
       "domanda": "Il segnale raffigurato vieta il transito ai veicoli con furgone frigorifero",
       "risposta": false
-    },
-    {
-      "capitolo_id": "trasporto_persone",
-      "capitolo": "Trasporto persone",
-      "domanda": "In presenza del segnale raffigurato è consentito il transito agli autobus",
-      "risposta": true
     },
     {
       "capitolo_id": "trasporto_persone",
@@ -3060,18 +2964,6 @@
     {
       "capitolo_id": "documenti",
       "capitolo": "Documenti",
-      "domanda": "Un autobus che effettua servizi regolari nel territorio di Stati UE deve avere a bordo l'originale o una copia conforme certificata dell'autorizzazione rilasciata dallo Stato membro sul cui territorio si trova il punto di partenza",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "documenti",
-      "capitolo": "Documenti",
-      "domanda": "Quando si effettua un servizio di noleggio con conducente in ambito UE (servizio occasionale), a bordo dell'autobus che lo effettua deve trovarsi l'originale del foglio di viaggio compilato dall'impresa o dall'autista",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "documenti",
-      "capitolo": "Documenti",
       "domanda": "Sul foglio di viaggio di un servizio di noleggio con conducente in ambito UE (servizio occasionale) deve figurare il tipo di servizio svolto",
       "risposta": true
     },
@@ -3180,25 +3072,7 @@
     {
       "capitolo_id": "documenti",
       "capitolo": "Documenti",
-      "domanda": "Quando si effettua un servizio di noleggio con conducente in ambito UE (servizio occasionale), a bordo dell'autobus che lo effettua deve trovarsi copia autenticata dell'esito dell'ultima revisione tecnica del veicolo",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "documenti",
-      "capitolo": "Documenti",
       "domanda": "I trasporti di cabotaggio in Paesi UE, svolti sotto forma di servizi occasionali, sono effettuati in base a un documento di controllo, il foglio di viaggio, che deve contenere l'elenco dei passeggeri trasportati",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "documenti",
-      "capitolo": "Documenti",
-      "domanda": "Un autobus che effettua servizi regolari nel territorio di Stati UE deve avere a bordo l'originale del documento di controllo che riporti orari e prezzi del servizio",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "documenti",
-      "capitolo": "Documenti",
-      "domanda": "Un autobus che effettua servizi regolari nel territorio di Stati UE deve avere a bordo l'originale del documento di controllo che riporti l'elenco dei passeggeri trasportati",
       "risposta": false
     },
     {
@@ -3288,18 +3162,6 @@
     {
       "capitolo_id": "documenti",
       "capitolo": "Documenti",
-      "domanda": "Il conducente di un autobus deve dimostrare, a richiesta degli agenti del traffico, di essere titolare di qualificazione CQC in corso di validità",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "documenti",
-      "capitolo": "Documenti",
-      "domanda": "Il conducente di un autobus adibito a noleggio con conducente dotato di tachigrafo digitale deve avere con sé la carta tachigrafica",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "documenti",
-      "capitolo": "Documenti",
       "domanda": "Per guidare un filobus occorre il certificato di idoneità rilasciato dall'USTIF",
       "risposta": true
     },
@@ -3307,12 +3169,6 @@
       "capitolo_id": "documenti",
       "capitolo": "Documenti",
       "domanda": "La carta di qualificazione del conducente viene rinnovata ogni cinque anni",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "documenti",
-      "capitolo": "Documenti",
-      "domanda": "Una copia conforme dell'autorizzazione al noleggio con conducente deve essere presente a bordo dell'autobus immatricolato in base ad essa",
       "risposta": true
     },
     {
@@ -3403,12 +3259,6 @@
       "capitolo_id": "documenti",
       "capitolo": "Documenti",
       "domanda": "Per rinnovare il certificato di formazione professionale ADR occorre sostenere un esame, senza l'obbligo di frequenza di specifico corso",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "documenti",
-      "capitolo": "Documenti",
-      "domanda": "Per guidare un autobus occorre essere titolare di certificato di abilitazione professionale di tipo KD",
       "risposta": false
     },
     {
@@ -4344,30 +4194,6 @@
     {
       "capitolo_id": "ruote",
       "capitolo": "Ruote",
-      "domanda": "Quando si effettua il cambio di una ruota di un autobus è necessario fermarsi in un luogo sicuro e, se è possibile farlo in condizioni di sicurezza, far scendere le persone trasportate",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "ruote",
-      "capitolo": "Ruote",
-      "domanda": "Se, per necessità, è necessario cambiare la ruota di un autobus sulla corsia di emergenza o su una piazzola di sosta di un'autostrada, è opportuno non far scendere i passeggeri dal veicolo",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "ruote",
-      "capitolo": "Ruote",
-      "domanda": "Quando si cambia una ruota di un autobus, non è sempre obbligatorio far scendere i passeggeri",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "ruote",
-      "capitolo": "Ruote",
-      "domanda": "Con il martinetto idraulico in dotazione di un autobus per la sostituzione di una ruota è possibile sollevare l'autobus stesso, anche se carico",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "ruote",
-      "capitolo": "Ruote",
       "domanda": "Non bisogna attivare la valvola di scarico del martinetto idraulico, per abbassarlo, quando si è ancora sotto al veicolo, al fine di evitare di essere schiacciati dallo stesso",
       "risposta": true
     },
@@ -4434,12 +4260,6 @@
     {
       "capitolo_id": "ruote",
       "capitolo": "Ruote",
-      "domanda": "Gli autobus e gli autocarri, in caso di foratura di uno pneumatico, devono utilizzare il ruotino al posto della ruota di scorta",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "ruote",
-      "capitolo": "Ruote",
       "domanda": "Una volta montata la ruota di scorta di un autocarro o di un autobus, non è consigliato fermarsi per controllare il serraggio dei dadi",
       "risposta": false
     },
@@ -4464,31 +4284,7 @@
     {
       "capitolo_id": "ruote",
       "capitolo": "Ruote",
-      "domanda": "Quando si cambia una ruota di un autobus lungo la corsia di emergenza di un'autostrada, se i passeggeri lo chiedono, si può farli scendere dal veicolo",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "ruote",
-      "capitolo": "Ruote",
-      "domanda": "In caso di cambio ruota su di un autobus non far mai scendere i passeggeri dal veicolo",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "ruote",
-      "capitolo": "Ruote",
-      "domanda": "Prima di sollevare l'autobus per effettuare il cambio ruota è di norma obbligatorio far scendere i passeggeri",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "ruote",
-      "capitolo": "Ruote",
       "domanda": "Quando si cambia la ruota di un rimorchio è di norma obbligatorio sganciarlo dalla motrice",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "ruote",
-      "capitolo": "Ruote",
-      "domanda": "Per poter sollevare un autobus con il martinetto idraulico in dotazione per la sostituzione di una ruota, è necessario far scendere tutti i passeggeri",
       "risposta": false
     },
     {
@@ -4770,12 +4566,6 @@
     {
       "capitolo_id": "dimensioni",
       "capitolo": "Dimensioni massa velocita",
-      "domanda": "Ogni autoveicolo, esclusi autobus e i semirimorchi, deve avere lunghezza massima non superiore a 12 metri",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "dimensioni",
-      "capitolo": "Dimensioni massa velocita",
       "domanda": "La lunghezza massima di un autoarticolato è di 16,50 metri, purché l'avanzamento ralla abbia particolari caratteristiche",
       "risposta": true
     },
@@ -4783,12 +4573,6 @@
       "capitolo_id": "dimensioni",
       "capitolo": "Dimensioni massa velocita",
       "domanda": "La lunghezza massima di un autoarticolato con avanzamento ralla di 3 metri rispetto alla parte anteriore del semirimorchio è di 15,50 metri",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "dimensioni",
-      "capitolo": "Dimensioni massa velocita",
-      "domanda": "La lunghezza massima di un autosnodato o di un autobus con rimorchio è di 18,75 metri",
       "risposta": true
     },
     {
@@ -4831,24 +4615,6 @@
       "capitolo_id": "dimensioni",
       "capitolo": "Dimensioni massa velocita",
       "domanda": "La massa massima ammessa su due assi contigui posti a una distanza non superiore a 1 metro non può superare le 12 tonnellate",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "dimensioni",
-      "capitolo": "Dimensioni massa velocita",
-      "domanda": "La lunghezza massima di un autobus a 2 assi è di 13,50 metri",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "dimensioni",
-      "capitolo": "Dimensioni massa velocita",
-      "domanda": "La lunghezza massima di un autobus a 3 o più assi è di 15 metri",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "dimensioni",
-      "capitolo": "Dimensioni massa velocita",
-      "domanda": "L'altezza massima di autobus e filobus destinati a servizi pubblici di linea urbani e suburbani, circolanti su itinerari prestabiliti, non deve superare 4,30 metri",
       "risposta": true
     },
     {
@@ -5064,24 +4830,6 @@
     {
       "capitolo_id": "dimensioni",
       "capitolo": "Dimensioni massa velocita",
-      "domanda": "La lunghezza massima di un autobus a 2 assi è di 15 metri",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "dimensioni",
-      "capitolo": "Dimensioni massa velocita",
-      "domanda": "La lunghezza massima di un autobus a 3 o più assi è di 18,75 metri",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "dimensioni",
-      "capitolo": "Dimensioni massa velocita",
-      "domanda": "Ogni veicolo, esclusi autobus e i semirimorchi, deve avere lunghezza massima non superiore a 13,50 metri",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "dimensioni",
-      "capitolo": "Dimensioni massa velocita",
       "domanda": "Ogni veicolo a motore o complesso di veicoli deve potersi inscrivere in una corona circolare larga 5,30 metri e di raggio interno pari a 7,20 metri",
       "risposta": false
     },
@@ -5113,12 +4861,6 @@
       "capitolo_id": "dimensioni",
       "capitolo": "Dimensioni massa velocita",
       "domanda": "Ogni veicolo a motore o complesso di veicoli deve potersi inscrivere in una corona circolare larga 5,20 m e di raggio esterno pari a 16,50 metri",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "dimensioni",
-      "capitolo": "Dimensioni massa velocita",
-      "domanda": "Gli autobus e gli autocarri, a differenza degli altri veicoli, devono potersi inscrivere in una corona circolare larga 8,20 metri e di raggio interno pari 6,30 metri",
       "risposta": false
     },
     {
@@ -5269,12 +5011,6 @@
       "capitolo_id": "dimensioni",
       "capitolo": "Dimensioni massa velocita",
       "domanda": "Il limitatore di velocità deve essere inviolabile, cioè non deve essere possibile aumentare o spostare temporaneamente o permanentemente il livello della limitazione di velocità",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "dimensioni",
-      "capitolo": "Dimensioni massa velocita",
-      "domanda": "La velocità massima consentita dal limitatore ad un autobus deve essere di 100 km/h",
       "risposta": true
     },
     {
@@ -5443,18 +5179,6 @@
       "capitolo_id": "dimensioni",
       "capitolo": "Dimensioni massa velocita",
       "domanda": "Il limitatore di velocità viene regolato dal conducente a mezzo di una leva posta sul cruscotto",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "dimensioni",
-      "capitolo": "Dimensioni massa velocita",
-      "domanda": "La velocità massima consentita dal limitatore ad un autobus deve essere di 80 km/h",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "dimensioni",
-      "capitolo": "Dimensioni massa velocita",
-      "domanda": "La velocità massima consentita dal limitatore ad un autobus deve essere di 110 km/h",
       "risposta": false
     },
     {
@@ -5808,12 +5532,6 @@
     {
       "capitolo_id": "dimensioni",
       "capitolo": "Dimensioni massa velocita",
-      "domanda": "Gli autobus urbani non possono avere sbalzi superiori ai dieci centimetri per non rischiare di urtare i pedoni sul marciapiede",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "dimensioni",
-      "capitolo": "Dimensioni massa velocita",
       "domanda": "I veicoli pesanti che hanno sbalzi superiori ai quaranta centimetri devono essere di norma dotati di uno specchio retrovisore supplementare",
       "risposta": false
     },
@@ -5821,12 +5539,6 @@
       "capitolo_id": "dimensioni",
       "capitolo": "Dimensioni massa velocita",
       "domanda": "I veicoli pesanti non possono avere, di norma, sbalzi di lunghezza superiore ai quaranta centimetri",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "dimensioni",
-      "capitolo": "Dimensioni massa velocita",
-      "domanda": "Gli sbalzi sono vietati sugli autobus extraurbani, perché ne compromettono la tenuta di strada",
       "risposta": false
     },
     {
@@ -6390,85 +6102,13 @@
     {
       "capitolo_id": "caricamento",
       "capitolo": "Caricamento",
-      "domanda": "Gli autobus sono di norma muniti di porte e uscite di sicurezza",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli autobus sono di norma muniti di estintori",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli autobus sono di norma muniti di cassetta del pronto soccorso",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli estintori presenti a bordo degli autobus devono essere revisionati ogni 6 mesi",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli autobus con un numero di posti a sedere non superiore a 30 posti devono essere muniti di un estintore a schiuma da 5 litri o a neve carbonica da 2 chilogrammi",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli autobus fino a 22 posti a sedere devono essere dotati di 3 uscite di emergenza",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli autobus fino a 35 posti a sedere devono essere dotati di 4 uscite di emergenza",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli autobus oltre i 35 posti a sedere devono essere dotati di 5 uscite di emergenza",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
       "domanda": "I veicoli aventi massa complessiva a pieno carico maggiore di 3,5 tonnellate devono essere muniti di una coppia di cunei",
       "risposta": true
     },
     {
       "capitolo_id": "caricamento",
       "capitolo": "Caricamento",
-      "domanda": "Sugli autobus, gli spazi riservati alle sedie a rotelle devono essere obbligatoriamente muniti di sistemi di ritenuta",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Almeno un estintore in dotazione agli autobus deve essere sistemato in prossimità del sedile del conducente",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Durante la marcia, tutti gli occupanti di età superiore a 3 anni degli autobus senza posti in piedi devono indossare idonei sistemi di ritenuta, se il veicolo ne è dotato",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
       "domanda": "Durante la marcia, i conducenti degli autocarri adibiti al trasporto di merci sono, di norma, obbligati a indossare le cinture di sicurezza, se il veicolo ne è dotato",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Durante la marcia, il conducente di un autobus in servizio interregionale deve indossare le cinture di sicurezza, se il veicolo ne è dotato",
       "risposta": true
     },
     {
@@ -6540,18 +6180,6 @@
     {
       "capitolo_id": "caricamento",
       "capitolo": "Caricamento",
-      "domanda": "Tutti gli autobus hanno l'obbligo di revisione periodica annuale",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "La revisione periodica di un autobus deve essere effettuata entro il mese corrispondente a quello in cui è stata sostenuta la revisione nell'anno precedente",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
       "domanda": "Prima di iniziare il viaggio, il conducente deve provvedere a verificare il funzionamento di tutti i dispositivi di illuminazione e segnalazione visiva",
       "risposta": true
     },
@@ -6559,66 +6187,6 @@
       "capitolo_id": "caricamento",
       "capitolo": "Caricamento",
       "domanda": "Il conducente, prima di iniziare il viaggio, deve provvedere alla verifica di eventuali perdite d'olio dalle condotte degli organi di frenatura",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Per autobus di classe \"A\" si intende un autobus con posti in piedi e con numero totale di passeggeri ammesso inferiore a 22, senza contare il conducente",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Per autobus di classe \"B\" si intende un autobus con solo posti a sedere e con numero totale di passeggeri ammesso inferiore a 22, senza contare il conducente",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Per autobus di classe \"I\" si intende un autobus con posti in piedi e con numero totale superiore a 22, senza contare il conducente",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Per autobus di classe \"III\" si intende un autobus con solo posti a sedere e con numero totale superiore a 22, senza contare il conducente",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Un autobus con servizio interurbano senza passeggeri in piedi può appartenere alla classe \"III\" o alla classe \"B\"",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Un autobus con servizio di NCC può appartenere alla classe \"III\" o alla classe \"B\"",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Un autobus con servizio urbano può appartenere alla classe \"I\" o alla classe \"A\"",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Un autobus con servizio suburbano può appartenere alla classe \"I\" o alla classe \"A\"",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Un autobus con servizio interurbano con posti in piedi può appartenere alla classe \"II\" o alla classe \"A\"",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Per gli autobus urbani e suburbani non esiste un obbligo di colore particolare",
       "risposta": true
     },
     {
@@ -6744,85 +6312,7 @@
     {
       "capitolo_id": "caricamento",
       "capitolo": "Caricamento",
-      "domanda": "Sugli autobus, gli spazi riservati alle sedie a rotelle non devono essere obbligatoriamente muniti di sistemi di ritenuta",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Tutti gli estintori in dotazione agli autobus devono essere sistemati in prossimità del sedile del conducente",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli autobus sono di norma muniti di tester per il rilevamento di assunzione sostanze alcoliche",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli autobus sono di norma muniti di almeno 3 porte e uscite di sicurezza",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli autobus con numero di passeggeri superiore a 17 devono essere muniti di almeno 2 cassette del pronto soccorso",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli estintori presenti a bordo degli autobus devono essere revisionati ogni 12 mesi",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli autobus fino a 30 posti a sedere devono essere muniti di un estintore a schiuma da 2 litri o a neve carbonica da 5 chilogrammi",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli autobus oltre i 22 posti a sedere devono essere dotati di 3 uscite di emergenza",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli autobus oltre i 35 posti a sedere devono essere dotati di 4 uscite di emergenza",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli autobus fino a 22 posti a sedere devono essere dotati di 1 uscita di emergenza",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "L'uso delle cinture di sicurezza non è di norma obbligatorio per i passeggeri di autobus in servizio interregionale, anche se gli stessi ne sono dotati",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
       "domanda": "Di norma, le cinture di sicurezza non sono obbligatorie sugli autocarri di massa complessiva inferiore a 3,5 t",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Di norma, le cinture di sicurezza non sono obbligatorie sugli autobus di categoria M3",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "La legge non prevede esenzioni dall'obbligo di indossare le cinture di sicurezza per i passeggeri di autobus che effettuano servizi interregionali",
       "risposta": false
     },
     {
@@ -6864,103 +6354,7 @@
     {
       "capitolo_id": "caricamento",
       "capitolo": "Caricamento",
-      "domanda": "La pressione di gonfiaggio degli pneumatici di un autobus deve essere verificata e comparata con i valori minimi indicati sulla carta di circolazione",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Prima di iniziare qualunque viaggio con un autobus, devono essere verificati i livelli di olio del cambio di velocità e degli organi del differenziale",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Non è consigliato, ogni qualvolta si inizi un viaggio con un autobus, controllare il livello del liquido dei freni, del liquido della batteria e lo stato delle spazzole tergicristallo",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Tutti gli autobus hanno l'obbligo di revisione periodica biennale",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "La revisione periodica di un autobus deve essere effettuata entro il mese successivo a quello in cui è stata sostenuta la revisione nell'anno precedente",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "La circolazione di un autobus in difetto di revisione è punita con il solo ritiro della carta di circolazione",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "La circolazione di un autobus in difetto di revisione è punita con il ritiro della patente di guida dell'autista",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Durante il viaggio, il conducente di un autobus è tenuto a verificare in ogni momento il funzionamento di tutti i dispositivi di illuminazione e segnalazione visiva, con particolare riferimento ai dispositivi di illuminazione delle uscite di servizio",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
       "domanda": "Il conducente prima di iniziare il viaggio non ha l'obbligo di provvedere alla verifica di eventuali perdite d'olio dalle condotte degli organi di frenatura in quanto tale incombenza spetta in ogni caso al proprietario del mezzo",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli autobus con servizio suburbano non possono avere posti in piedi",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli autobus con servizio suburbano possono avere al massimo 10 posti in piedi",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli autobus con servizio suburbano non possono avere più del 25% di posti in piedi",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Un autobus con servizio interurbano con posti in piedi può appartenere alla classe \"I\" o alla classe \"B\"",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Un autobus con servizio interurbano senza passeggeri in piedi può appartenere alla classe \"II\" o alla classe \"A\"",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Un autobus granturismo può appartenere alla classe \"I\" o alla classe \"A\"",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Un autobus in uso proprio appartiene alla classe \"P\"",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Un autobus con servizio di NCC può appartenere alla classe \"II\" o alla classe \"A\"",
       "risposta": false
     },
     {
@@ -7032,12 +6426,6 @@
     {
       "capitolo_id": "caricamento",
       "capitolo": "Caricamento",
-      "domanda": "Il conducente di un autobus NCC è responsabile dei danni eventualmente subiti dal passeggero che, senza giustificato motivo, non abbia indossato le cinture di sicurezza durante la circolazione",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
       "domanda": "La categoria internazionale N1 comprende i veicoli a motore destinati al trasporto di merci, con massa massima non superiore a 3,5 tonnellate",
       "risposta": true
     },
@@ -7086,25 +6474,7 @@
     {
       "capitolo_id": "caricamento",
       "capitolo": "Caricamento",
-      "domanda": "Il conducente di un autobus non ha l'obbligo di ricordare ai passeggeri di indossare, quando previsto, le cinture di sicurezza",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
       "domanda": "Le cinture di sicurezza degli autocarri non sono soggette ad omologazione",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Le cinture di sicurezza degli autobus non sono soggette ad omologazione",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Il conducente di un autobus adibito a trasporto locale in servizio urbano deve ricordare ai passeggeri seduti l'obbligo di indossare le cinture di sicurezza",
       "risposta": false
     },
     {
@@ -7332,85 +6702,7 @@
     {
       "capitolo_id": "caricamento",
       "capitolo": "Caricamento",
-      "domanda": "Gli autobus devono essere dotati di due cunei fermaruota",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
       "domanda": "I rimorchi degli autobus, di massa complessiva a pieno carico superiore a 3,5 tonnellate, devono essere dotati di due cunei fermaruota",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Sugli autobus con al massimo trenta posti, deve trovarsi almeno un estintore da cinque litri se a schiuma o uno da due chili se a neve carbonica",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Sugli autobus con più di trenta posti, deve trovarsi almeno un estintore da cinque litri se a schiuma, oppure due estintori da due chili ciascuno se a neve carbonica",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Sugli autobus, ogni estintore deve essere alloggiato in idonea sede di cui una situata nei pressi del conducente",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli estintori presenti sugli autobus devono essere di tipo omologato",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli estintori presenti sugli autobus devono sottostare a controllo periodico a scadenze prefissate",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli estintori presenti sugli autobus devono essere controllati ogni sei mesi",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "L'avvenuto controllo degli estintori presenti sugli autobus da parte di ditta specializzata, deve essere attestato da annotazione posta su apposita targhetta fissata sull'estintore stesso",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Sugli autobus devono essere presenti una o più cassette, in base a quanto previsto dall'autorizzazione, contenenti il materiale di primo soccorso previsto dalle norme",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Sugli autobus devono essere presenti uscite di emergenza idoneamente segnalate",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Le uscite di emergenza presenti sugli autobus possono essere porte, finestrini o botole",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Sugli autobus deve essere presente un pulsante di emergenza posto a portata di mano del conducente",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Il pulsante di emergenza presente sugli autobus, se premuto, consente l'immediato arresto del motore in caso di incidente",
       "risposta": true
     },
     {
@@ -7459,132 +6751,6 @@
       "capitolo_id": "caricamento",
       "capitolo": "Caricamento",
       "domanda": "E' vietato circolare in autostrada con autoveicoli muniti di gru per il carico e scarico delle merci",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli autobus devono essere dotati di estintori nel caso non abbiano uscite di sicurezza",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli estintori degli autobus devono essere sostituiti in occasione della revisione periodica del veicolo",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "L'avvenuto controllo degli estintori presenti sugli autobus deve essere certificato dal conducente del veicolo",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "L'avvenuto controllo degli estintori presenti sugli autobus deve essere annotato sulla carta di circolazione del veicolo",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli estintori presenti sugli autobus non possono che essere del tipo a schiuma",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Le cassette contenenti materiale di primo soccorso non sono necessarie se sull'autobus è presente un contatto radiomobile con un ospedale",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Ogni sei mesi gli estintori presenti sugli autobus vanno svuotati, puliti internamente e ricaricati",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Il pulsante di emergenza presente sugli autobus, se premuto, consente l'immediata apertura di tutte le porte del veicolo",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Il pulsante di emergenza presente sugli autobus, se premuto, consente l'immediata espulsione verso l'esterno dei vetri dei finestrini di sicurezza",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Il pulsante di emergenza presente sugli autobus, se premuto, consente di lanciare un messaggio di SOS al numero di telefono 118",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Sugli autobus con al massimo trenta posti, deve trovarsi almeno un estintore da otto litri se a schiuma o uno da tre chili se a neve carbonica",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Sugli autobus con al massimo trenta posti, deve trovarsi almeno un estintore da cinque chili a polvere",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Sugli autobus interregionali con più di trenta posti, deve trovarsi almeno un estintore da 200 grammi a schiuma per ogni fila di sedili",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Sugli autobus con più di trenta posti, deve trovarsi almeno un estintore da otto chili a schiuma, oppure due estintori da quattro chili se a neve carbonica",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Durante la stagione invernale, gli estintori presenti sugli autobus possono essere tenuti all'interno del portabagagli",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Ogni sei mesi il conducente deve provare l'estintore presente sull'autobus, azionandolo per due secondi, annotando data ed esito della prova sull'apposita targhetta posta sull'estintore",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Gli estintori presenti sugli autobus devono essere controllati ogni dodici mesi",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "L'annotazione dell'avvenuto controllo semestrale degli estintori presenti sull'autobus deve essere conservata presso l'azienda titolare del veicolo",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Il pulsante di emergenza presente sull'autobus deve trovarsi sotto il sedile del conducente, per evitare il pericolo di azionamento involontario",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Sugli autobus interregionali con più di trenta posti e percorso superiore a 500 chilometri, deve essere presente a bordo un medico o un paramedico che si occupi di eventuali soccorsi sanitari",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "caricamento",
-      "capitolo": "Caricamento",
-      "domanda": "Le uscite di emergenza presenti sugli autobus con più di trenta posti possono essere solo porte",
       "risposta": false
     },
     {
@@ -8568,12 +7734,6 @@
     {
       "capitolo_id": "motori",
       "capitolo": "Motori",
-      "domanda": "Gli organi della trasmissione del moto presenti negli autoveicoli sono l'insieme di organi che hanno lo scopo di trasferire la potenza generata dal motore alle ruote",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "motori",
-      "capitolo": "Motori",
       "domanda": "Un motore ad accensione comandata non può essere del tipo a ciclo Otto (a scoppio)",
       "risposta": false
     },
@@ -8593,12 +7753,6 @@
       "capitolo_id": "motori",
       "capitolo": "Motori",
       "domanda": "Le bielle uniscono i pistoni con l'albero a camme",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "motori",
-      "capitolo": "Motori",
-      "domanda": "Il movimento dei pistoni è un moto rotatorio",
       "risposta": false
     },
     {
@@ -9264,12 +8418,6 @@
     {
       "capitolo_id": "motori",
       "capitolo": "Motori",
-      "domanda": "Il differenziale trasmette il moto alle ruote tramite due semiassi",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "motori",
-      "capitolo": "Motori",
       "domanda": "Il differenziale è un ripartitore di giri tra le ruote motrici di uno stesso asse",
       "risposta": true
     },
@@ -9540,18 +8688,6 @@
     {
       "capitolo_id": "motori",
       "capitolo": "Motori",
-      "domanda": "Gli organi di trasmissione del moto servono a trasmettere il moto di rotazione del motore alle ruote motrici",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "motori",
-      "capitolo": "Motori",
-      "domanda": "Fanno parte degli organi di trasmissione del moto la frizione, il cambio, il differenziale e la coppia conica",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "motori",
-      "capitolo": "Motori",
       "domanda": "L'albero di trasmissione non è presente se trazione e motore sono posteriori",
       "risposta": true
     },
@@ -9560,12 +8696,6 @@
       "capitolo": "Motori",
       "domanda": "Sui veicoli pesanti, l'albero di trasmissione è generalmente realizzato in più tronconi collegati da giunti",
       "risposta": true
-    },
-    {
-      "capitolo_id": "motori",
-      "capitolo": "Motori",
-      "domanda": "Il movimento dell'albero motore è un \"moto alternativo\"",
-      "risposta": false
     },
     {
       "capitolo_id": "motori",
@@ -9762,25 +8892,7 @@
     {
       "capitolo_id": "motori",
       "capitolo": "Motori",
-      "domanda": "Gli organi di trasmissione del moto servono a tenere informata l'azienda sulla posizione del veicolo",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "motori",
-      "capitolo": "Motori",
-      "domanda": "Fa parte degli organi di trasmissione del moto il sistema satellitare GPS",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "motori",
-      "capitolo": "Motori",
       "domanda": "Fanno parte degli organi di trasmissione del moto le balestre, il volante e il limitatore di velocità",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "motori",
-      "capitolo": "Motori",
-      "domanda": "Gli organi di trasmissione del moto non sono necessari a bordo dei veicoli elettrici",
       "risposta": false
     },
     {
@@ -9870,12 +8982,6 @@
     {
       "capitolo_id": "motori",
       "capitolo": "Motori",
-      "domanda": "La coppia conica serve, tra l'altro, a deviare di 90° il moto rotatorio dell'albero di trasmissione",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "motori",
-      "capitolo": "Motori",
       "domanda": "La coppia conica è in genere utilizzata nei veicoli con motore anteriore e trazione posteriore",
       "risposta": true
     },
@@ -9960,19 +9066,7 @@
     {
       "capitolo_id": "motori",
       "capitolo": "Motori",
-      "domanda": "La coppia conica serve, tra l'altro, a deviare di 60° il moto rotatorio dell'albero di trasmissione",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "motori",
-      "capitolo": "Motori",
       "domanda": "La coppia conica è inserita manualmente dall'autista grazie a un comando posto sul cruscotto",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "motori",
-      "capitolo": "Motori",
-      "domanda": "Nella coppia conica, il pignone trasmette il moto alla corona grazie a un disco a frizione",
       "risposta": false
     },
     {
@@ -11808,18 +10902,6 @@
     {
       "capitolo_id": "motori",
       "capitolo": "Motori",
-      "domanda": "In molti autocarri e autobus di media portata, il pedale della frizione agisce su un servocomando a funzionamento idraulico",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "motori",
-      "capitolo": "Motori",
-      "domanda": "A bordo di molti autobus, la trasmissione idraulica sostituisce la frizione ed il cambio meccanico",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "motori",
-      "capitolo": "Motori",
       "domanda": "Se la trasmissione è idraulica non esistono la frizione meccanica e il relativo pedale",
       "risposta": true
     },
@@ -12247,12 +11329,6 @@
       "capitolo_id": "motori",
       "capitolo": "Motori",
       "domanda": "In un motore Diesel, ogni 10 rifornimenti di combustibile è necessario ripulire il filtro della pompa di alimentazione",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "motori",
-      "capitolo": "Motori",
-      "domanda": "In un motore Diesel, quando il clima è molto freddo, la pompa di alimentazione del combustibile deve essere accesa dal conducente con apposito pulsante, alcuni secondi prima della messa in moto del motore",
       "risposta": false
     },
     {
@@ -16128,18 +15204,6 @@
     {
       "capitolo_id": "freni",
       "capitolo": "Freni ABS",
-      "domanda": "Come sui treni, anche su tutti gli autobus è obbligatorio un freno di emergenza a disposizione dei viaggiatori",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "freni",
-      "capitolo": "Freni ABS",
-      "domanda": "Sugli autobus deve essere presente, a disposizione dei passeggeri, un martelletto, posto in una cassetta con vetro a frantumazione, che permetta di azionare i freni di emergenza in caso di incendio",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "freni",
-      "capitolo": "Freni ABS",
       "domanda": "Il sistema di frenatura consente di trasformare in calore l'energia cinetica posseduta da un veicolo in movimento",
       "risposta": true
     },
@@ -17724,36 +16788,6 @@
     {
       "capitolo_id": "manutenzione",
       "capitolo": "Manutenzione",
-      "domanda": "Prima della partenza, il conducente dell'autobus deve verificare la presenza a bordo della cassetta di pronto soccorso",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "manutenzione",
-      "capitolo": "Manutenzione",
-      "domanda": "Prima della partenza, il conducente dell'autobus deve verificare la presenza degli eventuali martelletti per i vetri delle uscite di sicurezza",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "manutenzione",
-      "capitolo": "Manutenzione",
-      "domanda": "Prima della partenza, il conducente dell'autobus deve verificare che gli estintori siano stati revisionati da non più di sei mesi",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "manutenzione",
-      "capitolo": "Manutenzione",
-      "domanda": "Prima della partenza, il conducente dell'autobus di massa superiore a 3,5 t deve verificare che il veicolo sia dotato dei cunei ferma ruota",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "manutenzione",
-      "capitolo": "Manutenzione",
-      "domanda": "Prima della partenza, il conducente dell'autobus deve verificare la presenza del triangolo di emergenza",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "manutenzione",
-      "capitolo": "Manutenzione",
       "domanda": "Prima di partire, il conducente deve eseguire il controllo dell'efficienza dei sistemi di salita e discesa dei passeggeri",
       "risposta": true
     },
@@ -17804,42 +16838,6 @@
       "capitolo": "Manutenzione",
       "domanda": "Se il conducente, durante un'ispezione al veicolo, nota forte riscaldamento di alcune parti degli pneumatici, deve evitare di riprendere il viaggio riferendo all'azienda della situazione",
       "risposta": true
-    },
-    {
-      "capitolo_id": "manutenzione",
-      "capitolo": "Manutenzione",
-      "domanda": "Prima della partenza, il conducente dell'autobus deve controllare il livello dell'olio nel cambio",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "manutenzione",
-      "capitolo": "Manutenzione",
-      "domanda": "Prima della partenza, il conducente dell'autobus deve controllare il livello del liquido lubrificante nella scatola del differenziale",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "manutenzione",
-      "capitolo": "Manutenzione",
-      "domanda": "Prima della partenza, il conducente dell'autobus deve verificare l'efficienza della cinghia della pompa dell'acqua",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "manutenzione",
-      "capitolo": "Manutenzione",
-      "domanda": "Prima della partenza, il conducente dell'autobus deve controllare il funzionamento corretto dell'apparato di iniezione",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "manutenzione",
-      "capitolo": "Manutenzione",
-      "domanda": "Prima della partenza, il conducente dell'autobus deve verificare la pulizia del filtro dell'aria condizionata",
-      "risposta": false
-    },
-    {
-      "capitolo_id": "manutenzione",
-      "capitolo": "Manutenzione",
-      "domanda": "Prima della partenza, il conducente dell'autobus deve verificare la presenza del pannello dei carichi sporgenti",
-      "risposta": false
     },
     {
       "capitolo_id": "manutenzione",
@@ -17905,12 +16903,6 @@
       "capitolo_id": "manutenzione",
       "capitolo": "Manutenzione",
       "domanda": "I cunei fermaruota in dotazione devono essere almeno due, a bordo di un veicolo isolato di massa complessiva superiore a 3,5 tonnellate",
-      "risposta": true
-    },
-    {
-      "capitolo_id": "manutenzione",
-      "capitolo": "Manutenzione",
-      "domanda": "Ai fini della sicurezza, un autobus di massa superiore a 3,5 tonnellate deve essere dotato di almeno due cunei fermaruota di idonee dimensioni",
       "risposta": true
     },
     {
