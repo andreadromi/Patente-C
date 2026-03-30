@@ -166,8 +166,13 @@ export default function SimulationPage() {
       </div>
 
       {/* Progress bar */}
-      <div style={{ height:3, background:'#111827', flexShrink:0 }}>
-        <div style={{ height:'100%', background:'linear-gradient(90deg,#2563EB,#06B6D4)', width:`${(answeredCount/TOTAL)*100}%`, transition:'width 0.4s' }}/>
+      <div style={{ padding:'6px 18px 0', background:'#0C111D', flexShrink:0 }}>
+        <div style={{ display:'flex', alignItems:'center', gap:10 }}>
+          <div style={{ flex:1, height:7, background:'#1F2937', borderRadius:4, overflow:'hidden' }}>
+            <div style={{ height:'100%', background:'linear-gradient(90deg,#2563EB,#06B6D4)', width:`${(answeredCount/TOTAL)*100}%`, transition:'width 0.4s', borderRadius:4 }}/>
+          </div>
+          <span style={{ fontSize:11, fontWeight:700, color:'#374151', minWidth:32, textAlign:'right' }}>{answeredCount}/{TOTAL}</span>
+        </div>
       </div>
 
       {/* Numeri domande */}
