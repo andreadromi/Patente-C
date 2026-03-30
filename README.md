@@ -42,3 +42,12 @@ npm run dev
 - PostgreSQL (Neon) + Prisma
 - Tailwind CSS
 - Vercel
+
+## Variabili d'ambiente
+
+Aggiungi su Vercel → Settings → Environment Variables:
+
+```
+DATABASE_URL=postgresql://neondb_owner:npg_biZDsIB0rH5m@ep-noisy-firefly-agmg9wok-pooler.c-2.eu-central-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+JWT_SECRET=patente-c-quiz-andrea-2026-segreto
+```
