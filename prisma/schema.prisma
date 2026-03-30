@@ -1,0 +1,127 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  username  String   @unique
+  password  String?
+  isAdmin   Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  userSimulations UserSimulation[]
+  weakPoints      WeakPoint[]
+
+  @@map("users")
+}
+
+// 17 capitoli patente C
+model Capitolo {
+  id         Int    @id @default(autoincrement())
+  code       String @unique // motori, freni, pneumatici, ecc.
+  name       String
+  nEsame     Int    // domande estratte all'esame
+
+  questions   Question[]
+  areaResults CapitoloResult[]
+
+  @@map("capitoli")
+}
+
+// Domande Vero/Falso
+model Question {
+  id         String  @id @default(cuid())
+  capitoloId Int
+  text       String
+  risposta   Boolean // true = VERO, false = FALSO
+
+  capitolo   Capitolo    @relation(fields: [capitoloId], references: [id])
+  answers    Answer[]
+  weakPoints WeakPoint[]
+
+  @@map("questions")
+}
+
+// Simulazioni pre-generate (pool di 40 domande ciascuna)
+model Simulation {
+  id        String   @id @default(cuid())
+  number    Int      @unique
+  questions String   // JSON array di question IDs (40 domande)
+  createdAt DateTime @default(now())
+
+  userSimulations UserSimulation[]
+
+  @@map("simulations")
+}
+
+model UserSimulation {
+  id            String    @id @default(cuid())
+  userId        String
+  simulationId  String
+  status        String    // IN_PROGRESS, COMPLETED
+  questionOrder String?   // JSON array question IDs
+  startedAt     DateTime  @default(now())
+  completedAt   DateTime?
+  timeElapsed   Int?
+  score         Int?      // risposte corrette (0-40)
+  errors        Int?      // errori (0-40)
+  passed        Boolean?  // true se errori <= 4
+
+  user            User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  simulation      Simulation       @relation(fields: [simulationId], references: [id])
+  answers         Answer[]
+  capitoloResults CapitoloResult[]
+
+  @@map("user_simulations")
+}
+
+model Answer {
+  id               String   @id @default(cuid())
+  userSimulationId String
+  questionId       String
+  userAnswer       Boolean? // true = VERO, false = FALSO, null = non risposta
+  isCorrect        Boolean?
+  answeredAt       DateTime @default(now())
+
+  userSimulation UserSimulation @relation(fields: [userSimulationId], references: [id], onDelete: Cascade)
+  question       Question       @relation(fields: [questionId], references: [id])
+
+  @@unique([userSimulationId, questionId])
+  @@map("answers")
+}
+
+model CapitoloResult {
+  id               String  @id @default(cuid())
+  userSimulationId String
+  capitoloId       Int
+  totalQuestions   Int
+  correctAnswers   Int
+  accuracy         Float
+
+  userSimulation UserSimulation @relation(fields: [userSimulationId], references: [id], onDelete: Cascade)
+  capitolo       Capitolo       @relation(fields: [capitoloId], references: [id])
+
+  @@map("capitolo_results")
+}
+
+model WeakPoint {
+  id                 String   @id @default(cuid())
+  userId             String
+  questionId         String
+  consecutiveCorrect Int      @default(0)
+  totalAttempts      Int      @default(0)
+  lastAttemptDate    DateTime @updatedAt
+  createdAt          DateTime @default(now())
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  question Question @relation(fields: [questionId], references: [id])
+
+  @@unique([userId, questionId])
+  @@map("weak_points")
+}
