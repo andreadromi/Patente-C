@@ -3,10 +3,9 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { useRouter, useParams } from 'next/navigation'
 import Link from 'next/link'
-import { Home, BookOpen, AlertTriangle, CheckCircle2, XCircle, ChevronLeft, ChevronRight, Flag } from 'lucide-react'
+import { Home, BookOpen, Flag, ChevronLeft, ChevronRight, CheckCircle2, XCircle } from 'lucide-react'
 
 interface Question { id: string; text: string; capitolo: string }
-
 const TOTAL = 40
 const TIME_LIMIT = 40 * 60
 
@@ -26,8 +25,7 @@ export default function SimulationPage() {
   const [error, setError] = useState<string | null>(null)
   const [submitting, setSubmitting] = useState(false)
   const [timeLeft, setTimeLeft] = useState(TIME_LIMIT)
-  const [answered, setAnswered] = useState<boolean | null>(null)
-  const [showMenu, setShowMenu] = useState(false)
+  const [lastFeedback, setLastFeedback] = useState<{correct: boolean, show: boolean} | null>(null)
   const timerRef = useRef<NodeJS.Timeout | null>(null)
 
   const handleComplete = useCallback(async () => {
@@ -73,7 +71,13 @@ export default function SimulationPage() {
     return () => clearInterval(timerRef.current!)
   }, [loading, error, handleComplete])
 
-  // Scroll numeri al corrente
+  // Auto-complete quando tutte risposte date
+  useEffect(() => {
+    if (!loading && Object.keys(answers).length === TOTAL && questions.length === TOTAL) {
+      setTimeout(() => handleComplete(), 800)
+    }
+  }, [answers, questions, loading, handleComplete])
+
   useEffect(() => {
     if (numbersRef.current) {
       const btn = numbersRef.current.children[idx] as HTMLElement
@@ -84,50 +88,49 @@ export default function SimulationPage() {
   const fmtTime = (s: number) => `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`
 
   const goNext = useCallback(() => {
-    setAnswered(null)
+    setLastFeedback(null)
     if (idx < TOTAL - 1) setIdx(i => i + 1)
   }, [idx])
 
   const handleAnswer = async (value: boolean) => {
-    if (!userSimId || answered !== null) return
-    const q = questions[idx]
-    setAnswered(value)
+    if (!userSimId || q.id in answers) return
+    const q2 = questions[idx]
     const res = await fetch(`/api/user-simulations/${userSimId}/answer`, {
       method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ questionId: q.id, userAnswer: value })
+      body: JSON.stringify({ questionId: q2.id, userAnswer: value })
     })
     const data = await res.json()
-    setAnswers(p => ({ ...p, [q.id]: value }))
-    setFeedback(p => ({ ...p, [q.id]: data.isCorrect }))
+    setAnswers(p => ({ ...p, [q2.id]: value }))
+    setFeedback(p => ({ ...p, [q2.id]: data.isCorrect }))
+    setLastFeedback({ correct: data.isCorrect, show: true })
 
-    // Auto-avanza se corretto dopo 1.2s
-    if (data.isCorrect && idx < TOTAL - 1) {
-      autoRef.current = setTimeout(() => goNext(), 1200)
+    if (idx < TOTAL - 1) {
+      autoRef.current = setTimeout(() => goNext(), data.isCorrect ? 900 : 1400)
     }
   }
 
   const goTo = (i: number) => {
     clearTimeout(autoRef.current!)
-    setAnswered(questions[i]?.id in answers ? answers[questions[i].id] : null)
+    setLastFeedback(null)
     setIdx(i)
   }
 
   if (loading) return (
-    <div style={{ minHeight:'100vh', background:'#020817', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:14 }}>
+    <div style={{ minHeight:'100vh', background:'#030712', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:14, fontFamily:'system-ui' }}>
       <div style={{ width:40, height:40, border:'3px solid #1E2D4A', borderTopColor:'#2563EB', borderRadius:'50%', animation:'spin 0.7s linear infinite' }}/>
-      <p style={{ color:'#475569', fontSize:13, fontFamily:'system-ui' }}>Caricamento simulazione...</p>
+      <p style={{ color:'#4B5563', fontSize:13 }}>Preparazione quiz...</p>
       <style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style>
     </div>
   )
 
   if (error) return (
-    <div style={{ minHeight:'100vh', background:'#020817', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:24, gap:16, fontFamily:'system-ui' }}>
-      <AlertTriangle size={48} color="#EF4444"/>
-      <p style={{ color:'#EF4444', fontWeight:800, margin:0, fontSize:18 }}>Errore</p>
-      <p style={{ color:'#475569', fontSize:13, textAlign:'center', maxWidth:280 }}>{error}</p>
+    <div style={{ minHeight:'100vh', background:'#030712', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:24, gap:16, fontFamily:'system-ui' }}>
+      <XCircle size={48} color="#EF4444"/>
+      <p style={{ color:'#F1F5F9', fontWeight:800, margin:0, fontSize:20 }}>Errore</p>
+      <p style={{ color:'#6B7280', fontSize:14, textAlign:'center', maxWidth:280 }}>{error}</p>
       <button onClick={() => { setError(null); setLoading(true); startSimulation() }}
-        style={{ padding:'12px 28px', background:'#2563EB', color:'#fff', border:'none', borderRadius:12, fontWeight:700, cursor:'pointer', fontFamily:'inherit' }}>Riprova</button>
-      <Link href="/dashboard" style={{ color:'#475569', fontSize:12 }}>← Dashboard</Link>
+        style={{ padding:'12px 28px', background:'#2563EB', color:'#fff', border:'none', borderRadius:12, fontWeight:700, cursor:'pointer', fontFamily:'inherit', fontSize:14 }}>Riprova</button>
+      <Link href="/dashboard" style={{ color:'#4B5563', fontSize:13 }}>← Home</Link>
     </div>
   )
 
@@ -137,127 +140,134 @@ export default function SimulationPage() {
   const answeredCount = Object.keys(answers).length
   const errorCount = Object.values(feedback).filter(v => !v).length
   const correctCount = Object.values(feedback).filter(v => v).length
-  const isAns = q.id in answers
-  const isCorrect = feedback[q.id]
   const timeWarn = timeLeft < 300
+  const isAnswered = q.id in answers
 
   return (
-    <div style={{ height:'100dvh', background:'#020817', color:'#F1F5F9', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
+    <div style={{ height:'100dvh', background:'#030712', color:'#F9FAFB', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
 
       {/* Header */}
-      <div style={{ padding:'12px 16px', background:'#0A0F1C', display:'flex', alignItems:'center', justifyContent:'space-between', flexShrink:0 }}>
+      <div style={{ padding:'12px 18px', background:'#0C111D', display:'flex', alignItems:'center', justifyContent:'space-between', flexShrink:0, borderBottom:'1px solid #111827' }}>
         <div>
-          <div style={{ fontSize:10, fontWeight:700, color:'#3B82F6', letterSpacing:1.5 }}>PATENTE C · {idx+1}/{TOTAL}</div>
-          <div style={{ fontSize:11, color:'#475569', marginTop:1 }}>{q.capitolo}</div>
+          <div style={{ fontSize:10, fontWeight:700, color:'#3B82F6', letterSpacing:2 }}>QUIZ · {idx+1}/{TOTAL}</div>
+          <div style={{ fontSize:11, color:'#4B5563', marginTop:1 }}>{q.capitolo}</div>
         </div>
         <div style={{ display:'flex', alignItems:'center', gap:8 }}>
           {errorCount >= 3 && (
-            <div style={{ background: errorCount >= 4 ? '#7F1D1D' : '#78350F', borderRadius:8, padding:'4px 10px', fontSize:11, fontWeight:700, color: errorCount >= 4 ? '#FCA5A5' : '#FCD34D' }}>
-              {errorCount >= 4 ? '⛔ Fuori!' : `⚠️ ${errorCount}/4`}
+            <div style={{ background: errorCount >= 4 ? '#450A0A' : '#431407', borderRadius:8, padding:'4px 10px', fontSize:11, fontWeight:700, color: errorCount >= 4 ? '#FCA5A5' : '#FED7AA', display:'flex', alignItems:'center', gap:4 }}>
+              <XCircle size={11} color={errorCount >= 4 ? '#FCA5A5' : '#FED7AA'}/>
+              {errorCount}/4
             </div>
           )}
-          <div style={{ fontFamily:'monospace', fontSize:19, fontWeight:900, padding:'6px 12px', borderRadius:10, background: timeWarn ? '#2D0A0A' : '#0D1424', border:`1.5px solid ${timeWarn?'#EF4444':'#1E2D4A'}`, color: timeWarn ? '#EF4444' : '#3B82F6' }}>
+          <div style={{ fontFamily:'monospace', fontSize:20, fontWeight:900, padding:'6px 13px', borderRadius:10,
+            background: timeWarn ? '#450A0A' : '#111827',
+            border:`1.5px solid ${timeWarn?'#DC2626':'#1F2937'}`,
+            color: timeWarn ? '#F87171' : '#3B82F6' }}>
             {fmtTime(timeLeft)}
           </div>
         </div>
       </div>
 
-      {/* Numeri domande — scroll orizzontale, occupa tutta la larghezza */}
-      <div style={{ background:'#0A0F1C', borderBottom:'1px solid #0D1424', padding:'8px 0', flexShrink:0 }}>
-        <div style={{ display:'flex', alignItems:'center', gap:0 }}>
-          <button onClick={() => setIdx(i => Math.max(0, i-1))}
-            style={{ padding:'0 10px', background:'none', border:'none', color:'#1E2D4A', cursor:'pointer', flexShrink:0 }}>
-            <ChevronLeft size={18} color={idx > 0 ? '#475569' : '#1E2D4A'}/>
+      {/* Progress bar sottile */}
+      <div style={{ height:3, background:'#111827', flexShrink:0 }}>
+        <div style={{ height:'100%', background:'linear-gradient(90deg,#2563EB,#06B6D4)', width:`${(answeredCount/TOTAL)*100}%`, transition:'width 0.4s' }}/>
+      </div>
+
+      {/* Numeri domande scrollabili */}
+      <div style={{ background:'#0C111D', padding:'8px 0', flexShrink:0, borderBottom:'1px solid #111827' }}>
+        <div style={{ display:'flex', alignItems:'center' }}>
+          <button onClick={() => goTo(Math.max(0,idx-1))} style={{ padding:'0 10px', background:'none', border:'none', cursor:'pointer' }}>
+            <ChevronLeft size={16} color={idx > 0 ? '#4B5563' : '#1F2937'}/>
           </button>
-          <div ref={numbersRef} style={{ flex:1, display:'flex', gap:5, overflowX:'auto', scrollbarWidth:'none', padding:'0 2px' }}>
-            <style>{`.nums::-webkit-scrollbar{display:none}`}</style>
+          <div ref={numbersRef} style={{ flex:1, display:'flex', gap:4, overflowX:'auto', scrollbarWidth:'none' }}>
+            <style>{`div::-webkit-scrollbar{display:none}`}</style>
             {questions.map((qq, i) => {
-              const isDone = qq.id in answers
-              const isOk = feedback[qq.id]
-              const isCur = i === idx
+              const done = qq.id in answers
+              const ok = feedback[qq.id]
+              const cur = i === idx
               return (
                 <button key={i} onClick={() => goTo(i)} style={{
-                  minWidth:34, height:34, borderRadius:9, border:'none', fontSize:11, fontWeight:800, cursor:'pointer', flexShrink:0,
-                  background: isCur ? '#2563EB' : isDone ? (isOk ? '#022C22' : '#3D0A0A') : '#0D1424',
-                  color: isCur ? '#fff' : isDone ? (isOk ? '#10B981' : '#EF4444') : '#2D3748',
-                  boxShadow: isCur ? '0 0 12px rgba(37,99,235,0.7)' : 'none',
-                  fontFamily:'inherit', transition:'all 0.15s'
+                  minWidth:32, height:32, borderRadius:8, border:'none', fontSize:11, fontWeight:800, cursor:'pointer', flexShrink:0, fontFamily:'inherit', transition:'all 0.15s',
+                  background: cur ? '#2563EB' : done ? (ok ? '#14532D' : '#450A0A') : '#111827',
+                  color: cur ? '#fff' : done ? (ok ? '#4ADE80' : '#F87171') : '#374151',
+                  boxShadow: cur ? '0 0 10px rgba(37,99,235,0.5)' : 'none',
                 }}>{i+1}</button>
               )
             })}
           </div>
-          <button onClick={() => setIdx(i => Math.min(TOTAL-1, i+1))}
-            style={{ padding:'0 10px', background:'none', border:'none', cursor:'pointer', flexShrink:0 }}>
-            <ChevronRight size={18} color={idx < TOTAL-1 ? '#475569' : '#1E2D4A'}/>
+          <button onClick={() => goTo(Math.min(TOTAL-1,idx+1))} style={{ padding:'0 10px', background:'none', border:'none', cursor:'pointer' }}>
+            <ChevronRight size={16} color={idx < TOTAL-1 ? '#4B5563' : '#1F2937'}/>
           </button>
         </div>
-        {/* Stats mini */}
-        <div style={{ display:'flex', justifyContent:'center', gap:16, fontSize:11, marginTop:4 }}>
-          <span style={{ color:'#10B981', fontWeight:700 }}>✓ {correctCount}</span>
-          <span style={{ color:'#2D3748' }}>{answeredCount}/{TOTAL}</span>
-          <span style={{ color: errorCount >= 3 ? '#EF4444' : '#2D3748', fontWeight: errorCount >= 3 ? 700 : 400 }}>✗ {errorCount}</span>
+        <div style={{ display:'flex', justifyContent:'center', gap:14, fontSize:11, marginTop:4, color:'#374151' }}>
+          <span style={{ color:'#4ADE80', fontWeight:700 }}>✓ {correctCount}</span>
+          <span>{answeredCount}/{TOTAL}</span>
+          <span style={{ color: errorCount >= 3 ? '#F87171' : '#374151', fontWeight: errorCount >= 3 ? 700 : 400 }}>✗ {errorCount}</span>
         </div>
       </div>
 
       {/* Domanda */}
-      <div style={{ flex:1, padding:'16px', overflowY:'auto', display:'flex', flexDirection:'column', gap:12 }}>
-        <div style={{ background:'#0D1424', borderRadius:18, padding:'18px 16px' }}>
-          <p style={{ fontSize:16, lineHeight:1.7, color:'#F1F5F9', margin:0, fontWeight:500 }}>{q.text}</p>
+      <div style={{ flex:1, padding:'20px 18px', overflowY:'auto', display:'flex', flexDirection:'column', gap:14 }}>
+
+        {/* Testo domanda */}
+        <div style={{ background:'#0C111D', border:'1px solid #1F2937', borderRadius:20, padding:'20px 18px' }}>
+          <p style={{ fontSize:17, lineHeight:1.75, color:'#F9FAFB', margin:0, fontWeight:500 }}>{q.text}</p>
         </div>
 
-        {!isAns ? (
+        {/* Feedback mini sotto domanda — solo quando risposta data */}
+        {isAnswered && lastFeedback?.show && (
+          <div style={{ display:'flex', alignItems:'center', gap:10, padding:'12px 16px', background: feedback[q.id] ? '#14532D' : '#450A0A', borderRadius:14, border:`1px solid ${feedback[q.id]?'#166534':'#7F1D1D'}` }}>
+            {feedback[q.id]
+              ? <CheckCircle2 size={18} color="#4ADE80"/>
+              : <XCircle size={18} color="#F87171"/>}
+            <span style={{ fontSize:14, fontWeight:700, color: feedback[q.id] ? '#4ADE80' : '#F87171' }}>
+              {feedback[q.id] ? 'Corretto!' : `Sbagliato — risposta: ${answers[q.id] ? 'FALSO' : 'VERO'}`}
+            </span>
+          </div>
+        )}
+
+        {/* Bottoni */}
+        {!isAnswered ? (
           <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10 }}>
             {[
-              { val:true, label:'VERO', c:'#10B981', hover:'#022C22' },
-              { val:false, label:'FALSO', c:'#EF4444', hover:'#2D0A0A' },
-            ].map(({ val, label, c, hover }) => (
+              { val:true, label:'VERO', c:'#4ADE80', border:'#14532D', hover:'#052E16' },
+              { val:false, label:'FALSO', c:'#F87171', border:'#7F1D1D', hover:'#450A0A' },
+            ].map(({ val, label, c, border, hover }) => (
               <button key={label} onClick={() => handleAnswer(val)}
-                style={{ padding:'18px 0', borderRadius:16, border:`2px solid ${c}22`, background:'#0D1424', color:c, fontSize:16, fontWeight:900, letterSpacing:2, cursor:'pointer', fontFamily:'inherit', transition:'background 0.15s' }}
+                style={{ padding:'18px 0', borderRadius:16, border:`1.5px solid ${border}`, background:'#0C111D', color:c, fontSize:16, fontWeight:900, letterSpacing:2, cursor:'pointer', fontFamily:'inherit' }}
                 onMouseEnter={e => (e.currentTarget.style.background = hover)}
-                onMouseLeave={e => (e.currentTarget.style.background = '#0D1424')}>
+                onMouseLeave={e => (e.currentTarget.style.background = '#0C111D')}>
                 {label}
               </button>
             ))}
           </div>
         ) : (
-          <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
-            <div style={{ background: isCorrect ? '#022C22' : '#2D0A0A', border:`1px solid ${isCorrect?'#10B981':'#EF4444'}`, borderRadius:14, padding:'14px 16px', display:'flex', alignItems:'center', gap:10 }}>
-              {isCorrect
-                ? <CheckCircle2 size={20} color="#10B981"/>
-                : <XCircle size={20} color="#EF4444"/>}
-              <span style={{ color: isCorrect ? '#10B981' : '#EF4444', fontWeight:800, fontSize:14 }}>
-                {isCorrect ? 'Risposta corretta!' : `Sbagliato — risposta: ${answers[q.id] ? 'FALSO' : 'VERO'}`}
-              </span>
+          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10 }}>
+            <div style={{ padding:'18px 0', borderRadius:16, border:`1.5px solid ${feedback[q.id]?'#14532D':'#1F2937'}`, background: feedback[q.id] ? '#052E16' : '#0C111D', color:'#4ADE80', fontSize:16, fontWeight:900, letterSpacing:2, textAlign:'center', opacity: answers[q.id] === true ? 1 : 0.3 }}>
+              VERO
             </div>
-            {!isCorrect && idx < TOTAL - 1 && (
-              <button onClick={goNext} style={{ padding:'14px 0', background:'linear-gradient(135deg,#2563EB,#1D4ED8)', color:'#fff', border:'none', borderRadius:14, fontSize:15, fontWeight:800, cursor:'pointer', fontFamily:'inherit' }}>
-                Avanti →
-              </button>
-            )}
-            {isCorrect && idx < TOTAL - 1 && (
-              <div style={{ textAlign:'center', fontSize:12, color:'#2D3748' }}>Avanzamento automatico...</div>
-            )}
+            <div style={{ padding:'18px 0', borderRadius:16, border:`1.5px solid ${!feedback[q.id]?'#7F1D1D':'#1F2937'}`, background: !feedback[q.id] ? '#450A0A' : '#0C111D', color:'#F87171', fontSize:16, fontWeight:900, letterSpacing:2, textAlign:'center', opacity: answers[q.id] === false ? 1 : 0.3 }}>
+              FALSO
+            </div>
           </div>
         )}
       </div>
 
-      {/* Bottom nav — stile app mobile */}
-      <div style={{ background:'#0A0F1C', borderTop:'1px solid #0D1424', display:'flex', flexShrink:0 }}>
-        <Link href="/dashboard" style={{ flex:1, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
-          <Home size={20} color="#475569"/>
-          <span style={{ fontSize:10, color:'#475569', fontWeight:600 }}>Home</span>
+      {/* Bottom nav */}
+      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0 }}>
+        <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
+          <Home size={20} color="#4B5563"/>
+          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Home</span>
         </Link>
-        <Link href="/weak-points" style={{ flex:1, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
-          <BookOpen size={20} color="#475569"/>
-          <span style={{ fontSize:10, color:'#475569', fontWeight:600 }}>Deboli</span>
+        <Link href="/weak-points" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
+          <BookOpen size={20} color="#4B5563"/>
+          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Deboli</span>
         </Link>
-        <button
-          onClick={handleComplete}
-          disabled={submitting}
-          style={{ flex:1, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:4, padding:'10px 0', background:'none', border:'none', cursor:'pointer', fontFamily:'inherit' }}>
-          <Flag size={20} color={answeredCount === TOTAL ? '#10B981' : '#475569'}/>
-          <span style={{ fontSize:10, color: answeredCount === TOTAL ? '#10B981' : '#475569', fontWeight:600 }}>
-            {submitting ? '...' : `Termina`}
+        <button onClick={handleComplete} disabled={submitting}
+          style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:4, padding:'10px 0', background:'none', border:'none', cursor:'pointer', fontFamily:'inherit' }}>
+          <Flag size={20} color={submitting ? '#4B5563' : '#6B7280'}/>
+          <span style={{ fontSize:10, color: submitting ? '#4B5563' : '#6B7280', fontWeight:600 }}>
+            {submitting ? '...' : 'Termina'}
           </span>
         </button>
       </div>
