@@ -109,7 +109,7 @@ export default function DashboardPage() {
             </Link>
 
             {/* Frecce + dots */}
-            <div style={{ display:'flex', alignItems:'center', gap:8, flexShrink:0 }}>
+            <div style={{ display:'flex', alignItems:'center', gap:8, flexShrink:0, marginBottom:4 }}>
               <button onClick={() => setIdx(i => Math.max(0,i-1))} disabled={idx===0}
                 style={{ width:44, height:40, background:'#0C111D', border:'1px solid #1F2937', borderRadius:12, display:'flex', alignItems:'center', justifyContent:'center', cursor:idx===0?'default':'pointer', flexShrink:0 }}>
                 <ChevronLeft size={18} color={idx===0?'#1F2937':'#6B7280'}/>

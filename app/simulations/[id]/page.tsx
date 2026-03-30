@@ -152,10 +152,9 @@ export default function SimulationPage() {
         </div>
         <div style={{ display:'flex', alignItems:'center', gap:8 }}>
           {errorCount >= 3 && (
-            <div style={{ background:'#450A0A', borderRadius:8, padding:'4px 10px', fontSize:11, fontWeight:700, color:'#F87171', display:'flex', alignItems:'center', gap:4 }}>
-              <XCircle size={11} color="#F87171"/>
-              {errorCount}/4
-            </div>
+            <span style={{ fontSize:11, fontWeight:700, color:errorCount>=4?'#F87171':'#FB923C' }}>
+              {errorCount}/4 err.
+            </span>
           )}
           <div style={{ fontFamily:'monospace', fontSize:20, fontWeight:900, padding:'6px 13px', borderRadius:10,
             background: timeWarn ? '#450A0A' : '#111827',
