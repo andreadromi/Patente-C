@@ -266,13 +266,10 @@ export default function SimulationPage() {
             <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>{label}</span>
           </Link>
         ))}
-        <button onClick={handleComplete} disabled={submitting}
-          style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', background:'none', border:'none', cursor:'pointer', fontFamily:'inherit' }}>
-          <Flag size={19} color={submitting ? '#374151' : '#6B7280'}/>
-          <span style={{ fontSize:9, color: submitting ? '#374151' : '#6B7280', fontWeight:600 }}>
-            {submitting ? '...' : 'Termina'}
-          </span>
-        </button>
+        <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
+          <Flag size={19} color="#4B5563"/>
+          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Esci</span>
+        </Link>
       </div>
     </div>
   )
