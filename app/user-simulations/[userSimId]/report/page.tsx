@@ -156,7 +156,7 @@ export default function ReportPage() {
         </Link>
         <Link href="/weak-points" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
           <BookOpen size={20} color="#4B5563"/>
-          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Deboli</span>
+          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Punti deboli</span>
         </Link>
       </div>
     </div>

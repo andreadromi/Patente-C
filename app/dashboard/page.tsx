@@ -140,34 +140,6 @@ export default function DashboardPage() {
           </div>
         )}
 
-        {/* Storico compatto */}
-        {done.length > 0 && (
-          <div style={{ flexShrink:0 }}>
-            <div style={{ fontSize:9, fontWeight:700, color:'#374151', letterSpacing:2, textTransform:'uppercase', marginBottom:8 }}>Storico recente</div>
-            <div style={{ display:'flex', flexDirection:'column', gap:5 }}>
-              {done.slice(0,2).map(sim => {
-                const last = getLast(sim.id)!
-                return (
-                  <Link key={sim.id} href={`/simulations/${sim.id}`} style={{ textDecoration:'none' }}>
-                    <div style={{ background:'#0C111D', border:'1px solid #1F2937', borderRadius:12, padding:'10px 14px', display:'flex', alignItems:'center', justifyContent:'space-between' }}>
-                      <div style={{ display:'flex', alignItems:'center', gap:10 }}>
-                        <div style={{ width:32, height:32, borderRadius:9, background:last.passed?'#052E16':'#450A0A', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-                          {last.passed ? <CheckCircle2 size={15} color="#4ADE80"/> : <XCircle size={15} color="#F87171"/>}
-                        </div>
-                        <span style={{ fontWeight:700, fontSize:13 }}>Quiz {sim.number}</span>
-                        <span style={{ fontSize:12, color:'#4B5563' }}>
-                          <span style={{ color:last.passed?'#4ADE80':'#F87171', fontWeight:700 }}>{last.score}/40</span>
-                          {' · '}{last.errors} err.
-                        </span>
-                      </div>
-                      <ChevronRight size={13} color="#374151"/>
-                    </div>
-                  </Link>
-                )
-              })}
-            </div>
-          </div>
-        )}
       </div>
 
       {/* Bottom nav */}
@@ -182,7 +154,7 @@ export default function DashboardPage() {
         </Link>
         <Link href="/weak-points" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
           <BookOpen size={20} color="#4B5563"/>
-          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Deboli</span>
+          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Punti deboli</span>
         </Link>
       </div>
     </div>

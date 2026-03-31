@@ -100,7 +100,7 @@ export default function RiepilogoPage() {
 
             return (
               <Link key={sim.id} href={`/simulations/${sim.id}`} style={{ textDecoration:'none' }} className="grid-cell">
-                <div style={{ background:bg, border:`1.5px solid ${borderColor}`, borderRadius:12, padding:'10px 4px 8px', textAlign:'center', display:'flex', flexDirection:'column', alignItems:'center', gap:4, position:'relative' }}>
+                <div style={{ background:bg, border:`1.5px solid ${borderColor}`, borderRadius:12, padding:'8px 4px', textAlign:'center', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, position:'relative', minHeight:58 }}>
 
                   {/* Dot pulsante per "in corso" */}
                   {inProg && (
@@ -150,7 +150,7 @@ export default function RiepilogoPage() {
         </div>
         <Link href="/weak-points" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
           <BookOpen size={20} color="#4B5563"/>
-          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Deboli</span>
+          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Punti deboli</span>
         </Link>
       </div>
     </div>

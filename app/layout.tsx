@@ -1,24 +1,35 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { ThemeProvider } from "@/components/ThemeProvider";
+import type { Metadata, Viewport } from 'next'
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: "Simulazioni Esami - Trasporto Merci",
-  description: "Sistema per esercitarsi su simulazioni d'esame per trasporto merci",
-};
+  title: 'Patente C · CE',
+  description: 'Simulatore esame patente C e CE',
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'black-translucent',
+    title: 'Patente C',
+  },
+}
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export const viewport: Viewport = {
+  themeColor: '#030712',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  viewportFit: 'cover',
+}
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="it" suppressHydrationWarning>
-      <body className="antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          {children}
-        </ThemeProvider>
-      </body>
+    <html lang="it">
+      <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+        <meta name="mobile-web-app-capable" content="yes"/>
+      </head>
+      <body style={{ margin:0, padding:0, background:'#030712' }}>{children}</body>
     </html>
-  );
+  )
 }
