@@ -100,7 +100,7 @@ for arg_url, arg_code in ARGOMENTI:
                     fname = f"{arg_code}_{sol[:20]}.png"
                     try:
                         img_r = SESSION.get(img_url, timeout=15)
-                        if img_r.status_code == 200 and img_r.headers.get('Content-Type','').startswith('image') and len(img_r.content) > 1000:
+                        if img_r.status_code == 200 and img_r.headers.get('Content-Type','').startswith('image') and len(img_r.content) > 100:
                             with open(f"quiz_images/{fname}", "wb") as f:
                                 f.write(img_r.content)
                             mapping[fname] = {"sol": sol, "testo": testo, "capitolo": arg_code}
@@ -120,7 +120,7 @@ for arg_url, arg_code in ARGOMENTI:
                     fname = f"{arg_code}_{sol[:20]}.png"
                     try:
                         img_r = SESSION.get(img_url, timeout=15)
-                        if img_r.status_code == 200 and img_r.headers.get('Content-Type','').startswith('image') and len(img_r.content) > 1000:
+                        if img_r.status_code == 200 and img_r.headers.get('Content-Type','').startswith('image') and len(img_r.content) > 100:
                             with open(f"quiz_images/{fname}", "wb") as f:
                                 f.write(img_r.content)
                             mapping[fname] = {"sol": sol, "testo": testo, "capitolo": arg_code}
