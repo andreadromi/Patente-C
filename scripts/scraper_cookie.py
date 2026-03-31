@@ -5,17 +5,12 @@ from bs4 import BeautifulSoup
 SESSION = requests.Session()
 SESSION.headers.update({
     'User-Agent': 'Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 Chrome/114.0.0.0 Mobile Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+    'Accept': '*/*',
 })
 
 BASE = "https://www.patentisuperiori.com"
-
 SESSION.cookies.set('PHPSESSID', '9ef776d21f54a09cb178a77bdfbcb341', domain='www.patentisuperiori.com')
 SESSION.cookies.set('_ga', 'GA1.1.600161829.1774938363', domain='.patentisuperiori.com')
-
-SKIP = {'/img/patentisuperiori.png','/img/statIcon.png','/img/stampa.png',
-        '/img/statIconSm.png','/img/back.png','/img/next.png','/img/resume.png',
-        '/img/edit.png','/img/trueI.png','/img/falseI.png','/img/mezzi-logo.png'}
 
 ARGOMENTI = [
     "disposizioni-guida-riposo","impiego-cronotachigrafo",
@@ -45,29 +40,33 @@ for arg in ARGOMENTI:
         soup = BeautifulSoup(r.text, "html.parser")
         trovate = 0
 
-        # Cerca le domande con le loro immagini
-        for li in soup.find_all("li"):
-            img = li.find("img", src=lambda s: s and "imageSolution" in s)
-            if not img:
-                continue
-            src = img.get("src","")
+        # Cerca TUTTE le img con imageSolution (anche dentro uk-hidden)
+        for img in soup.find_all("img", src=lambda s: s and "imageSolution" in s):
+            src = img.get("src", "")
             if not src.startswith("http"):
                 src = BASE + src
 
-            testo = li.get_text(" ", strip=True)[:400]
-            # Nome file dal parametro sol=
-            sol = src.split("sol=")[-1][:20] if "sol=" in src else f"{arg}_{pagina}_{trovate}"
+            # Trova il testo della domanda: cerca il tag li o div antenato con testo
+            testo = ""
+            for parent in img.parents:
+                t = parent.get_text(" ", strip=True)
+                if len(t) > 20 and len(t) < 500:
+                    testo = t
+                    break
+
+            sol = src.split("sol=")[-1][:30].replace("/","_") if "sol=" in src else f"{arg}_{pagina}_{trovate}"
             fname = f"{sol}.jpg"
 
             try:
                 img_bytes = SESSION.get(src, timeout=15).content
                 if len(img_bytes) < 200:
+                    print(f"  ⚠ {fname} troppo piccola ({len(img_bytes)}B)")
                     continue
                 with open(f"quiz_images/{fname}", "wb") as f:
                     f.write(img_bytes)
-                mapping[fname] = {"url": src, "testo": testo}
+                mapping[fname] = {"url": src, "testo": testo[:300]}
                 trovate += 1
-                print(f"  ✓ {fname} ({len(img_bytes)}B) — {testo[:50]}")
+                print(f"  ✓ {fname} ({len(img_bytes)}B)")
             except Exception as e:
                 print(f"  ✗ {e}")
 
