@@ -38,21 +38,40 @@ async function uploadToGithub(fname, content) {
   await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0');
   await page.setViewport({ width: 1280, height: 900 });
 
-  // LOGIN
+  // LOGIN via fetch diretto nella pagina
   console.log('Login...');
   await page.goto(`${BASE}/login/registrati.php`, { waitUntil: 'networkidle2' });
-  await page.type('.pat-login-form input[name="username"]', USER, { delay: 50 });
-  await page.type('.pat-login-form input[name="password"]', PASS, { delay: 50 });
   
-  await Promise.all([
-    page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 15000 }).catch(() => {}),
-    page.click('.pat-login-form button[type="submit"]')
-  ]);
-
-  // Verifica login cercando testo "logout" o username nella pagina
-  const pageText = await page.evaluate(() => document.body.innerText);
-  const isLogged = pageText.toLowerCase().includes('logout') || pageText.toLowerCase().includes('andreadromi');
-  console.log(`Login: ${isLogged ? 'OK ✓' : 'FALLITO - continuo comunque'}`);
+  // Usa fetch dalla pagina per fare il POST con i cookie
+  const loginResult = await page.evaluate(async (user, pass, base) => {
+    const body = new URLSearchParams();
+    body.append('username', user);
+    body.append('password', pass);
+    body.append('tryToLog', 'true');
+    body.append('menu_login', 'true');
+    const r = await fetch(base + '/login/registrati.php', {
+      method: 'POST',
+      body: body,
+      credentials: 'include',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+    });
+    const text = await r.text();
+    return {
+      ok: r.ok,
+      url: r.url,
+      hasLogout: text.toLowerCase().includes('logout'),
+      hasUser: text.toLowerCase().includes(user.toLowerCase()),
+      snippet: text.substring(0, 200)
+    };
+  }, USER, PASS, BASE);
+  
+  console.log('Login result:', JSON.stringify(loginResult));
+  
+  // Ricarica la pagina per applicare i cookie
+  await page.reload({ waitUntil: 'networkidle2' });
+  
+  const isLogged = loginResult.hasLogout || loginResult.hasUser;
+  console.log(`Login: ${isLogged ? 'OK ✓' : 'FALLITO'}`);
 
   // Test: vai su una pagina quiz con immagine nota e vedi cosa c'è
   await page.goto(`${BASE}/quiz-patente-c/argomento/dimensione-massa-velocita-1.html`, { waitUntil: 'networkidle2' });
