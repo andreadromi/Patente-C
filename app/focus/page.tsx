@@ -7,28 +7,6 @@ import { Home, BookOpen, BarChart3, Target, Play, Clock, CheckCircle2 } from 'lu
 interface Simulation { id: string; number: number; capitoloCode: string | null; titolo: string | null }
 interface UserSim { id: string; simulationId: string; status: string; passed: boolean | null; score: number | null }
 
-const TOPIC_COLORS: Record<string, { from: string; to: string; accent: string }> = {
-  guida_riposo:      { from:'#1E3A5F', to:'#0C111D', accent:'#60A5FA' },
-  cronotachigrafo:   { from:'#1E1B4B', to:'#0C111D', accent:'#A78BFA' },
-  trasporto_persone: { from:'#1C3A2F', to:'#0C111D', accent:'#34D399' },
-  documenti:         { from:'#1E3A5F', to:'#0C111D', accent:'#38BDF8' },
-  incidente:         { from:'#3B1A1A', to:'#0C111D', accent:'#FB923C' },
-  ruote:             { from:'#1A2E1A', to:'#0C111D', accent:'#4ADE80' },
-  dimensioni:        { from:'#2D1B4E', to:'#0C111D', accent:'#C084FC' },
-  visivo:            { from:'#1E3A5F', to:'#0C111D', accent:'#67E8F9' },
-  caricamento:       { from:'#1C3A2F', to:'#0C111D', accent:'#6EE7B7' },
-  rimorchi:          { from:'#2D2A1A', to:'#0C111D', accent:'#FCD34D' },
-  motori:            { from:'#3B1A1A', to:'#0C111D', accent:'#F87171' },
-  lubrificazione:    { from:'#1A2E2D', to:'#0C111D', accent:'#2DD4BF' },
-  pneumatici:        { from:'#1E1B4B', to:'#0C111D', accent:'#818CF8' },
-  freni:             { from:'#3B2A1A', to:'#0C111D', accent:'#FDBA74' },
-  guasti:            { from:'#2A1A1A', to:'#0C111D', accent:'#FCA5A5' },
-  manutenzione:      { from:'#1A2A2E', to:'#0C111D', accent:'#7DD3FC' },
-  merci:             { from:'#2D2A1A', to:'#0C111D', accent:'#FDE68A' },
-}
-
-const DEFAULT_COLOR = { from:'#1E2D4A', to:'#0C111D', accent:'#3B82F6' }
-
 export default function FocusPage() {
   const router = useRouter()
   const [simulations, setSimulations] = useState<Simulation[]>([])
@@ -64,88 +42,68 @@ export default function FocusPage() {
     byCapitolo[key].sims.push(sim)
   }
   const capitoli = Object.values(byCapitolo)
-  const argomentiCompletati = capitoli.filter(({ sims }) =>
-    sims.every(s => getLast(s.id)?.status === 'COMPLETED')
-  ).length
+  const completati = capitoli.filter(({ sims }) => sims.every(s => getLast(s.id)?.status === 'COMPLETED')).length
 
   return (
     <div style={{ height:'100dvh', background:'#030712', color:'#F9FAFB', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
 
-      {/* Header */}
-      <div style={{ padding:'18px 18px 12px', flexShrink:0 }}>
+      <div style={{ padding:'18px 18px 10px', flexShrink:0 }}>
         <div style={{ fontSize:10, fontWeight:700, color:'#3B82F6', letterSpacing:2, marginBottom:4 }}>PATENTE C · CE</div>
         <div style={{ display:'flex', alignItems:'baseline', justifyContent:'space-between' }}>
-          <h1 style={{ fontSize:32, fontWeight:900, margin:0, letterSpacing:-1.5, textTransform:'uppercase' }}>FOCUS</h1>
-          <span style={{ fontSize:12, color:'#374151', fontWeight:600 }}>{argomentiCompletati}/{capitoli.length}</span>
+          <h1 style={{ fontSize:30, fontWeight:900, margin:0, letterSpacing:-1, textTransform:'uppercase' }}>FOCUS</h1>
+          <span style={{ fontSize:12, color:'#374151', fontWeight:600 }}>{completati}/{capitoli.length}</span>
         </div>
       </div>
 
-      {/* Grid */}
-      <div style={{ flex:1, overflowY:'auto', padding:'4px 16px 16px' }}>
-        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10 }}>
-          {capitoli.map(({ titolo, code, sims }) => {
-            const completati = sims.filter(s => getLast(s.id)?.status === 'COMPLETED').length
-            const tuttoFatto = completati === sims.length
-            const pct = Math.round((completati / sims.length) * 100)
-            const inCorso = sims.find(s => getLast(s.id)?.status === 'IN_PROGRESS')
-            const prossimo = inCorso || sims.find(s => !getLast(s.id)) || sims[sims.length-1]
-            const { from, accent } = TOPIC_COLORS[code] || DEFAULT_COLOR
-            const totaleDomande = sims.length * 40
+      <div style={{ flex:1, overflowY:'auto', padding:'4px 16px 16px', display:'flex', flexDirection:'column', gap:8 }}>
+        {capitoli.map(({ titolo, sims }) => {
+          const done = sims.filter(s => getLast(s.id)?.status === 'COMPLETED').length
+          const tuttoFatto = done === sims.length
+          const pct = Math.round((done / sims.length) * 100)
+          const inCorso = sims.find(s => getLast(s.id)?.status === 'IN_PROGRESS')
+          const prossimo = inCorso || sims.find(s => !getLast(s.id)) || sims[sims.length-1]
 
-            return (
-              <Link key={code} href={`/simulations/${prossimo.id}`} style={{ textDecoration:'none' }}>
-                <div style={{
-                  borderRadius:20, padding:'16px 14px',
-                  background: tuttoFatto ? '#052E16' : `linear-gradient(145deg,${from},#0C111D)`,
-                  border:`1px solid ${tuttoFatto ? '#166534' : accent}22`,
-                  display:'flex', flexDirection:'column', gap:10,
-                  minHeight:140, position:'relative', overflow:'hidden',
-                  boxShadow: tuttoFatto ? 'none' : `0 4px 20px ${accent}15`
-                }}>
-                  {/* Cerchio decorativo */}
-                  <div style={{ position:'absolute', right:-20, top:-20, width:80, height:80, borderRadius:'50%', background:`${accent}12` }}/>
-
-                  {/* Icona status */}
-                  <div style={{ display:'flex', justifyContent:'space-between', alignItems:'flex-start' }}>
-                    <div style={{ width:34, height:34, borderRadius:10, background:`${accent}20`, display:'flex', alignItems:'center', justifyContent:'center' }}>
-                      {tuttoFatto
-                        ? <CheckCircle2 size={18} color="#4ADE80"/>
-                        : inCorso
-                          ? <Clock size={18} color={accent}/>
-                          : <Target size={18} color={accent}/>}
-                    </div>
-                    <span style={{ fontSize:11, fontWeight:800, color: tuttoFatto ? '#4ADE80' : accent }}>
-                      {tuttoFatto ? '✓' : `${pct}%`}
-                    </span>
-                  </div>
-
-                  {/* Titolo */}
-                  <div style={{ flex:1 }}>
-                    <div style={{ fontSize:14, fontWeight:800, color:'#F9FAFB', lineHeight:1.3, marginBottom:3 }}>{titolo}</div>
-                    <div style={{ fontSize:11, color:'#4B5563' }}>{totaleDomande} domande</div>
-                  </div>
-
-                  {/* Progress + CTA */}
-                  <div>
-                    <div style={{ height:3, background:'#1F2937', borderRadius:2, overflow:'hidden', marginBottom:8 }}>
-                      <div style={{ height:'100%', borderRadius:2, background: tuttoFatto ? '#4ADE80' : accent, width:`${pct}%`, transition:'width 0.6s' }}/>
-                    </div>
-                    <div style={{ display:'inline-flex', alignItems:'center', gap:5, background:`${accent}18`, borderRadius:8, padding:'5px 10px' }}>
-                      {tuttoFatto
-                        ? <><CheckCircle2 size={11} color="#4ADE80"/><span style={{ fontSize:11, color:'#4ADE80', fontWeight:700 }}>Completato</span></>
-                        : inCorso
-                          ? <><Clock size={11} color={accent}/><span style={{ fontSize:11, color:accent, fontWeight:700 }}>Continua</span></>
-                          : <><Play size={11} color={accent}/><span style={{ fontSize:11, color:accent, fontWeight:700 }}>Inizia</span></>}
-                    </div>
-                  </div>
+          return (
+            <Link key={titolo} href={`/simulations/${prossimo.id}`} style={{ textDecoration:'none' }}>
+              <div style={{ background:'#0C111D', border:`1px solid ${tuttoFatto ? '#166534' : '#1F2937'}`, borderRadius:16, padding:'14px 16px', display:'flex', alignItems:'center', gap:14 }}>
+                {/* Icona stato */}
+                <div style={{ width:40, height:40, borderRadius:12, flexShrink:0, display:'flex', alignItems:'center', justifyContent:'center',
+                  background: tuttoFatto ? '#052E16' : inCorso ? '#0F1E3D' : '#111827' }}>
+                  {tuttoFatto
+                    ? <CheckCircle2 size={20} color="#4ADE80"/>
+                    : inCorso
+                      ? <Clock size={20} color="#93C5FD"/>
+                      : <Target size={20} color="#374151"/>}
                 </div>
-              </Link>
-            )
-          })}
-        </div>
+
+                {/* Testo + progress */}
+                <div style={{ flex:1, minWidth:0 }}>
+                  <div style={{ fontSize:14, fontWeight:700, color:'#F9FAFB', marginBottom:3, whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis' }}>{titolo}</div>
+                  <div style={{ height:4, background:'#1F2937', borderRadius:2, overflow:'hidden', marginBottom:4 }}>
+                    <div style={{ height:'100%', borderRadius:2, background: tuttoFatto ? '#4ADE80' : '#2563EB', width:`${pct}%`, transition:'width 0.5s' }}/>
+                  </div>
+                  <div style={{ fontSize:11, color:'#374151' }}>{sims.length * 40} domande · {pct}%</div>
+                </div>
+
+                {/* CTA */}
+                <div style={{ flexShrink:0, display:'flex', alignItems:'center', gap:4, padding:'7px 12px', borderRadius:10,
+                  background: tuttoFatto ? '#052E16' : '#111827',
+                  border:`1px solid ${tuttoFatto ? '#166534' : '#1F2937'}` }}>
+                  {tuttoFatto
+                    ? <CheckCircle2 size={13} color="#4ADE80"/>
+                    : inCorso
+                      ? <Clock size={13} color="#93C5FD"/>
+                      : <Play size={13} color="#3B82F6"/>}
+                  <span style={{ fontSize:12, fontWeight:700, color: tuttoFatto ? '#4ADE80' : inCorso ? '#93C5FD' : '#3B82F6' }}>
+                    {tuttoFatto ? 'Fatto' : inCorso ? 'Riprendi' : 'Inizia'}
+                  </span>
+                </div>
+              </div>
+            </Link>
+          )
+        })}
       </div>
 
-      {/* Bottom nav */}
       <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', flexShrink:0 }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
           <Home size={19} color="#4B5563"/><span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Home</span>
