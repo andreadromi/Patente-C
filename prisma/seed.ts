@@ -15,7 +15,6 @@ async function main() {
   const simsPath = path.join(process.cwd(), 'data', 'simulations_patente_c.json')
   const simData = JSON.parse(fs.readFileSync(simsPath, 'utf-8'))
 
-  // 1. Admin
   const adminHash = await bcrypt.hash('Admin2025', 10)
   await prisma.user.upsert({
     where: { username: 'admin' },
@@ -24,7 +23,6 @@ async function main() {
   })
   console.log('✅ Admin creato')
 
-  // 2. Cancella nell'ordine corretto (rispettando FK)
   await prisma.answer.deleteMany()
   await prisma.capitoloResult.deleteMany()
   await prisma.weakPoint.deleteMany()
@@ -34,7 +32,6 @@ async function main() {
   await prisma.capitolo.deleteMany()
   console.log('✅ Dati vecchi rimossi')
 
-  // 3. Capitoli
   for (let i = 0; i < capitoli.length; i++) {
     const cap = capitoli[i]
     await prisma.capitolo.create({
@@ -43,7 +40,6 @@ async function main() {
   }
   console.log(`✅ ${capitoli.length} capitoli creati`)
 
-  // 4. Domande in batch
   const capMap: Record<string, number> = {}
   capitoli.forEach((c: any, i: number) => { capMap[c.code] = i + 1 })
 
@@ -63,19 +59,21 @@ async function main() {
   }
   console.log(`\n✅ ${domande.length} domande create`)
 
-  // 5. Simulazioni
   const allQuestions = await prisma.question.findMany({ select: { id: true, text: true } })
   const textToId: Record<string, string> = {}
   allQuestions.forEach(q => { textToId[q.text] = q.id })
 
   let simCreated = 0
   for (const sim of simData) {
-    const ids = sim.questionTexts
-      .map((t: string) => textToId[t])
-      .filter(Boolean)
+    const ids = sim.questionTexts.map((t: string) => textToId[t]).filter(Boolean)
     if (ids.length === 40) {
       await prisma.simulation.create({
-        data: { number: sim.number, questions: JSON.stringify(ids) }
+        data: {
+          number: sim.number,
+          questions: JSON.stringify(ids),
+          capitoloCode: sim.capitoloCode || null,
+          titolo: sim.capitolo || null,
+        }
       })
       simCreated++
     }

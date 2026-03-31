@@ -77,18 +77,18 @@ export default function WPPracticePage() {
       </button>
       <Link href="/weak-points" style={{ color:'#4B5563', fontSize:13 }}>← Torna ai punti deboli</Link>
 
-      <div style={{ position:'fixed', bottom:0, left:0, right:0, background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr' }}>
+      <div style={{ position:'fixed', bottom:0, left:0, right:0, background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr' }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
           <Home size={20} color="#4B5563"/>
-          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Home</span>
+          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Home</span>
         </Link>
         <Link href="/riepilogo" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
           <BarChart3 size={20} color="#4B5563"/>
-          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Riepilogo</span>
+          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Riepilogo</span>
         </Link>
         <div style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:4, padding:'10px 0' }}>
           <BookOpen size={20} color="#2563EB"/>
-          <span style={{ fontSize:10, color:'#2563EB', fontWeight:700 }}>Punti deboli</span>
+          <span style={{ fontSize:9, color:'#2563EB', fontWeight:700 }}>Punti deboli</span>
         </div>
       </div>
     </div>
@@ -135,7 +135,7 @@ export default function WPPracticePage() {
         )}
 
         {!answered ? (
-          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr 1fr', gap:10 }}>
+          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', gap:10 }}>
             {[
               { val:true, label:'VERO', c:'#4ADE80', border:'#14532D', hover:'#052E16' },
               { val:false, label:'FALSO', c:'#F87171', border:'#7F1D1D', hover:'#450A0A' },
@@ -158,18 +158,18 @@ export default function WPPracticePage() {
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0 }}>
+      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', flexShrink:0 }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
           <Home size={20} color="#4B5563"/>
-          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Home</span>
+          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Home</span>
         </Link>
         <Link href="/riepilogo" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
           <BarChart3 size={20} color="#4B5563"/>
-          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Riepilogo</span>
+          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Riepilogo</span>
         </Link>
         <div style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:4, padding:'10px 0' }}>
           <BookOpen size={20} color="#2563EB"/>
-          <span style={{ fontSize:10, color:'#2563EB', fontWeight:700 }}>Punti deboli</span>
+          <span style={{ fontSize:9, color:'#2563EB', fontWeight:700 }}>Punti deboli</span>
         </div>
       </div>
     </div>

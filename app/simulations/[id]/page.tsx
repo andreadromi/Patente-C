@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { useRouter, useParams } from 'next/navigation'
 import Link from 'next/link'
-import { Home, BookOpen, Flag, BarChart3, ChevronLeft, ChevronRight, CheckCircle2, XCircle } from 'lucide-react'
+import { Home, BookOpen, Flag, BarChart3, ChevronLeft, ChevronRight, CheckCircle2, XCircle , Target } from 'lucide-react'
 
 interface Question { id: string; text: string; capitolo: string }
 const TOTAL = 40

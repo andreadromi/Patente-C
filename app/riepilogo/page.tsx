@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { Home, BookOpen, BarChart3 } from 'lucide-react'
+import { Home, BookOpen, BarChart3 , Target } from 'lucide-react'
 
 interface Simulation { id: string; number: number }
 interface UserSim { id: string; simulationId: string; status: string; passed: boolean | null; score: number | null; errors: number | null }
@@ -139,18 +139,18 @@ export default function RiepilogoPage() {
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0 }}>
+      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', flexShrink:0 }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
           <Home size={20} color="#4B5563"/>
-          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Home</span>
+          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Home</span>
         </Link>
         <div style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0' }}>
           <BarChart3 size={20} color="#2563EB"/>
-          <span style={{ fontSize:10, color:'#2563EB', fontWeight:700 }}>Riepilogo</span>
+          <span style={{ fontSize:9, color:'#2563EB', fontWeight:700 }}>Riepilogo</span>
         </div>
         <Link href="/weak-points" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
           <BookOpen size={20} color="#4B5563"/>
-          <span style={{ fontSize:10, color:'#4B5563', fontWeight:600 }}>Punti deboli</span>
+          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Punti deboli</span>
         </Link>
       </div>
     </div>
