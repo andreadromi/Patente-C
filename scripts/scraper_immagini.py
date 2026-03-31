@@ -4,9 +4,10 @@ from bs4 import BeautifulSoup
 
 SESSION = requests.Session()
 SESSION.headers.update({
-    'User-Agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36',
+    'User-Agent': 'Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 Chrome/114.0.0.0 Mobile Safari/537.36',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
     'Accept-Language': 'it-IT,it;q=0.9',
+    'Referer': 'https://www.patentisuperiori.com/',
 })
 
 BASE = "https://www.patentisuperiori.com"
@@ -15,10 +16,15 @@ print("=== SCRAPER IMMAGINI QUIZ PATENTE C ===")
 USER = input("Username: ")
 PASS = input("Password: ")
 
-# Carica pagina registrati (che contiene anche il form login)
-SESSION.get(f"{BASE}/login/registrati.php")
+# Step 1: carica homepage per cookie
+SESSION.get(BASE)
+time.sleep(1)
 
-# Login con i campi corretti
+# Step 2: carica pagina login
+SESSION.get(f"{BASE}/login/registrati.php")
+time.sleep(1)
+
+# Step 3: login
 resp = SESSION.post(f"{BASE}/login/registrati.php", data={
     "username": USER,
     "password": PASS,
@@ -26,20 +32,33 @@ resp = SESSION.post(f"{BASE}/login/registrati.php", data={
     "menu_login": "true",
 }, allow_redirects=True)
 
-# Verifica
-if USER.lower() in resp.text.lower() or "logout" in resp.text.lower() or "profilo" in resp.text.lower():
-    print("✅ Login OK!")
-else:
-    # Prova a controllare una pagina protetta
-    check = SESSION.get(f"{BASE}/quiz-patente-c/statistiche.html")
-    if USER.lower() in check.text.lower() or "logout" in check.text.lower():
-        print("✅ Login OK (verifica da statistiche)!")
-    else:
-        print("⚠️  Login incerto, continuo comunque...")
+# Step 4: verifica login cercando nome utente nella pagina
+check = SESSION.get(f"{BASE}/quiz-patente-c/argomento/disposizioni-guida-riposo-1.html")
+soup_check = BeautifulSoup(check.text, "html.parser")
 
+# Se loggato, non ci sarà il form di login visibile nel menu
+logged_in = USER.lower() in check.text.lower() or "profilo" in check.text.lower()
+has_trasparent = check.text.count("trasparent.gif") < 5  # Loggato = meno placeholder
+
+print(f"Testo pagina contiene username: {USER.lower() in check.text.lower()}")
+print(f"Trasparent.gif count: {check.text.count('trasparent.gif')}")
+
+# Cerca immagini reali nella prima pagina di test
+imgs_test = [img.get("src","") for img in soup_check.find_all("img") 
+             if img.get("src","") and "trasparent" not in img.get("src","")
+             and "/quiz/" in img.get("src","")]
+print(f"Immagini quiz trovate nella pagina test: {len(imgs_test)}")
+if imgs_test:
+    print(f"Esempio: {imgs_test[0]}")
+    print("✅ Login OK - immagini visibili!")
+else:
+    print("⚠️  Nessuna immagine quiz trovata - probabilmente non loggato")
+    print("Provo a continuare comunque...")
+
+# Scraping per argomento - solo immagini con path /quiz/ o numerico
 ARGOMENTI = [
     "disposizioni-guida-riposo",
-    "impiego-cronotachigrafo",
+    "impiego-cronotachigrafo", 
     "disposizioni-trasporto-persone",
     "documenti-circolazione-trasporto",
     "comportamento-in-caso-incidente",
@@ -59,66 +78,68 @@ ARGOMENTI = [
 
 os.makedirs("quiz_images", exist_ok=True)
 mapping = {}
+SKIP = {"staticon.png","stampa.png","staticonSm.png","804.png","808.png",
+        "back.png","next.png","resume.png","edit.png","imagesolution.php",
+        "truei.png","falsei.png","trasparent.gif","patentisuperiori.png",
+        "mezzi-logo.png"}
 
 for arg in ARGOMENTI:
     print(f"\n📂 {arg}")
     pagina = 1
-    while True:
+    pagine_vuote = 0
+    while pagina <= 50:
         url = f"{BASE}/quiz-patente-c/argomento/{arg}-{pagina}.html"
         r = SESSION.get(url)
         if r.status_code != 200:
-            print(f"  Stop a pagina {pagina} (status {r.status_code})")
             break
         soup = BeautifulSoup(r.text, "html.parser")
-
-        # Cerca tutte le immagini che NON siano decorative
         trovate = 0
+
         for img in soup.find_all("img"):
             src = img.get("src", "")
             if not src:
                 continue
-            # Salta immagini decorative/logo
-            skip = ["trasparent", "logo", "patentisuperiori.png", "banner",
-                    "pub", "adv", "mezzi-logo", "scorecardresearch"]
-            if any(s in src.lower() for s in skip):
+            fname = src.split("/")[-1].split("?")[0].lower()
+            # Salta icone interfaccia
+            if fname in SKIP or len(fname) < 4:
                 continue
-            # Prendi solo immagini quiz (non trasparenti)
-            if src == "/img/trasparent.gif":
+            # Salta se non contiene path quiz o è icona nota
+            if not any(x in src for x in ["/quiz/", "/img/q", "/domande/", "/images/quiz"]):
                 continue
 
             if not src.startswith("http"):
                 src = BASE + src
 
-            # Trova testo domanda associato
-            container = (img.find_parent("li") or
-                        img.find_parent("div", class_=lambda c: c and "quiz" in c.lower()) or
-                        img.find_parent("div") or img.parent)
-            testo = container.get_text(" ", strip=True)[:300] if container else ""
-            fname = src.split("/")[-1].split("?")[0]
+            # Testo domanda
+            container = (img.find_parent("li") or img.find_parent("div") or img.parent)
+            testo = container.get_text(" ", strip=True)[:400] if container else ""
 
+            real_fname = src.split("/")[-1].split("?")[0]
             try:
                 img_bytes = SESSION.get(src, timeout=10).content
-                if len(img_bytes) < 100:  # Skip immagini vuote
+                if len(img_bytes) < 500:
                     continue
-                with open(f"quiz_images/{fname}", "wb") as f:
+                with open(f"quiz_images/{real_fname}", "wb") as f:
                     f.write(img_bytes)
-                mapping[fname] = {"url": src, "testo": testo}
+                mapping[real_fname] = {"url": src, "testo": testo}
                 trovate += 1
-                print(f"  ✓ {fname} ({len(img_bytes)}B)")
+                print(f"  ✓ {real_fname} ({len(img_bytes)}B)")
             except Exception as e:
-                print(f"  ✗ {fname}: {e}")
+                print(f"  ✗ {real_fname}: {e}")
 
-        print(f"  Pagina {pagina}: {trovate} immagini")
-        if trovate == 0 and pagina > 1:
-            break
-        elif trovate == 0 and pagina == 1:
-            print(f"  (Nessuna immagine in questo argomento)")
-            break
+        if trovate == 0:
+            pagine_vuote += 1
+            if pagine_vuote >= 2:
+                break
+        else:
+            pagine_vuote = 0
         pagina += 1
-        time.sleep(0.4)
+        time.sleep(0.3)
+
+    print(f"  Totale argomento: {sum(1 for v in mapping.values())}")
 
 with open("quiz_images/mapping.json", "w", encoding="utf-8") as f:
     json.dump(mapping, f, ensure_ascii=False, indent=2)
 
-print(f"\n🎉 Finito! {len(mapping)} immagini in quiz_images/")
-print("Ora esegui: tar -czf quiz_images.tar.gz quiz_images/")
+print(f"\n🎉 Finito! {len(mapping)} immagini quiz in quiz_images/")
+print("Comprimi con: tar -czf quiz_images.tar.gz quiz_images/")
