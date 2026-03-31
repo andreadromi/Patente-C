@@ -41,12 +41,12 @@ async function uploadToGithub(fname, content) {
   // LOGIN
   console.log('Login...');
   await page.goto(`${BASE}/login/registrati.php`, { waitUntil: 'networkidle2' });
-  await page.type('input[name="username"]', USER, { delay: 50 });
-  await page.type('input[name="password"]', PASS, { delay: 50 });
+  await page.type('.pat-login-form input[name="username"]', USER, { delay: 50 });
+  await page.type('.pat-login-form input[name="password"]', PASS, { delay: 50 });
   
   await Promise.all([
     page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 15000 }).catch(() => {}),
-    page.click('button[type="submit"]')
+    page.click('.pat-login-form button[type="submit"]')
   ]);
 
   // Verifica login cercando testo "logout" o username nella pagina
