@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
-import requests, os, json, time
+import requests, os, json, time, re
 from bs4 import BeautifulSoup
 
 SESSION = requests.Session()
 SESSION.headers.update({
     'User-Agent': 'Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 Chrome/114.0.0.0 Mobile Safari/537.36',
-    'Accept': '*/*',
 })
-
 BASE = "https://www.patentisuperiori.com"
 SESSION.cookies.set('PHPSESSID', '9ef776d21f54a09cb178a77bdfbcb341', domain='www.patentisuperiori.com')
-SESSION.cookies.set('_ga', 'GA1.1.600161829.1774938363', domain='.patentisuperiori.com')
 
 ARGOMENTI = [
     "disposizioni-guida-riposo","impiego-cronotachigrafo",
@@ -37,36 +34,39 @@ for arg in ARGOMENTI:
         if r.status_code != 200:
             break
 
-        soup = BeautifulSoup(r.text, "html.parser")
+        # Usa regex direttamente sull'HTML grezzo — ignora parsing BeautifulSoup
+        html = r.text
+        
+        # Trova tutti i src con imageSolution
+        srcs = re.findall(r'src="(/patente/imageSolution\.php\?sol=[^"]+)"', html)
+        
+        # Trova testi domande vicini alle immagini (testo tra tag <li>)
+        items = re.findall(r'<li[^>]*>(.*?)</li>', html, re.DOTALL)
+        
         trovate = 0
-
-        # Cerca TUTTE le img con imageSolution (anche dentro uk-hidden)
-        for img in soup.find_all("img", src=lambda s: s and "imageSolution" in s):
-            src = img.get("src", "")
-            if not src.startswith("http"):
-                src = BASE + src
-
-            # Trova il testo della domanda: cerca il tag li o div antenato con testo
+        for src in srcs:
+            full_url = BASE + src
+            sol = re.search(r'sol=([^&"]+)', src)
+            sol_val = sol.group(1)[:30] if sol else f"{arg}_{pagina}_{trovate}"
+            fname = f"{sol_val}.png"
+            
+            # Trova testo domanda associato
             testo = ""
-            for parent in img.parents:
-                t = parent.get_text(" ", strip=True)
-                if len(t) > 20 and len(t) < 500:
-                    testo = t
+            for item in items:
+                if sol_val[:10] in item or "imageSolution" in item:
+                    testo = re.sub(r'<[^>]+>', ' ', item).strip()[:300]
                     break
 
-            sol = src.split("sol=")[-1][:30].replace("/","_") if "sol=" in src else f"{arg}_{pagina}_{trovate}"
-            fname = f"{sol}.jpg"
-
             try:
-                img_bytes = SESSION.get(src, timeout=15).content
-                if len(img_bytes) < 200:
-                    print(f"  ⚠ {fname} troppo piccola ({len(img_bytes)}B)")
-                    continue
-                with open(f"quiz_images/{fname}", "wb") as f:
-                    f.write(img_bytes)
-                mapping[fname] = {"url": src, "testo": testo[:300]}
-                trovate += 1
-                print(f"  ✓ {fname} ({len(img_bytes)}B)")
+                img_r = SESSION.get(full_url, timeout=15)
+                if img_r.status_code == 200 and len(img_r.content) > 100:
+                    with open(f"quiz_images/{fname}", "wb") as f:
+                        f.write(img_r.content)
+                    mapping[fname] = {"url": full_url, "testo": testo}
+                    trovate += 1
+                    print(f"  ✓ {fname} ({len(img_r.content)}B)")
+                else:
+                    print(f"  ⚠ {fname}: status={img_r.status_code} size={len(img_r.content)}")
             except Exception as e:
                 print(f"  ✗ {e}")
 
