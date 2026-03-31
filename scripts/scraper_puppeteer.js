@@ -1,13 +1,16 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
-const path = require('path');
 const https = require('https');
 
 const BASE = 'https://www.patentisuperiori.com';
-const USER = 'andreadromi92';
-const PASS = '@Div44354';
 const GITHUB_TOKEN = process.argv[2] || '';
 const REPO = 'andreadromi/Patente-C';
+
+// Cookie di sessione da Firefox (già loggato)
+const COOKIES = [
+  { name: 'PHPSESSID', value: '9ef776d21f54a09cb178a77bdfbcb341', domain: 'www.patentisuperiori.com', path: '/' },
+  { name: '_ga', value: 'GA1.1.600161829.1774938363', domain: '.patentisuperiori.com', path: '/' },
+];
 
 const ARGOMENTI = [
   ['disposizioni-guida-riposo', 'guida_riposo'],
@@ -31,7 +34,7 @@ const ARGOMENTI = [
 
 async function uploadToGithub(fname, content) {
   if (!GITHUB_TOKEN) return;
-  const data = JSON.stringify({ message: `Add ${fname}`, content: content.toString('base64') });
+  const data = JSON.stringify({ message: `Add ${fname}`, content: Buffer.from(content).toString('base64') });
   return new Promise((resolve) => {
     const req = https.request({
       hostname: 'api.github.com',
@@ -47,7 +50,7 @@ async function uploadToGithub(fname, content) {
       console.log(`  Upload ${fname}: ${res.statusCode}`);
       resolve();
     });
-    req.on('error', (e) => { console.log(`  Upload err ${fname}: ${e.message}`); resolve(); });
+    req.on('error', (e) => { console.log(`  Err ${fname}: ${e.message}`); resolve(); });
     req.write(data);
     req.end();
   });
@@ -66,14 +69,36 @@ async function uploadToGithub(fname, content) {
   const page = await browser.newPage();
   await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0');
 
-  // Login
-  console.log('Login...');
-  await page.goto(`${BASE}/login/registrati.php`, { waitUntil: 'networkidle2' });
-  await page.type('input[name="username"]', USER);
-  await page.type('input[name="password"]', PASS);
-  await page.click('button[type="submit"]');
-  await page.waitForNavigation({ waitUntil: 'networkidle2' }).catch(() => {});
-  console.log('Login fatto!');
+  // Setta cookies prima di navigare
+  await page.goto(BASE, { waitUntil: 'networkidle2' });
+  for (const cookie of COOKIES) {
+    await page.setCookie(cookie);
+  }
+
+  // Verifica login
+  await page.goto(`${BASE}/quiz-patente-c/argomento/dimensione-massa-velocita-1.html`, { waitUntil: 'networkidle2' });
+  
+  // Cerca se c'è il bottone soluzione (indica che siamo loggati)
+  const isLogged = await page.evaluate(() => {
+    return document.title !== '' && !document.querySelector('.pat-login-form') !== null;
+  });
+  console.log('Pagina caricata, cerco immagini quiz...');
+
+  // Intercetta le richieste per catturare le immagini reali
+  const imgRequests = new Map();
+  page.on('response', async (response) => {
+    const url = response.url();
+    if (url.includes('imageSolution.php') || 
+        (url.includes(BASE) && url.match(/\.(jpg|jpeg|png|gif)/) && 
+         !url.match(/statIcon|stampa|back|next|resume|edit|trueI|falseI|trasparent|logo|mezzi/))) {
+      try {
+        const buf = await response.buffer();
+        if (buf.length > 2000) { // Solo immagini grandi (non barre risposta)
+          imgRequests.set(url, buf);
+        }
+      } catch(e) {}
+    }
+  });
 
   for (const [argUrl, argCode] of ARGOMENTI) {
     console.log(`\nArgomento: ${argCode}`);
@@ -81,64 +106,54 @@ async function uploadToGithub(fname, content) {
     let vuote = 0;
 
     while (pagina <= 500) {
+      imgRequests.clear();
       const url = `${BASE}/quiz-patente-c/argomento/${argUrl}-${pagina}.html`;
       await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 }).catch(() => {});
+      await new Promise(r => setTimeout(r, 500)); // aspetta JS
 
-      // Trova immagine domanda (NON imageSolution, ma img con classe quiz o dentro .pat-question)
-      const imgData = await page.evaluate(() => {
-        // Cerca immagini che non siano UI elements
-        const skip = ['statIcon','stampa','back','next','resume','edit','trueI','falseI','trasparent','logo','mezzi','scorecard','imageSolution'];
-        const imgs = Array.from(document.querySelectorAll('img'));
-        for (const img of imgs) {
-          const src = img.src || '';
-          if (skip.some(s => src.includes(s))) continue;
-          if (!src || src.endsWith('.gif')) continue;
-          // Trova testo vicino
-          const container = img.closest('li') || img.closest('.pat-question') || img.closest('div');
-          const testo = container ? container.innerText.substring(0, 300) : '';
-          return { src, testo, width: img.naturalWidth, height: img.naturalHeight };
-        }
-        return null;
-      });
-
-      if (!imgData || !imgData.src) {
-        vuote++;
-        if (vuote >= 3) break;
-        pagina++;
-        continue;
+      // Clicca su "Soluzione" per rivelare l'immagine
+      const solBtn = await page.$('a[href*="soluzione"], button.pat-solution, .pat-sol, a:has-text("Soluzione"), a:has-text("soluzione")').catch(() => null);
+      if (solBtn) {
+        await solBtn.click().catch(() => {});
+        await new Promise(r => setTimeout(r, 800));
       }
 
-      vuote = 0;
-      console.log(`  p${pagina}: ${imgData.src.substring(imgData.src.lastIndexOf('/')+1)} ${imgData.width}x${imgData.height}px`);
+      // Guarda le immagini intercettate
+      let found = false;
+      for (const [imgUrl, buf] of imgRequests.entries()) {
+        if (buf.length > 2000) {
+          const fname = `${argCode}_${String(pagina).padStart(4,'0')}.png`;
+          
+          // Testo domanda
+          const testo = await page.evaluate(() => {
+            const el = document.querySelector('.pat-question, li.uk-open, .quiz-text, p');
+            return el ? el.innerText.substring(0, 300) : '';
+          }).catch(() => '');
 
-      // Screenshot dell'immagine
-      const imgElement = await page.$(`img[src="${imgData.src.replace(BASE,'')}"], img[src="${imgData.src}"]`);
-      const fname = `${argCode}_${String(pagina).padStart(4,'0')}.png`;
-
-      if (imgElement) {
-        try {
-          await imgElement.screenshot({ path: `quiz_images/${fname}` });
-          const buf = fs.readFileSync(`quiz_images/${fname}`);
-          mapping[fname] = { testo: imgData.testo, capitolo: argCode, pagina, src: imgData.src };
-          console.log(`  Salvato: ${fname} (${buf.length}B) - ${imgData.testo.substring(0,50)}`);
+          fs.writeFileSync(`quiz_images/${fname}`, buf);
+          mapping[fname] = { testo, capitolo: argCode, pagina, src: imgUrl, size: buf.length };
+          console.log(`  OK p${pagina}: ${fname} (${buf.length}B) ${imgUrl.split('/').pop().substring(0,30)}`);
           if (GITHUB_TOKEN) await uploadToGithub(fname, buf);
-        } catch(e) {
-          console.log(`  Screenshot err: ${e.message}`);
+          found = true;
+          break;
         }
+      }
+
+      if (!found) {
+        vuote++;
+        if (vuote >= 3) break;
+      } else {
+        vuote = 0;
       }
 
       pagina++;
-      await new Promise(r => setTimeout(r, 300));
+      await new Promise(r => setTimeout(r, 250));
     }
   }
 
-  // Salva mapping
   fs.writeFileSync('quiz_images/mapping.json', JSON.stringify(mapping, null, 2), 'utf-8');
   console.log(`\nFINITO! ${Object.keys(mapping).length} immagini`);
-
-  if (GITHUB_TOKEN) {
-    await uploadToGithub('mapping.json', Buffer.from(JSON.stringify(mapping, null, 2)));
-  }
+  if (GITHUB_TOKEN) await uploadToGithub('mapping.json', Buffer.from(JSON.stringify(mapping, null, 2)));
 
   await browser.close();
 })();
