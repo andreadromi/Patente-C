@@ -3,34 +3,11 @@ const fs = require('fs');
 const https = require('https');
 
 const BASE = 'https://www.patentisuperiori.com';
+const USER = 'andreadromi92';
+const PASS = '@Div44354';
 const GITHUB_TOKEN = process.argv[2] || '';
 const REPO = 'andreadromi/Patente-C';
-
-// Cookie di sessione da Firefox (già loggato)
-const COOKIES = [
-  { name: 'PHPSESSID', value: '9ef776d21f54a09cb178a77bdfbcb341', domain: 'www.patentisuperiori.com', path: '/' },
-  { name: '_ga', value: 'GA1.1.600161829.1774938363', domain: '.patentisuperiori.com', path: '/' },
-];
-
-const ARGOMENTI = [
-  ['disposizioni-guida-riposo', 'guida_riposo'],
-  ['impiego-cronotachigrafo', 'cronotachigrafo'],
-  ['disposizioni-trasporto-persone', 'trasporto_persone'],
-  ['documenti-circolazione-trasporto', 'documenti'],
-  ['comportamento-in-caso-incidente', 'incidente'],
-  ['rimozione-sostituzione-ruote', 'ruote'],
-  ['dimensione-massa-velocita', 'dimensioni'],
-  ['limitazione-campo-visivo', 'visivo'],
-  ['responsabilita-persone-trasportate', 'caricamento'],
-  ['rimorchi-semirimorchi', 'rimorchi'],
-  ['motori-sistemi-alimentazione', 'motori'],
-  ['lubrificazione-protezione-gelo', 'lubrificazione'],
-  ['pneumatici', 'pneumatici'],
-  ['freno-acceleratore', 'freni'],
-  ['guasti-sospensioni-ammortizzatori', 'guasti'],
-  ['manutenzione-riparazioni', 'manutenzione'],
-  ['trasporto-consegna-merci', 'merci'],
-];
+const CHROME = 'C:\\Documents and Settings\\sshuser\\.cache\\puppeteer\\chrome\\win64-142.0.7444.59\\chrome-win64\\chrome.exe';
 
 async function uploadToGithub(fname, content) {
   if (!GITHUB_TOKEN) return;
@@ -40,19 +17,10 @@ async function uploadToGithub(fname, content) {
       hostname: 'api.github.com',
       path: `/repos/${REPO}/contents/public/quiz_images/${fname}`,
       method: 'PUT',
-      headers: {
-        'Authorization': `token ${GITHUB_TOKEN}`,
-        'Content-Type': 'application/json',
-        'User-Agent': 'scraper',
-        'Content-Length': Buffer.byteLength(data)
-      }
-    }, (res) => {
-      console.log(`  Upload ${fname}: ${res.statusCode}`);
-      resolve();
-    });
-    req.on('error', (e) => { console.log(`  Err ${fname}: ${e.message}`); resolve(); });
-    req.write(data);
-    req.end();
+      headers: { 'Authorization': `token ${GITHUB_TOKEN}`, 'Content-Type': 'application/json', 'User-Agent': 'scraper', 'Content-Length': Buffer.byteLength(data) }
+    }, (res) => { console.log(`  Upload ${fname}: ${res.statusCode}`); resolve(); });
+    req.on('error', () => resolve());
+    req.write(data); req.end();
   });
 }
 
@@ -62,43 +30,60 @@ async function uploadToGithub(fname, content) {
 
   const browser = await puppeteer.launch({
     headless: true,
-    executablePath: 'C:\\Documents and Settings\\sshuser\\.cache\\puppeteer\\chrome\\win64-142.0.7444.59\\chrome-win64\\chrome.exe',
+    executablePath: CHROME,
     args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu']
   });
 
   const page = await browser.newPage();
   await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0');
+  await page.setViewport({ width: 1280, height: 900 });
 
-  // Setta cookies prima di navigare
-  await page.goto(BASE, { waitUntil: 'networkidle2' });
-  for (const cookie of COOKIES) {
-    await page.setCookie(cookie);
-  }
+  // LOGIN
+  console.log('Login...');
+  await page.goto(`${BASE}/login/registrati.php`, { waitUntil: 'networkidle2' });
+  await page.type('input[name="username"]', USER, { delay: 50 });
+  await page.type('input[name="password"]', PASS, { delay: 50 });
+  
+  await Promise.all([
+    page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 15000 }).catch(() => {}),
+    page.click('button[type="submit"]')
+  ]);
 
-  // Verifica login
+  // Verifica login cercando testo "logout" o username nella pagina
+  const pageText = await page.evaluate(() => document.body.innerText);
+  const isLogged = pageText.toLowerCase().includes('logout') || pageText.toLowerCase().includes('andreadromi');
+  console.log(`Login: ${isLogged ? 'OK ✓' : 'FALLITO - continuo comunque'}`);
+
+  // Test: vai su una pagina quiz con immagine nota e vedi cosa c'è
   await page.goto(`${BASE}/quiz-patente-c/argomento/dimensione-massa-velocita-1.html`, { waitUntil: 'networkidle2' });
   
-  // Cerca se c'è il bottone soluzione (indica che siamo loggati)
-  const isLogged = await page.evaluate(() => {
-    return document.title !== '' && !document.querySelector('.pat-login-form') !== null;
+  const testImgs = await page.evaluate(() => {
+    return Array.from(document.querySelectorAll('img')).map(img => ({
+      src: img.src, w: img.naturalWidth, h: img.naturalHeight
+    })).filter(i => i.w > 0 && i.h > 0 && i.w !== 516); // escludi logo 516px
   });
-  console.log('Pagina caricata, cerco immagini quiz...');
+  console.log(`Immagini non-logo trovate nella pagina test: ${testImgs.length}`);
+  testImgs.forEach(i => console.log(`  ${i.w}x${i.h} ${i.src.split('/').pop().substring(0,40)}`));
 
-  // Intercetta le richieste per catturare le immagini reali
-  const imgRequests = new Map();
-  page.on('response', async (response) => {
-    const url = response.url();
-    if (url.includes('imageSolution.php') || 
-        (url.includes(BASE) && url.match(/\.(jpg|jpeg|png|gif)/) && 
-         !url.match(/statIcon|stampa|back|next|resume|edit|trueI|falseI|trasparent|logo|mezzi/))) {
-      try {
-        const buf = await response.buffer();
-        if (buf.length > 2000) { // Solo immagini grandi (non barre risposta)
-          imgRequests.set(url, buf);
-        }
-      } catch(e) {}
-    }
-  });
+  const ARGOMENTI = [
+    ['disposizioni-guida-riposo', 'guida_riposo'],
+    ['impiego-cronotachigrafo', 'cronotachigrafo'],
+    ['disposizioni-trasporto-persone', 'trasporto_persone'],
+    ['documenti-circolazione-trasporto', 'documenti'],
+    ['comportamento-in-caso-incidente', 'incidente'],
+    ['rimozione-sostituzione-ruote', 'ruote'],
+    ['dimensione-massa-velocita', 'dimensioni'],
+    ['limitazione-campo-visivo', 'visivo'],
+    ['responsabilita-persone-trasportate', 'caricamento'],
+    ['rimorchi-semirimorchi', 'rimorchi'],
+    ['motori-sistemi-alimentazione', 'motori'],
+    ['lubrificazione-protezione-gelo', 'lubrificazione'],
+    ['pneumatici', 'pneumatici'],
+    ['freno-acceleratore', 'freni'],
+    ['guasti-sospensioni-ammortizzatori', 'guasti'],
+    ['manutenzione-riparazioni', 'manutenzione'],
+    ['trasporto-consegna-merci', 'merci'],
+  ];
 
   for (const [argUrl, argCode] of ARGOMENTI) {
     console.log(`\nArgomento: ${argCode}`);
@@ -106,44 +91,56 @@ async function uploadToGithub(fname, content) {
     let vuote = 0;
 
     while (pagina <= 500) {
-      imgRequests.clear();
-      const url = `${BASE}/quiz-patente-c/argomento/${argUrl}-${pagina}.html`;
-      await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 }).catch(() => {});
-      await new Promise(r => setTimeout(r, 500)); // aspetta JS
+      await page.goto(`${BASE}/quiz-patente-c/argomento/${argUrl}-${pagina}.html`, { waitUntil: 'networkidle2', timeout: 30000 }).catch(() => {});
+      await new Promise(r => setTimeout(r, 600));
 
-      // Clicca su "Soluzione" per rivelare l'immagine
-      const solBtn = await page.$('a[href*="soluzione"], button.pat-solution, .pat-sol, a:has-text("Soluzione"), a:has-text("soluzione")').catch(() => null);
-      if (solBtn) {
-        await solBtn.click().catch(() => {});
-        await new Promise(r => setTimeout(r, 800));
+      // Cerca immagini che non siano il logo (516px wide), non siano icone UI
+      const quizImgs = await page.evaluate(() => {
+        const SKIP_SRCS = ['statIcon','stampa','back','next','resume','edit','trueI','falseI','trasparent','mezzi','scorecard'];
+        return Array.from(document.querySelectorAll('img'))
+          .map(img => ({ src: img.src, w: img.naturalWidth, h: img.naturalHeight }))
+          .filter(i => {
+            if (!i.src || i.w === 0) return false;
+            if (i.w === 516 && i.h === 68) return false; // logo
+            if (SKIP_SRCS.some(s => i.src.includes(s))) return false;
+            if (i.w < 50 || i.h < 50) return false; // troppo piccola
+            return true;
+          });
+      });
+
+      if (quizImgs.length === 0) {
+        vuote++;
+        if (vuote >= 3) break;
+        pagina++;
+        continue;
       }
 
-      // Guarda le immagini intercettate
-      let found = false;
-      for (const [imgUrl, buf] of imgRequests.entries()) {
-        if (buf.length > 2000) {
-          const fname = `${argCode}_${String(pagina).padStart(4,'0')}.png`;
+      vuote = 0;
+      const img = quizImgs[0];
+      const fname = `${argCode}_${String(pagina).padStart(4,'0')}.png`;
+
+      // Screenshot dell'elemento immagine
+      try {
+        const el = await page.$(`img[src="${img.src}"]`);
+        if (el) {
+          await el.screenshot({ path: `quiz_images/${fname}` });
+          const buf = fs.readFileSync(`quiz_images/${fname}`);
           
           // Testo domanda
           const testo = await page.evaluate(() => {
-            const el = document.querySelector('.pat-question, li.uk-open, .quiz-text, p');
-            return el ? el.innerText.substring(0, 300) : '';
-          }).catch(() => '');
+            for (const sel of ['.pat-question', 'li.uk-open p', 'form p', 'p']) {
+              const el = document.querySelector(sel);
+              if (el && el.innerText && el.innerText.length > 20) return el.innerText.substring(0, 300);
+            }
+            return '';
+          });
 
-          fs.writeFileSync(`quiz_images/${fname}`, buf);
-          mapping[fname] = { testo, capitolo: argCode, pagina, src: imgUrl, size: buf.length };
-          console.log(`  OK p${pagina}: ${fname} (${buf.length}B) ${imgUrl.split('/').pop().substring(0,30)}`);
+          mapping[fname] = { testo, capitolo: argCode, pagina, src: img.src, size: buf.length, dims: `${img.w}x${img.h}` };
+          console.log(`  OK p${pagina}: ${fname} (${buf.length}B) ${img.w}x${img.h} - ${testo.substring(0,40)}`);
           if (GITHUB_TOKEN) await uploadToGithub(fname, buf);
-          found = true;
-          break;
         }
-      }
-
-      if (!found) {
-        vuote++;
-        if (vuote >= 3) break;
-      } else {
-        vuote = 0;
+      } catch(e) {
+        console.log(`  ERR p${pagina}: ${e.message}`);
       }
 
       pagina++;
@@ -151,7 +148,7 @@ async function uploadToGithub(fname, content) {
     }
   }
 
-  fs.writeFileSync('quiz_images/mapping.json', JSON.stringify(mapping, null, 2), 'utf-8');
+  fs.writeFileSync('quiz_images/mapping.json', JSON.stringify(mapping, null, 2));
   console.log(`\nFINITO! ${Object.keys(mapping).length} immagini`);
   if (GITHUB_TOKEN) await uploadToGithub('mapping.json', Buffer.from(JSON.stringify(mapping, null, 2)));
 
