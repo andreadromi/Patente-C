@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { Home, BookOpen, BarChart3, Target, ChevronRight, CheckCircle2, Lock } from 'lucide-react'
+import { Home, BookOpen, BarChart3, Target, Play, Clock, CheckCircle2, ChevronRight } from 'lucide-react'
 
 interface Simulation { id: string; number: number; capitoloCode: string | null; titolo: string | null }
 interface UserSim { id: string; simulationId: string; status: string; passed: boolean | null; score: number | null }
@@ -39,85 +39,89 @@ export default function FocusPage() {
   const byCapitolo: Record<string, { titolo: string; sims: Simulation[] }> = {}
   for (const sim of simulations) {
     const key = sim.capitoloCode || 'altro'
-    const titolo = sim.titolo || 'Altro'
-    if (!byCapitolo[key]) byCapitolo[key] = { titolo, sims: [] }
+    if (!byCapitolo[key]) byCapitolo[key] = { titolo: sim.titolo || 'Altro', sims: [] }
     byCapitolo[key].sims.push(sim)
   }
 
   const capitoli = Object.entries(byCapitolo)
+  const totaleArgomenti = capitoli.length
+  const argomentiCompletati = capitoli.filter(([_, { sims }]) =>
+    sims.every(s => getLast(s.id)?.status === 'COMPLETED')
+  ).length
 
   return (
     <div style={{ height:'100dvh', background:'#030712', color:'#F9FAFB', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
 
       {/* Header */}
-      <div style={{ padding:'18px 18px 12px', flexShrink:0 }}>
+      <div style={{ padding:'18px 18px 10px', flexShrink:0 }}>
         <div style={{ fontSize:10, fontWeight:700, color:'#3B82F6', letterSpacing:2, marginBottom:4 }}>PATENTE C · CE</div>
         <h1 style={{ fontSize:28, fontWeight:900, margin:0, letterSpacing:-1, textTransform:'uppercase' }}>FOCUS</h1>
-        <p style={{ fontSize:12, color:'#4B5563', margin:'4px 0 0' }}>Quiz tematici per argomento</p>
+        <p style={{ fontSize:12, color:'#4B5563', margin:'4px 0 0' }}>
+          {argomentiCompletati}/{totaleArgomenti} argomenti completati
+        </p>
       </div>
 
-      {/* Lista capitoli scrollabile */}
-      <div style={{ flex:1, overflowY:'auto', padding:'0 16px 16px' }}>
-        <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
+      {/* Lista argomenti */}
+      <div style={{ flex:1, overflowY:'auto', padding:'8px 16px 16px' }}>
+        <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
           {capitoli.map(([code, { titolo, sims }]) => {
             const completati = sims.filter(s => getLast(s.id)?.status === 'COMPLETED').length
             const passati = sims.filter(s => getLast(s.id)?.passed).length
-            const tuttiDone = completati === sims.length
-            const pct = sims.length > 0 ? Math.round((completati / sims.length) * 100) : 0
+            const tuttoFatto = completati === sims.length
+            const pct = Math.round((completati / sims.length) * 100)
+
+            // Trova il prossimo quiz da fare (in corso prima, poi il primo non completato)
+            const inCorso = sims.find(s => getLast(s.id)?.status === 'IN_PROGRESS')
+            const prossimo = inCorso || sims.find(s => !getLast(s.id))
+            const target = prossimo || sims[sims.length - 1] // se tutti fatti, l'ultimo
+
+            let bg = '#0C111D'
+            let borderColor = '#1F2937'
+            let accentColor = '#3B82F6'
+
+            if (tuttoFatto) { bg = '#052E16'; borderColor = '#166534'; accentColor = '#4ADE80' }
+            else if (inCorso) { borderColor = '#1D4ED8'; accentColor = '#93C5FD' }
 
             return (
-              <div key={code} style={{ background:'#0C111D', border:'1px solid #1F2937', borderRadius:18, overflow:'hidden' }}>
-                {/* Header capitolo */}
-                <div style={{ padding:'14px 16px 10px' }}>
-                  <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:8 }}>
+              <Link key={code} href={`/simulations/${target.id}`} style={{ textDecoration:'none' }}>
+                <div style={{ background:bg, border:`1.5px solid ${borderColor}`, borderRadius:18, padding:'16px', transition:'all 0.15s' }}>
+                  <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:10 }}>
                     <div style={{ flex:1, marginRight:12 }}>
-                      <div style={{ fontSize:15, fontWeight:800, color:'#F9FAFB', marginBottom:2 }}>{titolo}</div>
+                      <div style={{ fontSize:16, fontWeight:800, color:'#F9FAFB', marginBottom:2 }}>{titolo}</div>
                       <div style={{ fontSize:11, color:'#4B5563' }}>
-                        {completati}/{sims.length} quiz · {passati} promossi
+                        {sims.length * 40} domande totali
+                        {passati > 0 && <span style={{ color:'#4ADE80', marginLeft:6 }}>· {passati * 40} corrette</span>}
                       </div>
                     </div>
-                    {tuttiDone
-                      ? <CheckCircle2 size={20} color="#4ADE80"/>
-                      : <span style={{ fontSize:12, fontWeight:700, color:'#3B82F6' }}>{pct}%</span>}
-                  </div>
-                  {/* Progress bar */}
-                  <div style={{ height:4, background:'#1F2937', borderRadius:2, overflow:'hidden' }}>
-                    <div style={{ height:'100%', background:'linear-gradient(90deg,#2563EB,#06B6D4)', width:`${pct}%`, borderRadius:2, transition:'width 0.6s ease' }}/>
-                  </div>
-                </div>
-
-                {/* Quiz del capitolo */}
-                <div style={{ borderTop:'1px solid #1F2937', display:'flex', flexDirection:'column' }}>
-                  {sims.map((sim, i) => {
-                    const last = getLast(sim.id)
-                    const done = last?.status === 'COMPLETED'
-                    const inProg = last?.status === 'IN_PROGRESS'
-                    const ok = last?.passed
-                    return (
-                      <Link key={sim.id} href={`/simulations/${sim.id}`} style={{ textDecoration:'none' }}>
-                        <div style={{ padding:'11px 16px', display:'flex', alignItems:'center', justifyContent:'space-between', borderBottom: i < sims.length - 1 ? '1px solid #111827' : 'none' }}>
-                          <div style={{ display:'flex', alignItems:'center', gap:10 }}>
-                            <div style={{ width:32, height:32, borderRadius:9, display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0,
-                              background: done ? (ok ? '#052E16' : '#2D0A0A') : inProg ? '#0F1E3D' : '#111827' }}>
-                              {done
-                                ? (ok ? <CheckCircle2 size={15} color="#4ADE80"/> : <Target size={15} color="#F87171"/>)
-                                : <span style={{ fontSize:12, fontWeight:800, color: inProg ? '#93C5FD' : '#374151' }}>{i+1}</span>}
-                            </div>
-                            <div>
-                              <div style={{ fontSize:13, fontWeight:700, color: done ? (ok ? '#4ADE80' : '#F87171') : inProg ? '#93C5FD' : '#9CA3AF' }}>
-                                Quiz {i+1}
-                                {inProg && <span style={{ fontSize:10, color:'#3B82F6', marginLeft:6, fontWeight:600 }}>· in corso</span>}
-                              </div>
-                              {done && <div style={{ fontSize:11, color:'#4B5563', marginTop:1 }}>{last?.score}/40 risposte corrette</div>}
-                            </div>
+                    <div style={{ display:'flex', alignItems:'center', gap:8, flexShrink:0 }}>
+                      {tuttoFatto
+                        ? <CheckCircle2 size={22} color="#4ADE80"/>
+                        : (
+                          <div style={{ display:'flex', alignItems:'center', gap:6, background: inCorso ? '#0F1E3D' : '#111827', borderRadius:10, padding:'7px 12px' }}>
+                            {inCorso ? <Clock size={14} color="#93C5FD"/> : <Play size={14} color="#3B82F6"/>}
+                            <span style={{ fontSize:13, fontWeight:800, color: inCorso ? '#93C5FD' : '#3B82F6' }}>
+                              {inCorso ? 'Continua' : pct > 0 ? `${pct}%` : 'Inizia'}
+                            </span>
                           </div>
-                          <ChevronRight size={14} color="#374151"/>
-                        </div>
-                      </Link>
-                    )
-                  })}
+                        )}
+                    </div>
+                  </div>
+
+                  {/* Progress bar */}
+                  <div style={{ height:5, background:'#1F2937', borderRadius:3, overflow:'hidden' }}>
+                    <div style={{ height:'100%', borderRadius:3, transition:'width 0.6s ease',
+                      background: tuttoFatto ? '#16A34A' : 'linear-gradient(90deg,#2563EB,#06B6D4)',
+                      width:`${pct}%` }}/>
+                  </div>
+
+                  {/* Badge quiz completati */}
+                  {completati > 0 && !tuttoFatto && (
+                    <div style={{ fontSize:10, color:'#374151', marginTop:6 }}>
+                      {completati}/{sims.length} sessioni completate
+                    </div>
+                  )}
                 </div>
-              </div>
+              </Link>
             )
           })}
         </div>
