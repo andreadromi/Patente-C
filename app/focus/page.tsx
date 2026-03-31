@@ -2,10 +2,32 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { Home, BookOpen, BarChart3, Target, Play, Clock, CheckCircle2, ChevronRight } from 'lucide-react'
+import { Home, BookOpen, BarChart3, Target, Play, Clock, CheckCircle2 } from 'lucide-react'
 
 interface Simulation { id: string; number: number; capitoloCode: string | null; titolo: string | null }
 interface UserSim { id: string; simulationId: string; status: string; passed: boolean | null; score: number | null }
+
+const TOPIC_COLORS: Record<string, { from: string; to: string; accent: string }> = {
+  guida_riposo:      { from:'#1E3A5F', to:'#0C111D', accent:'#60A5FA' },
+  cronotachigrafo:   { from:'#1E1B4B', to:'#0C111D', accent:'#A78BFA' },
+  trasporto_persone: { from:'#1C3A2F', to:'#0C111D', accent:'#34D399' },
+  documenti:         { from:'#1E3A5F', to:'#0C111D', accent:'#38BDF8' },
+  incidente:         { from:'#3B1A1A', to:'#0C111D', accent:'#FB923C' },
+  ruote:             { from:'#1A2E1A', to:'#0C111D', accent:'#4ADE80' },
+  dimensioni:        { from:'#2D1B4E', to:'#0C111D', accent:'#C084FC' },
+  visivo:            { from:'#1E3A5F', to:'#0C111D', accent:'#67E8F9' },
+  caricamento:       { from:'#1C3A2F', to:'#0C111D', accent:'#6EE7B7' },
+  rimorchi:          { from:'#2D2A1A', to:'#0C111D', accent:'#FCD34D' },
+  motori:            { from:'#3B1A1A', to:'#0C111D', accent:'#F87171' },
+  lubrificazione:    { from:'#1A2E2D', to:'#0C111D', accent:'#2DD4BF' },
+  pneumatici:        { from:'#1E1B4B', to:'#0C111D', accent:'#818CF8' },
+  freni:             { from:'#3B2A1A', to:'#0C111D', accent:'#FDBA74' },
+  guasti:            { from:'#2A1A1A', to:'#0C111D', accent:'#FCA5A5' },
+  manutenzione:      { from:'#1A2A2E', to:'#0C111D', accent:'#7DD3FC' },
+  merci:             { from:'#2D2A1A', to:'#0C111D', accent:'#FDE68A' },
+}
+
+const DEFAULT_COLOR = { from:'#1E2D4A', to:'#0C111D', accent:'#3B82F6' }
 
 export default function FocusPage() {
   const router = useRouter()
@@ -35,17 +57,14 @@ export default function FocusPage() {
     </div>
   )
 
-  // Raggruppa per capitolo
-  const byCapitolo: Record<string, { titolo: string; sims: Simulation[] }> = {}
+  const byCapitolo: Record<string, { titolo: string; code: string; sims: Simulation[] }> = {}
   for (const sim of simulations) {
     const key = sim.capitoloCode || 'altro'
-    if (!byCapitolo[key]) byCapitolo[key] = { titolo: sim.titolo || 'Altro', sims: [] }
+    if (!byCapitolo[key]) byCapitolo[key] = { titolo: sim.titolo || 'Altro', code: key, sims: [] }
     byCapitolo[key].sims.push(sim)
   }
-
-  const capitoli = Object.entries(byCapitolo)
-  const totaleArgomenti = capitoli.length
-  const argomentiCompletati = capitoli.filter(([_, { sims }]) =>
+  const capitoli = Object.values(byCapitolo)
+  const argomentiCompletati = capitoli.filter(({ sims }) =>
     sims.every(s => getLast(s.id)?.status === 'COMPLETED')
   ).length
 
@@ -53,73 +72,72 @@ export default function FocusPage() {
     <div style={{ height:'100dvh', background:'#030712', color:'#F9FAFB', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
 
       {/* Header */}
-      <div style={{ padding:'18px 18px 10px', flexShrink:0 }}>
+      <div style={{ padding:'18px 18px 12px', flexShrink:0 }}>
         <div style={{ fontSize:10, fontWeight:700, color:'#3B82F6', letterSpacing:2, marginBottom:4 }}>PATENTE C · CE</div>
-        <h1 style={{ fontSize:28, fontWeight:900, margin:0, letterSpacing:-1, textTransform:'uppercase' }}>FOCUS</h1>
-        <p style={{ fontSize:12, color:'#4B5563', margin:'4px 0 0' }}>
-          {argomentiCompletati}/{totaleArgomenti} argomenti completati
-        </p>
+        <div style={{ display:'flex', alignItems:'baseline', justifyContent:'space-between' }}>
+          <h1 style={{ fontSize:32, fontWeight:900, margin:0, letterSpacing:-1.5, textTransform:'uppercase' }}>FOCUS</h1>
+          <span style={{ fontSize:12, color:'#374151', fontWeight:600 }}>{argomentiCompletati}/{capitoli.length}</span>
+        </div>
       </div>
 
-      {/* Lista argomenti */}
-      <div style={{ flex:1, overflowY:'auto', padding:'8px 16px 16px' }}>
-        <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
-          {capitoli.map(([code, { titolo, sims }]) => {
+      {/* Grid */}
+      <div style={{ flex:1, overflowY:'auto', padding:'4px 16px 16px' }}>
+        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10 }}>
+          {capitoli.map(({ titolo, code, sims }) => {
             const completati = sims.filter(s => getLast(s.id)?.status === 'COMPLETED').length
-            const passati = sims.filter(s => getLast(s.id)?.passed).length
             const tuttoFatto = completati === sims.length
             const pct = Math.round((completati / sims.length) * 100)
-
-            // Trova il prossimo quiz da fare (in corso prima, poi il primo non completato)
             const inCorso = sims.find(s => getLast(s.id)?.status === 'IN_PROGRESS')
-            const prossimo = inCorso || sims.find(s => !getLast(s.id))
-            const target = prossimo || sims[sims.length - 1] // se tutti fatti, l'ultimo
-
-            let bg = '#0C111D'
-            let borderColor = '#1F2937'
-            let accentColor = '#3B82F6'
-
-            if (tuttoFatto) { bg = '#052E16'; borderColor = '#166534'; accentColor = '#4ADE80' }
-            else if (inCorso) { borderColor = '#1D4ED8'; accentColor = '#93C5FD' }
+            const prossimo = inCorso || sims.find(s => !getLast(s.id)) || sims[sims.length-1]
+            const { from, accent } = TOPIC_COLORS[code] || DEFAULT_COLOR
+            const totaleDomande = sims.length * 40
 
             return (
-              <Link key={code} href={`/simulations/${target.id}`} style={{ textDecoration:'none' }}>
-                <div style={{ background:bg, border:`1.5px solid ${borderColor}`, borderRadius:18, padding:'16px', transition:'all 0.15s' }}>
-                  <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:10 }}>
-                    <div style={{ flex:1, marginRight:12 }}>
-                      <div style={{ fontSize:16, fontWeight:800, color:'#F9FAFB', marginBottom:2 }}>{titolo}</div>
-                      <div style={{ fontSize:11, color:'#4B5563' }}>
-                        {sims.length * 40} domande totali
-                        {passati > 0 && <span style={{ color:'#4ADE80', marginLeft:6 }}>· {passati * 40} corrette</span>}
-                      </div>
-                    </div>
-                    <div style={{ display:'flex', alignItems:'center', gap:8, flexShrink:0 }}>
+              <Link key={code} href={`/simulations/${prossimo.id}`} style={{ textDecoration:'none' }}>
+                <div style={{
+                  borderRadius:20, padding:'16px 14px',
+                  background: tuttoFatto ? '#052E16' : `linear-gradient(145deg,${from},#0C111D)`,
+                  border:`1px solid ${tuttoFatto ? '#166534' : accent}22`,
+                  display:'flex', flexDirection:'column', gap:10,
+                  minHeight:140, position:'relative', overflow:'hidden',
+                  boxShadow: tuttoFatto ? 'none' : `0 4px 20px ${accent}15`
+                }}>
+                  {/* Cerchio decorativo */}
+                  <div style={{ position:'absolute', right:-20, top:-20, width:80, height:80, borderRadius:'50%', background:`${accent}12` }}/>
+
+                  {/* Icona status */}
+                  <div style={{ display:'flex', justifyContent:'space-between', alignItems:'flex-start' }}>
+                    <div style={{ width:34, height:34, borderRadius:10, background:`${accent}20`, display:'flex', alignItems:'center', justifyContent:'center' }}>
                       {tuttoFatto
-                        ? <CheckCircle2 size={22} color="#4ADE80"/>
-                        : (
-                          <div style={{ display:'flex', alignItems:'center', gap:6, background: inCorso ? '#0F1E3D' : '#111827', borderRadius:10, padding:'7px 12px' }}>
-                            {inCorso ? <Clock size={14} color="#93C5FD"/> : <Play size={14} color="#3B82F6"/>}
-                            <span style={{ fontSize:13, fontWeight:800, color: inCorso ? '#93C5FD' : '#3B82F6' }}>
-                              {inCorso ? 'Continua' : pct > 0 ? `${pct}%` : 'Inizia'}
-                            </span>
-                          </div>
-                        )}
+                        ? <CheckCircle2 size={18} color="#4ADE80"/>
+                        : inCorso
+                          ? <Clock size={18} color={accent}/>
+                          : <Target size={18} color={accent}/>}
                     </div>
+                    <span style={{ fontSize:11, fontWeight:800, color: tuttoFatto ? '#4ADE80' : accent }}>
+                      {tuttoFatto ? '✓' : `${pct}%`}
+                    </span>
                   </div>
 
-                  {/* Progress bar */}
-                  <div style={{ height:5, background:'#1F2937', borderRadius:3, overflow:'hidden' }}>
-                    <div style={{ height:'100%', borderRadius:3, transition:'width 0.6s ease',
-                      background: tuttoFatto ? '#16A34A' : 'linear-gradient(90deg,#2563EB,#06B6D4)',
-                      width:`${pct}%` }}/>
+                  {/* Titolo */}
+                  <div style={{ flex:1 }}>
+                    <div style={{ fontSize:14, fontWeight:800, color:'#F9FAFB', lineHeight:1.3, marginBottom:3 }}>{titolo}</div>
+                    <div style={{ fontSize:11, color:'#4B5563' }}>{totaleDomande} domande</div>
                   </div>
 
-                  {/* Badge quiz completati */}
-                  {completati > 0 && !tuttoFatto && (
-                    <div style={{ fontSize:10, color:'#374151', marginTop:6 }}>
-                      {completati}/{sims.length} sessioni completate
+                  {/* Progress + CTA */}
+                  <div>
+                    <div style={{ height:3, background:'#1F2937', borderRadius:2, overflow:'hidden', marginBottom:8 }}>
+                      <div style={{ height:'100%', borderRadius:2, background: tuttoFatto ? '#4ADE80' : accent, width:`${pct}%`, transition:'width 0.6s' }}/>
                     </div>
-                  )}
+                    <div style={{ display:'inline-flex', alignItems:'center', gap:5, background:`${accent}18`, borderRadius:8, padding:'5px 10px' }}>
+                      {tuttoFatto
+                        ? <><CheckCircle2 size={11} color="#4ADE80"/><span style={{ fontSize:11, color:'#4ADE80', fontWeight:700 }}>Completato</span></>
+                        : inCorso
+                          ? <><Clock size={11} color={accent}/><span style={{ fontSize:11, color:accent, fontWeight:700 }}>Continua</span></>
+                          : <><Play size={11} color={accent}/><span style={{ fontSize:11, color:accent, fontWeight:700 }}>Inizia</span></>}
+                    </div>
+                  </div>
                 </div>
               </Link>
             )
@@ -130,20 +148,16 @@ export default function FocusPage() {
       {/* Bottom nav */}
       <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', flexShrink:0 }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <Home size={19} color="#4B5563"/>
-          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Home</span>
+          <Home size={19} color="#4B5563"/><span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Home</span>
         </Link>
         <div style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0' }}>
-          <Target size={19} color="#2563EB"/>
-          <span style={{ fontSize:9, color:'#2563EB', fontWeight:700 }}>Focus</span>
+          <Target size={19} color="#2563EB"/><span style={{ fontSize:9, color:'#2563EB', fontWeight:700 }}>Focus</span>
         </div>
         <Link href="/riepilogo" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <BarChart3 size={19} color="#4B5563"/>
-          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Riepilogo</span>
+          <BarChart3 size={19} color="#4B5563"/><span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Riepilogo</span>
         </Link>
         <Link href="/weak-points" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <BookOpen size={19} color="#4B5563"/>
-          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Punti deboli</span>
+          <BookOpen size={19} color="#4B5563"/><span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Punti deboli</span>
         </Link>
       </div>
     </div>
