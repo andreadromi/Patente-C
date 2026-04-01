@@ -64,23 +64,21 @@ export default function DashboardPage() {
 
       {/* Header */}
       <div style={{ padding: '14px 18px 10px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexShrink: 0 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <div style={{ width: 40, height: 40, borderRadius: 12, background: 'var(--accent)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-            <Truck size={20} color="#fff" />
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <div style={{ width: 38, height: 38, borderRadius: 11, background: 'var(--accent)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+            <Truck size={19} color="#fff" />
           </div>
-          <div>
-            <div style={{ fontSize: 10, fontWeight: 700, color: 'var(--accent2)', letterSpacing: 2 }}>PATENTE C · CE</div>
-            <div style={{ fontSize: 16, fontWeight: 900, color: 'var(--text)', letterSpacing: -0.5 }}>{user ? fmtName(user.username) : ''}</div>
-          </div>
+          <div style={{ fontSize: 15, fontWeight: 900, color: 'var(--text)', letterSpacing: 1 }}>PATENTE C · CE</div>
         </div>
-        <div style={{ display: 'flex', gap: 6 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <span style={{ fontSize: 11, fontWeight: 700, color: 'var(--text3)', letterSpacing: 0.5, textTransform: 'uppercase' }}>{user ? fmtName(user.username) : ''}</span>
           <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-            style={{ width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 10, cursor: 'pointer' }}>
-            {theme === 'dark' ? <Sun size={14} color="var(--text3)" /> : <Moon size={14} color="var(--text3)" />}
+            style={{ width: 34, height: 34, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 9, cursor: 'pointer' }}>
+            {theme === 'dark' ? <Sun size={13} color="var(--text3)" /> : <Moon size={13} color="var(--text3)" />}
           </button>
           <button onClick={handleLogout}
-            style={{ width: 36, height: 36, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 10, cursor: 'pointer' }}>
-            <LogOut size={14} color="var(--text3)" />
+            style={{ width: 34, height: 34, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 9, cursor: 'pointer' }}>
+            <LogOut size={13} color="var(--text3)" />
           </button>
         </div>
       </div>
@@ -88,15 +86,14 @@ export default function DashboardPage() {
       {/* Stats */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 8, padding: '0 16px 10px', flexShrink: 0 }}>
         {[
-          { big: completed, small: `/${simulations.length}`, label: 'FATTI', color: 'var(--accent2)' },
-          { big: passed, small: '', label: 'PROMOSSI', color: 'var(--green)' },
-          { big: simulations.length - completed, small: '', label: 'DA FARE', color: 'var(--text3)' },
+          { big: completed, label: 'FATTI', sub: `di ${simulations.length}`, color: 'var(--accent2)' },
+          { big: passed, label: 'PROMOSSI', sub: '', color: 'var(--green)' },
+          { big: simulations.length - completed, label: 'DA FARE', sub: '', color: 'var(--text3)' },
         ].map((s, i) => (
           <div key={i} style={{ background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 12, padding: '10px 8px', textAlign: 'center' }}>
-            <div style={{ fontSize: 22, fontWeight: 900, color: s.color, lineHeight: 1 }}>
-              {s.big}{s.small && <span style={{ fontSize: 11, color: 'var(--text4)', fontWeight: 500 }}>{s.small}</span>}
-            </div>
+            <div style={{ fontSize: 22, fontWeight: 900, color: s.color, lineHeight: 1 }}>{s.big}</div>
             <div style={{ fontSize: 8, fontWeight: 700, color: 'var(--text3)', marginTop: 4, letterSpacing: 1.5 }}>{s.label}</div>
+            {s.sub && <div style={{ fontSize: 9, color: 'var(--text4)', marginTop: 1 }}>{s.sub}</div>}
           </div>
         ))}
       </div>
