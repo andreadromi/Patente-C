@@ -23,7 +23,14 @@ function parseExam(html){
     .replace(/&nbsp;/g," ")
     .replace(/&#x27;/g,"'")
     .replace(/&amp;/g,"&")
-    .replace(/&quot;/g,'"');
+    .replace(/&quot;/g,'"')
+    .replace(/&ograve;/g,"ò")
+    .replace(/&agrave;/g,"à")
+    .replace(/&egrave;/g,"è")
+    .replace(/&ugrave;/g,"ù")
+    .replace(/&igrave;/g,"ì")
+    .replace(/&eacute;/g,"é")
+    .replace(/&Egrave;/g,"È");
   
   // Split into lines, trim each, remove empty
   const lines=pl.split("\n").map(l=>l.trim()).filter(l=>l.length>0);
@@ -71,11 +78,11 @@ async function main(){
   const allPairs={};
   let noNew=0;
   
-  for(let e=1;e<=300;e++){
+  for(let e=1;e<=500;e++){
     try{
       process.stdout.write("e"+e+".");
       const h=await get("https://www.patentisuperiori.com/quiz-patente-c/esame-"+e+".html");
-      if(h.length<2000){console.log("skip");noNew++;if(noNew>30)break;continue}
+      if(h.length<2000){console.log("skip");noNew++;if(noNew>50)break;continue}
       
       const result=parseExam(h);
       let nw=0;
@@ -88,7 +95,7 @@ async function main(){
       
       if(nw>0)noNew=0;else noNew++;
       if(tot>=226&&e>100)break;
-      if(noNew>30){console.log("Stopping: no new pairs for 30 exams");break}
+      if(noNew>50){console.log("Stopping: no new pairs for 50 exams");break}
       await sleep(300);
     }catch(er){console.log("err:"+er.message);noNew++}
   }
