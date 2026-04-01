@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { Home, Target, BarChart3, BookOpen, CheckCircle2, XCircle, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Home, Target, BarChart3, BookOpen, ChevronLeft, ChevronRight } from 'lucide-react'
 
 interface Question { id: string; text: string; image: string | null; risposta: boolean }
 
@@ -145,14 +145,12 @@ export default function FocusStudyPage() {
 
       {/* Feedback + Bottoni V/F */}
       <div style={{ padding: '14px 18px', flexShrink: 0 }}>
-        <div style={{ height: 24, display: 'flex', alignItems: 'center', marginBottom: 10 }}>
+        <div style={{ height: 32, display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: 10 }}>
           {isAnswered && lastResult !== null && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-              {lastResult ? <CheckCircle2 size={15} color="#4ADE80" /> : <XCircle size={15} color="#F87171" />}
-              <span style={{ fontSize: 13, fontWeight: 700, color: lastResult ? 'var(--green)' : 'var(--red)' }}>
-                {lastResult ? 'Corretto!' : `Sbagliato — risposta: ${answers[q.id] ? 'FALSO' : 'VERO'}`}
-              </span>
-            </div>
+            <span style={{ fontSize: 18, fontWeight: 900, letterSpacing: 2, textTransform: 'uppercase',
+              color: lastResult ? 'var(--green)' : 'var(--red)' }}>
+              {lastResult ? 'CORRETTO' : `SBAGLIATO · ${answers[q.id] ? 'FALSO' : 'VERO'}`}
+            </span>
           )}
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>

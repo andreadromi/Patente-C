@@ -224,17 +224,13 @@ export default function SimulationPage() {
       {/* Zona fissa bottoni — sempre nella stessa posizione */}
       <div style={{ padding:'14px 18px', flexShrink:0 }}>
 
-        {/* Feedback testo — senza riquadro, solo testo colorato */}
-        <div style={{ height:24, display:'flex', alignItems:'center', marginBottom:10 }}>
+        {/* Feedback — grande, stampatello */}
+        <div style={{ height:32, display:'flex', alignItems:'center', justifyContent:'center', marginBottom:10 }}>
           {isAnswered && lastResult !== null && (
-            <div style={{ display:'flex', alignItems:'center', gap:6 }}>
-              {lastResult
-                ? <CheckCircle2 size={15} color="#4ADE80"/>
-                : <XCircle size={15} color="#F87171"/>}
-              <span style={{ fontSize:13, fontWeight:700, color: lastResult ? 'var(--green)' : 'var(--red)' }}>
-                {lastResult ? 'Corretto!' : `Sbagliato — risposta: ${answers[q.id] ? 'FALSO' : 'VERO'}`}
-              </span>
-            </div>
+            <span style={{ fontSize:18, fontWeight:900, letterSpacing:2, textTransform:'uppercase',
+              color: lastResult ? 'var(--green)' : 'var(--red)' }}>
+              {lastResult ? 'CORRETTO' : `SBAGLIATO · ${answers[q.id] ? 'FALSO' : 'VERO'}`}
+            </span>
           )}
         </div>
 

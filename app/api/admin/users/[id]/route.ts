@@ -142,10 +142,20 @@ export async function DELETE(request: NextRequest, props: Props) {
       )
     }
 
-    // Elimina utente (Prisma eliminerà automaticamente userSimulations, answers, weakPoints con onDelete: Cascade)
-    await prisma.user.delete({
-      where: { id: params.id },
+    // Elimina dati collegati, poi utente
+    const userSimIds = await prisma.userSimulation.findMany({
+      where: { userId: params.id },
+      select: { id: true }
     })
+    const simIds = userSimIds.map(s => s.id)
+
+    if (simIds.length > 0) {
+      await prisma.capitoloResult.deleteMany({ where: { userSimulationId: { in: simIds } } })
+      await prisma.answer.deleteMany({ where: { userSimulationId: { in: simIds } } })
+    }
+    await prisma.userSimulation.deleteMany({ where: { userId: params.id } })
+    await prisma.weakPoint.deleteMany({ where: { userId: params.id } })
+    await prisma.user.delete({ where: { id: params.id } })
 
     return NextResponse.json({ success: true })
   } catch (error) {

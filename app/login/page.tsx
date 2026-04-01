@@ -65,7 +65,7 @@ export default function LoginPage() {
               background: valid ? 'linear-gradient(135deg,#2563EB,#1D4ED8)' : 'var(--card)',
               color: valid ? '#fff' : 'var(--text4)', fontSize: 16, fontWeight: 800,
               fontFamily: 'inherit', transition: 'all 0.2s',
-              boxShadow: valid ? '0 4px 20px rgba(37,99,235,0.4)' : 'none'
+              boxShadow: 'none'
             }}>
             {loading ? 'Accesso...' : <><span>Entra</span><ArrowRight size={18} color={valid ? '#fff' : 'var(--text4)'} /></>}
           </button>
