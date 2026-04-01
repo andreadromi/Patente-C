@@ -69,17 +69,17 @@ export default function WeakPointsPage() {
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', flexShrink:0 }}>
+      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', paddingBottom:'env(safe-area-inset-bottom,8px)', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0 }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <Home size={20} color="#4B5563"/>
+          <Home size={19} color="#4B5563"/>
           <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Home</span>
         </Link>
-        <Link href="/riepilogo" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <BarChart3 size={20} color="#4B5563"/>
-          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Riepilogo</span>
+        <Link href="/focus" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
+          <Target size={19} color="#4B5563"/>
+          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Focus</span>
         </Link>
         <div style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0' }}>
-          <BookOpen size={20} color="#2563EB"/>
+          <BookOpen size={19} color="#2563EB"/>
           <span style={{ fontSize:9, color:'#2563EB', fontWeight:700 }}>Punti deboli</span>
         </div>
       </div>

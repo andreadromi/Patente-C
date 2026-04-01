@@ -162,6 +162,9 @@ export default function SimulationPage() {
             color: timeWarn ? '#F87171' : '#3B82F6' }}>
             {fmtTime(timeLeft)}
           </div>
+          <Link href="/dashboard" style={{ width:36, height:36, display:'flex', alignItems:'center', justifyContent:'center', background:'#111827', border:'1px solid #1F2937', borderRadius:10, textDecoration:'none' }}>
+            <Flag size={14} color="#4B5563"/>
+          </Link>
         </div>
       </div>
 
@@ -264,20 +267,15 @@ export default function SimulationPage() {
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', flexShrink:0, paddingBottom:'env(safe-area-inset-bottom,0px)' }}>
-        {[
-          { href:'/dashboard', Icon:Home, label:'Home' },
-          { href:'/riepilogo', Icon:BarChart3, label:'Riepilogo' },
-          { href:'/weak-points', Icon:BookOpen, label:'Deboli' },
-        ].map(({ href, Icon, label }) => (
-          <Link key={href} href={href} style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-            <Icon size={19} color="#4B5563"/>
-            <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>{label}</span>
-          </Link>
-        ))}
+      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0, paddingBottom:'env(safe-area-inset-bottom,8px)' }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <Flag size={19} color="#4B5563"/>
-          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Esci</span>
+          <Home size={19} color="#4B5563"/><span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Home</span>
+        </Link>
+        <Link href="/focus" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
+          <Target size={19} color="#4B5563"/><span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Focus</span>
+        </Link>
+        <Link href="/weak-points" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
+          <BookOpen size={19} color="#4B5563"/><span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Punti deboli</span>
         </Link>
       </div>
     </div>
