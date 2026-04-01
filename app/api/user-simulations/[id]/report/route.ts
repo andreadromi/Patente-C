@@ -15,7 +15,7 @@ export async function GET(
     include: {
       simulation: true,
       answers: { include: { question: { include: { capitolo: true } } } },
-      capitoloResults: { include: { capitolo: true } },
+      capitoloResults: true,
     }
   })
 
@@ -36,6 +36,7 @@ export async function GET(
       index: idx + 1,
       questionId: qid,
       text: answer.question.text,
+      image: answer.question.image || null,
       risposta: answer.question.risposta,
       userAnswer: answer.userAnswer,
       isCorrect: answer.isCorrect,
@@ -53,12 +54,13 @@ export async function GET(
     timeElapsed: userSim.timeElapsed,
     startedAt: userSim.startedAt,
     completedAt: userSim.completedAt,
+    simulationId: userSim.simulationId,
     answers: orderedAnswers,
     capitoloResults: userSim.capitoloResults.map(cr => ({
-      capitolo: cr.capitolo.name,
-      capitoloCode: cr.capitolo.code,
-      total: cr.totalQuestions,
-      correct: cr.correctAnswers,
+      capitolo: cr.capitoloCode,
+      capitoloCode: cr.capitoloCode,
+      total: cr.total,
+      correct: cr.correct,
       accuracy: cr.accuracy,
     }))
   })

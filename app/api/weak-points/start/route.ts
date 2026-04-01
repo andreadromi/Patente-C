@@ -16,6 +16,7 @@ export async function POST(request: NextRequest) {
     weakPointId: wp.id,
     questionId: wp.questionId,
     text: wp.question.text,
+    image: wp.question.image || null,
     capitolo: wp.question.capitolo.name,
     consecutiveCorrect: wp.consecutiveCorrect,
     totalAttempts: wp.totalAttempts,

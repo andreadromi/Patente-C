@@ -56,6 +56,12 @@ export async function POST(
     if (answer.isCorrect) byCapitolo[capId].correct++
   }
 
+  // Lookup capitolo codes
+  const capitoli = await prisma.capitolo.findMany({
+    where: { id: { in: Object.keys(byCapitolo).map(Number) } }
+  })
+  const capMap = new Map(capitoli.map(c => [c.id, c.code]))
+
   // Salva
   await prisma.userSimulation.update({
     where: { id },
@@ -72,12 +78,13 @@ export async function POST(
   // CapitoloResult
   await prisma.capitoloResult.deleteMany({ where: { userSimulationId: id } })
   for (const [capIdStr, stats] of Object.entries(byCapitolo)) {
+    const code = capMap.get(parseInt(capIdStr)) || capIdStr
     await prisma.capitoloResult.create({
       data: {
         userSimulationId: id,
-        capitoloId: parseInt(capIdStr),
-        totalQuestions: stats.total,
-        correctAnswers: stats.correct,
+        capitoloCode: code,
+        total: stats.total,
+        correct: stats.correct,
         accuracy: (stats.correct / stats.total) * 100,
       }
     })

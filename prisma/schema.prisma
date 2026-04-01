@@ -31,6 +31,7 @@ model Question {
   capitolo   Capitolo    @relation(fields: [capitoloId], references: [id])
   text       String      @unique
   risposta   Boolean
+  image      String?
   answers    Answer[]
   weakPoints WeakPoint[]
 }
@@ -68,8 +69,11 @@ model Answer {
   questionId       String
   userAnswer       Boolean?
   isCorrect        Boolean?
+  answeredAt       DateTime?
   userSimulation   UserSimulation @relation(fields: [userSimulationId], references: [id])
   question         Question       @relation(fields: [questionId], references: [id])
+
+  @@unique([userSimulationId, questionId])
 }
 
 model CapitoloResult {

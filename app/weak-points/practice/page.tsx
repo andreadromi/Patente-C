@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { Home, BookOpen, BarChart3, CheckCircle2, XCircle, Target, RotateCcw } from 'lucide-react'
 
-interface WPQ { weakPointId: string; questionId: string; text: string; capitolo: string; consecutiveCorrect: number; totalAttempts: number }
+interface WPQ { weakPointId: string; questionId: string; text: string; image: string | null; capitolo: string; consecutiveCorrect: number; totalAttempts: number }
 
 export default function WPPracticePage() {
   const router = useRouter()
@@ -120,6 +120,15 @@ export default function WPPracticePage() {
       {/* Contenuto */}
       <div style={{ flex:1, padding:'20px 18px', overflowY:'auto', display:'flex', flexDirection:'column', gap:14 }}>
         <div style={{ background:'#0C111D', border:'1px solid #1F2937', borderRadius:20, padding:'20px 18px' }}>
+          {q.image && (
+            <div style={{ display:'flex', justifyContent:'center', marginBottom:14 }}>
+              <img
+                src={`https://www.patentisuperiori.com/img-sign/${q.image}`}
+                alt="Immagine domanda"
+                style={{ maxWidth:160, maxHeight:120, objectFit:'contain', borderRadius:8, background:'#fff', padding:6 }}
+              />
+            </div>
+          )}
           <p style={{ fontSize:19, lineHeight:1.8, color:'#F9FAFB', margin:0, fontWeight:500 }}>{q.text}</p>
         </div>
 

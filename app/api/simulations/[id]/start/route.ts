@@ -50,6 +50,7 @@ export async function POST(
       .map((q: any) => ({
         id: q.id,
         text: q.text,
+        image: q.image || null,
         capitolo: q.capitolo.name,
       }))
 

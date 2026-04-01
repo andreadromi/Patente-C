@@ -5,7 +5,7 @@ import { useRouter, useParams } from 'next/navigation'
 import Link from 'next/link'
 import { Home, BookOpen, Flag, BarChart3, ChevronLeft, ChevronRight, CheckCircle2, XCircle , Target } from 'lucide-react'
 
-interface Question { id: string; text: string; capitolo: string }
+interface Question { id: string; text: string; image: string | null; capitolo: string }
 const TOTAL = 40
 const TIME_LIMIT = 40 * 60
 
@@ -206,6 +206,15 @@ export default function SimulationPage() {
 
       {/* Domanda — scrollabile */}
       <div style={{ flex:1, padding:'18px 18px 0', overflowY:'auto' }}>
+        {q.image && (
+          <div style={{ display:'flex', justifyContent:'center', marginBottom:16 }}>
+            <img
+              src={`https://www.patentisuperiori.com/img-sign/${q.image}`}
+              alt="Immagine domanda"
+              style={{ maxWidth:180, maxHeight:140, objectFit:'contain', borderRadius:8, background:'#fff', padding:8 }}
+            />
+          </div>
+        )}
         <p style={{ fontSize:19, lineHeight:1.8, color:'#F9FAFB', margin:0, fontWeight:500 }}>{q.text}</p>
       </div>
 

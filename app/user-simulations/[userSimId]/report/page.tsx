@@ -115,6 +115,11 @@ export default function ReportPage() {
                 {wrong.map((a:any) => (
                   <div key={a.index} style={{ background:'#0C111D', border:'1px solid #1F2937', borderRadius:12, padding:'12px 14px' }}>
                     <div style={{ fontSize:10, color:'#374151', marginBottom:5 }}>Q{a.index} · {a.capitolo}</div>
+                    {a.image && (
+                      <div style={{ display:'flex', justifyContent:'center', marginBottom:8 }}>
+                        <img src={`https://www.patentisuperiori.com/img-sign/${a.image}`} alt="" style={{ maxWidth:120, maxHeight:90, objectFit:'contain', borderRadius:6, background:'#fff', padding:4 }}/>
+                      </div>
+                    )}
                     <p style={{ fontSize:13, color:'#D1D5DB', margin:'0 0 7px', lineHeight:1.5 }}>{a.text}</p>
                     <div style={{ display:'flex', gap:14, fontSize:11 }}>
                       <span style={{ color:'#F87171', fontWeight:700 }}>Tu: {a.userAnswer===null?'—':a.userAnswer?'VERO':'FALSO'}</span>
