@@ -150,20 +150,20 @@ export default function SimulationPage() {
           <div style={{ fontSize:10, fontWeight:700, color:'#3B82F6', letterSpacing:2 }}>QUIZ · {idx+1}/{TOTAL}</div>
           <div style={{ fontSize:11, color:'#4B5563', marginTop:1 }}>{q.capitolo}</div>
         </div>
-        <div style={{ display:'flex', alignItems:'center', gap:8 }}>
-          {errorCount >= 3 && (
-            <span style={{ fontSize:11, fontWeight:700, color:errorCount>=4?'#F87171':'#FB923C' }}>
-              {errorCount}/4 err.
-            </span>
-          )}
-          <div style={{ fontFamily:'monospace', fontSize:20, fontWeight:900, padding:'6px 13px', borderRadius:10,
-            background: timeWarn ? '#450A0A' : '#111827',
-            border:`1.5px solid ${timeWarn?'#DC2626':'#1F2937'}`,
-            color: timeWarn ? '#F87171' : '#3B82F6' }}>
+        <div style={{ display:'flex', alignItems:'center', gap:6 }}>
+          <div style={{ fontSize:11, fontWeight:600, color:'var(--text3)', display:'flex', alignItems:'center', gap:4 }}>
+            <span style={{ color:'var(--green)' }}>{correctCount}</span>
+            <span style={{ color:'var(--text4)' }}>/</span>
+            <span style={{ color: errorCount > 4 ? 'var(--red)' : 'var(--text3)' }}>{errorCount}</span>
+          </div>
+          <div style={{ fontFamily:'monospace', fontSize:18, fontWeight:900, padding:'5px 11px', borderRadius:10,
+            background: timeWarn ? '#450A0A' : 'var(--surface)',
+            border:`1.5px solid ${timeWarn?'#DC2626':'var(--border)'}`,
+            color: timeWarn ? '#F87171' : 'var(--accent2)' }}>
             {fmtTime(timeLeft)}
           </div>
-          <Link href="/dashboard" style={{ width:36, height:36, display:'flex', alignItems:'center', justifyContent:'center', background:'#111827', border:'1px solid #1F2937', borderRadius:10, textDecoration:'none' }}>
-            <Flag size={14} color="#4B5563"/>
+          <Link href="/dashboard" style={{ width:34, height:34, display:'flex', alignItems:'center', justifyContent:'center', background:'var(--surface)', border:'1px solid var(--border)', borderRadius:10, textDecoration:'none' }}>
+            <Flag size={13} color="var(--text3)"/>
           </Link>
         </div>
       </div>

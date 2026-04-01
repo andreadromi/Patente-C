@@ -3,52 +3,42 @@
 @tailwind utilities;
 
 :root {
+  --bg: #030712;
+  --card: #0C111D;
+  --surface: #111827;
+  --border: #1F2937;
+  --text: #F9FAFB;
+  --text2: #9CA3AF;
+  --text3: #4B5563;
+  --text4: #374151;
   --accent: #2563EB;
-  --accent-light: #3B82F6;
-  --accent-glow: rgba(37, 99, 235, 0.3);
-  --bg: #020817;
-  --bg-card: #0F1729;
-  --bg-card2: #111827;
-  --border: #1E2D4A;
-  --green: #10B981;
-  --green-bg: #022C22;
-  --red: #EF4444;
-  --red-bg: #2D0A0A;
-  --text: #F1F5F9;
-  --subtext: #94A3B8;
-  --muted: #475569;
+  --accent2: #3B82F6;
+  --green: #4ADE80;
+  --green-dim: #14532D;
+  --red: #F87171;
+  --red-dim: #450A0A;
+  --nav-bg: #0C111D;
+}
+
+[data-theme='light'] {
+  --bg: #F8FAFC;
+  --card: #FFFFFF;
+  --surface: #F1F5F9;
+  --border: #E2E8F0;
+  --text: #0F172A;
+  --text2: #64748B;
+  --text3: #94A3B8;
+  --text4: #CBD5E1;
+  --accent: #2563EB;
+  --accent2: #3B82F6;
+  --green: #16A34A;
+  --green-dim: #DCFCE7;
+  --red: #DC2626;
+  --red-dim: #FEE2E2;
+  --nav-bg: #FFFFFF;
 }
 
 * { box-sizing: border-box; }
-
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-
-@keyframes slideUp {
-  from { opacity: 0; transform: translateY(16px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  20% { transform: translateX(-6px); }
-  40% { transform: translateX(6px); }
-  60% { transform: translateX(-4px); }
-  80% { transform: translateX(4px); }
-}
-@keyframes pop {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.06); }
-  100% { transform: scale(1); }
-}
-
-.animate-slide-up { animation: slideUp 0.3s ease forwards; }
-.animate-shake { animation: shake 0.4s ease; }
-.animate-pop { animation: pop 0.25s ease; }
-
-::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+body { background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; margin: 0; padding: 0; }
+::-webkit-scrollbar { display: none; }
+@keyframes spin { to { transform: rotate(360deg); } }
