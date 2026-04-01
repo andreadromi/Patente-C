@@ -65,8 +65,8 @@ export default function FocusStudyPage() {
   }
 
   if (loading) return (
-    <div style={{ minHeight: '100vh', background: '#030712', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <div style={{ width: 36, height: 36, border: '3px solid #1F2937', borderTopColor: '#2563EB', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }} />
+    <div style={{ minHeight: '100vh', background: 'var(--bg)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ width: 36, height: 36, border: '3px solid #1F2937', borderTopColor: 'var(--accent)', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }} />
       <style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style>
     </div>
   )
@@ -80,34 +80,34 @@ export default function FocusStudyPage() {
   const total = questions.length
 
   return (
-    <div style={{ height: '100dvh', background: '#030712', color: '#F9FAFB', fontFamily: 'system-ui,-apple-system,sans-serif', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+    <div style={{ height: '100dvh', background: 'var(--bg)', color: 'var(--text)', fontFamily: 'system-ui,-apple-system,sans-serif', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
 
       {/* Header */}
-      <div style={{ padding: '12px 18px', background: '#0C111D', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexShrink: 0, borderBottom: '1px solid #111827' }}>
+      <div style={{ padding: '12px 18px', background: 'var(--card)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexShrink: 0, borderBottom: '1px solid #111827' }}>
         <div>
-          <div style={{ fontSize: 10, fontWeight: 700, color: '#3B82F6', letterSpacing: 2 }}>FOCUS · {idx + 1}/{total}</div>
-          <div style={{ fontSize: 11, color: '#4B5563', marginTop: 1 }}>{capName}</div>
+          <div style={{ fontSize: 10, fontWeight: 700, color: 'var(--accent2)', letterSpacing: 2 }}>FOCUS · {idx + 1}/{total}</div>
+          <div style={{ fontSize: 11, color: 'var(--text3)', marginTop: 1 }}>{capName}</div>
         </div>
-        <div style={{ fontSize: 12, fontWeight: 700, color: '#374151' }}>
+        <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--text4)' }}>
           {correctCount}/{answeredCount}
         </div>
       </div>
 
       {/* Progress bar */}
-      <div style={{ padding: '6px 18px 0', background: '#0C111D', flexShrink: 0 }}>
+      <div style={{ padding: '6px 18px 0', background: 'var(--card)', flexShrink: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <div style={{ flex: 1, height: 7, background: '#1F2937', borderRadius: 4, overflow: 'hidden' }}>
+          <div style={{ flex: 1, height: 7, background: 'var(--border)', borderRadius: 4, overflow: 'hidden' }}>
             <div style={{ height: '100%', background: 'linear-gradient(90deg,#2563EB,#06B6D4)', width: `${(answeredCount / total) * 100}%`, transition: 'width 0.4s', borderRadius: 4 }} />
           </div>
-          <span style={{ fontSize: 11, fontWeight: 700, color: '#374151', minWidth: 40, textAlign: 'right' }}>{answeredCount}/{total}</span>
+          <span style={{ fontSize: 11, fontWeight: 700, color: 'var(--text4)', minWidth: 40, textAlign: 'right' }}>{answeredCount}/{total}</span>
         </div>
       </div>
 
       {/* Numeri domande */}
-      <div style={{ background: '#0C111D', padding: '8px 0', flexShrink: 0, borderBottom: '1px solid #111827' }}>
+      <div style={{ background: 'var(--card)', padding: '8px 0', flexShrink: 0, borderBottom: '1px solid #111827' }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <button onClick={() => goTo(Math.max(0, idx - 1))} style={{ padding: '0 10px', background: 'none', border: 'none', cursor: 'pointer' }}>
-            <ChevronLeft size={16} color={idx > 0 ? '#4B5563' : '#1F2937'} />
+            <ChevronLeft size={16} color={idx > 0 ? 'var(--text3)' : 'var(--border)'} />
           </button>
           <div ref={numbersRef} style={{ flex: 1, display: 'flex', gap: 4, overflowX: 'auto', scrollbarWidth: 'none' }}>
             <style>{`div::-webkit-scrollbar{display:none}`}</style>
@@ -119,15 +119,15 @@ export default function FocusStudyPage() {
                 <button key={i} onClick={() => goTo(i)} style={{
                   minWidth: 32, height: 32, borderRadius: 8, border: 'none', fontSize: 10, fontWeight: 800,
                   cursor: 'pointer', flexShrink: 0, fontFamily: 'inherit', transition: 'all 0.15s',
-                  background: cur ? '#2563EB' : done ? (ok ? '#14532D' : '#450A0A') : '#111827',
-                  color: cur ? '#fff' : done ? (ok ? '#4ADE80' : '#F87171') : '#374151',
+                  background: cur ? 'var(--accent)' : done ? (ok ? 'var(--green-dim)' : 'var(--red-dim)') : 'var(--surface)',
+                  color: cur ? '#fff' : done ? (ok ? 'var(--green)' : 'var(--red)') : 'var(--text4)',
                   boxShadow: cur ? '0 0 10px rgba(37,99,235,0.5)' : 'none',
                 }}>{i + 1}</button>
               )
             })}
           </div>
           <button onClick={() => goTo(Math.min(total - 1, idx + 1))} style={{ padding: '0 10px', background: 'none', border: 'none', cursor: 'pointer' }}>
-            <ChevronRight size={16} color={idx < total - 1 ? '#4B5563' : '#1F2937'} />
+            <ChevronRight size={16} color={idx < total - 1 ? 'var(--text3)' : 'var(--border)'} />
           </button>
         </div>
       </div>
@@ -140,7 +140,7 @@ export default function FocusStudyPage() {
               style={{ maxWidth: 180, maxHeight: 140, objectFit: 'contain', borderRadius: 8, background: '#fff', padding: 8 }} />
           </div>
         )}
-        <p style={{ fontSize: 19, lineHeight: 1.8, color: '#F9FAFB', margin: 0, fontWeight: 500 }}>{q.text}</p>
+        <p style={{ fontSize: 19, lineHeight: 1.8, color: 'var(--text)', margin: 0, fontWeight: 500 }}>{q.text}</p>
       </div>
 
       {/* Feedback + Bottoni V/F */}
@@ -149,7 +149,7 @@ export default function FocusStudyPage() {
           {isAnswered && lastResult !== null && (
             <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
               {lastResult ? <CheckCircle2 size={15} color="#4ADE80" /> : <XCircle size={15} color="#F87171" />}
-              <span style={{ fontSize: 13, fontWeight: 700, color: lastResult ? '#4ADE80' : '#F87171' }}>
+              <span style={{ fontSize: 13, fontWeight: 700, color: lastResult ? 'var(--green)' : 'var(--red)' }}>
                 {lastResult ? 'Corretto!' : `Sbagliato — risposta: ${answers[q.id] ? 'FALSO' : 'VERO'}`}
               </span>
             </div>
@@ -157,8 +157,8 @@ export default function FocusStudyPage() {
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
           {[
-            { val: true, label: 'VERO', activeColor: '#4ADE80', activeBg: '#052E16', activeBorder: '#166534' },
-            { val: false, label: 'FALSO', activeColor: '#F87171', activeBg: '#450A0A', activeBorder: '#7F1D1D' },
+            { val: true, label: 'VERO', activeColor: 'var(--green)', activeBg: 'var(--green-dim)', activeBorder: 'var(--green)' },
+            { val: false, label: 'FALSO', activeColor: 'var(--red)', activeBg: 'var(--red-dim)', activeBorder: 'var(--red)' },
           ].map(({ val, label, activeColor, activeBg, activeBorder }) => {
             const isSelected = isAnswered && answers[q.id] === val
             return (
@@ -166,9 +166,9 @@ export default function FocusStudyPage() {
                 style={{
                   padding: '17px 0', borderRadius: 16, fontSize: 16, fontWeight: 900, letterSpacing: 2,
                   cursor: isAnswered ? 'default' : 'pointer', fontFamily: 'inherit', transition: 'all 0.2s',
-                  background: isAnswered ? (isSelected ? activeBg : '#0C111D') : '#0C111D',
-                  border: `1.5px solid ${isAnswered ? (isSelected ? activeBorder : '#1F2937') : '#1F2937'}`,
-                  color: isAnswered ? (isSelected ? activeColor : '#374151') : (label === 'VERO' ? '#4ADE80' : '#F87171'),
+                  background: isAnswered ? (isSelected ? activeBg : 'var(--card)') : 'var(--card)',
+                  border: `1.5px solid ${isAnswered ? (isSelected ? activeBorder : 'var(--border)') : 'var(--border)'}`,
+                  color: isAnswered ? (isSelected ? activeColor : 'var(--text4)') : (label === 'VERO' ? 'var(--green)' : 'var(--red)'),
                   opacity: isAnswered && !isSelected ? 0.4 : 1,
                 }}>
                 {label}
@@ -179,15 +179,15 @@ export default function FocusStudyPage() {
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background: '#0C111D', borderTop: '1px solid #111827', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', flexShrink: 0, paddingBottom: 'env(safe-area-inset-bottom,8px)' }}>
+      <div style={{ background: 'var(--card)', borderTop: '1px solid #111827', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', flexShrink: 0, paddingBottom: 'env(safe-area-inset-bottom,8px)' }}>
         <Link href="/dashboard" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, padding: '10px 0', textDecoration: 'none' }}>
-          <Home size={19} color="#4B5563" /><span style={{ fontSize: 9, color: '#4B5563', fontWeight: 600 }}>Home</span>
+          <Home size={19} color="#4B5563" /><span style={{ fontSize: 9, color: 'var(--text3)', fontWeight: 600 }}>Home</span>
         </Link>
         <Link href="/focus" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, padding: '10px 0', textDecoration: 'none' }}>
-          <Target size={19} color="#2563EB" /><span style={{ fontSize: 9, color: '#2563EB', fontWeight: 700 }}>Focus</span>
+          <Target size={19} color="#2563EB" /><span style={{ fontSize: 9, color: 'var(--accent)', fontWeight: 700 }}>Focus</span>
         </Link>
         <Link href="/weak-points" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, padding: '10px 0', textDecoration: 'none' }}>
-          <BookOpen size={19} color="#4B5563" /><span style={{ fontSize: 9, color: '#4B5563', fontWeight: 600 }}>Punti deboli</span>
+          <BookOpen size={19} color="#4B5563" /><span style={{ fontSize: 9, color: 'var(--text3)', fontWeight: 600 }}>Punti deboli</span>
         </Link>
       </div>
     </div>

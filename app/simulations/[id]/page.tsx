@@ -113,21 +113,21 @@ export default function SimulationPage() {
   }
 
   if (loading) return (
-    <div style={{ minHeight:'100vh', background:'#030712', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:14, fontFamily:'system-ui' }}>
-      <div style={{ width:40, height:40, border:'3px solid #1F2937', borderTopColor:'#2563EB', borderRadius:'50%', animation:'spin 0.7s linear infinite' }}/>
-      <p style={{ color:'#4B5563', fontSize:13 }}>Caricamento...</p>
+    <div style={{ minHeight:'100vh', background:'var(--bg)', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:14, fontFamily:'system-ui' }}>
+      <div style={{ width:40, height:40, border:'3px solid #1F2937', borderTopColor:'var(--accent)', borderRadius:'50%', animation:'spin 0.7s linear infinite' }}/>
+      <p style={{ color:'var(--text3)', fontSize:13 }}>Caricamento...</p>
       <style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style>
     </div>
   )
 
   if (error) return (
-    <div style={{ minHeight:'100vh', background:'#030712', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:24, gap:16, fontFamily:'system-ui' }}>
+    <div style={{ minHeight:'100vh', background:'var(--bg)', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:24, gap:16, fontFamily:'system-ui' }}>
       <XCircle size={48} color="#EF4444"/>
-      <p style={{ color:'#F1F5F9', fontWeight:800, margin:0, fontSize:20 }}>Errore</p>
-      <p style={{ color:'#6B7280', fontSize:14, textAlign:'center', maxWidth:280 }}>{error}</p>
+      <p style={{ color:'var(--text)', fontWeight:800, margin:0, fontSize:20 }}>Errore</p>
+      <p style={{ color:'var(--text2)', fontSize:14, textAlign:'center', maxWidth:280 }}>{error}</p>
       <button onClick={() => { setError(null); setLoading(true); startSimulation() }}
-        style={{ padding:'12px 28px', background:'#2563EB', color:'#fff', border:'none', borderRadius:12, fontWeight:700, cursor:'pointer', fontFamily:'inherit' }}>Riprova</button>
-      <Link href="/dashboard" style={{ color:'#4B5563', fontSize:13 }}>← Home</Link>
+        style={{ padding:'12px 28px', background:'var(--accent)', color:'#fff', border:'none', borderRadius:12, fontWeight:700, cursor:'pointer', fontFamily:'inherit' }}>Riprova</button>
+      <Link href="/dashboard" style={{ color:'var(--text3)', fontSize:13 }}>← Home</Link>
     </div>
   )
 
@@ -142,13 +142,13 @@ export default function SimulationPage() {
   const timeWarn = timeLeft < 300
 
   return (
-    <div style={{ height:'100dvh', background:'#030712', color:'#F9FAFB', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
+    <div style={{ height:'100dvh', background:'var(--bg)', color:'var(--text)', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
 
       {/* Header */}
-      <div style={{ padding:'12px 18px', background:'#0C111D', display:'flex', alignItems:'center', justifyContent:'space-between', flexShrink:0, borderBottom:'1px solid #111827' }}>
+      <div style={{ padding:'12px 18px', background:'var(--card)', display:'flex', alignItems:'center', justifyContent:'space-between', flexShrink:0, borderBottom:'1px solid #111827' }}>
         <div>
-          <div style={{ fontSize:10, fontWeight:700, color:'#3B82F6', letterSpacing:2 }}>QUIZ · {idx+1}/{TOTAL}</div>
-          <div style={{ fontSize:11, color:'#4B5563', marginTop:1 }}>{q.capitolo}</div>
+          <div style={{ fontSize:10, fontWeight:700, color:'var(--accent2)', letterSpacing:2 }}>QUIZ · {idx+1}/{TOTAL}</div>
+          <div style={{ fontSize:11, color:'var(--text3)', marginTop:1 }}>{q.capitolo}</div>
         </div>
         <div style={{ display:'flex', alignItems:'center', gap:6 }}>
           <div style={{ fontSize:11, fontWeight:600, color:'var(--text3)', display:'flex', alignItems:'center', gap:4 }}>
@@ -157,9 +157,9 @@ export default function SimulationPage() {
             <span style={{ color: errorCount > 4 ? 'var(--red)' : 'var(--text3)' }}>{errorCount}</span>
           </div>
           <div style={{ fontFamily:'monospace', fontSize:18, fontWeight:900, padding:'5px 11px', borderRadius:10,
-            background: timeWarn ? '#450A0A' : 'var(--surface)',
-            border:`1.5px solid ${timeWarn?'#DC2626':'var(--border)'}`,
-            color: timeWarn ? '#F87171' : 'var(--accent2)' }}>
+            background: timeWarn ? 'var(--red-dim)' : 'var(--surface)',
+            border:`1.5px solid ${timeWarn?'var(--red)':'var(--border)'}`,
+            color: timeWarn ? 'var(--red)' : 'var(--accent2)' }}>
             {fmtTime(timeLeft)}
           </div>
           <Link href="/dashboard" style={{ width:34, height:34, display:'flex', alignItems:'center', justifyContent:'center', background:'var(--surface)', border:'1px solid var(--border)', borderRadius:10, textDecoration:'none' }}>
@@ -169,20 +169,20 @@ export default function SimulationPage() {
       </div>
 
       {/* Progress bar */}
-      <div style={{ padding:'6px 18px 0', background:'#0C111D', flexShrink:0 }}>
+      <div style={{ padding:'6px 18px 0', background:'var(--card)', flexShrink:0 }}>
         <div style={{ display:'flex', alignItems:'center', gap:10 }}>
-          <div style={{ flex:1, height:7, background:'#1F2937', borderRadius:4, overflow:'hidden' }}>
+          <div style={{ flex:1, height:7, background:'var(--border)', borderRadius:4, overflow:'hidden' }}>
             <div style={{ height:'100%', background:'linear-gradient(90deg,#2563EB,#06B6D4)', width:`${(answeredCount/TOTAL)*100}%`, transition:'width 0.4s', borderRadius:4 }}/>
           </div>
-          <span style={{ fontSize:11, fontWeight:700, color:'#374151', minWidth:32, textAlign:'right' }}>{answeredCount}/{TOTAL}</span>
+          <span style={{ fontSize:11, fontWeight:700, color:'var(--text4)', minWidth:32, textAlign:'right' }}>{answeredCount}/{TOTAL}</span>
         </div>
       </div>
 
       {/* Numeri domande */}
-      <div style={{ background:'#0C111D', padding:'8px 0', flexShrink:0, borderBottom:'1px solid #111827' }}>
+      <div style={{ background:'var(--card)', padding:'8px 0', flexShrink:0, borderBottom:'1px solid #111827' }}>
         <div style={{ display:'flex', alignItems:'center' }}>
           <button onClick={() => goTo(Math.max(0,idx-1))} style={{ padding:'0 10px', background:'none', border:'none', cursor:'pointer' }}>
-            <ChevronLeft size={16} color={idx > 0 ? '#4B5563' : '#1F2937'}/>
+            <ChevronLeft size={16} color={idx > 0 ? 'var(--text3)' : 'var(--border)'}/>
           </button>
           <div ref={numbersRef} style={{ flex:1, display:'flex', gap:4, overflowX:'auto', scrollbarWidth:'none' }}>
             <style>{`div::-webkit-scrollbar{display:none}`}</style>
@@ -194,15 +194,15 @@ export default function SimulationPage() {
                 <button key={i} onClick={() => goTo(i)} style={{
                   minWidth:36, height:36, borderRadius:9, border:'none', fontSize:12, fontWeight:800,
                   cursor:'pointer', flexShrink:0, fontFamily:'inherit', transition:'all 0.15s',
-                  background: cur ? '#2563EB' : done ? (ok ? '#14532D' : '#450A0A') : '#111827',
-                  color: cur ? '#fff' : done ? (ok ? '#4ADE80' : '#F87171') : '#374151',
+                  background: cur ? 'var(--accent)' : done ? (ok ? 'var(--green-dim)' : 'var(--red-dim)') : 'var(--surface)',
+                  color: cur ? '#fff' : done ? (ok ? 'var(--green)' : 'var(--red)') : 'var(--text4)',
                   boxShadow: cur ? '0 0 10px rgba(37,99,235,0.5)' : 'none',
                 }}>{i+1}</button>
               )
             })}
           </div>
           <button onClick={() => goTo(Math.min(TOTAL-1,idx+1))} style={{ padding:'0 10px', background:'none', border:'none', cursor:'pointer' }}>
-            <ChevronRight size={16} color={idx < TOTAL-1 ? '#4B5563' : '#1F2937'}/>
+            <ChevronRight size={16} color={idx < TOTAL-1 ? 'var(--text3)' : 'var(--border)'}/>
           </button>
         </div>
       </div>
@@ -218,7 +218,7 @@ export default function SimulationPage() {
             />
           </div>
         )}
-        <p style={{ fontSize:19, lineHeight:1.8, color:'#F9FAFB', margin:0, fontWeight:500 }}>{q.text}</p>
+        <p style={{ fontSize:19, lineHeight:1.8, color:'var(--text)', margin:0, fontWeight:500 }}>{q.text}</p>
       </div>
 
       {/* Zona fissa bottoni — sempre nella stessa posizione */}
@@ -231,7 +231,7 @@ export default function SimulationPage() {
               {lastResult
                 ? <CheckCircle2 size={15} color="#4ADE80"/>
                 : <XCircle size={15} color="#F87171"/>}
-              <span style={{ fontSize:13, fontWeight:700, color: lastResult ? '#4ADE80' : '#F87171' }}>
+              <span style={{ fontSize:13, fontWeight:700, color: lastResult ? 'var(--green)' : 'var(--red)' }}>
                 {lastResult ? 'Corretto!' : `Sbagliato — risposta: ${answers[q.id] ? 'FALSO' : 'VERO'}`}
               </span>
             </div>
@@ -241,8 +241,8 @@ export default function SimulationPage() {
         {/* Bottoni VERO / FALSO */}
         <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10 }}>
           {[
-            { val:true, label:'VERO', activeColor:'#4ADE80', activeBg:'#052E16', activeBorder:'#166534' },
-            { val:false, label:'FALSO', activeColor:'#F87171', activeBg:'#450A0A', activeBorder:'#7F1D1D' },
+            { val:true, label:'VERO', activeColor:'var(--green)', activeBg:'var(--green-dim)', activeBorder:'var(--green)' },
+            { val:false, label:'FALSO', activeColor:'var(--red)', activeBg:'var(--red-dim)', activeBorder:'var(--red)' },
           ].map(({ val, label, activeColor, activeBg, activeBorder }) => {
             const isSelected = isAnswered && answers[q.id] === val
             const isRight = isAnswered && isCorrect === (val === answers[q.id] ? isCorrect : !isCorrect)
@@ -252,9 +252,9 @@ export default function SimulationPage() {
                 style={{
                   padding:'17px 0', borderRadius:16, fontSize:16, fontWeight:900, letterSpacing:2,
                   cursor: isAnswered ? 'default' : 'pointer', fontFamily:'inherit', transition:'all 0.2s',
-                  background: isAnswered ? (isSelected ? activeBg : '#0C111D') : '#0C111D',
-                  border: `1.5px solid ${isAnswered ? (isSelected ? activeBorder : '#1F2937') : '#1F2937'}`,
-                  color: isAnswered ? (isSelected ? activeColor : '#374151') : (label === 'VERO' ? '#4ADE80' : '#F87171'),
+                  background: isAnswered ? (isSelected ? activeBg : 'var(--card)') : 'var(--card)',
+                  border: `1.5px solid ${isAnswered ? (isSelected ? activeBorder : 'var(--border)') : 'var(--border)'}`,
+                  color: isAnswered ? (isSelected ? activeColor : 'var(--text4)') : (label === 'VERO' ? 'var(--green)' : 'var(--red)'),
                   opacity: isAnswered && !isSelected ? 0.4 : 1,
                 }}>
                 {label}
@@ -267,15 +267,15 @@ export default function SimulationPage() {
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0, paddingBottom:'env(safe-area-inset-bottom,8px)' }}>
+      <div style={{ background:'var(--card)', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0, paddingBottom:'env(safe-area-inset-bottom,8px)' }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <Home size={19} color="#4B5563"/><span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Home</span>
+          <Home size={19} color="#4B5563"/><span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Home</span>
         </Link>
         <Link href="/focus" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <Target size={19} color="#4B5563"/><span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Focus</span>
+          <Target size={19} color="#4B5563"/><span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Focus</span>
         </Link>
         <Link href="/weak-points" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <BookOpen size={19} color="#4B5563"/><span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Punti deboli</span>
+          <BookOpen size={19} color="#4B5563"/><span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Punti deboli</span>
         </Link>
       </div>
     </div>

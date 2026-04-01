@@ -29,8 +29,8 @@ export default function RiepilogoPage() {
   const getLast = (id: string) => userSims.filter(u => u.simulationId === id)[0] || null
 
   if (loading) return (
-    <div style={{ height:'100dvh', background:'#030712', display:'flex', alignItems:'center', justifyContent:'center' }}>
-      <div style={{ width:36, height:36, border:'3px solid #1F2937', borderTopColor:'#2563EB', borderRadius:'50%', animation:'spin 0.8s linear infinite' }}/>
+    <div style={{ height:'100dvh', background:'var(--bg)', display:'flex', alignItems:'center', justifyContent:'center' }}>
+      <div style={{ width:36, height:36, border:'3px solid #1F2937', borderTopColor:'var(--accent)', borderRadius:'50%', animation:'spin 0.8s linear infinite' }}/>
       <style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style>
     </div>
   )
@@ -41,11 +41,11 @@ export default function RiepilogoPage() {
   const pct = simulations.length > 0 ? Math.round((completed / simulations.length) * 100) : 0
 
   return (
-    <div style={{ height:'100dvh', background:'#030712', color:'#F9FAFB', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
+    <div style={{ height:'100dvh', background:'var(--bg)', color:'var(--text)', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
 
       {/* Header compatto */}
       <div style={{ padding:'16px 18px 10px', flexShrink:0 }}>
-        <div style={{ fontSize:10, fontWeight:700, color:'#3B82F6', letterSpacing:2, marginBottom:3 }}>PATENTE C · CE</div>
+        <div style={{ fontSize:10, fontWeight:700, color:'var(--accent2)', letterSpacing:2, marginBottom:3 }}>PATENTE C · CE</div>
         <h1 style={{ fontSize:28, fontWeight:900, margin:0, letterSpacing:-1, textTransform:'uppercase' }}>RIEPILOGO</h1>
       </div>
 
@@ -53,24 +53,24 @@ export default function RiepilogoPage() {
       <div style={{ padding:'0 16px 10px', flexShrink:0 }}>
         <div style={{ display:'flex', gap:6, marginBottom:10 }}>
           {[
-            { v:simulations.length, label:'Tot.', color:'#6B7280' },
-            { v:completed, label:'Fatti', color:'#3B82F6' },
-            { v:passed, label:'Pass.', color:'#4ADE80' },
-            { v:failed, label:'Fall.', color:'#F87171' },
+            { v:simulations.length, label:'Tot.', color:'var(--text2)' },
+            { v:completed, label:'Fatti', color:'var(--accent2)' },
+            { v:passed, label:'Pass.', color:'var(--green)' },
+            { v:failed, label:'Fall.', color:'var(--red)' },
           ].map((s,i) => (
-            <div key={i} style={{ flex:1, background:'#0C111D', border:'1px solid #1F2937', borderRadius:12, padding:'9px 6px', textAlign:'center' }}>
+            <div key={i} style={{ flex:1, background:'var(--card)', border:'1px solid #1F2937', borderRadius:12, padding:'9px 6px', textAlign:'center' }}>
               <div style={{ fontSize:20, fontWeight:900, color:s.color, lineHeight:1 }}>{s.v}</div>
-              <div style={{ fontSize:9, color:'#374151', marginTop:3, fontWeight:600, letterSpacing:0.5 }}>{s.label}</div>
+              <div style={{ fontSize:9, color:'var(--text4)', marginTop:3, fontWeight:600, letterSpacing:0.5 }}>{s.label}</div>
             </div>
           ))}
         </div>
 
         {/* Progress bar spessa */}
         <div style={{ display:'flex', alignItems:'center', gap:10 }}>
-          <div style={{ flex:1, height:8, background:'#1F2937', borderRadius:4, overflow:'hidden' }}>
+          <div style={{ flex:1, height:8, background:'var(--border)', borderRadius:4, overflow:'hidden' }}>
             <div style={{ height:'100%', background:'linear-gradient(90deg,#2563EB,#06B6D4)', width:`${pct}%`, borderRadius:4, transition:'width 1s ease' }}/>
           </div>
-          <span style={{ fontSize:13, fontWeight:800, color:'#3B82F6', minWidth:38, textAlign:'right' }}>{pct}%</span>
+          <span style={{ fontSize:13, fontWeight:800, color:'var(--accent2)', minWidth:38, textAlign:'right' }}>{pct}%</span>
         </div>
       </div>
 
@@ -88,15 +88,15 @@ export default function RiepilogoPage() {
             const ok = last?.passed
 
             // Stili per stato
-            let bg = '#0C111D'
-            let borderColor = '#1F2937'
-            let numColor = '#374151'
+            let bg = 'var(--card)'
+            let borderColor = 'var(--border)'
+            let numColor = 'var(--text4)'
             let scoreColor = 'transparent'
             let dotColor = 'transparent'
 
-            if (done && ok)      { bg='#052E16'; borderColor='#166534'; numColor='#4ADE80'; scoreColor='#166534' }
-            else if (done && !ok){ bg='#2D0A0A'; borderColor='#7F1D1D'; numColor='#F87171'; scoreColor='#7F1D1D' }
-            else if (inProg)     { bg='#0F1E3D'; borderColor='#2563EB'; numColor='#93C5FD'; dotColor='#2563EB' }
+            if (done && ok)      { bg='var(--green-dim)'; borderColor='var(--green)'; numColor='var(--green)'; scoreColor='var(--green)' }
+            else if (done && !ok){ bg='#2D0A0A'; borderColor='var(--red)'; numColor='var(--red)'; scoreColor='var(--red)' }
+            else if (inProg)     { bg='#0F1E3D'; borderColor='var(--accent)'; numColor='var(--accent2)'; dotColor='var(--accent)' }
 
             return (
               <Link key={sim.id} href={`/simulations/${sim.id}`} style={{ textDecoration:'none' }} className="grid-cell">
@@ -104,7 +104,7 @@ export default function RiepilogoPage() {
 
                   {/* Dot pulsante per "in corso" */}
                   {inProg && (
-                    <div style={{ position:'absolute', top:6, right:6, width:6, height:6, borderRadius:'50%', background:'#2563EB', boxShadow:'0 0 6px #2563EB' }}/>
+                    <div style={{ position:'absolute', top:6, right:6, width:6, height:6, borderRadius:'50%', background:'var(--accent)', boxShadow:'0 0 6px #2563EB' }}/>
                   )}
 
                   {/* Numero */}
@@ -112,7 +112,7 @@ export default function RiepilogoPage() {
 
                   {/* Score se completato */}
                   {done && (
-                    <div style={{ fontSize:9, fontWeight:700, color: ok ? '#4ADE80' : '#F87171', lineHeight:1 }}>
+                    <div style={{ fontSize:9, fontWeight:700, color: ok ? 'var(--green)' : 'var(--red)', lineHeight:1 }}>
                       {last?.score}/40
                     </div>
                   )}
@@ -126,31 +126,31 @@ export default function RiepilogoPage() {
       {/* Legenda compatta */}
       <div style={{ padding:'6px 16px 8px', borderTop:'1px solid #111827', display:'flex', gap:16, flexShrink:0 }}>
         {[
-          { color:'#4ADE80', label:'Passato' },
-          { color:'#F87171', label:'Fallito' },
-          { color:'#2563EB', label:'In corso' },
-          { color:'#374151', label:'Da fare' },
+          { color:'var(--green)', label:'Passato' },
+          { color:'var(--red)', label:'Fallito' },
+          { color:'var(--accent)', label:'In corso' },
+          { color:'var(--text4)', label:'Da fare' },
         ].map(({ color, label }) => (
           <div key={label} style={{ display:'flex', alignItems:'center', gap:5 }}>
             <div style={{ width:8, height:8, borderRadius:2, background:color }}/>
-            <span style={{ fontSize:10, color:'#4B5563' }}>{label}</span>
+            <span style={{ fontSize:10, color:'var(--text3)' }}>{label}</span>
           </div>
         ))}
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', flexShrink:0 }}>
+      <div style={{ background:'var(--card)', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', flexShrink:0 }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <Home size={19} color="#4B5563"/><span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Home</span>
+          <Home size={19} color="#4B5563"/><span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Home</span>
         </Link>
         <Link href="/focus" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <Target size={19} color="#4B5563"/><span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Focus</span>
+          <Target size={19} color="#4B5563"/><span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Focus</span>
         </Link>
         <div style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0' }}>
-          <BarChart3 size={19} color="#2563EB"/><span style={{ fontSize:9, color:'#2563EB', fontWeight:700 }}>Riepilogo</span>
+          <BarChart3 size={19} color="#2563EB"/><span style={{ fontSize:9, color:'var(--accent)', fontWeight:700 }}>Riepilogo</span>
         </div>
         <Link href="/weak-points" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <BookOpen size={19} color="#4B5563"/><span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Punti deboli</span>
+          <BookOpen size={19} color="#4B5563"/><span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Punti deboli</span>
         </Link>
       </div>
     </div>

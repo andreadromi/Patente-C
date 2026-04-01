@@ -86,14 +86,13 @@ export default function DashboardPage() {
       {/* Stats */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 8, padding: '0 16px 10px', flexShrink: 0 }}>
         {[
-          { big: completed, label: 'FATTI', sub: `di ${simulations.length}`, color: 'var(--accent2)' },
-          { big: passed, label: 'PROMOSSI', sub: '', color: 'var(--green)' },
-          { big: simulations.length - completed, label: 'DA FARE', sub: '', color: 'var(--text3)' },
+          { big: completed, label: 'FATTI', color: 'var(--accent2)' },
+          { big: passed, label: 'PROMOSSI', color: 'var(--green)' },
+          { big: simulations.length - completed, label: 'DA FARE', color: 'var(--text3)' },
         ].map((s, i) => (
           <div key={i} style={{ background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 12, padding: '10px 8px', textAlign: 'center' }}>
             <div style={{ fontSize: 22, fontWeight: 900, color: s.color, lineHeight: 1 }}>{s.big}</div>
             <div style={{ fontSize: 8, fontWeight: 700, color: 'var(--text3)', marginTop: 4, letterSpacing: 1.5 }}>{s.label}</div>
-            {s.sub && <div style={{ fontSize: 9, color: 'var(--text4)', marginTop: 1 }}>{s.sub}</div>}
           </div>
         ))}
       </div>

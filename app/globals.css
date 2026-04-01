@@ -21,11 +21,11 @@
 }
 
 [data-theme='light'] {
-  --bg: #F8FAFC;
+  --bg: #F3F4F6;
   --card: #FFFFFF;
-  --surface: #F1F5F9;
+  --surface: #E5E7EB;
   --border: #E2E8F0;
-  --text: #0F172A;
+  --text: #1E293B;
   --text2: #64748B;
   --text3: #94A3B8;
   --text4: #CBD5E1;

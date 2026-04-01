@@ -50,45 +50,45 @@ export default function WPPracticePage() {
   }
 
   if (loading) return (
-    <div style={{ minHeight:'100vh', background:'#030712', display:'flex', alignItems:'center', justifyContent:'center' }}>
-      <div style={{ width:36, height:36, border:'3px solid #1F2937', borderTopColor:'#2563EB', borderRadius:'50%', animation:'spin 0.8s linear infinite' }}/>
+    <div style={{ minHeight:'100vh', background:'var(--bg)', display:'flex', alignItems:'center', justifyContent:'center' }}>
+      <div style={{ width:36, height:36, border:'3px solid #1F2937', borderTopColor:'var(--accent)', borderRadius:'50%', animation:'spin 0.8s linear infinite' }}/>
       <style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style>
     </div>
   )
 
   if (done) return (
-    <div style={{ minHeight:'100vh', background:'#030712', color:'#F9FAFB', fontFamily:'system-ui', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:24, gap:16, textAlign:'center', paddingBottom:80 }}>
+    <div style={{ minHeight:'100vh', background:'var(--bg)', color:'var(--text)', fontFamily:'system-ui', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:24, gap:16, textAlign:'center', paddingBottom:80 }}>
       <Target size={56} color="#FBBF24"/>
-      <h1 style={{ fontSize:28, fontWeight:900, color:'#F9FAFB', margin:0 }}>Sessione completata!</h1>
-      <div style={{ background:'#0C111D', border:'1px solid #1F2937', borderRadius:18, padding:'20px 24px', width:'100%', maxWidth:320 }}>
+      <h1 style={{ fontSize:28, fontWeight:900, color:'var(--text)', margin:0 }}>Sessione completata!</h1>
+      <div style={{ background:'var(--card)', border:'1px solid #1F2937', borderRadius:18, padding:'20px 24px', width:'100%', maxWidth:320 }}>
         <div style={{ display:'flex', justifyContent:'space-between', fontSize:14, marginBottom:8 }}>
-          <span style={{ color:'#4B5563' }}>Risposte corrette</span>
-          <span style={{ color:'#4ADE80', fontWeight:700 }}>{correct}/{questions.length}</span>
+          <span style={{ color:'var(--text3)' }}>Risposte corrette</span>
+          <span style={{ color:'var(--green)', fontWeight:700 }}>{correct}/{questions.length}</span>
         </div>
         <div style={{ display:'flex', justifyContent:'space-between', fontSize:14 }}>
-          <span style={{ color:'#4B5563' }}>Punti deboli eliminati</span>
-          <span style={{ color:'#FBBF24', fontWeight:700 }}>{removed}</span>
+          <span style={{ color:'var(--text3)' }}>Punti deboli eliminati</span>
+          <span style={{ color:'var(--accent2)', fontWeight:700 }}>{removed}</span>
         </div>
       </div>
       <button onClick={() => { setIdx(0); setAnswered(null); setFeedback(null); setDone(false); setCorrect(0); setRemoved(0) }}
-        style={{ display:'flex', alignItems:'center', gap:8, padding:'14px 28px', background:'#2563EB', color:'#fff', border:'none', borderRadius:14, fontWeight:800, fontSize:15, cursor:'pointer', fontFamily:'inherit' }}>
+        style={{ display:'flex', alignItems:'center', gap:8, padding:'14px 28px', background:'var(--accent)', color:'#fff', border:'none', borderRadius:14, fontWeight:800, fontSize:15, cursor:'pointer', fontFamily:'inherit' }}>
         <RotateCcw size={16} color="#fff"/>
         Ricomincia
       </button>
-      <Link href="/weak-points" style={{ color:'#4B5563', fontSize:13 }}>← Torna ai punti deboli</Link>
+      <Link href="/weak-points" style={{ color:'var(--text3)', fontSize:13 }}>← Torna ai punti deboli</Link>
 
-      <div style={{ position:'fixed', bottom:0, left:0, right:0, background:'#0C111D', paddingBottom:'env(safe-area-inset-bottom,8px)', borderTop:'1px solid #111827', display:'grid', paddingBottom:'env(safe-area-inset-bottom,8px)', gridTemplateColumns:'1fr 1fr 1fr' }}>
+      <div style={{ position:'fixed', bottom:0, left:0, right:0, background:'var(--card)', paddingBottom:'env(safe-area-inset-bottom,8px)', borderTop:'1px solid #111827', display:'grid', paddingBottom:'env(safe-area-inset-bottom,8px)', gridTemplateColumns:'1fr 1fr 1fr' }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
           <Home size={19} color="#4B5563"/>
-          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Home</span>
+          <span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Home</span>
         </Link>
         <Link href="/focus" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
           <Target size={19} color="#4B5563"/>
-          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Focus</span>
+          <span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Focus</span>
         </Link>
         <div style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:4, padding:'10px 0' }}>
           <BookOpen size={19} color="#2563EB"/>
-          <span style={{ fontSize:9, color:'#2563EB', fontWeight:700 }}>Punti deboli</span>
+          <span style={{ fontSize:9, color:'var(--accent)', fontWeight:700 }}>Punti deboli</span>
         </div>
       </div>
     </div>
@@ -97,29 +97,29 @@ export default function WPPracticePage() {
   const q = questions[idx]
 
   return (
-    <div style={{ height:'100dvh', background:'#030712', color:'#F9FAFB', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
+    <div style={{ height:'100dvh', background:'var(--bg)', color:'var(--text)', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
 
       {/* Header */}
-      <div style={{ padding:'12px 18px', background:'#0C111D', borderBottom:'1px solid #111827', display:'flex', alignItems:'center', justifyContent:'space-between', flexShrink:0 }}>
+      <div style={{ padding:'12px 18px', background:'var(--card)', borderBottom:'1px solid #111827', display:'flex', alignItems:'center', justifyContent:'space-between', flexShrink:0 }}>
         <div>
-          <div style={{ fontSize:10, fontWeight:700, color:'#F87171', letterSpacing:2 }}>PUNTI DEBOLI · {idx+1}/{questions.length}</div>
-          <div style={{ fontSize:11, color:'#4B5563', marginTop:1 }}>{q.capitolo}</div>
+          <div style={{ fontSize:10, fontWeight:700, color:'var(--red)', letterSpacing:2 }}>PUNTI DEBOLI · {idx+1}/{questions.length}</div>
+          <div style={{ fontSize:11, color:'var(--text3)', marginTop:1 }}>{q.capitolo}</div>
         </div>
         <div style={{ display:'flex', gap:5 }}>
           {[0,1,2].map(i => (
-            <div key={i} style={{ width:8, height:8, borderRadius:'50%', background: i < q.consecutiveCorrect ? '#4ADE80' : '#1F2937', transition:'background 0.3s' }}/>
+            <div key={i} style={{ width:8, height:8, borderRadius:'50%', background: i < q.consecutiveCorrect ? 'var(--green)' : 'var(--border)', transition:'background 0.3s' }}/>
           ))}
         </div>
       </div>
 
       {/* Progress */}
-      <div style={{ height:3, background:'#111827', flexShrink:0 }}>
+      <div style={{ height:3, background:'var(--surface)', flexShrink:0 }}>
         <div style={{ height:'100%', background:'linear-gradient(90deg,#DC2626,#F87171)', width:`${(idx/questions.length)*100}%`, transition:'width 0.4s' }}/>
       </div>
 
       {/* Contenuto */}
       <div style={{ flex:1, padding:'20px 18px', overflowY:'auto', display:'flex', flexDirection:'column', gap:14 }}>
-        <div style={{ background:'#0C111D', border:'1px solid #1F2937', borderRadius:20, padding:'20px 18px' }}>
+        <div style={{ background:'var(--card)', border:'1px solid #1F2937', borderRadius:20, padding:'20px 18px' }}>
           {q.image && (
             <div style={{ display:'flex', justifyContent:'center', marginBottom:14 }}>
               <img
@@ -129,13 +129,13 @@ export default function WPPracticePage() {
               />
             </div>
           )}
-          <p style={{ fontSize:19, lineHeight:1.8, color:'#F9FAFB', margin:0, fontWeight:500 }}>{q.text}</p>
+          <p style={{ fontSize:19, lineHeight:1.8, color:'var(--text)', margin:0, fontWeight:500 }}>{q.text}</p>
         </div>
 
         {feedback && (
-          <div style={{ display:'flex', alignItems:'center', gap:10, padding:'12px 16px', background: feedback.isCorrect ? '#052E16' : '#450A0A', borderRadius:14, border:`1px solid ${feedback.isCorrect?'#166534':'#7F1D1D'}` }}>
+          <div style={{ display:'flex', alignItems:'center', gap:10, padding:'12px 16px', background: feedback.isCorrect ? 'var(--green-dim)' : 'var(--red-dim)', borderRadius:14, border:`1px solid ${feedback.isCorrect?'var(--green)':'var(--red)'}` }}>
             {feedback.isCorrect ? <CheckCircle2 size={18} color="#4ADE80"/> : <XCircle size={18} color="#F87171"/>}
-            <span style={{ color: feedback.isCorrect ? '#4ADE80' : '#F87171', fontWeight:700, fontSize:14 }}>
+            <span style={{ color: feedback.isCorrect ? 'var(--green)' : 'var(--red)', fontWeight:700, fontSize:14 }}>
               {feedback.isCorrect
                 ? feedback.removed ? '🎉 Punto debole eliminato!' : `Corretto! (${q.consecutiveCorrect+1}/3)`
                 : `Sbagliato — risposta: ${feedback.correctAnswer ? 'VERO' : 'FALSO'}`}
@@ -146,20 +146,20 @@ export default function WPPracticePage() {
         {!answered ? (
           <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', gap:10 }}>
             {[
-              { val:true, label:'VERO', c:'#4ADE80', border:'#14532D', hover:'#052E16' },
-              { val:false, label:'FALSO', c:'#F87171', border:'#7F1D1D', hover:'#450A0A' },
+              { val:true, label:'VERO', c:'var(--green)', border:'var(--green-dim)', hover:'var(--green-dim)' },
+              { val:false, label:'FALSO', c:'var(--red)', border:'var(--red)', hover:'var(--red-dim)' },
             ].map(({ val, label, c, border, hover }) => (
               <button key={label} onClick={() => handleAnswer(val)}
-                style={{ padding:'18px 0', borderRadius:16, border:`1.5px solid ${border}`, background:'#0C111D', color:c, fontSize:16, fontWeight:900, letterSpacing:2, cursor:'pointer', fontFamily:'inherit' }}
+                style={{ padding:'18px 0', borderRadius:16, border:`1.5px solid ${border}`, background:'var(--card)', color:c, fontSize:16, fontWeight:900, letterSpacing:2, cursor:'pointer', fontFamily:'inherit' }}
                 onMouseEnter={e => (e.currentTarget.style.background = hover)}
-                onMouseLeave={e => (e.currentTarget.style.background = '#0C111D')}>
+                onMouseLeave={e => (e.currentTarget.style.background = 'var(--card)')}>
                 {label}
               </button>
             ))}
           </div>
         ) : (
           !feedback?.isCorrect && (
-            <button onClick={goNext} style={{ padding:'14px 0', background:'#2563EB', color:'#fff', border:'none', borderRadius:14, fontSize:15, fontWeight:800, cursor:'pointer', fontFamily:'inherit' }}>
+            <button onClick={goNext} style={{ padding:'14px 0', background:'var(--accent)', color:'#fff', border:'none', borderRadius:14, fontSize:15, fontWeight:800, cursor:'pointer', fontFamily:'inherit' }}>
               Avanti →
             </button>
           )
@@ -167,18 +167,18 @@ export default function WPPracticePage() {
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background:'#0C111D', borderTop:'1px solid #111827', display:'grid', paddingBottom:'env(safe-area-inset-bottom,8px)', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0 }}>
+      <div style={{ background:'var(--card)', borderTop:'1px solid #111827', display:'grid', paddingBottom:'env(safe-area-inset-bottom,8px)', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0 }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
           <Home size={19} color="#4B5563"/>
-          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Home</span>
+          <span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Home</span>
         </Link>
         <Link href="/focus" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
           <Target size={19} color="#4B5563"/>
-          <span style={{ fontSize:9, color:'#4B5563', fontWeight:600 }}>Focus</span>
+          <span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Focus</span>
         </Link>
         <div style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:4, padding:'10px 0' }}>
           <BookOpen size={19} color="#2563EB"/>
-          <span style={{ fontSize:9, color:'#2563EB', fontWeight:700 }}>Punti deboli</span>
+          <span style={{ fontSize:9, color:'var(--accent)', fontWeight:700 }}>Punti deboli</span>
         </div>
       </div>
     </div>
