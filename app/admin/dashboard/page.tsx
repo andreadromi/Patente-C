@@ -32,7 +32,7 @@ export default async function AdminDashboardPage() {
   return (
     <div className="min-h-screen bg-[#F8F9FC] text-[#4D5057]">
       {/* Header */}
-      <div className="bg-[#D5EA60] border-b border-[#E2E6EA] px-4 py-4">
+      <div className="bg-[#D8E4A8] border-b border-[#E2E6EA] px-4 py-4">
         <div className="max-w-4xl mx-auto flex items-center justify-between">
           <div>
             <span className="bg-[#059669] text-white text-xs font-black px-2 py-1 rounded tracking-widest">ADMIN</span>
@@ -56,7 +56,7 @@ export default async function AdminDashboardPage() {
             { label: 'Simulazioni', value: totalSimulations, icon: '🎯', color: 'text-purple-400' },
             { label: 'Completate', value: totalCompleted, icon: '✅', color: 'text-[#059669]' },
           ].map(s => (
-            <div key={s.label} className="bg-[#D5EA60] border border-[#E2E6EA] rounded-xl p-4">
+            <div key={s.label} className="bg-[#D8E4A8] border border-[#E2E6EA] rounded-xl p-4">
               <div className="text-2xl mb-1">{s.icon}</div>
               <div className={`text-2xl font-black ${s.color}`}>{s.value}</div>
               <div className="text-xs text-[#9CA3AF]">{s.label}</div>
@@ -72,7 +72,7 @@ export default async function AdminDashboardPage() {
             { href: '/admin/users', label: '👤 Gestione Utenti', desc: `${totalUsers} utenti registrati` },
           ].map(item => (
             <Link key={item.href} href={item.href}
-              className="bg-[#D5EA60] border border-[#E2E6EA] hover:border-[#059669] rounded-xl p-4 flex items-center justify-between transition-colors">
+              className="bg-[#D8E4A8] border border-[#E2E6EA] hover:border-[#059669] rounded-xl p-4 flex items-center justify-between transition-colors">
               <div>
                 <div className="font-bold text-sm">{item.label}</div>
                 <div className="text-xs text-[#9CA3AF] mt-0.5">{item.desc}</div>
@@ -84,7 +84,7 @@ export default async function AdminDashboardPage() {
 
         {/* Ultimi utenti */}
         {recentUsers.length > 0 && (
-          <div className="bg-[#D5EA60] border border-[#E2E6EA] rounded-xl p-4">
+          <div className="bg-[#D8E4A8] border border-[#E2E6EA] rounded-xl p-4">
             <h3 className="text-xs text-[#059669] tracking-widest uppercase font-bold mb-3">Ultimi utenti registrati</h3>
             <div className="space-y-2">
               {recentUsers.map(u => (

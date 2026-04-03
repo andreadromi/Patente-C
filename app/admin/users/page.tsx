@@ -68,7 +68,7 @@ export default function UsersListPage() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-[#D5EA60] shadow-lg">
+      <header className="bg-[#D8E4A8] shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div>
@@ -88,7 +88,7 @@ export default function UsersListPage() {
               </Link>
               <Link
                 href="/admin/users/new"
-                className="px-4 py-2 text-sm font-medium bg-[#059669] text-[#4D5057] rounded-lg hover:bg-blue-700"
+                className="px-4 py-2 text-sm font-medium bg-[#059669] text-white rounded-lg hover:bg-[#047857]"
               >
                 + Nuovo Utente
               </Link>
@@ -144,14 +144,14 @@ export default function UsersListPage() {
                         })}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
-                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#D1FAE5] text-[#065F46]">
                           {u.completedSimulations} completate
                         </span>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                         <Link
                           href={`/admin/users/${u.id}/edit`}
-                          className="text-blue-600 hover:text-blue-900 mr-4"
+                          className="text-[#059669] hover:text-[#064E3B] mr-4"
                         >
                           Modifica
                         </Link>

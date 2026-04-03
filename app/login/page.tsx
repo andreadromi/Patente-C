@@ -45,12 +45,12 @@ export default function LoginPage() {
             <div>
               <label style={{ fontSize: 10, fontWeight: 700, color: 'var(--text2)', letterSpacing: 2, textTransform: 'uppercase', display: 'block', marginBottom: 6 }}>Nome</label>
               <input type="text" value={nome} onChange={e => setNome(e.target.value.replace(/[^a-zA-ZÀ-ú]/g, ''))} placeholder="Mario" maxLength={20} autoFocus
-                style={{ width: '100%', background: 'var(--card)', border: '1.5px solid #1F2937', borderRadius: 14, padding: '14px 14px', color: 'var(--text)', fontSize: 16, outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }} />
+                style={{ width: '100%', background: 'var(--card)', border: '1.5px solid var(--border)', borderRadius: 14, padding: '14px 14px', color: 'var(--text)', fontSize: 16, outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }} />
             </div>
             <div>
               <label style={{ fontSize: 10, fontWeight: 700, color: 'var(--text2)', letterSpacing: 2, textTransform: 'uppercase', display: 'block', marginBottom: 6 }}>Cognome</label>
               <input type="text" value={cognome} onChange={e => setCognome(e.target.value.replace(/[^a-zA-ZÀ-ú]/g, ''))} placeholder="Rossi" maxLength={20}
-                style={{ width: '100%', background: 'var(--card)', border: '1.5px solid #1F2937', borderRadius: 14, padding: '14px 14px', color: 'var(--text)', fontSize: 16, outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }} />
+                style={{ width: '100%', background: 'var(--card)', border: '1.5px solid var(--border)', borderRadius: 14, padding: '14px 14px', color: 'var(--text)', fontSize: 16, outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }} />
             </div>
           </div>
 
@@ -62,7 +62,7 @@ export default function LoginPage() {
             style={{
               display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
               padding: '15px 0', borderRadius: 16, border: 'none', cursor: valid ? 'pointer' : 'not-allowed',
-              background: valid ? 'linear-gradient(135deg,#2563EB,#1D4ED8)' : 'var(--card)',
+              background: valid ? 'var(--accent)' : 'var(--card)',
               color: valid ? '#fff' : 'var(--text4)', fontSize: 16, fontWeight: 800,
               fontFamily: 'inherit', transition: 'all 0.2s',
               boxShadow: 'none'

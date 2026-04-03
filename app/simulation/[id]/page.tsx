@@ -152,7 +152,7 @@ export default function SimulationPage() {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#059669] mx-auto mb-4"></div>
           <p className="text-gray-600">Caricamento simulazione...</p>
         </div>
       </div>
@@ -166,7 +166,7 @@ export default function SimulationPage() {
           <div className="text-red-600 text-xl mb-4">❌ {error}</div>
           <button
             onClick={() => router.push('/dashboard')}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg"
+            className="bg-[#059669] hover:bg-[#047857] text-white px-6 py-2 rounded-lg"
           >
             Torna alla Dashboard
           </button>
@@ -196,7 +196,7 @@ export default function SimulationPage() {
             <div className="text-right">
               <div
                 className={`text-3xl font-bold ${
-                  timeLeft < 600 ? 'text-red-600' : 'text-blue-600'
+                  timeLeft < 600 ? 'text-red-600' : 'text-[#059669]'
                 }`}
               >
                 {formatTime(timeLeft)}
@@ -208,7 +208,7 @@ export default function SimulationPage() {
           {/* Progress bar */}
           <div className="w-full bg-gray-200 rounded-full h-3">
             <div
-              className="bg-blue-600 h-3 rounded-full transition-all duration-300"
+              className="bg-[#059669] h-3 rounded-full transition-all duration-300"
               style={{ width: `${progress}%` }}
             />
           </div>
@@ -220,7 +220,7 @@ export default function SimulationPage() {
         {/* Domanda */}
         <div className="bg-white rounded-lg shadow-md p-8 mb-6">
           <div className="mb-4">
-            <span className="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded">
+            <span className="inline-block bg-[#D1FAE5] text-[#065F46] text-sm font-medium px-3 py-1 rounded">
               {currentQuestion.area.code} - {currentQuestion.area.name}
             </span>
             <span className="ml-2 text-gray-500 text-sm">
@@ -240,15 +240,15 @@ export default function SimulationPage() {
                 onClick={() => handleSelectAnswer(num)}
                 className={`w-full text-left p-4 rounded-lg border-2 transition-all ${
                   answers[currentQuestion.id] === num
-                    ? 'border-blue-600 bg-blue-50'
-                    : 'border-gray-300 hover:border-blue-400 bg-white'
+                    ? 'border-[#059669] bg-[#ECFDF5]'
+                    : 'border-gray-300 hover:border-[#059669] bg-white'
                 }`}
               >
                 <div className="flex items-start">
                   <span
                     className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center mr-3 font-medium ${
                       answers[currentQuestion.id] === num
-                        ? 'bg-blue-600 text-white'
+                        ? 'bg-[#059669] text-white'
                         : 'bg-gray-200 text-gray-700'
                     }`}
                   >
@@ -285,7 +285,7 @@ export default function SimulationPage() {
               setCurrentIndex((prev) => Math.min(questions.length - 1, prev + 1))
             }
             disabled={currentIndex === questions.length - 1}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg disabled:bg-gray-300 disabled:cursor-not-allowed"
+            className="bg-[#059669] hover:bg-[#047857] text-white px-6 py-3 rounded-lg disabled:bg-gray-300 disabled:cursor-not-allowed"
           >
             Successiva →
           </button>
@@ -303,7 +303,7 @@ export default function SimulationPage() {
                 onClick={() => setCurrentIndex(index)}
                 className={`w-full aspect-square rounded text-sm font-medium ${
                   index === currentIndex
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-[#059669] text-white'
                     : answers[q.id] !== null && answers[q.id] !== undefined
                     ? 'bg-green-100 text-green-800 hover:bg-green-200'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'

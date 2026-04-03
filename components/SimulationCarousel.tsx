@@ -43,7 +43,7 @@ export function SimulationCarousel({ data }: { data: SimulationWithAttempts[] })
         <button
           onClick={goToPrevious}
           disabled={currentIndex === 0}
-          className="p-3 rounded-full bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white hover:from-blue-700 hover:to-blue-800 dark:hover:from-blue-600 dark:hover:to-blue-700 disabled:opacity-30 disabled:cursor-not-allowed transition-all shadow-lg hover:shadow-xl transform hover:scale-110"
+          className="p-3 rounded-full bg-gradient-to-r from-[#059669] to-[#047857] dark:from-[#ECFDF5]0 dark:to-[#059669] text-white hover:from-[#047857] hover:to-[#065F46] dark:hover:from-[#059669] dark:hover:to-[#047857] disabled:opacity-30 disabled:cursor-not-allowed transition-all shadow-lg hover:shadow-xl transform hover:scale-110"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -62,7 +62,7 @@ export function SimulationCarousel({ data }: { data: SimulationWithAttempts[] })
         <button
           onClick={goToNext}
           disabled={currentIndex + itemsPerPage >= data.length}
-          className="p-3 rounded-full bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white hover:from-blue-700 hover:to-blue-800 dark:hover:from-blue-600 dark:hover:to-blue-700 disabled:opacity-30 disabled:cursor-not-allowed transition-all shadow-lg hover:shadow-xl transform hover:scale-110"
+          className="p-3 rounded-full bg-gradient-to-r from-[#059669] to-[#047857] dark:from-[#ECFDF5]0 dark:to-[#059669] text-white hover:from-[#047857] hover:to-[#065F46] dark:hover:from-[#059669] dark:hover:to-[#047857] disabled:opacity-30 disabled:cursor-not-allowed transition-all shadow-lg hover:shadow-xl transform hover:scale-110"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -79,11 +79,11 @@ export function SimulationCarousel({ data }: { data: SimulationWithAttempts[] })
           return (
             <div
               key={simulation.id}
-              className="bg-gradient-to-br from-white via-gray-50 to-blue-50 dark:from-gray-800 dark:via-gray-750 dark:to-gray-700 border-2 border-gray-200 dark:border-gray-600 rounded-2xl p-6 hover:border-blue-400 dark:hover:border-blue-500 hover:shadow-2xl transition-all transform hover:scale-105 hover:-translate-y-1"
+              className="bg-gradient-to-br from-white via-gray-50 to-[#ECFDF5] dark:from-gray-800 dark:via-gray-750 dark:to-gray-700 border-2 border-gray-200 dark:border-gray-600 rounded-2xl p-6 hover:border-[#059669] dark:hover:border-[#ECFDF5]0 hover:shadow-2xl transition-all transform hover:scale-105 hover:-translate-y-1"
             >
               <div className="flex items-center gap-4 mb-4">
                 <div className="relative">
-                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 dark:from-blue-400 dark:to-blue-600 flex items-center justify-center text-white font-bold text-2xl shadow-lg transform rotate-3 hover:rotate-0 transition-transform">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#ECFDF5]0 to-[#047857] dark:from-[#059669] dark:to-[#059669] flex items-center justify-center text-white font-bold text-2xl shadow-lg transform rotate-3 hover:rotate-0 transition-transform">
                     {simulation.number}
                   </div>
                   {completedAttempts.length > 0 && (
@@ -132,7 +132,7 @@ export function SimulationCarousel({ data }: { data: SimulationWithAttempts[] })
                     </div>
                     <a
                       href={`/user-simulations/${lastAttempt.id}/report`}
-                      className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 font-medium text-sm hover:underline"
+                      className="text-[#059669] dark:text-[#059669] hover:text-[#065F46] dark:hover:text-[#6EE7B7] font-medium text-sm hover:underline"
                     >
                       Report →
                     </a>
@@ -142,7 +142,7 @@ export function SimulationCarousel({ data }: { data: SimulationWithAttempts[] })
 
               <a
                 href={`/simulations/${simulation.id}`}
-                className="block w-full px-6 py-3.5 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 dark:from-blue-500 dark:to-blue-600 dark:hover:from-blue-600 dark:hover:to-blue-700 text-white text-base font-semibold rounded-xl transition-all shadow-md hover:shadow-xl text-center transform hover:scale-105"
+                className="block w-full px-6 py-3.5 bg-gradient-to-r from-[#059669] to-[#047857] hover:from-[#047857] hover:to-[#065F46] dark:from-[#ECFDF5]0 dark:to-[#059669] dark:hover:from-[#059669] dark:hover:to-[#047857] text-white text-base font-semibold rounded-xl transition-all shadow-md hover:shadow-xl text-center transform hover:scale-105"
               >
                 {completedAttempts.length > 0 ? '🔄 Nuova Prova' : '▶️ Inizia Simulazione'}
               </a>
@@ -159,7 +159,7 @@ export function SimulationCarousel({ data }: { data: SimulationWithAttempts[] })
             onClick={() => setCurrentIndex(idx * itemsPerPage)}
             className={`h-2 rounded-full transition-all ${
               idx === currentPage - 1
-                ? 'w-8 bg-blue-600 dark:bg-blue-400'
+                ? 'w-8 bg-[#059669] dark:bg-[#059669]'
                 : 'w-2 bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500'
             }`}
           />

@@ -68,7 +68,7 @@ export default function RiepilogoPage() {
         {/* Progress bar spessa */}
         <div style={{ display:'flex', alignItems:'center', gap:10 }}>
           <div style={{ flex:1, height:8, background:'var(--border)', borderRadius:4, overflow:'hidden' }}>
-            <div style={{ height:'100%', background:'linear-gradient(90deg,#2563EB,#06B6D4)', width:`${pct}%`, borderRadius:4, transition:'width 1s ease' }}/>
+            <div style={{ height:'100%', background:'linear-gradient(90deg,#059669,#10B981)', width:`${pct}%`, borderRadius:4, transition:'width 1s ease' }}/>
           </div>
           <span style={{ fontSize:13, fontWeight:800, color:'var(--accent2)', minWidth:38, textAlign:'right' }}>{pct}%</span>
         </div>
@@ -104,7 +104,7 @@ export default function RiepilogoPage() {
 
                   {/* Dot pulsante per "in corso" */}
                   {inProg && (
-                    <div style={{ position:'absolute', top:6, right:6, width:6, height:6, borderRadius:'50%', background:'var(--accent)', boxShadow:'0 0 6px #2563EB' }}/>
+                    <div style={{ position:'absolute', top:6, right:6, width:6, height:6, borderRadius:'50%', background:'var(--accent)', boxShadow:'0 0 6px #059669' }}/>
                   )}
 
                   {/* Numero */}
@@ -147,7 +147,7 @@ export default function RiepilogoPage() {
           <Target size={19} color="#4B5563"/><span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Focus</span>
         </Link>
         <div style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0' }}>
-          <BarChart3 size={19} color="#2563EB"/><span style={{ fontSize:9, color:'var(--accent)', fontWeight:700 }}>Riepilogo</span>
+          <BarChart3 size={19} color="#059669"/><span style={{ fontSize:9, color:'var(--accent)', fontWeight:700 }}>Riepilogo</span>
         </div>
         <Link href="/weak-points" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
           <BookOpen size={19} color="#4B5563"/><span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Punti deboli</span>

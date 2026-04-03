@@ -42,7 +42,7 @@ export default function NewSimulationPage() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-[#D5EA60] shadow-lg">
+      <header className="bg-[#D8E4A8] shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div>
@@ -112,14 +112,14 @@ export default function NewSimulationPage() {
           </div>
 
           {/* Helper */}
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-            <h4 className="text-sm font-semibold text-blue-900 mb-2">
+          <div className="bg-[#ECFDF5] border border-[#A7F3D0] rounded-lg p-4">
+            <h4 className="text-sm font-semibold text-[#064E3B] mb-2">
               💡 Suggerimento
             </h4>
-            <p className="text-xs text-blue-800 mb-2">
+            <p className="text-xs text-[#065F46] mb-2">
               Per generare automaticamente una simulazione casuale:
             </p>
-            <ol className="text-xs text-blue-800 space-y-1 ml-4 list-decimal">
+            <ol className="text-xs text-[#065F46] space-y-1 ml-4 list-decimal">
               <li>Usa Prisma Studio per vedere i codici domande disponibili</li>
               <li>
                 Oppure usa uno script per generare array JSON casuale da 60

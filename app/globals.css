@@ -13,17 +13,17 @@
   --text4: #D1D5DB;
   --accent: #059669;
   --accent2: #10B981;
-  --lime: #D5EA60;
-  --lime-dim: #EEF5B8;
+  --lime: #D8E4A8;
+  --lime-dim: #EDF2D8;
   --amber: #D97706;
   --amber-dim: #FEF3C7;
   --green: #059669;
   --green-dim: #D1FAE5;
   --red: #D97706;
   --red-dim: #FEF3C7;
-  --nav-bg: #D5EA60;
-  --nav-border: #C5DA50;
-  --header-bg: #D5EA60;
+  --nav-bg: #D8E4A8;
+  --nav-border: #C8D498;
+  --header-bg: #D8E4A8;
 }
 
 * { box-sizing: border-box; }

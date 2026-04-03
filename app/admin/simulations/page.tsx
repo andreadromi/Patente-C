@@ -69,7 +69,7 @@ export default function SimulationsListPage() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-[#D5EA60] shadow-lg">
+      <header className="bg-[#D8E4A8] shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div>
@@ -148,7 +148,7 @@ export default function SimulationsListPage() {
                       <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                         <Link
                           href={`/admin/simulations/${sim.id}/edit`}
-                          className="text-blue-600 hover:text-blue-900 mr-4"
+                          className="text-[#059669] hover:text-[#064E3B] mr-4"
                         >
                           Modifica
                         </Link>

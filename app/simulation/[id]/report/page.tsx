@@ -123,7 +123,7 @@ export default function ReportPage() {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#059669] mx-auto mb-4"></div>
           <p className="text-gray-600">Caricamento report...</p>
         </div>
       </div>
@@ -137,7 +137,7 @@ export default function ReportPage() {
           <div className="text-red-600 text-xl mb-4">❌ {error || 'Errore caricamento report'}</div>
           <button
             onClick={() => router.push('/dashboard')}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg"
+            className="bg-[#059669] hover:bg-[#047857] text-white px-6 py-2 rounded-lg"
           >
             Torna alla Dashboard
           </button>
@@ -368,7 +368,7 @@ export default function ReportPage() {
         <div className="flex gap-4">
           <button
             onClick={() => router.push('/dashboard')}
-            className="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium"
+            className="flex-1 bg-[#059669] hover:bg-[#047857] text-white px-6 py-3 rounded-lg font-medium"
           >
             Torna alla Dashboard
           </button>

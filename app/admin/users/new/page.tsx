@@ -39,7 +39,7 @@ export default function NewUserPage() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-[#D5EA60] shadow-lg">
+      <header className="bg-[#D8E4A8] shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div>
@@ -75,7 +75,7 @@ export default function NewUserPage() {
               placeholder="es. mario.rossi"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ECFDF5]0"
             />
             <p className="text-xs text-[#9CA3AF] mt-1">
               Username univoco per l&apos;accesso al sistema
@@ -83,11 +83,11 @@ export default function NewUserPage() {
           </div>
 
           {/* Info */}
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-            <h4 className="text-sm font-semibold text-blue-900 mb-2">
+          <div className="bg-[#ECFDF5] border border-[#A7F3D0] rounded-lg p-4">
+            <h4 className="text-sm font-semibold text-[#064E3B] mb-2">
               ℹ️ Note
             </h4>
-            <ul className="text-xs text-blue-800 space-y-1 ml-4 list-disc">
+            <ul className="text-xs text-[#065F46] space-y-1 ml-4 list-disc">
               <li>L&apos;utente verrà creato come utente normale (non admin)</li>
               <li>Non è richiesta password per utenti normali</li>
               <li>
@@ -107,7 +107,7 @@ export default function NewUserPage() {
             <button
               type="submit"
               disabled={loading}
-              className="px-6 py-2 text-sm font-medium text-[#4D5057] bg-[#059669] rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="px-6 py-2 text-sm font-medium text-[#4D5057] bg-[#059669] rounded-lg hover:bg-[#047857] disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? 'Creazione...' : 'Crea Utente'}
             </button>

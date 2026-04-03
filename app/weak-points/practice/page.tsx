@@ -87,7 +87,7 @@ export default function WPPracticePage() {
           <span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Focus</span>
         </Link>
         <div style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:4, padding:'10px 0' }}>
-          <BookOpen size={19} color="#2563EB"/>
+          <BookOpen size={19} color="#059669"/>
           <span style={{ fontSize:9, color:'var(--accent)', fontWeight:700 }}>Punti deboli</span>
         </div>
       </div>
@@ -177,7 +177,7 @@ export default function WPPracticePage() {
           <span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Focus</span>
         </Link>
         <div style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:4, padding:'10px 0' }}>
-          <BookOpen size={19} color="#2563EB"/>
+          <BookOpen size={19} color="#059669"/>
           <span style={{ fontSize:9, color:'var(--accent)', fontWeight:700 }}>Punti deboli</span>
         </div>
       </div>

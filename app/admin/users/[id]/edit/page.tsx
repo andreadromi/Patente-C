@@ -71,7 +71,7 @@ export default function EditUserPage({ params }: Props) {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-[#D5EA60] shadow-lg">
+      <header className="bg-[#D8E4A8] shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div>
@@ -104,7 +104,7 @@ export default function EditUserPage({ params }: Props) {
               required
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ECFDF5]0"
             />
             <p className="text-xs text-[#9CA3AF] mt-1">
               Modifica username dell&apos;utente
@@ -138,7 +138,7 @@ export default function EditUserPage({ params }: Props) {
             <button
               type="submit"
               disabled={saving}
-              className="px-6 py-2 text-sm font-medium text-[#4D5057] bg-[#059669] rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="px-6 py-2 text-sm font-medium text-[#4D5057] bg-[#059669] rounded-lg hover:bg-[#047857] disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {saving ? 'Salvataggio...' : 'Salva Modifiche'}
             </button>

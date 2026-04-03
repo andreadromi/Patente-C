@@ -118,7 +118,7 @@ export default function QuestionsListPage() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-[#D5EA60] shadow-lg">
+      <header className="bg-[#D8E4A8] shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div>
@@ -138,7 +138,7 @@ export default function QuestionsListPage() {
               </Link>
               <Link
                 href="/admin/questions/new"
-                className="px-4 py-2 text-sm font-medium bg-[#059669] text-[#4D5057] rounded-lg hover:bg-green-700"
+                className="px-4 py-2 text-sm font-medium bg-[#059669] text-white rounded-lg hover:bg-green-700"
               >
                 + Nuova Domanda
               </Link>
@@ -230,7 +230,7 @@ export default function QuestionsListPage() {
                           <div className="max-w-md truncate">{q.text}</div>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-[#D1FAE5] text-[#065F46]">
                             {q.area.code}
                           </span>
                         </td>
@@ -242,7 +242,7 @@ export default function QuestionsListPage() {
                         <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                           <Link
                             href={`/admin/questions/${q.id}/edit`}
-                            className="text-blue-600 hover:text-blue-900 mr-4"
+                            className="text-[#059669] hover:text-[#064E3B] mr-4"
                           >
                             Modifica
                           </Link>

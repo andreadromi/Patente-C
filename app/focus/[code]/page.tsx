@@ -66,7 +66,7 @@ export default function FocusStudyPage() {
 
   if (loading) return (
     <div style={{ minHeight: '100vh', background: 'var(--bg)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <div style={{ width: 36, height: 36, border: '3px solid #1F2937', borderTopColor: 'var(--accent)', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }} />
+      <div style={{ width: 36, height: 36, border: '3px solid var(--border)', borderTopColor: 'var(--accent)', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }} />
       <style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style>
     </div>
   )
@@ -83,7 +83,7 @@ export default function FocusStudyPage() {
     <div style={{ height: '100dvh', background: 'var(--bg)', color: 'var(--text)', fontFamily: 'system-ui,-apple-system,sans-serif', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
 
       {/* Header */}
-      <div style={{ padding: '12px 18px', background: 'var(--header-bg)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexShrink: 0, borderBottom: '1px solid #111827' }}>
+      <div style={{ padding: '12px 18px', background: 'var(--header-bg)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexShrink: 0, borderBottom: '1px solid var(--border)' }}>
         <div>
           <div style={{ fontSize: 10, fontWeight: 700, color: 'var(--accent2)', letterSpacing: 2 }}>FOCUS · {idx + 1}/{total}</div>
           <div style={{ fontSize: 11, color: 'var(--text3)', marginTop: 1 }}>{capName}</div>
@@ -97,14 +97,14 @@ export default function FocusStudyPage() {
       <div style={{ padding: '6px 18px 0', background: 'var(--card)', flexShrink: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <div style={{ flex: 1, height: 7, background: 'var(--border)', borderRadius: 4, overflow: 'hidden' }}>
-            <div style={{ height: '100%', background: 'linear-gradient(90deg,#2563EB,#06B6D4)', width: `${(answeredCount / total) * 100}%`, transition: 'width 0.4s', borderRadius: 4 }} />
+            <div style={{ height: '100%', background: 'linear-gradient(90deg,#059669,#10B981)', width: `${(answeredCount / total) * 100}%`, transition: 'width 0.4s', borderRadius: 4 }} />
           </div>
           <span style={{ fontSize: 11, fontWeight: 700, color: 'var(--text4)', minWidth: 40, textAlign: 'right' }}>{answeredCount}/{total}</span>
         </div>
       </div>
 
       {/* Numeri domande */}
-      <div style={{ background: 'var(--card)', padding: '8px 0', flexShrink: 0, borderBottom: '1px solid #111827' }}>
+      <div style={{ background: 'var(--card)', padding: '8px 0', flexShrink: 0, borderBottom: '1px solid var(--border)' }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <button onClick={() => goTo(Math.max(0, idx - 1))} style={{ padding: '0 10px', background: 'none', border: 'none', cursor: 'pointer' }}>
             <ChevronLeft size={16} color={idx > 0 ? 'var(--text3)' : 'var(--border)'} />
@@ -177,12 +177,12 @@ export default function FocusStudyPage() {
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background: 'var(--card)', borderTop: '1px solid #111827', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', flexShrink: 0, paddingBottom: 'env(safe-area-inset-bottom,8px)' }}>
+      <div style={{ background: 'var(--nav-bg)', borderTop: '1px solid var(--nav-border)', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', flexShrink: 0, paddingBottom: 'env(safe-area-inset-bottom,8px)' }}>
         <Link href="/dashboard" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, padding: '10px 0', textDecoration: 'none' }}>
           <Home size={19} color="#4B5563" /><span style={{ fontSize: 9, color: 'var(--text3)', fontWeight: 600 }}>Home</span>
         </Link>
         <Link href="/focus" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, padding: '10px 0', textDecoration: 'none' }}>
-          <Target size={19} color="#2563EB" /><span style={{ fontSize: 9, color: 'var(--accent)', fontWeight: 700 }}>Focus</span>
+          <Target size={19} color="#059669" /><span style={{ fontSize: 9, color: 'var(--accent)', fontWeight: 700 }}>Focus</span>
         </Link>
         <Link href="/weak-points" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, padding: '10px 0', textDecoration: 'none' }}>
           <BookOpen size={19} color="#4B5563" /><span style={{ fontSize: 9, color: 'var(--text3)', fontWeight: 600 }}>Punti deboli</span>

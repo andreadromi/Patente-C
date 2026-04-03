@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { Truck, ArrowRight } from 'lucide-react'
 
 export default function AdminLoginPage() {
   const router = useRouter()
@@ -10,54 +11,59 @@ export default function AdminLoginPage() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
+  const valid = username.trim().length >= 2 && password.length >= 4
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setLoading(true)
-    setError('')
-    const res = await fetch('/api/auth/admin/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, password })
+    if (!valid) return
+    setLoading(true); setError('')
+    const res = await fetch('/api/auth/admin-login', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username: username.trim(), password })
     })
-    if (res.ok) {
-      router.push('/admin/dashboard')
-    } else {
-      setError('Credenziali non valide')
-      setLoading(false)
-    }
+    if (res.ok) router.push('/admin/dashboard')
+    else { setError('Credenziali non valide'); setLoading(false) }
   }
 
   return (
-    <div className="min-h-screen bg-[#F8F9FC] flex items-center justify-center px-4">
-      <div className="w-full max-w-sm">
-        <div className="text-center mb-8">
-          <div className="text-4xl mb-3">🔐</div>
-          <span className="bg-red-700 text-[#4D5057] text-xs font-black px-3 py-1 rounded tracking-widest">AREA ADMIN</span>
-          <h1 className="text-xl font-black text-[#4D5057] mt-3">Accesso Amministratore</h1>
+    <div style={{ height: '100dvh', background: '#F8F9FC', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '24px', fontFamily: 'system-ui,-apple-system,sans-serif' }}>
+      <div style={{ marginBottom: 40, textAlign: 'center' }}>
+        <div style={{ width: 72, height: 72, borderRadius: 22, background: '#059669', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px' }}>
+          <Truck size={36} color="#fff" />
         </div>
+        <div style={{ fontSize: 11, fontWeight: 700, color: '#059669', letterSpacing: 3, textTransform: 'uppercase', marginBottom: 6 }}>Patente C · CE</div>
+        <h1 style={{ fontSize: 24, fontWeight: 900, color: '#4D5057', margin: 0 }}>Amministrazione</h1>
+      </div>
 
-        <div className="bg-[#D5EA60] border border-[#E2E6EA] rounded-2xl p-6">
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label className="text-xs text-[#6B7280] tracking-widest uppercase font-bold block mb-2">Username</label>
-              <input type="text" value={username} onChange={e => setUsername(e.target.value)}
-                className="w-full bg-white border border-[#E2E6EA] rounded-xl px-4 py-3 text-[#4D5057] focus:outline-none focus:border-[#059669] text-sm"
-                autoFocus />
-            </div>
-            <div>
-              <label className="text-xs text-[#6B7280] tracking-widest uppercase font-bold block mb-2">Password</label>
-              <input type="password" value={password} onChange={e => setPassword(e.target.value)}
-                className="w-full bg-white border border-[#E2E6EA] rounded-xl px-4 py-3 text-[#4D5057] focus:outline-none focus:border-[#059669] text-sm" />
-            </div>
-            {error && <p className="text-[#D97706] text-xs">{error}</p>}
-            <button type="submit" disabled={loading || !username || !password}
-              className="w-full py-3 bg-[#059669] text-[#4D5057] font-black rounded-xl text-sm disabled:opacity-40">
-              {loading ? 'Accesso...' : 'Accedi →'}
-            </button>
-          </form>
-        </div>
-        <p className="text-center text-xs text-gray-600 mt-4">
-          <a href="/login" className="text-[#9CA3AF] hover:text-[#4D5057]">← Torna al login utente</a>
+      <div style={{ width: '100%', maxWidth: 340 }}>
+        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+          <div>
+            <label style={{ fontSize: 10, fontWeight: 700, color: '#9CA3AF', letterSpacing: 2, textTransform: 'uppercase', display: 'block', marginBottom: 6 }}>Username</label>
+            <input type="text" value={username} onChange={e => setUsername(e.target.value)} placeholder="admin" autoFocus
+              style={{ width: '100%', background: '#fff', border: '1.5px solid #E2E6EA', borderRadius: 14, padding: '14px', color: '#4D5057', fontSize: 16, outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }} />
+          </div>
+          <div>
+            <label style={{ fontSize: 10, fontWeight: 700, color: '#9CA3AF', letterSpacing: 2, textTransform: 'uppercase', display: 'block', marginBottom: 6 }}>Password</label>
+            <input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="••••••"
+              style={{ width: '100%', background: '#fff', border: '1.5px solid #E2E6EA', borderRadius: 14, padding: '14px', color: '#4D5057', fontSize: 16, outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }} />
+          </div>
+
+          {error && <p style={{ color: '#D97706', fontSize: 13, margin: 0 }}>{error}</p>}
+
+          <button type="submit" disabled={!valid || loading}
+            style={{
+              display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
+              padding: '15px 0', borderRadius: 16, border: 'none', cursor: valid ? 'pointer' : 'not-allowed',
+              background: valid ? '#059669' : '#E2E6EA',
+              color: valid ? '#fff' : '#9CA3AF', fontSize: 16, fontWeight: 800,
+              fontFamily: 'inherit'
+            }}>
+            {loading ? 'Accesso...' : <><span>Accedi</span><ArrowRight size={18} /></>}
+          </button>
+        </form>
+
+        <p style={{ textAlign: 'center', fontSize: 12, color: '#9CA3AF', marginTop: 20 }}>
+          <a href="/login" style={{ color: '#059669' }}>← Torna al login utente</a>
         </p>
       </div>
     </div>

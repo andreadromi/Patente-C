@@ -24,7 +24,7 @@ export default function FocusPage() {
 
   if (loading) return (
     <div style={{ height: '100dvh', background: 'var(--bg)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <div style={{ width: 36, height: 36, border: '3px solid #1F2937', borderTopColor: 'var(--accent)', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }} />
+      <div style={{ width: 36, height: 36, border: '3px solid var(--border)', borderTopColor: 'var(--accent)', borderRadius: '50%', animation: 'spin 0.8s linear infinite' }} />
       <style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style>
     </div>
   )
@@ -45,16 +45,16 @@ export default function FocusPage() {
       <div style={{ flex: 1, overflowY: 'auto', padding: '4px 16px 16px', display: 'flex', flexDirection: 'column', gap: 8 }}>
         {capitoli.map(cap => (
           <Link key={cap.code} href={`/focus/${cap.code}`} style={{ textDecoration: 'none' }}>
-            <div style={{ background: 'var(--card)', border: '1px solid #1F2937', borderRadius: 16, padding: '14px 16px', display: 'flex', alignItems: 'center', gap: 14 }}>
+            <div style={{ background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 16, padding: '14px 16px', display: 'flex', alignItems: 'center', gap: 14 }}>
               <div style={{ width: 40, height: 40, borderRadius: 12, flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--surface)' }}>
-                <Target size={20} color="#3B82F6" />
+                <Target size={20} color="#059669" />
               </div>
               <div style={{ flex: 1, minWidth: 0 }}>
                 <div style={{ fontSize: 14, fontWeight: 700, color: 'var(--text)', marginBottom: 3, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{cap.name}</div>
                 <div style={{ fontSize: 11, color: 'var(--text4)' }}>{cap.totalQuestions} domande · {cap.nEsame} in esame</div>
               </div>
-              <div style={{ flexShrink: 0, display: 'flex', alignItems: 'center', gap: 4, padding: '7px 12px', borderRadius: 10, background: 'var(--surface)', border: '1px solid #1F2937' }}>
-                <Play size={13} color="#3B82F6" />
+              <div style={{ flexShrink: 0, display: 'flex', alignItems: 'center', gap: 4, padding: '7px 12px', borderRadius: 10, background: 'var(--surface)', border: '1px solid var(--border)' }}>
+                <Play size={13} color="#059669" />
                 <span style={{ fontSize: 12, fontWeight: 700, color: 'var(--accent2)' }}>Studia</span>
               </div>
             </div>
@@ -62,12 +62,12 @@ export default function FocusPage() {
         ))}
       </div>
 
-      <div style={{ background: 'var(--card)', borderTop: '1px solid #111827', display: 'grid', paddingBottom: 'env(safe-area-inset-bottom,8px)', gridTemplateColumns: '1fr 1fr 1fr', flexShrink: 0 }}>
+      <div style={{ background: 'var(--nav-bg)', borderTop: '1px solid #111827', display: 'grid', paddingBottom: 'env(safe-area-inset-bottom,8px)', gridTemplateColumns: '1fr 1fr 1fr', flexShrink: 0 }}>
         <Link href="/dashboard" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, padding: '10px 0', textDecoration: 'none' }}>
           <Home size={19} color="#4B5563" /><span style={{ fontSize: 9, color: 'var(--text3)', fontWeight: 600 }}>Home</span>
         </Link>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, padding: '10px 0' }}>
-          <Target size={19} color="#2563EB" /><span style={{ fontSize: 9, color: 'var(--accent)', fontWeight: 700 }}>Focus</span>
+          <Target size={19} color="#059669" /><span style={{ fontSize: 9, color: 'var(--accent)', fontWeight: 700 }}>Focus</span>
         </div>
         <Link href="/weak-points" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, padding: '10px 0', textDecoration: 'none' }}>
           <BookOpen size={19} color="#4B5563" /><span style={{ fontSize: 9, color: 'var(--text3)', fontWeight: 600 }}>Punti deboli</span>

@@ -59,7 +59,7 @@ export default function WeakPointsPage() {
               <div style={{ height:5, background:'var(--border)', borderRadius:3, overflow:'hidden', marginBottom:20 }}>
                 <div style={{ height:'100%', background:'linear-gradient(90deg,#DC2626,#F87171)', width:'100%', borderRadius:3 }}/>
               </div>
-              <Link href="/weak-points/practice" style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:10, padding:'15px 0', background:'linear-gradient(135deg,#2563EB,#1D4ED8)', color:'#fff', borderRadius:16, fontWeight:800, fontSize:16, textDecoration:'none', boxShadow:'0 4px 16px rgba(37,99,235,0.35)' }}>
+              <Link href="/weak-points/practice" style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:10, padding:'15px 0', background:'var(--accent)', color:'#fff', borderRadius:16, fontWeight:800, fontSize:16, textDecoration:'none', boxShadow:'none' }}>
                 <Target size={20} color="#fff"/>
                 INIZIA ALLENAMENTO
               </Link>
@@ -79,7 +79,7 @@ export default function WeakPointsPage() {
           <span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Focus</span>
         </Link>
         <div style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0' }}>
-          <BookOpen size={19} color="#2563EB"/>
+          <BookOpen size={19} color="#059669"/>
           <span style={{ fontSize:9, color:'var(--accent)', fontWeight:700 }}>Punti deboli</span>
         </div>
       </div>
