@@ -50,7 +50,7 @@ export default function WeakPointsPage() {
           <>
             <BookOpen size={52} color="#F87171"/>
             <div style={{ textAlign:'center' }}>
-              <div style={{ fontSize:56, fontWeight:900, color:'var(--red)', lineHeight:1, letterSpacing:-2 }}>{total}</div>
+              <div style={{ fontSize:56, fontWeight:900, color:'var(--amber)', lineHeight:1, letterSpacing:-2 }}>{total}</div>
               <div style={{ fontSize:14, color:'var(--text2)', marginTop:6 }}>domande da ripassare</div>
               <div style={{ fontSize:12, color:'var(--text4)', marginTop:4 }}>3 risposte corrette consecutive = eliminato</div>
             </div>

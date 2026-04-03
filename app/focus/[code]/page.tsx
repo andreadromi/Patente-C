@@ -83,7 +83,7 @@ export default function FocusStudyPage() {
     <div style={{ height: '100dvh', background: 'var(--bg)', color: 'var(--text)', fontFamily: 'system-ui,-apple-system,sans-serif', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
 
       {/* Header */}
-      <div style={{ padding: '12px 18px', background: 'var(--card)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexShrink: 0, borderBottom: '1px solid #111827' }}>
+      <div style={{ padding: '12px 18px', background: 'var(--header-bg)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexShrink: 0, borderBottom: '1px solid #111827' }}>
         <div>
           <div style={{ fontSize: 10, fontWeight: 700, color: 'var(--accent2)', letterSpacing: 2 }}>FOCUS · {idx + 1}/{total}</div>
           <div style={{ fontSize: 11, color: 'var(--text3)', marginTop: 1 }}>{capName}</div>

@@ -68,27 +68,27 @@ export default function UsersListPage() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-gray-900 shadow-lg">
+      <header className="bg-[#D5EA60] shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div>
-              <h1 className="text-2xl font-bold text-white">
+              <h1 className="text-2xl font-bold text-[#4D5057]">
                 Gestione Utenti
               </h1>
-              <p className="text-sm text-gray-300 mt-1">
+              <p className="text-sm text-[#4D5057] mt-1">
                 Totale: {users.length} utenti
               </p>
             </div>
             <div className="flex gap-3">
               <Link
                 href="/admin/dashboard"
-                className="px-4 py-2 text-sm font-medium text-white hover:text-gray-200 border border-gray-600 rounded-lg hover:bg-gray-800"
+                className="px-4 py-2 text-sm font-medium text-[#4D5057] hover:text-[#4D5057] border border-[#E2E6EA] rounded-lg hover:bg-white"
               >
                 ← Dashboard
               </Link>
               <Link
                 href="/admin/users/new"
-                className="px-4 py-2 text-sm font-medium bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+                className="px-4 py-2 text-sm font-medium bg-[#059669] text-[#4D5057] rounded-lg hover:bg-blue-700"
               >
                 + Nuovo Utente
               </Link>
@@ -102,11 +102,11 @@ export default function UsersListPage() {
         {/* Table */}
         <div className="bg-white rounded-lg shadow overflow-hidden">
           {loading ? (
-            <div className="p-8 text-center text-gray-500">
+            <div className="p-8 text-center text-[#9CA3AF]">
               Caricamento...
             </div>
           ) : users.length === 0 ? (
-            <div className="p-8 text-center text-gray-500">
+            <div className="p-8 text-center text-[#9CA3AF]">
               Nessun utente trovato
             </div>
           ) : (
@@ -114,16 +114,16 @@ export default function UsersListPage() {
               <table className="min-w-full divide-y divide-gray-200">
                 <thead className="bg-gray-50">
                   <tr>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    <th className="px-6 py-3 text-left text-xs font-medium text-[#9CA3AF] uppercase tracking-wider">
                       Username
                     </th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    <th className="px-6 py-3 text-left text-xs font-medium text-[#9CA3AF] uppercase tracking-wider">
                       Registrato il
                     </th>
-                    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    <th className="px-6 py-3 text-left text-xs font-medium text-[#9CA3AF] uppercase tracking-wider">
                       Simulazioni Completate
                     </th>
-                    <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
+                    <th className="px-6 py-3 text-right text-xs font-medium text-[#9CA3AF] uppercase tracking-wider">
                       Azioni
                     </th>
                   </tr>
@@ -194,7 +194,7 @@ export default function UsersListPage() {
               <button
                 onClick={handleDelete}
                 disabled={deleting}
-                className="px-4 py-2 text-sm font-medium text-white bg-red-600 rounded-lg hover:bg-red-700 disabled:opacity-50"
+                className="px-4 py-2 text-sm font-medium text-[#4D5057] bg-[#D97706] rounded-lg hover:bg-red-700 disabled:opacity-50"
               >
                 {deleting ? 'Eliminazione...' : 'Elimina'}
               </button>

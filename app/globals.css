@@ -5,20 +5,25 @@
 :root {
   --bg: #F8F9FC;
   --card: #FFFFFF;
-  --surface: #F1F3F9;
-  --border: #E2E8F0;
-  --text: #1E293B;
-  --text2: #64748B;
-  --text3: #94A3B8;
-  --text4: #CBD5E1;
+  --surface: #F0F2F5;
+  --border: #E2E6EA;
+  --text: #4D5057;
+  --text2: #6B7280;
+  --text3: #9CA3AF;
+  --text4: #D1D5DB;
   --accent: #059669;
   --accent2: #10B981;
+  --lime: #D5EA60;
+  --lime-dim: #EEF5B8;
+  --amber: #D97706;
+  --amber-dim: #FEF3C7;
   --green: #059669;
-  --green-dim: #ECFDF5;
+  --green-dim: #D1FAE5;
   --red: #D97706;
-  --red-dim: #FEF9E7;
-  --nav-bg: #FFFFFF;
-  --nav-border: #E2E8F0;
+  --red-dim: #FEF3C7;
+  --nav-bg: #D5EA60;
+  --nav-border: #C5DA50;
+  --header-bg: #D5EA60;
 }
 
 * { box-sizing: border-box; }

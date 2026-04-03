@@ -42,20 +42,20 @@ export default function NewSimulationPage() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-gray-900 shadow-lg">
+      <header className="bg-[#D5EA60] shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div>
-              <h1 className="text-2xl font-bold text-white">
+              <h1 className="text-2xl font-bold text-[#4D5057]">
                 Nuova Simulazione
               </h1>
-              <p className="text-sm text-gray-300 mt-1">
+              <p className="text-sm text-[#4D5057] mt-1">
                 Crea una nuova simulazione con 60 domande
               </p>
             </div>
             <Link
               href="/admin/simulations"
-              className="px-4 py-2 text-sm font-medium text-white hover:text-gray-200 border border-gray-600 rounded-lg hover:bg-gray-800"
+              className="px-4 py-2 text-sm font-medium text-[#4D5057] hover:text-[#4D5057] border border-[#E2E6EA] rounded-lg hover:bg-white"
             >
               ← Torna alla Lista
             </Link>
@@ -85,7 +85,7 @@ export default function NewSimulationPage() {
               }
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"
             />
-            <p className="text-xs text-gray-500 mt-1">
+            <p className="text-xs text-[#9CA3AF] mt-1">
               Numero progressivo univoco (es. 1, 2, 3...)
             </p>
           </div>
@@ -105,7 +105,7 @@ export default function NewSimulationPage() {
               }
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 font-mono text-sm"
             />
-            <p className="text-xs text-gray-500 mt-1">
+            <p className="text-xs text-[#9CA3AF] mt-1">
               Array JSON con 60 codici domanda. Esempio:{' '}
               <code>[&quot;MHN001&quot;, &quot;MHN002&quot;, ...]</code>
             </p>
@@ -143,7 +143,7 @@ export default function NewSimulationPage() {
             <button
               type="submit"
               disabled={loading}
-              className="px-6 py-2 text-sm font-medium text-white bg-purple-600 rounded-lg hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="px-6 py-2 text-sm font-medium text-[#4D5057] bg-purple-600 rounded-lg hover:bg-purple-700 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? 'Creazione...' : 'Crea Simulazione'}
             </button>

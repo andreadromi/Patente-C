@@ -31,7 +31,7 @@ export default function LoginPage() {
     <div style={{ height: '100dvh', background: 'var(--bg)', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '24px', fontFamily: 'system-ui,-apple-system,sans-serif' }}>
 
       <div style={{ marginBottom: 40, textAlign: 'center' }}>
-        <div style={{ width: 72, height: 72, borderRadius: 22, background: 'linear-gradient(135deg,#2563EB,#0EA5E9)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px', boxShadow: '0 8px 32px rgba(37,99,235,0.5)' }}>
+        <div style={{ width: 72, height: 72, borderRadius: 22, background: 'var(--accent)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px', boxShadow: '0 8px 32px rgba(37,99,235,0.5)' }}>
           <Truck size={36} color="#fff" />
         </div>
         <div style={{ fontSize: 11, fontWeight: 700, color: 'var(--accent2)', letterSpacing: 3, textTransform: 'uppercase', marginBottom: 6 }}>Patente C · CE</div>

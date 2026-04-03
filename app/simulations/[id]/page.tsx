@@ -145,7 +145,7 @@ export default function SimulationPage() {
     <div style={{ height:'100dvh', background:'var(--bg)', color:'var(--text)', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
 
       {/* Header */}
-      <div style={{ padding:'12px 18px', background:'var(--card)', display:'flex', alignItems:'center', justifyContent:'space-between', flexShrink:0, borderBottom:'1px solid #111827' }}>
+      <div style={{ padding:'14px 18px', background:'var(--header-bg)', display:'flex', alignItems:'center', justifyContent:'space-between', flexShrink:0 }}>
         <div>
           <div style={{ fontSize:10, fontWeight:700, color:'var(--accent2)', letterSpacing:2 }}>QUIZ · {idx+1}/{TOTAL}</div>
           <div style={{ fontSize:11, color:'var(--text3)', marginTop:1 }}>{q.capitolo}</div>
@@ -172,7 +172,7 @@ export default function SimulationPage() {
       <div style={{ padding:'6px 18px 0', background:'var(--card)', flexShrink:0 }}>
         <div style={{ display:'flex', alignItems:'center', gap:10 }}>
           <div style={{ flex:1, height:7, background:'var(--border)', borderRadius:4, overflow:'hidden' }}>
-            <div style={{ height:'100%', background:'linear-gradient(90deg,#2563EB,#06B6D4)', width:`${(answeredCount/TOTAL)*100}%`, transition:'width 0.4s', borderRadius:4 }}/>
+            <div style={{ height:'100%', background:'linear-gradient(90deg,var(--accent),var(--accent2))', width:`${(answeredCount/TOTAL)*100}%`, transition:'width 0.4s', borderRadius:4 }}/>
           </div>
           <span style={{ fontSize:11, fontWeight:700, color:'var(--text4)', minWidth:32, textAlign:'right' }}>{answeredCount}/{TOTAL}</span>
         </div>

@@ -28,36 +28,36 @@ export default function AdminLoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-950 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-[#F8F9FC] flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
           <div className="text-4xl mb-3">🔐</div>
-          <span className="bg-red-700 text-white text-xs font-black px-3 py-1 rounded tracking-widest">AREA ADMIN</span>
-          <h1 className="text-xl font-black text-white mt-3">Accesso Amministratore</h1>
+          <span className="bg-red-700 text-[#4D5057] text-xs font-black px-3 py-1 rounded tracking-widest">AREA ADMIN</span>
+          <h1 className="text-xl font-black text-[#4D5057] mt-3">Accesso Amministratore</h1>
         </div>
 
-        <div className="bg-gray-900 border border-gray-800 rounded-2xl p-6">
+        <div className="bg-[#D5EA60] border border-[#E2E6EA] rounded-2xl p-6">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="text-xs text-gray-400 tracking-widest uppercase font-bold block mb-2">Username</label>
+              <label className="text-xs text-[#6B7280] tracking-widest uppercase font-bold block mb-2">Username</label>
               <input type="text" value={username} onChange={e => setUsername(e.target.value)}
-                className="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm"
+                className="w-full bg-white border border-[#E2E6EA] rounded-xl px-4 py-3 text-[#4D5057] focus:outline-none focus:border-[#059669] text-sm"
                 autoFocus />
             </div>
             <div>
-              <label className="text-xs text-gray-400 tracking-widest uppercase font-bold block mb-2">Password</label>
+              <label className="text-xs text-[#6B7280] tracking-widest uppercase font-bold block mb-2">Password</label>
               <input type="password" value={password} onChange={e => setPassword(e.target.value)}
-                className="w-full bg-gray-800 border border-gray-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm" />
+                className="w-full bg-white border border-[#E2E6EA] rounded-xl px-4 py-3 text-[#4D5057] focus:outline-none focus:border-[#059669] text-sm" />
             </div>
-            {error && <p className="text-red-400 text-xs">{error}</p>}
+            {error && <p className="text-[#D97706] text-xs">{error}</p>}
             <button type="submit" disabled={loading || !username || !password}
-              className="w-full py-3 bg-amber-500 text-black font-black rounded-xl text-sm disabled:opacity-40">
+              className="w-full py-3 bg-[#059669] text-[#4D5057] font-black rounded-xl text-sm disabled:opacity-40">
               {loading ? 'Accesso...' : 'Accedi →'}
             </button>
           </form>
         </div>
         <p className="text-center text-xs text-gray-600 mt-4">
-          <a href="/login" className="text-gray-500 hover:text-gray-300">← Torna al login utente</a>
+          <a href="/login" className="text-[#9CA3AF] hover:text-[#4D5057]">← Torna al login utente</a>
         </p>
       </div>
     </div>

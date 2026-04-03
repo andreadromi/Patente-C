@@ -9,15 +9,15 @@ export function BottomNav({ active }: { active?: 'home' | 'focus' | 'deboli' }) 
     { key: 'deboli', href: '/weak-points', Icon: BookOpen, label: 'Punti deboli' },
   ]
   return (
-    <div style={{ background: 'var(--nav-bg)', borderTop: '1px solid var(--border)', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', flexShrink: 0, paddingBottom: 'env(safe-area-inset-bottom,8px)' }}>
+    <div style={{ background: 'var(--nav-bg)', borderTop: '1px solid var(--nav-border)', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', flexShrink: 0, paddingBottom: 'env(safe-area-inset-bottom,8px)' }}>
       {items.map(({ key, href, Icon, label }) => {
         const isActive = key === active
         const El = isActive ? 'div' : Link
-        const props = isActive ? {} : { href, style: { textDecoration: 'none' } }
+        const props = isActive ? {} : { href }
         return (
-          <El key={key} {...(props as any)} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, padding: '10px 0', textDecoration: 'none' }}>
-            <Icon size={19} color={isActive ? 'var(--accent)' : 'var(--text3)'} />
-            <span style={{ fontSize: 9, color: isActive ? 'var(--accent)' : 'var(--text3)', fontWeight: isActive ? 700 : 600 }}>{label}</span>
+          <El key={key} {...(props as any)} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4, padding: '10px 0', textDecoration: 'none', cursor: isActive ? 'default' : 'pointer' }}>
+            <Icon size={20} color={isActive ? '#059669' : '#4D5057'} />
+            <span style={{ fontSize: 10, color: isActive ? '#059669' : '#4D5057', fontWeight: isActive ? 800 : 600 }}>{label}</span>
           </El>
         )
       })}

@@ -39,18 +39,18 @@ export default function NewUserPage() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-gray-900 shadow-lg">
+      <header className="bg-[#D5EA60] shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div>
-              <h1 className="text-2xl font-bold text-white">Nuovo Utente</h1>
-              <p className="text-sm text-gray-300 mt-1">
+              <h1 className="text-2xl font-bold text-[#4D5057]">Nuovo Utente</h1>
+              <p className="text-sm text-[#4D5057] mt-1">
                 Crea un nuovo utente per il sistema
               </p>
             </div>
             <Link
               href="/admin/users"
-              className="px-4 py-2 text-sm font-medium text-white hover:text-gray-200 border border-gray-600 rounded-lg hover:bg-gray-800"
+              className="px-4 py-2 text-sm font-medium text-[#4D5057] hover:text-[#4D5057] border border-[#E2E6EA] rounded-lg hover:bg-white"
             >
               ← Torna alla Lista
             </Link>
@@ -77,7 +77,7 @@ export default function NewUserPage() {
               onChange={(e) => setUsername(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
-            <p className="text-xs text-gray-500 mt-1">
+            <p className="text-xs text-[#9CA3AF] mt-1">
               Username univoco per l&apos;accesso al sistema
             </p>
           </div>
@@ -107,7 +107,7 @@ export default function NewUserPage() {
             <button
               type="submit"
               disabled={loading}
-              className="px-6 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="px-6 py-2 text-sm font-medium text-[#4D5057] bg-[#059669] rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {loading ? 'Creazione...' : 'Crea Utente'}
             </button>

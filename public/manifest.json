@@ -1,7 +1,7 @@
 {
   "name": "Patente C · CE",
   "short_name": "Patente C",
-  "theme_color": "#059669",
+  "theme_color": "#D5EA60",
   "background_color": "#F8F9FC",
   "display": "standalone",
   "start_url": "/dashboard",

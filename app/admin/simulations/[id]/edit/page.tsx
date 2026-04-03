@@ -78,20 +78,20 @@ export default function EditSimulationPage({ params }: Props) {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-gray-900 shadow-lg">
+      <header className="bg-[#D5EA60] shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div>
-              <h1 className="text-2xl font-bold text-white">
+              <h1 className="text-2xl font-bold text-[#4D5057]">
                 Modifica Simulazione
               </h1>
-              <p className="text-sm text-gray-300 mt-1">
+              <p className="text-sm text-[#4D5057] mt-1">
                 Simulazione #{formData.number}
               </p>
             </div>
             <Link
               href="/admin/simulations"
-              className="px-4 py-2 text-sm font-medium text-white hover:text-gray-200 border border-gray-600 rounded-lg hover:bg-gray-800"
+              className="px-4 py-2 text-sm font-medium text-[#4D5057] hover:text-[#4D5057] border border-[#E2E6EA] rounded-lg hover:bg-white"
             >
               ← Torna alla Lista
             </Link>
@@ -120,7 +120,7 @@ export default function EditSimulationPage({ params }: Props) {
               }
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
-            <p className="text-xs text-gray-500 mt-1">
+            <p className="text-xs text-[#9CA3AF] mt-1">
               Numero progressivo univoco
             </p>
           </div>
@@ -139,7 +139,7 @@ export default function EditSimulationPage({ params }: Props) {
               }
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 font-mono text-sm"
             />
-            <p className="text-xs text-gray-500 mt-1">
+            <p className="text-xs text-[#9CA3AF] mt-1">
               Array JSON con 60 codici domanda
             </p>
           </div>
@@ -166,7 +166,7 @@ export default function EditSimulationPage({ params }: Props) {
             <button
               type="submit"
               disabled={saving}
-              className="px-6 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="px-6 py-2 text-sm font-medium text-[#4D5057] bg-[#059669] rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {saving ? 'Salvataggio...' : 'Salva Modifiche'}
             </button>
