@@ -32,7 +32,7 @@ export default async function AdminDashboardPage() {
   return (
     <div style={{ minHeight: '100vh', background: '#F8F9FC', fontFamily: 'system-ui,-apple-system,sans-serif', color: '#4D5057' }}>
       {/* Header */}
-      <div style={{ background: '#D8E4A8', padding: '18px 20px', borderBottom: '2px solid #C8D498' }}>
+      <div style={{ background: '#EEF0E4', padding: '18px 20px', borderBottom: '2px solid #DDE0D4' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div style={{ fontSize: 18, fontWeight: 900, color: '#2D3436', letterSpacing: 1 }}>ADMIN</div>
           <form action={handleLogout}>

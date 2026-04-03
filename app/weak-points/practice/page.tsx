@@ -88,7 +88,7 @@ export default function WPPracticePage() {
     <div style={{ height:'100dvh', background:'var(--bg)', color:'var(--text)', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
 
       {/* Header */}
-      <div style={{ padding:'12px 18px', background:'#D8E4A8', borderBottom:'2px solid #C8D498', display:'flex', alignItems:'center', justifyContent:'space-between', flexShrink:0 }}>
+      <div style={{ padding:'12px 18px', background:'#EEF0E4', borderBottom:'none', display:'flex', alignItems:'center', justifyContent:'space-between', flexShrink:0 }}>
         <div>
           <div style={{ fontSize:10, fontWeight:700, color:'var(--red)', letterSpacing:2 }}>PUNTI DEBOLI · {idx+1}/{questions.length}</div>
           <div style={{ fontSize:11, color:'var(--text3)', marginTop:1 }}>{q.capitolo}</div>

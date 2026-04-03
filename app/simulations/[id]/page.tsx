@@ -180,7 +180,7 @@ export default function SimulationPage() {
       </div>
 
       {/* Numeri domande */}
-      <div style={{ background:'var(--card)', padding:'8px 0', flexShrink:0, borderBottom:'1px solid #E2E6EA' }}>
+      <div style={{ background:'var(--card)', padding:'8px 0', flexShrink:0, borderBottom:'none' }}>
         <div style={{ display:'flex', alignItems:'center' }}>
           <button onClick={() => goTo(Math.max(0,idx-1))} style={{ padding:'0 10px', background:'none', border:'none', cursor:'pointer' }}>
             <ChevronLeft size={16} color={idx > 0 ? 'var(--text3)' : 'var(--border)'}/>

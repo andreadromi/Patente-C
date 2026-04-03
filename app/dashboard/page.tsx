@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { LogOut, CheckCircle2, ChevronLeft, ChevronRight } from 'lucide-react'
+import { Truck, LogOut, CheckCircle2, ChevronLeft, ChevronRight } from 'lucide-react'
 import { BottomNav } from '@/components/BottomNav'
 
 interface Simulation { id: string; number: number; titolo: string | null }
@@ -60,7 +60,12 @@ export default function DashboardPage() {
       {/* Header */}
       <div style={{ padding: '18px 20px', background: 'var(--header-bg)', flexShrink: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
-          <div style={{ fontSize: 20, fontWeight: 900, color: '#4D5057', letterSpacing: 1 }}>PATENTE C · CE</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <div style={{ width: 36, height: 36, borderRadius: 10, background: '#059669', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <Truck size={18} color="#fff" />
+            </div>
+            <span style={{ fontSize: 18, fontWeight: 900, color: '#4D5057', letterSpacing: 1 }}>PATENTE C · CE</span>
+          </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
             <span style={{ fontSize: 13, fontWeight: 700, color: '#4D5057', textTransform: 'uppercase' }}>{user ? fmtName(user.username) : ''}</span>
             <button onClick={handleLogout} style={{ width: 34, height: 34, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(255,255,255,0.5)', border: 'none', borderRadius: 10, cursor: 'pointer' }}>

@@ -125,7 +125,7 @@ export default function RiepilogoPage() {
       </div>
 
       {/* Legenda compatta */}
-      <div style={{ padding:'6px 16px 8px', borderTop:'2px solid #C8D498', display:'flex', gap:16, flexShrink:0 }}>
+      <div style={{ padding:'6px 16px 8px', borderTop:'2px solid #DDE0D4', display:'flex', gap:16, flexShrink:0 }}>
         {[
           { color:'var(--green)', label:'Passato' },
           { color:'var(--red)', label:'Fallito' },

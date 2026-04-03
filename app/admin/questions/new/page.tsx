@@ -69,7 +69,7 @@ export default function NewQuestionPage() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-[#D8E4A8] shadow-lg">
+      <header className="bg-[#EEF0E4] shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div>

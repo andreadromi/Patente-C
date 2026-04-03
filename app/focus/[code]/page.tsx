@@ -84,7 +84,7 @@ export default function FocusStudyPage() {
     <div style={{ height: '100dvh', background: 'var(--bg)', color: 'var(--text)', fontFamily: 'system-ui,-apple-system,sans-serif', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
 
       {/* Header */}
-      <div style={{ padding: '12px 18px', background: 'var(--header-bg)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexShrink: 0, borderBottom: '2px solid #C8D498' }}>
+      <div style={{ padding: '12px 18px', background: 'var(--header-bg)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexShrink: 0, borderBottom: 'none' }}>
         <div>
           <div style={{ fontSize: 10, fontWeight: 700, color: 'var(--accent2)', letterSpacing: 2 }}>FOCUS · {idx + 1}/{total}</div>
           <div style={{ fontSize: 12, color: '#4D5057', marginTop: 1 }}>{capName}</div>
@@ -105,7 +105,7 @@ export default function FocusStudyPage() {
       </div>
 
       {/* Numeri domande */}
-      <div style={{ background: 'var(--card)', padding: '8px 0', flexShrink: 0, borderBottom: '1px solid #E2E6EA' }}>
+      <div style={{ background: 'var(--card)', padding: '8px 0', flexShrink: 0, borderBottom: 'none' }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <button onClick={() => goTo(Math.max(0, idx - 1))} style={{ padding: '0 10px', background: 'none', border: 'none', cursor: 'pointer' }}>
             <ChevronLeft size={16} color={idx > 0 ? 'var(--text3)' : 'var(--border)'} />
