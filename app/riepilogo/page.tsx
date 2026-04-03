@@ -68,7 +68,7 @@ export default function RiepilogoPage() {
         {/* Progress bar spessa */}
         <div style={{ display:'flex', alignItems:'center', gap:10 }}>
           <div style={{ flex:1, height:8, background:'var(--border)', borderRadius:4, overflow:'hidden' }}>
-            <div style={{ height:'100%', background:'linear-gradient(90deg,#059669,#10B981)', width:`${pct}%`, borderRadius:4, transition:'width 1s ease' }}/>
+            <div style={{ height:'100%', background:'linear-gradient(90deg,#059669,#059669)', width:`${pct}%`, borderRadius:4, transition:'width 1s ease' }}/>
           </div>
           <span style={{ fontSize:13, fontWeight:800, color:'var(--accent2)', minWidth:38, textAlign:'right' }}>{pct}%</span>
         </div>
@@ -124,7 +124,7 @@ export default function RiepilogoPage() {
       </div>
 
       {/* Legenda compatta */}
-      <div style={{ padding:'6px 16px 8px', borderTop:'1px solid #111827', display:'flex', gap:16, flexShrink:0 }}>
+      <div style={{ padding:'6px 16px 8px', borderTop:'2px solid #C8D498', display:'flex', gap:16, flexShrink:0 }}>
         {[
           { color:'var(--green)', label:'Passato' },
           { color:'var(--red)', label:'Fallito' },
@@ -139,7 +139,7 @@ export default function RiepilogoPage() {
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background:'var(--card)', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', flexShrink:0 }}>
+      <div style={{ background:'var(--card)', borderTop:'2px solid #C8D498', display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', flexShrink:0 }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
           <Home size={19} color="#4B5563"/><span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Home</span>
         </Link>

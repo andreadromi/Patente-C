@@ -77,7 +77,7 @@ export default function WPPracticePage() {
       </button>
       <Link href="/weak-points" style={{ color:'var(--text3)', fontSize:13 }}>← Torna ai punti deboli</Link>
 
-      <div style={{ position:'fixed', bottom:0, left:0, right:0, background:'var(--card)', paddingBottom:'env(safe-area-inset-bottom,8px)', borderTop:'1px solid #111827', display:'grid', paddingBottom:'env(safe-area-inset-bottom,8px)', gridTemplateColumns:'1fr 1fr 1fr' }}>
+      <div style={{ position:'fixed', bottom:0, left:0, right:0, background:'var(--card)', paddingBottom:'env(safe-area-inset-bottom,8px)', borderTop:'2px solid #C8D498', display:'grid', paddingBottom:'env(safe-area-inset-bottom,8px)', gridTemplateColumns:'1fr 1fr 1fr' }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
           <Home size={19} color="#4B5563"/>
           <span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Home</span>
@@ -100,7 +100,7 @@ export default function WPPracticePage() {
     <div style={{ height:'100dvh', background:'var(--bg)', color:'var(--text)', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
 
       {/* Header */}
-      <div style={{ padding:'12px 18px', background:'var(--card)', borderBottom:'1px solid #111827', display:'flex', alignItems:'center', justifyContent:'space-between', flexShrink:0 }}>
+      <div style={{ padding:'12px 18px', background:'#D8E4A8', borderBottom:'2px solid #C8D498', display:'flex', alignItems:'center', justifyContent:'space-between', flexShrink:0 }}>
         <div>
           <div style={{ fontSize:10, fontWeight:700, color:'var(--red)', letterSpacing:2 }}>PUNTI DEBOLI · {idx+1}/{questions.length}</div>
           <div style={{ fontSize:11, color:'var(--text3)', marginTop:1 }}>{q.capitolo}</div>
@@ -114,7 +114,7 @@ export default function WPPracticePage() {
 
       {/* Progress */}
       <div style={{ height:3, background:'var(--surface)', flexShrink:0 }}>
-        <div style={{ height:'100%', background:'linear-gradient(90deg,#DC2626,#F87171)', width:`${(idx/questions.length)*100}%`, transition:'width 0.4s' }}/>
+        <div style={{ height:'100%', background:'linear-gradient(90deg,#DC2626,#D97706)', width:`${(idx/questions.length)*100}%`, transition:'width 0.4s' }}/>
       </div>
 
       {/* Contenuto */}
@@ -134,7 +134,7 @@ export default function WPPracticePage() {
 
         {feedback && (
           <div style={{ display:'flex', alignItems:'center', gap:10, padding:'12px 16px', background: feedback.isCorrect ? 'var(--green-dim)' : 'var(--red-dim)', borderRadius:14, border:`1px solid ${feedback.isCorrect?'var(--green)':'var(--red)'}` }}>
-            {feedback.isCorrect ? <CheckCircle2 size={18} color="#4ADE80"/> : <XCircle size={18} color="#F87171"/>}
+            {feedback.isCorrect ? <CheckCircle2 size={18} color="#059669"/> : <XCircle size={18} color="#D97706"/>}
             <span style={{ color: feedback.isCorrect ? 'var(--green)' : 'var(--red)', fontWeight:700, fontSize:14 }}>
               {feedback.isCorrect
                 ? feedback.removed ? '🎉 Punto debole eliminato!' : `Corretto! (${q.consecutiveCorrect+1}/3)`
@@ -167,7 +167,7 @@ export default function WPPracticePage() {
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background:'var(--card)', borderTop:'1px solid #111827', display:'grid', paddingBottom:'env(safe-area-inset-bottom,8px)', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0 }}>
+      <div style={{ background:'var(--card)', borderTop:'2px solid #C8D498', display:'grid', paddingBottom:'env(safe-area-inset-bottom,8px)', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0 }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:4, padding:'10px 0', textDecoration:'none' }}>
           <Home size={19} color="#4B5563"/>
           <span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Home</span>

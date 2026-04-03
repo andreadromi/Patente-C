@@ -179,7 +179,7 @@ export default function SimulationPage() {
       </div>
 
       {/* Numeri domande */}
-      <div style={{ background:'var(--card)', padding:'8px 0', flexShrink:0, borderBottom:'1px solid #111827' }}>
+      <div style={{ background:'var(--card)', padding:'8px 0', flexShrink:0, borderBottom:'1px solid #E2E6EA' }}>
         <div style={{ display:'flex', alignItems:'center' }}>
           <button onClick={() => goTo(Math.max(0,idx-1))} style={{ padding:'0 10px', background:'none', border:'none', cursor:'pointer' }}>
             <ChevronLeft size={16} color={idx > 0 ? 'var(--text3)' : 'var(--border)'}/>
@@ -263,7 +263,7 @@ export default function SimulationPage() {
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background:'var(--card)', borderTop:'1px solid #111827', display:'grid', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0, paddingBottom:'env(safe-area-inset-bottom,8px)' }}>
+      <div style={{ background:'var(--card)', borderTop:'2px solid #C8D498', display:'grid', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0, paddingBottom:'env(safe-area-inset-bottom,8px)' }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
           <Home size={19} color="#4B5563"/><span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Home</span>
         </Link>

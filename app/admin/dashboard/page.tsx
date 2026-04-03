@@ -16,7 +16,7 @@ export default async function AdminDashboardPage() {
       prisma.user.findMany({
         where: { isAdmin: false },
         orderBy: { createdAt: 'desc' },
-        take: 5,
+        take: 10,
         include: { _count: { select: { userSimulations: true } } }
       })
     ])
@@ -30,72 +30,62 @@ export default async function AdminDashboardPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F8F9FC] text-[#4D5057]">
+    <div style={{ minHeight: '100vh', background: '#F8F9FC', fontFamily: 'system-ui,-apple-system,sans-serif', color: '#4D5057' }}>
       {/* Header */}
-      <div className="bg-[#D8E4A8] border-b border-[#E2E6EA] px-4 py-4">
-        <div className="max-w-4xl mx-auto flex items-center justify-between">
-          <div>
-            <span className="bg-[#059669] text-white text-xs font-black px-2 py-1 rounded tracking-widest">ADMIN</span>
-            <h1 className="text-lg font-black mt-1">Pannello Amministrazione</h1>
-            <p className="text-xs text-[#9CA3AF]">{user.username}</p>
-          </div>
+      <div style={{ background: '#D8E4A8', padding: '18px 20px', borderBottom: '2px solid #C8D498' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <div style={{ fontSize: 18, fontWeight: 900, color: '#2D3436', letterSpacing: 1 }}>ADMIN</div>
           <form action={handleLogout}>
-            <button className="text-xs px-3 py-2 bg-white text-[#6B7280] rounded-lg border border-[#E2E6EA]">
+            <button type="submit" style={{ padding: '8px 16px', background: 'rgba(255,255,255,0.5)', border: 'none', borderRadius: 10, fontSize: 13, fontWeight: 700, color: '#4D5057', cursor: 'pointer' }}>
               Esci
             </button>
           </form>
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 py-6">
+      <div style={{ padding: '20px' }}>
         {/* Stats */}
-        <div className="grid grid-cols-2 gap-3 mb-6">
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 20 }}>
           {[
-            { label: 'Utenti', value: totalUsers, icon: '👤', color: 'text-[#059669]' },
-            { label: 'Domande', value: totalQuestions.toLocaleString(), icon: '📝', color: 'text-[#059669]' },
-            { label: 'Simulazioni', value: totalSimulations, icon: '🎯', color: 'text-purple-400' },
-            { label: 'Completate', value: totalCompleted, icon: '✅', color: 'text-[#059669]' },
-          ].map(s => (
-            <div key={s.label} className="bg-[#D8E4A8] border border-[#E2E6EA] rounded-xl p-4">
-              <div className="text-2xl mb-1">{s.icon}</div>
-              <div className={`text-2xl font-black ${s.color}`}>{s.value}</div>
-              <div className="text-xs text-[#9CA3AF]">{s.label}</div>
+            { n: totalUsers, label: 'Utenti' },
+            { n: totalQuestions.toLocaleString(), label: 'Domande' },
+            { n: totalSimulations, label: 'Simulazioni' },
+            { n: totalCompleted, label: 'Completate' },
+          ].map((s, i) => (
+            <div key={i} style={{ background: '#fff', border: '1px solid #E2E6EA', borderRadius: 14, padding: '16px', textAlign: 'center' }}>
+              <div style={{ fontSize: 28, fontWeight: 900, color: '#059669' }}>{s.n}</div>
+              <div style={{ fontSize: 11, color: '#9CA3AF', fontWeight: 600, marginTop: 2 }}>{s.label}</div>
             </div>
           ))}
         </div>
 
-        {/* Nav */}
-        <div className="grid grid-cols-1 gap-3 mb-6">
-          {[
-            { href: '/admin/questions', label: '📝 Gestione Domande', desc: `${totalQuestions.toLocaleString()} domande nel database` },
-            { href: '/admin/simulations', label: '🎯 Gestione Simulazioni', desc: `${totalSimulations} simulazioni disponibili` },
-            { href: '/admin/users', label: '👤 Gestione Utenti', desc: `${totalUsers} utenti registrati` },
-          ].map(item => (
-            <Link key={item.href} href={item.href}
-              className="bg-[#D8E4A8] border border-[#E2E6EA] hover:border-[#059669] rounded-xl p-4 flex items-center justify-between transition-colors">
-              <div>
-                <div className="font-bold text-sm">{item.label}</div>
-                <div className="text-xs text-[#9CA3AF] mt-0.5">{item.desc}</div>
-              </div>
-              <span className="text-gray-600 text-lg">→</span>
-            </Link>
-          ))}
-        </div>
+        {/* Gestione utenti */}
+        <Link href="/admin/users" style={{ textDecoration: 'none', display: 'block', background: '#fff', border: '1px solid #E2E6EA', borderRadius: 14, padding: '16px 18px', marginBottom: 20 }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <div>
+              <div style={{ fontSize: 15, fontWeight: 800, color: '#4D5057' }}>Gestione Utenti</div>
+              <div style={{ fontSize: 12, color: '#9CA3AF', marginTop: 2 }}>{totalUsers} utenti registrati</div>
+            </div>
+            <span style={{ fontSize: 18, color: '#9CA3AF' }}>→</span>
+          </div>
+        </Link>
 
-        {/* Ultimi utenti */}
-        {recentUsers.length > 0 && (
-          <div className="bg-[#D8E4A8] border border-[#E2E6EA] rounded-xl p-4">
-            <h3 className="text-xs text-[#059669] tracking-widest uppercase font-bold mb-3">Ultimi utenti registrati</h3>
-            <div className="space-y-2">
+        {/* Utenti recenti */}
+        <div style={{ background: '#fff', border: '1px solid #E2E6EA', borderRadius: 14, padding: '16px 18px' }}>
+          <div style={{ fontSize: 11, fontWeight: 800, color: '#059669', letterSpacing: 2, marginBottom: 12 }}>UTENTI RECENTI</div>
+          {recentUsers.length === 0 ? (
+            <div style={{ fontSize: 13, color: '#9CA3AF', textAlign: 'center', padding: 20 }}>Nessun utente</div>
+          ) : (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
               {recentUsers.map(u => (
-                <div key={u.id} className="flex justify-between items-center text-sm">
-                  <span className="text-[#4D5057]">{u.username}</span>
-                  <span className="text-gray-600 text-xs">{u._count.userSimulations} simulazioni</span>
+                <div key={u.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 13 }}>
+                  <span style={{ fontWeight: 600, color: '#4D5057' }}>{u.username}</span>
+                  <span style={{ color: '#9CA3AF', fontSize: 12 }}>{u._count.userSimulations} quiz</span>
                 </div>
               ))}
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   )

@@ -36,7 +36,7 @@ export default function WeakPointsPage() {
       <div style={{ flex:1, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:'0 24px', gap:20 }}>
         {total === 0 ? (
           <>
-            <Target size={56} color="#4ADE80"/>
+            <Target size={56} color="#059669"/>
             <div style={{ textAlign:'center' }}>
               <h2 style={{ fontSize:22, fontWeight:900, color:'var(--green)', margin:'0 0 8px 0', textTransform:'uppercase' }}>NESSUN PUNTO DEBOLE</h2>
               <p style={{ color:'var(--text3)', fontSize:14, margin:0 }}>Esegui dei quiz per tracciare gli errori.</p>
@@ -48,7 +48,7 @@ export default function WeakPointsPage() {
           </>
         ) : (
           <>
-            <BookOpen size={52} color="#F87171"/>
+            <BookOpen size={52} color="#D97706"/>
             <div style={{ textAlign:'center' }}>
               <div style={{ fontSize:56, fontWeight:900, color:'var(--amber)', lineHeight:1, letterSpacing:-2 }}>{total}</div>
               <div style={{ fontSize:14, color:'var(--text2)', marginTop:6 }}>domande da ripassare</div>
@@ -57,7 +57,7 @@ export default function WeakPointsPage() {
 
             <div style={{ width:'100%', maxWidth:320 }}>
               <div style={{ height:5, background:'var(--border)', borderRadius:3, overflow:'hidden', marginBottom:20 }}>
-                <div style={{ height:'100%', background:'linear-gradient(90deg,#DC2626,#F87171)', width:'100%', borderRadius:3 }}/>
+                <div style={{ height:'100%', background:'linear-gradient(90deg,#DC2626,#D97706)', width:'100%', borderRadius:3 }}/>
               </div>
               <Link href="/weak-points/practice" style={{ display:'flex', alignItems:'center', justifyContent:'center', gap:10, padding:'15px 0', background:'var(--accent)', color:'#fff', borderRadius:16, fontWeight:800, fontSize:16, textDecoration:'none', boxShadow:'none' }}>
                 <Target size={20} color="#fff"/>
@@ -69,7 +69,7 @@ export default function WeakPointsPage() {
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background:'var(--card)', borderTop:'1px solid #111827', display:'grid', paddingBottom:'env(safe-area-inset-bottom,8px)', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0 }}>
+      <div style={{ background:'var(--card)', borderTop:'2px solid #C8D498', display:'grid', paddingBottom:'env(safe-area-inset-bottom,8px)', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0 }}>
         <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
           <Home size={19} color="#4B5563"/>
           <span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Home</span>

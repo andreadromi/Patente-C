@@ -83,10 +83,10 @@ export default function FocusStudyPage() {
     <div style={{ height: '100dvh', background: 'var(--bg)', color: 'var(--text)', fontFamily: 'system-ui,-apple-system,sans-serif', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
 
       {/* Header */}
-      <div style={{ padding: '12px 18px', background: 'var(--header-bg)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexShrink: 0, borderBottom: '1px solid var(--border)' }}>
+      <div style={{ padding: '12px 18px', background: 'var(--header-bg)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexShrink: 0, borderBottom: '2px solid #C8D498' }}>
         <div>
           <div style={{ fontSize: 10, fontWeight: 700, color: 'var(--accent2)', letterSpacing: 2 }}>FOCUS · {idx + 1}/{total}</div>
-          <div style={{ fontSize: 11, color: 'var(--text3)', marginTop: 1 }}>{capName}</div>
+          <div style={{ fontSize: 12, color: '#4D5057', marginTop: 1 }}>{capName}</div>
         </div>
         <div style={{ fontSize: 12, fontWeight: 700, color: 'var(--text4)' }}>
           {correctCount}/{answeredCount}
@@ -97,14 +97,14 @@ export default function FocusStudyPage() {
       <div style={{ padding: '6px 18px 0', background: 'var(--card)', flexShrink: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <div style={{ flex: 1, height: 7, background: 'var(--border)', borderRadius: 4, overflow: 'hidden' }}>
-            <div style={{ height: '100%', background: 'linear-gradient(90deg,#059669,#10B981)', width: `${(answeredCount / total) * 100}%`, transition: 'width 0.4s', borderRadius: 4 }} />
+            <div style={{ height: '100%', background: 'linear-gradient(90deg,#059669,#059669)', width: `${(answeredCount / total) * 100}%`, transition: 'width 0.4s', borderRadius: 4 }} />
           </div>
           <span style={{ fontSize: 11, fontWeight: 700, color: 'var(--text4)', minWidth: 40, textAlign: 'right' }}>{answeredCount}/{total}</span>
         </div>
       </div>
 
       {/* Numeri domande */}
-      <div style={{ background: 'var(--card)', padding: '8px 0', flexShrink: 0, borderBottom: '1px solid var(--border)' }}>
+      <div style={{ background: 'var(--card)', padding: '8px 0', flexShrink: 0, borderBottom: '1px solid #E2E6EA' }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <button onClick={() => goTo(Math.max(0, idx - 1))} style={{ padding: '0 10px', background: 'none', border: 'none', cursor: 'pointer' }}>
             <ChevronLeft size={16} color={idx > 0 ? 'var(--text3)' : 'var(--border)'} />
@@ -177,7 +177,7 @@ export default function FocusStudyPage() {
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background: 'var(--nav-bg)', borderTop: '1px solid var(--nav-border)', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', flexShrink: 0, paddingBottom: 'env(safe-area-inset-bottom,8px)' }}>
+      <div style={{ background: '#D8E4A8', borderTop: '2px solid #C8D498', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', flexShrink: 0, paddingBottom: 'env(safe-area-inset-bottom,8px)' }}>
         <Link href="/dashboard" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, padding: '10px 0', textDecoration: 'none' }}>
           <Home size={19} color="#4B5563" /><span style={{ fontSize: 9, color: 'var(--text3)', fontWeight: 600 }}>Home</span>
         </Link>
