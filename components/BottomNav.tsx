@@ -9,7 +9,7 @@ export function BottomNav({ active }: { active?: 'home' | 'focus' | 'deboli' }) 
     { key: 'deboli', href: '/weak-points', Icon: BookOpen, label: 'Punti deboli' },
   ]
   return (
-    <div style={{ background: '#D8E4A8', borderTop: '2px solid #C8D498', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', flexShrink: 0, paddingBottom: 'env(safe-area-inset-bottom,8px)' }}>
+    <div style={{ background: '#D8E4A8', borderTop: '1px solid #4D5057', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', flexShrink: 0, paddingBottom: 'env(safe-area-inset-bottom,8px)' }}>
       {items.map(({ key, href, Icon, label }) => {
         const isActive = key === active
         const El = isActive ? 'div' : Link

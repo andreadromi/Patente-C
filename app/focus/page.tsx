@@ -1,4 +1,5 @@
 'use client'
+import { BottomNav } from '@/components/BottomNav'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
@@ -62,17 +63,7 @@ export default function FocusPage() {
         ))}
       </div>
 
-      <div style={{ background: '#D8E4A8', borderTop: '2px solid #C8D498', display: 'grid', paddingBottom: 'env(safe-area-inset-bottom,8px)', gridTemplateColumns: '1fr 1fr 1fr', flexShrink: 0 }}>
-        <Link href="/dashboard" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, padding: '10px 0', textDecoration: 'none' }}>
-          <Home size={19} color="#4B5563" /><span style={{ fontSize: 9, color: 'var(--text3)', fontWeight: 600 }}>Home</span>
-        </Link>
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, padding: '10px 0' }}>
-          <Target size={19} color="#059669" /><span style={{ fontSize: 9, color: 'var(--accent)', fontWeight: 700 }}>Focus</span>
-        </div>
-        <Link href="/weak-points" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 3, padding: '10px 0', textDecoration: 'none' }}>
-          <BookOpen size={19} color="#4B5563" /><span style={{ fontSize: 9, color: 'var(--text3)', fontWeight: 600 }}>Punti deboli</span>
-        </Link>
-      </div>
+      <BottomNav active="focus"/>
     </div>
   )
 }

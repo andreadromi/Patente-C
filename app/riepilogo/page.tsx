@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { Home, BookOpen, BarChart3 , Target } from 'lucide-react'
+import { BottomNav } from '@/components/BottomNav'
 
 interface Simulation { id: string; number: number }
 interface UserSim { id: string; simulationId: string; status: string; passed: boolean | null; score: number | null; errors: number | null }
@@ -139,20 +140,7 @@ export default function RiepilogoPage() {
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background:'var(--card)', borderTop:'2px solid #C8D498', display:'grid', gridTemplateColumns:'1fr 1fr 1fr 1fr', flexShrink:0 }}>
-        <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <Home size={19} color="#4B5563"/><span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Home</span>
-        </Link>
-        <Link href="/focus" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <Target size={19} color="#4B5563"/><span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Focus</span>
-        </Link>
-        <div style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0' }}>
-          <BarChart3 size={19} color="#059669"/><span style={{ fontSize:9, color:'var(--accent)', fontWeight:700 }}>Riepilogo</span>
-        </div>
-        <Link href="/weak-points" style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <BookOpen size={19} color="#4B5563"/><span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Punti deboli</span>
-        </Link>
-      </div>
+      <BottomNav />
     </div>
   )
 }

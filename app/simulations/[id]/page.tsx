@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, useRef } from 'react'
 import { useRouter, useParams } from 'next/navigation'
 import Link from 'next/link'
 import { Home, BookOpen, Flag, BarChart3, ChevronLeft, ChevronRight, CheckCircle2, XCircle , Target } from 'lucide-react'
+import { BottomNav } from '@/components/BottomNav'
 
 interface Question { id: string; text: string; image: string | null; capitolo: string }
 const TOTAL = 40
@@ -263,17 +264,7 @@ export default function SimulationPage() {
       </div>
 
       {/* Bottom nav */}
-      <div style={{ background:'var(--card)', borderTop:'2px solid #C8D498', display:'grid', gridTemplateColumns:'1fr 1fr 1fr', flexShrink:0, paddingBottom:'env(safe-area-inset-bottom,8px)' }}>
-        <Link href="/dashboard" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <Home size={19} color="#4B5563"/><span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Home</span>
-        </Link>
-        <Link href="/focus" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <Target size={19} color="#4B5563"/><span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Focus</span>
-        </Link>
-        <Link href="/weak-points" style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:3, padding:'10px 0', textDecoration:'none' }}>
-          <BookOpen size={19} color="#4B5563"/><span style={{ fontSize:9, color:'var(--text3)', fontWeight:600 }}>Punti deboli</span>
-        </Link>
-      </div>
+      <BottomNav />
     </div>
   )
 }
