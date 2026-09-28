@@ -10,7 +10,8 @@ le coprono tutte senza ripeterne nessuna, lo studio argomento per argomento, i p
 l'Esame reale nella forma della Motorizzazione.
 
 È la stessa app del simulatore per il consulente automobilistico, adattata a questo esame, con
-un suo colore (viola) e una sua icona (il camion).
+un suo colore (un cobalto più profondo di quello del Consulente, il blu dei cartelli stradali) e una
+sua icona (il camion).
 
 **Stack:** Next.js · TypeScript · Prisma · PostgreSQL (Neon) · Vercel
 
@@ -85,9 +86,10 @@ immagine diversa (59), col nome dato dal contenuto dell'originale nel PDF.
 
 Nel listato le figure sono JPEG piccoli (quasi tutti 200×200 px) e molto compressi: sul telefono il
 browser le ingrandirebbe due o tre volte, con bordi sfocati e la grana della compressione.
-`scripts/figure_nitide.py` le prepara per lo schermo: toglie i margini bianchi, le ingrandisce e
-stringe i bordi canale per canale, senza colori nuovi né dettagli inventati (ogni valore resta fra
-quelli che il pixel ha intorno nell'originale ingrandito).
+`scripts/figure_nitide.py` le prepara per lo schermo: le ingrandisce e stringe i bordi canale per
+canale, senza colori nuovi né dettagli inventati (ogni valore resta fra quelli che il pixel ha
+intorno nell'originale ingrandito). I margini restano quelli del listato: nell'app ogni figura è
+grande come nel PDF, solo più nitida.
 
 ### Le simulazioni: tutte le domande, nessuna ripetuta
 

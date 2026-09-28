@@ -3,26 +3,27 @@
 @tailwind utilities;
 
 :root {
-  /* Palette: accento viola, acceso e pulito, da studio serio; si stacca
-     netto dal verde e dal rosso che dicono giusto e sbagliato, e dal cobalto
-     del Consulente, così le due app non si confondono. Neutri appena
-     violacei; gli argomenti hanno le loro tinte */
-  --bg: #F6F5FC;
+  /* Palette: accento cobalto profondo, il blu dei cartelli stradali; più
+     scuro e più calmo del cobalto del Consulente, così le due app si
+     somigliano senza confondersi. Si stacca netto dal verde e dal rosso che
+     dicono giusto e sbagliato. Neutri appena azzurrati; gli argomenti hanno
+     le loro tinte */
+  --bg: #F3F6FB;
   --card: #FFFFFF;
-  --surface: #ECE9FA;
-  --border: #DEDAF3;
-  --text: #211C40;
-  --text2: #4C4770;
-  --text3: #8C88AB;
-  --text4: #CFCBE3;
-  /* L'accento dell'app: viola. --accent-rgb serve per le trasparenze, rgba(var(--accent-rgb), 0.1) */
-  --accent: #5B3FD1;
-  --accent2: #7F68E6;
-  --accent-scuro: #3E2899;
-  --accent-rgb: 91, 63, 209;
+  --surface: #E6ECF7;
+  --border: #D6DFF0;
+  --text: #1A2340;
+  --text2: #475270;
+  --text3: #8590A8;
+  --text4: #C9D1E2;
+  /* L'accento dell'app: cobalto. --accent-rgb serve per le trasparenze, rgba(var(--accent-rgb), 0.1) */
+  --accent: #1F4FC4;
+  --accent2: #4A78E0;
+  --accent-scuro: #173A94;
+  --accent-rgb: 31, 79, 196;
   /* FALSO scelto in modalità Esame: ardesia scura, ben distinta dal VERO
-     viola, così il rosso resta solo "sbagliato" */
-  --falso: #524D72;
+     cobalto, così il rosso resta solo "sbagliato" */
+  --falso: #4E5872;
   --green: #12966F;
   --green-rgb: 18, 150, 111;
   --green-dim: #D5F2E8;
@@ -32,11 +33,11 @@
   --amber: #E0703A;
   --amber-rgb: 224, 112, 58;
   --amber-dim: #FCE8DC;
-  --nav-bg: #F1EFFB;
-  --nav-border: #DEDAF3;
-  --header-bg: #F1EFFB;
+  --nav-bg: #EDF2FA;
+  --nav-border: #D6DFF0;
+  --header-bg: #EDF2FA;
   /* Ombra morbida delle schede: le stacca dallo sfondo senza bordi pesanti */
-  --ombra: 0 1px 2px rgba(33, 28, 64, 0.05), 0 4px 14px rgba(33, 28, 64, 0.07);
+  --ombra: 0 1px 2px rgba(26, 35, 64, 0.05), 0 4px 14px rgba(26, 35, 64, 0.07);
 }
 
 * { box-sizing: border-box; }

@@ -9,6 +9,7 @@ import { DURATA_ESAME } from '@/lib/esame'
 import { Avviso, IconaAvviso } from '@/components/Avviso'
 import { Domanda } from '@/components/Domanda'
 import { VeroFalso } from '@/components/VeroFalso'
+import { Numeri } from '@/components/Numeri'
 
 interface QuestionItem {
   id: string; code: string; text: string; image: string | null
@@ -58,14 +59,7 @@ export default function SimulationPage() {
   const savingRef = useRef<Record<string, boolean>>({})
   const ultimaRef = useRef<Record<string, { val: boolean; blocca: boolean }>>({})
   const completingRef = useRef(false)
-  const numBarRef = useRef<HTMLDivElement>(null)
 
-  // Auto-scroll barra numeri al bottone corrente
-  useEffect(() => {
-    if (!numBarRef.current) return
-    const btn = numBarRef.current.children[currentIdx] as HTMLElement
-    if (btn) btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
-  }, [currentIdx])
 
   useEffect(() => {
     async function load() {
@@ -265,28 +259,14 @@ export default function SimulationPage() {
         <div style={{height:'100%',background:'var(--accent)',width:`${progressPct}%`,transition:'width 0.3s'}} />
       </div>
 
-      {/* Navigazione scorrevole: in Studio ogni numero dice anche com'è andata */}
-      <div style={{overflowX:'auto',padding:'8px 16px',background:'var(--card)',borderBottom:'1px solid var(--border)',flexShrink:0}}>
-        <div ref={numBarRef} style={{display:'flex',gap:6,minWidth:'max-content'}}>
-          {questions.map((q,idx) => {
-            const done = risposta(answers[q.id])
-            const cur = idx===currentIdx
-            const esito = studyMode && done ? (answers[q.id] === q.risposta ? 'var(--green)' : 'var(--red)') : 'var(--accent)'
-            const rgb = studyMode && done ? (answers[q.id] === q.risposta ? 'var(--green-rgb)' : 'var(--red-rgb)') : 'var(--accent-rgb)'
-            return (
-              <button key={q.id} onClick={()=>setCurrentIdx(idx)} aria-label={`Domanda ${idx+1}`} style={{
-                width:32, height:32, borderRadius:8, border:'1.5px solid', flexShrink:0,
-                borderColor: cur ? esito : done ? esito : 'var(--border)',
-                background: cur ? esito : done ? `rgba(${rgb},0.15)` : 'transparent',
-                color: cur ? '#fff' : done ? esito : 'var(--text3)',
-                fontSize:13.5, fontWeight:700, cursor:'pointer', fontFamily:'inherit',
-              }}>
-                {idx+1}
-              </button>
-            )
-          })}
-        </div>
-      </div>
+      {/* Numeri che scorrono: il corrente al centro; in Studio il colore dice anche com'è andata */}
+      <Numeri totale={questions.length} corrente={currentIdx} onScegli={setCurrentIdx}
+        esito={idx => {
+          const q = questions[idx]
+          if (!risposta(answers[q.id])) return 'vuota'
+          if (!studyMode) return 'data'
+          return answers[q.id] === q.risposta ? 'giusta' : 'sbagliata'
+        }} />
 
       {/* Corpo: il riquadro della domanda prende lo spazio libero, sempre lo
           stesso, e VERO/FALSO stanno sempre allo stesso posto, con o senza figura */}

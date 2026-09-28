@@ -6,6 +6,7 @@ import { nomeBreve } from '@/lib/argomenti'
 import { Avviso, IconaAvviso } from '@/components/Avviso'
 import { Domanda } from '@/components/Domanda'
 import { VeroFalso } from '@/components/VeroFalso'
+import { Numeri } from '@/components/Numeri'
 
 interface Question { id: string; code: string; text: string; risposta: boolean; image: string | null }
 type Answers = Record<string, boolean|null>
@@ -16,7 +17,6 @@ export default function FocusStudyPage() {
   const params = useParams()
   const router = useRouter()
   const code = params.code as string
-  const numBarRef = useRef<HTMLDivElement>(null)
 
   const [nomeArgomento, setNomeArgomento] = useState('')
   const [questions, setQuestions] = useState<Question[]>([])
@@ -41,11 +41,6 @@ export default function FocusStudyPage() {
   const caricatoRef = useRef(false)
   const saveTimer = useRef<ReturnType<typeof setTimeout>|null>(null)
 
-  useEffect(() => {
-    if (!numBarRef.current) return
-    const btn = numBarRef.current.children[currentIdx] as HTMLElement
-    if (btn) btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
-  }, [currentIdx])
 
   useEffect(() => {
     Promise.all([
@@ -207,29 +202,13 @@ export default function FocusStudyPage() {
         </div>
       </div>
 
-      {/* Numeri scorrevoli: ognuno dice com'è andata */}
-      <div style={{overflowX:'auto',padding:'8px 16px',background:'var(--card)',borderBottom:'1px solid var(--border)',flexShrink:0}}>
-        <div ref={numBarRef} style={{display:'flex',gap:6,minWidth:'max-content'}}>
-          {questions.map((q, idx) => {
-            const done = data(answers[q.id])
-            const cur = idx === currentIdx
-            const giusta = done && answers[q.id] === q.risposta
-            const colore = done ? (giusta ? 'var(--green)' : 'var(--red)') : 'var(--accent)'
-            const rgb = done ? (giusta ? 'var(--green-rgb)' : 'var(--red-rgb)') : 'var(--accent-rgb)'
-            return (
-              <button key={q.id} onClick={() => setCurrentIdx(idx)} aria-label={`Domanda ${idx+1}`} style={{
-                width:32, height:32, borderRadius:8, border:'1.5px solid', flexShrink:0,
-                borderColor: cur || done ? colore : 'var(--border)',
-                background: cur ? colore : done ? `rgba(${rgb},0.15)` : 'transparent',
-                color: cur ? '#fff' : done ? colore : 'var(--text3)',
-                fontSize:13.5, fontWeight:700, cursor:'pointer', fontFamily:'inherit',
-              }}>
-                {idx+1}
-              </button>
-            )
-          })}
-        </div>
-      </div>
+      {/* Numeri che scorrono: il corrente al centro, il colore dice com'è andata */}
+      <Numeri totale={questions.length} corrente={currentIdx} onScegli={setCurrentIdx}
+        esito={idx => {
+          const q = questions[idx]
+          if (!data(answers[q.id])) return 'vuota'
+          return answers[q.id] === q.risposta ? 'giusta' : 'sbagliata'
+        }} />
 
       {/* Corpo: il riquadro della domanda prende lo spazio libero, sempre lo
           stesso, e VERO/FALSO stanno sempre allo stesso posto, con o senza figura */}

@@ -9,13 +9,16 @@ per punto il browser le ingrandisce due o tre volte: bordi sfocati e la grana
 della compressione attorno a ogni tratto.
 
 Qui ogni figura:
-  1. perde i margini bianchi, così riempie la cornice (il disegno non si tocca);
-  2. si ingrandisce, bicubico, fino a circa 900 px sul lato lungo;
-  3. si rende nitida canale per canale: ogni pixel va verso il valore più scuro
+  1. si ingrandisce, bicubico, fino a circa 900 px sul lato lungo;
+  2. si rende nitida canale per canale: ogni pixel va verso il valore più scuro
      o più chiaro che ha intorno, lungo una curva ripida. Sui bordi il
      passaggio si stringe; nelle zone piatte si leva solo la grana del JPEG;
-  4. il quasi bianco (tutti e tre i canali chiarissimi) torna bianco: sono gli
+  3. il quasi bianco (tutti e tre i canali chiarissimi) torna bianco: sono gli
      aloni della compressione attorno ai tratti, sulla carta non c'erano.
+
+I margini bianchi restano quelli dell'originale: nella cornice dell'app ogni
+figura è grande come la disegna il listato (un simbolo del cruscotto più
+piccolo di un cartello), solo più nitida.
 
 Nessun colore nuovo e nessun dettaglio inventato: ogni valore resta fra quelli
 che il pixel ha intorno nell'ingrandimento dell'originale. Per questo non si
@@ -36,24 +39,9 @@ from PIL import Image
 from scipy import ndimage
 
 LATO = 900      # lato lungo dell'uscita, circa, in pixel
-SFONDO = 215    # un pixel con tutti i canali sopra questo valore è sfondo bianco
-MARGINE = 3     # bianco lasciato attorno al disegno, in pixel dell'originale
 RIPIDA = 9.0    # pendenza della curva che stringe i bordi
 SALTO = (16.0, 48.0)  # salto di valore nell'intorno: sotto è zona piatta, sopra è bordo
 QUASI_BIANCO = (214.0, 238.0)  # canale più scuro: da qui comincia a schiarire, da qui è bianco
-
-
-def rifila(img):
-    """Toglie i margini bianchi, lasciandone MARGINE pixel attorno al disegno."""
-    a = np.asarray(img)
-    disegno = a.min(axis=2) < SFONDO
-    righe = np.flatnonzero(disegno.any(axis=1))
-    colonne = np.flatnonzero(disegno.any(axis=0))
-    if len(righe) == 0:
-        return img
-    h, w = disegno.shape
-    return img.crop((max(colonne[0] - MARGINE, 0), max(righe[0] - MARGINE, 0),
-                     min(colonne[-1] + 1 + MARGINE, w), min(righe[-1] + 1 + MARGINE, h)))
 
 
 def curva(t, k):
@@ -63,7 +51,7 @@ def curva(t, k):
 
 
 def nitida_immagine(img):
-    img = rifila(img.convert('RGB'))
+    img = img.convert('RGB')
     w, h = img.size
     scala = int(min(6, max(2, round(LATO / max(w, h)))))
     finestra = 2 * round(1.1 * scala) + 1   # l'intorno copre il passaggio di un bordo ingrandito
