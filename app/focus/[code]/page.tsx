@@ -178,7 +178,7 @@ export default function FocusStudyPage() {
           rettangoli che scorrono (il colore dice com'è andata) e, sul bordo
           basso, la linea dell'avanzamento. Uguale a quella delle simulazioni: a
           destra le pillole, Ricomincia (solo l'icona: chiede conferma) ed Esci */}
-      <div style={{background:'var(--card)',boxShadow:'var(--ombra)',position:'relative',zIndex:1,flexShrink:0}}>
+      <div style={{background:'var(--card)',position:'relative',zIndex:1,flexShrink:0}}>
         <div style={{padding:'12px 16px 2px',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
           <div style={{minWidth:0,flex:1,marginRight:10}}>
             <div style={{fontSize:17,fontWeight:800,letterSpacing:-0.2,color:'var(--text)',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis'}}>

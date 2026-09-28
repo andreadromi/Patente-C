@@ -21,7 +21,6 @@
   --accent2: #4A78E0;
   --accent-scuro: #173A94;
   --accent-rgb: 31, 79, 196;
-  --accent2-rgb: 74, 120, 224;
   /* FALSO scelto in modalità Esame: ardesia scura, ben distinta dal VERO
      cobalto, così il rosso resta solo "sbagliato" */
   --falso: #4E5872;
@@ -63,24 +62,17 @@ body > div { animation: entra .28s cubic-bezier(.2, .8, .2, 1); }
 .scheda { box-shadow: var(--ombra); animation: sale .35s cubic-bezier(.2, .8, .2, 1) backwards; }
 
 /* Linea di avanzamento (components/Avanzamento), sul bordo basso
-   dell'intestazione da un lato all'altro. Il binario è un filo di cobalto
-   chiaro, il pieno è cobalto sfumato con un leggero bagliore: entra da zero,
-   cresce con un piccolo rimbalzo a ogni risposta, e ogni tanto un riflesso
-   gli passa sopra (un secondo strato di sfondo che scorre) */
+   dell'intestazione da un lato all'altro. Pulita come il resto dell'app:
+   il binario è un filo di cobalto chiaro, il pieno è cobalto, senza aloni né
+   riflessi. Entra da zero e a ogni risposta cresce da sola, con un piccolo
+   rimbalzo */
 .avanzamento-binario { position: relative; height: 5px; margin-top: 4px; background: rgba(var(--accent-rgb), 0.12); }
 .avanzamento {
-  position: relative; height: 100%; border-radius: 0 3px 3px 0;
-  background:
-    linear-gradient(90deg, transparent 40%, rgba(255, 255, 255, 0.55) 50%, transparent 60%) no-repeat,
-    linear-gradient(90deg, var(--accent-scuro), var(--accent) 55%, var(--accent2));
-  background-size: 300% 100%, 100% 100%;
-  background-position: 100% 0, 0 0;
-  box-shadow: 0 0 9px rgba(var(--accent2-rgb), 0.75);
+  height: 100%; border-radius: 0 3px 3px 0; background: var(--accent);
   transition: width .7s cubic-bezier(.34, 1.4, .64, 1);
-  animation: avanzamento-entra .9s cubic-bezier(.22, 1, .36, 1) backwards, avanzamento-riflesso 3.6s ease-in-out 1.2s infinite;
+  animation: avanzamento-entra .9s cubic-bezier(.22, 1, .36, 1) backwards;
 }
 @keyframes avanzamento-entra { from { width: 0; } }
-@keyframes avanzamento-riflesso { 0% { background-position: 100% 0, 0 0; } 60%, 100% { background-position: 0 0, 0 0; } }
 @media (prefers-reduced-motion: reduce) {
   .avanzamento { transition: none; animation: none; }
 }
