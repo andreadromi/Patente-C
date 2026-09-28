@@ -3,42 +3,40 @@
 @tailwind utilities;
 
 :root {
-  /* Palette: accento arancio bruciato, il colore dei mezzi pesanti, dei
-     pannelli ADR e della segnaletica di cantiere; abbastanza scuro da reggere
-     il testo bianco. Si stacca dal verde e dal rosso che dicono giusto e
-     sbagliato, e dal cobalto del Consulente. Neutri appena caldi; gli
-     argomenti hanno le loro tinte */
-  --bg: #F8F6F4;
+  /* Palette: accento viola, acceso e pulito, da studio serio; si stacca
+     netto dal verde e dal rosso che dicono giusto e sbagliato, e dal cobalto
+     del Consulente, così le due app non si confondono. Neutri appena
+     violacei; gli argomenti hanno le loro tinte */
+  --bg: #F6F5FC;
   --card: #FFFFFF;
-  --surface: #F0EBE7;
-  --border: #E6DED8;
-  --text: #26201C;
-  --text2: #57504B;
-  --text3: #968C85;
-  --text4: #D8D0CA;
-  /* L'accento dell'app: arancio. --accent-rgb serve per le trasparenze, rgba(var(--accent-rgb), 0.1) */
-  --accent: #C94A0B;
-  --accent2: #E8732E;
-  --accent-scuro: #9A3508;
-  --accent-rgb: 201, 74, 11;
+  --surface: #ECE9FA;
+  --border: #DEDAF3;
+  --text: #211C40;
+  --text2: #4C4770;
+  --text3: #8C88AB;
+  --text4: #CFCBE3;
+  /* L'accento dell'app: viola. --accent-rgb serve per le trasparenze, rgba(var(--accent-rgb), 0.1) */
+  --accent: #5B3FD1;
+  --accent2: #7F68E6;
+  --accent-scuro: #3E2899;
+  --accent-rgb: 91, 63, 209;
   /* FALSO scelto in modalità Esame: ardesia scura, ben distinta dal VERO
-     arancio, così il rosso resta solo "sbagliato" */
-  --falso: #4E5872;
+     viola, così il rosso resta solo "sbagliato" */
+  --falso: #524D72;
   --green: #12966F;
   --green-rgb: 18, 150, 111;
   --green-dim: #D5F2E8;
   --red: #DC3B3B;
   --red-rgb: 220, 59, 59;
   --red-dim: #FBE0E0;
-  /* Avvisi e "quasi": ocra, lontano dall'arancio dell'accento */
-  --amber: #B07A06;
-  --amber-rgb: 176, 122, 6;
-  --amber-dim: #F6ECD2;
-  --nav-bg: #F4F0EC;
-  --nav-border: #E6DED8;
-  --header-bg: #F4F0EC;
+  --amber: #E0703A;
+  --amber-rgb: 224, 112, 58;
+  --amber-dim: #FCE8DC;
+  --nav-bg: #F1EFFB;
+  --nav-border: #DEDAF3;
+  --header-bg: #F1EFFB;
   /* Ombra morbida delle schede: le stacca dallo sfondo senza bordi pesanti */
-  --ombra: 0 1px 2px rgba(38, 32, 28, 0.05), 0 4px 14px rgba(38, 32, 28, 0.07);
+  --ombra: 0 1px 2px rgba(33, 28, 64, 0.05), 0 4px 14px rgba(33, 28, 64, 0.07);
 }
 
 * { box-sizing: border-box; }

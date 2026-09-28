@@ -10,7 +10,7 @@ le coprono tutte senza ripeterne nessuna, lo studio argomento per argomento, i p
 l'Esame reale nella forma della Motorizzazione.
 
 È la stessa app del simulatore per il consulente automobilistico, adattata a questo esame, con
-un suo colore (l'arancio dei mezzi pesanti e della segnaletica) e una sua icona (il camion).
+un suo colore (viola) e una sua icona (il camion).
 
 **Stack:** Next.js · TypeScript · Prisma · PostgreSQL (Neon) · Vercel
 
@@ -81,7 +81,13 @@ per tutte le tipologie che hanno il loro capitolo: 271 quesiti e 3.161 domande s
 Nell'app ogni domanda ha **lo stesso numero del listato** (28119): una domanda vista nell'app si
 ritrova sul PDF così com'è. Gli argomenti sono i capitoli, numerati 01-17 nell'ordine del
 programma d'esame (lo stesso dei numeri dei quesiti). Le figure sono in `public/figure/`, una per
-immagine diversa (59), col nome dato dal loro contenuto.
+immagine diversa (59), col nome dato dal contenuto dell'originale nel PDF.
+
+Nel listato le figure sono JPEG piccoli (quasi tutti 200×200 px) e molto compressi: sul telefono il
+browser le ingrandirebbe due o tre volte, con bordi sfocati e la grana della compressione.
+`scripts/figure_nitide.py` le prepara per lo schermo: toglie i margini bianchi, le ingrandisce e
+stringe i bordi canale per canale, senza colori nuovi né dettagli inventati (ogni valore resta fra
+quelli che il pixel ha intorno nell'originale ingrandito).
 
 ### Le simulazioni: tutte le domande, nessuna ripetuta
 
@@ -103,10 +109,10 @@ risposte si cambiano fino alla consegna, e allo scadere del tempo l'esame si con
 ### Rifare l'archivio dalle fonti
 
 ```bash
-pip install pymupdf pypdf
+pip install pymupdf pypdf pillow numpy scipy
 python3 scripts/quiz_estrai.py      # fonti/*.pdf     → build/quiz.json e build/figure/
 python3 scripts/quiz_controlla.py   # seconda estrazione, indipendente: deve coincidere
-python3 scripts/archivio_scrivi.py  # build/ → data/ (argomenti, domande, simulazioni) e public/figure/
+python3 scripts/archivio_scrivi.py  # build/ → data/ (argomenti, domande, simulazioni) e public/figure/ nitide
 npm run verifica                    # ricontrolla data/ con il codice dell'app
 ```
 

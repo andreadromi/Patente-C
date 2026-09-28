@@ -8,7 +8,7 @@ import { ReactNode } from 'react'
  * rosso se sbagliata, e quella giusta si vede comunque, bordata di verde.
  * Sotto, la riga della correzione ha sempre il suo posto, anche vuota:
  * comparendo non sposta niente. Senza correzione (esame) la scelta è solo
- * evidenziata: arancio il VERO, ardesia il FALSO, così il rosso resta solo
+ * evidenziata: viola il VERO, ardesia il FALSO, così il rosso resta solo
  * per "sbagliato".
  */
 export function VeroFalso({ risposta, giusta, correzione, bloccato, onRispondi, sotto }: {

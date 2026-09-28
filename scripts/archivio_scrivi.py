@@ -26,7 +26,8 @@ Uscita:
     data/argomenti.json          gli argomenti, con quante domande danno alla scheda
     data/import_<argomento>.json le domande, una per riga
     data/simulations.json        le simulazioni fisse, come liste di numeri
-    public/figure/               le figure che le domande usano
+    public/figure/               le figure che le domande usano, rese nitide per il
+                                 telefono da scripts/figure_nitide.py (stesso nome)
 
 Le simulazioni coprono l'archivio **una volta sola**: ogni domanda sta in una
 e una sola simulazione, nessuna resta fuori e nessuna si ripete. Sono tante
@@ -41,10 +42,11 @@ Chiude con un elenco di problemi, e codice d'uscita 1, se qualcosa non torna.
 """
 import json
 import random
-import shutil
 import sys
 from collections import Counter
 from pathlib import Path
+
+from figure_nitide import nitida
 
 ROOT = Path(__file__).resolve().parent.parent
 BUILD = ROOT / 'build' / 'quiz.json'
@@ -255,7 +257,7 @@ def main():
         if vecchia.name not in usate:
             vecchia.unlink()
     for nome in sorted(usate):
-        shutil.copyfile(BUILD_FIGURE / nome, FIGURE / nome)
+        nitida(BUILD_FIGURE / nome, FIGURE / nome)
 
     quesiti = {d['quesito'] for d in domande}
     vere = sum(1 for d in domande if d['vera'])
