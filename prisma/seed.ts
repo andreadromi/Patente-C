@@ -7,8 +7,8 @@ const prisma = new PrismaClient()
 
 /**
  * Il DB è allineato a `data/` se ha gli stessi argomenti, nello stesso ordine
- * e con le stesse quote, e esattamente le stesse domande: stesso codice,
- * testo, risposta, argomento e figura.
+ * e con le stesse quote, e esattamente le stesse domande: stesso numero,
+ * quesito, testo, risposta, argomento e figura.
  *
  * Il confronto è esatto e si fa in memoria: sono qualche migliaio di righe, e farlo in SQL
  * richiederebbe un ordinamento, che fra la collation di Postgres e quella di
@@ -22,11 +22,11 @@ async function archivioAllineato(attese: ImportedQuestion[]) {
   if (aDbArgomenti.map((a, i) => chiaveArg(a, i)).join('\n') !== argomenti.map((a, i) => chiaveArg(a, i)).join('\n')) return false
 
   const righe = await prisma.question.findMany({
-    select: { code: true, text: true, risposta: true, questionGroup: true, image: true, argomento: { select: { code: true } } },
+    select: { code: true, quesito: true, text: true, risposta: true, image: true, argomento: { select: { code: true } } },
   })
   if (righe.length !== attese.length) return false
-  const chiave = (q: { code: string; text: string; risposta: boolean; questionGroup?: string | null; image?: string | null }, argomento: string) =>
-    [q.code, q.text, q.risposta, q.questionGroup || '', q.image || '', argomento].join('\u0000')
+  const chiave = (q: { code: string; quesito: number; text: string; risposta: boolean; image?: string | null }, argomento: string) =>
+    [q.code, q.quesito, q.text, q.risposta, q.image || '', argomento].join('\u0000')
   const aDb = new Set(righe.map(r => chiave(r, r.argomento.code)))
   return attese.every(q => aDb.has(chiave(q, q.argomentoCode)))
 }

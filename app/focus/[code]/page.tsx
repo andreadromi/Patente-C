@@ -8,7 +8,7 @@ import { Avviso, IconaAvviso } from '@/components/Avviso'
 import { Domanda } from '@/components/Domanda'
 import { VeroFalso } from '@/components/VeroFalso'
 
-interface Question { id: string; code: string; text: string; risposta: boolean; questionGroup: string | null; image: string | null }
+interface Question { id: string; code: string; text: string; risposta: boolean; image: string | null }
 type Answers = Record<string, boolean|null>
 
 const data = (v: boolean | null | undefined) => v === true || v === false
@@ -253,8 +253,8 @@ export default function FocusStudyPage() {
           )
         })()}
 
-        <Domanda codice={current.code} gruppo={current.questionGroup} testo={current.text} figura={current.image} />
-        <VeroFalso
+        <Domanda codice={current.code} testo={current.text} figura={current.image} />
+        <VeroFalso key={current.id}
           risposta={answers[current.id]}
           giusta={current.risposta}
           correzione

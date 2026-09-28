@@ -1,0 +1,89 @@
+{
+ "argomenti": [
+  {
+   "code": "01",
+   "name": "Periodi di guida e di riposo",
+   "nEsame": 2
+  },
+  {
+   "code": "02",
+   "name": "Impiego del cronotachigrafo",
+   "nEsame": 3
+  },
+  {
+   "code": "03",
+   "name": "Disposizioni sul trasporto di cose o di persone",
+   "nEsame": 4
+  },
+  {
+   "code": "04",
+   "name": "Documenti di circolazione e di trasporto",
+   "nEsame": 1
+  },
+  {
+   "code": "05",
+   "name": "Comportamento in caso di incidente",
+   "nEsame": 2
+  },
+  {
+   "code": "06",
+   "name": "Rimozione e sostituzione delle ruote",
+   "nEsame": 1
+  },
+  {
+   "code": "07",
+   "name": "Dimensioni e massa dei veicoli, limitatori di velocità",
+   "nEsame": 3
+  },
+  {
+   "code": "08",
+   "name": "Limitazione del campo visivo",
+   "nEsame": 1
+  },
+  {
+   "code": "09",
+   "name": "Sicurezza nel caricamento dei veicoli",
+   "nEsame": 1
+  },
+  {
+   "code": "10",
+   "name": "Aggancio di rimorchi e semirimorchi",
+   "nEsame": 2
+  },
+  {
+   "code": "11",
+   "name": "Motori, alimentazione, impianto elettrico e trasmissione",
+   "nEsame": 5
+  },
+  {
+   "code": "12",
+   "name": "Lubrificazione e protezione dal gelo",
+   "nEsame": 1
+  },
+  {
+   "code": "13",
+   "name": "Pneumatici: costruzione, impiego e manutenzione",
+   "nEsame": 4
+  },
+  {
+   "code": "14",
+   "name": "Freno e acceleratore, compreso l'ABS",
+   "nEsame": 3
+  },
+  {
+   "code": "15",
+   "name": "Guasti, sterzo, sospensioni e ammortizzatori",
+   "nEsame": 3
+  },
+  {
+   "code": "16",
+   "name": "Manutenzione preventiva e riparazioni ordinarie",
+   "nEsame": 3
+  },
+  {
+   "code": "17",
+   "name": "Ricevimento, trasporto e consegna delle merci",
+   "nEsame": 1
+  }
+ ]
+}

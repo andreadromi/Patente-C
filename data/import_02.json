@@ -1,0 +1,1618 @@
+[
+ {
+  "argomentoCode": "02",
+  "code": "27606",
+  "quesito": 6012,
+  "text": "Sul cronotachigrafo, i tempi di guida sono convenzionalmente rappresentati dal simbolo in figura",
+  "risposta": true,
+  "image": "7a4c051b4e4f.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27607",
+  "quesito": 6012,
+  "text": "Sul cronotachigrafo, i tempi di riposo sono convenzionalmente rappresentati dal simbolo in figura",
+  "risposta": true,
+  "image": "7bd888bf6a6d.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27608",
+  "quesito": 6012,
+  "text": "Sul cronotachigrafo, i tempi di disponibilità sono convenzionalmente rappresentati dal simbolo in figura",
+  "risposta": true,
+  "image": "150fa073c858.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27609",
+  "quesito": 6012,
+  "text": "Sul cronotachigrafo, i tempi di altri lavori sono convenzionalmente rappresentati dal simbolo in figura",
+  "risposta": true,
+  "image": "ede650dea66b.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27610",
+  "quesito": 6012,
+  "text": "Sul cronotachigrafo, i tempi delle varie attività del conducente sono rappresentati ciascuno da un proprio specifico simbolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27611",
+  "quesito": 6012,
+  "text": "Sul cronotachigrafo, i tempi di guida sono convenzionalmente rappresentati dal simbolo in figura",
+  "risposta": false,
+  "image": "7bd888bf6a6d.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27612",
+  "quesito": 6012,
+  "text": "Sul cronotachigrafo, i tempi di disponibilità sono convenzionalmente rappresentati dal simbolo in figura",
+  "risposta": false,
+  "image": "ede650dea66b.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27613",
+  "quesito": 6012,
+  "text": "Sul cronotachigrafo, i tempi di disponibilità sono convenzionalmente rappresentati dal simbolo in figura",
+  "risposta": false,
+  "image": "5dba1def275c.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27614",
+  "quesito": 6012,
+  "text": "Sul cronotachigrafo, i tempi di altri lavori sono convenzionalmente rappresentati dal simbolo in figura",
+  "risposta": false,
+  "image": "a917502d41cb.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27615",
+  "quesito": 6012,
+  "text": "Sul cronotachigrafo, i tempi di guida sono rappresentati dal simbolo in figura",
+  "risposta": false,
+  "image": "150fa073c858.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27616",
+  "quesito": 6013,
+  "text": "Il cronotachigrafo registra, tra l'altro, i tempi di guida del conducente e la velocità tenuta dal veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27617",
+  "quesito": 6013,
+  "text": "Il cronotachigrafo è un apparecchio di controllo dei tempi di guida",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27618",
+  "quesito": 6013,
+  "text": "Il cronotachigrafo può essere analogico o digitale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27619",
+  "quesito": 6013,
+  "text": "Il cronotachigrafo registra, in riferimento al conducente, i suoi tempi di guida, gli altri tempi di lavoro, i tempi di disponibilità, le interruzioni di guida e i tempi di riposo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27620",
+  "quesito": 6013,
+  "text": "Il cronotachigrafo registra, in riferimento al veicolo, i chilometri percorsi e la velocità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27621",
+  "quesito": 6013,
+  "text": "Il cronotachigrafo registra le conversazioni del conducente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27622",
+  "quesito": 6013,
+  "text": "Il cronotachigrafo registra le frenate del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27623",
+  "quesito": 6013,
+  "text": "Il cronotachigrafo può essere di tipo idraulico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27624",
+  "quesito": 6013,
+  "text": "Il cronotachigrafo entra in funzione quando il conducente preme l'apposito tasto \"START\" posto sul cruscotto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27625",
+  "quesito": 6013,
+  "text": "Il cronotachigrafo registra l'itinerario percorso dal veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27626",
+  "quesito": 6014,
+  "text": "Il cronotachigrafo è obbligatorio per veicoli adibiti al trasporto di merci di massa complessiva a pieno carico superiore a 3,5 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27627",
+  "quesito": 6014,
+  "text": "Il cronotachigrafo è obbligatorio per veicoli per trasporto passeggeri con più di 9 posti compreso quello del conducente (tranne quelli che effettuano servizi regolari di linea su percorsi inferiori a 50 km)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27629",
+  "quesito": 6014,
+  "text": "I veicoli con velocità massima autorizzata inferiore o uguale a 40 km/h non devono essere dotati di cronotachigrafo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27630",
+  "quesito": 6014,
+  "text": "Gli autobus in servizio pubblico di linea, ma utilizzati anche in corsa \"fuori linea\", devono essere dotati di cronotachigrafo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27631",
+  "quesito": 6014,
+  "text": "Il cronotachigrafo è obbligatorio per i taxi che operano fuori dei centri urbani",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27632",
+  "quesito": 6014,
+  "text": "Il cronotachigrafo è obbligatorio per veicoli adibiti al trasporto di merci di massa complessiva a pieno carico superiore a 2 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27633",
+  "quesito": 6014,
+  "text": "Il cronotachigrafo è obbligatorio per tutti gli autobus",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27634",
+  "quesito": 6014,
+  "text": "Il cronotachigrafo è obbligatorio per tutti i veicoli adibiti al trasporto di merci",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27635",
+  "quesito": 6014,
+  "text": "Gli autobus in servizio pubblico di linea il cui percorso, da capolinea a capolinea, non supera i 50 km devono essere dotati di cronotachigrafo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27636",
+  "quesito": 6014,
+  "text": "I veicoli di proprietà delle forze armate e dei vigili del fuoco devono essere dotati di cronotachigrafo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27637",
+  "quesito": 6014,
+  "text": "I veicoli di massa complessiva superiore a 3,5 tonnellate adibiti ad uso medico devono essere dotati di cronotachigrafo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27638",
+  "quesito": 6014,
+  "text": "I carri attrezzi specializzati che operano entro un raggio di 100 km dalla propria base operativa devono essere dotati di cronotachigrafo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27639",
+  "quesito": 6015,
+  "text": "I fogli di registrazione dei cronotachigrafi analogici devono garantire delle registrazioni leggibili per almeno un anno",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27640",
+  "quesito": 6015,
+  "text": "I fogli di registrazione dei cronotachigrafi analogici devono avere una capacità minima di registrazione di 24 ore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27641",
+  "quesito": 6015,
+  "text": "I fogli di registrazione dei cronotachigrafi analogici hanno una zona riservata alle indicazioni relative alla velocità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27642",
+  "quesito": 6015,
+  "text": "I fogli di registrazione dei cronotachigrafi analogici hanno una zona riservata alle indicazioni relative alle distanze percorse",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27643",
+  "quesito": 6015,
+  "text": "I fogli di registrazione dei cronotachigrafi analogici devono essere di tipo omologato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27644",
+  "quesito": 6015,
+  "text": "I fogli di registrazione dei cronotachigrafi analogici non hanno zone riservate alla compilazione manuale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27645",
+  "quesito": 6015,
+  "text": "I fogli di registrazione dei cronotachigrafi analogici devono avere una capacità minima di registrazione di 48 ore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27646",
+  "quesito": 6015,
+  "text": "I fogli di registrazione dei cronotachigrafi analogici devono riportare il marchio dell'officina che ha installato il cronotachigrafo analogico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27647",
+  "quesito": 6015,
+  "text": "I fogli di registrazione dei cronotachigrafi analogici devono avere una zona riservata ad eventuali annotazioni di agenti di Polizia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27648",
+  "quesito": 6015,
+  "text": "I fogli di registrazione dei cronotachigrafi analogici sono di tipo \"standard\" e possono essere utilizzati indifferentemente su qualsiasi cronotachigrafo analogico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27649",
+  "quesito": 6016,
+  "text": "Il conducente di un veicolo dotato di cronotachigrafo analogico, alla partenza, deve scrivere nome e cognome sul foglio di registrazione che utilizzerà",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27650",
+  "quesito": 6016,
+  "text": "Il conducente di un veicolo dotato di cronotachigrafo analogico, prima di iniziare il viaggio, deve scrivere il luogo di partenza sul foglio di registrazione che utilizzerà",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27651",
+  "quesito": 6016,
+  "text": "Il conducente di un veicolo dotato di cronotachigrafo analogico, prima di iniziare il viaggio, deve scrivere la data della partenza sul foglio di registrazione che utilizzerà",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27652",
+  "quesito": 6016,
+  "text": "Il conducente di un veicolo dotato di cronotachigrafo analogico, prima di iniziare il viaggio, deve scrivere il numero di targa del veicolo sul foglio di registrazione che utilizzerà",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27653",
+  "quesito": 6016,
+  "text": "Il conducente di un veicolo dotato di cronotachigrafo analogico, prima di iniziare il viaggio, deve scrivere la lettura del contachilometri al momento della partenza sul foglio di registrazione che utilizzerà",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27654",
+  "quesito": 6016,
+  "text": "Il conducente di un veicolo dotato di cronotachigrafo analogico, prima di iniziare il viaggio, deve scrivere il nome dell'azienda di trasporto proprietaria del veicolo sul foglio di registrazione che utilizzerà",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27655",
+  "quesito": 6016,
+  "text": "Il conducente di un veicolo dotato di cronotachigrafo analogico, prima di iniziare il viaggio, deve scrivere il numero di telaio del veicolo sul foglio di registrazione che utilizzerà",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27656",
+  "quesito": 6016,
+  "text": "Il conducente di un veicolo dotato di cronotachigrafo analogico, prima di iniziare il viaggio, deve scrivere numero e categoria della propria patente di guida sul foglio di registrazione che utilizzerà",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27657",
+  "quesito": 6016,
+  "text": "Il conducente di un veicolo dotato di cronotachigrafo analogico, prima di iniziare il viaggio, deve scrivere la data dell'ultimo trasporto effettuato all'estero sul foglio di registrazione che utilizzerà",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27658",
+  "quesito": 6016,
+  "text": "Il conducente di un veicolo dotato di cronotachigrafo analogico, prima di iniziare il viaggio, deve scrivere la propria data di nascita sul foglio di registrazione che utilizzerà",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27659",
+  "quesito": 6017,
+  "text": "Il conducente che viaggia su un veicolo dotato di cronotachigrafo analogico deve indicare le proprie attività attraverso l'apposito commutatore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27660",
+  "quesito": 6017,
+  "text": "Il conducente che viaggia su un veicolo dotato di cronotachigrafo analogico, in caso di cambio del veicolo, deve riportare sul foglio di registrazione l'ora di cambio del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27661",
+  "quesito": 6017,
+  "text": "Il conducente che viaggia su un veicolo dotato di cronotachigrafo analogico, in caso di cambio del veicolo, deve riportare sul foglio di registrazione la targa del nuovo veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27662",
+  "quesito": 6017,
+  "text": "Il conducente che viaggia su un veicolo dotato di cronotachigrafo analogico deve compilare, prima della partenza, il foglio di registrazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27663",
+  "quesito": 6017,
+  "text": "Il conducente che viaggia su un veicolo dotato di cronotachigrafo analogico deve, al termine del viaggio, riportare sul foglio di registrazione il numero di chilometri percorsi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27664",
+  "quesito": 6017,
+  "text": "Il conducente di un veicolo dotato di cronotachigrafo analogico deve far controfirmare il foglio di registrazione al titolare dell'azienda proprietaria del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27665",
+  "quesito": 6017,
+  "text": "Il conducente di un veicolo dotato di cronotachigrafo analogico, al termine del viaggio, deve lasciare il foglio di registrazione inserito nel dispositivo di controllo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27666",
+  "quesito": 6017,
+  "text": "Il conducente che viaggia su un veicolo dotato di cronotachigrafo analogico, in caso di cambio del veicolo, deve riportare sul foglio di registrazione l'ora di inizio del turno di lavoro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27667",
+  "quesito": 6017,
+  "text": "Il conducente che viaggia su un veicolo dotato di cronotachigrafo analogico, in caso di riposo, deve spostare il commutatore sul simbolo di figura",
+  "risposta": false,
+  "image": "150fa073c858.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27668",
+  "quesito": 6017,
+  "text": "Il conducente che viaggia su un veicolo dotato di cronotachigrafo analogico, in caso di \"altri lavori\", deve spostare il commutatore sul simbolo di figura",
+  "risposta": false,
+  "image": "a917502d41cb.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27669",
+  "quesito": 6018,
+  "text": "I fogli di registrazione di un cronotachigrafo analogico, devono avere una omologazione CE specifica per il tipo di apparecchio di controllo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27670",
+  "quesito": 6018,
+  "text": "Il conducente che viaggia su un veicolo dotato di cronotachigrafo analogico, prima dell’inizio del viaggio, deve compilare il foglio di registrazione indicando: nome e cognome del conducente, luogo e la data di partenza, targa del veicolo e lettura del contachilometri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27671",
+  "quesito": 6018,
+  "text": "Se durante la stessa giornata lavorativa il conducente utilizza due veicoli dotati di cronotachigrafo analogico, deve utilizzare lo stesso foglio di registrazione compilandolo anche nella parte posteriore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27672",
+  "quesito": 6018,
+  "text": "Se durante la stessa giornata lavorativa il conducente utilizza due veicoli dotati di cronotachigrafo analogico, nella parte posteriore del foglio di registrazione dovrà indicare, tra l'altro, l’ora del cambio, la targa e la lettura del contachilometri del secondo veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27673",
+  "quesito": 6018,
+  "text": "Su veicoli dotati di cronotachigrafo analogico, non è necessario utilizzare fogli di registrazione di tipo omologato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27674",
+  "quesito": 6018,
+  "text": "Su veicoli dotati di cronotachigrafo analogico, prima dell’inizio del viaggio, il conducente deve compilare il foglio di registrazione indicando il suo nome e cognome e gli estremi della patente di guida e della CQC",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27675",
+  "quesito": 6018,
+  "text": "Su veicoli dotati di cronotachigrafo analogico, prima dell’inizio del viaggio, il conducente deve compilare il foglio di registrazione indicando il suo nome e cognome, la targa del veicolo e gli estremi della carta tachigrafica",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27676",
+  "quesito": 6018,
+  "text": "Se durante la stessa giornata lavorativa il conducente utilizza due veicoli dotati di cronotachigrafo analogico, egli deve compilare due fogli di registrazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27677",
+  "quesito": 6019,
+  "text": "Nel cronotachigrafo digitale i dati sono memorizzati nella memoria interna del dispositivo e nella carta tachigrafica inserita",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27678",
+  "quesito": 6019,
+  "text": "Nel cronotachigrafo digitale è presente un sistema di memorizzazione elettronica in grado di memorizzare le attività lavorative del conducente relative ad almeno gli ultimi 365 giorni di calendario",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27679",
+  "quesito": 6019,
+  "text": "Il cronotachigrafo digitale è dotato di una stampante integrata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27680",
+  "quesito": 6019,
+  "text": "Il cronotachigrafo digitale emette un segnale acustico che avverte se il veicolo viene utilizzato senza che la carta tachigrafica del conducente sia stata inserita",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27681",
+  "quesito": 6019,
+  "text": "I dati della giornata lavorativa del conducente sono memorizzati solo nella memoria interna del cronotachigrafo digitale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27682",
+  "quesito": 6019,
+  "text": "Se il veicolo è dotato di cronotachigrafo digitale, i dati della giornata lavorativa del conducente non possono essere stampati",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27684",
+  "quesito": 6019,
+  "text": "Nel cronotachigrafo digitale è presente un sistema di memorizzazione elettronica in grado di memorizzare al massimo le attività lavorative del conducente relative agli ultimi sette giorni di calendario",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27685",
+  "quesito": 6020,
+  "text": "La carta tachigrafica del conducente deve essere inserita nel cronotachigrafo del veicolo a partire dal momento in cui un conducente lo prende in consegna fino a quando non lo riconsegna",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27686",
+  "quesito": 6020,
+  "text": "La carta tachigrafica del conducente è a fondo bianco",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27687",
+  "quesito": 6020,
+  "text": "La carta tachigrafica del conducente è rilasciata dalla Camera di Commercio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27688",
+  "quesito": 6020,
+  "text": "La carta tachigrafica del conducente può essere estratta dall'apparecchio di controllo solo a veicolo fermo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27690",
+  "quesito": 6020,
+  "text": "La carta tachigrafica dell'azienda può essere utilizzata dal conducente se ha smarrito la propria carta tachigrafica",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27691",
+  "quesito": 6020,
+  "text": "La carta tachigrafica di controllo viene utilizzata dal conducente durante le operazioni di manutenzione del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27692",
+  "quesito": 6020,
+  "text": "La carta tachigrafica dell'officina viene utilizzata dal conducente durante le operazioni di riparazione del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27693",
+  "quesito": 6021,
+  "text": "Il cronotachigrafo digitale può essere montato solo da officine autorizzate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27694",
+  "quesito": 6021,
+  "text": "Il cronotachigrafo digitale è munito di sigilli e non deve essere manomesso dal conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27695",
+  "quesito": 6021,
+  "text": "Il cronotachigrafo digitale deve essere tarato prima dell'immissione del veicolo in circolazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27696",
+  "quesito": 6021,
+  "text": "Il cronotachigrafo digitale ha una targhetta contenente le informazioni tecniche di montaggio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27697",
+  "quesito": 6021,
+  "text": "Il cronotachigrafo digitale deve essere controllato, di norma, ogni due anni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27698",
+  "quesito": 6021,
+  "text": "Il cronotachigrafo digitale può essere revisionato da qualunque officina idoneamente attrezzata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27699",
+  "quesito": 6021,
+  "text": "Il cronotachigrafo digitale può essere riparato da qualunque officina meccanica",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27700",
+  "quesito": 6021,
+  "text": "Il cronotachigrafo digitale deve essere tarato entro quattro settimane dall'installazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27701",
+  "quesito": 6021,
+  "text": "Il cronotachigrafo digitale non deve essere revisionato, di norma, ogni due anni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27702",
+  "quesito": 6021,
+  "text": "In caso di guasto grave, il cronotachigrafo digitale può essere riparato da qualunque officina meccanica",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27703",
+  "quesito": 6022,
+  "text": "In caso di guasto del cronotachigrafo, se si sta effettuando un viaggio di durata superiore a sette giorni, il conducente deve provvedere alla riparazione del guasto nel corso del viaggio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27704",
+  "quesito": 6022,
+  "text": "In caso di guasto del cronotachigrafo, se il viaggio ha una durata inferiore a sette giorni, il conducente può provvedere alla riparazione del guasto al rientro in sede",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27705",
+  "quesito": 6022,
+  "text": "In caso di guasto del cronotachigrafo, occorre rivolgersi a un'officina autorizzata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27706",
+  "quesito": 6022,
+  "text": "In caso di guasto del cronotachigrafo, sia analogico che digitale, il conducente deve provvedere alle idonee registrazioni manuali della sua attività",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27707",
+  "quesito": 6022,
+  "text": "In caso di guasto del cronotachigrafo, il conducente può evitare di effettuare le registrazioni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27708",
+  "quesito": 6022,
+  "text": "In caso di guasto del cronotachigrafo, il conducente è obbligato ad effettuare le registrazioni manuali solamente se il viaggio è superiore a sette giorni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27709",
+  "quesito": 6022,
+  "text": "In caso di guasto del cronotachigrafo, il conducente deve provvedere alla sua riparazione entro le ventiquattro ore successive",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27710",
+  "quesito": 6022,
+  "text": "In caso di guasto del cronotachigrafo, il conducente deve necessariamente interrompere il viaggio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27711",
+  "quesito": 6022,
+  "text": "In caso di guasto del cronotachigrafo, il conducente deve rivolgersi alla sede della Camera di Commercio più vicina",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27712",
+  "quesito": 6023,
+  "text": "Il cronotachigrafo digitale utilizza carte tachigrafiche rilasciate dalla Camera di Commercio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27713",
+  "quesito": 6023,
+  "text": "Le carte tachigrafiche utilizzabili nel cronotachigrafo digitale sono di quattro tipi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27714",
+  "quesito": 6023,
+  "text": "Le carte tachigrafiche hanno validità di cinque anni, ad eccezione di quella dell’officina",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27715",
+  "quesito": 6023,
+  "text": "La carta tachigrafica dell’officina ha validità amministrativa di un anno",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27716",
+  "quesito": 6023,
+  "text": "Le carte tachigrafiche utilizzabili nel cronotachigrafo digitale sono di due tipi: una per il conducente e una per la Motorizzazione Civile",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27717",
+  "quesito": 6023,
+  "text": "Le carte tachigrafiche sono rilasciate dalla Motorizzazione Civile",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27718",
+  "quesito": 6023,
+  "text": "La carta tachigrafica del conducente ha validità amministrativa di tre anni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27719",
+  "quesito": 6023,
+  "text": "La carta tachigrafica del conducente può memorizzare al massimo i dati relativi a 20 giornate lavorative",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27720",
+  "quesito": 6024,
+  "text": "Il cronotachigrafo digitale è uno strumento di misura che registra le distanze, le velocità e i tempi di guida e di riposo del conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27721",
+  "quesito": 6024,
+  "text": "Il tempo registrato sul cronotachigrafo digitale è in UTC (Universal Time Coordinate), cioè fa riferimento all’ora di Greenwich",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27722",
+  "quesito": 6024,
+  "text": "Con il cronotachigrafo digitale è possibile memorizzare i dati relativi alle attività di uno o due conducenti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27723",
+  "quesito": 6024,
+  "text": "E' possibile stampare i dati memorizzati dal cronotachigrafo digitale su scontrini cartacei (ticket)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27724",
+  "quesito": 6024,
+  "text": "Il cronotachigrafo digitale va installato su tutti i veicoli, anche su quelli che hanno già montato il cronotachigrafo analogico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27725",
+  "quesito": 6024,
+  "text": "Il cronotachigrafo digitale è uno strumento che registra le attività del conducente, ma non i dati relativi al veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27726",
+  "quesito": 6024,
+  "text": "Il cronotachigrafo digitale è uno strumento che può registrare le attività di un solo conducente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27727",
+  "quesito": 6024,
+  "text": "Il cronotachigrafo digitale è uno strumento che memorizza dati relativi agli ultimi 5 anni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27728",
+  "quesito": 6024,
+  "text": "Il cronotachigrafo digitale non permette la stampa dei dati relativi all'attività lavorativa del conducente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27729",
+  "quesito": 6025,
+  "text": "Le carte tachigrafiche sono delle smart card che interagiscono con il cronotachigrafo digitale, memorizzando varie informazioni relative all'attività del conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27730",
+  "quesito": 6025,
+  "text": "Le carte tachigrafiche sono delle smart card che interagiscono con il cronotachigrafo digitale, memorizzando varie informazioni relative al veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27731",
+  "quesito": 6025,
+  "text": "Le carte tachigrafiche sono di quattro tipi: carta conducente, carta azienda, carta officina e carta controllo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27732",
+  "quesito": 6025,
+  "text": "La carta tachigrafica del conducente è personale e non cedibile ad altro conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27733",
+  "quesito": 6025,
+  "text": "La carta tachigrafica del conducente è a fondo bianco ed è personalizzata con la foto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27734",
+  "quesito": 6025,
+  "text": "La carta tachigrafica del conducente ha validità di 5 anni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27735",
+  "quesito": 6025,
+  "text": "La carta tachigrafica del conducente è rilasciata dalla Camera di Commercio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27736",
+  "quesito": 6025,
+  "text": "I requisiti per ottenere la carta tachigrafica del conducente sono: essere titolare di patente di categoria C, C1 o D, D1, essere residente in Italia e non essere già titolare di un’altra carta tachigrafica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27737",
+  "quesito": 6025,
+  "text": "La carta tachigrafica dell’azienda facilita la gestione della flotta veicolare e consente di ispezionare e stampare i dati di viaggio di tutti i veicoli dell’azienda",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27738",
+  "quesito": 6025,
+  "text": "La carta tachigrafica dell’azienda permette di bloccare o sbloccare il cronotachigrafo digitale dei propri veicoli",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27739",
+  "quesito": 6025,
+  "text": "La carta tachigrafica dell’officina è a fondo rosso ed è valida per 1 anno",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27740",
+  "quesito": 6025,
+  "text": "La carta tachigrafica dell’officina serve alla calibrazione, attivazione e manutenzione del cronotachigrafo digitale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27741",
+  "quesito": 6025,
+  "text": "La carta tachigrafica di controllo è rilasciata alle autorità deputate ai controlli tecnico-amministrativi in materia di sicurezza sul lavoro e alle autorità di polizia",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27743",
+  "quesito": 6025,
+  "text": "La carta controllo serve principalmente per effettuare il controllo del rispetto dei tempi di guida e della velocità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27744",
+  "quesito": 6025,
+  "text": "Le carte tachigrafiche non interagiscono in alcun modo con il cronotachigrafo digitale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27745",
+  "quesito": 6025,
+  "text": "Le carte tachigrafiche sono di cinque tipi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27746",
+  "quesito": 6025,
+  "text": "La carta tachigrafica del conducente ha le stesse funzioni della carta di qualificazione del conducente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27747",
+  "quesito": 6025,
+  "text": "La carta tachigrafica del conducente è di proprietà dell’azienda di cui è dipendente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27748",
+  "quesito": 6025,
+  "text": "La carta tachigrafica del conducente ha validità di 10 anni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27749",
+  "quesito": 6025,
+  "text": "La carta tachigrafica del conducente è rilasciata dagli uffici del lavoro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27750",
+  "quesito": 6025,
+  "text": "La carta tachigrafica del conducente è revocata in caso di perdita di tutti i punti della patente di guida",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27751",
+  "quesito": 6025,
+  "text": "La carta tachigrafica del conducente è a fondo giallo ed è valida per 3 anni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27752",
+  "quesito": 6025,
+  "text": "La carta tachigrafica dell’azienda permette di bloccare il cronotachigrafo digitale, ma non di sbloccarlo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27753",
+  "quesito": 6025,
+  "text": "I conducenti che effettuano trasporti internazionali possono ottenere il rilascio di due carte tachigrafiche",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27754",
+  "quesito": 6025,
+  "text": "La carta tachigrafica del conducente può essere utilizzata per il pagamento dei pedaggi autostradali",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27755",
+  "quesito": 6025,
+  "text": "In caso di viaggio effettuato con due autisti (multipresenza), i due conducenti possono scambiarsi la carta tachigrafica",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27756",
+  "quesito": 6025,
+  "text": "In caso di superamento dei limiti di velocità di oltre 40 km/h la carta tachigrafica del conducente viene sospesa per un periodo di tre mesi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27757",
+  "quesito": 6025,
+  "text": "In caso di guida in stato di ebbrezza la carta tachigrafica del conducente viene revocata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27758",
+  "quesito": 6025,
+  "text": "La carta tachigrafica del conducente può essere utilizzata anche nei cronotachigrafi analogici di tipo elettronico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27759",
+  "quesito": 6026,
+  "text": "L’inserimento della carta tachigrafica del conducente nel cronotachigrafo digitale deve avvenire con la chiave d’accensione inserita e il veicolo fermo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27760",
+  "quesito": 6026,
+  "text": "La carta tachigrafica del conducente va inserita nello slot 1 e, se il cronotachigrafo digitale la riconosce, visualizza il cognome del conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27761",
+  "quesito": 6026,
+  "text": "L’estrazione della carta tachigrafica del conducente può avvenire solo a veicolo fermo e con azione volontaria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27762",
+  "quesito": 6026,
+  "text": "Prima di estrarre la carta tachigrafica del conducente a fine giornata lavorativa è necessario impostare il selettore del cronotachigrafo digitale sulla modalità \"tempi di riposo\"",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27763",
+  "quesito": 6026,
+  "text": "Quando il veicolo viene impiegato in attività o servizi che esulano dal campo di applicazione della normativa sociale, il conducente deve selezionare sul cronotachigrafo digitale la modalità \"OUT OF SCOPE\"",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27764",
+  "quesito": 6026,
+  "text": "L’operazione di inserimento della carta tachigrafica da parte del conducente deve avvenire prima di inserire la chiave d’accensione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27765",
+  "quesito": 6026,
+  "text": "La carta tachigrafica deve essere inserita con veicolo in movimento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27766",
+  "quesito": 6026,
+  "text": "Quando il veicolo viene impiegato in attività o servizi che esulano dal campo di applicazione della normativa sociale, il cronotachigrafo digitale si imposta automaticamente sulla modalità \"OUT OF SCOPE\"",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27767",
+  "quesito": 6026,
+  "text": "Prima di estrarre la carta tachigrafica del conducente a fine giornata lavorativa è necessario impostare il selettore del cronotachigrafo digitale sulla modalità \"OUT OF SCOPE\"",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27768",
+  "quesito": 6026,
+  "text": "Quando il veicolo viene impiegato in attività o servizi che esulano dal campo di applicazione della normativa sociale, il conducente deve selezionare sul cronotachigrafo digitale la modalità \"tempi di riposo\"",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27769",
+  "quesito": 6027,
+  "text": "In caso di smarrimento, danneggiamento o furto della propria carta tachigrafica, il conducente ha tempo sette giorni per richiedere alla Camera di Commercio il blocco e la sostituzione della carta stessa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27770",
+  "quesito": 6027,
+  "text": "In caso di smarrimento, danneggiamento o furto della carta tachigrafica è possibile guidare senza la carta per un periodo massimo di quindici giorni di calendario",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27771",
+  "quesito": 6027,
+  "text": "In caso di smarrimento, danneggiamento o furto della carta tachigrafica il conducente, all’inizio della giornata lavorativa, deve stampare lo scontrino dei dati tecnici riportandovi manualmente il proprio nome e cognome, numero della patente e indicando eventuali altre attività compiute lontano dal veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27772",
+  "quesito": 6027,
+  "text": "In caso di smarrimento, danneggiamento o furto della carta tachigrafica il conducente, al termine dell’attività lavorativa, deve stampare lo scontrino contenente i gruppi di tempi registrati dall’apparecchio, completandolo con il proprio nome e cognome, numero della patente e firma",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27773",
+  "quesito": 6027,
+  "text": "In caso di rottura del cronotachigrafo digitale si deve provvedere alla sua riparazione nel più breve tempo possibile; è comunque consentito viaggiare con il dispositivo di controllo inefficiente per un periodo massimo di sette giorni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27774",
+  "quesito": 6027,
+  "text": "In caso di rottura del cronotachigrafo digitale, il conducente deve compilare giornalmente il retro dello scontrino con i seguenti dati: nome e cognome, numero della patente, targa del veicolo, luogo di partenza e luogo di arrivo, chilometri percorsi, data e firma e deve trascrivere le ore di guida e di riposo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27775",
+  "quesito": 6027,
+  "text": "Passando dalla guida di un veicolo munito di cronotachigrafo analogico a uno munito di cronotachigrafo digitale, il conducente deve terminare la compilazione del foglio di registrazione e inserire manualmente sul cronotachigrafo digitale i tempi di guida e di riposo già effettuati, dopo aver inserito la propria carta tachigrafica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27776",
+  "quesito": 6027,
+  "text": "Passando dalla guida di un veicolo munito di cronotachigrafo digitale a uno munito di cronotachigrafo analogico, il conducente deve stampare lo scontrino della giornata lavorativa, compilare un foglio di registrazione e inserirlo nel cronotachigrafo analogico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27777",
+  "quesito": 6027,
+  "text": "In caso di smarrimento, danneggiamento o furto della carta tachigrafica, il conducente ha tempo trenta giorni per richiedere alla Camera di Commercio il blocco e la sostituzione della carta stessa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27778",
+  "quesito": 6027,
+  "text": "In caso di smarrimento, danneggiamento o furto della carta tachigrafica, il conducente ha tempo sette giorni per richiedere alla Motorizzazione Civile il blocco e la sostituzione della carta stessa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27779",
+  "quesito": 6027,
+  "text": "In caso di smarrimento, danneggiamento o furto della carta tachigrafica, è possibile guidare senza la carta per un periodo massimo di quarantacinque giorni di calendario",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27780",
+  "quesito": 6027,
+  "text": "In caso di smarrimento, danneggiamento o furto della carta tachigrafica il conducente non ha alcun obbligo particolare",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27781",
+  "quesito": 6027,
+  "text": "In caso di smarrimento, danneggiamento o furto della carta tachigrafica il conducente deve presentare denuncia all'ufficio del lavoro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27782",
+  "quesito": 6027,
+  "text": "In caso di rottura del cronotachigrafo digitale, si deve provvedere alla sua riparazione nel più breve tempo possibile; è comunque consentito viaggiare con il dispositivo di controllo inefficiente per un periodo massimo di quindici giorni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27783",
+  "quesito": 6027,
+  "text": "In caso di rottura del cronotachigrafo digitale, si deve provvedere alla sua riparazione nel più breve tempo possibile; è comunque consentito viaggiare con il dispositivo di controllo inefficiente per un periodo massimo di due giorni lavorativi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27784",
+  "quesito": 6027,
+  "text": "Passando dalla guida di un veicolo munito di cronotachigrafo analogico a uno munito di cronotachigrafo digitale, non è necessario conservare il foglio di registrazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27785",
+  "quesito": 6028,
+  "text": "Dalla memoria del cronotachigrafo digitale è possibile stampare le attività di una giornata di lavoro del conducente, gli eventi e le anomalie, gli eccessi di velocità e i dati tecnici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27786",
+  "quesito": 6028,
+  "text": "Se il veicolo è munito di un cronotachigrafo digitale, dalla stampa dei dati tecnici è possibile ottenere informazioni sul cronotachigrafo digitale: modello, matricola, numero di omologazione e numero della versione del software",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27788",
+  "quesito": 6028,
+  "text": "Se il veicolo è munito di un cronotachigrafo digitale è possibile verificare se il conducente ha superato i limiti massimi di velocità e determinare, tra l'altro, data e ora dell'evento e velocità massima raggiunta",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27789",
+  "quesito": 6028,
+  "text": "Se il veicolo è munito di un cronotachigrafo digitale, dalla memoria dell’apparecchio è possibile stampare gli eccessi di velocità verificatisi negli ultimi 10 anni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27790",
+  "quesito": 6028,
+  "text": "Dalla memoria della carta tachigrafica del conducente è possibile risalire alla sua attività lavorativa dei 365 giorni precedenti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27791",
+  "quesito": 6028,
+  "text": "Se il veicolo è munito di un cronotachigrafo digitale, dalla stampa dei dati tecnici è possibile risalire al tipo di motore e alla sua alimentazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27792",
+  "quesito": 6028,
+  "text": "Se il veicolo è munito di un cronotachigrafo digitale, dalla stampa dei dati tecnici è possibile risalire alla marca degli pneumatici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27793",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica i tempi di guida",
+  "risposta": true,
+  "image": "7a4c051b4e4f.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27794",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica \"tempo di riposo\"",
+  "risposta": true,
+  "image": "7bd888bf6a6d.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27795",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica \"altri lavori\"",
+  "risposta": true,
+  "image": "ede650dea66b.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27796",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica \"tempi di disponibilità\"",
+  "risposta": true,
+  "image": "150fa073c858.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27797",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica le \"interruzioni di guida\"",
+  "risposta": true,
+  "image": "83bffc5b7272.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27798",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica la modalità \"out of scope\"",
+  "risposta": true,
+  "image": "5dba1def275c.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27799",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica la modalità \"traghetto o treno\"",
+  "risposta": true,
+  "image": "416d54580277.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27800",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica il soggetto \"officina\"",
+  "risposta": true,
+  "image": "a917502d41cb.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27801",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica il soggetto \"controllo\"",
+  "risposta": true,
+  "image": "b3eb46217c6f.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27802",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica il soggetto \"azienda\"",
+  "risposta": true,
+  "image": "529a4358e5ec.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27803",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica la \"dimensione degli pneumatici\"",
+  "risposta": false,
+  "image": "7a4c051b4e4f.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27804",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica \"attività ricreative\"",
+  "risposta": false,
+  "image": "1709ea87be26.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27805",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica \"altri lavori\"",
+  "risposta": false,
+  "image": "a917502d41cb.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27806",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica \"riposo settimanale\"",
+  "risposta": false,
+  "image": "b3eb46217c6f.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27807",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica la modalità \"traghetto o treno\"",
+  "risposta": false,
+  "image": "529a4358e5ec.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27808",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica la modalità \"fuori competenza\"",
+  "risposta": false,
+  "image": "83bffc5b7272.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27809",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica il soggetto \"azienda\"",
+  "risposta": false,
+  "image": "150fa073c858.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27810",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica il soggetto \"officina\"",
+  "risposta": false,
+  "image": "ede650dea66b.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27811",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica le \"attività di guida\"",
+  "risposta": false,
+  "image": "416d54580277.jpg"
+ },
+ {
+  "argomentoCode": "02",
+  "code": "27812",
+  "quesito": 6029,
+  "text": "Sul display del cronotachigrafo digitale, il simbolo in figura indica il soggetto \"controllo\"",
+  "risposta": false,
+  "image": "83bffc5b7272.jpg"
+ }
+]

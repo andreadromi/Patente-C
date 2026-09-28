@@ -61,7 +61,6 @@ export async function GET(
       return {
         code: q.code,
         argomentoCode: q.argomento.code,
-        gruppo: q.questionGroup,
         testo: q.text,
         figura: q.image,
         risposta: q.risposta,

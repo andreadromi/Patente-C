@@ -54,7 +54,6 @@ export async function POST(
         id: q.id,
         code: q.code,
         text: q.text,
-        questionGroup: q.questionGroup || null,
         image: q.image || null,
         argomento: q.argomento.name,
         argomentoCode: q.argomento.code,

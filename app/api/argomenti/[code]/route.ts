@@ -17,7 +17,7 @@ export async function GET(
   const questions = await prisma.question.findMany({
     where: { argomentoId: argomento.id },
     orderBy: { code: 'asc' },
-    select: { id: true, code: true, text: true, image: true, risposta: true, questionGroup: true },
+    select: { id: true, code: true, text: true, image: true, risposta: true },
   })
 
   return NextResponse.json({

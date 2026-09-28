@@ -4,7 +4,10 @@ import { DOMANDE_PER_ESAME } from './esame'
 /**
  * L'Esame reale: una scheda composta sul momento, come la compone il giorno
  * dell'esame il sistema della Motorizzazione. Ogni argomento dà il suo numero
- * fisso di domande (`nEsame`), pescate a caso fra le sue: 40 in tutto.
+ * fisso di domande (`nEsame`), pescate a caso fra le sue: 40 in tutto. Da un
+ * quesito del listato ne esce al massimo una: le sue affermazioni parlano
+ * della stessa cosa, spesso dello stesso cartello, e due nella stessa scheda
+ * si risponderebbero a vicenda.
  *
  * Vive nella tabella delle simulazioni, con `generata` e `userId`: così la
  * pagina d'esame, le risposte, il completamento e il report funzionano come
@@ -24,31 +27,42 @@ export const PRIMO_NUMERO_MANUALE = 1000
 
 export interface Domanda {
   id: string
-  code: string       // codice del listato ministeriale
+  code: string       // numero della domanda nel listato ministeriale
+  quesito: number    // quesito del listato a cui appartiene
   argomento: string  // codice dell'argomento
 }
 
 export interface QuotaArgomento { code: string; nEsame: number }
 
+/** Una copia della lista in ordine casuale. */
+function mescola<T>(lista: T[], caso: () => number): T[] {
+  return lista.map(x => ({ x, k: caso() })).sort((a, b) => a.k - b.k).map(v => v.x)
+}
+
 /**
  * Compone una scheda: per ogni argomento, nell'ordine in cui arrivano (quello
- * della scheda d'esame), `nEsame` domande a caso fra le sue.
+ * della scheda d'esame), `nEsame` domande a caso fra le sue, ognuna da un
+ * quesito diverso. Se un argomento avesse meno quesiti che domande da dare,
+ * le mancanti si prendono comunque, fra le domande rimaste.
  */
 export function componiEsame(domande: Iterable<Domanda>, argomenti: QuotaArgomento[], caso: () => number = Math.random): Domanda[] {
-  const perArgomento = new Map<string, Domanda[]>()
+  const perArgomento = new Map<string, Map<number, Domanda[]>>()
   for (const d of domande) {
-    const lista = perArgomento.get(d.argomento) ?? []
+    const quesiti = perArgomento.get(d.argomento) ?? new Map<number, Domanda[]>()
+    const lista = quesiti.get(d.quesito) ?? []
     lista.push(d)
-    perArgomento.set(d.argomento, lista)
+    quesiti.set(d.quesito, lista)
+    perArgomento.set(d.argomento, quesiti)
   }
   const scelte: Domanda[] = []
   for (const a of argomenti) {
-    const prese = (perArgomento.get(a.code) ?? [])
-      .map(d => ({ d, caso: caso() }))
-      .sort((x, y) => x.caso - y.caso)
-      .slice(0, a.nEsame)
-      .map(x => x.d)
-    scelte.push(...prese)
+    const quesiti = mescola([...(perArgomento.get(a.code)?.values() ?? [])], caso).map(q => mescola(q, caso))
+    const prese = quesiti.slice(0, a.nEsame).map(q => q[0])
+    if (prese.length < a.nEsame) {
+      const resto = mescola(quesiti.flatMap(q => q.slice(1)), caso)
+      prese.push(...resto.slice(0, a.nEsame - prese.length))
+    }
+    scelte.push(...mescola(prese, caso))
   }
   return scelte
 }
@@ -113,10 +127,10 @@ export async function domandeDaCodici(prisma: PrismaClient, codici: string[]) {
 /** Tutte le domande dell'archivio, nell'ordine del listato, con l'argomento. */
 export async function caricaDomande(prisma: PrismaClient): Promise<Domanda[]> {
   const righe = await prisma.question.findMany({
-    select: { id: true, code: true, argomento: { select: { code: true } } },
+    select: { id: true, code: true, quesito: true, argomento: { select: { code: true } } },
     orderBy: [{ argomentoId: 'asc' }, { code: 'asc' }],
   })
-  return righe.map(r => ({ id: r.id, code: r.code, argomento: r.argomento.code }))
+  return righe.map(r => ({ id: r.id, code: r.code, quesito: r.quesito, argomento: r.argomento.code }))
 }
 
 export async function caricaDomandeEVolte(prisma: PrismaClient, userId: string) {

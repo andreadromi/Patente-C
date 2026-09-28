@@ -1,0 +1,1274 @@
+[
+ {
+  "argomentoCode": "12",
+  "code": "29778",
+  "quesito": 6192,
+  "text": "L'impianto di lubrificazione serve a diminuire l'attrito tra gli organi in movimento del motore e ad evitare il surriscaldamento e l'eventuale grippaggio degli stessi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29779",
+  "quesito": 6192,
+  "text": "In un impianto di lubrificazione, la pompa pesca l'olio dalla coppa e lo invia, tramite apposite scanalature, alle varie parti in movimento del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29780",
+  "quesito": 6192,
+  "text": "La lubrificazione evita che lo scorrimento tra le superfici a contatto usuri i materiali a contatto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29781",
+  "quesito": 6192,
+  "text": "La lubrificazione viene garantita dalla presenza di un velo di olio lubrificante tra le superfici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29782",
+  "quesito": 6192,
+  "text": "L'impianto di lubrificazione può essere del tipo a circolazione forzata oppure a circolazione naturale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29783",
+  "quesito": 6192,
+  "text": "La pompa di iniezione fa parte del circuito di lubrificazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29784",
+  "quesito": 6192,
+  "text": "Compito della lubrificazione è aumentare l'attrito, altrimenti le parti meccaniche non potrebbero esercitare la loro funzione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29785",
+  "quesito": 6192,
+  "text": "Un olio lubrificante deve avere un alto grado di acidità per non formare morchie e patine all’interno dei cilindri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29786",
+  "quesito": 6193,
+  "text": "L'accensione della spia dell'olio sul cruscotto del veicolo segnala che la pressione dell'olio è insufficiente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29787",
+  "quesito": 6193,
+  "text": "L'accensione della spia dell'olio può essere causata dalla rottura della pompa del lubrificante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29788",
+  "quesito": 6193,
+  "text": "L'accensione della spia dell'olio può essere causata dalle tubazioni dell'impianto di lubrificazione rotte o intasate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29789",
+  "quesito": 6193,
+  "text": "La spia rossa dell'olio sul cruscotto può segnalare che nella coppa è rimasto così poco olio che la pompa non riesce a mantenerlo in pressione in tutto il circuito",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29790",
+  "quesito": 6193,
+  "text": "Il consumo dell’olio motore aumenta con l’usura delle fasce elastiche",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29791",
+  "quesito": 6193,
+  "text": "Il filtro dell'olio serve a trattenere i piccoli corpi estranei in modo che non penetrino nel motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29792",
+  "quesito": 6193,
+  "text": "L’olio motore ha una viscosità che varia in funzione della sua temperatura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29793",
+  "quesito": 6193,
+  "text": "Il controllo del livello dell'olio motore va sempre fatto a motore spento da parecchi minuti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29794",
+  "quesito": 6193,
+  "text": "Il controllo del livello dell'olio motore va sempre fatto con il veicolo in piano",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29795",
+  "quesito": 6193,
+  "text": "L'accensione della spia dell'olio sul cruscotto del veicolo, segnala che si è rabboccato l'olio con uno di tipo diverso da quello precedentemente utilizzato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29796",
+  "quesito": 6193,
+  "text": "La spia della pressione dell’olio posta sul cruscotto, se accesa, indica sempre un basso livello dell’olio motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29797",
+  "quesito": 6193,
+  "text": "E' necessario controllare periodicamente il livello dell'olio tramite l'apposita asta graduata, ma non prima di aver lasciato il motore acceso per almeno 15 minuti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29798",
+  "quesito": 6193,
+  "text": "Il controllo periodico del livello dell'olio lubrificante può essere effettuato solo presso un’officina specializzata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29799",
+  "quesito": 6193,
+  "text": "Il controllo periodico del livello dell'olio lubrificante può essere effettuato solo se il veicolo ha la parte anteriore più in alto rispetto al retrotreno",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29800",
+  "quesito": 6193,
+  "text": "In inverno occorre mettere liquido antigelo nell'olio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29801",
+  "quesito": 6194,
+  "text": "Fanno parte degli organi della lubrificazione: la coppa dell’olio, il filtro a cartuccia e l’indicatore di pressione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29802",
+  "quesito": 6194,
+  "text": "L’impianto di lubrificazione interessa gli organi meccanici di un motore a scoppio o Diesel",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29803",
+  "quesito": 6194,
+  "text": "Scopo della lubrificazione è quello di evitare l’eccessivo attrito di alcune parti del motore che si muovono a contatto tra loro",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29804",
+  "quesito": 6194,
+  "text": "La circolazione dell’olio di lubrificazione all’interno del motore è assicurata da una pompa a ingranaggi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29805",
+  "quesito": 6194,
+  "text": "Quando la pressione dell’olio è insufficiente, è necessario fermare il motore per evitare danni a varie parti del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29806",
+  "quesito": 6194,
+  "text": "L’olio della lubrificazione deve venire sostituito con la periodicità indicata sul libretto d’uso e manutenzione del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29807",
+  "quesito": 6194,
+  "text": "L’olio di lubrificazione ha anche lo scopo di raffreddare le parti metalliche che si muovono a contatto tra loro",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29808",
+  "quesito": 6194,
+  "text": "L’olio della lubrificazione deve essere cambiato periodicamente in base ai chilometri percorsi e alle indicazioni del costruttore del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29809",
+  "quesito": 6194,
+  "text": "L’olio lubrificante del cambio di velocità deve venire periodicamente sostituito",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29810",
+  "quesito": 6194,
+  "text": "E' meglio non rabboccare l’olio nella coppa con olio di tipo e caratteristiche diverse da quello già contenuto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29811",
+  "quesito": 6194,
+  "text": "Negli intervalli tra una sostituzione e l’altra del lubrificante, il suo livello va controllato ad intervalli regolari e rabboccato in caso di necessità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29812",
+  "quesito": 6194,
+  "text": "Il lubrificante protegge dalla corrosione le parti metalliche su cui si deposita",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29813",
+  "quesito": 6194,
+  "text": "L’olio \"multigrado\" è più stabile nei cambiamenti di temperatura ambiente (estate-inverno o inverno-estate)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29814",
+  "quesito": 6194,
+  "text": "Un indicatore di pressione ed una spia luminosa di colore rosso, posti sulla plancia portastrumenti, permettono di tenere sotto controllo lo stato dell’impianto di lubrificazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29815",
+  "quesito": 6194,
+  "text": "Se dal tubo di scarico di un motore Diesel esce fumo chiaro, ciò può significare che il motore brucia olio che è trafilato nei cilindri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29816",
+  "quesito": 6194,
+  "text": "Se durante la marcia si accende la spia della lubrificazione, significa che la pressione nell’impianto è troppo bassa ed insufficiente a garantire il corretto funzionamento del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29817",
+  "quesito": 6194,
+  "text": "Sull’asta graduata per il controllo del liquido di lubrificazione sono indicati i livelli minimo e massimo che deve avere l’olio nella coppa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29818",
+  "quesito": 6194,
+  "text": "Generalmente, ad ogni cambio dell’olio è bene sostituire anche la cartuccia del relativo filtro",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29819",
+  "quesito": 6194,
+  "text": "E' bene non usare nei motori Diesel olio specifico per motori a scoppio e viceversa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29820",
+  "quesito": 6194,
+  "text": "E' consigliabile sostituire l’olio per la lubrificazione del motore secondo le tempistiche e percorrenze raccomandate dal costruttore del motore stesso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29821",
+  "quesito": 6194,
+  "text": "Gli olii lubrificanti possono contenere additivi chimici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29822",
+  "quesito": 6194,
+  "text": "Gli olii lubrificanti possono essere minerali o sintetici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29823",
+  "quesito": 6194,
+  "text": "Una delle principali trasformazioni che subiscono gli olii lubrificanti durante l’uso è il cambio di viscosità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29824",
+  "quesito": 6194,
+  "text": "Una delle principali trasformazioni che subiscono gli olii lubrificanti durante l’uso è l’ossidazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29825",
+  "quesito": 6194,
+  "text": "Una delle principali trasformazioni che subiscono gli olii lubrificanti durante l’uso è l’aumento di acidità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29826",
+  "quesito": 6194,
+  "text": "Uno degli scopi dell'impianto di lubrificazione di un motore è quello di contribuire al raffreddamento dei vari organi in movimento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29827",
+  "quesito": 6194,
+  "text": "Uno degli scopi dell'impianto di lubrificazione di un motore è quello di interporre un velo d’olio tra le parti del motore e le parti in movimento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29828",
+  "quesito": 6194,
+  "text": "Uno degli scopi dell'impianto di lubrificazione di un motore è quello di ridurre l’usura degli organi in movimento all’interno del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29829",
+  "quesito": 6194,
+  "text": "Uno degli scopi dell'impianto di lubrificazione di un motore è quello di ridurre l’attrito delle parti in movimento del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29830",
+  "quesito": 6194,
+  "text": "La pompa ad ingranaggi del sistema di lubrificazione di un motore mette in circolazione l’olio lubrificante sotto pressione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29831",
+  "quesito": 6194,
+  "text": "Se si accende la spia dell'olio, oppure il manometro segna una pressione bassa, la pompa ad ingranaggi potrebbe essere guasta o difettosa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29832",
+  "quesito": 6194,
+  "text": "Se si accende la spia dell'olio, oppure il manometro segna una pressione bassa, la valvola limitatrice della pressione può essere guasta o il filtro può essere intasato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29833",
+  "quesito": 6194,
+  "text": "Se si accende la spia dell'olio, oppure il manometro segna una pressione bassa, la quantità d’olio presente nel circuito potrebbe essere troppo scarsa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29834",
+  "quesito": 6194,
+  "text": "L’olio esausto deve essere conferito (portato) ad un soggetto appartenente ad uno specifico consorzio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29835",
+  "quesito": 6194,
+  "text": "In un motore Diesel si può usare qualunque tipo di olio, l’importante è che sia sufficientemente viscoso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29836",
+  "quesito": 6194,
+  "text": "In un motore Diesel è indifferente usare olii per motori a benzina, purché siano abbastanza densi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29837",
+  "quesito": 6194,
+  "text": "Il manometro posto sul cruscotto indica la quantità di olio contenuto dalla coppa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29838",
+  "quesito": 6194,
+  "text": "La spia luminosa della lubrificazione si accende quando la coppa dell’olio è vuota",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29839",
+  "quesito": 6194,
+  "text": "Se si accende la spia della lubrificazione, significa che l’olio è alla corretta temperatura",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29840",
+  "quesito": 6194,
+  "text": "Se si accende la spia della lubrificazione, significa che bisogna cambiare l’olio entro cinquemila chilometri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29841",
+  "quesito": 6194,
+  "text": "Se dal tubo di scarico di un motore Diesel esce fumo nero, significa che sta bruciando olio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29842",
+  "quesito": 6194,
+  "text": "Se il filtro dell’olio è sporco, dal tubo di scarico esce fumo rossastro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29843",
+  "quesito": 6194,
+  "text": "E' buona regola scaricare periodicamente l’olio dal motore, filtrarlo con un panno pulito e, successivamente, rimetterlo nella coppa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29844",
+  "quesito": 6194,
+  "text": "Se il motore consuma molto olio significa che nei cilindri si ha troppa pressione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29845",
+  "quesito": 6194,
+  "text": "A differenza di quello di lubrificazione del motore, l’olio del cambio non si sostituisce mai perché non è soggetto a forte riscaldamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29846",
+  "quesito": 6194,
+  "text": "Una delle principali trasformazioni che subiscono gli olii lubrificanti durante l’uso è l’aumento di salinità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29847",
+  "quesito": 6194,
+  "text": "La spia luminosa della lubrificazione si accende quando la temperatura dell’olio supera i 100°C",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29848",
+  "quesito": 6194,
+  "text": "Quando l’olio motore è troppo denso è bene aggiungere olio vegetale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29849",
+  "quesito": 6194,
+  "text": "Se la temperatura dell’aria è molto bassa, è bene aggiungere all’olio di lubrificazione un poco di benzina (non più del 5%)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29850",
+  "quesito": 6194,
+  "text": "Il lubrificante comincia a circolare nel motore solo dopo che la temperatura dell’acqua ha superato i 65°C",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29851",
+  "quesito": 6194,
+  "text": "Per raffreddare l’olio motore, una valvola di intercettazione lo fa passare nel radiatore dell’acqua quando supera i 120°C",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29852",
+  "quesito": 6194,
+  "text": "La coppa dell’olio contiene un dispositivo per raffreddare l’olio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29853",
+  "quesito": 6194,
+  "text": "L’impianto di lubrificazione è utile per evitare il blocco degli iniettori intasati",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29854",
+  "quesito": 6194,
+  "text": "Il rabbocco di olio lubrificante in un motore Diesel non è consentito, se il livello è basso occorre sostituirlo completamente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29855",
+  "quesito": 6194,
+  "text": "Se l’olio nel motore è troppo denso, si deve rimediare aggiungendo una certa quantità di gasolio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29856",
+  "quesito": 6194,
+  "text": "L’olio di lubrificazione deve essere sostituito ogni due mesi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29857",
+  "quesito": 6194,
+  "text": "L’olio di lubrificazione di un motore Diesel deve essere sostituito solo quando è diventato molto scuro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29858",
+  "quesito": 6194,
+  "text": "La cartuccia del filtro dell’olio va sostituita solo quando si accende la spia rossa sul cruscotto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29859",
+  "quesito": 6194,
+  "text": "L’olio lubrificante del cambio e del differenziale devono essere sostituiti ad ogni cambio di olio del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29860",
+  "quesito": 6194,
+  "text": "L’olio esausto deve generalmente essere bruciato in un luogo lontano dal veicolo e dai centri abitati",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29861",
+  "quesito": 6194,
+  "text": "Gli organi della lubrificazione dei motori a scoppio e Diesel hanno lo scopo, tra l’altro, di lubrificare la pompa di alimentazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29862",
+  "quesito": 6194,
+  "text": "La pompa ad ingranaggi del sistema di lubrificazione di un motore è azionata da un alberino che prende il movimento dal volano motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29863",
+  "quesito": 6194,
+  "text": "E' importante che l’impianto di lubrificazione provveda ad una efficace lubrificazione di tutte le cinghie",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29864",
+  "quesito": 6194,
+  "text": "I filtri dell’olio di un veicolo pesante sono tre: uno a cartuccia, uno a carboni attivi, uno a rete metallica",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29865",
+  "quesito": 6194,
+  "text": "Il livello dell’olio lubrificante del motore si controlla grazie a un manometro installato sul cruscotto del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29866",
+  "quesito": 6194,
+  "text": "Una pressione troppo elevata dell'olio di lubrificazione del motore può essere causata dall'usura degli ingranaggi della pompa dell'olio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29867",
+  "quesito": 6194,
+  "text": "Esistono due tipi di filtro dell’olio: uno per la stagione invernale e uno per quella estiva",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29868",
+  "quesito": 6194,
+  "text": "L’olio esausto può essere diluito in almeno 25 litri di acqua distillata e poi immesso nel circuito fognario",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29869",
+  "quesito": 6195,
+  "text": "In un impianto di raffreddamento a liquido, il liquido si riscalda circolando nelle intercapedini ricavate nel monoblocco e nella testata intorno ai cilindri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29870",
+  "quesito": 6195,
+  "text": "In un impianto di raffreddamento a liquido, il liquido cede il calore sottratto al motore all'atmosfera tramite il radiatore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29871",
+  "quesito": 6195,
+  "text": "Il radiatore è uno scambiatore di calore liquido-aria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29872",
+  "quesito": 6195,
+  "text": "Il liquido di raffreddamento deve avere una bassa temperatura di congelamento, un'alta temperatura di ebollizione e proprietà anticorrosive",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29873",
+  "quesito": 6195,
+  "text": "Un eccessivo riscaldamento del liquido di raffreddamento del motore può essere dovuto alla valvola termostatica malfunzionante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29874",
+  "quesito": 6195,
+  "text": "Il raffreddamento del motore evita che una temperatura eccessivamente elevata danneggi le varie parti del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29875",
+  "quesito": 6195,
+  "text": "Il radiatore è l'elemento che permette che il liquido del circuito di raffreddamento non superi una temperatura dannosa per il motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29876",
+  "quesito": 6195,
+  "text": "Il circuito di raffreddamento è costituito in modo tale da portare l'acqua del circuito a una temperatura che può anche essere più alta di 100°C",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29877",
+  "quesito": 6195,
+  "text": "Nei climi freddi è indispensabile mettere anticongelante nel circuito di raffreddamento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29878",
+  "quesito": 6195,
+  "text": "Normalmente il liquido di raffreddamento del motore è acqua distillata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29879",
+  "quesito": 6195,
+  "text": "In un impianto di raffreddamento a liquido, la testata del motore è dotata di alette per aumentarne la superficie e favorire lo scambio termico con il liquido",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29880",
+  "quesito": 6195,
+  "text": "Il liquido di raffreddamento deve avere una bassa temperatura di congelamento e una bassa temperatura di ebollizione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29881",
+  "quesito": 6195,
+  "text": "Negli impianti di raffreddamento dei veicoli moderni non è mai necessario verificare il livello del liquido in quanto l'impianto stesso è sigillato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29882",
+  "quesito": 6195,
+  "text": "Negli impianti di raffreddamento dei veicoli moderni non è consentito utilizzare l'acqua in sostituzione del liquido refrigerante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29883",
+  "quesito": 6195,
+  "text": "In caso di elevata temperatura del circuito, è buona norma aprire immediatamente il tappo del radiatore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29884",
+  "quesito": 6195,
+  "text": "La ventola del radiatore entra in funzione per evitare il congelamento dell'acqua",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29885",
+  "quesito": 6195,
+  "text": "In caso di elevata temperatura del circuito di raffreddamento, è buona norma buttare un secchio di acqua molto fredda sul motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29886",
+  "quesito": 6196,
+  "text": "Se la temperatura del liquido di raffreddamento si alza troppo, si accende una spia rossa sulla plancia portastrumenti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29887",
+  "quesito": 6196,
+  "text": "Se la temperatura del liquido di raffreddamento si alza troppo, ciò può dipendere dal termostato guasto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29888",
+  "quesito": 6196,
+  "text": "Se la temperatura del liquido di raffreddamento si alza troppo, ciò può dipendere dall’elettroventola guasta",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29889",
+  "quesito": 6196,
+  "text": "Se la temperatura del liquido di raffreddamento si alza troppo, ciò può dipendere dalla cinghia del ventilatore allentata o rotta",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29890",
+  "quesito": 6196,
+  "text": "Se la temperatura del liquido di raffreddamento si alza troppo, ciò può dipendere dal radiatore intasato all’interno o sporco e incrostato all’esterno",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29891",
+  "quesito": 6196,
+  "text": "Se il motore è molto caldo, è pericoloso togliere in quel momento il tappo del radiatore o del vaso di espansione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29892",
+  "quesito": 6196,
+  "text": "I motori a scoppio e Diesel vengono raffreddati, durante il loro funzionamento, mediante una circolazione di aria o di liquido",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29893",
+  "quesito": 6196,
+  "text": "Se la temperatura del motore si alza troppo, ciò può dipendere da una sua cattiva lubrificazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29894",
+  "quesito": 6196,
+  "text": "Se la temperatura del liquido di raffreddamento si alza troppo, ciò può dipendere da scarsità di liquido refrigerante nel serbatoio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29895",
+  "quesito": 6196,
+  "text": "Se il motore è troppo caldo, è bene togliere subito il tappo dal radiatore per facilitare il raffreddamento del liquido",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29896",
+  "quesito": 6196,
+  "text": "Quando la temperatura del liquido del raffreddamento è troppo elevata, si spegne la spia luminosa che si trova sul cruscotto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29897",
+  "quesito": 6196,
+  "text": "Nei motori dei grandi autocarri, è più frequente il sistema di raffreddamento ad aria forzata che non quello a circolazione di liquido",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29898",
+  "quesito": 6196,
+  "text": "Se la temperatura del liquido di raffreddamento si alza troppo, ciò dipende esclusivamente dalla condotta di guida del conducente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29899",
+  "quesito": 6196,
+  "text": "Se la temperatura del liquido di raffreddamento si alza troppo, la soluzione più efficace per ristabilire i valori normali è quella di circolare con il cofano motore socchiuso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29900",
+  "quesito": 6196,
+  "text": "Se la temperatura del liquido di raffreddamento si alza troppo, l’unica soluzione efficace è quella di circolare a non più di 40 km/h",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29901",
+  "quesito": 6196,
+  "text": "Se la temperatura del liquido di raffreddamento si alza troppo, è bene controllare che la frizione non abbia giochi eccessivi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29902",
+  "quesito": 6196,
+  "text": "Se la temperatura del liquido di raffreddamento si alza troppo, è necessario introdurre subito del ghiaccio nel vaso di espansione dell’impianto di raffreddamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29903",
+  "quesito": 6196,
+  "text": "Se il motore si riscalda troppo, è necessario utilizzare olio lubrificante più fluido",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29904",
+  "quesito": 6197,
+  "text": "Gli organi di raffreddamento dei motori a scoppio e Diesel hanno lo scopo di evitare che le parti del motore si riscaldino eccessivamente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29905",
+  "quesito": 6197,
+  "text": "Gli organi di raffreddamento dei motori a scoppio e Diesel sono costituiti, tra l’altro, dal radiatore, dalla ventola e dalla pompa centrifuga",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29906",
+  "quesito": 6197,
+  "text": "La temperatura troppo elevata del liquido refrigerante di un motore può essere dovuta alla formazione di incrostazioni nei tubetti del radiatore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29907",
+  "quesito": 6197,
+  "text": "L’elettroventilatore dell'impianto di raffreddamento è dotato di sistema di innesto elettromagnetico comandato da un interruttore termostatico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29908",
+  "quesito": 6197,
+  "text": "In un impianto di raffreddamento a liquido refrigerante, il termostato regola il passaggio del liquido dalle intercapedini della testata al radiatore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29909",
+  "quesito": 6197,
+  "text": "In caso di malfunzionamento del termostato dell'impianto e surriscaldamento del liquido di raffreddamento, è sufficiente procedere alla rimozione del termostato stesso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29910",
+  "quesito": 6197,
+  "text": "Il surriscaldamento del motore ha come principale effetto quello di aumentare le emissioni inquinanti del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29911",
+  "quesito": 6197,
+  "text": "Il surriscaldamento del motore ha come principale effetto quello di aumentare i consumi di carburante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29912",
+  "quesito": 6197,
+  "text": "Il surriscaldamento del motore ha come principale effetto quello di rendere impossibile l’uso dell’impianto di condizionamento dell’aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29913",
+  "quesito": 6197,
+  "text": "Sul cruscotto si trova un apposito manometro che indica il valore della pressione del liquido di raffreddamento nel radiatore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29914",
+  "quesito": 6197,
+  "text": "Nei veicoli pesanti, la temperatura del liquido refrigerante non deve mai superare gli 80°C",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29915",
+  "quesito": 6197,
+  "text": "Per limitare i consumi è bene che il motore funzioni sempre a basse temperature (massimo 60°C)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29916",
+  "quesito": 6198,
+  "text": "Il radiatore serve a smaltire, grazie al passaggio forzato di aria, il calore in eccesso prodotto dal funzionamento del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29917",
+  "quesito": 6198,
+  "text": "Il radiatore è uno scambiatore di calore acqua-aria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29918",
+  "quesito": 6198,
+  "text": "Non si deve aggiungere acqua o liquido freddo nel radiatore quando il motore è molto caldo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29919",
+  "quesito": 6198,
+  "text": "In estate è bene sostituire il liquido refrigerante con acqua perché si evitano possibili surriscaldamenti del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29920",
+  "quesito": 6198,
+  "text": "Il radiatore serve a riscaldare l’abitacolo del veicolo utilizzando il calore prodotto dal funzionamento del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29921",
+  "quesito": 6198,
+  "text": "Se si prevede di circolare con temperature molto basse (-10°C) occorre sostituire il liquido refrigerante con alcool etilico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29922",
+  "quesito": 6199,
+  "text": "Il ventilatore dell'impianto di raffreddamento serve ad accelerare il raffreddamento del liquido che passa dal radiatore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29923",
+  "quesito": 6199,
+  "text": "Il ventilatore dell'impianto di raffreddamento si ferma automaticamente quando la temperatura del liquido di raffreddamento si abbassa oltre una determinata temperatura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29924",
+  "quesito": 6199,
+  "text": "Il ventilatore dell'impianto di raffreddamento si attiva automaticamente quando la temperatura del liquido di raffreddamento supera una determinata temperatura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29925",
+  "quesito": 6199,
+  "text": "Il liquido di raffreddamento viene messo in circolazione da una pompa centrifuga",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29926",
+  "quesito": 6199,
+  "text": "Il liquido dell’impianto di raffreddamento può essere sostituito con acqua, in caso di urgente necessità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29927",
+  "quesito": 6199,
+  "text": "Il liquido dell’impianto di raffreddamento ha un’alta temperatura di ebollizione (oltre 100°C) e una bassa temperatura di congelamento (meno di 0°C)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29928",
+  "quesito": 6199,
+  "text": "Il corretto funzionamento dell’impianto di raffreddamento si controlla grazie a una spia luminosa e a un termometro posti sulla plancia portastrumenti del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29929",
+  "quesito": 6199,
+  "text": "Il termostato dell'impianto di raffreddamento serve a regolare il riscaldamento del motore mantenendo la sua temperatura entro un intervallo di temperature ottimale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29930",
+  "quesito": 6199,
+  "text": "Il ventilatore dell'impianto di raffreddamento funziona solamente quando il veicolo è fermo con il motore in moto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29931",
+  "quesito": 6199,
+  "text": "Il ventilatore dell'impianto di raffreddamento viene attivato dal conducente per mezzo di un interruttore che si trova in cabina",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29932",
+  "quesito": 6199,
+  "text": "Quando il ventilatore dell'impianto di raffreddamento viene attivato, si disattiva contemporaneamente il compressore dell’impianto di condizionamento dell’aria dell'abitacolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29933",
+  "quesito": 6199,
+  "text": "Il ventilatore dell'impianto di raffreddamento non può entrare in funzione se la temperatura dell’aria esterna è inferiore a 0°C",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29934",
+  "quesito": 6199,
+  "text": "Il ventilatore dell'impianto di raffreddamento non può entrare in funzione se la velocità di marcia del veicolo è superiore a 80 km/h",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29935",
+  "quesito": 6199,
+  "text": "Il ventilatore dell'impianto di raffreddamento viene spento nelle lunghe discese",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "12",
+  "code": "29936",
+  "quesito": 6199,
+  "text": "Il termostato dell'impianto di raffreddamento può essere attivato dal conducente per mezzo di un interruttore che si trova sul cruscotto",
+  "risposta": false,
+  "image": null
+ }
+]

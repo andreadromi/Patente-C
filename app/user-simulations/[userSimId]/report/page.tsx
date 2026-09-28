@@ -9,7 +9,7 @@ import { IconaArgomento } from '@/components/IconaArgomento'
 
 type Esito = 'giusto' | 'sbagliato' | 'vuoto'
 interface DomandaReport {
-  code: string; argomentoCode: string; gruppo: string | null; testo: string; figura: string | null
+  code: string; argomentoCode: string; testo: string; figura: string | null
   risposta: boolean; data: boolean | null; esito: Esito
 }
 interface ArgomentoReport { argomento: string; nome: string; giuste: number; totali: number }
@@ -149,7 +149,6 @@ export default function ReportPage() {
                         // eslint-disable-next-line @next/next/no-img-element -- figure del listato, dimensioni variabili
                         <img src={`/figure/${d.figura}`} alt="Figura della domanda" style={{display:'block',maxWidth:'100%',maxHeight:140,margin:'4px auto 10px',objectFit:'contain'}}/>
                       )}
-                      {d.gruppo && <p style={{fontSize:14,fontWeight:600,color:'var(--text2)',margin:'0 0 4px',lineHeight:1.45}}>{d.gruppo}</p>}
                       <p style={{fontSize:15.5,fontWeight:700,color:'var(--text)',margin:'0 0 10px',lineHeight:1.45}}>{d.testo}</p>
                       {/* La risposta data e quella giusta, in parole */}
                       <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',gap:10,paddingTop:9,borderTop:'1px solid var(--border)',fontSize:14.5,fontWeight:700}}>

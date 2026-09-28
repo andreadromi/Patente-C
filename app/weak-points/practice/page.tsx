@@ -10,8 +10,7 @@ import { VeroFalso } from '@/components/VeroFalso'
 import { nomeBreve } from '@/lib/argomenti'
 
 interface WPQ {
-  weakPointId: string; questionId: string; code: string; text: string
-  questionGroup: string|null; image: string|null
+  weakPointId: string; questionId: string; code: string; text: string; image: string|null
   argomento: string; argomentoCode: string; consecutiveCorrect: number; totalAttempts: number
 }
 
@@ -97,9 +96,9 @@ export default function WPPracticePage() {
 
       <div style={{flex:1,overflowY:'auto',padding:'20px 16px'}}>
         <Domanda codice={current.code} etichetta={nomeBreve(current.argomentoCode, current.argomento)}
-          gruppo={current.questionGroup} testo={current.text} figura={current.image} />
+          testo={current.text} figura={current.image} />
 
-        <VeroFalso
+        <VeroFalso key={current.weakPointId}
           risposta={feedback?.risposta}
           giusta={feedback?.correctAnswer ?? true}
           correzione={!!feedback}

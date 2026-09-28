@@ -1,0 +1,2458 @@
+[
+ {
+  "argomentoCode": "13",
+  "code": "29937",
+  "quesito": 6200,
+  "text": "Scopo fondamentale dello pneumatico è quello di assicurare l’aderenza ruota-strada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29938",
+  "quesito": 6200,
+  "text": "Lo pneumatico agisce insieme alle sospensioni per il molleggio del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29939",
+  "quesito": 6200,
+  "text": "Entro i limiti dell’aderenza, lo pneumatico assicura la trasmissione al suolo della forza motrice",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29940",
+  "quesito": 6200,
+  "text": "Entro i limiti dell’aderenza, lo pneumatico assicura la trasmissione al suolo della forza frenante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29941",
+  "quesito": 6200,
+  "text": "Lo pneumatico evita che il peso del veicolo gravante sulla strada danneggi il manto stradale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29942",
+  "quesito": 6200,
+  "text": "Entro i limiti dell’aderenza, lo pneumatico permette di dirigere il veicolo nella direzione impostata dal conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29943",
+  "quesito": 6200,
+  "text": "Il battistrada dello pneumatico ha la funzione di drenare l’acqua, eventualmente presente sulla carreggiata, dall’area di impronta del battistrada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29944",
+  "quesito": 6200,
+  "text": "Lo pneumatico deve essere il più rigido possibile",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29945",
+  "quesito": 6200,
+  "text": "Durante la stagione fredda, lo pneumatico deve essere fatto scaldare alcuni minuti prima della partenza",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29946",
+  "quesito": 6200,
+  "text": "Una spia rossa posta sul cruscotto avverte l’autista quando lo pneumatico deve essere sostituito",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29947",
+  "quesito": 6200,
+  "text": "Acquistando nuovi pneumatici con mescola più morbida del set precedente, occorre irrigidire gli ammortizzatori",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29948",
+  "quesito": 6200,
+  "text": "L’aderenza ruota-strada non dipende dallo stato d’usura degli pneumatici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29949",
+  "quesito": 6200,
+  "text": "Se, con un veicolo pesante, si devono affrontare salite di pendenza superiore al 15%, occorre montare pneumatici rinforzati",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29950",
+  "quesito": 6200,
+  "text": "Non si può circolare in autostrada con veicoli che montano pneumatici ricostruiti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29951",
+  "quesito": 6201,
+  "text": "La ruota è composta da disco e cerchio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29952",
+  "quesito": 6201,
+  "text": "Sul cerchio è riportata una sigla che permette di ricavarne le principali caratteristiche",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29953",
+  "quesito": 6201,
+  "text": "Dalla sigla riportata sul cerchio si può ricavarne la larghezza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29954",
+  "quesito": 6201,
+  "text": "Dalla sigla riportata sul cerchio si può ricavare il tipo di profilo della balconata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29955",
+  "quesito": 6201,
+  "text": "Dalla sigla riportata sul cerchio si può ricavarne il diametro di calettamento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29956",
+  "quesito": 6201,
+  "text": "Dalla sigla riportata sul cerchio si può ricavarne l’OFF-SET",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29957",
+  "quesito": 6201,
+  "text": "Dalla sigla riportata sullo pneumatico si può ricavarne l’anno e la settimana di fabbricazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29958",
+  "quesito": 6201,
+  "text": "Dalla sigla riportata sul cerchio si può ricavarne il giorno di fabbricazione dello pneumatico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29959",
+  "quesito": 6201,
+  "text": "Dalla sigla riportata sul cerchio si può ricavarne la data in cui deve essere revisionato lo pneumatico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29960",
+  "quesito": 6201,
+  "text": "Dalla sigla riportata sul cerchio si può ricavarne l'anno di scadenza dello pneumatico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29961",
+  "quesito": 6201,
+  "text": "Dalla sigla riportata sul cerchio si può ricavare il tipo di materiale con cui è stato realizzato lo pneumatico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29962",
+  "quesito": 6201,
+  "text": "La ruota è composta da disco e camera d’aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29963",
+  "quesito": 6201,
+  "text": "Sul cerchio è riportata una sigla che permette di ricavare se può essere utilizzato per marcia fuoristrada",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29964",
+  "quesito": 6201,
+  "text": "La sigla riportata sul cerchio è in inglese e nella lingua dell’intestatario del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29965",
+  "quesito": 6202,
+  "text": "Gli pneumatici possono avere una camera d’aria interna",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29966",
+  "quesito": 6202,
+  "text": "Gli pneumatici tubeless sono ricoperti all’interno di un strato di gomma speciale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29967",
+  "quesito": 6202,
+  "text": "In uno pneumatico tubeless la valvola è fissata al cerchio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29968",
+  "quesito": 6202,
+  "text": "In uno pneumatico con camera d’aria la valvola è fissata alla camera d’aria stessa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29969",
+  "quesito": 6202,
+  "text": "Generalmente, uno pneumatico tubeless forato si affloscia più lentamente di uno pneumatico con lo stesso tipo di foratura, dotato di camera d’aria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29970",
+  "quesito": 6202,
+  "text": "Se si usano pneumatici tubeless con aggiunta di camera d’aria vi è il pericolo di formazioni di sacche d’aria interne allo pneumatico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29971",
+  "quesito": 6202,
+  "text": "Lo pneumatico comprende la carcassa, i talloni e il battistrada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29972",
+  "quesito": 6202,
+  "text": "I talloni sono la parte dello pneumatico a contatto col cerchio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29973",
+  "quesito": 6202,
+  "text": "Negli pneumatici tubeless, i talloni sono fondamentali per garantire la tenuta d'aria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29974",
+  "quesito": 6202,
+  "text": "La carcassa di uno pneumatico è principalmente composta da tele con fili metallici e gomma",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29975",
+  "quesito": 6202,
+  "text": "Il rumore generato da uno pneumatico dipende principalmente dal disegno e dal materiale con cui sono realizzate le scolpiture del battistrada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29976",
+  "quesito": 6202,
+  "text": "Gli pneumatici per veicoli pesanti devono avere una camera d’aria interna",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29977",
+  "quesito": 6202,
+  "text": "Gli pneumatici tubeless sono più pericolosi di quelli con camera d’aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29978",
+  "quesito": 6202,
+  "text": "Lo pneumatico di tipo tubeless è costituito dalla valvola, dal copertone e dalla camera d’aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29979",
+  "quesito": 6202,
+  "text": "Generalmente, uno pneumatico dotato di camera d’aria forato si affloscia più lentamente di uno pneumatico con lo stesso tipo di foratura, ma di tipo tubeless",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29980",
+  "quesito": 6202,
+  "text": "Uno pneumatico di tipo tubeless non è dotato di valvola",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29981",
+  "quesito": 6202,
+  "text": "Uno pneumatico con camera d’aria è più soggetto a consumarsi al centro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29982",
+  "quesito": 6202,
+  "text": "Il disegno del battistrada dello pneumatico è annotato sulla carta di circolazione del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29983",
+  "quesito": 6202,
+  "text": "Sul veicolo possono essere montati 4 pneumatici con disegno del battistrada differente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29984",
+  "quesito": 6202,
+  "text": "I talloni sono le parti dello pneumatico che garantiscono l’aderenza con la strada",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29985",
+  "quesito": 6202,
+  "text": "Sui fianchi dello pneumatico sono presenti piccoli intagli che migliorano lo smaltimento dell’acqua in caso di forti temporali",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29986",
+  "quesito": 6202,
+  "text": "I fianchi dello pneumatico devono essere indeformabili",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29987",
+  "quesito": 6203,
+  "text": "Gli pneumatici possono essere di tipo \"a tele incrociate\"",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29988",
+  "quesito": 6203,
+  "text": "Gli pneumatici possono essere di tipo \"radiale\"",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29989",
+  "quesito": 6203,
+  "text": "Gli pneumatici si distinguono in \"radiali\" o \"a tele incrociate\" a seconda della disposizione delle tele della carcassa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29990",
+  "quesito": 6203,
+  "text": "Gli pneumatici di tipo \"radiale\" presentano, in genere, una maggior flessibilità dei fianchi rispetto a quelli a tele incrociate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29991",
+  "quesito": 6203,
+  "text": "Rispetto agli pneumatici radiali, gli pneumatici di tipo \"a tele incrociate\" presentano, in genere, una minor area di contatto in curva",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29992",
+  "quesito": 6203,
+  "text": "Gli pneumatici possono essere di tipo \"a tele sfalsate\"",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29993",
+  "quesito": 6203,
+  "text": "Gli pneumatici possono essere di tipo \"longitudinale\"",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29994",
+  "quesito": 6203,
+  "text": "Gli pneumatici si distinguono in \"radiali\" o a \"a tele incrociate\" a seconda del numero e del materiale di composizione delle tele",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29995",
+  "quesito": 6203,
+  "text": "Rispetto agli pneumatici radiali, gli pneumatici di tipo \"a tele incrociate\" presentano, in genere, una maggior area di contatto in curva",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29996",
+  "quesito": 6203,
+  "text": "Gli pneumatici di tipo \"radiale\" presentano, in genere, una minor flessibilità dei fianchi rispetto a quelli \"a tele incrociate\"",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29997",
+  "quesito": 6204,
+  "text": "Il battistrada è la parte dello pneumatico che serve a garantire l’aderenza con l’asfalto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29998",
+  "quesito": 6204,
+  "text": "Il battistrada deve garantire un idoneo drenaggio dell’acqua eventualmente presente sulla strada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "29999",
+  "quesito": 6204,
+  "text": "Nel battistrada sono presenti degli indicatori di usura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30000",
+  "quesito": 6204,
+  "text": "L’elasticità del battistrada varia al variare della temperatura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30001",
+  "quesito": 6204,
+  "text": "Il battistrada presenta differenti disegni a seconda della marca e del tipo dello pneumatico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30002",
+  "quesito": 6204,
+  "text": "Il disegno del battistrada degli pneumatici degli assi posteriori può essere diverso da quello dell’asse anteriore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30003",
+  "quesito": 6204,
+  "text": "Il battistrada deve avere, per legge, uno spessore minimo degli intagli di 1,6 millimetri su tutta la sua superficie",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30004",
+  "quesito": 6204,
+  "text": "Il battistrada deve avere, per legge, uno spessore minimo degli intagli di 1,6 millimetri su almeno l'80% della sua superficie",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30005",
+  "quesito": 6204,
+  "text": "Il battistrada di uno pneumatico radiale deve avere maggior larghezza rispetto a uno pneumatico a tele incrociate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30006",
+  "quesito": 6204,
+  "text": "In caso di ruote gemellate, il battistrada degli pneumatici dell’asse posteriore può essere realizzato senza scolpiture",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30007",
+  "quesito": 6204,
+  "text": "Il battistrada deve essere realizzato con tasselli indeformabili",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30008",
+  "quesito": 6204,
+  "text": "Il battistrada è realizzato con un composto di nylon e gomma",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30009",
+  "quesito": 6204,
+  "text": "Il battistrada deve essere il più possibile rigido",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30010",
+  "quesito": 6204,
+  "text": "I tasselli del battistrada non possono essere più alti di 3 millimetri per non aumentare eccessivamente la deriva dello pneumatico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30011",
+  "quesito": 6204,
+  "text": "Il battistrada deve avere, per legge, uno spessore minimo degli intagli di 2,5 millimetri su tutta la sua superficie",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30012",
+  "quesito": 6205,
+  "text": "I fianchi di uno pneumatico devono essere moderatamente flessibili",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30013",
+  "quesito": 6205,
+  "text": "I fianchi di uno pneumatico sono costituiti principalmente da gomma e tele",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30014",
+  "quesito": 6205,
+  "text": "I fianchi di uno pneumatico cooperano allo smaltimento del calore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30015",
+  "quesito": 6205,
+  "text": "Se i fianchi di uno pneumatico sono eccessivamente flessibili vi è un aumento della deriva",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30016",
+  "quesito": 6205,
+  "text": "I fianchi di uno pneumatico non possono presentare lesioni che interessano le tele",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30017",
+  "quesito": 6205,
+  "text": "I fianchi di uno pneumatico devono essere molto rigidi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30018",
+  "quesito": 6205,
+  "text": "Se i fianchi di uno pneumatico sono rigidi vi è un aumento della deriva",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30019",
+  "quesito": 6205,
+  "text": "I fianchi interni degli pneumatici gemellati possono essere rivestiti in lega di alluminio, per poter resistere al reciproco sfregamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30020",
+  "quesito": 6205,
+  "text": "I fianchi di uno pneumatico possono aver subito lesioni che interessano le tele, purché le stesse siano state riparate da officina autorizzata che ne certifichi la sicurezza",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30021",
+  "quesito": 6205,
+  "text": "I fianchi di uno pneumatico devono avere spessore minimo di 1,6 millimetri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30022",
+  "quesito": 6206,
+  "text": "L’indice di capacità di carico di uno pneumatico, indica il carico massimo sopportabile dallo pneumatico alla velocità massima per esso ammessa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30023",
+  "quesito": 6206,
+  "text": "L’indice di capacità di carico di uno pneumatico, può essere un numero del tipo \"154\"",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30024",
+  "quesito": 6206,
+  "text": "L’indice di capacità di carico di uno pneumatico, può riportare anche il valore massimo ammesso nel caso di montaggio in gemello",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30025",
+  "quesito": 6206,
+  "text": "L’indice di capacità di carico di uno pneumatico, è un numero di due o tre cifre riportato sul fianco della copertura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30026",
+  "quesito": 6206,
+  "text": "L’indice di capacità di carico di uno pneumatico, può essere un numero del tipo \"15400\"",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30027",
+  "quesito": 6206,
+  "text": "Nel caso di pneumatici gemellati, l’indice di capacità di carico di uno pneumatico è un numero di tre cifre seguito dalla sigla TWIN",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30028",
+  "quesito": 6206,
+  "text": "L’indice di capacità di carico di uno pneumatico è un numero di due o tre cifre seguito dalle lettere KG, riportato sul fianco della copertura",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30029",
+  "quesito": 6206,
+  "text": "L’indice di capacità di carico di uno pneumatico non viene indicato nel caso di pneumatici da utilizzare solo in gemello",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30030",
+  "quesito": 6207,
+  "text": "L’indice di velocità di uno pneumatico indica la sua velocità massima di impiego",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30031",
+  "quesito": 6207,
+  "text": "L’indice di velocità di uno pneumatico può essere rappresentato da una lettera maiuscola, ad esempio \"J\"",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30032",
+  "quesito": 6207,
+  "text": "L’indice di velocità di uno pneumatico è sempre indicato sul suo fianco",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30033",
+  "quesito": 6207,
+  "text": "L’indice di velocità di uno pneumatico permette di ricavare la velocità massima di impiego dello pneumatico in buone condizioni di manutenzione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30034",
+  "quesito": 6207,
+  "text": "L’indice di velocità di uno pneumatico indica la sua velocità minima di impiego",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30035",
+  "quesito": 6207,
+  "text": "Nel caso di pneumatici gemellati, l’indice di velocità di uno pneumatico indica il doppio della sua velocità massima di impiego",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30036",
+  "quesito": 6207,
+  "text": "L’indice di capacità di carico di uno pneumatico è un numero di due o tre cifre seguito dalle lettere km/h, riportato sul suo fianco",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30037",
+  "quesito": 6207,
+  "text": "L’indice di velocità di uno pneumatico non viene indicato nel caso di pneumatici da utilizzare solo in gemello",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30038",
+  "quesito": 6208,
+  "text": "Sul fianco dello pneumatico viene indicato se si tratta di uno pneumatico da utilizzare senza camera d’aria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30039",
+  "quesito": 6208,
+  "text": "Se sul fianco dello pneumatico compare la scritta M+S, significa che lo pneumatico è omologato a percorsi innevati o fangosi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30040",
+  "quesito": 6208,
+  "text": "Sul fianco dello pneumatico viene indicato se si tratta di uno pneumatico da utilizzare con camera d’aria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30041",
+  "quesito": 6208,
+  "text": "Dalle scritte che compaiono sul fianco dello pneumatico è possibile ricavare la settimana e l’anno di produzione dello pneumatico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30042",
+  "quesito": 6208,
+  "text": "Sul fianco dello pneumatico si può trovare la sigla TWI",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30043",
+  "quesito": 6208,
+  "text": "La sigla TWI, posta sul fianco dello pneumatico, si trova in corrispondenza degli indicatori di usura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30044",
+  "quesito": 6208,
+  "text": "Il diametro di calettamento del cerchio su cui montare lo pneumatico è in genere indicato in millimetri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30045",
+  "quesito": 6208,
+  "text": "La larghezza nominale di sezione di uno pneumatico è in genere indicata in pollici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30046",
+  "quesito": 6208,
+  "text": "Se sul fianco dello pneumatico compare la scritta M+S, significa che lo pneumatico è da utilizzarsi su veicoli che trainano un rimorchio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30047",
+  "quesito": 6208,
+  "text": "Sul fianco dello pneumatico si può trovare la sigla MCTC se è stato omologato in Italia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30048",
+  "quesito": 6208,
+  "text": "La sigla TWI, posta sul fianco dello pneumatico, si trova in corrispondenza della valvola di gonfiaggio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30049",
+  "quesito": 6208,
+  "text": "La sigla TWI posta sul fianco dello pneumatico indica che si tratta di uno pneumatico da usare in gemello",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30051",
+  "quesito": 6208,
+  "text": "Dalle scritte che compaiono sul fianco dello pneumatico non è possibile ricavarne la marca",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30052",
+  "quesito": 6209,
+  "text": "I tipi di pneumatici utilizzabili sul veicolo sono indicati sulla carta di circolazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30053",
+  "quesito": 6209,
+  "text": "Gli pneumatici dello stesso asse devono essere dello stesso tipo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30054",
+  "quesito": 6209,
+  "text": "Gli pneumatici del veicolo possono essere di tipi differenti, purché uguali sullo stesso asse",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30055",
+  "quesito": 6209,
+  "text": "Due ruote che montano cerchi diversi possono avere la stessa circonferenza di rotolamento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30056",
+  "quesito": 6209,
+  "text": "Il complesso pneumatico-cerchio non deve sporgere lateralmente dalla sagoma originale del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30057",
+  "quesito": 6209,
+  "text": "Le caratteristiche dimensionali degli pneumatici che sono montati sul veicolo non possono essere diverse da quelle riportate sulla carta di circolazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30058",
+  "quesito": 6209,
+  "text": "Su ogni veicolo può essere utilizzato un solo tipo di pneumatico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30059",
+  "quesito": 6209,
+  "text": "La marca di pneumatici utilizzabili sul veicolo è indicata sulla carta di circolazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30060",
+  "quesito": 6209,
+  "text": "Gli pneumatici montati sullo stesso asse devono essere di tipo diverso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30061",
+  "quesito": 6209,
+  "text": "Gli pneumatici dell’asse motore sono contraddistinti dalla sigla TRACT",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30062",
+  "quesito": 6209,
+  "text": "Sui veicoli pesanti è obbligatoria la rotazione degli pneumatici al massimo ogni 20000 km",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30063",
+  "quesito": 6209,
+  "text": "Sulla carta di circolazione è indicata la data a partire dalla quale è possibile utilizzare gli pneumatici invernali",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30064",
+  "quesito": 6210,
+  "text": "Gli intagli del battistrada servono a favorire il deflusso di acqua eventualmente presente sulla carreggiata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30065",
+  "quesito": 6210,
+  "text": "L’aquaplaning consiste in una perdita di aderenza legata alla presenza di un velo di acqua compressa tra battistrada e pavimentazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30066",
+  "quesito": 6210,
+  "text": "In fase di aquaplaning il veicolo perde direzionalità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30067",
+  "quesito": 6210,
+  "text": "A parità di altre condizioni, il pericolo che si verifichi il fenomeno dell’aquaplaning aumenta con l’aumentare della velocità del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30068",
+  "quesito": 6210,
+  "text": "A parità di altre condizioni, il pericolo che si verifichi il fenomeno dell’aquaplaning aumenta con la diminuzione di profondità degli intagli del battistrada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30069",
+  "quesito": 6210,
+  "text": "A parità di altre condizioni, il pericolo che si verifichi il fenomeno dell’aquaplaning aumenta con la diminuzione della pressione degli pneumatici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30070",
+  "quesito": 6210,
+  "text": "Se il veicolo è in situazione di aquaplaning, la prima cosa da fare è diminuire la velocità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30071",
+  "quesito": 6210,
+  "text": "L’aquaplaning non può verificarsi quando i veicoli sono dotati di ruote gemellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30072",
+  "quesito": 6210,
+  "text": "L’aquaplaning non può verificarsi se gli intagli del battistrada hanno almeno quattro millimetri di profondità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30073",
+  "quesito": 6210,
+  "text": "L’aquaplaning può interessare la motrice ma non il rimorchio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30074",
+  "quesito": 6210,
+  "text": "Se il veicolo è in situazione di aquaplaning, la prima cosa da fare è aumentare la velocità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30075",
+  "quesito": 6210,
+  "text": "Se il veicolo è in situazione di aquaplaning, la prima cosa da fare è frenare a fondo, premendo nel contempo il pedale della frizione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30076",
+  "quesito": 6210,
+  "text": "Se il veicolo è in situazione di aquaplaning, la prima cosa da fare è sterzare a fondo in direzione del margine destro della carreggiata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30077",
+  "quesito": 6210,
+  "text": "L’aquaplaning non può verificarsi su veicoli dotati di sistema antibloccaggio in frenata ABS",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30078",
+  "quesito": 6211,
+  "text": "Ruote gemellate significa che ad ogni estremità di un asse, è montata una coppia di ruote",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30079",
+  "quesito": 6211,
+  "text": "Due ruote gemellate devono possibilmente avere lo stesso grado di usura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30080",
+  "quesito": 6211,
+  "text": "Due ruote gemellate devono essere gonfiate alla stessa pressione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30081",
+  "quesito": 6211,
+  "text": "Sulla ruota interna di ruote montate in gemello, occorre in genere utilizzare una valvola di gonfiaggio dotata di apposita prolunga",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30082",
+  "quesito": 6211,
+  "text": "Tra le due ruote gemellate viene montato un distanziale per evitare sfregamenti dei fianchi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30083",
+  "quesito": 6211,
+  "text": "I segnalatori della pressione degli pneumatici sono particolarmente utili quando le ruote sono gemellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30084",
+  "quesito": 6211,
+  "text": "Le ruote gemellate sono generalmente montate sull’asse sterzante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30085",
+  "quesito": 6211,
+  "text": "Le ruote gemellate hanno un’unica valvola di gonfiaggio, in quanto le camere d’aria sono comunicanti tra di loro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30086",
+  "quesito": 6211,
+  "text": "L’aderenza del veicolo sull’asfalto è minore se le ruote sono gemellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30087",
+  "quesito": 6211,
+  "text": "Il distanziale posto tra le due ruote gemellate facilita lo sfregamento degli pneumatici tra loro, in particolare a veicolo carico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30088",
+  "quesito": 6211,
+  "text": "Tutti i veicoli di massa complessiva a pieno carico superiore a 7 tonnellate, devono montare ruote gemellate sull’ultimo asse posteriore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30089",
+  "quesito": 6211,
+  "text": "I veicoli dotati di ruote gemellate devono essere muniti di sistema antibloccaggio in frenata ABS",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30090",
+  "quesito": 6212,
+  "text": "Lo pneumatico è un involucro di gomma, rinforzato con elementi metallici o tessili, che viene montato sul cerchio della ruota e viene gonfiato ad una pressione superiore a quella atmosferica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30091",
+  "quesito": 6212,
+  "text": "In uno pneumatico marcato \"315/80 R 22,5 152/148 M\", il valore 22,5 rappresenta il diametro di calettamento del cerchio, espresso in pollici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30092",
+  "quesito": 6212,
+  "text": "L'usura anomala del battistrada di uno pneumatico nella zona centrale può essere dovuta ad una pressione di gonfiaggio eccessiva",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30093",
+  "quesito": 6212,
+  "text": "La verifica dell'efficienza di uno pneumatico prevede il controllo della sua struttura per individuare eventuali anomalie dovute ad usura, deterioramento del materiale a causa dell'invecchiamento o lesioni dovute a contatti accidentali",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30094",
+  "quesito": 6212,
+  "text": "L'usura eccessiva del battistrada di uno pneumatico può causare il fenomeno dell'aquaplaning",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30095",
+  "quesito": 6212,
+  "text": "Il fenomeno dell'aquaplaning è favorito essenzialmente dalla forte usura del battistrada, dalla elevata velocità del veicolo, dalla bassa pressione di gonfiaggio dello pneumatico, dall'alto spessore dell'acqua presente sul manto stradale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30096",
+  "quesito": 6212,
+  "text": "In caso di sostituzione di uno pneumatico si devono rispettare tassativamente i valori dimensionali, di carico e di velocità, riportati sulla carta di circolazione del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30097",
+  "quesito": 6212,
+  "text": "Il battistrada di uno pneumatico ha lo scopo di facilitare l'allontanamento dell'acqua e, negli autoveicoli, deve avere uno spessore di almeno 1,2 millimetri su tutta la superficie dello pneumatico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30098",
+  "quesito": 6212,
+  "text": "In uno pneumatico marcato \"315/80 R 22,5 152/148 M\", i valori 152/148 rappresentano rispettivamente la larghezza nominale della sezione e l'altezza del fianco espresse in millimetri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30099",
+  "quesito": 6212,
+  "text": "In uno pneumatico marcato \"315/80 R 22,5 152/148 M\", i valori 152/148 rappresentano l'indice di carico rispettivamente per ruota gemellata e per ruota singola",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30100",
+  "quesito": 6212,
+  "text": "In uno pneumatico marcato \"315/80 R 22,5 152/148 M\", l'iscrizione R 22,5 significa che lo pneumatico ha un raggio di 22,5 centimetri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30101",
+  "quesito": 6212,
+  "text": "La verifica della pressione di gonfiaggio degli pneumatici va sempre effettuata con gli pneumatici caldi e quindi dopo aver percorso un numero sufficiente di chilometri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30102",
+  "quesito": 6212,
+  "text": "Il fenomeno dell'aquaplaning è favorito dall'eccessiva pressione di gonfiaggio degli pneumatici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30103",
+  "quesito": 6213,
+  "text": "In uno pneumatico marcato \"315/100 R 20 154/149 M\", i numeri 154/149 rappresentano rispettivamente l’indice di carico in singolo o in gemello e la lettera M il codice di velocità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30104",
+  "quesito": 6213,
+  "text": "Tra le caratteristiche di uno pneumatico riportate sulla carta di circolazione è presente l’indice di velocità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30105",
+  "quesito": 6213,
+  "text": "La serie o rapporto di aspetto indica la percentuale tra l'altezza dello pneumatico e la sua larghezza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30106",
+  "quesito": 6213,
+  "text": "Gli pneumatici possono avere un senso di rotazione che, nel caso, viene indicato sul fianco con una freccia",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30107",
+  "quesito": 6213,
+  "text": "L'indicazione \"M & S\" indica uno pneumatico idoneo all'uso in caso di neve, o comunque di basse temperature",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30108",
+  "quesito": 6213,
+  "text": "Lo spessore minimo del battistrada è di 1,6 millimetri sulla fascia centrale del battistrada e 1,4 millimetri sui 3 centimetri di bordo da entrambi i lati",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30109",
+  "quesito": 6213,
+  "text": "Lo spessore minimo del battistrada per uno pneumatico industriale è di 2 millimetri su tutta la superficie del battistrada",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30110",
+  "quesito": 6213,
+  "text": "In uno pneumatico marcato \"315/100 R 20 154/149 M\", le lettere \"R\" ed \"M\" indicano rispettivamente la possibilità d'uso su un rimorchio e quella su strade di montagna",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30111",
+  "quesito": 6213,
+  "text": "Quando gli indici di carico segnati su uno pneumatico sono due, il primo si riferisce allo pneumatico su ruota gemellata, il secondo su ruota singola",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30112",
+  "quesito": 6213,
+  "text": "La ruota di scorta fa parte dei dispositivi obbligatori di un autoveicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30113",
+  "quesito": 6213,
+  "text": "Un veicolo industriale di massa complessiva a pieno carico superiore a 18 tonnellate non rischia di subire il fenomeno dell'aquaplaning, perché è troppo pesante perché ciò accada",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30114",
+  "quesito": 6213,
+  "text": "L'indicazione M & S indica uno pneumatico fabbricato nel Regno Unito",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30115",
+  "quesito": 6214,
+  "text": "Gli pneumatici radiali sono più flessibili di quelli a tele incrociate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30116",
+  "quesito": 6214,
+  "text": "Uno pneumatico tubeless è sprovvisto di camera d’aria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30117",
+  "quesito": 6214,
+  "text": "Gli pneumatici gemellati devono essere simmetrici, per dimensione e disegno, rispetto all’asse di marcia",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30118",
+  "quesito": 6214,
+  "text": "Gli pneumatici radiali sono più resistenti di quelli tradizionali",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30119",
+  "quesito": 6214,
+  "text": "Gli pneumatici radiali sono obbligatori per l’equipaggiamento di un mezzo d’opera",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30120",
+  "quesito": 6214,
+  "text": "Uno pneumatico tubeless deve essere gonfiato ad una pressione maggiore rispetto a uno con camera d’aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30121",
+  "quesito": 6214,
+  "text": "Uno pneumatico tubeless ha una minore tenuta di strada rispetto a uno con camera d’aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30122",
+  "quesito": 6214,
+  "text": "Gli pneumatici gemellati che presentano zone di consumo sui fianchi interni non sono pericolosi perché il fatto è dovuto a normale usura da contatto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30123",
+  "quesito": 6215,
+  "text": "La corretta pressione di gonfiaggio degli pneumatici è fondamentale per il confort di marcia",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30124",
+  "quesito": 6215,
+  "text": "La corretta pressione di gonfiaggio degli pneumatici è fondamentale per la tenuta di strada del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30125",
+  "quesito": 6215,
+  "text": "La corretta pressione di gonfiaggio degli pneumatici è fondamentale per la stabilità del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30126",
+  "quesito": 6215,
+  "text": "La pressione di gonfiaggio degli pneumatici deve essere adeguata al carico del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30127",
+  "quesito": 6215,
+  "text": "La corretta pressione di gonfiaggio degli pneumatici è fondamentale per la durata dello pneumatico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30128",
+  "quesito": 6215,
+  "text": "La corretta pressione di gonfiaggio degli pneumatici garantisce la giusta area di impronta del battistrada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30129",
+  "quesito": 6215,
+  "text": "La corretta pressione di gonfiaggio degli pneumatici comporta migliore confort, ma maggior consumo di carburante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30130",
+  "quesito": 6215,
+  "text": "Se si prevede di dover percorrere lunghe discese, occorre abbassare la pressione degli pneumatici di mezzo Bar",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30131",
+  "quesito": 6215,
+  "text": "La corretta pressione di gonfiaggio degli pneumatici è fondamentale solo nei mesi estivi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30132",
+  "quesito": 6215,
+  "text": "Il valore della corretta pressione di gonfiaggio degli pneumatici è indicato sul fianco dello pneumatico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30133",
+  "quesito": 6215,
+  "text": "La corretta pressione di gonfiaggio degli pneumatici è fondamentale solo a veicolo a pieno carico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30134",
+  "quesito": 6215,
+  "text": "La corretta pressione di gonfiaggio degli pneumatici deve essere annotata sulla carta di circolazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30135",
+  "quesito": 6216,
+  "text": "La pressione di gonfiaggio degli pneumatici deve essere misurata a pneumatico freddo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30136",
+  "quesito": 6216,
+  "text": "Alla fine di un viaggio, uno pneumatico troppo gonfio ha il battistrada più caldo al centro",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30137",
+  "quesito": 6216,
+  "text": "Alla fine di un viaggio, uno pneumatico sgonfio ha il battistrada più caldo ai bordi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30138",
+  "quesito": 6216,
+  "text": "L’insufficiente pressione di gonfiaggio di uno pneumatico non consente il corretto appoggio del battistrada sulla sede stradale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30139",
+  "quesito": 6216,
+  "text": "L’insufficiente pressione di gonfiaggio di uno pneumatico riduce l’appoggio e la pressione di contatto della parte centrale del battistrada sulla sede stradale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30140",
+  "quesito": 6216,
+  "text": "L’eccessiva pressione di gonfiaggio di uno pneumatico non consente il corretto appoggio del battistrada sulla sede stradale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30141",
+  "quesito": 6216,
+  "text": "L’eccessiva pressione di gonfiaggio di uno pneumatico riduce l’appoggio e la pressione dei bordi del battistrada sulla sede stradale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30142",
+  "quesito": 6216,
+  "text": "L’insufficiente pressione di gonfiaggio di uno pneumatico riduce l’aderenza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30143",
+  "quesito": 6216,
+  "text": "L’eccessiva pressione di gonfiaggio di uno pneumatico riduce l’aderenza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30144",
+  "quesito": 6216,
+  "text": "L’insufficiente pressione di gonfiaggio comporta il surriscaldamento dello pneumatico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30145",
+  "quesito": 6216,
+  "text": "L’insufficiente pressione di gonfiaggio di uno pneumatico comporta una sua maggior e più irregolare usura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30146",
+  "quesito": 6216,
+  "text": "L’insufficiente pressione di gonfiaggio di uno pneumatico comporta una sua maggior usura sui bordi del battistrada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30147",
+  "quesito": 6216,
+  "text": "L’insufficiente pressione di gonfiaggio di uno pneumatico comporta l’aumento della resistenza al rotolamento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30148",
+  "quesito": 6216,
+  "text": "L’insufficiente pressione di gonfiaggio di uno pneumatico comporta l’aumento del consumo di carburante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30149",
+  "quesito": 6216,
+  "text": "L’insufficiente pressione di gonfiaggio di uno pneumatico comporta l’eccessivo aumento della sua flessibilità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30150",
+  "quesito": 6216,
+  "text": "L’insufficiente pressione di gonfiaggio di uno pneumatico comporta l’aumento del rollio e del beccheggio del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30151",
+  "quesito": 6216,
+  "text": "L’insufficiente pressione di gonfiaggio di uno pneumatico comporta la minor tenuta di strada del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30152",
+  "quesito": 6216,
+  "text": "L’insufficiente pressione di gonfiaggio di uno pneumatico comporta la minor stabilità del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30153",
+  "quesito": 6216,
+  "text": "L’eccessiva pressione di gonfiaggio di uno pneumatico ne aumenta il diametro di rotolamento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30154",
+  "quesito": 6216,
+  "text": "L’eccessiva pressione di gonfiaggio di uno pneumatico ne aumenta la rigidità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30155",
+  "quesito": 6216,
+  "text": "L’eccessiva pressione di gonfiaggio di uno pneumatico peggiora il confort di marcia",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30156",
+  "quesito": 6216,
+  "text": "Alla fine di un viaggio, uno pneumatico sgonfio ha il battistrada più caldo al centro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30157",
+  "quesito": 6216,
+  "text": "L’insufficiente pressione di gonfiaggio di uno pneumatico non fa appoggiare i bordi del battistrada sulla sede stradale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30158",
+  "quesito": 6216,
+  "text": "L’eccessiva pressione di gonfiaggio di uno pneumatico non fa appoggiare la parte centrale del battistrada sulla sede stradale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30159",
+  "quesito": 6216,
+  "text": "L’eccessiva pressione di gonfiaggio di uno pneumatico non influisce sul confort di marcia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30160",
+  "quesito": 6216,
+  "text": "La pressione di gonfiaggio degli pneumatici deve essere misurata a pneumatico caldo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30161",
+  "quesito": 6216,
+  "text": "L’eccessiva pressione di gonfiaggio di uno pneumatico ne aumenta la flessibilità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30162",
+  "quesito": 6216,
+  "text": "L’eccessiva pressione di gonfiaggio di uno pneumatico ne diminuisce il diametro di rotolamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30163",
+  "quesito": 6216,
+  "text": "L’eccessiva pressione di gonfiaggio di uno pneumatico non comporta problemi se la temperatura esterna è inferiore a 10°C",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30164",
+  "quesito": 6216,
+  "text": "Per migliorare la stabilità del veicolo, nelle forti discese è bene diminuire la pressione degli pneumatici posteriori di mezzo bar",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30165",
+  "quesito": 6216,
+  "text": "Sui veicoli dotati di sospensioni pneumatiche, la pressione di gonfiaggio deve essere ridotta di 0,2 bar",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30166",
+  "quesito": 6216,
+  "text": "Sui veicoli dotati di sospensioni pneumatiche, non è necessario il periodico controllo della pressione di gonfiaggio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30167",
+  "quesito": 6216,
+  "text": "Alla fine di un viaggio, uno pneumatico troppo gonfio ha il battistrada più caldo ai bordi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30168",
+  "quesito": 6216,
+  "text": "L’insufficiente pressione di gonfiaggio di uno pneumatico comporta una sua maggior usura al centro del battistrada",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30169",
+  "quesito": 6216,
+  "text": "L’eccessiva pressione di gonfiaggio di uno pneumatico comporta una sua maggior usura ai bordi del battistrada",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30170",
+  "quesito": 6216,
+  "text": "Una pressione di gonfiaggio dello pneumatico inferiore del 10% rispetto al valore consigliato facilita le manovre di parcheggio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30171",
+  "quesito": 6216,
+  "text": "L’insufficiente pressione di gonfiaggio di uno pneumatico comporta una sua miglior aderenza su terreno innevato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30172",
+  "quesito": 6216,
+  "text": "Una pressione di gonfiaggio dello pneumatico superiore del 10% rispetto al valore consigliato non modifica il confort di marcia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30173",
+  "quesito": 6216,
+  "text": "Una pressione di gonfiaggio dello pneumatico superiore del 10% rispetto al valore consigliato permette un risparmio di carburante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30174",
+  "quesito": 6216,
+  "text": "Una pressione di gonfiaggio dello pneumatico superiore del 10% rispetto al valore consigliato riduce la distanza di frenatura",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30175",
+  "quesito": 6217,
+  "text": "La più importante operazione di manutenzione degli pneumatici è il periodico controllo della pressione di gonfiaggio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30176",
+  "quesito": 6217,
+  "text": "La corretta pressione di gonfiaggio degli pneumatici deve essere uguale a quella indicata dalla casa costruttrice dello pneumatico stesso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30177",
+  "quesito": 6217,
+  "text": "Il controllo della pressione deve essere effettuato su tutti gli pneumatici, compreso quello della ruota di scorta",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30178",
+  "quesito": 6217,
+  "text": "Causa di consumo irregolare di uno pneumatico è la mancata equilibratura della ruota su cui è montato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30179",
+  "quesito": 6217,
+  "text": "Causa di consumo irregolare di uno pneumatico sono i non corretti angoli di convergenza o di campanatura delle ruote",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30180",
+  "quesito": 6217,
+  "text": "Causa di consumo irregolare di uno pneumatico è la cattiva registrazione degli organi di direzione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30181",
+  "quesito": 6217,
+  "text": "Gli pneumatici con tagli sui fianchi devono essere sostituiti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30182",
+  "quesito": 6217,
+  "text": "La pressione di gonfiaggio degli pneumatici deve essere misurata a caldo, dopo aver percorso diversi chilometri, in modo da fargli raggiungere la giusta temperatura di esercizio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30183",
+  "quesito": 6217,
+  "text": "Lo pneumatico che presenti, a caldo, una pressione superiore a quella prevista a freddo, deve essere immediatamente sgonfiato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30184",
+  "quesito": 6217,
+  "text": "La pressione di gonfiaggio degli pneumatici è stabilita dal conducente in funzione del tipo di carico trasportato e della temperatura dell'asfalto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30185",
+  "quesito": 6217,
+  "text": "I difetti di convergenza delle ruote non influiscono sul consumo uniforme degli pneumatici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30186",
+  "quesito": 6217,
+  "text": "La distribuzione del carico non incide sul consumo degli pneumatici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30187",
+  "quesito": 6217,
+  "text": "Nei mesi estivi, la pressione di gonfiaggio degli pneumatici può essere controllata con meno frequenza perché l’alta temperatura dell’asfalto la mantiene regolare",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30188",
+  "quesito": 6217,
+  "text": "La bassa pressione di gonfiaggio degli pneumatici diminuisce la loro deriva",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30189",
+  "quesito": 6218,
+  "text": "Una ruota può essere squilibrata per effetto di depositi solidi quali ghiaietto incastrato, fango, catrame",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30190",
+  "quesito": 6218,
+  "text": "La squilibratura di una ruota può portare a saltellamenti o sfarfallamenti della ruota stessa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30191",
+  "quesito": 6218,
+  "text": "La squilibratura di una ruota può avere effetti sullo sterzo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30192",
+  "quesito": 6218,
+  "text": "La squilibratura di una ruota deve essere corretta in officina specializzata con l’utilizzazione di appositi contrappesi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30193",
+  "quesito": 6218,
+  "text": "La squilibratura di una ruota porta a consumi anomali dello pneumatico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30194",
+  "quesito": 6218,
+  "text": "La squilibratura di una ruota peggiora la stabilità di marcia del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30195",
+  "quesito": 6218,
+  "text": "La squilibratura di una ruota è indicata da apposita spia rossa posta sul cruscotto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30196",
+  "quesito": 6218,
+  "text": "La squilibratura di una ruota può essere eliminata variando l’angolo di campanatura delle ruote del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30197",
+  "quesito": 6218,
+  "text": "La squilibratura di una ruota può essere eliminata variando l’angolo di convergenza delle ruote del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30198",
+  "quesito": 6218,
+  "text": "In uno pneumatico tubeless, il saltellamento di una ruota squilibrata può essere eliminato introducendo una camera d’aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30199",
+  "quesito": 6218,
+  "text": "La squilibratura di una ruota può essere eliminata aumentando la pressione di 0,2 bar",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30200",
+  "quesito": 6218,
+  "text": "La squilibratura di una ruota può essere eliminata diminuendo la pressione di 0,4 bar",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30201",
+  "quesito": 6219,
+  "text": "In caso di foratura o anomalia ad uno pneumatico occorsa durante il servizio, bisogna rallentare e fermarsi appena è possibile farlo in sicurezza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30202",
+  "quesito": 6219,
+  "text": "La maggior usura del battistrada sul lato interno rispetto a quello esterno è attribuibile anche ad un'eccessiva convergenza delle ruote",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30203",
+  "quesito": 6219,
+  "text": "In caso di lunghi viaggi è opportuno controllare periodicamente la temperatura del battistrada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30204",
+  "quesito": 6219,
+  "text": "La pressione di gonfiaggio di uno pneumatico è indicata generalmente in bar",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30205",
+  "quesito": 6219,
+  "text": "In caso di foratura o anomalia ad uno pneumatico occorsa durante il servizio, è necessario sostituirlo subito ovunque ci si trovi, lasciando a bordo del veicolo i passeggeri per salvaguardare la loro incolumità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30206",
+  "quesito": 6219,
+  "text": "La maggior usura del battistrada sul lato interno rispetto a quello esterno è attribuibile esclusivamente a una cattiva bilanciatura delle ruote",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30207",
+  "quesito": 6219,
+  "text": "In caso di lunghi viaggi occorre fermarsi periodicamente solo per raffreddare gli pneumatici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30208",
+  "quesito": 6219,
+  "text": "La pressione di gonfiaggio di uno pneumatico si esprime generalmente in atmosfere",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30209",
+  "quesito": 6219,
+  "text": "La pressione di gonfiaggio di uno pneumatico è un dato che è generalmente riportato sul fianco degli pneumatici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30210",
+  "quesito": 6220,
+  "text": "Il montaggio di pneumatici alternativi a quelli precedentemente utilizzati è ammesso se i nuovi sono tra quelli riportati sulla carta di circolazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30211",
+  "quesito": 6220,
+  "text": "Il montaggio di pneumatici alternativi a quelli precedentemente utilizzati è ammesso se i nuovi sono consigliati e garantiti da un gommista iscritto all’albo dei manutentori",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30212",
+  "quesito": 6221,
+  "text": "Se si deve sostituire una ruota occorre, se possibile, fermarsi lungo un tratto rettilineo e in piano, segnalando la sosta, nei casi previsti, con l’apposito segnale mobile di pericolo (triangolo)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30213",
+  "quesito": 6221,
+  "text": "Se si deve sostituire una ruota occorre posizionare il veicolo in sicurezza, possibilmente fuori della carreggiata e azionare il freno di stazionamento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30214",
+  "quesito": 6221,
+  "text": "Prima della sostituzione di una ruota occorre calzare i cunei per il fermo sotto altre ruote del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30215",
+  "quesito": 6221,
+  "text": "Se si deve sostituire una ruota, occorre prima allentare i dadi e solo in seguito azionare il martinetto di sollevamento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30216",
+  "quesito": 6221,
+  "text": "La sostituzione della ruota di un mezzo pesante è un’operazione non semplice, che richiede prudenza, perizia ed allenamento preventivo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30217",
+  "quesito": 6221,
+  "text": "Il serraggio definitivo dei dadi dopo aver sostituito la ruota di un mezzo pesante, deve essere portato a termine quando la ruota è appoggiata al suolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30218",
+  "quesito": 6221,
+  "text": "Se il veicolo monta ruote gemellate, la sostituzione di una ruota deve necessariamente essere svolta in officina specializzata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30219",
+  "quesito": 6221,
+  "text": "Quando si sostituisce una ruota, l’ordine di serraggio dei dadi è stabilito dalla casa costruttrice dello pneumatico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30220",
+  "quesito": 6221,
+  "text": "Quando si sostituisce una ruota, il corretto serraggio dei dadi deve essere controllato con il dinamometro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30221",
+  "quesito": 6221,
+  "text": "Quando si sostituisce una ruota, la ruota stessa deve essere montata sgonfia e poi gonfiata con apposito compressore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30222",
+  "quesito": 6221,
+  "text": "Quando si sostituisce una ruota, al termine del montaggio occorre fare una prova di tenuta della valvola",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30223",
+  "quesito": 6221,
+  "text": "La ruota di scorta deve sempre essere tenuta ad una pressione di mezzo bar superiore a quella degli altri pneumatici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30224",
+  "quesito": 6222,
+  "text": "I cosiddetti pneumatici invernali sono più efficaci dei pneumatici ordinari, anche quando la strada non è innevata, se la temperatura dell’asfalto è inferiore a circa 7°C",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30225",
+  "quesito": 6222,
+  "text": "I cosiddetti pneumatici invernali, sfruttano particolari disegni delle scolpiture del battistrada e mescole diverse da quelli convenzionali",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30226",
+  "quesito": 6222,
+  "text": "E' opportuno montare gli pneumatici invernali su tutte le ruote del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30227",
+  "quesito": 6222,
+  "text": "I cosiddetti pneumatici invernali sono dotati di lamelle, cioè di piccoli e sottili intagli praticati in tutti i tasselli del battistrada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30228",
+  "quesito": 6222,
+  "text": "I cosiddetti pneumatici invernali hanno mescole del battistrada che rimangono sufficientemente elastiche anche con basse temperature dell’asfalto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30229",
+  "quesito": 6222,
+  "text": "A basse temperature, la mescola dei pneumatici convenzionali perde elasticità e tale fenomeno riduce l’aderenza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30230",
+  "quesito": 6222,
+  "text": "Alcuni tipi di pneumatici invernali sono predisposti all’origine per la chiodatura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30231",
+  "quesito": 6222,
+  "text": "L’uso di pneumatici invernali omologati sostituisce l’eventuale obbligo di montaggio catene in tratti di strada innevati",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30232",
+  "quesito": 6222,
+  "text": "I cosiddetti pneumatici invernali perdono aderenza sopra i 20°C di temperatura dell’asfalto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30233",
+  "quesito": 6222,
+  "text": "Sui cosiddetti pneumatici invernali non è possibile montare le catene",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30235",
+  "quesito": 6222,
+  "text": "I cosiddetti pneumatici invernali sono utili e più efficaci dei pneumatici ordinari solo se la strada è fortemente innevata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30236",
+  "quesito": 6222,
+  "text": "I cosiddetti pneumatici invernali non prevedono la possibilità di chiodatura",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30237",
+  "quesito": 6222,
+  "text": "I cosiddetti pneumatici invernali devono essere montati solo sull’asse motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30238",
+  "quesito": 6222,
+  "text": "I cosiddetti pneumatici invernali non devono essere montati su veicoli dotati di sistema antipattinamento ESP",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30239",
+  "quesito": 6222,
+  "text": "I cosiddetti pneumatici invernali possono essere montati solo su veicoli appositamente omologati",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30240",
+  "quesito": 6223,
+  "text": "Chi fa uso di catene da neve non omologate è sanzionabile come se ne fosse sprovvisto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30241",
+  "quesito": 6223,
+  "text": "Se si fa uso di catene da neve, queste devono essere di misura idonea agli pneumatici del veicolo e di tipo omologato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30242",
+  "quesito": 6223,
+  "text": "E' sconsigliabile utilizzare le catene su tratti di strada non innevati",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30243",
+  "quesito": 6223,
+  "text": "Nei veicoli a trazione integrale, le catene da neve devono essere montate solo sulle ruote posteriori",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30244",
+  "quesito": 6223,
+  "text": "Se si utilizzano le catene nei tratti di strada privi di neve, la pressione di gonfiaggio degli pneumatici deve essere aumentata di 1 bar",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "13",
+  "code": "30245",
+  "quesito": 6223,
+  "text": "I veicoli muniti di pneumatici invernali devono rispettare limiti di velocità massima inferiori a quelli ordinari",
+  "risposta": false,
+  "image": null
+ }
+]

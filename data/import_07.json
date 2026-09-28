@@ -1,0 +1,1866 @@
+[
+ {
+  "argomentoCode": "07",
+  "code": "28438",
+  "quesito": 6091,
+  "text": "Salvo i veicoli ATP, ogni veicolo, compreso il suo carico, deve avere larghezza massima non superiore a 2,55 metri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28439",
+  "quesito": 6091,
+  "text": "Salvo eccezioni, ogni veicolo, compreso il suo carico, deve avere altezza massima non superiore a 4 metri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28440",
+  "quesito": 6091,
+  "text": "Ogni autoveicolo, esclusi autobus e i semirimorchi, deve avere lunghezza massima non superiore a 12 metri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28441",
+  "quesito": 6091,
+  "text": "Salvo eccezioni, ogni veicolo, compreso il suo carico, deve avere altezza massima non superiore a 5 metri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28442",
+  "quesito": 6091,
+  "text": "La lunghezza massima non superiore dei veicoli non è fissata per norma, in quanto dipende dal carico trasportato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28443",
+  "quesito": 6091,
+  "text": "Salvo i veicoli ATP, ogni veicolo, compreso il suo carico, deve avere larghezza massima non superiore a 2,75 metri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28444",
+  "quesito": 6091,
+  "text": "Negli autotreni e autoarticolati, il rimorchio o semirimorchio devono avere una larghezza inferiore alla motrice di almeno 5 centimetri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28445",
+  "quesito": 6092,
+  "text": "La lunghezza massima di un autoarticolato è di 16,50 metri, purché l’avanzamento ralla abbia particolari caratteristiche",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28446",
+  "quesito": 6092,
+  "text": "La lunghezza massima di un autoarticolato con avanzamento ralla di 3 metri rispetto alla parte anteriore del semirimorchio è di 15,50 metri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28447",
+  "quesito": 6092,
+  "text": "La lunghezza massima di un autosnodato o di un autobus con rimorchio è di 18,75 metri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28448",
+  "quesito": 6092,
+  "text": "La lunghezza massima di un autotreno è di 18,75 metri, purché il complesso dei veicoli abbia particolari misure",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28449",
+  "quesito": 6092,
+  "text": "Le bisarche (autoveicoli per trasporto di altri autoveicoli) possono avere lunghezza massima differente da quella prevista per altri veicoli",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28451",
+  "quesito": 6092,
+  "text": "La lunghezza massima di un autotreno è di 19,35 metri, se dotato di sospensioni pneumatiche sugli assi del rimorchio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28452",
+  "quesito": 6092,
+  "text": "Un rimorchio non deve mai avere lunghezza maggiore del 60% di quella della motrice",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28453",
+  "quesito": 6092,
+  "text": "Un rimorchio non deve mai avere lunghezza maggiore di 9 metri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28454",
+  "quesito": 6092,
+  "text": "Un semirimorchio non deve mai avere lunghezza maggiore di 10,75 metri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28456",
+  "quesito": 6093,
+  "text": "Per interasse (passo) di un veicolo a due assi si intende la distanza fra i centri dei due assi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28457",
+  "quesito": 6093,
+  "text": "Lo sbalzo di un veicolo è la parte che sporge anteriormente o posteriormente rispetto all’asse più estremo anteriore o posteriore rispettivamente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28458",
+  "quesito": 6093,
+  "text": "La carreggiata di un veicolo è la distanza fra un parafango e l’altro dello stesso asse",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28459",
+  "quesito": 6093,
+  "text": "Per interasse (passo) di un veicolo a due assi si intende la distanza fra il centro delle ruote di uno stesso asse",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28460",
+  "quesito": 6093,
+  "text": "Per sbalzo di un veicolo si intende la pendenza massima che esso può superare quando circola a vuoto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28461",
+  "quesito": 6094,
+  "text": "I conducenti che si mettono alla guida di un mezzo pesante devono tenere presente che, generalmente, tali veicoli presentano sbalzi notevoli",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28462",
+  "quesito": 6094,
+  "text": "Su un veicolo dotato di sbalzi notevoli, nell'affrontare una ripida salita o un forte dislivello stradale occorre conoscere l'angolo massimo di attacco che si può affrontare",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28463",
+  "quesito": 6094,
+  "text": "Su un veicolo dotato di sbalzi notevoli, nell'affrontare una salita o un dislivello stradale occorre moderare la velocità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28464",
+  "quesito": 6094,
+  "text": "Su un veicolo dotato di sbalzi notevoli, nell'affrontare una discesa ripida o un forte dislivello stradale occorre conoscere l'angolo massimo di uscita che si può affrontare",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28465",
+  "quesito": 6094,
+  "text": "Su un veicolo dotato di sbalzi notevoli, nell'affrontare una discesa o un dislivello stradale occorre moderare la velocità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28466",
+  "quesito": 6094,
+  "text": "In un veicolo a motore, lo sbalzo anteriore aumenta la larghezza della fascia di ingombro",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28467",
+  "quesito": 6094,
+  "text": "Su un veicolo dotato di sbalzi notevoli, aumenta la difficoltà a mantenere la corretta traiettoria in curva e nelle svolte",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28468",
+  "quesito": 6094,
+  "text": "Se si effettua una svolta con un veicolo dotato di sbalzi notevoli, occorre tenere presente che, con le estremità anteriore o posteriore del veicolo, si potrebbe invadere il marciapiede",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28469",
+  "quesito": 6094,
+  "text": "Se si effettua una svolta con un veicolo dotato di sbalzi notevoli, occorre tenere presente che, con le estremità anteriore o posteriore del veicolo, si potrebbero urtare pedoni o ciclisti in transito nelle vicinanze",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28470",
+  "quesito": 6094,
+  "text": "Il conducente alla guida di un mezzo pesante deve tenere presente che, generalmente, tali veicoli presentano sbalzi notevoli anteriormente, ma non posteriormente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28471",
+  "quesito": 6094,
+  "text": "Quando si è alla guida di un mezzo pesante dotato di sbalzi importanti, non si possono percorrere strade dove sono presenti dossi artificiali",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28472",
+  "quesito": 6094,
+  "text": "Gli sbalzi di cui sono dotati i veicoli pesanti sono tra l'altro previsti per facilitare le manovre di parcheggio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28473",
+  "quesito": 6094,
+  "text": "Gli autobus urbani non possono avere sbalzi superiori ai dieci centimetri per non rischiare di urtare i pedoni sul marciapiede",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28474",
+  "quesito": 6094,
+  "text": "I veicoli pesanti che hanno sbalzi superiori ai quaranta centimetri devono essere di norma dotati di uno specchio retrovisore supplementare",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28475",
+  "quesito": 6094,
+  "text": "I veicoli pesanti non possono avere, di norma, sbalzi di lunghezza superiore ai quaranta centimetri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28476",
+  "quesito": 6094,
+  "text": "Gli sbalzi sono vietati sugli autobus extraurbani, perché ne compromettono la tenuta di strada",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28477",
+  "quesito": 6095,
+  "text": "Il limite di massa complessiva a pieno carico per i veicoli a motore isolati a 2 assi è di 18 tonnellate (ad eccezione di particolari autobus)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28478",
+  "quesito": 6095,
+  "text": "Il limite di massa complessiva a pieno carico per i veicoli a motore isolati a 3 assi è di 25 tonnellate (oppure di 26 tonnellate se sono rispettate particolari prescrizioni)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28479",
+  "quesito": 6095,
+  "text": "Il limite di massa complessiva a pieno carico per i veicoli a motore isolati a 4 assi è di 25 tonnellate (oppure di 32 tonnellate se sono rispettate particolari prescrizioni)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28480",
+  "quesito": 6095,
+  "text": "Il limite di massa complessiva a pieno carico per i veicoli a motore isolati dipende dal totale degli assi di cui è dotato il veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28481",
+  "quesito": 6095,
+  "text": "Il limite di massa complessiva a pieno carico per i veicoli a motore isolati a 3 o più assi dipende anche dalla presenza o meno di sospensioni pneumatiche e ruote gemellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28482",
+  "quesito": 6095,
+  "text": "Il limite di massa complessiva a pieno carico per i veicoli a motore isolati a 2 assi è di 8 tonnellate (ad eccezione di particolari autobus)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28483",
+  "quesito": 6095,
+  "text": "Il limite di massa complessiva a pieno carico per i veicoli a motore isolati a 3 assi è di 15 tonnellate (oppure di 16 tonnellate se sono rispettate particolari prescrizioni)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28484",
+  "quesito": 6095,
+  "text": "Il limite di massa complessiva a pieno carico per i veicoli a motore isolati a 4 assi è di 40 tonnellate (oppure di 44 tonnellate se sono rispettate particolari prescrizioni)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28485",
+  "quesito": 6095,
+  "text": "Il limite di massa complessiva a pieno carico per i veicoli a motore isolati dipende dal tipo di pneumatici di cui è dotato il veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28486",
+  "quesito": 6095,
+  "text": "Il limite di massa complessiva a pieno carico per i veicoli a motore isolati è di 15 tonnellate, salvo che trasportino liquidi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28487",
+  "quesito": 6096,
+  "text": "La massa in ordine di marcia (tara) si ottiene sommando alla massa a vuoto del veicolo la massa convenzionale del conducente e la massa costituita dal 90% del carburante contenuto nel serbatoio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28488",
+  "quesito": 6096,
+  "text": "La massa complessiva a pieno carico è la massa massima autorizzata e corrisponde alla tara più il carico utile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28489",
+  "quesito": 6096,
+  "text": "La portata (carico utile) rappresenta il carico massimo trasportabile da un veicolo ed è indicata sulla carta di circolazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28490",
+  "quesito": 6096,
+  "text": "La massa complessiva a pieno carico non è indicata nella carta di circolazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28491",
+  "quesito": 6096,
+  "text": "La massa in ordine di marcia cambia se il veicolo percorre una strada in forte pendenza",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28492",
+  "quesito": 6096,
+  "text": "La massa complessiva a pieno carico è equivalente al valore della tara, moltiplicato per 1,2",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28493",
+  "quesito": 6096,
+  "text": "La tara di un veicolo è equivalente al suo carico utile",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28494",
+  "quesito": 6096,
+  "text": "La portata è pari alla somma delle masse massime ammesse sugli assi del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28495",
+  "quesito": 6096,
+  "text": "La portata del veicolo è il carico massimo che può essere sopportato dagli pneumatici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28496",
+  "quesito": 6097,
+  "text": "L'altezza massima dei veicoli attrezzati con carrozzeria per il trasporto specifico di animali vivi non deve superare 4,30 metri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28497",
+  "quesito": 6097,
+  "text": "L'altezza massima delle macchine operatrici non deve superare 4,30 metri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28498",
+  "quesito": 6097,
+  "text": "I veicoli ATP, compreso il loro carico, devono avere larghezza massima non superiore a 2,60 metri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28499",
+  "quesito": 6097,
+  "text": "L'altezza massima dei veicoli attrezzati con carrozzeria per il trasporto specifico di animali vivi non deve superare 5,30 metri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28500",
+  "quesito": 6097,
+  "text": "L'altezza massima dei veicoli adibiti al trasporto di balle di fieno non deve superare 5,30 metri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28501",
+  "quesito": 6097,
+  "text": "L'altezza massima delle macchine operatrici non deve superare 5,30 metri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28502",
+  "quesito": 6097,
+  "text": "I veicoli ATP, compreso il loro carico, devono avere larghezza massima non superiore a 2,55 metri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28503",
+  "quesito": 6097,
+  "text": "L'altezza massima degli autoveicoli adibiti al trasporto di container non deve superare 4,70 metri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28504",
+  "quesito": 6098,
+  "text": "La massa massima ammessa sull'asse più caricato non può superare le 12 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28505",
+  "quesito": 6098,
+  "text": "La massa massima ammessa su due assi contigui posti a una distanza non superiore a 1 metro non può superare le 12 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28506",
+  "quesito": 6098,
+  "text": "La massa massima ammessa per legge sull'asse più caricato dipende dal numero di ruote dell'asse",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28507",
+  "quesito": 6098,
+  "text": "La massa massima ammessa sull'asse più caricato non può superare le 14 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28508",
+  "quesito": 6099,
+  "text": "Nel caso di un mezzo d'opera, la massa massima ammessa sull'asse più caricato non può superare le 13 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28509",
+  "quesito": 6099,
+  "text": "Nel caso di un mezzo d'opera, la massa complessiva a pieno carico di un veicolo isolato a 2 assi non può superare le 20 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28510",
+  "quesito": 6099,
+  "text": "Nel caso di un mezzo d'opera, la massa complessiva a pieno carico di un veicolo isolato a 3 assi non può superare le 33 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28511",
+  "quesito": 6099,
+  "text": "Nel caso di un mezzo d'opera, la massa complessiva a pieno carico di un veicolo isolato a 4 o più assi, con due assi anteriori direzionali, non può superare le 40 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28512",
+  "quesito": 6099,
+  "text": "Nel caso di un mezzo d'opera, la massa complessiva a pieno carico di un complesso di veicoli a 4 assi non può superare le 44 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28513",
+  "quesito": 6099,
+  "text": "Nel caso di un mezzo d'opera, la massa complessiva a pieno carico di un complesso di veicoli a 5 o più assi non può superare le 56 tonnellate (salvo casi particolari)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28514",
+  "quesito": 6099,
+  "text": "Nel caso di un mezzo d'opera, la massa complessiva a pieno carico di un complesso di veicoli a 5 o più assi per trasporto di calcestruzzo in betoniera non può superare le 54 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28515",
+  "quesito": 6099,
+  "text": "Nel caso di un mezzo d'opera, la massa massima ammessa sull'asse più caricato non può superare le 18 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28516",
+  "quesito": 6099,
+  "text": "Nel caso di un mezzo d'opera, la massa complessiva a pieno carico di un veicolo isolato a 2 assi non può superare le 24 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28517",
+  "quesito": 6099,
+  "text": "Nel caso di un mezzo d'opera, la massa complessiva a pieno carico di un veicolo isolato a 3 assi non può superare le 40 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28518",
+  "quesito": 6099,
+  "text": "Nel caso di un mezzo d'opera, la massa complessiva a pieno carico di un veicolo isolato a 4 assi o più assi, con due assi anteriori direzionali, non può superare le 50 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28519",
+  "quesito": 6099,
+  "text": "Nel caso di un mezzo d'opera, la massa complessiva a pieno carico di un complesso di veicoli a 4 assi non può superare le 54 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28520",
+  "quesito": 6099,
+  "text": "Nel caso di un mezzo d'opera, la massa complessiva a pieno carico di un complesso di veicoli a 5 o più assi non può superare le 66 tonnellate (salvo casi particolari)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28521",
+  "quesito": 6099,
+  "text": "Nel caso di un mezzo d'opera, la massa complessiva a pieno carico di un complesso di veicoli a 5 o più assi per trasporto di calcestruzzo in betoniera non può superare le 64 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28522",
+  "quesito": 6100,
+  "text": "Vengono definiti eccezionali quei veicoli che, in configurazione di marcia, superano i limiti di massa o di sagoma ordinariamente previsti dal codice della strada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28523",
+  "quesito": 6100,
+  "text": "Un trasporto viene definito in condizioni di eccezionalità quando il suo carico, ma non il veicolo in sé, supera i limiti di sagoma ordinariamente previsti dal codice della strada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28524",
+  "quesito": 6100,
+  "text": "Un trasporto viene definito in condizioni di eccezionalità quando il suo carico supera i limiti di sagoma o di massa ordinariamente previsti dal codice della strada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28525",
+  "quesito": 6100,
+  "text": "Un trasporto viene di norma definito in condizioni di eccezionalità quando il carico indivisibile sporge anteriormente oltre la sagoma",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28526",
+  "quesito": 6100,
+  "text": "Un trasporto viene definito in condizioni di eccezionalità quando il carico indivisibile sporge posteriormente oltre i 3/10 della lunghezza del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28527",
+  "quesito": 6100,
+  "text": "Un trasporto viene definito in condizioni di eccezionalità se il mezzo d’opera che lo effettua eccede i limiti di massa relativi alla sua categoria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28528",
+  "quesito": 6100,
+  "text": "Sono veicoli eccezionali i complessi di veicoli autorizzati che non rispettano le norme generali sul traino dei veicoli",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28529",
+  "quesito": 6100,
+  "text": "Per poter svolgere un trasporto in condizioni di eccezionalità, di norma, è necessaria una specifica autorizzazione alla circolazione rilasciata dall’ente proprietario o concessionario della strada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28530",
+  "quesito": 6100,
+  "text": "L’autorizzazione al trasporto in condizioni di eccezionalità può essere rilasciata \"volta per volta\" (singola), \"per più transiti\" (multipla) o \"per determinati periodi di tempo\" (periodica)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28531",
+  "quesito": 6100,
+  "text": "La specifica autorizzazione alla circolazione prevista per veicoli o trasporti eccezionali deve contenere le prescrizioni da seguire in caso di neve, ghiaccio, nebbia o scarsa visibilità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28532",
+  "quesito": 6100,
+  "text": "Prima di iniziare il viaggio, sulle specifiche autorizzazioni alla circolazione previste per i veicoli o trasporti eccezionali, bisogna annotare l’ora ed il giorno dell’inizio del viaggio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28533",
+  "quesito": 6100,
+  "text": "Al termine dell'uso o alla sua scadenza, la specifica autorizzazione alla circolazione prevista per i veicoli o trasporti eccezionali, va restituita all’ente che l’ha rilasciata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28534",
+  "quesito": 6100,
+  "text": "I trasporti in condizione di eccezionalità ed i veicoli eccezionali, durante la circolazione, devono avere accesa la segnalazione luminosa di pericolo insieme ad uno o più dispositivi a luce lampeggiante gialla, alle luci di posizione ed ai proiettori anabbaglianti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28535",
+  "quesito": 6100,
+  "text": "Non necessitano della specifica autorizzazione alla circolazione prevista per i veicoli eccezionali, i veicoli trasportanti animali vivi, balle o rotoli di paglia o fieno, di altezza massima fino a 4,30 metri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28536",
+  "quesito": 6100,
+  "text": "Nel provvedimento di autorizzazione al trasporto in condizioni di eccezionalità possono essere imposti percorsi prestabiliti e un servizio di scorta tecnica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28537",
+  "quesito": 6100,
+  "text": "Un veicolo eccezionale eccedente la massa consentita è soggetto al pagamento di un indennizzo di usura all’Ente proprietario della strada o dell’autostrada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28538",
+  "quesito": 6100,
+  "text": "Non vengono definiti eccezionali i veicoli che superano i limiti di massa ordinariamente previsti dal codice della strada, se non superano anche i limiti di sagoma",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28539",
+  "quesito": 6100,
+  "text": "Un trasporto viene definito in condizioni di eccezionalità quando trasporta merci pericolose radioattive",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28540",
+  "quesito": 6100,
+  "text": "Per poter svolgere un trasporto in condizioni di eccezionalità, di norma, non è necessaria una specifica autorizzazione alla circolazione rilasciata dall’ente proprietario o concessionario della strada, ma è sufficiente una autocertificazione dello speditore che il carico è stato correttamente caricato e fissato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28541",
+  "quesito": 6100,
+  "text": "L’autorizzazione al trasporto in condizioni di eccezionalità deve essere rilasciata solo \"volta per volta\" (singola)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28542",
+  "quesito": 6100,
+  "text": "La specifica autorizzazione alla circolazione prevista per i veicoli eccezionali non deve contenere le particolari prescrizioni da seguire in caso di neve, ghiaccio, nebbia o scarsa visibilità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28543",
+  "quesito": 6100,
+  "text": "Prima di iniziare il viaggio, sulle specifiche autorizzazioni alla circolazione previste per i veicoli eccezionali, bisogna annotare gli estremi della patente e della carta di qualificazione del conducente alla guida",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28544",
+  "quesito": 6100,
+  "text": "Concluso il viaggio, la specifica autorizzazione alla circolazione prevista per i veicoli eccezionali, va restituita all’ufficio Motorizzazione Civile",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28545",
+  "quesito": 6100,
+  "text": "La specifica autorizzazione alla circolazione prevista per i veicoli eccezionali, è obbligatoria anche per le macchine agricole o operatrici, di altezza massima non superiore a 4,30 metri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28546",
+  "quesito": 6100,
+  "text": "I trasporti in condizione di eccezionalità devono essere svolti solo nelle ore diurne",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28547",
+  "quesito": 6100,
+  "text": "Un trasporto viene definito in condizioni di eccezionalità quando il tipo di merce trasportata è diversa da quella indicata sulla carta di circolazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28548",
+  "quesito": 6100,
+  "text": "Un trasporto viene definito in condizioni di eccezionalità quando si trasportano prodotti alimentari freschi nei giorni festivi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28549",
+  "quesito": 6100,
+  "text": "E' vietata la circolazione in autostrada dei veicoli eccezionali",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28550",
+  "quesito": 6100,
+  "text": "E' considerato veicolo eccezionale, un mezzo d'opera a 3 assi con massa complessiva a pieno carico pari a 32 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28551",
+  "quesito": 6100,
+  "text": "Sono considerati trasporti in condizioni di eccezionalità, tutti i trasporti di materie esplosive",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28552",
+  "quesito": 6100,
+  "text": "Non vengono definiti eccezionali i veicoli che superano i limiti di sagoma ordinariamente previsti dal codice della strada, purché si tratti di veicoli ad almeno 5 assi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28553",
+  "quesito": 6100,
+  "text": "Tutti i veicoli isolati che superano la lunghezza di 12 metri sono considerati veicoli eccezionali",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28561",
+  "quesito": 6102,
+  "text": "La fascia di ingombro di un veicolo è la corona circolare occupata dal veicolo stesso quando percorre una curva con il minimo raggio possibile di sterzata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28562",
+  "quesito": 6102,
+  "text": "Le dimensioni della fascia di ingombro di un veicolo non sono indicate nella carta di circolazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28563",
+  "quesito": 6102,
+  "text": "La fascia di ingombro di un veicolo deve rispettare determinati limiti di raggio fissati dalle norme",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28564",
+  "quesito": 6102,
+  "text": "La fascia di ingombro di un veicolo deve avere il raggio esterno non superiore a 12,50 metri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28566",
+  "quesito": 6102,
+  "text": "Ogni veicolo a motore, o complesso di veicoli, compreso il relativo carico, deve potersi inserire in una corona circolare di raggio esterno 12,50 metri e raggio interno 5,30 metri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28567",
+  "quesito": 6102,
+  "text": "Ogni veicolo a motore o complesso di veicoli deve potersi inscrivere in una corona circolare larga 5,30 metri e di raggio interno pari a 7,20 metri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28568",
+  "quesito": 6102,
+  "text": "La fascia di ingombro di un veicolo figura sempre nella carta di circolazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28570",
+  "quesito": 6102,
+  "text": "La fascia di ingombro di un veicolo diminuisce con l'aumentare della sua lunghezza",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28571",
+  "quesito": 6102,
+  "text": "La fascia di ingombro di un veicolo aumenta con l'aumentare della sua massa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28572",
+  "quesito": 6102,
+  "text": "Ogni veicolo a motore o complesso di veicoli deve potersi inscrivere in una corona circolare larga 5,20 m e di raggio esterno pari a 16,50 metri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28573",
+  "quesito": 6102,
+  "text": "Gli autobus e gli autocarri, a differenza degli altri veicoli, devono potersi inscrivere in una corona circolare larga 8,20 metri e di raggio interno pari 6,30 metri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28574",
+  "quesito": 6103,
+  "text": "La fascia d’ingombro è la corona circolare che il veicolo occupa, sul piano stradale, nell’effettuare una curva o una svolta",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28575",
+  "quesito": 6103,
+  "text": "La fascia d’ingombro si riduce se il veicolo è dotato di asse autosterzante posteriore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28576",
+  "quesito": 6103,
+  "text": "La fascia d’ingombro aumenta all'aumentare degli sbalzi del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28577",
+  "quesito": 6103,
+  "text": "La fascia d’ingombro è lo spazio in larghezza che il veicolo occupa su strada rettilinea",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28578",
+  "quesito": 6103,
+  "text": "La fascia d’ingombro aumenta se il veicolo è dotato di più assi sterzanti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28579",
+  "quesito": 6103,
+  "text": "La fascia d’ingombro non deve essere superiore alla larghezza del veicolo con il suo carico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28580",
+  "quesito": 6104,
+  "text": "Azionando il freno motore dei veicoli pesanti, il dispositivo chiude la mandata del gasolio da parte del sistema di iniezione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28581",
+  "quesito": 6104,
+  "text": "Azionando il freno motore dei veicoli pesanti, si crea una strozzatura del tubo di scarico tramite l’azionamento di un’apposita valvola a farfalla",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28582",
+  "quesito": 6104,
+  "text": "Azionando il freno motore dei veicoli pesanti, la fase di scarico del motore diventa in pratica una fase di compressione che frena/rallenta il veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28583",
+  "quesito": 6104,
+  "text": "Il freno motore dei veicoli pesanti può essere utilizzato solo su strade in discesa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28584",
+  "quesito": 6104,
+  "text": "Azionando il freno motore dei veicoli pesanti, la fase di scarico del motore diventa una fase di aspirazione che frena/rallenta il veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28585",
+  "quesito": 6104,
+  "text": "Azionando il freno motore dei veicoli pesanti, il dispositivo disinnesta automaticamente la frizione per sfruttare l’inerzia del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28586",
+  "quesito": 6105,
+  "text": "Il freno-motore è particolarmente importante per ridurre il rischio di possibile surriscaldamento degli elementi frenanti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28587",
+  "quesito": 6105,
+  "text": "Il freno-motore ed il rallentatore non sono dispositivi uguali, ma hanno funzioni analoghe",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28588",
+  "quesito": 6105,
+  "text": "Il dispositivo \"freno motore\" può essere integrato con il rallentatore e con l’impianto di frenatura di servizio in un unico sistema a controllo elettronico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28589",
+  "quesito": 6105,
+  "text": "Con l’azione del solo freno-motore non è possibile fermare il veicolo in distanze ragionevoli in tutte le situazioni di marcia",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28590",
+  "quesito": 6105,
+  "text": "Innestando un basso rapporto del cambio si ottiene un maggior effetto frenante del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28591",
+  "quesito": 6105,
+  "text": "L’effetto frenante del motore a scoppio è, a parità di cilindrata, generalmente maggiore di quello del motore Diesel",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28592",
+  "quesito": 6105,
+  "text": "Il freno motore è particolarmente efficiente sui veicoli elettrici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28593",
+  "quesito": 6105,
+  "text": "Il freno motore è azionato tramite il \"manettino\" del freno di stazionamento a molla, quando lo stesso viene portato a fine corsa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28594",
+  "quesito": 6105,
+  "text": "Il freno motore funziona meglio quando il cambio è in folle",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28595",
+  "quesito": 6105,
+  "text": "Il freno motore è un dispositivo che serve a mantenere frenato il veicolo quando è in sosta su strada in pendenza",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28596",
+  "quesito": 6105,
+  "text": "Il freno motore ed il rallentatore si azionano assieme al freno di servizio in caso di pericolo immediato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28597",
+  "quesito": 6105,
+  "text": "L’effetto frenante del motore Diesel è, a parità di cilindrata, generalmente, maggiore di quello del motore a scoppio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28598",
+  "quesito": 6106,
+  "text": "Il rallentatore ed il freno motore integrano il sistema di frenatura di servizio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28599",
+  "quesito": 6106,
+  "text": "Il rallentatore può essere di tipo idraulico o elettromagnetico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28600",
+  "quesito": 6106,
+  "text": "Il rallentatore idraulico è posto all’uscita del cambio ed è collegato con l’albero di trasmissione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28601",
+  "quesito": 6106,
+  "text": "Il rallentatore idraulico necessita di uno scambiatore di calore per evitare surriscaldamenti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28602",
+  "quesito": 6106,
+  "text": "Utilizzando il rallentatore idraulico, il minore o maggiore rallentamento del veicolo è legato dalla quantità d’olio che entra nel rallentatore stesso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28603",
+  "quesito": 6106,
+  "text": "In genere, il comando del rallentatore idraulico è ottenuto tramite un dispositivo a leva o a pedale, che consente vari livelli di frenatura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28604",
+  "quesito": 6106,
+  "text": "Il rallentatore elettromagnetico è schematicamente composto da uno statore e da un rotore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28605",
+  "quesito": 6106,
+  "text": "Nel rallentatore elettromagnetico, lo statore è fissato al telaio mentre i dischi del rotore sono vincolati all’albero di trasmissione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28606",
+  "quesito": 6106,
+  "text": "Attivando il rallentatore elettromagnetico, viene generato un potente campo magnetico che si oppone alla rotazione del rotore e quindi dell'albero di trasmissione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28607",
+  "quesito": 6106,
+  "text": "Il rallentatore elettromagnetico genera una forte quantità di calore che deve essere smaltita",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28608",
+  "quesito": 6106,
+  "text": "Nel rallentatore idraulico viene utilizzato uno speciale olio che genera attrito e si oppone alla rotazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28609",
+  "quesito": 6106,
+  "text": "L’olio del rallentatore idraulico può raggiungere elevate temperature",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28610",
+  "quesito": 6106,
+  "text": "Il comando del rallentatore idraulico può essere sul volante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28611",
+  "quesito": 6106,
+  "text": "Sui veicoli molto pesanti si possono montare sia il rallentatore idraulico che quello elettromagnetico insieme, purché siano disposti in serie",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28612",
+  "quesito": 6106,
+  "text": "Nel rallentatore elettromagnetico, lo statore è fissato al piantone dello sterzo mentre i dischi del rotore sono calettati sull’albero primario del cambio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28613",
+  "quesito": 6106,
+  "text": "Il rallentatore elettromagnetico accumula energia centrifuga durante le curve per ricaricarsi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28614",
+  "quesito": 6106,
+  "text": "Il rallentatore elettromagnetico è composto da un interruttore magnetotermico e da un diffusore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28615",
+  "quesito": 6106,
+  "text": "L’uso del rallentatore idraulico comporta una maggiore usura dei materiali di attrito degli elementi frenanti ed un maggior riscaldamento dei tamburi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28616",
+  "quesito": 6106,
+  "text": "Il rallentatore può essere di tipo pneumatico o pneumoidraulico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28617",
+  "quesito": 6106,
+  "text": "Il rallentatore idraulico non necessita di uno scambiatore di calore, perché utilizza la propria scatola metallica per il raffreddamento ad aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28618",
+  "quesito": 6106,
+  "text": "Il rallentatore elettromagnetico è più leggero di quello idraulico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28619",
+  "quesito": 6106,
+  "text": "Il rallentatore idraulico è posto tra la coppia conica ed i semiassi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28620",
+  "quesito": 6106,
+  "text": "Il rallentatore idraulico consente il bloccaggio immediato delle ruote motrici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28621",
+  "quesito": 6107,
+  "text": "Il rallentatore (retarder) può venire usato anche assieme al freno motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28622",
+  "quesito": 6107,
+  "text": "Il rallentatore può essere del tipo idraulico, elettromagnetico o a circolazione di acqua (aquatarder)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28623",
+  "quesito": 6107,
+  "text": "Con l’azione del solo rallentatore non si può fermare il veicolo in una distanza ragionevole in ogni situazione di marcia",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28624",
+  "quesito": 6107,
+  "text": "Il rallentatore elettromagnetico deve essere periodicamente pulito da polvere e terriccio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28625",
+  "quesito": 6107,
+  "text": "II rallentatore elettromagnetico tende a surriscaldarsi maggiormente di quello idraulico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28626",
+  "quesito": 6107,
+  "text": "Il rallentatore elettromagnetico è più pesante di quello idraulico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28627",
+  "quesito": 6107,
+  "text": "Il rallentatore elettromagnetico può sopportare carichi frenanti minori rispetto a quello idraulico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28628",
+  "quesito": 6107,
+  "text": "Il rallentatore idraulico agisce direttamente sugli elementi frenanti delle ruote motrici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28629",
+  "quesito": 6107,
+  "text": "Il rallentatore idraulico deve essere periodicamente svuotato dell’olio e pulito con dello sgrassante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28630",
+  "quesito": 6107,
+  "text": "Il rallentatore non deve essere usato assieme al freno motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28631",
+  "quesito": 6107,
+  "text": "Il rallentatore idraulico è raffreddato ad aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28632",
+  "quesito": 6107,
+  "text": "Il rallentatore idraulico è più usato perché quello elettromagnetico consuma molta corrente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28633",
+  "quesito": 6107,
+  "text": "Il rallentatore idraulico fa parte dell’impianto di frenatura pneumoidraulico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28634",
+  "quesito": 6107,
+  "text": "Il rallentatore idraulico è di più agevole montaggio rispetto a quello elettromagnetico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28635",
+  "quesito": 6108,
+  "text": "Il limitatore di velocità è un dispositivo che interviene sull’iniezione del combustibile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28636",
+  "quesito": 6108,
+  "text": "Il limitatore di velocità è un dispositivo la cui funzione è quella di regolare l’alimentazione di combustibile al motore, al fine di limitare la velocità del veicolo ad un valore stabilito",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28637",
+  "quesito": 6108,
+  "text": "Il limitatore di velocità deve essere di tipo omologato e montato da officina autorizzata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28638",
+  "quesito": 6108,
+  "text": "Il limitatore di velocità, montato da officina autorizzata, comporta l’obbligo dell’aggiornamento della carta di circolazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28639",
+  "quesito": 6108,
+  "text": "Il limitatore di velocità deve essere inviolabile, cioè non deve essere possibile aumentare o spostare temporaneamente o permanentemente il livello della limitazione di velocità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28640",
+  "quesito": 6108,
+  "text": "La velocità massima consentita dal limitatore ad un autobus deve essere di 100 km/h",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28641",
+  "quesito": 6108,
+  "text": "La velocità massima consentita dal limitatore ad un autocarro, di massa complessiva a pieno carico superiore a 3,5 tonnellate, deve essere di 90 km/h",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28642",
+  "quesito": 6108,
+  "text": "A bordo dei veicoli che montano il limitatore di velocità, deve essere presente una copia del certificato di installazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28643",
+  "quesito": 6108,
+  "text": "A bordo dei veicoli che montano il limitatore di velocità, deve essere presente una copia dell’attestazione di apposizione dei sigilli da parte di officina autorizzata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28644",
+  "quesito": 6108,
+  "text": "Sulla copia del certificato di installazione del limitatore di velocità devono risultare, tra l’altro, il numero e la data di redazione del certificato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28645",
+  "quesito": 6108,
+  "text": "Sulla copia del certificato di installazione del limitatore di velocità devono risultare, tra l’altro, il numero di omologazione e di matricola del limitatore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28646",
+  "quesito": 6108,
+  "text": "Sulla copia del certificato di installazione del limitatore di velocità devono risultare, tra l’altro, il numero di telaio e di targa del veicolo su cui è montato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28647",
+  "quesito": 6108,
+  "text": "Sulla copia del certificato di installazione del limitatore di velocità deve risultare, tra l’altro, la dichiarazione che il limitatore è stato omologato per il tipo di veicolo su cui è montato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28648",
+  "quesito": 6108,
+  "text": "Il limitatore di velocità non deve essere montato sugli autobus che effettuano servizio pubblico urbano",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28649",
+  "quesito": 6108,
+  "text": "Il limitatore di velocità deve essere montato su tutti gli autocarri, di massa complessiva a pieno carico superiore a 3,5 tonnellate, immatricolati dopo il 1 ottobre 2001",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28650",
+  "quesito": 6108,
+  "text": "Su un veicolo dotato di motore Diesel, il limitatore di velocità interviene sulla mandata della pompa di iniezione oppure degli iniettori pompa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28651",
+  "quesito": 6108,
+  "text": "Il limitatore di velocità viene regolato dal conducente a mezzo di una leva posta sul cruscotto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28652",
+  "quesito": 6108,
+  "text": "La velocità massima consentita dal limitatore ad un autobus deve essere di 80 km/h",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28653",
+  "quesito": 6108,
+  "text": "La velocità massima consentita dal limitatore ad un autobus deve essere di 110 km/h",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28654",
+  "quesito": 6108,
+  "text": "La velocità massima consentita dal limitatore ad un autocarro, di massa complessiva a pieno carico superiore a 3,5 tonnellate, deve essere di 80 km/h",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28655",
+  "quesito": 6108,
+  "text": "La velocità massima consentita dal limitatore ad un autocarro di massa complessiva a pieno carico superiore a 3,5 tonnellate, deve essere di 70 km/h",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28656",
+  "quesito": 6108,
+  "text": "La velocità massima consentita dal limitatore ad un autocarro, di massa complessiva a pieno carico superiore a 3,5 tonnellate, deve essere di 100 km/h",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28657",
+  "quesito": 6108,
+  "text": "Il limitatore di velocità deve essere montato su tutti gli autocarri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28658",
+  "quesito": 6108,
+  "text": "Il limitatore di velocità deve essere montato su tutti gli autocarri di massa superiore a 7,5 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28659",
+  "quesito": 6108,
+  "text": "Il limitatore di velocità deve essere montato su tutti gli autobus di massa superiore a 5 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28660",
+  "quesito": 6108,
+  "text": "Il limitatore di velocità deve essere montato su tutti gli autobus con più di 22 posti a sedere",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28661",
+  "quesito": 6108,
+  "text": "Il limitatore di velocità può essere disattivato dal conducente sui percorsi urbani",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28662",
+  "quesito": 6108,
+  "text": "Il limitatore di velocità può essere disattivato dal conducente quando circola su autostrade con 3 o più corsie per senso di marcia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28663",
+  "quesito": 6108,
+  "text": "Il limitatore di velocità può essere disattivato dal conducente in caso di emergenza",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28664",
+  "quesito": 6108,
+  "text": "Il limitatore di velocità è raffreddato ad acqua",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28665",
+  "quesito": 6108,
+  "text": "Il limitatore di velocità interviene sul rallentatore, potenziandone l’effetto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28666",
+  "quesito": 6108,
+  "text": "Sulla copia del certificato di installazione del limitatore di velocità devono risultare, tra l’altro, l’esito positivo della revisione triennale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28667",
+  "quesito": 6108,
+  "text": "Sulla copia del certificato di installazione del limitatore di velocità devono risultare, tra l’altro, le generalità del tecnico che lo ha installato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28668",
+  "quesito": 6109,
+  "text": "Il montaggio del limitatore di velocità è obbligatorio per i veicoli M2, M3, N2, N3 immatricolati dopo il 1 ottobre 2001",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28669",
+  "quesito": 6109,
+  "text": "La verifica del corretto montaggio del limitatore di velocità avviene accertando la presenza della apposita targhetta, conforme alle norme, e del certificato di installazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28670",
+  "quesito": 6109,
+  "text": "Il dispositivo limitatore di velocità agisce, se presente, sulla pompa di iniezione del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28672",
+  "quesito": 6109,
+  "text": "La circolazione con limitatore di velocità alterato comporta la sanzione accessoria della revoca della patente di guida",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28673",
+  "quesito": 6109,
+  "text": "Il limitatore di velocità favorisce la riduzione dell’inquinamento atmosferico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28674",
+  "quesito": 6109,
+  "text": "Il montaggio del limitatore di velocità è obbligatorio solo per gli autobus",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28675",
+  "quesito": 6109,
+  "text": "Il dispositivo limitatore di velocità blocca il pedale dell’acceleratore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28676",
+  "quesito": 6109,
+  "text": "Il dispositivo limitatore di velocità agisce sul freno di soccorso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28677",
+  "quesito": 6109,
+  "text": "Il montaggio del limitatore di velocità può essere eseguito da qualsiasi officina meccanica",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28678",
+  "quesito": 6109,
+  "text": "Sono esentati dall’obbligo del montaggio del dispositivo limitatore di velocità solo i veicoli militari o appartenenti ai corpi di polizia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28679",
+  "quesito": 6109,
+  "text": "E' esentato dall’obbligo del montaggio del dispositivo limitatore di velocità qualsiasi veicolo che faccia un servizio di linea",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28680",
+  "quesito": 6109,
+  "text": "La verifica del corretto montaggio del limitatore di velocità avviene provando il veicolo su strada",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28681",
+  "quesito": 6109,
+  "text": "La circolazione con limitatore di velocità alterato comporta la sospensione della patente da 15 giorni a tre mesi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "07",
+  "code": "28682",
+  "quesito": 6109,
+  "text": "La verifica del corretto montaggio del limitatore di velocità avviene mediante certificato rilasciato dalla Motorizzazione Civile",
+  "risposta": false,
+  "image": null
+ }
+]

@@ -33,14 +33,15 @@ model Argomento {
 /// Una domanda d'esame: un'affermazione da segnare vera o falsa.
 model Question {
   id            String      @id @default(cuid())
-  /// Il codice della domanda nel listato ministeriale: la si ritrova lì così com'è
+  /// Il numero della domanda nel listato ministeriale: la si ritrova lì così com'è
   code          String      @unique
+  /// Il quesito del listato: domande dello stesso quesito parlano della stessa cosa
+  /// (spesso dello stesso cartello), e l'Esame reale ne prende al massimo una
+  quesito       Int
   argomentoId   Int
   argomento     Argomento   @relation(fields: [argomentoId], references: [id])
   text          String
   risposta      Boolean
-  /// Testo comune a più affermazioni, quando il listato le raggruppa sotto una domanda
-  questionGroup String?
   /// Figura della domanda, in public/figure/
   image         String?
   answers       Answer[]

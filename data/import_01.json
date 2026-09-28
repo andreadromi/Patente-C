@@ -1,0 +1,698 @@
+[
+ {
+  "argomentoCode": "01",
+  "code": "27517",
+  "quesito": 6001,
+  "text": "E' soggetto a sanzione amministrativa il conducente che supera i periodi di guida prescritti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27518",
+  "quesito": 6001,
+  "text": "E' soggetto a sanzione amministrativa il conducente che non osserva le interruzioni obbligatorie durante il viaggio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27519",
+  "quesito": 6001,
+  "text": "E' soggetto a sanzione amministrativa il conducente che è sprovvisto o tiene in modo incompleto o alterato l'estratto del registro di servizio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27520",
+  "quesito": 6001,
+  "text": "E' soggetto a sanzione amministrativa il conducente che non osserva i periodi di riposo minimi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27521",
+  "quesito": 6001,
+  "text": "E' soggetto a sanzione amministrativa il conducente che non osserva i periodi di pausa o di riposo prescritti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27522",
+  "quesito": 6001,
+  "text": "E' soggetto alla revoca della patente il conducente che supera i periodi di guida prescritti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27523",
+  "quesito": 6001,
+  "text": "E' soggetto a sanzione amministrativa il conducente che effettua l'interruzione di quarantacinque minuti dopo quattro ore e mezza di guida",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27524",
+  "quesito": 6001,
+  "text": "Costituisce infrazione guidare per quattro ore consecutive, senza interruzioni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27525",
+  "quesito": 6001,
+  "text": "E' ammesso utilizzare un foglio di registrazione del cronotachigrafo analogico per più di 24 ore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27526",
+  "quesito": 6001,
+  "text": "E' soggetto alla revoca della carta di qualificazione del conducente l'autista che supera i periodi di guida prescritti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27527",
+  "quesito": 6002,
+  "text": "Il regolamento 561/2006/CE prevede disposizioni relative ai tempi di guida e di riposo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27528",
+  "quesito": 6002,
+  "text": "Il regolamento 561/2006/CE prevede disposizioni relative al massimo tempo di guida consentito in una settimana",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27529",
+  "quesito": 6002,
+  "text": "Il regolamento 561/2006/CE mira a migliorare le condizioni sociali dei lavoratori a cui si applica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27530",
+  "quesito": 6002,
+  "text": "Il regolamento 561/2006/CE mira ad aumentare il livello di sicurezza stradale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27531",
+  "quesito": 6002,
+  "text": "Il regolamento 561/2006/CE prevede disposizioni relative al tempo di guida massimo per giornata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27532",
+  "quesito": 6002,
+  "text": "Il regolamento 561/2006/CE prevede disposizioni relative ai tempi di guida minimi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27533",
+  "quesito": 6002,
+  "text": "Il regolamento 561/2006/CE prevede disposizioni relative al tempo di riposo massimo per settimana",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27534",
+  "quesito": 6002,
+  "text": "Il regolamento 561/2006/CE mira ad aumentare il tempo di lavoro dei conducenti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27535",
+  "quesito": 6002,
+  "text": "Il regolamento 561/2006/CE prevede disposizioni sui compensi minimi dei conducenti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27536",
+  "quesito": 6002,
+  "text": "Il regolamento 561/2006/CE prevede disposizioni relativamente al trasporto di cose, ma non sul trasporto di persone",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27537",
+  "quesito": 6003,
+  "text": "Il regolamento 561/2006/CE si applica al trasporto su strada di cose, effettuato con veicoli di massa massima ammissibile, compresi eventuali rimorchi o semirimorchi, superiore a 3,5 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27538",
+  "quesito": 6003,
+  "text": "Il regolamento 561/2006/CE si applica al trasporto su strada di passeggeri effettuato con veicoli atti a trasportare più di nove persone compreso il conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27539",
+  "quesito": 6003,
+  "text": "Il regolamento 561/2006/CE si applica ad alcuni trasporti su strada effettuati all'interno dell'Unione Europea",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27540",
+  "quesito": 6003,
+  "text": "Il regolamento 561/2006/CE si applica ad alcuni trasporti su strada effettuati fra l'Unione Europea e i Paesi dello Spazio economico europeo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27541",
+  "quesito": 6003,
+  "text": "Il regolamento 561/2006/CE si applica al trasporto su strada di merci, effettuato da veicoli di massa massima ammissibile, compresi eventuali rimorchi o semirimorchi, superiore a 2,5 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27542",
+  "quesito": 6003,
+  "text": "Il regolamento 561/2006/CE si applica al trasporto su strada di passeggeri effettuato con taxi o autobus",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27543",
+  "quesito": 6003,
+  "text": "Il regolamento 561/2006/CE si applica anche al trasporto su ferrovia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27544",
+  "quesito": 6003,
+  "text": "Il regolamento 561/2006/CE si applica ai veicoli destinati al trasporto di cose, ma non a quelli adibiti al trasporto di persone",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27545",
+  "quesito": 6004,
+  "text": "Secondo quanto stabilito dal regolamento 561/2006/CE, il periodo di guida giornaliero, di norma, non deve superare le nove ore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27546",
+  "quesito": 6004,
+  "text": "Secondo quanto stabilito dal regolamento 561/2006/CE, il periodo di guida giornaliero può essere esteso fino a dieci ore, non più di due volte nell'arco della settimana",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27548",
+  "quesito": 6004,
+  "text": "Secondo quanto stabilito dal regolamento 561/2006/CE, il periodo di guida giornaliero può essere al massimo di otto ore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27549",
+  "quesito": 6004,
+  "text": "Secondo quanto stabilito dal regolamento 561/2006/CE, il periodo di guida giornaliero, di norma, è di nove ore consecutive",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27550",
+  "quesito": 6004,
+  "text": "Secondo quanto stabilito dal regolamento 561/2006/CE, il periodo di guida giornaliero può essere di undici ore, per non più di due volte in una settimana",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27551",
+  "quesito": 6004,
+  "text": "Secondo quanto stabilito dal regolamento 561/2006/CE, il periodo di guida giornaliero può essere esteso a dodici ore, purché intervallato da almeno tre interruzioni di guida di quarantacinque minuti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27552",
+  "quesito": 6005,
+  "text": "Secondo quanto stabilito dal regolamento 561/2006/CE, il periodo di riposo giornaliero regolare è di almeno undici ore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27553",
+  "quesito": 6005,
+  "text": "Secondo quanto stabilito dal regolamento 561/2006/CE, il periodo di riposo giornaliero ridotto è di almeno nove ore non più di tre volte la settimana",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27554",
+  "quesito": 6005,
+  "text": "Secondo quanto stabilito dal regolamento 561/2006/CE, è vietato guidare per più di sei giorni consecutivi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27555",
+  "quesito": 6005,
+  "text": "Secondo quanto stabilito dal regolamento 561/2006/CE, non si possono effettuare più di tre periodi di riposo giornaliero ridotto, tra due periodi di riposo settimanale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27556",
+  "quesito": 6005,
+  "text": "Secondo quanto stabilito dal regolamento 561/2006/CE, il periodo di riposo giornaliero regolare è di almeno nove ore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27557",
+  "quesito": 6005,
+  "text": "Secondo quanto stabilito dal regolamento 561/2006/CE, il periodo di riposo giornaliero deve essere pari al periodo di guida giornaliero",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27558",
+  "quesito": 6005,
+  "text": "Secondo quanto stabilito dal regolamento 561/2006/CE, il periodo di riposo giornaliero regolare è di otto ore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27559",
+  "quesito": 6005,
+  "text": "Secondo quanto stabilito dal regolamento 561/2006/CE, il periodo di riposo giornaliero è un periodo durante il quale il conducente non può disporre liberamente del proprio tempo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27560",
+  "quesito": 6005,
+  "text": "Secondo quanto stabilito dal regolamento 561/2006/CE, il periodo di riposo giornaliero ridotto è quarantacinque minuti ogni quattro ore e mezza di guida",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27561",
+  "quesito": 6006,
+  "text": "Il regolamento 561/2006/CE prevede che il periodo di riposo settimanale regolare è di almeno 45 ore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27562",
+  "quesito": 6006,
+  "text": "Il regolamento 561/2006/CE prevede che il periodo di riposo settimanale ridotto debba essere recuperato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27563",
+  "quesito": 6006,
+  "text": "Il regolamento 561/2006/CE prevede che il periodo di riposo settimanale ridotto abbia una durata minima di 24 ore ininterrotte",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27564",
+  "quesito": 6006,
+  "text": "Il regolamento 561/2006/CE prevede che il periodo di riposo settimanale possa essere di tipo regolare o ridotto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27565",
+  "quesito": 6006,
+  "text": "Il regolamento 561/2006/CE prevede che il periodo di riposo settimanale regolare sia di almeno 30 ore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27566",
+  "quesito": 6006,
+  "text": "Il regolamento 561/2006/CE prevede che il periodo di riposo settimanale ridotto sia al massimo di 24 ore continuative",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27567",
+  "quesito": 6006,
+  "text": "Il regolamento 561/2006/CE prevede che il periodo di riposo settimanale regolare non possa essere inferiore a 90 ore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27568",
+  "quesito": 6006,
+  "text": "Il regolamento 561/2006/CE prevede che il conducente, a fronte di indennità in denaro, possa rinunciare al periodo di riposo settimanale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27569",
+  "quesito": 6007,
+  "text": "I tempi di disponibilità sono quelli nei quali il conducente, pur non dovendo necessariamente rimanere sul posto di lavoro, deve tenersi a disposizione per poter prontamente riprendere il lavoro",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27570",
+  "quesito": 6007,
+  "text": "I periodi di permanenza a bordo del veicolo a fianco di un altro conducente (multipresenza) sono considerati tempi di disponibilità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27572",
+  "quesito": 6007,
+  "text": "I tempi di disponibilità sono convenzionalmente rappresentati dal simbolo in figura",
+  "risposta": true,
+  "image": "150fa073c858.jpg"
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27573",
+  "quesito": 6007,
+  "text": "I periodi di tempo impiegati per la piccola manutenzione del veicolo sono considerati \"altri lavori\"",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27574",
+  "quesito": 6007,
+  "text": "I tempi definiti \"altri lavori\" sono convenzionalmente rappresentati dal simbolo in figura",
+  "risposta": false,
+  "image": "a917502d41cb.jpg"
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27575",
+  "quesito": 6007,
+  "text": "I tempi definiti \"altri lavori\" sono considerati tempi di guida",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27576",
+  "quesito": 6007,
+  "text": "I tempi di disponibilità sono quelli durante i quali il conducente può disporre liberamente del proprio tempo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27577",
+  "quesito": 6007,
+  "text": "I periodi di tempo impiegati per la pulizia del veicolo son considerati \"tempi di disponibilità\"",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27578",
+  "quesito": 6007,
+  "text": "I tempi definiti \"altri lavori\" sono convenzionalmente rappresentati dal simbolo in figura",
+  "risposta": false,
+  "image": "150fa073c858.jpg"
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27579",
+  "quesito": 6008,
+  "text": "L'impresa di trasporto non può promettere premi in denaro al conducente basati sulla maggior percorrenza chilometrica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27580",
+  "quesito": 6008,
+  "text": "Il conducente è corresponsabile per le infrazioni al regolamento 561/2006/CE, anche se commesse alla guida di un veicolo di proprietà dell’impresa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27581",
+  "quesito": 6008,
+  "text": "L'impresa di trasporto non deve incoraggiare i propri conducenti a violare le disposizioni in materia di tempi di guida e di riposo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27582",
+  "quesito": 6008,
+  "text": "L'impresa di trasporto può decurtare lo stipendio al conducente che si rifiuti di guidare per più di 10 ore al giorno",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27583",
+  "quesito": 6008,
+  "text": "L'impresa di trasporto non risponde delle violazioni al codice della strada commesse, durante il lavoro, dai conducenti alle proprie dipendenze cui abbia fornito istruzioni in contrasto con il regolamento 561/2006/CE, perché tale responsabilità è esclusivamente del conducente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27584",
+  "quesito": 6008,
+  "text": "L'impresa di trasporto non è responsabile per le violazioni alla normativa in materia di tempi di guida e di riposo commesse, durante il lavoro, dai conducenti alle proprie dipendenze quando sono all'estero",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27585",
+  "quesito": 6009,
+  "text": "Il regolamento 561/2006/CE prevede che, al fine di salvaguardare la sicurezza delle persone e delle cose trasportate, il conducente possa superare i tempi massimi di guida prescritti solo per raggiungere un luogo di sosta appropriato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27586",
+  "quesito": 6009,
+  "text": "Il conducente che deroga alla durata massima della guida al fine di raggiungere un luogo di sosta appropriato, deve annotarne i motivi sul foglio di registrazione o sul retro della stampa giornaliera (ticket)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27587",
+  "quesito": 6009,
+  "text": "Il regolamento 561/2006/CE prevede che il conducente possa superare i tempi massimi di guida prescritti per raggiungere il proprio domicilio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27588",
+  "quesito": 6009,
+  "text": "Il regolamento 561/2006/CE prevede che il conducente possa superare i tempi massimi di guida prescritti per raggiungere il deposito dell'impresa proprietaria del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27589",
+  "quesito": 6010,
+  "text": "Secondo il regolamento 561/2006/CE, per \"interruzione\" si intende ogni periodo in cui il conducente non può guidare o svolgere altre mansioni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27590",
+  "quesito": 6010,
+  "text": "Secondo il regolamento 561/2006/CE, per \"riposo\" si intende ogni periodo ininterrotto durante il quale il conducente può disporre liberamente del suo tempo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27591",
+  "quesito": 6010,
+  "text": "Secondo il regolamento 561/2006/CE, il \"tempo di disponibilità\" comprende il tempo di attesa sul posto di lavoro e la multipresenza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27592",
+  "quesito": 6010,
+  "text": "Secondo il regolamento 561/2006/CE, per \"interruzione\" si intende ogni fermata effettuata con il veicolo durante la giornata lavorativa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27593",
+  "quesito": 6010,
+  "text": "Secondo il regolamento 561/2006/CE, per \"disponibilità\" si intende l'assenso del lavoratore a svolgere mansioni al di fuori del normale orario di lavoro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27594",
+  "quesito": 6011,
+  "text": "Il regolamento 561/2006/CE stabilisce che il periodo massimo di guida settimanale è di cinquantasei ore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27595",
+  "quesito": 6011,
+  "text": "Il regolamento 561/2006/CE stabilisce che il periodo massimo di guida settimanale è di cinquantasei ore e che la guida non deve superare le novanta ore nell’arco di due settimane consecutive",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27596",
+  "quesito": 6011,
+  "text": "Secondo il regolamento 561/2006/CE, il periodo di riposo giornaliero può essere frazionato in due parti, la prima di almeno 3 ore e la seconda di almeno 9 ore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27597",
+  "quesito": 6011,
+  "text": "Secondo il regolamento 561/2006/CE, il conducente, dopo sei periodi di guida, deve effettuare un riposo di 45 ore consecutive",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27598",
+  "quesito": 6011,
+  "text": "Secondo il regolamento 561/2006/CE, il conducente, dopo sei periodi di guida, può effettuare un riposo ridotto di almeno 24 ore consecutive, purché le restanti ore di riposo vengano recuperate entro la fine della terza settimana",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27599",
+  "quesito": 6011,
+  "text": "Secondo il regolamento 561/2006/CE, si può parlare di multipresenza quando a bordo del veicolo sono presenti almeno due conducenti per l’intero periodo, fatta salva la prima ora nella quale la presenza del secondo conducente è facoltativa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27600",
+  "quesito": 6011,
+  "text": "Secondo il regolamento 561/2006/CE, il periodo di riposo giornaliero può essere frazionato in due parti, la prima di almeno 9 ore e la seconda di almeno 3 ore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27601",
+  "quesito": 6011,
+  "text": "Secondo il regolamento 561/2006/CE, il conducente, dopo quattro periodi di guida, deve effettuare un riposo di 48 ore consecutive",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27602",
+  "quesito": 6011,
+  "text": "Secondo il regolamento 561/2006/CE, si può parlare di multipresenza quando a bordo del veicolo sono presenti due conducenti per l’intero periodo, fatte salve le prime tre ore dove la presenza del secondo conducente è facoltativa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27603",
+  "quesito": 6011,
+  "text": "Il regolamento 561/2006/CE stabilisce che il periodo massimo di guida settimanale è di quarantotto ore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27604",
+  "quesito": 6011,
+  "text": "Il regolamento 561/2006/CE stabilisce che il periodo massimo di guida settimanale è di cinquantasei ore e che la guida non deve superare le cento ore nell’arco di due settimane consecutive",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "01",
+  "code": "27605",
+  "quesito": 6011,
+  "text": "Dopo un periodo di guida di quattro ore e mezza, il conducente deve osservare un periodo di riposo di almeno 50 minuti consecutivi",
+  "risposta": false,
+  "image": null
+ }
+]

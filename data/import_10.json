@@ -1,0 +1,938 @@
+[
+ {
+  "argomentoCode": "10",
+  "code": "28973",
+  "quesito": 6132,
+  "text": "L'agganciamento fra motrice e rimorchio avviene tramite campana e timone",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28974",
+  "quesito": 6132,
+  "text": "Il timone del rimorchio è collegato alla ralla posta sul rimorchio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28975",
+  "quesito": 6132,
+  "text": "Il timone del rimorchio consente la sterzatura del rimorchio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28976",
+  "quesito": 6132,
+  "text": "Il timone del rimorchio si collega alla campana tramite l'occhione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28977",
+  "quesito": 6132,
+  "text": "Gli organi di traino vanno periodicamente ingrassati",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28978",
+  "quesito": 6132,
+  "text": "Il rimorchio a volta corretta ha due ralle con un cavo a otto che le collega",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28979",
+  "quesito": 6132,
+  "text": "Il rimorchio a volta corretta permette, rispetto ad altri rimorchi, di ridurre la fascia di ingombro del complesso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28980",
+  "quesito": 6132,
+  "text": "La frenatura di un rimorchio con freno continuo e automatico è anticipata rispetto a quella della motrice",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28981",
+  "quesito": 6132,
+  "text": "Un rimorchio con freno ad inerzia non può superare i 3.500 chilogrammi di massa complessiva",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28982",
+  "quesito": 6132,
+  "text": "In caso di sganciamento accidentale del rimorchio con freno ad inerzia entra in funzione il freno di soccorso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28983",
+  "quesito": 6132,
+  "text": "Dopo aver agganciato calotta e sfera, si deve allacciare il cavo d'acciaio del freno di soccorso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28984",
+  "quesito": 6132,
+  "text": "Dopo aver agganciato calotta e sfera, si deve allacciare il cavo elettrico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28985",
+  "quesito": 6132,
+  "text": "Dopo aver agganciato calotta e sfera si deve alzare il ruotino pivottante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28986",
+  "quesito": 6132,
+  "text": "Quando si raggiunge la pressione massima nei serbatoi, il regolatore di pressione impedisce che siano alimentati con altra aria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28987",
+  "quesito": 6132,
+  "text": "Nei rimorchi dotati di freni pneumatici, in caso di rottura dei tubi di collegamento motrice-rimorchio si mette in funzione la frenatura automatica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28988",
+  "quesito": 6132,
+  "text": "In presenza di bielemento frenante, il freno di stazionamento utilizza la forza meccanica fornita da una molla",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28989",
+  "quesito": 6132,
+  "text": "Per trainare un veicolo in avaria dotato di bielemento frenante, si può sbloccare il freno di stazionamento agendo su un dispositivo meccanico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28990",
+  "quesito": 6132,
+  "text": "Sul timone è punzonato il numero del telaio del rimorchio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28991",
+  "quesito": 6132,
+  "text": "Per la frenatura di un rimorchio con freno continuo e automatico esiste un solo serbatoio montato sulla motrice",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28992",
+  "quesito": 6132,
+  "text": "Nel tubo moderabile c'è sempre aria in pressione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28993",
+  "quesito": 6132,
+  "text": "Nel tubo automatico l'aria va in pressione quando il conducente schiaccia il pedale del freno",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28994",
+  "quesito": 6132,
+  "text": "Il sistema di aggancio dell'autotreno è caratterizzato dalla presenza di una ralla sulla motrice",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28995",
+  "quesito": 6132,
+  "text": "Il gancio a sfera è l'organo di traino tipico per rimorchi superiori alle 3,5 tonnellate di massa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28996",
+  "quesito": 6132,
+  "text": "Il freno ad inerzia necessita di un impianto oleopneumatico sul semirimorchio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28997",
+  "quesito": 6132,
+  "text": "Le ralle con rivestimento in teflon necessitano di un ingrassaggio settimanale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28998",
+  "quesito": 6132,
+  "text": "I semigiunti di accoppiamento motrice-rimorchio dell'impianto frenante permettono il trasferimento di olio in pressione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "28999",
+  "quesito": 6132,
+  "text": "La pressione d'esercizio dell'impianto frenante pneumatico è di circa 25 bar",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29000",
+  "quesito": 6132,
+  "text": "Il timone del rimorchio deve avere lunghezza massima 60 centimetri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29001",
+  "quesito": 6132,
+  "text": "Il timone del rimorchio sopporta sempre un carico verticale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29002",
+  "quesito": 6132,
+  "text": "Gli organi di traino vanno ingrassati solo in occasione di revisione veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29003",
+  "quesito": 6132,
+  "text": "Nel regolatore di pressione di un impianto frenante pneumatico, la valvola di sicurezza deve restare sempre aperta",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29004",
+  "quesito": 6132,
+  "text": "Nel regolatore di pressione di un impianto frenante pneumatico, la valvola di sicurezza si apre al raggiungimento della pressione di esercizio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29005",
+  "quesito": 6132,
+  "text": "Nel regolatore di pressione di un impianto frenante pneumatico, la valvola di scarico si deve aprire appena acceso il motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29006",
+  "quesito": 6132,
+  "text": "Nei giunti di accoppiamento dei tubi che portano aria al rimorchio, il colore rosso identifica il tubo moderabile",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29007",
+  "quesito": 6132,
+  "text": "Sganciando i tubi dell'aria dei freni che vanno al rimorchio si svuota immediatamente il serbatoio posto sul rimorchio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29008",
+  "quesito": 6132,
+  "text": "Spostare a mano un rimorchio sganciato dalla motrice è impossibile dato che resta in ogni caso frenato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29009",
+  "quesito": 6132,
+  "text": "Nel caso di rottura del tubo moderabile, si ha la frenatura istantanea del rimorchio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29010",
+  "quesito": 6133,
+  "text": "Il distributore duplex viene azionato dal conducente tramite il pedale del freno",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29011",
+  "quesito": 6133,
+  "text": "Il distributore duplex ha il compito di realizzare la frenatura di servizio, garantendo quella di soccorso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29012",
+  "quesito": 6133,
+  "text": "La valvola di scarico del distributore duplex si apre quando il conducente rilascia il pedale del freno",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29013",
+  "quesito": 6133,
+  "text": "Il distributore duplex è diviso in due sezioni separate, una per frenare l'asse anteriore e una per frenare quello posteriore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29015",
+  "quesito": 6133,
+  "text": "Nell'impianto frenante pneumatico, il servodistributore a triplo comando è posto tra il distributore duplex e il servodeviatore modulato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29016",
+  "quesito": 6133,
+  "text": "Nell'impianto di frenatura pneumatico, il distributore duplex garantisce la frenatura di stazionamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29017",
+  "quesito": 6133,
+  "text": "Il distributore duplex viene comandato a mano per ottenere la frenatura di stazionamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29018",
+  "quesito": 6133,
+  "text": "Il distributore duplex è dotato di sole valvole d'immissione perché deve immagazzinare l’aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29019",
+  "quesito": 6133,
+  "text": "Nel distributore duplex, le valvole di scarico si aprono solo in caso di avaria all'impianto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29020",
+  "quesito": 6133,
+  "text": "Nell'impianto di frenatura pneumatico, il distributore duplex garantisce la frenatura del rimorchio in caso di guasto della condotta del moderabile",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29021",
+  "quesito": 6133,
+  "text": "Nell'impianto di frenatura pneumatico, il distributore duplex garantisce la frenatura del rimorchio in caso di guasto della condotta dell'automatico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29023",
+  "quesito": 6133,
+  "text": "Il circuito frenante del rimorchio è comandato da un secondo distributore duplex, che si trova subito a valle del giunto di accoppiamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29024",
+  "quesito": 6134,
+  "text": "Nell'impianto di frenatura pneumatico, il servodistributore a triplo comando, garantisce la frenatura di servizio, di soccorso e di stazionamento del rimorchio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29025",
+  "quesito": 6134,
+  "text": "Nell'impianto di frenatura pneumatico, il servodistributore a triplo comando è montato sulle motrici atte al traino",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29026",
+  "quesito": 6134,
+  "text": "Nell'impianto di frenatura pneumatico, al servodistributore a triplo comando sono collegati cinque tubi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29027",
+  "quesito": 6134,
+  "text": "Nell'impianto di frenatura pneumatico, al servodistributore a triplo comando sono collegati sia i tubi dei freni anteriori che quelli dei freni posteriori della motrice",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29028",
+  "quesito": 6134,
+  "text": "Nell'impianto di frenatura pneumatico, dal servodistributore a triplo comando l’aria esce da un solo tubo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29029",
+  "quesito": 6134,
+  "text": "Il servodeviatore modulato garantisce la frenatura del rimorchio anche in caso di avaria del tubo moderabile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29030",
+  "quesito": 6134,
+  "text": "Il servodeviatore modulato simula l'avaria del tubo automatico, quando invece si è verificata l’avaria del tubo moderabile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29031",
+  "quesito": 6134,
+  "text": "Il servodeviatore modulato innesca la frenatura automatica in caso di avaria del tubo moderabile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29032",
+  "quesito": 6134,
+  "text": "Il servodeviatore modulato è montato sulla motrice",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29033",
+  "quesito": 6134,
+  "text": "Il servodeviatore modulato è posto a valle del servodistributore a triplo comando",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29034",
+  "quesito": 6134,
+  "text": "Dal servodeviatore modulato partono i tubi automatico e moderabile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29035",
+  "quesito": 6134,
+  "text": "Il servodeviatore modulato non è necessario su una motrice non atta al traino",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29036",
+  "quesito": 6134,
+  "text": "Il servoautodistributore è montato sul rimorchio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29037",
+  "quesito": 6134,
+  "text": "Al servoautodistributore sono collegati in ingresso due tubi, quello del moderabile e quello dell’automatico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29038",
+  "quesito": 6134,
+  "text": "Dal servoautodistributore sono collegati in uscita due tubi, uno che va al serbatoio del rimorchio e uno agli elementi frenanti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29039",
+  "quesito": 6134,
+  "text": "Il servoautodistributore garantisce la frenatura istantanea ed automatica del rimorchio in caso di sganciamento accidentale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29040",
+  "quesito": 6134,
+  "text": "Nel servoautodistributore esiste un comando manuale per lo sblocco dei freni di stazionamento del rimorchio quando lo stesso è sganciato dalla motrice",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29041",
+  "quesito": 6134,
+  "text": "Il servoautodistributore è dotato di una valvola di ritenuta, una di scarico e una d'immissione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29042",
+  "quesito": 6134,
+  "text": "Nel servoautodistributore, la valvola d'immissione resta aperta finché viene premuto il pedale del freno",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29043",
+  "quesito": 6134,
+  "text": "Nell'impianto di frenatura pneumatico, il servodistributore a triplo comando garantisce la frenatura del rimorchio in caso di avaria del tubo moderabile",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29044",
+  "quesito": 6134,
+  "text": "Nell'impianto di frenatura pneumatico, il servodistributore a triplo comando, garantisce la frenatura del rimorchio in caso di avaria del tubo automatico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29045",
+  "quesito": 6134,
+  "text": "La frenatura di soccorso del servodistributore a triplo comando garantisce la frenatura del rimorchio in caso di guasto del tubo moderabile",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29046",
+  "quesito": 6134,
+  "text": "Nell'impianto di frenatura pneumatico, il servodeviatore modulato è posto sul rimorchio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29047",
+  "quesito": 6134,
+  "text": "Quando per un'avaria non funziona una sezione dell’impianto frenante della motrice, il servoautodistributore garantisce comunque la frenatura del rimorchio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29048",
+  "quesito": 6134,
+  "text": "Quando, per un'avaria, non funziona una sezione dell’impianto di frenatura della motrice, il servodeviatore modulato garantisce ugualmente la frenatura del rimorchio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29049",
+  "quesito": 6134,
+  "text": "Quando, per un'avaria, si svuota durante la marcia il tubo automatico, il servodistributore a triplo comando svuota immediatamente il tubo moderabile",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29050",
+  "quesito": 6134,
+  "text": "Quando, per un'avaria, si svuota durante la marcia il tubo automatico, il servodistributore a triplo comando garantisce comunque la frenatura del rimorchio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29051",
+  "quesito": 6135,
+  "text": "Il modulatore di pressione in funzione del carico può essere montato sia sui rimorchi che sulle motrici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29052",
+  "quesito": 6135,
+  "text": "Il modulatore di pressione in funzione del carico è montato sul telaio ed è collegato con una leva all'assale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29053",
+  "quesito": 6135,
+  "text": "Il modulatore di pressione in funzione del carico garantisce la progressività della frenata col variare del carico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29054",
+  "quesito": 6135,
+  "text": "Il modulatore di pressione in funzione del carico controlla, generalmente, l’intensità della forza frenante applicata agli assi posteriori della motrice",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29055",
+  "quesito": 6135,
+  "text": "Il modulatore di pressione in funzione del carico, se presente sul rimorchio, ne controlla la frenatura di tutti gli assi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29056",
+  "quesito": 6135,
+  "text": "Il modulatore di pressione in funzione del carico serve a dosare la forza frenante in base al carico gravante su un asse",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29057",
+  "quesito": 6135,
+  "text": "Il modulatore di pressione in funzione del carico funziona automaticamente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29058",
+  "quesito": 6135,
+  "text": "Il modulatore di pressione in funzione del carico, in base alla distanza tra assale e telaio determinatasi in base al carico, modula la forza frenante da applicare all’asse stesso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29059",
+  "quesito": 6135,
+  "text": "Il modulatore di pressione in funzione del carico, limita la possibilità che le ruote dell’assale cui è applicato si blocchino in caso di frenata a veicolo scarico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29060",
+  "quesito": 6135,
+  "text": "Il modulatore di pressione in funzione del carico non è montato sui rimorchi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29061",
+  "quesito": 6135,
+  "text": "Il modulatore di pressione in funzione del carico è messo in funzione dal conducente prima della partenza",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29062",
+  "quesito": 6135,
+  "text": "Il modulatore di pressione in funzione del carico è montato direttamente sull'assale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29063",
+  "quesito": 6135,
+  "text": "Il modulatore di pressione in funzione del carico garantisce la frenatura del rimorchio in caso di distacco accidentale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29064",
+  "quesito": 6135,
+  "text": "Il modulatore di pressione in funzione del carico garantisce la frenatura del rimorchio in caso di guasto del serbatoio del rimorchio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29065",
+  "quesito": 6136,
+  "text": "L'agganciamento fra trattore stradale e semirimorchio avviene tramite ralla e perno",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29066",
+  "quesito": 6136,
+  "text": "La ralla a coda di rondine è fissata ad un falso telaio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29067",
+  "quesito": 6136,
+  "text": "L'avanzamento ralla varia il carico trasmesso dal semirimorchio al trattore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29068",
+  "quesito": 6136,
+  "text": "La ralla del trattore può oscillare per compensare i piccoli dislivelli del piano stradale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29069",
+  "quesito": 6136,
+  "text": "La ralla del trattore è dotata di ganascia e leva di blocco per garantire il bloccaggio del perno del semirimorchio anche sotto sforzo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29070",
+  "quesito": 6136,
+  "text": "Il perno del semirimorchio sopporta interamente la forza di trazione trasmessa dal trattore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29071",
+  "quesito": 6136,
+  "text": "Il perno del semirimorchio non può mai essere saldato per riparazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29072",
+  "quesito": 6136,
+  "text": "Il rimorchio a volta corretta è dotato di due ralle circolari",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29074",
+  "quesito": 6136,
+  "text": "Il servoautodistributore garantisce la frenatura continua e automatica del semirimorchio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29075",
+  "quesito": 6136,
+  "text": "L'agganciamento fra trattore stradale e semirimorchio avviene tramite campana e timone",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29076",
+  "quesito": 6136,
+  "text": "La ralla del trattore sopporta una minima parte della massa del semirimorchio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29077",
+  "quesito": 6136,
+  "text": "L'agganciamento fra motrice e rimorchio avviene tramite ralla e perno",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29078",
+  "quesito": 6136,
+  "text": "Il valore dell’avanzamento ralla non è annotato sulla carta di circolazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29079",
+  "quesito": 6136,
+  "text": "Il perno del semirimorchio deve avere ampio gioco all’interno del suo alloggiamento nella ralla, in modo da garantire la volta corretta del semirimorchio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29080",
+  "quesito": 6136,
+  "text": "Perno del semirimorchio e piano della ralla del trattore devono essere sempre lucidi e non devono presentare tracce di grasso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29081",
+  "quesito": 6136,
+  "text": "Il valore dell’avanzamento ralla può essere variato dall’autista, in funzione del tipo di strada che dovrà percorrere",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29082",
+  "quesito": 6137,
+  "text": "Nei rimorchi di massa limitata la disposizione del carico influisce sulla stabilità del veicolo trainante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29083",
+  "quesito": 6137,
+  "text": "La frenatura di un rimorchio leggero avviene con un piccolo ritardo rispetto alla motrice",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29084",
+  "quesito": 6137,
+  "text": "La frenatura di un rimorchio di massa fino a 3,5 tonnellate avviene, in genere, con un impianto frenante che sfrutta l’inerzia del rimorchio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29085",
+  "quesito": 6137,
+  "text": "Il sistema frenante di un rimorchio di massa fino a 3,5 tonnellate può essere ad inerzia e di tipo idraulico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29086",
+  "quesito": 6137,
+  "text": "Il sistema frenante di un rimorchio di massa fino a 3,5 tonnellate può essere ad inerzia e di tipo meccanico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29087",
+  "quesito": 6137,
+  "text": "Il servoautodistributore non è in genere montato sui rimorchi di massa limitata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29088",
+  "quesito": 6137,
+  "text": "Il modulatore di pressione in funzione del carico non è in genere montato sui rimorchi di massa limitata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29089",
+  "quesito": 6137,
+  "text": "Il sistema frenante di un rimorchio di massa fino a 3,5 tonnellate non è mai di tipo meccanico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29090",
+  "quesito": 6137,
+  "text": "Il sistema frenante di un rimorchio di massa fino a 3,5 tonnellate può essere solo di tipo meccanico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29091",
+  "quesito": 6137,
+  "text": "Dopo aver agganciato un rimorchio monoasse, si deve fissare a terra il ruotino pivottante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "10",
+  "code": "29092",
+  "quesito": 6137,
+  "text": "Un rimorchio con impianto frenante ad inerzia, quando viene sganciato manualmente, resta bloccato automaticamente",
+  "risposta": false,
+  "image": null
+ }
+]

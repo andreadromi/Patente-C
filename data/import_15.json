@@ -1,0 +1,1874 @@
+[
+ {
+  "argomentoCode": "15",
+  "code": "30466",
+  "quesito": 6242,
+  "text": "Se dal tubo di scarico esce molto vapore, ciò può significare che vi è un’infiltrazione di acqua o di liquido di raffreddamento nei cilindri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30467",
+  "quesito": 6242,
+  "text": "Se si riscontra la presenza di liquido di raffreddamento nella coppa dell’olio, ciò può dipendere dalla guarnizione della testata bruciata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30468",
+  "quesito": 6242,
+  "text": "Se si accende la spia rossa dell’impianto di raffreddamento, è necessario fermarsi e spegnere subito il motore, per evitare danni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30469",
+  "quesito": 6242,
+  "text": "Se si accende la spia rossa dell’impianto di lubrificazione, è necessario fermarsi e spegnere subito il motore, per evitare danni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30470",
+  "quesito": 6242,
+  "text": "Se si accende la spia rossa dell’impianto di lubrificazione è necessario fermare subito il motore e, se non vi sono perdite di lubrificante, occorre rabboccare con lubrificante, possibilmente dello stesso tipo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30471",
+  "quesito": 6242,
+  "text": "Alla partenza, se si accende la spia rossa, dell’impianto di lubrificazione, è necessario spegnere subito il motore, verificare la quantità di olio nella coppa e, se è basso il livello dell’olio, effettuare un rabbocco di olio dello stesso tipo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30472",
+  "quesito": 6242,
+  "text": "Se si accende la spia della lubrificazione, significa che bisogna cambiare il filtro dell'olio entro mille chilometri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30473",
+  "quesito": 6242,
+  "text": "Se si accende la spia della lubrificazione, significa che bisogna cambiare l’olio di lubrificazione del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30474",
+  "quesito": 6242,
+  "text": "Se dal tubo di scarico esce vapore, ciò significa che c’è troppo liquido nel radiatore ed è quindi opportuno scaricarne una parte",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30475",
+  "quesito": 6242,
+  "text": "Se si riscontra presenza di acqua o di liquido del raffreddamento nella coppa dell’olio, è possibile che sia rotto il radiatore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30476",
+  "quesito": 6242,
+  "text": "Se si accende la spia del raffreddamento, occorre accelerare per giungere a destinazione prima che si esaurisca il liquido nel radiatore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30477",
+  "quesito": 6243,
+  "text": "Il fumo nero allo scarico può indicare una scarsità di aria nella combustione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30478",
+  "quesito": 6243,
+  "text": "Il fumo nero allo scarico può indicare un eccesso di gasolio nella combustione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30479",
+  "quesito": 6243,
+  "text": "Il fumo nero allo scarico indica una cattiva combustione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30480",
+  "quesito": 6243,
+  "text": "Nel motore Diesel, il fumo nero allo scarico indica un'insufficiente compressione in uno o più cilindri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30481",
+  "quesito": 6243,
+  "text": "Il fumo nero allo scarico indica un inizio di incendio nel motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30482",
+  "quesito": 6243,
+  "text": "Il fumo nero allo scarico indica presenza d’olio nella combustione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30483",
+  "quesito": 6243,
+  "text": "Il fumo nero allo scarico indica che dobbiamo utilizzare un tipo di gasolio con più alto numero di ottani",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30484",
+  "quesito": 6244,
+  "text": "La fuoriuscita di fumo bianco ed abbondante dallo scarico può indicare una perdita d’olio in camera di scoppio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30485",
+  "quesito": 6244,
+  "text": "La cattiva combustione che provoca fumosità allo scarico può essere causata dal filtro dell'aria intasato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30486",
+  "quesito": 6244,
+  "text": "La cattiva combustione che provoca fumosità allo scarico può essere causata dall’iniettore non funzionante correttamente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30487",
+  "quesito": 6244,
+  "text": "La cattiva combustione che provoca fumosità allo scarico può essere causata da una quantità eccessiva di carburante iniettata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30489",
+  "quesito": 6244,
+  "text": "La fuoriuscita di fumo bianco ed abbondante dallo scarico può indicare l’uso di benzina al posto del gasolio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30490",
+  "quesito": 6244,
+  "text": "La fuoriuscita di fumo bianco ed abbondante dallo scarico può indicare un consumo eccessivo di gasolio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30491",
+  "quesito": 6244,
+  "text": "La cattiva combustione che provoca fumosità allo scarico può essere causata dal filtro dell'olio intasato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30492",
+  "quesito": 6245,
+  "text": "L’indicazione di un eccesso di pressione dell’aria nei serbatoi dell’impianto frenante, può essere causata da un difettoso funzionamento del gruppo di regolazione e controllo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30493",
+  "quesito": 6245,
+  "text": "L’indicazione di un eccesso di pressione dell’aria nei serbatoi dell’impianto frenante, può essere causata da difettoso funzionamento della valvola di protezione dei serbatoi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30494",
+  "quesito": 6245,
+  "text": "L’eccessiva pressione d’aria nei serbatoi dell’impianto frenante, è indicata dal manometro presente sul cruscotto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30495",
+  "quesito": 6245,
+  "text": "La scarsa pressione dell’aria nei serbatoi dell’impianto frenante, può essere causata dal difettoso funzionamento del compressore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30496",
+  "quesito": 6245,
+  "text": "La presenza di gasolio nel serbatoio dell’impianto frenante diminuisce la distanza di frenatura",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30497",
+  "quesito": 6245,
+  "text": "In caso di eccessiva pressione dell’aria nei serbatoi dell’impianto frenante, il conducente deve astenersi dall’utilizzare i freni e ricorrere maggiormente al rallentatore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30498",
+  "quesito": 6245,
+  "text": "In caso di scarsa pressione dell’aria dei serbatoi dell’impianto frenante, è opportuno agire ripetutamente sul pedale del freno per far salire la pressione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30499",
+  "quesito": 6245,
+  "text": "In caso di scarsa pressione dell’aria nei serbatoi dell’impianto frenante, è opportuno staccare l’impianto delle sospensioni pneumatiche per risparmiare aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30500",
+  "quesito": 6245,
+  "text": "L’eccessiva pressione d’aria nei serbatoi dell’impianto frenante, è indicata dal termometro presente sul cruscotto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30501",
+  "quesito": 6246,
+  "text": "La spia di accensione della segnalazione luminosa di pericolo è di colore rosso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30502",
+  "quesito": 6246,
+  "text": "La spia della temperatura dell’acqua di raffreddamento è di colore rosso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30503",
+  "quesito": 6246,
+  "text": "La spia di bassa pressione dell'olio è di colore rosso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30504",
+  "quesito": 6246,
+  "text": "La spia del mancato agganciamento della cintura di sicurezza è di colore rosso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30505",
+  "quesito": 6246,
+  "text": "La spia del freno di stazionamento inserito è di colore rosso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30506",
+  "quesito": 6246,
+  "text": "La spia di accensione degli indicatori di direzione è di colore rosso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30507",
+  "quesito": 6246,
+  "text": "La spia di accensione dei proiettori anabbaglianti è di colore rosso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30508",
+  "quesito": 6246,
+  "text": "La spia di accensione dei proiettori abbaglianti è di colore rosso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30509",
+  "quesito": 6246,
+  "text": "La spia dei proiettori fendinebbia è di colore rosso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30510",
+  "quesito": 6246,
+  "text": "La spia del dispositivo per sbrinare o disappannare il parabrezza è di colore rosso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30511",
+  "quesito": 6247,
+  "text": "Il simbolo raffigurato è posto sul comando di accensione dei proiettori di profondità",
+  "risposta": true,
+  "image": "22057a56ecc4.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30512",
+  "quesito": 6247,
+  "text": "Il simbolo raffigurato è posto su una spia a luce blu",
+  "risposta": true,
+  "image": "22057a56ecc4.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30513",
+  "quesito": 6247,
+  "text": "Il simbolo raffigurato è posto su una spia a luce verde",
+  "risposta": false,
+  "image": "22057a56ecc4.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30514",
+  "quesito": 6247,
+  "text": "Il simbolo raffigurato è posto sul comando di accensione dei proiettori anabbaglianti",
+  "risposta": false,
+  "image": "22057a56ecc4.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30515",
+  "quesito": 6247,
+  "text": "Il simbolo raffigurato segnala l'accensione della luce posteriore per nebbia",
+  "risposta": false,
+  "image": "22057a56ecc4.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30516",
+  "quesito": 6247,
+  "text": "Il simbolo raffigurato ricorda al conducente che deve spegnere le luci di posizione",
+  "risposta": false,
+  "image": "22057a56ecc4.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30517",
+  "quesito": 6248,
+  "text": "Il simbolo raffigurato è posto sul comando di accensione dei proiettori anabbaglianti",
+  "risposta": true,
+  "image": "5cee5d1f4239.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30518",
+  "quesito": 6248,
+  "text": "Il simbolo raffigurato è posto su una spia a luce verde",
+  "risposta": true,
+  "image": "5cee5d1f4239.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30519",
+  "quesito": 6248,
+  "text": "Il simbolo raffigurato è posto su una spia a luce blu",
+  "risposta": false,
+  "image": "5cee5d1f4239.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30520",
+  "quesito": 6248,
+  "text": "Il simbolo raffigurato segnala l’accensione della luce posteriore per nebbia",
+  "risposta": false,
+  "image": "5cee5d1f4239.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30521",
+  "quesito": 6248,
+  "text": "Il simbolo raffigurato è posto sulla spia dei proiettori abbaglianti accesi",
+  "risposta": false,
+  "image": "5cee5d1f4239.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30522",
+  "quesito": 6248,
+  "text": "Il simbolo raffigurato segnala l'accensione delle luci di posizione",
+  "risposta": false,
+  "image": "5cee5d1f4239.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30523",
+  "quesito": 6249,
+  "text": "Il simbolo raffigurato indica il comando degli indicatori di direzione",
+  "risposta": true,
+  "image": "90594ce41082.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30524",
+  "quesito": 6249,
+  "text": "Il simbolo raffigurato è posto su una spia a luce verde",
+  "risposta": true,
+  "image": "90594ce41082.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30525",
+  "quesito": 6249,
+  "text": "Il simbolo raffigurato è posto su una spia di colore giallo",
+  "risposta": false,
+  "image": "90594ce41082.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30526",
+  "quesito": 6249,
+  "text": "Il simbolo raffigurato indica il comando per accendere le luci di posizione",
+  "risposta": false,
+  "image": "90594ce41082.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30527",
+  "quesito": 6250,
+  "text": "Il simbolo raffigurato indica il comando per azionare la segnalazione luminosa di pericolo",
+  "risposta": true,
+  "image": "6dd6225f578b.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30528",
+  "quesito": 6250,
+  "text": "Il simbolo raffigurato è posto sul comando che provoca l'accensione contemporanea di tutti gli indicatori di direzione",
+  "risposta": true,
+  "image": "6dd6225f578b.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30529",
+  "quesito": 6250,
+  "text": "Il simbolo raffigurato è posto su una spia di colore rosso",
+  "risposta": true,
+  "image": "6dd6225f578b.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30530",
+  "quesito": 6250,
+  "text": "Il simbolo raffigurato indica un dispositivo da usare in casi di emergenza",
+  "risposta": true,
+  "image": "6dd6225f578b.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30531",
+  "quesito": 6250,
+  "text": "Il simbolo raffigurato indica il comando che aziona il segnale mobile di pericolo",
+  "risposta": false,
+  "image": "6dd6225f578b.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30532",
+  "quesito": 6250,
+  "text": "Il simbolo raffigurato è posto sulla spia di freno di stazionamento inserito",
+  "risposta": false,
+  "image": "6dd6225f578b.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30533",
+  "quesito": 6250,
+  "text": "Il simbolo raffigurato indica un dispositivo che si accende automaticamente in caso di urto",
+  "risposta": false,
+  "image": "6dd6225f578b.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30534",
+  "quesito": 6250,
+  "text": "Il simbolo raffigurato è posto su una spia a luce rossa fissa",
+  "risposta": false,
+  "image": "6dd6225f578b.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30535",
+  "quesito": 6251,
+  "text": "Il simbolo mostrato in figura si trova sul comando del tergicristallo",
+  "risposta": true,
+  "image": "7beea8fac8d0.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30536",
+  "quesito": 6251,
+  "text": "Per il simbolo rappresentato in figura non è prevista una spia luminosa",
+  "risposta": true,
+  "image": "7beea8fac8d0.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30537",
+  "quesito": 6251,
+  "text": "Il simbolo rappresentato in figura si trova su una spia luminosa di colore giallo ambra",
+  "risposta": false,
+  "image": "7beea8fac8d0.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30538",
+  "quesito": 6251,
+  "text": "Il simbolo mostrato in figura si trova sul comando di accensione del proiettore fendinebbia",
+  "risposta": false,
+  "image": "7beea8fac8d0.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30539",
+  "quesito": 6252,
+  "text": "Il simbolo mostrato in figura si trova sul comando dell’avvisatore acustico",
+  "risposta": true,
+  "image": "0adc449d58b6.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30540",
+  "quesito": 6252,
+  "text": "Il simbolo rappresentato in figura non si trova su una spia luminosa",
+  "risposta": true,
+  "image": "0adc449d58b6.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30541",
+  "quesito": 6252,
+  "text": "Il simbolo rappresentato in figura si trova su una spia luminosa di colore giallo ambra",
+  "risposta": false,
+  "image": "0adc449d58b6.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30542",
+  "quesito": 6252,
+  "text": "Il simbolo rappresentato in figura si trova su una spia luminosa di colore rosso",
+  "risposta": false,
+  "image": "0adc449d58b6.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30543",
+  "quesito": 6253,
+  "text": "Il simbolo rappresentato in figura indica che si sta utilizzando la riserva di carburante",
+  "risposta": true,
+  "image": "67bc7f9e4bb9.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30544",
+  "quesito": 6253,
+  "text": "Il simbolo rappresentato in figura si trova su una spia luminosa di colore giallo ambra",
+  "risposta": true,
+  "image": "67bc7f9e4bb9.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30545",
+  "quesito": 6253,
+  "text": "Il simbolo rappresentato in figura si accende sulla spia che indica un guasto all'impianto di alimentazione",
+  "risposta": false,
+  "image": "67bc7f9e4bb9.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30546",
+  "quesito": 6253,
+  "text": "Il simbolo rappresentato in figura si trova su una spia a luce lampeggiante rossa",
+  "risposta": false,
+  "image": "67bc7f9e4bb9.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30547",
+  "quesito": 6253,
+  "text": "Il simbolo rappresentato in figura si trova su una spia luminosa di colore verde",
+  "risposta": false,
+  "image": "67bc7f9e4bb9.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30548",
+  "quesito": 6254,
+  "text": "Il simbolo rappresentato in figura indica l’eccessiva temperatura del liquido di raffreddamento",
+  "risposta": true,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30549",
+  "quesito": 6254,
+  "text": "Il simbolo rappresentato si trova su una spia luminosa di colore rosso",
+  "risposta": true,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30550",
+  "quesito": 6254,
+  "text": "Quando la spia contraddistinta dal simbolo in figura è accesa, si deve arrestare il veicolo il prima possibile per evitare danni al motore",
+  "risposta": true,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30551",
+  "quesito": 6254,
+  "text": "Il simbolo rappresentato in figura indica una temperatura del liquido di raffreddamento troppo bassa",
+  "risposta": false,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30552",
+  "quesito": 6254,
+  "text": "Il simbolo rappresentato in figura si trova su una spia luminosa di colore giallo ambra",
+  "risposta": false,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30553",
+  "quesito": 6254,
+  "text": "Quando la spia contraddistinta dal simbolo in figura è accesa, si può proseguire fino all’officina più vicina, purché non disti oltre 50 chilometri",
+  "risposta": false,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30554",
+  "quesito": 6255,
+  "text": "Quando la spia contraddistinta dal simbolo in figura è accesa, significa che la batteria non si sta ricaricando",
+  "risposta": true,
+  "image": "6930d17e542f.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30555",
+  "quesito": 6255,
+  "text": "Il simbolo rappresentato in figura si trova su una spia luminosa di colore rosso",
+  "risposta": true,
+  "image": "6930d17e542f.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30556",
+  "quesito": 6255,
+  "text": "Il simbolo rappresentato in figura si trova su una spia luminosa di colore blu",
+  "risposta": false,
+  "image": "6930d17e542f.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30557",
+  "quesito": 6255,
+  "text": "Quando la spia contraddistinta dal simbolo in figura è accesa, significa che la batteria è completamente scarica",
+  "risposta": false,
+  "image": "6930d17e542f.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30558",
+  "quesito": 6256,
+  "text": "Quando la spia contraddistinta dal simbolo in figura è accesa, significa che non vi è sufficiente pressione nel circuito di lubrificazione del motore",
+  "risposta": true,
+  "image": "dbd90c0e927e.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30559",
+  "quesito": 6256,
+  "text": "Il simbolo rappresentato in figura si trova su una spia luminosa di colore rosso",
+  "risposta": true,
+  "image": "dbd90c0e927e.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30560",
+  "quesito": 6256,
+  "text": "Quando la spia contraddistinta dal simbolo in figura è accesa, significa che il livello dell’olio è eccessivo",
+  "risposta": false,
+  "image": "dbd90c0e927e.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30561",
+  "quesito": 6256,
+  "text": "Quando la spia contraddistinta dal simbolo in figura è accesa, significa che l’olio ha raggiunto una temperatura critica",
+  "risposta": false,
+  "image": "dbd90c0e927e.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30562",
+  "quesito": 6257,
+  "text": "Il simbolo rappresentato in figura segnala che il conducente o un passeggero non hanno indossato la cintura di sicurezza",
+  "risposta": true,
+  "image": "cff102c66c47.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30563",
+  "quesito": 6257,
+  "text": "Il simbolo rappresentato in figura si trova su una spia luminosa di colore rosso",
+  "risposta": true,
+  "image": "cff102c66c47.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30564",
+  "quesito": 6257,
+  "text": "La spia contraddistinta dal simbolo in figura, quando è accesa, indica il malfunzionamento delle cinture di sicurezza",
+  "risposta": false,
+  "image": "cff102c66c47.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30565",
+  "quesito": 6257,
+  "text": "Il simbolo rappresentato in figura si trova su una spia luminosa di colore verde",
+  "risposta": false,
+  "image": "cff102c66c47.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30566",
+  "quesito": 6258,
+  "text": "Il simbolo rappresentato in figura si trova sul comando di accensione del dispositivo antiappannamento del parabrezza anteriore",
+  "risposta": true,
+  "image": "47d9d3cd9fde.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30567",
+  "quesito": 6258,
+  "text": "Il simbolo rappresentato in figura si trova su una spia luminosa di colore giallo ambra",
+  "risposta": true,
+  "image": "47d9d3cd9fde.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30568",
+  "quesito": 6258,
+  "text": "Il simbolo rappresentato in figura si trova su una spia luminosa di colore rosso",
+  "risposta": false,
+  "image": "47d9d3cd9fde.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30569",
+  "quesito": 6258,
+  "text": "Quando la spia contraddistinta dal simbolo in figura è accesa, ciò indica il malfunzionamento del dispositivo antiappannamento",
+  "risposta": false,
+  "image": "47d9d3cd9fde.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30570",
+  "quesito": 6259,
+  "text": "Il simbolo rappresentato in figura si trova sul comando di accensione delle luci fendinebbia posteriori",
+  "risposta": true,
+  "image": "60fe6459362c.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30571",
+  "quesito": 6259,
+  "text": "Il simbolo rappresentato in figura si trova su una spia luminosa di colore giallo ambra",
+  "risposta": true,
+  "image": "60fe6459362c.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30572",
+  "quesito": 6259,
+  "text": "Il simbolo rappresentato in figura si trova sul comando di accensione delle luci fendinebbia anteriori",
+  "risposta": false,
+  "image": "60fe6459362c.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30573",
+  "quesito": 6259,
+  "text": "Il simbolo rappresentato in figura si trova su una spia luminosa di colore verde",
+  "risposta": false,
+  "image": "60fe6459362c.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30575",
+  "quesito": 6260,
+  "text": "Il simbolo rappresentato in figura si trova su una spia luminosa di colore verde",
+  "risposta": true,
+  "image": "d050c8f56350.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30576",
+  "quesito": 6260,
+  "text": "Il simbolo rappresentato in figura si trova sul comando di accensione delle luci fendinebbia posteriori",
+  "risposta": false,
+  "image": "d050c8f56350.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30577",
+  "quesito": 6260,
+  "text": "Il simbolo rappresentato in figura si trova su una spia luminosa di colore rosso",
+  "risposta": false,
+  "image": "d050c8f56350.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30578",
+  "quesito": 6261,
+  "text": "L’accensione della spia indicata in figura, può essere causata da un difettoso funzionamento del termometro",
+  "risposta": true,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30579",
+  "quesito": 6261,
+  "text": "L’accensione della spia indicata in figura, può essere causata dall’insufficiente quantità di liquido nel circuito",
+  "risposta": true,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30580",
+  "quesito": 6261,
+  "text": "L’accensione della spia indicata in figura, può essere causata dalla rottura della pompa dell’impianto",
+  "risposta": true,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30581",
+  "quesito": 6261,
+  "text": "L’accensione della spia indicata in figura, può essere causata dalla rottura della cinghia trapezoidale",
+  "risposta": true,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30582",
+  "quesito": 6261,
+  "text": "L’accensione della spia indicata in figura, può essere causata dal difettoso funzionamento del termostato",
+  "risposta": true,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30583",
+  "quesito": 6261,
+  "text": "L’accensione della spia indicata in figura, può essere causata dal difettoso funzionamento della ventola",
+  "risposta": true,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30584",
+  "quesito": 6261,
+  "text": "L’accensione della spia indicata in figura, può essere causata dal surriscaldamento dei freni",
+  "risposta": false,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30585",
+  "quesito": 6261,
+  "text": "L’accensione della spia indicata in figura, è in genere causata dal sovraccarico del veicolo",
+  "risposta": false,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30586",
+  "quesito": 6261,
+  "text": "L’accensione della spia indicata in figura, può essere provocata dall’uso prolungato del veicolo a velocità costante",
+  "risposta": false,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30587",
+  "quesito": 6261,
+  "text": "L’accensione della spia indicata in figura, può essere causata dalla mancanza dell’olio del cambio",
+  "risposta": false,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30588",
+  "quesito": 6261,
+  "text": "L’accensione della spia indicata in figura, può essere causata dall’uso di antigelo esausto nel liquido di raffreddamento",
+  "risposta": false,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30589",
+  "quesito": 6261,
+  "text": "L’accensione della spia indicata in figura, può essere causata dal malfunzionamento dell’impianto di condizionamento del veicolo",
+  "risposta": false,
+  "image": "17f296699c21.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30590",
+  "quesito": 6262,
+  "text": "L’accensione della spia indicata in figura, può essere determinata da un difettoso funzionamento dell’impianto di accensione",
+  "risposta": true,
+  "image": "6930d17e542f.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30591",
+  "quesito": 6262,
+  "text": "L’accensione della spia indicata in figura, può indicare che l’alternatore non carica più la batteria",
+  "risposta": true,
+  "image": "6930d17e542f.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30592",
+  "quesito": 6262,
+  "text": "L’accensione della spia indicata in figura, può essere determinata dalla rottura della cinghia trapezoidale",
+  "risposta": true,
+  "image": "6930d17e542f.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30593",
+  "quesito": 6262,
+  "text": "L’avaria dell’alternatore impedisce alla batteria di ricaricarsi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30594",
+  "quesito": 6262,
+  "text": "L’accensione della spia indicata in figura, segnala che la batteria non viene ricaricata correttamente",
+  "risposta": true,
+  "image": "6930d17e542f.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30595",
+  "quesito": 6262,
+  "text": "L’accensione della spia indicata in figura, può essere determinata dalla rottura della lampadina di un proiettore",
+  "risposta": false,
+  "image": "6930d17e542f.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30596",
+  "quesito": 6262,
+  "text": "L’accensione della spia indicata in figura, può essere determinata dall’uso contemporaneo di più utilizzatori (radio, accendisigari, aria condizionata)",
+  "risposta": false,
+  "image": "6930d17e542f.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30597",
+  "quesito": 6262,
+  "text": "L’accensione della spia indicata in figura, impone all’autista di fermarsi e ripartire dopo aver tenuto il motore spento per almeno 1 ora",
+  "risposta": false,
+  "image": "6930d17e542f.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30598",
+  "quesito": 6262,
+  "text": "L’accensione della spia indicata in figura, può essere determinata dalla temperatura esterna eccessivamente bassa",
+  "risposta": false,
+  "image": "6930d17e542f.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30599",
+  "quesito": 6262,
+  "text": "L’imbrattamento delle candele riduce la capacità dell’alternatore di ricaricare la batteria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30600",
+  "quesito": 6262,
+  "text": "L’accensione della spia indicata in figura, segnala che la pressione del liquido della batteria ha superato il valore massimo",
+  "risposta": false,
+  "image": "6930d17e542f.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30601",
+  "quesito": 6262,
+  "text": "L’accensione della spia indicata in figura, ci obbliga a fermarci immediatamente",
+  "risposta": false,
+  "image": "6930d17e542f.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30602",
+  "quesito": 6262,
+  "text": "La spia della batteria accesa significa che la batteria è sicuramente scarica",
+  "risposta": false,
+  "image": "6930d17e542f.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30603",
+  "quesito": 6263,
+  "text": "L’accensione della spia indicata in figura, è determinata dalla scarsa pressione dell’olio nel circuito di lubrificazione",
+  "risposta": true,
+  "image": "dbd90c0e927e.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30604",
+  "quesito": 6263,
+  "text": "L’accensione della spia indicata in figura, può indicare il difettoso funzionamento della pompa ad ingranaggi",
+  "risposta": true,
+  "image": "dbd90c0e927e.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30605",
+  "quesito": 6263,
+  "text": "L’accensione della spia indicata in figura, può essere determinata dall’insufficiente quantitativo di olio nel circuito",
+  "risposta": true,
+  "image": "dbd90c0e927e.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30606",
+  "quesito": 6263,
+  "text": "In caso di accensione della spia indicata in figura, si deve verificare il livello dell’olio mediante l’apposita astina",
+  "risposta": true,
+  "image": "dbd90c0e927e.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30607",
+  "quesito": 6263,
+  "text": "L’accensione della spia indicata in figura, può essere determinata dalla mancata sostituzione dell’olio stesso alla scadenza programmata",
+  "risposta": false,
+  "image": "dbd90c0e927e.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30609",
+  "quesito": 6263,
+  "text": "In caso di accensione della spia indicata in figura, bisogna aumentare il numero di giri del motore per aumentare la pressione del lubrificante all'interno del circuito",
+  "risposta": false,
+  "image": "dbd90c0e927e.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30610",
+  "quesito": 6263,
+  "text": "L’accensione della spia indicata in figura, indica che si può continuare la marcia fino alla prima officina meccanica, purché disti meno di duecento chilometri",
+  "risposta": false,
+  "image": "dbd90c0e927e.jpg"
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30611",
+  "quesito": 6264,
+  "text": "Una cattiva registrazione del servosterzo può essere la causa di un effetto sovrasterzante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30612",
+  "quesito": 6264,
+  "text": "Una cattiva registrazione del servosterzo può essere la causa di un effetto sottosterzante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30613",
+  "quesito": 6264,
+  "text": "Il servosterzo serve a rendere possibile la guida, anche di veicoli pesanti, con limitato sforzo da parte del conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30614",
+  "quesito": 6264,
+  "text": "Il servosterzo assorbe potenza al motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30615",
+  "quesito": 6264,
+  "text": "Il servosterzo diminuisce lo sforzo del conducente durante la sterzata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30616",
+  "quesito": 6264,
+  "text": "Il servosterzo aiuta a mantenere la tenuta di strada in caso di brusco sgonfiamento di uno pneumatico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30617",
+  "quesito": 6264,
+  "text": "Il servosterzo riduce il tempo necessario alla sterzata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30618",
+  "quesito": 6264,
+  "text": "Il servosterzo riduce il tempo necessario alla sterzata, purché non si abbia un rimorchio agganciato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30619",
+  "quesito": 6264,
+  "text": "Il servosterzo aumenta il tempo necessario alla sterzata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30620",
+  "quesito": 6264,
+  "text": "Se la pompa del servosterzo è comandata dal motore, quando si sterza energicamente occorre anche accelerare",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30621",
+  "quesito": 6264,
+  "text": "Il servosterzo, se usato nelle lunghe discese, può surriscaldare gli pneumatici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30622",
+  "quesito": 6264,
+  "text": "La pompa idraulica di un servosterzo non può essere a funzionamento elettrico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30623",
+  "quesito": 6264,
+  "text": "Il servosterzo funziona male nelle lunghe discese con tornanti stretti e ripetuti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30624",
+  "quesito": 6264,
+  "text": "Il servosterzo aumenta lo sforzo del conducente durante la sterzata in movimento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30625",
+  "quesito": 6264,
+  "text": "Il servosterzo può causare perdita della tenuta di strada",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30626",
+  "quesito": 6265,
+  "text": "La perdita d’olio del servosterzo compromette la manovrabilità dello sterzo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30627",
+  "quesito": 6265,
+  "text": "La perdita d’olio del servosterzo non compromette la manovrabilità perché viene compensata dall’olio dei freni tramite apposito travaso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30628",
+  "quesito": 6266,
+  "text": "Gli inconvenienti negli organi dello sterzo possono dipendere dal non corretto accoppiamento degli ingranaggi della scatola guida",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30629",
+  "quesito": 6266,
+  "text": "Gli inconvenienti negli organi dello sterzo possono dipendere dalla perdita di lubrificante nella scatola guida",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30630",
+  "quesito": 6266,
+  "text": "Gli inconvenienti negli organi dello sterzo possono dipendere dagli pneumatici di tipo invernale montati durante la stagione calda",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30631",
+  "quesito": 6266,
+  "text": "Gli inconvenienti negli organi dello sterzo possono dipendere dal limitatore di velocità non correttamente tarato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30632",
+  "quesito": 6267,
+  "text": "In curva, un veicolo sottosterzante tende ad allargare la sua traiettoria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30633",
+  "quesito": 6267,
+  "text": "Un veicolo è sottosterzante se tende a curvare meno di quanto il conducente vorrebbe, sulla base della traiettoria impostata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30634",
+  "quesito": 6267,
+  "text": "Si definisce sovrasterzante quel veicolo che tende a stringere eccessivamente la curva",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30635",
+  "quesito": 6267,
+  "text": "Si definisce sovrasterzante quel veicolo che tende a sterzare di più rispetto all’azione sul volante esercitata dal conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30636",
+  "quesito": 6267,
+  "text": "Sovrasterzo e sottosterzo possono dipendere da una cattiva sistemazione del carico nel cassone del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30637",
+  "quesito": 6267,
+  "text": "Il sovrasterzo ed il sottosterzo sono comportamenti del veicolo che, se non corretti adeguatamente, sfavoriscono la tenuta di strada in curva",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30639",
+  "quesito": 6267,
+  "text": "Un veicolo sovrasterzante, in curva, tende ad allargare la sua traiettoria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30640",
+  "quesito": 6267,
+  "text": "L’effetto del sottosterzo può causare il testa-coda",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30641",
+  "quesito": 6267,
+  "text": "In genere, gli pneumatici anteriori sgonfi rendono il veicolo sovrasterzante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30642",
+  "quesito": 6267,
+  "text": "Quando il veicolo in curva tende a percorrere una traiettoria più stretta di quella impostata, il conducente deve accelerare con decisione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30643",
+  "quesito": 6267,
+  "text": "Si definisce sottosterzante quel veicolo che tende a stringere la curva",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30644",
+  "quesito": 6267,
+  "text": "I veicoli con due assi anteriori sterzanti non sono mai né sovrasterzanti né sottosterzanti in curva",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30645",
+  "quesito": 6267,
+  "text": "Quando il veicolo in curva tende a percorrere una traiettoria più stretta di quella impostata con il volante, il veicolo stesso ha un comportamento sottosterzante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30646",
+  "quesito": 6268,
+  "text": "Gli organi di sospensione del veicolo sono presenti fra le ruote ed il telaio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30647",
+  "quesito": 6268,
+  "text": "L’efficienza degli organi di sospensione del veicolo si riflette sul confort dei passeggeri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30648",
+  "quesito": 6268,
+  "text": "Gli organi di sospensione del veicolo non devono essere sovraccaricati",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30649",
+  "quesito": 6268,
+  "text": "Gli organi di sospensione del veicolo si danneggiano più facilmente se il carico non è disposto correttamente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30650",
+  "quesito": 6268,
+  "text": "Gli organi di sospensione possono essere sovraccaricati, ma di non oltre il 20%",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30651",
+  "quesito": 6268,
+  "text": "Gli organi di sospensione possono essere disattivati dal conducente in qualunque momento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30652",
+  "quesito": 6269,
+  "text": "Gli organi di sospensione del veicolo servono a ridurre o a limitare il saltellamento delle ruote",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30653",
+  "quesito": 6269,
+  "text": "Gli organi di sospensione del veicolo servono a mantenere il più possibile costante il peso aderente delle singole ruote",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30654",
+  "quesito": 6269,
+  "text": "Gli organi di sospensione del veicolo servono a mantenerne costante l’assetto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30655",
+  "quesito": 6269,
+  "text": "Gli organi di sospensione del veicolo servono a limitarne il rollio e il beccheggio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30656",
+  "quesito": 6269,
+  "text": "Gli organi di sospensione del veicolo servono a ridurre gli effetti degli urti trasmessi al veicolo dai dislivelli e dalle irregolarità stradali",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30657",
+  "quesito": 6269,
+  "text": "Gli organi di sospensione del veicolo servono a evitare il bloccaggio delle ruote posteriori in frenata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30658",
+  "quesito": 6269,
+  "text": "Gli organi di sospensione del veicolo servono a evitare il surriscaldamento degli pneumatici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30659",
+  "quesito": 6269,
+  "text": "Gli organi di sospensione del veicolo servono ad aumentarne il raggio di sterzata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30660",
+  "quesito": 6269,
+  "text": "Gli organi di sospensione del veicolo devono essere regolati prima di intraprendere ogni lungo viaggio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30661",
+  "quesito": 6269,
+  "text": "Gli organi di sospensione del veicolo entrano in funzione a velocità superiori a 50 km/h",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30662",
+  "quesito": 6269,
+  "text": "Gli organi di sospensione servono a zavorrare il veicolo per aumentarne la massa rimorchiabile",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30663",
+  "quesito": 6269,
+  "text": "Gli organi di sospensione del veicolo non necessitano di manutenzione, perché sono progettati per essere efficienti per tutta la vita del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30664",
+  "quesito": 6269,
+  "text": "Gli organi di sospensione del veicolo funzionano perfettamente anche con veicolo sovraccarico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30665",
+  "quesito": 6270,
+  "text": "L’impianto di sospensioni pneumatiche permette al conducente di variare l’altezza da terra del cassone del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30666",
+  "quesito": 6270,
+  "text": "Le sospensioni degli autoveicoli servono ad attutire i sobbalzi causati dalle asperità del fondo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30667",
+  "quesito": 6270,
+  "text": "Le sospensioni pneumatiche consentono una facile correzione dell'assetto grazie ad apposite valvole livellatrici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30668",
+  "quesito": 6270,
+  "text": "La barra stabilizzatrice frena il coricamento dell'autoveicolo dovuto alla forza centrifuga in curva o a un dislivello stradale trasversale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30669",
+  "quesito": 6270,
+  "text": "Le sospensioni degli autoveicoli servono ad attutire il rumore prodotto dalla combustione del carburante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30670",
+  "quesito": 6270,
+  "text": "Le sospensioni ad acqua devono essere integrate con liquido antigelo durante la stagione fredda",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30671",
+  "quesito": 6270,
+  "text": "Sui veicoli pesanti dotati di doppio assale posteriore, l’asse anteriore non è dotato di sospensioni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30672",
+  "quesito": 6270,
+  "text": "Le sospensioni pneumatiche non possono essere comandate manualmente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30673",
+  "quesito": 6270,
+  "text": "Le sospensioni pneumatiche non possono essere utilizzate su veicoli di massa complessiva a pieno carico superiore a 3,5 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30674",
+  "quesito": 6270,
+  "text": "Le sospensioni pneumatiche non possono essere utilizzate su veicoli atti al traino",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30675",
+  "quesito": 6270,
+  "text": "Se si rompe una sospensione a balestra, per circolare in sicurezza è sufficiente gonfiare gli pneumatici del relativo asse di 0,5 bar oltre il valore normale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30676",
+  "quesito": 6270,
+  "text": "La sospensione a balestra è autolubrificante e non necessita di manutenzione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30677",
+  "quesito": 6271,
+  "text": "L’ammortizzatore ha la funzione di smorzare le oscillazioni delle molle delle sospensioni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30678",
+  "quesito": 6271,
+  "text": "In genere gli ammortizzatori sono di tipo idraulico o a gas",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30679",
+  "quesito": 6271,
+  "text": "Gli ammortizzatori idraulici sono in genere del tipo a doppio effetto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30680",
+  "quesito": 6271,
+  "text": "Gli ammortizzatori idraulici utilizzano uno speciale liquido resistente alle alte temperature",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30681",
+  "quesito": 6271,
+  "text": "Gli ammortizzatori sono collegati da una parte al telaio e dall’altra all’asse delle ruote",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30682",
+  "quesito": 6271,
+  "text": "Gli ammortizzatori non sono utilizzati su veicoli di massa complessiva a pieno carico superiore a 7 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30683",
+  "quesito": 6271,
+  "text": "Il liquido degli ammortizzatori idraulici deve essere rabboccato dall’autista ogni tremila chilometri circa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30684",
+  "quesito": 6272,
+  "text": "L’inefficienza degli ammortizzatori rende la guida di un autoveicolo poco sicura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30685",
+  "quesito": 6272,
+  "text": "L’inefficienza degli ammortizzatori allunga la distanza di frenatura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30686",
+  "quesito": 6272,
+  "text": "L’inefficienza degli ammortizzatori aumenta il pericolo di sbandamento in curva",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30687",
+  "quesito": 6272,
+  "text": "L’inefficienza degli ammortizzatori aumenta il pericolo di aquaplaning",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30688",
+  "quesito": 6272,
+  "text": "L’inefficienza degli ammortizzatori aumenta l’affaticamento del conducente alla guida",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30689",
+  "quesito": 6272,
+  "text": "L’inefficienza degli ammortizzatori peggiora la visibilità notturna a causa dell’eccessiva oscillazione del fascio luminoso dei proiettori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30690",
+  "quesito": 6272,
+  "text": "L’inefficienza degli ammortizzatori aumenta il pericolo di abbagliamento dei conducenti provenienti dalla direzione opposta a causa dell’oscillazione del fascio luminoso dei proiettori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30691",
+  "quesito": 6272,
+  "text": "L’efficienza degli ammortizzatori migliora la sicurezza del veicolo durante la marcia",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30692",
+  "quesito": 6272,
+  "text": "L’inefficienza degli ammortizzatori può essere compensata dall’irrigidimento delle sospensioni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30693",
+  "quesito": 6272,
+  "text": "Alle basse temperature, il liquido degli ammortizzatori idraulici deve essere miscelato con liquido antigelo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30694",
+  "quesito": 6272,
+  "text": "Gli ammortizzatori scarichi favoriscono la stabilità di marcia perché abbassano il baricentro del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30695",
+  "quesito": 6272,
+  "text": "Sull’assale che monta ruote gemellate non è necessario montare ammortizzatori",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30696",
+  "quesito": 6272,
+  "text": "Occorre controllare periodicamente la pressione degli ammortizzatori",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30697",
+  "quesito": 6272,
+  "text": "La sostituzione di un ammortizzatore è un’operazione semplice, che può essere svolta da qualunque autista",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30698",
+  "quesito": 6272,
+  "text": "Una specifica spia rossa accesa sul cruscotto, segnala che uno o più ammortizzatori sono inefficienti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30699",
+  "quesito": 6273,
+  "text": "Gli ammortizzatori, se scarichi, non provvedono a smorzare correttamente le oscillazioni delle balestre",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30700",
+  "quesito": 6273,
+  "text": "Il mancato funzionamento della valvola livellatrice delle sospensioni pneumatiche non permette che venga variata la pressione interna in funzione del carico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30701",
+  "quesito": 6273,
+  "text": "Gli ammortizzatori anteriori possono essere rimossi dal veicolo senza comprometterne il livello di sicurezza",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30702",
+  "quesito": 6273,
+  "text": "Gli ammortizzatori hanno funzionamento di tipo esclusivamente meccanico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "15",
+  "code": "30703",
+  "quesito": 6273,
+  "text": "Il mancato funzionamento della valvola livellatrice delle sospensioni pneumatiche determina un cattivo funzionamento del motore",
+  "risposta": false,
+  "image": null
+ }
+]

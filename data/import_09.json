@@ -1,0 +1,682 @@
+[
+ {
+  "argomentoCode": "09",
+  "code": "28744",
+  "quesito": 6115,
+  "text": "In un veicolo da trasporto, la posizione del baricentro dipende dalla natura e dalla disposizione del carico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28745",
+  "quesito": 6115,
+  "text": "Se il baricentro del veicolo è troppo alto, ovvero troppo spostato verso l'avanti o verso il retro, la sua stabilità di marcia è compromessa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28746",
+  "quesito": 6115,
+  "text": "Quanto più basso è il baricentro del carico, tanto più stabile è il veicolo stesso durante la marcia",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28747",
+  "quesito": 6115,
+  "text": "Quanto più basso è il baricentro del veicolo, tanto più stabile è il veicolo stesso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28748",
+  "quesito": 6115,
+  "text": "Il ribaltamento di un veicolo pesante può essere causato dal cedimento della banchina laterale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28749",
+  "quesito": 6115,
+  "text": "Il ribaltamento di un veicolo pesante può avvenire più facilmente in rettilineo e su strada piana",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28750",
+  "quesito": 6115,
+  "text": "Per migliorare la stabilità di marcia del veicolo è bene che il carico o i passeggeri siano posizionati il più possibile sul suo lato destro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28751",
+  "quesito": 6115,
+  "text": "Per migliorare la stabilità di marcia del veicolo è bene che il carico o i passeggeri siano posizionati il più possibile sul lato opposto a quello dove si trova il conducente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28752",
+  "quesito": 6115,
+  "text": "Quanto più è alto il baricentro del veicolo, tanto più stabile è il veicolo stesso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28753",
+  "quesito": 6115,
+  "text": "Il vento laterale influisce sulla stabilità del veicolo unicamente se sta percorrendo una curva",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28754",
+  "quesito": 6116,
+  "text": "Durante una curva, il liquido contenuto in una cisterna si sposta lateralmente verso il lato esterno della curva stessa, aumentando il pericolo di uscita di strada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28755",
+  "quesito": 6116,
+  "text": "In seguito ad una frenata, il liquido contenuto in una cisterna tende a spostarsi in avanti, spingendo il veicolo nella direzione di marcia",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28756",
+  "quesito": 6116,
+  "text": "I diaframmi interni della cisterna riducono gli spostamenti del liquido nelle situazioni di marcia più critiche (curva, accelerazione, frenata)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28757",
+  "quesito": 6116,
+  "text": "Se i diaframmi interni di una cisterna sono aperti, essi non impediscono il passaggio del liquido da uno scomparto ad un altro ma lo rendono più lento e più contenuto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28758",
+  "quesito": 6116,
+  "text": "Una cisterna monoscomparto è particolarmente instabile quando il suo riempimento è circa il 50/60% del volume totale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28759",
+  "quesito": 6116,
+  "text": "La forma di una cisterna influisce sulla stabilità del veicolo in curva",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28760",
+  "quesito": 6116,
+  "text": "Una cisterna monoscomparto è più soggetta al pericolo di ribaltamento quando il suo riempimento è parziale (50/60%)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28761",
+  "quesito": 6116,
+  "text": "Il trasporto di materie in polvere con una cisterna è meno problematico rispetto al trasporto di sostanze liquide",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28762",
+  "quesito": 6116,
+  "text": "In seguito ad una brusca accelerata, il liquido contenuto in una cisterna tende a spostarsi all'indietro, sovraccaricando le ruote posteriori del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28763",
+  "quesito": 6116,
+  "text": "Imboccando una forte discesa, il liquido contenuto in una cisterna tende a spostarsi in avanti, spingendo il veicolo nella direzione di marcia",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28764",
+  "quesito": 6116,
+  "text": "Imboccando una forte salita, il liquido contenuto in una cisterna tende a spostarsi all'indietro, sovraccaricando le ruote posteriori del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28765",
+  "quesito": 6116,
+  "text": "Durante una curva il liquido di una cisterna si sposta verso l’interno della curva stessa a causa della forma della cisterna",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28766",
+  "quesito": 6116,
+  "text": "In seguito ad una frenata dell’autocisterna, il liquido contenuto, a causa della sua inerzia, si sposta verso la parete posteriore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28767",
+  "quesito": 6116,
+  "text": "In un veicolo per il trasporto di liquidi, i diaframmi interni della cisterna servono principalmente come rinforzo della struttura",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28768",
+  "quesito": 6116,
+  "text": "Le aperture dei diaframmi interni in una cisterna hanno lo scopo esclusivo di permettere il passaggio di una persona per la pulizia della cisterna stessa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28769",
+  "quesito": 6116,
+  "text": "Quando il riempimento di un’autocisterna è di circa il 50-60% della sua capienza, la stabilità del veicolo è maggiore perché il baricentro è più basso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28770",
+  "quesito": 6116,
+  "text": "La forma di una cisterna non ha nessuna influenza sulla stabilità del veicolo, salvo quando trasporta sostanze in polvere",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28771",
+  "quesito": 6116,
+  "text": "Un’autocisterna è più soggetta al ribaltamento quando viaggia a vuoto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28772",
+  "quesito": 6116,
+  "text": "Il trasporto di sostanze liquide con un’autocisterna è meno pericoloso del trasporto di sostanze in polvere",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28773",
+  "quesito": 6116,
+  "text": "Imboccando una forte salita, il liquido contenuto in una cisterna tende a spostarsi in avanti, spingendo il veicolo nella direzione di marcia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28774",
+  "quesito": 6117,
+  "text": "La verifica della corretta sistemazione del carico spetta al conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28775",
+  "quesito": 6117,
+  "text": "La verifica della corretta sistemazione del carico riguarda tutta la durata del trasporto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28776",
+  "quesito": 6117,
+  "text": "Il sovraccarico si ha quando il carico supera per massa il valore di portata del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28777",
+  "quesito": 6117,
+  "text": "La verifica della corretta sistemazione del carico spetta unicamente all’azienda di autotrasporto titolare della carta di circolazione del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28778",
+  "quesito": 6117,
+  "text": "La verifica della corretta sistemazione del carico riguarda il momento della partenza, ma non quello della riconsegna se questa avviene su proprietà privata del destinatario",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28779",
+  "quesito": 6117,
+  "text": "La portata del veicolo indica il valore massimo in massa della merce trasportata, con una franchigia del 10% per merci deperibili ad alto contenuto di acqua",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28780",
+  "quesito": 6118,
+  "text": "Se si trasportano carichi sporgenti, occorre verificare che essi non sporgano posteriormente oltre i 3/10 della lunghezza del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28781",
+  "quesito": 6118,
+  "text": "I carichi comunque sporgenti posteriormente vanno segnalati con gli appositi pannelli di tipo omologato",
+  "risposta": true,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28782",
+  "quesito": 6118,
+  "text": "Se il carico sporge posteriormente per tutta la larghezza del veicolo occorre segnalarlo con due pannelli omologati di figura, posti alle due estremità, destra e sinistra, della sporgenza",
+  "risposta": true,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28783",
+  "quesito": 6118,
+  "text": "Il carico non può, di norma, sporgere anteriormente rispetto alla sagoma del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28784",
+  "quesito": 6118,
+  "text": "Il carico non può, di norma, sporgere lateralmente oltre 30 centimetri rispetto alle luci di posizione del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28785",
+  "quesito": 6118,
+  "text": "Nel caso del rimorchio o del semirimorchio, il carico può sporgere dalla parte posteriore di non più di 1 metro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28786",
+  "quesito": 6118,
+  "text": "Se si trasportano carichi sporgenti, occorre verificare che essi non sporgano anteriormente oltre i 3/10 della lunghezza del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28787",
+  "quesito": 6118,
+  "text": "Se si trasportano carichi sporgenti, occorre verificare che essi non sporgano lateralmente oltre i 3/10 rispetto alla larghezza del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28788",
+  "quesito": 6118,
+  "text": "Se si trasportano carichi sporgenti, occorre segnalarlo con gli appositi pannelli di figura",
+  "risposta": false,
+  "image": "73e52339f0e7.jpg"
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28789",
+  "quesito": 6118,
+  "text": "Se si trasportano carichi sporgenti lateralmente, gli stessi devono essere segnalati, sul lato sinistro, da due pannelli di figura, posti all’estremità anteriore e posteriore del carico",
+  "risposta": false,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28790",
+  "quesito": 6119,
+  "text": "Se per il carico o scarico si utilizza la gru montata sul veicolo, prima di iniziare le operazioni, occorre assicurarsi di aver bloccato il veicolo con i piedi telescopici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28791",
+  "quesito": 6119,
+  "text": "Quando si scarica il veicolo caricato con pallets pesanti su doppia fila, è bene scaricarne alternativamente uno per lato, per non sbilanciare il veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28792",
+  "quesito": 6119,
+  "text": "Quando si scarica un veicolo con cassone ribaltabile pieno di sabbia o materiale simile, è bene farlo con molta gradualità e attenzione, facendosi guidare da persona a terra, per limitare il rischio di ribaltamento del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28793",
+  "quesito": 6119,
+  "text": "Quando si trasporta materiale che debba essere trattenuto da cinghie, per il loro serraggio può essere necessario l’uso di un cricchetto tenditore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28794",
+  "quesito": 6119,
+  "text": "Quando si carica o scarica materiale occorre sempre indossare i guanti protettivi e, se necessario, il casco e gli occhiali",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28795",
+  "quesito": 6119,
+  "text": "Quando si scollegano i tubi dell’aria compressa dei giunti del rimorchio o semirimorchio, occorre prima aver indossato idonei indumenti protettivi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28796",
+  "quesito": 6119,
+  "text": "Quando si trasportano liquidi in cisterna, prima di partire, occorre assicurarsi della corretta chiusura dei portelli dei passi d’uomo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28797",
+  "quesito": 6119,
+  "text": "Quando si circola con un veicolo dotato di gru, occorre assicurarsi di averla ben fissata prima di mettersi in moto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28798",
+  "quesito": 6119,
+  "text": "Se si circola con veicolo trasportante pallets che riempiono meno della metà del vano di carico, non vi sono problemi durante le frenate e le accelerazioni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28799",
+  "quesito": 6119,
+  "text": "Quando si scarica un veicolo con cassone ribaltabile pieno di sabbia o materiale simile, è bene farlo con rapidità e senza mai arrestarsi fino al fine corsa del pistone sollevatore, per evitare che il materiale si blocchi e si debba così scaricarlo a mano",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28800",
+  "quesito": 6119,
+  "text": "Se per il carico o scarico si utilizza la gru montata sul veicolo, prima di iniziare le operazioni, occorre assicurarsi di aver calato i piedi telescopici dalla sola parte dove si posa a terra il carico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28801",
+  "quesito": 6119,
+  "text": "Quando si scarica il veicolo caricato con pallets pesanti su doppia fila, è bene scaricare prima tutta la fila dal lato conducente, perché in tal modo si migliora la stabilità del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28802",
+  "quesito": 6119,
+  "text": "Quando si carica o scarica materiale occorre indossare i guanti protettivi solo d’inverno, per evitare l’intorpidimento delle dita, l’estate è invece più sicuro manovrare senza, perché si ha migliore sensibilità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28803",
+  "quesito": 6119,
+  "text": "Per caricare o scaricare legname in tronchi di lunghezza superiore ai 7 metri, occorre la presenza a terra di una Guardia Forestale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28804",
+  "quesito": 6119,
+  "text": "E’ vietato circolare in autostrada con autoveicoli muniti di gru per il carico e scarico delle merci",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28949",
+  "quesito": 6129,
+  "text": "La categoria internazionale N1 comprende i veicoli a motore destinati al trasporto di merci, con massa massima non superiore a 3,5 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28950",
+  "quesito": 6129,
+  "text": "La categoria internazionale N2 comprende veicoli a motore destinati al trasporto di merci, con massa massima superiore a 3,5 tonnellate ma non superiore a 12 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28951",
+  "quesito": 6129,
+  "text": "La categoria internazionale N3 comprende veicoli a motore destinati al trasporto di merci, con massa massima superiore a 12 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28952",
+  "quesito": 6129,
+  "text": "La categoria internazionale N comprende veicoli a motore destinati al trasporto di cose, aventi almeno quattro ruote",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28953",
+  "quesito": 6129,
+  "text": "La categoria internazionale N comprende veicoli a motore destinati al trasporto di cose",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28954",
+  "quesito": 6129,
+  "text": "La categoria internazionale N1 comprende veicoli destinati al trasporto di cose, aventi massa massima non superiore a 5 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28955",
+  "quesito": 6129,
+  "text": "La categoria internazionale N2 comprende veicoli destinati al trasporto di cose, aventi massa massima superiore a 10 tonnellate, ma non superiore a 20 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28956",
+  "quesito": 6129,
+  "text": "La categoria internazionale N3 comprende veicoli destinati al trasporto di cose, aventi massa massima non superiore a 10 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28957",
+  "quesito": 6129,
+  "text": "La categoria internazionale NP comprende veicoli destinati al trasporto di cose in conto proprio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28958",
+  "quesito": 6129,
+  "text": "La categoria internazionale N comprende rimorchi e semirimorchi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28959",
+  "quesito": 6129,
+  "text": "La categoria internazionale NT comprende veicoli destinati al trasporto di cose in conto terzi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28960",
+  "quesito": 6130,
+  "text": "La categoria internazionale O1 comprende i rimorchi di massa massima non superiore a 0,75 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28961",
+  "quesito": 6130,
+  "text": "La categoria internazionale O2 comprende i rimorchi di massa massima oltre 0,75 tonnellate ma non oltre 3,5 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28962",
+  "quesito": 6130,
+  "text": "La categoria internazionale O3 comprende i rimorchi di massa massima oltre 3,5 tonnellate ma non oltre 10 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28963",
+  "quesito": 6130,
+  "text": "La categoria internazionale O4 comprende i rimorchi di massa massima superiore a 10 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28964",
+  "quesito": 6130,
+  "text": "La categoria internazionale O comprende rimorchi e semirimorchi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28965",
+  "quesito": 6130,
+  "text": "La categoria internazionale O1 comprende i carrelli appendice",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28966",
+  "quesito": 6130,
+  "text": "La categoria internazionale O2 comprende i rimorchi di massa massima superiore a 2 tonnellate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28967",
+  "quesito": 6130,
+  "text": "La categoria internazionale O3 comprende quei rimorchi di massa superiore a 10 tonnellate che sono dotati di frenatura continua e sospensioni pneumatiche",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28968",
+  "quesito": 6130,
+  "text": "La categoria internazionale O4 comprende i rimorchi e i semirimorchi che possono essere utilizzati nella marcia fuoristrada",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28969",
+  "quesito": 6130,
+  "text": "La categoria internazionale O comprende tutti i veicoli di importazione extra UE",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28970",
+  "quesito": 6130,
+  "text": "La categoria internazionale O5 comprende i rimorchi e i semirimorchi con agganciamento automatico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28971",
+  "quesito": 6131,
+  "text": "Nella classificazione internazionale dei veicoli, il simbolo \"G\", associato a quello della categoria internazionale di appartenenza M o N, identifica i veicoli fuoristrada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "09",
+  "code": "28972",
+  "quesito": 6131,
+  "text": "Nella classificazione internazionale dei veicoli, il simbolo \"G\", associato a quello della categoria internazionale di appartenenza M o N, identifica i veicoli ad uso militare",
+  "risposta": false,
+  "image": null
+ }
+]

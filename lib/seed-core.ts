@@ -11,14 +11,14 @@ import { PRIMO_NUMERO_MANUALE, materialeSimulazione } from './esame-generato'
  * Sorgenti dei dati (cartella `data/`), tutte ricavate dal listato
  * ministeriale dei quiz per la patente C/CE da `scripts/archivio_scrivi.py`:
  *  - `argomenti.json`   → gli argomenti dell'esame (codice, nome, quante domande escono)
- *  - `import_*.json`    → le domande, una per riga, col codice del listato
+ *  - `import_*.json`    → le domande, una per riga, col numero e il quesito del listato
  *  - `simulations.json` → le simulazioni fisse, come liste di codici
  */
 
 export interface ImportedQuestion {
   argomentoCode: string
   code: string
-  questionGroup?: string | null
+  quesito: number
   text: string
   risposta: boolean
   image?: string | null
@@ -33,7 +33,7 @@ export interface ArgomentoSeed {
 export interface SimulationSeed {
   number: number
   titolo?: string
-  /** Codici delle domande (40), gli stessi del listato. */
+  /** Numeri delle domande (40), gli stessi del listato. */
   domande: string[]
 }
 
@@ -104,10 +104,10 @@ export async function seedQuestions(prisma: PrismaClient): Promise<number> {
     .filter(q => idPerCodice[q.argomentoCode])
     .map(q => ({
       code: q.code,
+      quesito: q.quesito,
       argomentoId: idPerCodice[q.argomentoCode],
       text: q.text,
       risposta: q.risposta,
-      questionGroup: q.questionGroup || null,
       image: q.image || null,
     }))
 

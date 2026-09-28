@@ -1,0 +1,1722 @@
+[
+ {
+  "argomentoCode": "16",
+  "code": "30704",
+  "quesito": 6274,
+  "text": "I cunei fermaruota fanno parte della dotazione di sicurezza obbligatoria per autoveicoli e rimorchi di massa complessiva superiore a 3,5 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30705",
+  "quesito": 6274,
+  "text": "I cunei fermaruota servono per bloccare le ruote in caso di sosta dei rimorchi isolati di massa superiore a 3,5 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30706",
+  "quesito": 6274,
+  "text": "I cunei fermaruota devono essere utilizzati, su un veicolo di massa complessiva superiore a 3,5 tonnellate, in caso di sostituzione di una ruota",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30707",
+  "quesito": 6274,
+  "text": "I cunei fermaruota in dotazione devono essere almeno due, a bordo di un veicolo isolato di massa complessiva superiore a 3,5 tonnellate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30708",
+  "quesito": 6274,
+  "text": "Ai fini della sicurezza, un autobus di massa superiore a 3,5 tonnellate deve essere dotato di almeno due cunei fermaruota di idonee dimensioni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30709",
+  "quesito": 6274,
+  "text": "Ai fini della sicurezza, un rimorchio o un semirimorchio, di massa complessiva superiore a 3,5 tonnellate, devono essere dotati di almeno due cunei fermaruota di idonee dimensioni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30710",
+  "quesito": 6274,
+  "text": "Tutti i veicoli di massa a pieno carico superiore a 3,5 tonnellate, devono essere dotati di due cunei atti a impedire che, su strade in pendenza, il veicolo fermo in sosta possa muoversi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30711",
+  "quesito": 6274,
+  "text": "Su un veicolo di massa complessiva superiore a 3,5 tonnellate, ai fini della sicurezza, occorre utilizzare i cunei fermaruota anche durante le operazioni di smontaggio e rimontaggio di una ruota",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30712",
+  "quesito": 6274,
+  "text": "Un autoveicolo di massa a pieno carico superiore a 7,5 tonnellate deve essere equipaggiato con dispositivi omologati atti a ridurre la nebulizzazione dell’acqua sollevata dalle ruote in caso di pioggia",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30713",
+  "quesito": 6274,
+  "text": "I dispositivi paraincastro, ove obbligatori, devono essere posizionati posteriormente, lateralmente e/o anteriormente a seconda della tipologia di carrozzeria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30714",
+  "quesito": 6274,
+  "text": "I cunei fermaruota possono essere utilizzati in caso di ingombro della carreggiata al posto del segnale mobile di pericolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30715",
+  "quesito": 6274,
+  "text": "A bordo di un veicolo isolato di massa complessiva superiore a 3,5 tonnellate, i cunei fermaruota in dotazione devono essere almeno quattro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30716",
+  "quesito": 6274,
+  "text": "I cunei fermaruota possono essere utilizzati come dispositivo antirapina",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30718",
+  "quesito": 6274,
+  "text": "Tutti gli autoveicoli pesanti, se circolanti su autostrada, devono essere dotati di dispositivo paraincastro nella parte anteriore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30719",
+  "quesito": 6274,
+  "text": "Tutti i veicoli dotati di ruote gemellate hanno l’obbligo di essere dotati dei dispositivi antinebulizzazione dell’acqua presente sulla carreggiata in caso di pioggia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30720",
+  "quesito": 6274,
+  "text": "Gli autocarri di massa superiore a 3,5 tonnellate a pieno carico, devono essere muniti di dispositivi antinebulizzazione dell’acqua presente sulla carreggiata in caso di pioggia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30721",
+  "quesito": 6274,
+  "text": "I dispositivi antinebulizzazione dell’acqua presente sulla carreggiata, devono essere disinseriti in caso di strada asciutta",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30722",
+  "quesito": 6274,
+  "text": "I dispositivi antinebulizzazione dell’acqua presente sulla carreggiata, sono attivati dal conducente tramite apposito comando posto sul cruscotto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30723",
+  "quesito": 6275,
+  "text": "E' opportuno che il conducente verifichi, prima di ogni viaggio, la posizione, pulizia e stato generale degli specchi retrovisori del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30724",
+  "quesito": 6275,
+  "text": "Anche se gli specchi retrovisori sono ben regolati, esistono parti della strada che il conducente non riesce a vedere",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30725",
+  "quesito": 6275,
+  "text": "Vi sono parti della strada che il conducente riesce a vedere direttamente e altre che può vedere solo di riflesso attraverso gli specchi retrovisori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30726",
+  "quesito": 6275,
+  "text": "Se gli specchi retrovisori sono ben regolati non esistono parti della strada che il conducente non possa vedere",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30727",
+  "quesito": 6275,
+  "text": "Se gli specchi retrovisori di un lato sono sporchi o danneggiati non vi sono pericoli se quelli dell’altro lato sono in perfetto ordine",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30728",
+  "quesito": 6275,
+  "text": "Gli specchi retrovisori possono essere integralmente sostituiti da telecamere opportunamente disposte",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30729",
+  "quesito": 6276,
+  "text": "Prima di partire, il conducente deve controllare la buona efficienza generale del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30730",
+  "quesito": 6276,
+  "text": "Prima di partire, il conducente deve controllare che tutte le spie luminose riguardanti il funzionamento dei vari impianti, si siano spente dopo l’avviamento del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30731",
+  "quesito": 6276,
+  "text": "Prima di partire per un viaggio, è bene eseguire il controllo dei livelli dell’olio, del liquido del raffreddamento e, se l’impianto di frenatura è idraulico o pneumoidraulico, del liquido dei freni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30732",
+  "quesito": 6276,
+  "text": "Prima di partire, il conducente deve eseguire il controllo dello stato delle spazzole dei tergicristalli e del livello del liquido lavacristalli",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30733",
+  "quesito": 6276,
+  "text": "Prima di partire, il conducente deve eseguire il controllo del corretto funzionamento di proiettori e degli indicatori di direzione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30734",
+  "quesito": 6276,
+  "text": "Prima di partire, il conducente deve eseguire il controllo dell’integrità e della pulizia dei catadiottri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30735",
+  "quesito": 6276,
+  "text": "Prima di partire, il conducente deve eseguire il controllo dell’integrità, della corretta pressione e dello spessore minimo del battistrada di tutti gli pneumatici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30736",
+  "quesito": 6276,
+  "text": "Prima di partire, il conducente deve eseguire il controllo della presenza e dell’integrità di tutte le dotazioni di sicurezza previste per la circolazione del suo veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30737",
+  "quesito": 6276,
+  "text": "Prima di partire, il conducente deve eseguire il controllo dell’efficienza del cronotachigrafo e della sua carta tachigrafica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30738",
+  "quesito": 6276,
+  "text": "Prima di partire, il conducente deve assicurarsi di avere a bordo una batteria carica di riserva",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30739",
+  "quesito": 6276,
+  "text": "Se viaggia di notte, prima di partire, il conducente deve assicurarsi di avere a bordo due taniche da venticinque litri piene di combustibile di riserva",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30740",
+  "quesito": 6276,
+  "text": "Prima di partire, il conducente deve effettuare alcune prove di marcia e arresto in un cortile chiuso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30741",
+  "quesito": 6276,
+  "text": "Prima di partire, il conducente deve telefonare in azienda e ottenere l’autorizzazione all’inizio del viaggio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30742",
+  "quesito": 6276,
+  "text": "Prima di partire, il conducente deve assicurarsi di avere almeno una tanica da dieci litri d’acqua di riserva, in caso di problemi al sistema di raffreddamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30743",
+  "quesito": 6276,
+  "text": "Prima di partire, il conducente deve assicurarsi di avere almeno a bordo dieci litri di olio di riserva, in caso di problemi al sistema di lubrificazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30744",
+  "quesito": 6276,
+  "text": "Prima di partire, il conducente deve assicurarsi di avere a bordo almeno quattro litri di antigelo di riserva, in caso di abbassamento improvviso della temperatura esterna",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30745",
+  "quesito": 6276,
+  "text": "Il conducente deve effettuare verifiche di efficienza del veicolo prima della partenza solo se il veicolo è stato immatricolato da più di due anni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30746",
+  "quesito": 6276,
+  "text": "Le principali verifiche che il conducente deve effettuare prima della partenza per un viaggio sono indicate sulla carta di circolazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30747",
+  "quesito": 6276,
+  "text": "Il conducente deve fermarsi ogni centocinquanta chilometri percorsi, o ogni due ore di viaggio, per verificare lo stato di pressione degli pneumatici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30748",
+  "quesito": 6276,
+  "text": "Prima di partire, non è necessario verificare lo stato dell’impianto di illuminazione se si prevede che il viaggio si esaurirà prima del tramonto del sole",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30749",
+  "quesito": 6277,
+  "text": "La pressione degli pneumatici va controllata quando sono freddi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30750",
+  "quesito": 6277,
+  "text": "E' opportuno verificare periodicamente le condizioni delle cinghie di trasmissione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30751",
+  "quesito": 6277,
+  "text": "E' opportuno verificare periodicamente il corretto serraggio dei morsetti dei due poli della batteria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30752",
+  "quesito": 6277,
+  "text": "Periodicamente deve essere controllato il livello dell’olio del servosterzo idraulico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30753",
+  "quesito": 6277,
+  "text": "Aggiungendo acqua pura al liquido refrigerante, aumenta il rischio di congelamento dello stesso alle basse temperature",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30754",
+  "quesito": 6277,
+  "text": "Periodicamente deve essere controllato il livello del liquido detergente del parabrezza e del lunotto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30755",
+  "quesito": 6277,
+  "text": "Bisogna periodicamente controllare la pulizia del filtro dell’aria del motore, al fine di garantire una corretta combustione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30756",
+  "quesito": 6277,
+  "text": "L’individuazione immediata di un guasto da parte di un conducente può evitare un aggravamento dell'avaria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30757",
+  "quesito": 6277,
+  "text": "Il conducente deve essere in grado di capire quando è il caso di ricorrere immediatamente a personale specializzato per riparare un’avaria o quando può provvedere personalmente alla risoluzione temporanea del problema",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30758",
+  "quesito": 6277,
+  "text": "Il conducente deve segnalare tempestivamente alla propria impresa eventuali malfunzionamenti gravi del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30759",
+  "quesito": 6277,
+  "text": "Il conducente deve conoscere approfonditamente il funzionamento della strumentazione di bordo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30760",
+  "quesito": 6277,
+  "text": "Il conducente deve conoscere e saper consultare il libretto d’uso e manutenzione del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30761",
+  "quesito": 6277,
+  "text": "Prima di partire, il conducente deve essere certo che il veicolo sia in regola con la revisione periodica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30762",
+  "quesito": 6277,
+  "text": "Prima di partire, il conducente deve essere certo che sia stata effettuata la revisione periodica del cronotachigrafo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30763",
+  "quesito": 6277,
+  "text": "Prima di partire, il conducente deve essere certo che sia stata effettuata la revisione periodica dell’estintore di bordo nei tempi stabiliti dalla legge",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30764",
+  "quesito": 6277,
+  "text": "E' consentito montare sullo stesso asse pneumatici di tipo e disegno diverso, purché lo spessore del battistrada sia superiore a tre millimetri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30765",
+  "quesito": 6277,
+  "text": "L’alternatore è collegato direttamente agli indicatori di direzione e ne permette il funzionamento a intermittenza",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30766",
+  "quesito": 6277,
+  "text": "Se il veicolo stenta ad avviarsi, il conducente può provare a collegare tra loro i due poli della batteria con l’apposito cavo elettrico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30767",
+  "quesito": 6277,
+  "text": "Nel periodo invernale, è opportuno aggiungere liquido antigelo all’olio del differenziale e del cambio per evitare rischi di congelamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30768",
+  "quesito": 6277,
+  "text": "Il conducente deve essere in grado di mettere in fase l'impianto di distribuzione di un motore Diesel",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30769",
+  "quesito": 6277,
+  "text": "L’individuazione della causa dei guasti da parte del conducente è indispensabile per contenere i consumi di carburante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30770",
+  "quesito": 6277,
+  "text": "Il conducente deve firmare la carta di circolazione dopo la revisione periodica",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30771",
+  "quesito": 6277,
+  "text": "Il conducente deve personalmente procedere allo smontaggio del cronotachigrafo digitale nel caso di malfunzionamento durante il viaggio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30772",
+  "quesito": 6277,
+  "text": "Il conducente deve azionare periodicamente l’estintore in luogo aperto, in modo da verificarne l’efficienza",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30773",
+  "quesito": 6277,
+  "text": "Il conducente deve provvedere personalmente alla sostituzione delle pastiglie dei freni quando ritiene che siano eccessivamente consumate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30774",
+  "quesito": 6277,
+  "text": "Il conducente deve fermarsi non appena riscontra un’anomalia del navigatore satellitare",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30775",
+  "quesito": 6277,
+  "text": "Si può iniziare il viaggio con il parabrezza che presenta punti di rottura, purché di modesta entità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30776",
+  "quesito": 6277,
+  "text": "La pressione degli pneumatici va controllata quando sono in temperatura, cioè dopo avere percorso almeno una cinquantina di chilometri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30777",
+  "quesito": 6277,
+  "text": "E' inutile sostituire le spazzole del tergicristallo danneggiate se nella giornata in cui si dovrà viaggiare le previsioni meteorologiche non prevedono precipitazioni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30778",
+  "quesito": 6277,
+  "text": "La corretta pressione di gonfiaggio degli pneumatici è indipendente dal carico del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30779",
+  "quesito": 6277,
+  "text": "I due pneumatici montati in gemello devono avere la somma delle profondità delle scolpiture dei due battistrada pari ad almeno tre millimetri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30780",
+  "quesito": 6278,
+  "text": "I parabrezza lesionati degli autoveicoli vanno sostituiti perché le crepe tendono ad estendersi nel tempo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30781",
+  "quesito": 6278,
+  "text": "I parabrezza lesionati degli autoveicoli vanno sostituiti perché vi è il rischio che, a causa di un sobbalzo, il parabrezza vada in frantumi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30782",
+  "quesito": 6278,
+  "text": "I parabrezza lesionati degli autoveicoli, anche se sono costituiti da vetro stratificato, devono comunque essere sostituiti in caso di lesione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30783",
+  "quesito": 6278,
+  "text": "I parabrezza lesionati degli autoveicoli con una lesione inferiore a dieci centimetri possono essere riparati con uno speciale nastro adesivo ad alta trasparenza",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30798",
+  "quesito": 6280,
+  "text": "Prima della partenza, il conducente deve controllare il livello del liquido refrigerante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30799",
+  "quesito": 6280,
+  "text": "Prima della partenza, il conducente deve controllare la pressione degli pneumatici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30800",
+  "quesito": 6280,
+  "text": "Prima della partenza, il conducente deve controllare il corretto funzionamento del cronotachigrafo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30801",
+  "quesito": 6280,
+  "text": "Prima della partenza, il conducente deve controllare la presenza a bordo di tutti i documenti di viaggio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30802",
+  "quesito": 6280,
+  "text": "Prima della partenza, il conducente deve controllare lo stato e l'usura del battistrada degli pneumatici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30803",
+  "quesito": 6280,
+  "text": "Prima della partenza, il conducente deve controllare l'efficienza dell'impianto frenante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30804",
+  "quesito": 6280,
+  "text": "Prima della partenza, il conducente deve controllare il regolare assetto degli organi di sospensione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30805",
+  "quesito": 6280,
+  "text": "Prima della partenza, il conducente deve controllare l'efficienza dei dispositivi di sicurezza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30806",
+  "quesito": 6280,
+  "text": "Prima della partenza, il conducente deve verificare la presenza di almeno due ruote di scorta, in caso di viaggi superiori ai cinquecento chilometri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30807",
+  "quesito": 6280,
+  "text": "Prima della partenza, il conducente deve controllare la regolarità di pagamento delle rate dell'eventuale leasing gravante sul veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30808",
+  "quesito": 6280,
+  "text": "Prima della partenza, il conducente deve verificare la presenza a bordo del certificato di proprietà del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30809",
+  "quesito": 6280,
+  "text": "Prima della partenza, il conducente deve verificare la leggibilità delle insegne esterne con la pubblicità dell'azienda proprietaria del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30810",
+  "quesito": 6280,
+  "text": "Prima della partenza, il conducente deve verificare la data di fabbricazione degli pneumatici, che non deve essere anteriore a due anni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30811",
+  "quesito": 6281,
+  "text": "Occorre verificare periodicamente il livello del liquido nel serbatoio del servosterzo idraulico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30812",
+  "quesito": 6281,
+  "text": "In caso di emergenza, è possibile aggiungere acqua nel serbatoio del liquido idraulico del servosterzo, quando questo è molto basso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30813",
+  "quesito": 6281,
+  "text": "In caso di emergenza, è possibile aggiungere olio lubrificante nel serbatoio del liquido idraulico del servosterzo, quando questo è molto basso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30814",
+  "quesito": 6281,
+  "text": "Il servosterzo può essere disinserito dall’autista tramite apposita levetta che si trova vicino al volante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30815",
+  "quesito": 6282,
+  "text": "Il volante di un veicolo può essere sostituito solo da un’officina specializzata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30816",
+  "quesito": 6282,
+  "text": "Il volante di un veicolo si può sostituire con altro di diametro maggiore, quando si rileva eccessiva resistenza nella rotazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30817",
+  "quesito": 6283,
+  "text": "L’efficienza dello sterzo può essere controllata soltanto in officina secondo apposite procedure",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30818",
+  "quesito": 6283,
+  "text": "L’efficienza dello sterzo può essere controllata personalmente, a vista, seguendo il manuale d’uso e manutenzione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30819",
+  "quesito": 6283,
+  "text": "L’efficienza dello sterzo può essere controllata chiedendo l’ausilio di un collega più esperto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30820",
+  "quesito": 6283,
+  "text": "Lo stato meccanico dello sterzo relativo al gioco dei giunti sferici a snodo deve essere verificato con le ruote sollevate dal suolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30821",
+  "quesito": 6284,
+  "text": "Prima di partire, il conducente deve eseguire il controllo dell’efficienza dei sistemi di carico e scarico della merce",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30822",
+  "quesito": 6284,
+  "text": "Prima di partire, il conducente deve eseguire il controllo del perfetto ammarraggio di tutte le parti del carico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30823",
+  "quesito": 6284,
+  "text": "Prima di partire, il conducente deve essere certo di non essere in condizioni di sovraccarico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30824",
+  "quesito": 6284,
+  "text": "Prima di partire, il conducente deve essere certo di non essere in condizioni di sovraccarico di oltre il 5% della portata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30825",
+  "quesito": 6284,
+  "text": "Prima di partire, il conducente non ha l’obbligo di verificare che le eventuali coperture del carico siano integre e ben fissate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30826",
+  "quesito": 6285,
+  "text": "Per mantenere il veicolo in buone condizioni, occorre eseguire i periodici controlli seguendo le indicazioni della casa costruttrice",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30827",
+  "quesito": 6285,
+  "text": "Per mantenere il veicolo in buone condizioni, occorre controllare periodicamente la pressione di gonfiaggio degli pneumatici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30828",
+  "quesito": 6285,
+  "text": "Per mantenere il veicolo in buone condizioni, occorre non viaggiare in condizioni di sovraccarico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30829",
+  "quesito": 6285,
+  "text": "Per mantenere il veicolo in buone condizioni, occorre utilizzare sempre il serbatoio del combustibile riempito ad oltre un terzo della sua capacità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30830",
+  "quesito": 6285,
+  "text": "Per mantenere il veicolo in buone condizioni, occorre viaggiare sempre con pneumatici gonfiati a pressione superiore all'indicazione generale di due decimi di bar",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30831",
+  "quesito": 6285,
+  "text": "Per mantenere il veicolo in buone condizioni, occorre controllare la pressione di gonfiaggio solo in occasione di giornate molto calde",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30832",
+  "quesito": 6286,
+  "text": "E' compito del conducente segnalare il malfunzionamento del veicolo al responsabile del parco macchine o dell’officina di riparazione dell’azienda",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30833",
+  "quesito": 6286,
+  "text": "Il conducente deve essere in grado di distinguere i guasti che sconsigliano la prosecuzione del viaggio da quelli che ne possono permettere, pur con le dovute cautele, la continuazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30834",
+  "quesito": 6286,
+  "text": "La manutenzione ha lo scopo di consentire lo svolgimento del servizio di trasporto in condizioni di sicurezza e regolarità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30835",
+  "quesito": 6286,
+  "text": "La manutenzione ha lo scopo di mantenere i veicoli nel migliore stato di efficienza possibile, in modo da evitare l’interruzione del servizio di trasporto per guasti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30836",
+  "quesito": 6286,
+  "text": "Per ridurre al massimo i problemi di manutenzione, il conducente deve avere uno stile di guida che limiti le sollecitazioni alle parti meccaniche del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30837",
+  "quesito": 6286,
+  "text": "Per ridurre al massimo i problemi di manutenzione, il conducente deve avere uno stile di guida che limiti al massimo i consumi delle parti del veicolo soggette a usura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30838",
+  "quesito": 6286,
+  "text": "Per ridurre al massimo i problemi di manutenzione, il conducente deve segnalare subito in azienda qualunque possibile difetto o anomalia riscontrata durante il suo turno di lavoro",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30839",
+  "quesito": 6286,
+  "text": "Scopo della manutenzione ordinaria è anche quello di rendere il veicolo meno rumoroso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30840",
+  "quesito": 6286,
+  "text": "Scopo della manutenzione ordinaria è anche quello di rendere il veicolo meno inquinante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30841",
+  "quesito": 6286,
+  "text": "Scopo della manutenzione ordinaria è anche quello di limitare i consumi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30842",
+  "quesito": 6286,
+  "text": "Le principali operazioni di manutenzione ordinaria che devono essere effettuate sul veicolo sono tra l'altro indicate sul libretto di uso e manutenzione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30843",
+  "quesito": 6286,
+  "text": "Le scadenze delle verifiche manutentive sono in genere riferite al chilometraggio percorso o al tempo trascorso dalla precedente manutenzione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30844",
+  "quesito": 6286,
+  "text": "E' compito del conducente, prima della partenza, regolare la pressione dell’aria dei freni in base al carico del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30845",
+  "quesito": 6286,
+  "text": "Il conducente si deve accorgere di una perdita di pressione dall’impianto dei freni ascoltando l’inconfondibile sibilo dell’aria che esce dai tubi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30846",
+  "quesito": 6286,
+  "text": "Per ridurre al massimo i problemi di manutenzione, il conducente deve segnalare subito al collega del turno successivo qualunque possibile difetto o anomalia riscontrata durante il suo turno di lavoro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30848",
+  "quesito": 6286,
+  "text": "E' compito del conducente, prima di partire, ripulire con uno straccio gli iniettori",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30849",
+  "quesito": 6286,
+  "text": "Per ridurre al massimo i problemi di manutenzione, il conducente deve viaggiare a motore spento nelle lunghe discese",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30850",
+  "quesito": 6286,
+  "text": "Per ridurre al massimo i problemi di manutenzione, il conducente deve effettuare frenate a fondo di prova al termine di ogni turno di lavoro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30851",
+  "quesito": 6286,
+  "text": "Scopo della manutenzione ordinaria è anche quello di poter aumentare le tariffe per il servizio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30852",
+  "quesito": 6286,
+  "text": "Scopo della manutenzione ordinaria è anche quello di ottenere sgravi fiscali",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30853",
+  "quesito": 6286,
+  "text": "Le principali operazioni di manutenzione ordinaria che devono essere effettuate sul veicolo sono indicate sul libretto di circolazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30854",
+  "quesito": 6286,
+  "text": "Per ridurre al massimo i problemi di manutenzione, il conducente deve cambiare marcia il meno possibile",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30855",
+  "quesito": 6286,
+  "text": "Le scadenze di tutte le verifiche manutentive sono coincidenti con le revisioni periodiche di legge",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30856",
+  "quesito": 6287,
+  "text": "In caso di incidente stradale, se vengono riscontrate gravi mancanze agli obblighi di manutenzione del veicolo coinvolto, vi è il rischio di aggravanti di responsabilità in un eventuale processo penale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30857",
+  "quesito": 6287,
+  "text": "In caso di incidente stradale, se vengono riscontrate gravi mancanze agli obblighi di manutenzione del veicolo coinvolto, vi è il rischio di aggravanti di responsabilità civile, anche se il conducente ha rispettato le norme di circolazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30858",
+  "quesito": 6287,
+  "text": "In caso di incidente stradale, se vengono riscontrate gravi mancanze agli obblighi di manutenzione del veicolo coinvolto, può esserci il rischio che l’impresa assicuratrice si avvalga del diritto di rivalsa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30859",
+  "quesito": 6287,
+  "text": "In caso di incidente stradale, se vengono riscontrate gravi mancanze agli obblighi di manutenzione del veicolo coinvolto, vi è il rischio di arresto immediato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30860",
+  "quesito": 6287,
+  "text": "In caso di incidente stradale, se vengono riscontrate gravi mancanze agli obblighi di manutenzione del veicolo coinvolto, vi è il rischio di raddoppio della cifra da rimborsare",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30861",
+  "quesito": 6287,
+  "text": "In caso di incidente stradale, se vengono riscontrate gravi mancanze agli obblighi di manutenzione del veicolo coinvolto, vi è il rischio che l’assicurazione si rifiuti di dare copertura al sinistro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30862",
+  "quesito": 6288,
+  "text": "L’intasamento del filtro del combustibile può comportare un irregolare afflusso di gasolio alla pompa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30863",
+  "quesito": 6288,
+  "text": "L’intasamento del filtro del combustibile comporta una perdita di efficienza del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30864",
+  "quesito": 6288,
+  "text": "L’intasamento del filtro del combustibile comporta maggiori consumi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30865",
+  "quesito": 6288,
+  "text": "L’intasamento del filtro del combustibile comporta l’emissione di fumo giallastro allo scarico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30866",
+  "quesito": 6288,
+  "text": "L’intasamento del filtro del combustibile comporta l’insufficiente lubrificazione dei cilindri del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30867",
+  "quesito": 6288,
+  "text": "L’intasamento del filtro del combustibile comporta una maggior pressione di iniezione del gasolio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30868",
+  "quesito": 6289,
+  "text": "L’instabilità di marcia del veicolo può dipendere dagli ammortizzatori scarichi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30869",
+  "quesito": 6289,
+  "text": "L’instabilità di marcia del veicolo può dipendere dalle balestre o dalle molle elicoidali danneggiate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30870",
+  "quesito": 6289,
+  "text": "L’instabilità di marcia del veicolo può dipendere dal sistema di regolazione delle sospensioni pneumatiche malfunzionante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30871",
+  "quesito": 6289,
+  "text": "Gli ammortizzatori scarichi possono provocare anomale oscillazioni del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30872",
+  "quesito": 6289,
+  "text": "Gli ammortizzatori scarichi comportano una maggiore rumorosità del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30873",
+  "quesito": 6289,
+  "text": "Gli ammortizzatori scarichi possono provocare un anomalo orientamento del fascio di luce dei proiettori anabbaglianti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30874",
+  "quesito": 6289,
+  "text": "Gli ammortizzatori scarichi possono provocare un anomalo consumo del battistrada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30875",
+  "quesito": 6289,
+  "text": "L’instabilità di marcia del veicolo può dipendere da scarsità di olio nel circuito di lubrificazione del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30876",
+  "quesito": 6289,
+  "text": "La stabilità del veicolo è indipendente dalle modalità di posizionamento del carico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30877",
+  "quesito": 6289,
+  "text": "Gli ammortizzatori scarichi provocano un notevole risparmio di carburante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30878",
+  "quesito": 6289,
+  "text": "Gli ammortizzatori scarichi garantiscono un miglior comfort dei passeggeri perché rendono meno rigido il veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30879",
+  "quesito": 6289,
+  "text": "L’instabilità di marcia del veicolo può dipendere dall'utilizzo di pneumatici invernali in una giornata in cui la temperatura dell'asfalto è di circa 25°C",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30880",
+  "quesito": 6289,
+  "text": "L’instabilità di marcia del veicolo può dipendere dall’impianto di navigazione malfunzionante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30881",
+  "quesito": 6290,
+  "text": "La non corretta convergenza delle ruote anteriori determina l’asimmetrico consumo degli pneumatici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30882",
+  "quesito": 6290,
+  "text": "L’eccessiva pressione di gonfiaggio degli pneumatici provoca una maggiore rigidità di marcia, con minor confort per i passeggeri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30883",
+  "quesito": 6290,
+  "text": "Un’insufficiente pressione di gonfiaggio degli pneumatici provoca un aumento della deriva con conseguente minor tenuta di strada in curva",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30884",
+  "quesito": 6290,
+  "text": "La mancata equilibratura dello pneumatico ne provoca un anomalo consumo e una vibrazione dello sterzo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30885",
+  "quesito": 6290,
+  "text": "Le ruote gemellate, se poco gonfie, possono deteriorarsi a causa del loro reciproco sfregamento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30886",
+  "quesito": 6290,
+  "text": "Se il conducente di un veicolo aziendale, durante un'ispezione, nota anomali consumi degli pneumatici, deve immediatamente riferirlo al responsabile del parco veicolare",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30887",
+  "quesito": 6290,
+  "text": "Se il conducente, durante un'ispezione al veicolo, nota forte riscaldamento di alcune parti degli pneumatici, deve evitare di riprendere il viaggio riferendo all’azienda della situazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30888",
+  "quesito": 6290,
+  "text": "La perdita di convergenza del veicolo diminuisce il rischio di sbandamento del veicolo, ma ne aumenta il consumo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30889",
+  "quesito": 6290,
+  "text": "La non corretta equilibratura delle ruote diminuisce lo spazio di frenatura del veicolo, ma porta a fenomeni di vibrazione allo sterzo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30890",
+  "quesito": 6290,
+  "text": "Un’insufficiente pressione di gonfiaggio degli pneumatici, provoca un aumento di temperatura del liquido di raffreddamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30891",
+  "quesito": 6290,
+  "text": "Il conducente che noti un differente consumo delle varie zone del battistrada deve immediatamente sospendere il viaggio e attendere soccorsi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30892",
+  "quesito": 6290,
+  "text": "Il conducente che noti un differente consumo delle varie zone del battistrada, deve immediatamente cambiare lo pneumatico in oggetto con quello di scorta",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30893",
+  "quesito": 6290,
+  "text": "Il conducente che noti un differente consumo delle varie zone del battistrada, deve immediatamente scaricare la merce o i passeggeri e avvisare l'azienda perché provveda al recupero e proseguire il viaggio a vuoto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30894",
+  "quesito": 6291,
+  "text": "Per garantire la sicurezza della circolazione è necessario, fra l’altro, mantenere libero il campo di visibilità del conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30895",
+  "quesito": 6291,
+  "text": "Per garantire la sicurezza della circolazione è necessario, fra l’altro, evitare di applicare decalcomanie, ciondoli o altro al parabrezza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30896",
+  "quesito": 6291,
+  "text": "Per garantire la sicurezza della circolazione è necessario, fra l’altro, assicurarsi della pulizia ed efficienza degli specchi retrovisori interni ed esterni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30897",
+  "quesito": 6291,
+  "text": "Per garantire la sicurezza della circolazione è necessario, fra l’altro, assicurare la trasparenza e pulizia delle superfici vetrate, comprese quelle laterali",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30898",
+  "quesito": 6291,
+  "text": "Per garantire la sicurezza della circolazione è necessario, fra l’altro, rifornire periodicamente di liquido detergente il serbatoio dei dispositivi lavacristallo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30899",
+  "quesito": 6291,
+  "text": "Per garantire la sicurezza della circolazione è necessario, fra l’altro, verificare periodicamente le spazzole tergicristallo, sostituendole se non sono in buono stato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30900",
+  "quesito": 6291,
+  "text": "Per garantire la sicurezza della circolazione è necessario che, in caso di lesioni al parabrezza, si provveda a coprirle con nastro adesivo trasparente non colorato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30901",
+  "quesito": 6291,
+  "text": "Per garantire la sicurezza della circolazione è necessario, fra l’altro, installare sui finestrini pellicole opacizzate per evitare fenomeni di abbagliamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30902",
+  "quesito": 6291,
+  "text": "Per garantire la sicurezza della circolazione è necessario, fra l’altro, sostituire i catadiottri ogni volta che si effettua la revisione del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30903",
+  "quesito": 6291,
+  "text": "Per garantire la sicurezza della circolazione è necessario, fra l’altro, sostituire le lampadine dei proiettori di profondità ogni volta che si effettua la revisione del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30904",
+  "quesito": 6291,
+  "text": "Per garantire la sicurezza della circolazione è necessario, fra l’altro, sostituire tutti i fusibili dell'impianto elettrico ogni volta che si effettua la revisione del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30905",
+  "quesito": 6292,
+  "text": "La legge stabilisce che l’attività di manutenzione e autoriparazione dei veicoli debba essere svolta esclusivamente da officine iscritte ad apposito registro",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30906",
+  "quesito": 6292,
+  "text": "La legge stabilisce che la manutenzione e l’autoriparazione devono essere svolte solo da officine iscritte ad apposito registro, in modo da garantire il corretto smaltimento dei rifiuti dovuti a tali attività",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30907",
+  "quesito": 6292,
+  "text": "La legge stabilisce che la manutenzione e l’autoriparazione deve essere svolta solo da officine iscritte ad apposito registro, in modo da garantire un’adeguata professionalità ed evitare incidenti dovuti a guasti per errate manutenzioni o riparazioni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30908",
+  "quesito": 6292,
+  "text": "La legge stabilisce che la sostituzione del filtro dell’aria, non rientra nelle attività di autoriparazione da eseguire solo presso officine autorizzate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30909",
+  "quesito": 6292,
+  "text": "La legge stabilisce che la sostituzione del filtro dell’olio lubrificante, non rientra nelle attività di autoriparazione da eseguire solo presso officine autorizzate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30910",
+  "quesito": 6292,
+  "text": "La legge stabilisce che la sostituzione dell’olio e di altri liquidi che lubrificano le parti dell’autoveicolo, non rientra nelle attività di autoriparazione da eseguire solo presso officine autorizzate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30911",
+  "quesito": 6292,
+  "text": "La legge stabilisce che la sostituzione del liquido di raffreddamento del motore non rientra nelle attività di autoriparazione da eseguire solo presso officine autorizzate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30912",
+  "quesito": 6292,
+  "text": "Le sostituzioni di liquidi o filtri del motore che è ammesso fare in proprio per legge, devono comunque essere eseguite garantendo il corretto smaltimento dei liquidi o delle parti esauste",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30913",
+  "quesito": 6292,
+  "text": "Le sostituzioni di liquidi o filtri del motore che è ammesso fare in proprio per legge, possono essere eseguite purché i liquidi o le parti esauste vengano buttate in un contenitore pubblico per rifiuti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30914",
+  "quesito": 6292,
+  "text": "Le sostituzioni di liquidi del motore che è ammesso fare in proprio per legge, possono essere eseguite purché i liquidi vengano raccolti in fusti di plastica e lasciati vicino ai cassonetti dell’immondizia raccolta dai servizi di nettezza urbana",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30915",
+  "quesito": 6292,
+  "text": "Le sostituzioni di filtri del motore che è ammesso fare in proprio per legge, possono essere eseguite purché i filtri vengano raccolti negli appositi sacchi viola con la scritta \"rifiuto meccanico\" e lasciati vicino ai cassonetti dell’immondizia raccolta dai servizi di nettezza urbana",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30916",
+  "quesito": 6292,
+  "text": "La legge stabilisce che la sostituzione delle pastiglie dei freni non rientra nelle attività di autoriparazione da eseguire solo presso officine autorizzate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30917",
+  "quesito": 6292,
+  "text": "La legge stabilisce che la sostituzione degli ammortizzatori non rientra nelle attività di autoriparazione da eseguire solo presso officine autorizzate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30918",
+  "quesito": 6292,
+  "text": "La legge stabilisce che le riparazioni all’impianto di illuminazione non rientrano tra le attività di autoriparazione da eseguire solo presso officine autorizzate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30919",
+  "quesito": 6292,
+  "text": "La legge stabilisce che le riparazioni all’impianto elettrico non rientrano tra le attività di autoriparazione da eseguire solo presso officine autorizzate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30920",
+  "quesito": 6292,
+  "text": "La legge non prevede un registro specifico delle officine che possono effettuare attività di autoriparazione, ma solo un elenco comunale consultabile su internet",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30921",
+  "quesito": 6293,
+  "text": "Le riparazioni degli organi del motore quali: distribuzione, impianto di iniezione o di alimentazione, salvo la sostituzione dei filtri a cartuccia, devono essere effettuati in officina autorizzata e da personale qualificato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30922",
+  "quesito": 6293,
+  "text": "Se si introduce acqua o liquido nel radiatore quando il motore è molto caldo c’è il rischio di crepare il monoblocco o di deformare la testata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30923",
+  "quesito": 6293,
+  "text": "Tutte le riparazioni relative al cambio di velocità devono venire effettuate in officina autorizzata e da personale qualificato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30924",
+  "quesito": 6293,
+  "text": "Per quanto concerne l’attività di autoriparazione, la regola generale è quella di avvalersi di apposite imprese iscritte nel registro delle officine abilitate a tali interventi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30925",
+  "quesito": 6293,
+  "text": "Secondo le norme di legge, anche il cambio dei filtri dell’aria e dell’olio deve avvenire solo in officina ed eseguito da personale qualificato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30926",
+  "quesito": 6293,
+  "text": "Il conducente può fare anche importanti riparazioni al motore del veicolo purché sia in possesso almeno di diploma di perito meccanico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30927",
+  "quesito": 6293,
+  "text": "In caso di guasto agli organi di trasmissione, la riparazione può essere effettuata dal conducente purché egli sia in possesso della patente C+E o D+E",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30928",
+  "quesito": 6293,
+  "text": "Il cambio dell’olio di un autocarro di massa complessiva a pieno carico superiore a 7,5 tonnellate, dotato di motore Diesel, può essere effettuato solo in un’officina specializzata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30929",
+  "quesito": 6294,
+  "text": "Per mantenere l’efficienza nel tempo del motore è importante effettuare il cambio periodico dell’olio lubrificante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30930",
+  "quesito": 6294,
+  "text": "Ad ogni rifornimento di carburante è buona regola controllare il livello dell’olio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30931",
+  "quesito": 6294,
+  "text": "Tra le manutenzioni che il conducente è autorizzato a compiere sono comprese la sostituzione o la pulizia dei filtri dell’aria e dell’olio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30932",
+  "quesito": 6294,
+  "text": "In un motore a Diesel, ogni ventimila chilometri occorre sostituire la guarnizione della testata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30933",
+  "quesito": 6294,
+  "text": "In un motore Diesel, ogni diecimila chilometri occorre sostituire le candelette di preaccensione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "16",
+  "code": "30934",
+  "quesito": 6294,
+  "text": "Per mantenere l’efficienza nel tempo del motore è importante effettuare il cambio del liquido di raffreddamento ogni venticinquemila chilometri",
+  "risposta": false,
+  "image": null
+ }
+]

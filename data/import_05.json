@@ -1,0 +1,1090 @@
+[
+ {
+  "argomentoCode": "05",
+  "code": "28236",
+  "quesito": 6077,
+  "text": "In caso di ingombro della carreggiata per la caduta del carico, il conducente deve cercare, per quanto possibile, di liberare il transito",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28237",
+  "quesito": 6077,
+  "text": "In caso di ingombro della carreggiata per avaria del veicolo che non possa essere spostato, il conducente deve segnalare il pericolo agli altri conducenti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28238",
+  "quesito": 6077,
+  "text": "In caso di ingombro della carreggiata per avaria del veicolo, fuori dei centri abitati il conducente deve posizionare sulla carreggiata il segnale mobile triangolare di pericolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28239",
+  "quesito": 6077,
+  "text": "In caso di ingombro della carreggiata con perdite di materie pericolose, il conducente deve, tra l'altro, cercare di bloccare la perdita",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28240",
+  "quesito": 6077,
+  "text": "In caso di ingombro della carreggiata con perdite di acidi o sostanze infiammabili, il conducente deve comportarsi come indicato dalle istruzioni di sicurezza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28241",
+  "quesito": 6077,
+  "text": "In caso di ingombro della carreggiata per la caduta del carico, il conducente si libera da ogni obbligo telefonando agli organi di polizia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28242",
+  "quesito": 6077,
+  "text": "In caso di ingombro della carreggiata per avaria del veicolo, il conducente deve riparare subito il veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28243",
+  "quesito": 6077,
+  "text": "In caso di ingombro della carreggiata per avaria del veicolo, nei centri abitati il conducente deve sempre posizionare sulla carreggiata il segnale mobile triangolare di pericolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28244",
+  "quesito": 6077,
+  "text": "In caso di ingombro della carreggiata con perdite di materie pericolose bisogna, se possibile, incanalarle verso una fognatura",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28245",
+  "quesito": 6077,
+  "text": "In caso di ingombro della carreggiata per avaria del veicolo, il conducente deve prima di tutto segnalare il pericolo all'ente proprietario della strada",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28246",
+  "quesito": 6078,
+  "text": "In caso di incidente stradale con soli danni alle cose, il conducente ha l’obbligo di fermarsi e fornire le proprie generalità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28247",
+  "quesito": 6078,
+  "text": "In caso di incidente stradale con soli danni alle cose, il conducente ha l’obbligo di fermarsi e fornire le informazioni utili per l’esatta ricostruzione della dinamica dell’incidente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28248",
+  "quesito": 6078,
+  "text": "In caso di incidente con solo due veicoli coinvolti, è opportuno avvalersi del modulo di Constatazione amichevole (denuncia di sinistro)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28249",
+  "quesito": 6078,
+  "text": "In caso di utilizzo del modulo di Constatazione amichevole, il conducente deve riportare il luogo, le modalità e la data dell’incidente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28250",
+  "quesito": 6078,
+  "text": "In caso di utilizzo del modulo di Constatazione amichevole, il conducente deve riportare le generalità dell’altro conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28251",
+  "quesito": 6078,
+  "text": "In caso di utilizzo del modulo di Constatazione amichevole, il conducente deve riportare le generalità del proprietario dell’altro veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28252",
+  "quesito": 6078,
+  "text": "Nel modulo di Constatazione amichevole, il conducente deve riportare, ove possibile, le generalità di eventuali testimoni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28253",
+  "quesito": 6078,
+  "text": "Nel modulo di Constatazione amichevole, il conducente deve riportare un semplice disegno schematico indicante la posizione dei veicoli e la dinamica dell’incidente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28254",
+  "quesito": 6078,
+  "text": "Nel modulo di Constatazione amichevole, il conducente deve riportare il numero di targa, il numero di polizza e la compagnia assicurativa dei veicoli coinvolti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28255",
+  "quesito": 6078,
+  "text": "Dopo un incidente stradale, se il veicolo coinvolto crea pericolo o intralcio, deve essere portato al più presto fuori dalla carreggiata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28256",
+  "quesito": 6078,
+  "text": "Dopo un incidente stradale, nei casi e con le modalità previste dal Codice della Strada, il conducente deve utilizzare il segnale di veicolo fermo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28257",
+  "quesito": 6078,
+  "text": "Il conducente, dopo un incidente stradale, qualora siano cadute dal veicolo delle sostanze viscide, deve rimanere sul posto per segnalare manualmente il pericolo ai veicoli che sopraggiungono",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28258",
+  "quesito": 6078,
+  "text": "Il conducente, in caso di incidente stradale ricollegabile ad un suo comportamento, ha l’obbligo di fermarsi e di prestare assistenza a chi ha subito un danno alla persona",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28259",
+  "quesito": 6078,
+  "text": "E' punibile con la reclusione il conducente, coinvolto in un incidente stradale, che non si fermi a prestare assistenza a chi ha subito un danno alla persona",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28260",
+  "quesito": 6078,
+  "text": "In caso di incidente stradale, il conducente che si dia alla fuga è passibile di arresto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28261",
+  "quesito": 6078,
+  "text": "In caso di incidente stradale, il conducente che si fermi e presti assistenza non è, di norma, soggetto all’arresto preventivo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28262",
+  "quesito": 6078,
+  "text": "In caso di incidente stradale, si deve richiedere l’intervento dell’autorità quando non sia possibile ripristinare la circolazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28263",
+  "quesito": 6078,
+  "text": "In caso di incidente stradale, si può richiedere l’intervento dell’autorità quando l’altro conducente non sia in grado di esibire il certificato di assicurazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28264",
+  "quesito": 6078,
+  "text": "Si deve richiedere l’intervento dell’autorità quando un incidente stradale ha provocato feriti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28265",
+  "quesito": 6078,
+  "text": "A seguito di un incidente stradale, non si devono spostare i veicoli coinvolti finché non siano stati soccorsi eventuali feriti e la polizia non abbia rilevato tutti gli elementi utili alla ricostruzione dell’incidente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28266",
+  "quesito": 6078,
+  "text": "In caso di incidente stradale con soli danni alle cose, il conducente non ha l’obbligo di fermarsi e fornire le proprie generalità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28267",
+  "quesito": 6078,
+  "text": "In caso di incidente stradale con soli danni alle cose, al conducente è consigliato di fermarsi e fornire le proprie generalità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28268",
+  "quesito": 6078,
+  "text": "In caso di incidente con più di due veicoli coinvolti, è opportuno avvalersi del modulo di Constatazione amichevole (denuncia di sinistro)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28269",
+  "quesito": 6078,
+  "text": "Nel modulo di Constatazione amichevole, è sufficiente che il conducente riporti il luogo e modalità dell’incidente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28270",
+  "quesito": 6078,
+  "text": "Nel modulo di Constatazione amichevole, il conducente deve riportare solo le generalità dell’altro conducente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28271",
+  "quesito": 6078,
+  "text": "Nel modulo di Constatazione amichevole, non è obbligatorio riportare le generalità del proprietario dell’altro veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28272",
+  "quesito": 6078,
+  "text": "Nel modulo di Constatazione amichevole, il conducente deve riportare, qualora ce ne fosse il bisogno, le generalità di eventuali testimoni, purché non siano passeggeri trasportati",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28273",
+  "quesito": 6078,
+  "text": "Nel modulo di Constatazione amichevole, il conducente deve obbligatoriamente compilare solo la parte sinistra del modulo, quella destra è facoltativa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28274",
+  "quesito": 6078,
+  "text": "Nel modulo di Constatazione amichevole, il conducente responsabile deve compilare per forza la colonna \"A\", chi ha subito il danno, invece, la colonna \"B\"",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28275",
+  "quesito": 6078,
+  "text": "Dopo un incidente stradale, se il veicolo coinvolto crea pericolo o intralcio, può essere lasciato sulla carreggiata per al massimo un’ora dopo l'evento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28276",
+  "quesito": 6078,
+  "text": "Dopo un incidente stradale, il conducente deve sempre utilizzare il segnale di veicolo fermo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28277",
+  "quesito": 6078,
+  "text": "Il conducente, dopo un incidente stradale, qualora siano cadute dal veicolo delle sostanze viscide, deve fermare tutti i veicoli che sopraggiungono e costringerli ad invertire la marcia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28278",
+  "quesito": 6078,
+  "text": "Il conducente, in caso di incidente ricollegabile ad un suo comportamento, ha l’obbligo di fermarsi, ma non di prestare assistenza",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28279",
+  "quesito": 6078,
+  "text": "E' punibile con la reclusione il conducente coinvolto in un incidente stradale che non si ferma a prestare assistenza a chi ha subito unicamente un danno alle cose",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28280",
+  "quesito": 6078,
+  "text": "In caso di incidente stradale, il conducente che si dia alla fuga non incorre nell’arresto se è opportunamente assicurato contro tale eventualità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28281",
+  "quesito": 6078,
+  "text": "In caso di incidente stradale, il proprietario del veicolo coinvolto è punibile con la reclusione se i danni superano i cinquemila euro di valore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28282",
+  "quesito": 6078,
+  "text": "In caso di incidente stradale, occorre richiedere l’intervento dell’autorità unicamente quando il numero dei feriti è superiore a tre",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28283",
+  "quesito": 6078,
+  "text": "In caso di incidente stradale, si deve richiedere l’intervento dell’autorità quando l’altro conducente non sia in grado di esibire la polizza di assicurazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28284",
+  "quesito": 6078,
+  "text": "Non si deve richiedere l’intervento dell’autorità quando un incidente ha provocato solamente un ferito",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28285",
+  "quesito": 6078,
+  "text": "A seguito di un incidente stradale, si possono spostare i veicoli coinvolti anche se la polizia non ha finito di rilevare gli elementi utili alla ricostruzione dell’incidente, purché siano stati soccorsi gli eventuali feriti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28286",
+  "quesito": 6079,
+  "text": "In caso di guasto meccanico al veicolo che lo blocchi in una galleria autostradale, occorre attivare la segnalazione luminosa di pericolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28287",
+  "quesito": 6079,
+  "text": "In caso di guasto meccanico al veicolo che lo blocchi in una galleria autostradale, occorre, se possibile, portare il veicolo su una piazzola di sosta",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28288",
+  "quesito": 6079,
+  "text": "In caso di guasto meccanico al veicolo che lo blocchi in una galleria autostradale, occorre fermare il veicolo sulla corsia di emergenza, se presente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28289",
+  "quesito": 6079,
+  "text": "In caso di guasto meccanico al veicolo che lo blocchi in una galleria autostradale, occorre chiamare rapidamente il soccorso stradale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28290",
+  "quesito": 6079,
+  "text": "In caso di guasto meccanico al veicolo che lo blocchi in una galleria autostradale, occorre fermare immediatamente il veicolo sulla corsia di marcia attivando la segnalazione luminosa di pericolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28291",
+  "quesito": 6079,
+  "text": "In caso di guasto meccanico al veicolo che lo blocchi in una galleria autostradale, occorre chiedere aiuto ai conducenti più vicini",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28292",
+  "quesito": 6079,
+  "text": "In caso di guasto meccanico al veicolo che lo blocchi in una galleria autostradale, occorre provvedere al traino del veicolo fuori del tunnel con l'aiuto di un altro autista di passaggio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28293",
+  "quesito": 6079,
+  "text": "In caso di guasto meccanico al veicolo che lo blocchi in una galleria autostradale, occorre attendere l'arrivo del proprio meccanico di fiducia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28294",
+  "quesito": 6080,
+  "text": "Nel caso ci si imbatta in un incidente in galleria che blocca o rallenta molto la marcia, occorre attivare la segnalazione luminosa di pericolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28295",
+  "quesito": 6080,
+  "text": "In caso di incidente in galleria che blocca il traffico, occorre spegnere il motore lasciando la chiave di accensione inserita",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28296",
+  "quesito": 6080,
+  "text": "In caso di incidente in galleria, se si deve scendere dal veicolo, è bene indossare il giubbotto o le bretelle retroriflettenti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28297",
+  "quesito": 6080,
+  "text": "In caso di incidente in galleria occorre avvertire rapidamente i servizi di emergenza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28298",
+  "quesito": 6080,
+  "text": "In caso di incidente in galleria occorre prestare il primo soccorso ad eventuali feriti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28299",
+  "quesito": 6080,
+  "text": "In caso di incidente in galleria occorre suonare a fondo il clacson per avvertire gli altri conducenti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28300",
+  "quesito": 6080,
+  "text": "In caso di incidente in galleria occorre scendere e posizionare i cunei sotto le ruote del proprio veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28301",
+  "quesito": 6080,
+  "text": "In caso di incidente in galleria occorre avvertire con brevi colpi di clacson gli altri automobilisti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28302",
+  "quesito": 6080,
+  "text": "In caso di incidente in galleria occorre invertire la marcia e sgomberare il luogo dell'incidente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28303",
+  "quesito": 6080,
+  "text": "In caso di incidente in galleria occorre scaricare immediatamente il carico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28304",
+  "quesito": 6081,
+  "text": "Nel caso di ingombro della carreggiata per caduta accidentale del carico, il conducente deve provvedere a rimuovere il carico, se l'operazione risulta possibile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28305",
+  "quesito": 6081,
+  "text": "Nel caso di ingombro della carreggiata per caduta accidentale del carico, il conducente deve presegnalare l'ostacolo mediante il segnale di veicolo fermo (triangolo)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28306",
+  "quesito": 6081,
+  "text": "Nel caso di ingombro della carreggiata per caduta accidentale del carico, il conducente deve rendere sollecitamente libero il transito, per quanto nelle sue possibilità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28307",
+  "quesito": 6081,
+  "text": "Nel caso di ingombro della carreggiata per caduta accidentale del carico, il conducente deve presegnalare l'ostacolo mediante il segnale di STOP",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28308",
+  "quesito": 6081,
+  "text": "Nel caso di ingombro della carreggiata per caduta accidentale del carico, il conducente deve restare a bordo del veicolo in attesa dei soccorsi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28309",
+  "quesito": 6081,
+  "text": "Nel caso di ingombro della carreggiata per caduta accidentale del carico, il conducente deve obbligatoriamente accendere una serie di fiaccole gialle tutto intorno al tratto di strada interessato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28310",
+  "quesito": 6082,
+  "text": "In caso di ingombro della carreggiata per avaria del veicolo, il conducente deve sollecitamente rendere libero il transito per non ostacolare il traffico sopraggiungente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28311",
+  "quesito": 6082,
+  "text": "In caso di ingombro della carreggiata per avaria del veicolo, il conducente deve spingere il veicolo stesso fuori della carreggiata o, se ciò non è possibile, deve collocarlo sul margine destro della carreggiata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28312",
+  "quesito": 6082,
+  "text": "In caso di ingombro della carreggiata per caduta del carico o per qualsiasi altra causa, il conducente deve rimuovere l'ingombro, per quanto possibile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28313",
+  "quesito": 6082,
+  "text": "In caso di ingombro della carreggiata per avaria del veicolo, il conducente non è tenuto a spostarlo in attesa dei soccorsi, se il traffico sulla strada è scarso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28314",
+  "quesito": 6082,
+  "text": "Nel caso di ingombro della carreggiata per caduta accidentale del carico, il conducente deve evitare di spostarlo per consentire la ricostruzione corretta dell’accaduto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28315",
+  "quesito": 6082,
+  "text": "In caso di ingombro della carreggiata per avaria del veicolo, il conducente deve essere in grado di riparare il guasto rapidamente, se si tratta di un veicolo pesante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28316",
+  "quesito": 6083,
+  "text": "Nel caso di ingombro della carreggiata per avaria del veicolo o per caduta del carico, il conducente deve, tra l'altro, informare l'ente proprietario della strada o un organo di polizia",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28317",
+  "quesito": 6083,
+  "text": "Nel caso di incidente che provochi l'ingombro della carreggiata per la presenza di veicoli danneggiati che non è possibile rimuovere, il conducente deve presegnalare la zona mediante il segnale triangolare mobile di pericolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28318",
+  "quesito": 6083,
+  "text": "Nel caso di ingombro della carreggiata per avaria del veicolo che non è possibile spostare , il conducente deve informare un organo di polizia, astenendosi dal presegnalare la zona",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28319",
+  "quesito": 6083,
+  "text": "Nel caso di ingombro della carreggiata per caduta del carico non rimovibile, il conducente può evitare di informare un organo di polizia se presegnala la zona con efficaci segnali manuali",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28320",
+  "quesito": 6084,
+  "text": "Chiunque non abbia potuto evitare la caduta o lo spargimento di materie viscide, infiammabili o comunque pericolose deve, tra l'altro, presegnalare la zona con il segnale mobile di pericolo posto, se necessario, anche nel centro della carreggiata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28321",
+  "quesito": 6084,
+  "text": "Chiunque non abbia potuto evitare la caduta o lo spargimento di materie pericolose deve, tra l'altro, eseguire segnali manuali per impedire il transito dei veicoli sulla parte di carreggiata non impedita dal segnale mobile di pericolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28322",
+  "quesito": 6084,
+  "text": "Chiunque non abbia potuto evitare la caduta o lo spargimento di materie viscide, infiammabili o pericolose deve, tra l'altro, rimuoverle o spargere sul terreno, se possibile, sabbia, terra, segatura o altro materiale idoneo a ripristinare l'aderenza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28323",
+  "quesito": 6084,
+  "text": "Il conducente di un autoveicolo che non abbia potuto evitare lo spargimento di materie pericolose, può evitare di presegnalare la zona con il segnale mobile di pericolo se esegue segnali sonori per allontanare gli altri veicoli",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28324",
+  "quesito": 6084,
+  "text": "Chiunque non abbia potuto evitare la caduta di materie viscide, deve deviare il traffico in attesa che l'ente proprietario della strada intervenga per ripristinare le condizioni ottimali",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28325",
+  "quesito": 6085,
+  "text": "Fuori dei centri abitati, di notte, quando mancano o sono insufficienti le luci posteriori di posizione o di emergenza, è obbligatorio presegnalare il veicolo, fermo sulla carreggiata, con il segnale triangolare mobile di pericolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28326",
+  "quesito": 6085,
+  "text": "Fuori dei centri abitati, di notte, è obbligatorio presegnalare con il segnale triangolare mobile di pericolo ogni carico caduto accidentalmente dal veicolo sulla carreggiata che non sia stato possibile rimuovere",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28327",
+  "quesito": 6085,
+  "text": "Fuori dei centri abitati è obbligatorio, anche di giorno, presegnalare un veicolo fermo sulla carreggiata mediante il segnale triangolare di pericolo, quando il veicolo non può essere visto nettamente a 100 metri di distanza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28328",
+  "quesito": 6085,
+  "text": "Fuori dei centri abitati è obbligatorio, anche di giorno, presegnalare un carico accidentalmente caduto sulla carreggiata mediante il segnale di pericolo, quando il carico non può essere visto nettamente a 100 metri di distanza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28329",
+  "quesito": 6085,
+  "text": "Il segnale mobile triangolare di pericolo fa parte dell'equipaggiamento obbligatorio degli autoveicoli",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28330",
+  "quesito": 6085,
+  "text": "Il segnale mobile triangolare di pericolo deve essere posto dietro al veicolo o all'ostacolo da segnalare, ad almeno 50 metri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28331",
+  "quesito": 6085,
+  "text": "Se il veicolo è fermo per avaria a meno di 50 metri dopo una intersezione, il segnale mobile triangolare di pericolo deve essere posto dietro al veicolo nella posizione e alla distanza più idonea ad essere avvistato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28332",
+  "quesito": 6085,
+  "text": "Il segnale mobile triangolare di pericolo deve essere posto sulla carreggiata in modo che sia visibile ad una distanza di almeno 100 metri dai veicoli sopraggiungenti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28333",
+  "quesito": 6085,
+  "text": "Fuori dei centri abitati, di notte, quando mancano o sono insufficienti le luci posteriori di posizione o di emergenza, è consigliabile, ma non obbligatorio, presegnalare il veicolo fermo sulla carreggiata, con il segnale triangolare mobile di pericolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28334",
+  "quesito": 6085,
+  "text": "Di notte, il triangolo mobile di pericolo deve essere obbligatoriamente usato per segnalare il veicolo fermo per avaria nel caso non sia visibile da almeno 150 metri di distanza",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28335",
+  "quesito": 6085,
+  "text": "Fuori dei centri abitati, anche di giorno, è facoltativo presegnalare mediante il segnale di pericolo un carico accidentalmente caduto sulla carreggiata che non può essere visto nettamente a 100 metri di distanza, purché il carico occupi una sola corsia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28336",
+  "quesito": 6085,
+  "text": "Di notte, quando mancano o sono insufficienti le luci posteriori di posizione o di emergenza, è obbligatorio presegnalare il veicolo fermo con il segnale triangolare mobile di pericolo anche nei centri abitati",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28337",
+  "quesito": 6085,
+  "text": "Il segnale mobile triangolare di pericolo deve essere posto sopra al carico accidentalmente caduto sulla carreggiata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28338",
+  "quesito": 6085,
+  "text": "Il segnale mobile triangolare di pericolo deve essere posto sulla carreggiata in modo che sia visibile ad una distanza di almeno 50 metri dai veicoli sopraggiungenti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28339",
+  "quesito": 6086,
+  "text": "Il segnale mobile triangolare di pericolo deve essere posto sulla corsia occupata dal veicolo fermo o dal carico caduto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28340",
+  "quesito": 6086,
+  "text": "Il segnale mobile triangolare di pericolo deve essere posto sulla carreggiata ad almeno un metro dal bordo esterno di essa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28341",
+  "quesito": 6086,
+  "text": "Nel caso di carreggiata a più corsie, il segnale mobile triangolare di pericolo deve essere posto sulla corsia immediatamente a sinistra del veicolo fermo o del carico caduto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28342",
+  "quesito": 6086,
+  "text": "Il segnale mobile triangolare di pericolo deve essere posto sulla carreggiata ad almeno un metro dalla striscia di separazione dei sensi di marcia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28343",
+  "quesito": 6087,
+  "text": "Durante le operazioni di presegnalazione con il segnale mobile di pericolo, il conducente deve rendersi visibile indossando il giubbotto o le bretelle retroriflettenti ad alta visibilità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28344",
+  "quesito": 6087,
+  "text": "Il giubbotto o le bretelle retroriflettenti ad alta visibilità, da usare durante le operazioni di presegnalazione con il segnale mobile di pericolo, devono essere di tipo approvato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28345",
+  "quesito": 6087,
+  "text": "Durante le operazioni di presegnalazione con il segnale mobile di pericolo, il conducente deve indossare il giubbotto ad alta visibilità anche se si trova sulle corsie di emergenza o sulle piazzole di sosta",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28346",
+  "quesito": 6087,
+  "text": "Per effettuare le operazioni di presegnalazione con il segnale mobile di pericolo, è vietato al conducente scendere dal veicolo e camminare sulla strada senza indossare il giubbotto ad alta visibilità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28347",
+  "quesito": 6087,
+  "text": "Durante le operazioni di presegnalazione con il segnale mobile di pericolo, è facoltativo l’uso del giubbotto o delle bretelle retroriflettenti ad alta visibilità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28348",
+  "quesito": 6087,
+  "text": "Durante le operazioni di presegnalazione con il segnale mobile di pericolo, il conducente non deve indossare il giubbotto ad alta visibilità se si trova sulle corsie di emergenza o sulle piazzole di sosta",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28349",
+  "quesito": 6087,
+  "text": "Il conducente deve indossare il giubbotto ad alta visibilità di notte, anche nei centri abitati, qualora il suo veicolo sia fermo sulla carreggiata per un guasto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28350",
+  "quesito": 6088,
+  "text": "Di norma, non si può trainare o essere trainati da più di un veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28351",
+  "quesito": 6088,
+  "text": "Salvo eccezioni, un veicolo può trainare un altro veicolo in avaria su strade urbane ed extraurbane secondarie",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28352",
+  "quesito": 6088,
+  "text": "Durante le operazioni di traino in situazione di emergenza, il collegamento tra due veicoli può essere realizzato mediante aggancio con catena, purché idoneamente segnalata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28353",
+  "quesito": 6088,
+  "text": "Durante le operazioni di traino in situazione di emergenza, il collegamento tra due veicoli può essere realizzato mediante aggancio con barra rigida, purché idoneamente segnalata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28354",
+  "quesito": 6088,
+  "text": "Durante le operazioni di traino in situazione di emergenza, il collegamento tra due veicoli può essere realizzato mediante aggancio con cavo di acciaio, purché idoneamente segnalato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28355",
+  "quesito": 6088,
+  "text": "Durante le operazioni di traino in situazione di emergenza, il collegamento tra due veicoli può essere realizzato mediante aggancio con fune idonea allo scopo, purché idoneamente segnalata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28356",
+  "quesito": 6088,
+  "text": "Il traino di un veicolo in situazione di emergenza deve essere idoneamente segnalato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28357",
+  "quesito": 6088,
+  "text": "Il traino di un veicolo in avaria è vietato in autostrada, salvo che il traino venga eseguito da veicolo autorizzato al soccorso stradale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28358",
+  "quesito": 6088,
+  "text": "Durante le operazioni di traino, il veicolo trainato deve mantenere in funzione la segnalazione luminosa di pericolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28359",
+  "quesito": 6088,
+  "text": "Durante le operazioni di traino, se il veicolo trainato non può attivare la segnalazione luminosa di pericolo, deve mantenere esposto, sul lato rivolto alla circolazione, il segnale mobile di pericolo o il pannello per carichi sporgenti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28360",
+  "quesito": 6088,
+  "text": "Durante le operazioni di traino in situazione di emergenza, il collegamento tra i due veicoli deve essere idoneamente segnalato in modo da essere avvistato e risultare chiaramente percepibile da parte degli altri utenti della strada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28361",
+  "quesito": 6088,
+  "text": "Durante le operazioni di traino, il veicolo trainante deve mantenere attivata la segnalazione luminosa di pericolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28362",
+  "quesito": 6088,
+  "text": "Il veicolo trainante un altro veicolo in avaria deve essere di almeno il 60% più pesante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28363",
+  "quesito": 6088,
+  "text": "Un veicolo può sempre trainare un altro veicolo in avaria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28364",
+  "quesito": 6088,
+  "text": "In situazioni di emergenza, il collegamento di traino tra due veicoli può essere realizzato solo attraverso catena o barra rigida",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28365",
+  "quesito": 6088,
+  "text": "Il traino di un veicolo in avaria non deve essere necessariamente segnalato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28366",
+  "quesito": 6088,
+  "text": "Durante le operazioni di traino, il veicolo trainato deve accendere la luce posteriore per nebbia in mancanza di altra idonea segnalazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28367",
+  "quesito": 6088,
+  "text": "Durante le operazioni di traino in situazioni di emergenza, il collegamento tra due veicoli deve avvenire mediante aggancio con cavo elettrico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28368",
+  "quesito": 6088,
+  "text": "Durante le operazioni di traino in situazioni di emergenza, il collegamento tra i due veicoli può avvenire solo a condizione che il veicolo trainante sia munito di gancio di traino omologato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28369",
+  "quesito": 6088,
+  "text": "Durante le operazioni di traino in situazioni di emergenza, il collegamento tra due veicoli non deve essere più lungo di 1 metro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28370",
+  "quesito": 6088,
+  "text": "Durante le operazioni di traino in situazioni di emergenza, sia il veicolo trainante che quello trainato devono mantenere in funzione l’indicatore di direzione destro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "05",
+  "code": "28371",
+  "quesito": 6088,
+  "text": "Il traino di un veicolo in avaria può essere realizzato solo se il veicolo trainante ha cilindrata del motore superiore a quella del veicolo trainato",
+  "risposta": false,
+  "image": null
+ }
+]

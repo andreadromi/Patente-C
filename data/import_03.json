@@ -1,0 +1,2258 @@
+[
+ {
+  "argomentoCode": "03",
+  "code": "27813",
+  "quesito": 6030,
+  "text": "Il pannello in figura segnala veicoli adibiti al trasporto di una specifica merce pericolosa secondo l’ADR",
+  "risposta": true,
+  "image": "e2a6d3d34776.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27814",
+  "quesito": 6030,
+  "text": "Il pannello in figura deve essere fissato davanti e dietro al veicolo che trasporta una specifica merce pericolosa secondo l’ADR",
+  "risposta": true,
+  "image": "e2a6d3d34776.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27815",
+  "quesito": 6030,
+  "text": "Il pannello in figura deve essere di tipo omologato",
+  "risposta": true,
+  "image": "e2a6d3d34776.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27816",
+  "quesito": 6030,
+  "text": "Il numero in basso indicato sul pannello in figura segnala il tipo di merce pericolosa trasportata",
+  "risposta": true,
+  "image": "e2a6d3d34776.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27817",
+  "quesito": 6030,
+  "text": "Il numero in alto indicato sul pannello in figura segnala il tipo di pericolo connesso alla merce pericolosa trasportata",
+  "risposta": true,
+  "image": "e2a6d3d34776.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27818",
+  "quesito": 6030,
+  "text": "Il pannello in figura deve essere retroriflettente",
+  "risposta": true,
+  "image": "e2a6d3d34776.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27819",
+  "quesito": 6030,
+  "text": "I veicoli che trasportano merci pericolose, qualora trasportino più materie pericolose in compartimenti distinti di una stessa cisterna, devono avere lateralmente gli appositi pannelli arancioni retroriflettenti indicanti, ciascuno, le singole materie trasportate (esempio in figura)",
+  "risposta": true,
+  "image": "e2a6d3d34776.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27820",
+  "quesito": 6030,
+  "text": "Il pannello in figura è collocato posteriormente agli autoveicoli aventi lunghezza uguale o superiore a 7 metri",
+  "risposta": false,
+  "image": "e2a6d3d34776.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27821",
+  "quesito": 6030,
+  "text": "Il pannello in figura è collocato posteriormente agli autoarticolati per segnalare carichi sporgenti pericolosi",
+  "risposta": false,
+  "image": "e2a6d3d34776.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27822",
+  "quesito": 6030,
+  "text": "Il pannello in figura è collocato posteriormente agli autotreni di massa complessiva a pieno carico superiore a 33 tonnellate",
+  "risposta": false,
+  "image": "e2a6d3d34776.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27823",
+  "quesito": 6030,
+  "text": "Il pannello in figura segnala gli autoveicoli adibiti ai trasporti ATP (trasporti di merci a temperatura controllata)",
+  "risposta": false,
+  "image": "e2a6d3d34776.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27824",
+  "quesito": 6030,
+  "text": "Il pannello in figura è collocato posteriormente agli autoveicoli adibiti a trasporti eccezionali di manufatti in calcestruzzo",
+  "risposta": false,
+  "image": "e2a6d3d34776.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27825",
+  "quesito": 6030,
+  "text": "I veicoli che trasportano merci pericolose, qualora trasportino più materie pericolose in compartimenti distinti di una stessa cisterna, devono avere posteriormente più pannelli arancioni retroriflettenti indicanti, ciascuno, le singole materie trasportate (esempio in figura)",
+  "risposta": false,
+  "image": "e2a6d3d34776.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27826",
+  "quesito": 6030,
+  "text": "Il pannello in figura segnala gli autoveicoli adibiti al trasporto di medicinali",
+  "risposta": false,
+  "image": "e2a6d3d34776.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27827",
+  "quesito": 6031,
+  "text": "E’ definito mezzo d’opera un veicolo che completa il ciclo produttivo di specifici materiali durante la marcia (esempio: autobetoniera)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27828",
+  "quesito": 6031,
+  "text": "E’ definito mezzo d’opera un veicolo munito di idonee attrezzature per lo spurgo ed il trasporto dei liquami di pozzi neri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27829",
+  "quesito": 6031,
+  "text": "E’ definito mezzo d’opera un veicolo munito di particolare attrezzatura per il carico ed il trasporto di materiale di impiego e di risulta dell'attività edilizia",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27830",
+  "quesito": 6031,
+  "text": "I mezzi d’opera devono essere idonei allo specifico impiego nei cantieri e utilizzabili sia su strada che fuori strada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27831",
+  "quesito": 6031,
+  "text": "I mezzi d’opera devono essere muniti, ai fini della circolazione, di apposito contrassegno che dimostri l'avvenuto pagamento dell'indennizzo di usura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27832",
+  "quesito": 6031,
+  "text": "La classificazione di mezzo d’opera risulta dalla carta di circolazione che contiene anche le eventuali prescrizioni per la marcia su strada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27833",
+  "quesito": 6031,
+  "text": "I mezzi d’opera devono avere velocità massima per costruzione pari a 80 km/h",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27834",
+  "quesito": 6031,
+  "text": "I mezzi d’opera, quando viaggiano a pieno carico, devono rispettare il limite di velocità di 40 km/h quando circolano nei centri abitati",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27835",
+  "quesito": 6031,
+  "text": "I mezzi d’opera, quando viaggiano a pieno carico, devono rispettare il limite di velocità di 60 km/h quando circolano fuori dai centri abitati",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27836",
+  "quesito": 6031,
+  "text": "I mezzi d’opera, per circolare in autostrada, devono pagare un pedaggio maggiorato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27837",
+  "quesito": 6031,
+  "text": "I mezzi d’opera non sono soggetti al pagamento di un indennizzo di usura perché lo stesso è già compreso nel bollo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27838",
+  "quesito": 6031,
+  "text": "I mezzi d’opera devono venire impiegati esclusivamente all’interno dei cantieri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27839",
+  "quesito": 6031,
+  "text": "I mezzi d’opera possono circolare solo sulle strade extraurbane, ad esclusione delle autostrade",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27840",
+  "quesito": 6031,
+  "text": "Un’autocisterna, anche se dotata di idonee attrezzature per lo svuotamento dei pozzi neri, non può essere classificata come mezzo d’opera",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27841",
+  "quesito": 6031,
+  "text": "Il trasporto di un manufatto indivisibile che supera il limite di portata del veicolo, può essere sempre effettuato purché venga pagato l'indennizzo di usura all’ANAS",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27842",
+  "quesito": 6031,
+  "text": "I mezzi d’opera devono avere velocità massima per costruzione pari a 100 km/h",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27843",
+  "quesito": 6031,
+  "text": "I mezzi d’opera, quando viaggiano a pieno carico, devono rispettare il limite di velocità di 30 km/h quando circolano nei centri abitati",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27844",
+  "quesito": 6031,
+  "text": "I mezzi d’opera, quando viaggiano a pieno carico, devono rispettare il limite di velocità di 70 km/h quando circolano fuori dai centri abitati",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27845",
+  "quesito": 6031,
+  "text": "Tutti i mezzi d’opera sono considerati veicoli ad uso speciale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27846",
+  "quesito": 6031,
+  "text": "I mezzi d’opera devono essere dotati di almeno 5 assi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27847",
+  "quesito": 6031,
+  "text": "I mezzi d’opera sono esentati dal pagamento della tassa di proprietà",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27848",
+  "quesito": 6032,
+  "text": "I veicoli adibiti al trasporto di cose con massa complessiva a pieno carico superiore a 3,5 tonnellate devono essere equipaggiati con strisce posteriori e laterali retroriflettenti di tipo omologato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27849",
+  "quesito": 6032,
+  "text": "I veicoli adibiti al trasporto di cose con massa complessiva a pieno carico superiore a 3,5 tonnellate devono essere equipaggiati con strisce retroriflettenti di tipo omologato di colore bianco o giallo se laterali",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27850",
+  "quesito": 6032,
+  "text": "I veicoli adibiti al trasporto di cose con massa complessiva a pieno carico superiore a 3,5 tonnellate devono essere equipaggiati con strisce retroriflettenti di tipo omologato di colore rosso o giallo se posteriori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27851",
+  "quesito": 6032,
+  "text": "I rimorchi adibiti al trasporto di cose con massa complessiva a pieno carico superiore a 3,5 tonnellate devono essere equipaggiati con strisce retroriflettenti di tipo omologato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27852",
+  "quesito": 6032,
+  "text": "I veicoli adibiti al trasporto di cose con massa complessiva a pieno carico superiore a 3,5 tonnellate devono essere equipaggiati con due pannelli retroriflettenti di tipo omologato applicati nella parte posteriore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27853",
+  "quesito": 6032,
+  "text": "Gli autoveicoli adibiti al trasporto di cose con massa complessiva a pieno carico superiore a 3,5 tonnellate devono essere equipaggiati con due pannelli posteriori retroriflettenti di tipo omologato a strisce oblique gialle e rosse",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27854",
+  "quesito": 6032,
+  "text": "I rimorchi e i semirimorchi adibiti al trasporto di cose con massa complessiva a pieno carico superiore a 3,5 tonnellate devono essere equipaggiati con due pannelli posteriori retroriflettenti di tipo omologato di colore giallo con bordo rosso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27855",
+  "quesito": 6032,
+  "text": "Gli autoveicoli adibiti al trasporto di cose con massa complessiva a pieno carico superiore a 3,5 tonnellate devono essere equipaggiati con quattro pannelli posteriori retroriflettenti di tipo omologato a strisce oblique gialle e rosse",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27856",
+  "quesito": 6032,
+  "text": "I rimorchi e i semirimorchi adibiti al trasporto di cose con massa complessiva a pieno carico superiore a 3,5 tonnellate devono essere equipaggiati con quattro pannelli posteriori retroriflettenti di tipo omologato di colore giallo con bordo rosso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27857",
+  "quesito": 6032,
+  "text": "I veicoli adibiti al trasporto di cose con massa complessiva a pieno carico superiore a 3,5 tonnellate devono essere equipaggiati con due pannelli retroriflettenti triangolari di colore giallo applicati nella parte posteriore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27858",
+  "quesito": 6032,
+  "text": "I veicoli adibiti al trasporto cose con massa complessiva a pieno carico superiore a 3,5 tonnellate devono essere equipaggiati con strisce posteriori e laterali retroriflettenti di tipo omologato di colore verde",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27859",
+  "quesito": 6032,
+  "text": "I veicoli adibiti al trasporto di cose con massa complessiva a pieno carico superiore a 3,5 tonnellate non devono essere segnalati in alcun modo specifico se circolano esclusivamente nelle ore diurne",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27860",
+  "quesito": 6032,
+  "text": "I veicoli adibiti al trasporto cose con massa complessiva a pieno carico superiore a 3,5 tonnellate devono essere equipaggiati con strisce posteriori e laterali retroriflettenti di tipo omologato di colore giallo se furgonati, rosso se telonati",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27861",
+  "quesito": 6032,
+  "text": "I veicoli cisterna con massa complessiva a pieno carico superiore a 3,5 tonnellate devono essere equipaggiati con strisce posteriori e laterali retroriflettenti di tipo omologato di colore blu",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27862",
+  "quesito": 6033,
+  "text": "Gli autoveicoli adibiti al trasporto di cose in conto proprio di massa complessiva a pieno carico superiore a 6 tonnellate, devono esporre una striscia obliqua di colore rosso avanti e dietro il veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27863",
+  "quesito": 6033,
+  "text": "Gli autoveicoli adibiti al trasporto di cose in conto terzi di massa complessiva a pieno carico superiore a 6 tonnellate, devono esporre una striscia obliqua di colore bianco avanti e dietro il veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27865",
+  "quesito": 6033,
+  "text": "Gli autoveicoli adibiti al trasporto di cose in conto terzi di massa complessiva a pieno carico superiore a 6 tonnellate, devono esporre una striscia obliqua di colore rosso avanti e dietro il veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27866",
+  "quesito": 6034,
+  "text": "I veicoli che trasportano merci pericolose debbono essere muniti di due pannelli arancioni retroriflettenti, fissati davanti e dietro al veicolo, ad esempio del tipo indicato in figura",
+  "risposta": true,
+  "image": "e2a6d3d34776.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27867",
+  "quesito": 6034,
+  "text": "I veicoli eccezionali che eccedono in lunghezza i limiti di sagoma devono essere segnalati con due pannelli rettangolari retroriflettenti a fondo giallo, fissati anteriormente e posteriormente al veicolo, recanti la scritta in nero \"TRASPORTO ECCEZIONALE\"",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27868",
+  "quesito": 6034,
+  "text": "I veicoli eccezionali che eccedono in lunghezza i limiti di sagoma devono essere segnalati con due pannelli rettangolari retroriflettenti di colore giallo, uno per lato, che sostituiscono i catadiottri laterali",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27869",
+  "quesito": 6034,
+  "text": "I veicoli eccezionali che eccedono in larghezza i limiti di sagoma devono essere segnalati con due pannelli rettangolari retroriflettenti a strisce bianche e rosse posti anteriormente e posteriormente al veicolo (bordo esterno coincidente con la massima larghezza del veicolo)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27870",
+  "quesito": 6034,
+  "text": "Il divieto di circolazione nei giorni festivi per i veicoli adibiti al trasporto di merci di massa complessiva a pieno carico superiore a 7,5 tonnellate non si applica ai veicoli muniti, su ciascuna fiancata e sul retro, di pannelli a sfondo verde con impressa in nero la lettera \"d\"",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27871",
+  "quesito": 6034,
+  "text": "Il divieto di circolazione nei giorni festivi per i veicoli adibiti al trasporto di merci di massa complessiva a pieno carico superiore a 7,5 tonnellate non si applica ai veicoli muniti di pannelli a sfondo verde con impressa in nero la lettera \"a\", autorizzati dal Prefetto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27872",
+  "quesito": 6034,
+  "text": "Il pannello a sfondo verde con impressa in nero la lettera \"a\" può essere posto su veicoli, di massa complessiva a pieno carico superiore a 7,5 tonnellate, che trasportano prodotti alimentari freschi o altri prodotti deperibili",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27873",
+  "quesito": 6034,
+  "text": "Il pannello a sfondo verde con impressa in nero la lettera \"d\" può essere posto su veicoli, di massa complessiva a pieno carico superiore a 7,5 tonnellate, che trasportano latte fresco",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27874",
+  "quesito": 6034,
+  "text": "Il pannello a sfondo verde con impressa in nero la lettera \"d\" può essere posto su veicoli, di massa complessiva a pieno carico superiore a 7,5 tonnellate, che trasportano giornali quotidiani e periodici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27875",
+  "quesito": 6034,
+  "text": "Il pannello a sfondo verde con impressa in nero la lettera \"d\" può essere posto su veicoli, di massa complessiva a pieno carico superiore a 7,5 tonnellate, che trasportano prodotti per uso medico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27876",
+  "quesito": 6034,
+  "text": "Il pannello a sfondo giallo con impressa in nero la lettera \"R\" è posto sulla parte posteriore destra di veicoli che trasportano rifiuti pericolosi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27877",
+  "quesito": 6034,
+  "text": "I veicoli eccezionali che eccedono in larghezza i limiti di sagoma devono essere segnalati con due pannelli quadrati retroriflettenti a fondo giallo, fissati su entrambe le fiancate del veicolo, recanti la scritta in nero \"TRASPORTO ECCEZIONALE\"",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27878",
+  "quesito": 6034,
+  "text": "I veicoli eccezionali che eccedono in lunghezza i limiti di sagoma devono essere segnalati con due luci rosse supplementari",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27879",
+  "quesito": 6034,
+  "text": "I veicoli eccezionali che eccedono in larghezza i limiti di sagoma devono essere segnalati con due pannelli retroriflettenti a strisce bianche e nere posti anteriormente e posteriormente al veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27880",
+  "quesito": 6034,
+  "text": "Il divieto di circolazione nei giorni festivi per i veicoli adibiti al trasporto di merci di massa complessiva a pieno carico superiore a 7,5 tonnellate, non si applica ai veicoli muniti, su ciascuna fiancata e sul retro, di pannelli a sfondo verde con impressa in nero la lettera \"f\"",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27881",
+  "quesito": 6034,
+  "text": "Il pannello a sfondo verde con impressa in nero la lettera \"a\" indica che il veicolo su cui è posto trasporta azoto liquido",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27882",
+  "quesito": 6034,
+  "text": "Il pannello a sfondo verde con impressa in nero la lettera \"d\" è posto su autobus che trasportano persone disabili",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27883",
+  "quesito": 6034,
+  "text": "Il pannello a sfondo verde con impressa in nero la lettera \"d\" può essere posto su veicoli che trasportano imbarcazioni da diporto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27884",
+  "quesito": 6034,
+  "text": "Il pannello a sfondo giallo con impressa in nero la lettera \"R\" è posto su veicoli che trasportano prodotti alimentari refrigerati",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27885",
+  "quesito": 6034,
+  "text": "Il pannello a sfondo giallo con impressa in nero la lettera \"R\" è posto sui veicoli, di massa complessiva a pieno carico superiore a 7,5 tonnellate, che trasportano posta raccomandata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27886",
+  "quesito": 6034,
+  "text": "Il pannello in figura deve essere fissato davanti e dietro ai veicoli, di massa complessiva a pieno carico superiore a 7,5 tonnellate, che trasportano merci di tipo alimentare e ne indica rispettivamente il \"codice prodotto\" e la massa trasportata (in chilogrammi)",
+  "risposta": false,
+  "image": "e2a6d3d34776.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27887",
+  "quesito": 6035,
+  "text": "Il pannello di figura serve a segnalare carichi sporgenti",
+  "risposta": true,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27888",
+  "quesito": 6035,
+  "text": "La sporgenza longitudinale del carico, fino ai 3/10 della lunghezza del veicolo, deve essere segnalata mediante uno o due pannelli quadrangolari in figura",
+  "risposta": true,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27889",
+  "quesito": 6035,
+  "text": "Il pannello in figura deve essere applicato in ogni caso in cui il carico sporge posteriormente, anche se di poco",
+  "risposta": true,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27890",
+  "quesito": 6035,
+  "text": "Il pannello in figura segnala carichi indivisibili che sporgono dalla parte posteriore del veicolo",
+  "risposta": true,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27891",
+  "quesito": 6035,
+  "text": "Se il carico sporge longitudinalmente per l'intera larghezza della parte posteriore del veicolo, i pannelli in figura devono essere due, posti trasversalmente alle due estremità del carico",
+  "risposta": true,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27892",
+  "quesito": 6035,
+  "text": "Il pannello raffigurato deve essere posto all'estremità del carico che sporge dietro al veicolo",
+  "risposta": true,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27893",
+  "quesito": 6035,
+  "text": "Il pannello raffigurato deve essere retroriflettente",
+  "risposta": true,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27894",
+  "quesito": 6035,
+  "text": "Il pannello raffigurato può essere messo sui veicoli guasti, quando vengono trainati e non funzionano le luci di emergenza",
+  "risposta": true,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27895",
+  "quesito": 6035,
+  "text": "Il pannello raffigurato deve essere sistemato all’estremità del carico sporgente dal veicolo, in modo che sia sempre ben visibile",
+  "risposta": true,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27896",
+  "quesito": 6035,
+  "text": "Il pannello raffigurato invita i conducenti che stanno dietro al veicolo su cui è applicato, a circolare con particolare prudenza",
+  "risposta": true,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27897",
+  "quesito": 6035,
+  "text": "Il pannello di figura serve a segnalare carichi che sporgono posteriormente dalla parte destra del veicolo",
+  "risposta": false,
+  "image": "2c74a5f529e4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27898",
+  "quesito": 6035,
+  "text": "Il pannello raffigurato si usa solo se il carico sporge di oltre tre decimi della lunghezza del veicolo",
+  "risposta": false,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27899",
+  "quesito": 6035,
+  "text": "Il pannello raffigurato va messo anche di lato, quando il carico sporge oltre la larghezza del veicolo",
+  "risposta": false,
+  "image": "2c74a5f529e4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27900",
+  "quesito": 6035,
+  "text": "Il pannello raffigurato identifica gli autocarri specializzati per il trasporto di materiali da costruzione",
+  "risposta": false,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27901",
+  "quesito": 6035,
+  "text": "Il pannello raffigurato va messo sui veicoli che trasportano la spazzatura",
+  "risposta": false,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27902",
+  "quesito": 6035,
+  "text": "Il pannello raffigurato va messo sui veicoli, solo se il carico sporge di almeno 50 centimetri",
+  "risposta": false,
+  "image": "2c74a5f529e4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27903",
+  "quesito": 6035,
+  "text": "Il pannello raffigurato va messo dietro a tutti gli autocarri di massa complessiva a pieno carico superiore a 3,5 tonnellate",
+  "risposta": false,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27904",
+  "quesito": 6035,
+  "text": "Il pannello raffigurato può essere sostituito da una bandiera di colore rosso, delle dimensioni di 50x50 centimetri",
+  "risposta": false,
+  "image": "2c74a5f529e4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27905",
+  "quesito": 6035,
+  "text": "Il pannello raffigurato va messo anche anteriormente se si circola su strade a due corsie e a doppio senso di circolazione",
+  "risposta": false,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27906",
+  "quesito": 6035,
+  "text": "Il pannello raffigurato va messo anche sugli autobus, quando trasportano scolari",
+  "risposta": false,
+  "image": "d5efd66c389d.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27907",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, i conducenti di veicoli pesanti che trasportano merci devono ridurre sensibilmente la velocità per evitare eccessive sollecitazioni al carico trasportato",
+  "risposta": true,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27908",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, i conducenti di veicoli pesanti che trasportano merci devono adeguare la velocità alle condizioni della strada e del carico trasportato",
+  "risposta": true,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27909",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, i conducenti di veicoli pesanti che trasportano merci devono fare particolare attenzione alle deformazioni della strada che possono danneggiare il carico se affrontate ad una velocità non adeguata",
+  "risposta": true,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27910",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, i conducenti di veicoli pesanti che trasportano merci devono considerare che le deformazioni della strada, se affrontate ad alta velocità, possono provocare sbandamenti pericolosi",
+  "risposta": true,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27911",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, i conducenti di veicoli pesanti che trasportano merci devono considerare che le deformazioni della strada, se affrontate ad alta velocità, possono provocare la caduta o lo spostamento del carico",
+  "risposta": true,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27912",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, i conducenti di veicoli pesanti che trasportano liquidi in cisterna devono moderare particolarmente la velocità per ridurre al minimo il fenomeno dello \"sbattimento\"",
+  "risposta": true,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27913",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, i conducenti di veicoli pesanti che viaggiano a pieno carico devono ridurre sensibilmente la velocità per evitare eccessive sollecitazioni agli organi di sospensione",
+  "risposta": true,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27914",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, i conducenti di veicoli pesanti che viaggiano a pieno carico devono ridurre sensibilmente la velocità per evitare eccessive sollecitazioni agli pneumatici",
+  "risposta": true,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27915",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, i conducenti di veicoli pesanti che viaggiano a pieno carico devono ridurre sensibilmente la velocità per evitare eccessive sollecitazioni agli organi di sterzo",
+  "risposta": true,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27916",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, i conducenti di veicoli pesanti che trasportano merci non possono effettuare manovre di sorpasso",
+  "risposta": false,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27917",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, i conducenti di veicoli pesanti che trasportano merci devono moderare la velocità solo se trasportano liquidi",
+  "risposta": false,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27918",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, i conducenti di veicoli pesanti che trasportano merci devono moderare la velocità solo se temono che il carico non sia ben fissato",
+  "risposta": false,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27919",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, i conducenti di veicoli pesanti che trasportano merci ben fissate e ancorate non devono ridurre la velocità se viaggiano entro i limiti massimi generali di velocità",
+  "risposta": false,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27920",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, i conducenti di veicoli pesanti che trasportano merci devono considerare che la deformazione della strada comporta una riduzione della velocità esclusivamente in caso di pioggia",
+  "risposta": false,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27921",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, i conducenti di veicoli pesanti che trasportano merci devono considerare che la deformazione della strada comporta una riduzione della velocità unicamente in caso di neve",
+  "risposta": false,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27922",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, i conducenti di veicoli pesanti che trasportano merci devono considerare che la deformazione della strada comporta una riduzione della velocità solamente in caso di vento forte",
+  "risposta": false,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27923",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, i conducenti di veicoli pesanti che trasportano merci devono considerare che la deformazione della strada non comporta una riduzione della velocità quando il vano di carico è pieno per metà",
+  "risposta": false,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27924",
+  "quesito": 6036,
+  "text": "Le cisterne sono gli unici veicoli per trasporto di merci per i quali il segnale in figura non comporta particolare pericolo",
+  "risposta": false,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27925",
+  "quesito": 6036,
+  "text": "In presenza del segnale raffigurato, una cisterna carica per metà deve circolare a velocità superiore di circa il 20% rispetto una cisterna carica al 90%",
+  "risposta": false,
+  "image": "8c69ac01bdb4.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27933",
+  "quesito": 6038,
+  "text": "Se il segnale raffigurato presegnala un dosso artificiale occorre moderare la velocità per non rischiare di danneggiare le merci trasportate",
+  "risposta": true,
+  "image": "4b9ec3482599.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27934",
+  "quesito": 6038,
+  "text": "Il segnale raffigurato vieta il transito agli autoarticolati",
+  "risposta": false,
+  "image": "4b9ec3482599.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27935",
+  "quesito": 6038,
+  "text": "Il segnale raffigurato impone un limite di velocità di 50 km/h",
+  "risposta": false,
+  "image": "4b9ec3482599.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27939",
+  "quesito": 6040,
+  "text": "In presenza del segnale raffigurato occorre moderare la velocità per non rischiare che le merci trasportate si spostino, compromettendo la stabilità di marcia",
+  "risposta": true,
+  "image": "b140c7126bfb.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27940",
+  "quesito": 6040,
+  "text": "In presenza del segnale raffigurato occorre moderare particolarmente la velocità se si è alla guida di una autocisterna carica",
+  "risposta": true,
+  "image": "b140c7126bfb.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27941",
+  "quesito": 6040,
+  "text": "Il segnale raffigurato preannuncia un tratto di strada in cui è obbligatorio mettere le marce ridotte se il cambio di velocità ne è dotato",
+  "risposta": false,
+  "image": "b140c7126bfb.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27942",
+  "quesito": 6040,
+  "text": "Il segnale raffigurato non si incontra mai in autostrada",
+  "risposta": false,
+  "image": "b140c7126bfb.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27943",
+  "quesito": 6040,
+  "text": "Il segnale raffigurato preannuncia una serie di curve pericolose",
+  "risposta": false,
+  "image": "b140c7126bfb.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27949",
+  "quesito": 6042,
+  "text": "In presenza del segnale raffigurato occorre moderare la velocità per non rischiare che le merci trasportate si spostino, compromettendo la stabilità di marcia",
+  "risposta": true,
+  "image": "77a1d96a9728.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27950",
+  "quesito": 6042,
+  "text": "In presenza del segnale raffigurato occorre moderare particolarmente la velocità se si è alla guida di una autocisterna carica, soprattutto se non completamente piena",
+  "risposta": true,
+  "image": "77a1d96a9728.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27951",
+  "quesito": 6042,
+  "text": "In presenza del segnale raffigurato occorre moderare particolarmente la velocità se si è alla guida di una autocisterna carica, ancor più se la strada è in forte pendenza",
+  "risposta": true,
+  "image": "77a1d96a9728.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27952",
+  "quesito": 6042,
+  "text": "Il segnale raffigurato preannuncia un tratto di strada in cui è obbligatorio mettere le marce ridotte se il cambio di velocità ne è dotato",
+  "risposta": false,
+  "image": "77a1d96a9728.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27953",
+  "quesito": 6042,
+  "text": "Il segnale raffigurato non si incontra mai sulle strade di montagna",
+  "risposta": false,
+  "image": "77a1d96a9728.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27954",
+  "quesito": 6042,
+  "text": "Il segnale raffigurato preannuncia una curva pericolosa a sinistra",
+  "risposta": false,
+  "image": "77a1d96a9728.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27955",
+  "quesito": 6042,
+  "text": "Il segnale raffigurato impone il limite di velocità di 70 km/h ad autocarri di massa complessiva a pieno carico superiore a 3,5 tonnellate",
+  "risposta": false,
+  "image": "77a1d96a9728.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27962",
+  "quesito": 6044,
+  "text": "In presenza del segnale raffigurato bisogna evitare l'uso prolungato dei freni per non surriscaldarli",
+  "risposta": true,
+  "image": "02e8ec393c51.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27963",
+  "quesito": 6044,
+  "text": "Se il veicolo ne è dotato, in presenza del segnale raffigurato può essere necessario l'inserimento del rallentatore",
+  "risposta": true,
+  "image": "02e8ec393c51.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27964",
+  "quesito": 6044,
+  "text": "In presenza del segnale raffigurato, se si è alla guida di una autocisterna carica, è bene moderare la velocità e affrontare la discesa con molta prudenza",
+  "risposta": true,
+  "image": "02e8ec393c51.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27966",
+  "quesito": 6044,
+  "text": "In presenza del segnale raffigurato, se si è alla guida di una autocisterna scarica e la pendenza è elevata, prima di affrontare la discesa è bene riempire la cisterna con acqua fino a metà serbatoio per stabilizzare il veicolo",
+  "risposta": false,
+  "image": "02e8ec393c51.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27967",
+  "quesito": 6044,
+  "text": "In presenza del segnale raffigurato si deve rallentare usando continuamente i freni per non danneggiare il cambio di velocità",
+  "risposta": false,
+  "image": "02e8ec393c51.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27972",
+  "quesito": 6046,
+  "text": "In presenza del segnale raffigurato, se si è alla guida di una autocisterna carica, è bene moderare la velocità e affrontare la salita con molta prudenza",
+  "risposta": true,
+  "image": "5f2c3c876589.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27973",
+  "quesito": 6046,
+  "text": "In presenza del segnale raffigurato, se si è alla guida di una autocisterna scarica e la pendenza è elevata, prima di affrontare la salita è bene riempire la cisterna con acqua fino a metà serbatoio per stabilizzare il veicolo",
+  "risposta": false,
+  "image": "5f2c3c876589.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27974",
+  "quesito": 6047,
+  "text": "In presenza del segnale raffigurato, il conducente deve prestare attenzione a non avvicinarsi troppo alla banchina perché, essendo alla guida di un veicolo molto pesante, la banchina potrebbe cedere",
+  "risposta": true,
+  "image": "f7ae788740d9.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27975",
+  "quesito": 6047,
+  "text": "In presenza del segnale raffigurato, il conducente deve prestare attenzione a non avvicinarsi troppo alla banchina perché, essendo alla guida di un veicolo con baricentro alto, potrebbe rischiare di ribaltarsi",
+  "risposta": true,
+  "image": "f7ae788740d9.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27976",
+  "quesito": 6047,
+  "text": "In presenza del segnale raffigurato, il conducente deve prestare particolare attenzione a non scagliare il pietrisco presente sulla carreggiata contro i pedoni",
+  "risposta": false,
+  "image": "f7ae788740d9.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27977",
+  "quesito": 6048,
+  "text": "In presenza del segnale raffigurato, il conducente deve ricordarsi che, essendo alla guida di un veicolo ingombrante, dovrà evitare di incrociarsi con altri veicoli all'interno della strettoia",
+  "risposta": true,
+  "image": "1c9e88ecfd8e.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27978",
+  "quesito": 6048,
+  "text": "In presenza del segnale raffigurato il conducente, essendo alla guida di un veicolo ingombrante, deve accertarsi con molta prudenza che i veicoli provenienti dal senso contrario siano disposti a dargli la precedenza",
+  "risposta": true,
+  "image": "d08be8ad9053.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27979",
+  "quesito": 6048,
+  "text": "In presenza del segnale raffigurato, il conducente di un autotreno può procedere per primo perché, essendo alla guida di un veicolo ingombrante, ha la precedenza sui veicoli di massa minore",
+  "risposta": false,
+  "image": "1c9e88ecfd8e.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27980",
+  "quesito": 6048,
+  "text": "In presenza del segnale raffigurato si deve accelerare nella strettoia per liberare rapidamente il tratto a senso unico",
+  "risposta": false,
+  "image": "d08be8ad9053.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27981",
+  "quesito": 6049,
+  "text": "Il segnale raffigurato può essere posto su tratti di strada dove è difficoltoso il sorpasso e vi è presenza di molti veicoli pesanti",
+  "risposta": true,
+  "image": "f8fc1f293301.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27982",
+  "quesito": 6049,
+  "text": "Il segnale raffigurato può essere posto su un tratto di strada dove non si vuole che troppi veicoli pesanti transitino contemporaneamente su un'opera d'arte (ad esempio su un viadotto)",
+  "risposta": true,
+  "image": "f8fc1f293301.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27983",
+  "quesito": 6049,
+  "text": "Il segnale raffigurato è un obbligo per le autovetture e non per gli autobus o per i veicoli di massa complessiva a pieno carico oltre 3,5 tonnellate",
+  "risposta": false,
+  "image": "f8fc1f293301.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27984",
+  "quesito": 6049,
+  "text": "Il segnale raffigurato fissa un limite massimo al numero di veicoli che possono transitare su un'opera d'arte (ad esempio su un viadotto)",
+  "risposta": false,
+  "image": "f8fc1f293301.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27985",
+  "quesito": 6050,
+  "text": "Il segnale raffigurato vieta ai veicoli di massa complessiva a pieno carico superiore a 3,5 tonnellate, non adibiti al trasporto di persone, di sorpassare veicoli a motore",
+  "risposta": true,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27986",
+  "quesito": 6050,
+  "text": "Il segnale raffigurato vieta ai veicoli per trasporto specifico, di massa complessiva a pieno carico superiore a 3,5 tonnellate e non adibiti al trasporto di persone, di sorpassare veicoli a motore",
+  "risposta": true,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27987",
+  "quesito": 6050,
+  "text": "In presenza del segnale raffigurato, i veicoli di massa complessiva a pieno carico superiore a 3,5 tonnellate che trasportano merci non possono sorpassare i motocicli",
+  "risposta": true,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27988",
+  "quesito": 6050,
+  "text": "Il segnale raffigurato non impone divieti ai conducenti di autobus, anche se alla guida di veicoli di massa complessiva a pieno carico superiore a 3,5 tonnellate",
+  "risposta": true,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27989",
+  "quesito": 6050,
+  "text": "In assenza di altri divieti, il segnale raffigurato consente agli autocarri, di massa a pieno carico superiore a 3,5 tonnellate, di sorpassare veicoli senza motore, se la manovra può compiersi entro la semicarreggiata",
+  "risposta": true,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27990",
+  "quesito": 6050,
+  "text": "In assenza di altri divieti, in presenza del segnale raffigurato, gli autobus, anche se di massa a pieno carico superiore a 3,5 tonnellate, possono sorpassare veicoli sia senza motore che a motore",
+  "risposta": true,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27991",
+  "quesito": 6050,
+  "text": "In assenza di altri divieti, il segnale raffigurato consente agli autocarri, di massa complessiva a pieno carico fino a 3,5 tonnellate, di sorpassare veicoli a motore",
+  "risposta": true,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27992",
+  "quesito": 6050,
+  "text": "In assenza di altri divieti, in presenza del segnale raffigurato, gli autobus, anche se di massa a pieno carico superiore a 3,5 tonnellate, possono sorpassare gli autoarticolati",
+  "risposta": true,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27993",
+  "quesito": 6050,
+  "text": "Il segnale raffigurato, con pannello integrativo indicante 5 tonnellate, vieta ai veicoli che trasportano merci, di massa complessiva a pieno carico superiore a 5 tonnellate, di sorpassare veicoli a motore",
+  "risposta": true,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27994",
+  "quesito": 6050,
+  "text": "Il segnale raffigurato consente ai veicoli ad uso speciale, di massa complessiva a pieno carico superiore a 3,5 tonnellate, di sorpassare veicoli a motore",
+  "risposta": false,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27995",
+  "quesito": 6050,
+  "text": "Il segnale raffigurato consente ai veicoli per trasporto di merci, di massa complessiva a pieno carico superiore a 3,5 tonnellate, di sorpassare autovetture",
+  "risposta": false,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27996",
+  "quesito": 6050,
+  "text": "In presenza del segnale raffigurato, i veicoli per trasporto di merci, di massa complessiva a pieno carico superiore a 3,5 tonnellate, possono sorpassare le autovetture se non oltrepassano la striscia longitudinale continua",
+  "risposta": false,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27997",
+  "quesito": 6050,
+  "text": "In presenza del segnale raffigurato, i veicoli per trasporto di merci, di massa complessiva a pieno carico superiore a 3,5 tonnellate, possono sorpassare gli autocaravan di massa complessiva a pieno carico inferiore a 3,5 tonnellate",
+  "risposta": false,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27998",
+  "quesito": 6050,
+  "text": "In presenza del segnale raffigurato, i veicoli per trasporto di merci, di massa complessiva a pieno carico superiore a 3,5 tonnellate, non possono sorpassare le biciclette, anche se la manovra può compiersi entro la semicarreggiata",
+  "risposta": false,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "27999",
+  "quesito": 6050,
+  "text": "Il segnale raffigurato prescrive, ai veicoli di massa complessiva a pieno carico superiore a 3,5 tonnellate che trasportano persone, di non sorpassare i veicoli a motore",
+  "risposta": false,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28000",
+  "quesito": 6050,
+  "text": "Il segnale raffigurato, si riferisce ai conducenti di autobus di qualunque massa",
+  "risposta": false,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28001",
+  "quesito": 6050,
+  "text": "Il segnale raffigurato, non consente ai conducenti di veicoli ad uso speciale di massa complessiva a pieno carico superiore a 3,5 tonnellate, di sorpassare veicoli senza motore, anche se la manovra può compiersi entro la semicarreggiata",
+  "risposta": false,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28002",
+  "quesito": 6050,
+  "text": "In assenza di altri divieti, in presenza del segnale raffigurato, i conducenti di autocarri di massa complessiva a pieno carico superiore a 3,5 tonnellate, possono sorpassare veicoli senza motore anche invadendo la semicarreggiata opposta, se non è presente la striscia longitudinale continua",
+  "risposta": false,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28003",
+  "quesito": 6050,
+  "text": "In assenza di altri divieti, in presenza del segnale raffigurato, i conducenti di autocarri di massa complessiva a pieno carico fino a 3,5 tonnellate, possono sorpassare altri veicoli a motore, ma solo se la manovra può compiersi entro la semicarreggiata",
+  "risposta": false,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28004",
+  "quesito": 6050,
+  "text": "In presenza del segnale raffigurato, i conducenti di autobus di massa complessiva a pieno carico superiore a 3,5 tonnellate, non possono sorpassare altri veicoli a motore",
+  "risposta": false,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28005",
+  "quesito": 6050,
+  "text": "Il segnale raffigurato, integrato con pannello indicante 5 tonnellate, vieta il transito ai veicoli che trasportano merci se la loro massa complessiva a pieno carico supera le 5 tonnellate",
+  "risposta": false,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28006",
+  "quesito": 6051,
+  "text": "In presenza del segnale raffigurato, i veicoli di massa complessiva a pieno carico superiore a 3,5 tonnellate che trasportano merci, quando circolano fuori dei centri abitati su strada a 2 corsie a doppio senso, devono mantenere tra di loro una distanza di almeno 100 metri",
+  "risposta": true,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28007",
+  "quesito": 6051,
+  "text": "In presenza del segnale raffigurato, i veicoli di massa complessiva a pieno carico superiore a 3,5 tonnellate che trasportano merci non possono sorpassare le autovetture",
+  "risposta": true,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28008",
+  "quesito": 6051,
+  "text": "In presenza del segnale raffigurato, i veicoli di massa complessiva a pieno carico superiore a 3,5 tonnellate che trasportano merci non possono sorpassarsi tra di loro",
+  "risposta": true,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28010",
+  "quesito": 6051,
+  "text": "In presenza del segnale raffigurato, il conducente di un'autobetoniera, di massa complessiva a pieno carico superiore a 3,5 tonnellate, non può sorpassare un ciclomotore",
+  "risposta": true,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28011",
+  "quesito": 6051,
+  "text": "In presenza del segnale raffigurato il conducente di un autogru, di massa complessiva a pieno carico superiore a 3,5 tonnellate, non può sorpassare un motociclo anche se la manovra può compiersi entro la semicarreggiata",
+  "risposta": true,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28012",
+  "quesito": 6051,
+  "text": "Il segnale raffigurato con pannello integrativo indicante 5 tonnellate, vieta ai mezzi d’opera di massa complessiva a pieno carico superiore a 5 tonnellate di sorpassare veicoli a motore",
+  "risposta": true,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28013",
+  "quesito": 6051,
+  "text": "In presenza del segnale raffigurato, il conducente di un'autobetoniera, di massa complessiva a pieno carico superiore a 3,5 tonnellate, può sorpassare un’autovettura",
+  "risposta": false,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28014",
+  "quesito": 6051,
+  "text": "In presenza del segnale raffigurato, il conducente di un'autogru, di massa complessiva a pieno carico superiore a 3,5 tonnellate, può sorpassare un motociclo",
+  "risposta": false,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28015",
+  "quesito": 6051,
+  "text": "In assenza di altri divieti, in presenza del segnale raffigurato integrato con pannello indicante 5 tonnellate, i conducenti di mezzi d’opera di massa complessiva a pieno carico superiore a 5 tonnellate possono sorpassare altri veicoli a motore che procedono lentamente",
+  "risposta": false,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28016",
+  "quesito": 6051,
+  "text": "In presenza del segnale raffigurato, i veicoli per trasporto di merci, di massa complessiva a pieno carico superiore a 3,5 tonnellate, quando circolano fuori dei centri abitati su strada a 2 corsie per ogni senso di marcia, devono mantenere tra di loro una distanza di almeno 100 metri",
+  "risposta": false,
+  "image": "fe6dec2d884b.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28025",
+  "quesito": 6054,
+  "text": "Il segnale raffigurato vieta il transito ai veicoli adibiti al trasporto di cose con massa a pieno carico superiore a 3,5 tonnellate",
+  "risposta": true,
+  "image": "edb0cb0daab8.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28026",
+  "quesito": 6054,
+  "text": "In presenza del segnale raffigurato è consentito il transito di autobus di massa complessiva superiore a 3,5 tonnellate",
+  "risposta": true,
+  "image": "edb0cb0daab8.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28027",
+  "quesito": 6054,
+  "text": "In presenza del segnale raffigurato è consentito il transito di autocarri con massa a pieno carico inferiore a 3,5 tonnellate",
+  "risposta": true,
+  "image": "edb0cb0daab8.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28028",
+  "quesito": 6054,
+  "text": "Il segnale raffigurato vieta il transito a tutti gli autocarri carrozzati con furgone chiuso",
+  "risposta": false,
+  "image": "edb0cb0daab8.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28029",
+  "quesito": 6054,
+  "text": "In presenza del segnale raffigurato è consentito il transito a tutti gli autocarri carrozzati con cassone aperto",
+  "risposta": false,
+  "image": "edb0cb0daab8.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28030",
+  "quesito": 6054,
+  "text": "Il segnale raffigurato vieta il transito ai veicoli di massa superiore a 3,5 tonnellate destinati al trasporto di persone",
+  "risposta": false,
+  "image": "edb0cb0daab8.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28031",
+  "quesito": 6055,
+  "text": "In presenza del segnale raffigurato è consentito il transito di autocarri con massa complessiva a pieno carico pari a 5 tonnellate",
+  "risposta": true,
+  "image": "3cb746fbff9f.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28032",
+  "quesito": 6055,
+  "text": "In presenza del segnale raffigurato è consentito il transito agli autobus",
+  "risposta": true,
+  "image": "3cb746fbff9f.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28033",
+  "quesito": 6055,
+  "text": "In presenza del segnale raffigurato è vietato il transito di autocarri se sulla carta di circolazione è indicata una massa a pieno carico superiore a 6,5 tonnellate",
+  "risposta": true,
+  "image": "3cb746fbff9f.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28034",
+  "quesito": 6055,
+  "text": "Il segnale raffigurato vieta il transito ai veicoli di massa superiore a 6,5 tonnellate destinati al trasporto di persone",
+  "risposta": false,
+  "image": "3cb746fbff9f.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28035",
+  "quesito": 6055,
+  "text": "In presenza del segnale raffigurato è consentito il transito agli autoveicoli ad uso speciale di massa superiore a 6,5 tonnellate",
+  "risposta": false,
+  "image": "3cb746fbff9f.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28036",
+  "quesito": 6055,
+  "text": "Il segnale raffigurato vieta il transito di autobus di massa complessiva superiore a 10 tonnellate",
+  "risposta": false,
+  "image": "3cb746fbff9f.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28037",
+  "quesito": 6055,
+  "text": "In presenza del segnale raffigurato è consentito il transito agli autocarri di massa pari a 7,5 tonnellate, quando circolano completamente scarichi",
+  "risposta": false,
+  "image": "3cb746fbff9f.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28038",
+  "quesito": 6056,
+  "text": "In presenza del segnale raffigurato è consentito il transito di un autoveicolo trainante un carrello-appendice",
+  "risposta": true,
+  "image": "d3e48becc1f9.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28039",
+  "quesito": 6056,
+  "text": "Il segnale raffigurato vieta il transito ai veicoli a motore trainanti un rimorchio",
+  "risposta": true,
+  "image": "d3e48becc1f9.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28040",
+  "quesito": 6056,
+  "text": "In presenza del segnale raffigurato è consentito il transito agli autosnodati",
+  "risposta": true,
+  "image": "d3e48becc1f9.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28041",
+  "quesito": 6056,
+  "text": "In presenza del segnale raffigurato è consentito il transito di un autoarticolato, se circola scarico",
+  "risposta": false,
+  "image": "d3e48becc1f9.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28042",
+  "quesito": 6056,
+  "text": "Il segnale raffigurato vale soltanto per i veicoli adibiti al trasporto di merci",
+  "risposta": false,
+  "image": "d3e48becc1f9.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28043",
+  "quesito": 6056,
+  "text": "In presenza del segnale raffigurato è consentito il transito ad un autocarro che traina un rimorchio per imbarcazione",
+  "risposta": false,
+  "image": "d3e48becc1f9.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28044",
+  "quesito": 6057,
+  "text": "Il segnale raffigurato vieta il transito ai veicoli che trasportano merci pericolose",
+  "risposta": true,
+  "image": "9a3a3302b1bc.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28045",
+  "quesito": 6057,
+  "text": "Il segnale raffigurato vieta il transito alle autocisterne che trasportano benzina",
+  "risposta": true,
+  "image": "9a3a3302b1bc.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28046",
+  "quesito": 6057,
+  "text": "Il segnale raffigurato vieta il transito agli autocarri telonati",
+  "risposta": false,
+  "image": "9a3a3302b1bc.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28047",
+  "quesito": 6057,
+  "text": "Il segnale raffigurato vieta il transito ai veicoli che trasportano merci deperibili",
+  "risposta": false,
+  "image": "9a3a3302b1bc.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28048",
+  "quesito": 6057,
+  "text": "Il segnale raffigurato vieta il transito ai veicoli con furgone frigorifero",
+  "risposta": false,
+  "image": "9a3a3302b1bc.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28049",
+  "quesito": 6058,
+  "text": "Il segnale raffigurato vieta il transito ai veicoli che trasportano esplosivi",
+  "risposta": true,
+  "image": "2def509f68ac.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28050",
+  "quesito": 6058,
+  "text": "Il segnale raffigurato vieta il transito ai veicoli che trasportano prodotti facilmente infiammabili",
+  "risposta": true,
+  "image": "2def509f68ac.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28051",
+  "quesito": 6058,
+  "text": "Il segnale raffigurato prescrive di fare attenzione al transito di veicoli che trasportano esplosivo",
+  "risposta": false,
+  "image": "2def509f68ac.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28052",
+  "quesito": 6058,
+  "text": "In presenza del segnale raffigurato è consentito il transito ai veicoli che trasportano prodotti facilmente infiammabili, purché non esplosivi",
+  "risposta": false,
+  "image": "2def509f68ac.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28053",
+  "quesito": 6058,
+  "text": "In presenza del segnale raffigurato è consentito il traino di veicoli che trasportano prodotti facilmente infiammabili",
+  "risposta": false,
+  "image": "2def509f68ac.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28054",
+  "quesito": 6059,
+  "text": "Il segnale raffigurato vieta il transito ai veicoli che trasportano sostanze che possono contaminare l'acqua",
+  "risposta": true,
+  "image": "5ce4fefd2fa5.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28055",
+  "quesito": 6059,
+  "text": "In presenza del segnale raffigurato è consentito il transito di autoveicoli che trasportano merci pericolose che non contaminino l’acqua",
+  "risposta": true,
+  "image": "5ce4fefd2fa5.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28056",
+  "quesito": 6059,
+  "text": "In presenza del segnale raffigurato è consentito il transito alle autocisterne che trasportano acqua",
+  "risposta": true,
+  "image": "5ce4fefd2fa5.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28057",
+  "quesito": 6059,
+  "text": "In presenza del segnale raffigurato è consentito il transito di rimorchi che trasportano sostanze che possono contaminare l'acqua, purché la motrice sia scarica",
+  "risposta": false,
+  "image": "5ce4fefd2fa5.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28058",
+  "quesito": 6059,
+  "text": "Il segnale raffigurato preannuncia una zona soggetta ad allagamento",
+  "risposta": false,
+  "image": "5ce4fefd2fa5.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28059",
+  "quesito": 6059,
+  "text": "Il segnale raffigurato vieta il transito alle autocisterne vuote",
+  "risposta": false,
+  "image": "5ce4fefd2fa5.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28060",
+  "quesito": 6060,
+  "text": "Il segnale raffigurato vieta il transito a veicoli di lunghezza superiore a quella indicata",
+  "risposta": true,
+  "image": "c95f14f0f595.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28061",
+  "quesito": 6060,
+  "text": "Il segnale raffigurato deve essere rispettato anche dai conducenti di autobus",
+  "risposta": true,
+  "image": "c95f14f0f595.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28062",
+  "quesito": 6060,
+  "text": "Il segnale raffigurato vige anche di notte",
+  "risposta": true,
+  "image": "c95f14f0f595.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28063",
+  "quesito": 6060,
+  "text": "Il segnale raffigurato deve essere rispettato anche dai conducenti di complessi di veicoli",
+  "risposta": true,
+  "image": "c95f14f0f595.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28064",
+  "quesito": 6060,
+  "text": "Il segnale raffigurato deve essere rispettato solo dai conducenti di veicoli adibiti al trasporto di cose",
+  "risposta": false,
+  "image": "c95f14f0f595.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28065",
+  "quesito": 6060,
+  "text": "Il segnale raffigurato obbliga un veicolo a distanziare quello che lo segue di almeno 10 metri",
+  "risposta": false,
+  "image": "c95f14f0f595.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28066",
+  "quesito": 6060,
+  "text": "In presenza del segnale raffigurato è consentito il transito di un autocarro lungo 9 metri che traina un rimorchio leggero, anche se agganciati superano la lunghezza di 10 metri",
+  "risposta": false,
+  "image": "c95f14f0f595.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28067",
+  "quesito": 6060,
+  "text": "In presenza del segnale raffigurato è consentito il transito a tutti gli autosnodati per trasporto di persone",
+  "risposta": false,
+  "image": "c95f14f0f595.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28068",
+  "quesito": 6061,
+  "text": "Il segnale raffigurato vieta il transito ai veicoli aventi una massa effettiva superiore a quella indicata",
+  "risposta": true,
+  "image": "e2d667c42231.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28069",
+  "quesito": 6061,
+  "text": "Il segnale raffigurato, integrato con apposito pannello, può vietare il transito contemporaneo di più veicoli",
+  "risposta": true,
+  "image": "e2d667c42231.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28070",
+  "quesito": 6061,
+  "text": "Il segnale raffigurato ha valore anche nei confronti degli autocarri che trasportano derrate alimentari",
+  "risposta": true,
+  "image": "e2d667c42231.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28071",
+  "quesito": 6061,
+  "text": "Il segnale raffigurato fa riferimento alla massa del veicolo al momento del transito",
+  "risposta": true,
+  "image": "e2d667c42231.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28072",
+  "quesito": 6061,
+  "text": "In presenza del segnale raffigurato è consentito il transito ai veicoli il cui asse più caricato ha massa superiore a quella indicata",
+  "risposta": false,
+  "image": "e2d667c42231.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28073",
+  "quesito": 6061,
+  "text": "Nei centri abitati, il segnale raffigurato vige dalle ore 8.00 alle ore 20.00",
+  "risposta": false,
+  "image": "e2d667c42231.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28074",
+  "quesito": 6061,
+  "text": "In presenza del segnale raffigurato è consentito il transito di autobus di massa superiore a 7 tonnellate",
+  "risposta": false,
+  "image": "e2d667c42231.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28075",
+  "quesito": 6061,
+  "text": "Il segnale raffigurato vieta il transito a tutti i veicoli aventi una massa complessiva a pieno carico superiore a 7 tonnellate, senza tener conto della loro massa al momento del transito",
+  "risposta": false,
+  "image": "e2d667c42231.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28076",
+  "quesito": 6062,
+  "text": "Il segnale raffigurato vieta il transito ai veicoli aventi sull'asse più caricato una massa effettiva superiore a quella indicata",
+  "risposta": true,
+  "image": "0d56703e7c0c.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28077",
+  "quesito": 6062,
+  "text": "In presenza del segnale raffigurato è consentito il transito di autocarri aventi massa effettiva per asse di 2,5 tonnellate",
+  "risposta": true,
+  "image": "0d56703e7c0c.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28078",
+  "quesito": 6062,
+  "text": "Il segnale raffigurato vieta il transito ai veicoli aventi una massa effettiva per asse superiore a 2,5 tonnellate",
+  "risposta": true,
+  "image": "0d56703e7c0c.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28079",
+  "quesito": 6062,
+  "text": "Il segnale raffigurato fa riferimento alla massa gravante sull'asse al momento del transito",
+  "risposta": true,
+  "image": "0d56703e7c0c.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28080",
+  "quesito": 6062,
+  "text": "Il segnale raffigurato vieta il transito agli autocarri di massa complessiva superiore a quella indicata",
+  "risposta": false,
+  "image": "0d56703e7c0c.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28081",
+  "quesito": 6062,
+  "text": "Il segnale raffigurato vale solo per autoveicoli con ruote gemellate",
+  "risposta": false,
+  "image": "0d56703e7c0c.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28082",
+  "quesito": 6062,
+  "text": "Il segnale raffigurato vieta il transito a tutti i veicoli con massa complessiva a pieno carico superiore a 2,5 tonnellate",
+  "risposta": false,
+  "image": "0d56703e7c0c.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28083",
+  "quesito": 6063,
+  "text": "In presenza del segnale raffigurato un autotreno di massa pari a 44 tonnellate può sorpassare un'autovettura",
+  "risposta": true,
+  "image": "cc96d41f65bb.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28084",
+  "quesito": 6063,
+  "text": "In presenza del segnale raffigurato un autocarro può sorpassare un autobus",
+  "risposta": true,
+  "image": "cc96d41f65bb.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28085",
+  "quesito": 6063,
+  "text": "Il segnale raffigurato indica la fine del divieto di sorpasso per veicoli merci di massa a pieno carico superiore a 3,5 tonnellate",
+  "risposta": true,
+  "image": "cc96d41f65bb.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28086",
+  "quesito": 6063,
+  "text": "In presenza del segnale raffigurato è vietato il transito degli autotreni, autosnodati, autoarticolati",
+  "risposta": false,
+  "image": "cc96d41f65bb.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28087",
+  "quesito": 6063,
+  "text": "In presenza del segnale raffigurato le autovetture devono sorpassare gli autocarri sulla corsia di destra",
+  "risposta": false,
+  "image": "cc96d41f65bb.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28088",
+  "quesito": 6063,
+  "text": "Il segnale raffigurato non vale per gli autocarri di massa complessiva pari o superiore a 7 tonnellate",
+  "risposta": false,
+  "image": "cc96d41f65bb.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28089",
+  "quesito": 6064,
+  "text": "Il segnale raffigurato vieta il transito ad autotreni ed autoarticolati",
+  "risposta": true,
+  "image": "a98bee49bac2.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28090",
+  "quesito": 6064,
+  "text": "In presenza del segnale raffigurato è vietato il transito alle categorie di veicoli rappresentati in figura",
+  "risposta": true,
+  "image": "a98bee49bac2.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28091",
+  "quesito": 6064,
+  "text": "Il segnale raffigurato indica che possono transitare tutti i veicoli, esclusi quelli delle categorie rappresentate in figura",
+  "risposta": true,
+  "image": "a98bee49bac2.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28092",
+  "quesito": 6064,
+  "text": "Il segnale raffigurato indica un itinerario obbligatorio per gli autoveicoli delle categorie rappresentate in figura",
+  "risposta": false,
+  "image": "a98bee49bac2.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28093",
+  "quesito": 6064,
+  "text": "Il segnale raffigurato preannuncia un parcheggio per autocarri ed autotreni",
+  "risposta": false,
+  "image": "a98bee49bac2.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28094",
+  "quesito": 6064,
+  "text": "Il segnale raffigurato vieta il transito agli autosnodati",
+  "risposta": false,
+  "image": "a98bee49bac2.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28095",
+  "quesito": 6065,
+  "text": "Il segnale raffigurato preannuncia una svolta obbligatoria a destra per gli autocarri di massa complessiva a pieno carico superiore a 3,5 tonnellate",
+  "risposta": true,
+  "image": "20d71376c241.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28096",
+  "quesito": 6065,
+  "text": "Il segnale raffigurato vieta agli autocarri di massa complessiva a pieno carico superiore a 3,5 tonnellate di proseguire diritto",
+  "risposta": true,
+  "image": "20d71376c241.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28097",
+  "quesito": 6065,
+  "text": "Il segnale raffigurato preannuncia un divieto di svolta a sinistra per gli autocarri di massa complessiva a pieno carico superiore a 3,5 tonnellate",
+  "risposta": true,
+  "image": "20d71376c241.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28098",
+  "quesito": 6065,
+  "text": "Il segnale raffigurato preannuncia una svolta obbligatoria per i veicoli rappresentati nel segnale stesso",
+  "risposta": true,
+  "image": "20d71376c241.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28099",
+  "quesito": 6065,
+  "text": "Il segnale raffigurato preannuncia che per gli autocarri è consigliato svoltare a destra",
+  "risposta": false,
+  "image": "20d71376c241.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28100",
+  "quesito": 6065,
+  "text": "Il segnale raffigurato preannuncia il divieto di svoltare a destra per i veicoli rappresentati in figura",
+  "risposta": false,
+  "image": "20d71376c241.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28101",
+  "quesito": 6065,
+  "text": "Il segnale raffigurato preannuncia un'area di parcheggio riservata agli autocarri di massa complessiva a pieno carico superiore a 3,5 tonnellate",
+  "risposta": false,
+  "image": "20d71376c241.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28102",
+  "quesito": 6065,
+  "text": "Il segnale raffigurato preannuncia una curva pericolosa a destra per gli autocarri in transito",
+  "risposta": false,
+  "image": "20d71376c241.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28103",
+  "quesito": 6066,
+  "text": "Il segnale in figura permette il transito solo agli autobus",
+  "risposta": true,
+  "image": "57cb174416b3.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28104",
+  "quesito": 6066,
+  "text": "Il segnale in figura indica che possono parcheggiare tutti i veicoli tranne gli autobus",
+  "risposta": true,
+  "image": "da30357ef56e.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28105",
+  "quesito": 6066,
+  "text": "Il pannello integrativo in figura può essere abbinato ad un segnale di obbligo",
+  "risposta": true,
+  "image": "3951f340cabe.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28106",
+  "quesito": 6066,
+  "text": "Il pannello integrativo in figura può essere abbinato ad un segnale di divieto",
+  "risposta": true,
+  "image": "3951f340cabe.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28107",
+  "quesito": 6066,
+  "text": "Il segnale in figura vieta l’accesso agli autobus",
+  "risposta": false,
+  "image": "57cb174416b3.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28108",
+  "quesito": 6066,
+  "text": "Il segnale in figura vieta la sosta agli autobus",
+  "risposta": false,
+  "image": "5d2dd9c158d3.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28109",
+  "quesito": 6066,
+  "text": "Il pannello integrativo può indicare la categoria di veicoli cui si applica un divieto",
+  "risposta": false,
+  "image": "3951f340cabe.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28110",
+  "quesito": 6066,
+  "text": "Il pannello integrativo in figura non vale per gli autobus extraurbani",
+  "risposta": false,
+  "image": "3951f340cabe.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28111",
+  "quesito": 6067,
+  "text": "Il segnale raffigurato consiglia ai veicoli rappresentati nel pannello di seguire la direzione indicata",
+  "risposta": true,
+  "image": "a2c9e58daf98.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28112",
+  "quesito": 6067,
+  "text": "Il segnale raffigurato preavvisa una deviazione consigliata per gli autotreni ed autoarticolati in transito",
+  "risposta": true,
+  "image": "a2c9e58daf98.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28113",
+  "quesito": 6067,
+  "text": "Il segnale raffigurato non è un segnale di obbligo",
+  "risposta": true,
+  "image": "a2c9e58daf98.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28114",
+  "quesito": 6067,
+  "text": "Il segnale raffigurato consiglia agli autotreni e agli autoarticolati la direzione per non attraversare il centro abitato",
+  "risposta": true,
+  "image": "a2c9e58daf98.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28115",
+  "quesito": 6067,
+  "text": "Il segnale raffigurato vieta la svolta a destra agli autotreni ed autoarticolati",
+  "risposta": false,
+  "image": "a2c9e58daf98.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28116",
+  "quesito": 6067,
+  "text": "Il segnale raffigurato indica agli autocarri la direzione per il centro cittadino",
+  "risposta": false,
+  "image": "a2c9e58daf98.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28117",
+  "quesito": 6067,
+  "text": "Il segnale raffigurato preannuncia l’obbligo di svoltare subito a destra per i veicoli rappresentati",
+  "risposta": false,
+  "image": "a2c9e58daf98.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28118",
+  "quesito": 6067,
+  "text": "Il segnale raffigurato preavvisa agli autocarri di spostarsi sulla corsia di destra per superare un ostacolo",
+  "risposta": false,
+  "image": "a2c9e58daf98.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28119",
+  "quesito": 6068,
+  "text": "Il segnale raffigurato è posto in vicinanza di un cantiere stradale",
+  "risposta": true,
+  "image": "98e29f704745.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28120",
+  "quesito": 6068,
+  "text": "Il segnale raffigurato indica la direzione obbligatoria per autotreni ed autoarticolati",
+  "risposta": true,
+  "image": "98e29f704745.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28121",
+  "quesito": 6068,
+  "text": "Il segnale raffigurato viene installato per il periodo di durata dei lavori stradali",
+  "risposta": true,
+  "image": "98e29f704745.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28122",
+  "quesito": 6068,
+  "text": "Il segnale raffigurato obbliga tutti i veicoli a proseguire diritto",
+  "risposta": false,
+  "image": "98e29f704745.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28123",
+  "quesito": 6068,
+  "text": "Il segnale raffigurato preavvisa una direzione consigliata",
+  "risposta": false,
+  "image": "98e29f704745.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28124",
+  "quesito": 6068,
+  "text": "Il segnale raffigurato consiglia a tutti i veicoli di seguire la direzione indicata dalla freccia",
+  "risposta": false,
+  "image": "98e29f704745.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28148",
+  "quesito": 6072,
+  "text": "Il segnale raffigurato indica il divieto di proseguire diritto agli autocarri di massa complessiva a pieno carico superiore a 3,5 tonnellate",
+  "risposta": true,
+  "image": "df5fd405e999.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28149",
+  "quesito": 6072,
+  "text": "Il segnale raffigurato indica il divieto di proseguire verso il centro agli autocarri di massa complessiva a pieno carico superiore a 3,5 tonnellate",
+  "risposta": true,
+  "image": "df5fd405e999.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28150",
+  "quesito": 6072,
+  "text": "Il segnale raffigurato contiene un divieto di transito che si applica a una specifica categoria di veicoli",
+  "risposta": true,
+  "image": "df5fd405e999.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28151",
+  "quesito": 6072,
+  "text": "Il segnale raffigurato vieta a tutti i veicoli di proseguire diritto verso il centro durante le ore di maggior traffico",
+  "risposta": false,
+  "image": "df5fd405e999.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28152",
+  "quesito": 6072,
+  "text": "Il segnale raffigurato indica il divieto di svoltare a destra agli autocarri di massa complessiva a pieno carico superiore a 3,5 tonnellate",
+  "risposta": false,
+  "image": "df5fd405e999.jpg"
+ },
+ {
+  "argomentoCode": "03",
+  "code": "28153",
+  "quesito": 6072,
+  "text": "Il segnale raffigurato indica la direzione consigliata (diritto) agli autocarri di massa complessiva a pieno carico superiore a 3,5 tonnellate",
+  "risposta": false,
+  "image": "df5fd405e999.jpg"
+ }
+]

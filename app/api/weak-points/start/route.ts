@@ -17,7 +17,6 @@ export async function POST() {
     questionId: wp.questionId,
     code: wp.question.code,
     text: wp.question.text,
-    questionGroup: wp.question.questionGroup,
     image: wp.question.image || null,
     argomento: wp.question.argomento.name,
     argomentoCode: wp.question.argomento.code,

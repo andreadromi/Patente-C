@@ -3,25 +3,26 @@
 @tailwind utilities;
 
 :root {
-  /* Palette: accento cobalto, acceso e pulito, da studio serio; si stacca
-     netto dal verde e dal rosso che dicono giusto e sbagliato. Neutri
-     appena azzurrati; gli argomenti hanno le loro tinte */
-  --bg: #F4F7FC;
+  /* Palette: accento viola, acceso e pulito, da studio serio; si stacca
+     netto dal verde e dal rosso che dicono giusto e sbagliato, e dal cobalto
+     del Consulente, così le due app non si confondono. Neutri appena
+     violacei; gli argomenti hanno le loro tinte */
+  --bg: #F6F5FC;
   --card: #FFFFFF;
-  --surface: #E7EEFA;
-  --border: #D8E2F4;
-  --text: #1C2440;
-  --text2: #4A5470;
-  --text3: #8894AA;
-  --text4: #CBD3E3;
-  /* L'accento dell'app: cobalto. --accent-rgb serve per le trasparenze, rgba(var(--accent-rgb), 0.1) */
-  --accent: #2A5BD7;
-  --accent2: #5580EA;
-  --accent-scuro: #1C3F9E;
-  --accent-rgb: 42, 91, 215;
+  --surface: #ECE9FA;
+  --border: #DEDAF3;
+  --text: #211C40;
+  --text2: #4C4770;
+  --text3: #8C88AB;
+  --text4: #CFCBE3;
+  /* L'accento dell'app: viola. --accent-rgb serve per le trasparenze, rgba(var(--accent-rgb), 0.1) */
+  --accent: #5B3FD1;
+  --accent2: #7F68E6;
+  --accent-scuro: #3E2899;
+  --accent-rgb: 91, 63, 209;
   /* FALSO scelto in modalità Esame: ardesia scura, ben distinta dal VERO
-     cobalto, così il rosso resta solo "sbagliato" */
-  --falso: #4E5872;
+     viola, così il rosso resta solo "sbagliato" */
+  --falso: #524D72;
   --green: #12966F;
   --green-rgb: 18, 150, 111;
   --green-dim: #D5F2E8;
@@ -30,11 +31,11 @@
   --red-dim: #FBE0E0;
   --amber: #E0703A;
   --amber-dim: #FCE8DC;
-  --nav-bg: #EEF3FB;
-  --nav-border: #D8E2F4;
-  --header-bg: #EEF3FB;
+  --nav-bg: #F1EFFB;
+  --nav-border: #DEDAF3;
+  --header-bg: #F1EFFB;
   /* Ombra morbida delle schede: le stacca dallo sfondo senza bordi pesanti */
-  --ombra: 0 1px 2px rgba(28, 36, 64, 0.05), 0 4px 14px rgba(28, 36, 64, 0.07);
+  --ombra: 0 1px 2px rgba(33, 28, 64, 0.05), 0 4px 14px rgba(33, 28, 64, 0.07);
 }
 
 * { box-sizing: border-box; }

@@ -11,7 +11,7 @@ import { Domanda } from '@/components/Domanda'
 import { VeroFalso } from '@/components/VeroFalso'
 
 interface QuestionItem {
-  id: string; code: string; text: string; questionGroup: string | null; image: string | null
+  id: string; code: string; text: string; image: string | null
   argomento: string; argomentoCode: string; risposta: boolean
 }
 type LocalAnswers = Record<string, boolean | null>
@@ -290,8 +290,8 @@ export default function SimulationPage() {
 
       {/* Corpo */}
       <div style={{flex:1,overflowY:'auto',padding:'16px 16px 8px'}}>
-        <Domanda codice={current.code} gruppo={current.questionGroup} testo={current.text} figura={current.image} />
-        <VeroFalso
+        <Domanda codice={current.code} testo={current.text} figura={current.image} />
+        <VeroFalso key={current.id}
           risposta={answers[current.id]}
           giusta={current.risposta}
           correzione={studyMode}

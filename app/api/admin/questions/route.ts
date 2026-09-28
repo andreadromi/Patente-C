@@ -17,7 +17,7 @@ export async function GET() {
   if (!user?.isAdmin) return NextResponse.json({ error: 'Non autorizzato' }, { status: 401 })
   const questions = await prisma.question.findMany({
     orderBy: [{ argomentoId: 'asc' }, { code: 'asc' }],
-    select: { id: true, code: true, text: true, risposta: true, questionGroup: true, image: true, argomento: { select: { code: true, name: true } } },
+    select: { id: true, code: true, quesito: true, text: true, risposta: true, image: true, argomento: { select: { code: true, name: true } } },
   })
   return NextResponse.json({ questions })
 }

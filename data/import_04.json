@@ -1,0 +1,370 @@
+[
+ {
+  "argomentoCode": "04",
+  "code": "28154",
+  "quesito": 6073,
+  "text": "Il conducente professionale di un autocarro di massa oltre 3,5 tonnellate deve dimostrare, a richiesta degli agenti del traffico, di avere la qualificazione CQC in corso di validità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28155",
+  "quesito": 6073,
+  "text": "Un autocarro, per circolare, deve essere in regola con gli obblighi assicurativi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28156",
+  "quesito": 6073,
+  "text": "La carta tachigrafica contiene il numero di patente del conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28157",
+  "quesito": 6073,
+  "text": "La carta tachigrafica è rilasciata dalla Camera di commercio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28158",
+  "quesito": 6073,
+  "text": "Per circolare con un veicolo a motore in uno Stato non appartenente all’Unione europea occorre il certificato di assicurazione internazionale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28159",
+  "quesito": 6073,
+  "text": "La qualificazione CQC deve essere rinnovata ogni cinque anni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28160",
+  "quesito": 6073,
+  "text": "Il certificato di formazione professionale ADR scade ogni cinque anni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28161",
+  "quesito": 6073,
+  "text": "A bordo di un veicolo che trasporta merci pericolose, salvo i casi di esenzione, deve essere presente il documento di trasporto ADR",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28162",
+  "quesito": 6073,
+  "text": "A bordo di un veicolo che trasporta merci pericolose, salvo i casi di esenzione, devono essere presenti le istruzioni scritte",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28163",
+  "quesito": 6073,
+  "text": "Per rinnovare il certificato di formazione professionale ADR occorre seguire un corso di formazione e sostenere un esame",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28164",
+  "quesito": 6073,
+  "text": "Per condurre mezzi che trasportano merci pericolose, salvo i casi di esenzioni, occorre il certificato di formazione professionale ADR",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28165",
+  "quesito": 6073,
+  "text": "Per effettuare trasporti eccezionali occorre un'autorizzazione dell'ente proprietario della strada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28166",
+  "quesito": 6073,
+  "text": "Chi trasporta latte deve avere la dichiarazione di scorta",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28167",
+  "quesito": 6073,
+  "text": "Chi trasporta alimenti surgelati deve avere l'attestazione ATP",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28168",
+  "quesito": 6073,
+  "text": "Per rinnovare la qualificazione CQC occorre sottoporsi a visita medica",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28169",
+  "quesito": 6073,
+  "text": "La carta tachigrafica è rilasciata dall'Ufficio Motorizzazione civile competente per il territorio di residenza del richiedente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28170",
+  "quesito": 6073,
+  "text": "Per effettuare un servizio di autotrasporto verso un altro Stato dell’Unione europea è necessario avere il passaporto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28171",
+  "quesito": 6073,
+  "text": "La carta tachigrafica del conducente non ha scadenza",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28172",
+  "quesito": 6073,
+  "text": "La carta tachigrafica scade quando scade la patente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28173",
+  "quesito": 6073,
+  "text": "La patente di guida è rilasciata dal prefetto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28174",
+  "quesito": 6073,
+  "text": "Per condurre mezzi in regime ADR, salvo esenzioni, occorre il certificato di abilitazione professionale KC",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28175",
+  "quesito": 6073,
+  "text": "Per trasportare merci pericolose, il conducente deve essere titolare dell’attestazione tecnica ATP",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28176",
+  "quesito": 6073,
+  "text": "Per effettuare trasporti eccezionali occorre in ogni caso una scorta tecnica",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28177",
+  "quesito": 6073,
+  "text": "Per effettuare trasporti eccezionali occorre un'autorizzazione rilasciata dall’Ufficio Motorizzazione civile competente per territorio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28178",
+  "quesito": 6073,
+  "text": "Il certificato di formazione professionale ADR scade ogni sei anni fino all’età di cinquanta anni, poi ogni tre anni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28179",
+  "quesito": 6073,
+  "text": "Per rinnovare il certificato di formazione professionale ADR occorre sottoporsi a visita medica presso la Commissione medica locale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28180",
+  "quesito": 6073,
+  "text": "Per rinnovare il certificato di formazione professionale ADR occorre seguire un corso di formazione, senza obbligo di sostenere un esame finale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28181",
+  "quesito": 6073,
+  "text": "Per rinnovare il certificato di formazione professionale ADR occorre sostenere un esame, senza l'obbligo di frequenza di specifico corso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28182",
+  "quesito": 6074,
+  "text": "A bordo di un autoveicolo o complesso veicolare di massa superiore a 6 tonnellate che svolge un trasporto di cose in conto proprio, deve trovarsi l’originale della licenza al trasporto di cose in conto proprio relativa all’autoveicolo con cui si effettua il servizio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28183",
+  "quesito": 6074,
+  "text": "A bordo di un autoveicolo o complesso veicolare di massa superiore a 6 tonnellate e portata superiore a 3 tonnellate che svolge un trasporto di cose in conto proprio, deve trovarsi il documento con l’elencazione delle cose trasportate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28184",
+  "quesito": 6074,
+  "text": "A bordo di un autoveicolo o complesso veicolare di massa superiore a 6 tonnellate e portata superiore a 3 tonnellate che svolge un trasporto di cose in conto proprio, deve trovarsi la dichiarazione che le cose trasportate sono di proprietà del titolare della licenza o sono nella sua disponibilità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28186",
+  "quesito": 6074,
+  "text": "Un conducente extra-comunitario impegnato in un trasporto di merci in conto terzi tra Paesi UE o di cabotaggio stradale deve essere munito di attestato del conducente in originale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28187",
+  "quesito": 6074,
+  "text": "L’autorizzazione CEMT per trasporti merci in conto terzi, non liberalizzati, svolti al di fuori dell’ambito UE o SEE, deve trovarsi in originale a bordo del veicolo durante il trasporto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28188",
+  "quesito": 6074,
+  "text": "L’autorizzazione CEMT per trasporti merci in conto terzi, non liberalizzati, svolti al di fuori dell’ambito UE o SEE, può essere annuale o di \"breve durata\"",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28189",
+  "quesito": 6074,
+  "text": "L’autorizzazione CEMT per trasporti merci in conto terzi, non liberalizzati, svolti al di fuori dell’ambito UE o SEE, deve essere accompagnata dai certificati tecnici del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28190",
+  "quesito": 6074,
+  "text": "L’autorizzazione CEMT per trasporti merci in conto terzi, non liberalizzati, svolti al di fuori dell’ambito UE o SEE, deve essere accompagnata dal libretto dei resoconti di viaggio (libretto statistico)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28191",
+  "quesito": 6074,
+  "text": "Alcuni trasporti internazionali di merci in conto terzi sono accompagnati dalla lettera di vettura CMR",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28192",
+  "quesito": 6074,
+  "text": "A bordo di un autoveicolo o complesso veicolare di massa inferiore a sei tonnellate che svolge un trasporto di cose in conto proprio, deve trovarsi l’originale della licenza al trasporto di cose in conto proprio relativa all’autoveicolo con cui si effettua il servizio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28193",
+  "quesito": 6074,
+  "text": "A bordo di un autoveicolo o complesso veicolare di massa superiore a 3,5 tonnellate che svolge un trasporto di cose in conto terzi, deve trovarsi il documento con l’elencazione delle cose trasportate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28194",
+  "quesito": 6074,
+  "text": "A bordo di un autoveicolo o complesso veicolare di massa superiore a sei tonnellate e portata superiore a 3 tonnellate che svolge un trasporto di cose in conto proprio, deve trovarsi la fattura di acquisto delle cose trasportate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28195",
+  "quesito": 6074,
+  "text": "Su ogni veicolo di massa superiore a sei tonnellate e portata superiore a 3,5 tonnellate impegnato in un trasporto intracomunitario o di cabotaggio stradale deve essere presente l’originale della licenza comunitaria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28196",
+  "quesito": 6074,
+  "text": "Un conducente italiano impegnato in un trasporto di merci in conto terzi tra Paesi UE o di cabotaggio stradale deve essere munito di attestato del conducente in originale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28197",
+  "quesito": 6074,
+  "text": "L’autorizzazione CEMT per trasporti merci in conto terzi, non liberalizzati, svolti al di fuori dell’ambito UE o SEE, deve trovarsi in fotocopia a bordo del veicolo durante il trasporto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28198",
+  "quesito": 6074,
+  "text": "L’autorizzazione CEMT per trasporti merci in conto terzi, non liberalizzati, svolti al di fuori dell’ambito UE o SEE, può essere quinquennale o decennale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28199",
+  "quesito": 6074,
+  "text": "L’autorizzazione CEMT per trasporti merci in conto terzi, non liberalizzati, svolti al di fuori dell’ambito UE o SEE, deve essere accompagnata da fotocopia autenticata della carta di circolazione del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "04",
+  "code": "28200",
+  "quesito": 6074,
+  "text": "L’autorizzazione per trasporti merci in conto terzi, non liberalizzati, svolti al di fuori dell’ambito UE o SEE, è detta ATP",
+  "risposta": false,
+  "image": null
+ }
+]

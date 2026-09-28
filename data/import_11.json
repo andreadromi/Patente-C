@@ -1,0 +1,5434 @@
+[
+ {
+  "argomentoCode": "11",
+  "code": "29093",
+  "quesito": 6138,
+  "text": "L’organo principale di un motore è l’albero motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29094",
+  "quesito": 6138,
+  "text": "L’aria aspirata dai motori a scoppio e Diesel passa attraverso un filtro di depurazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29095",
+  "quesito": 6138,
+  "text": "Le valvole di aspirazione e di scarico si trovano sia nei motori a scoppio che nei motori Diesel",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29096",
+  "quesito": 6138,
+  "text": "Gli organi della distribuzione di un motore a scoppio o Diesel comprendono: l’albero a camme, le valvole, una catena o una cinghia dentata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29097",
+  "quesito": 6138,
+  "text": "Sia l’anticipo dell’accensione nel motore a scoppio che l’anticipo dell’iniezione nel motore Diesel sono regolati automaticamente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29098",
+  "quesito": 6138,
+  "text": "Il silenziatore permette l’espansione dei gas di scarico prima che escano all’esterno così da diminuire la rumorosità del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29099",
+  "quesito": 6138,
+  "text": "Il movimento dell’albero motore è un \"moto alternativo\"",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29100",
+  "quesito": 6138,
+  "text": "La cinghia della distribuzione deve essere sostituita ogni 20000 chilometri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29101",
+  "quesito": 6138,
+  "text": "L'albero motore e l'albero di trasmissione sono due nomi diversi per definire lo stesso organo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29102",
+  "quesito": 6138,
+  "text": "I motori Diesel non possono essere dotati di turbocompressore perché il gasolio è poco infiammabile",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29103",
+  "quesito": 6138,
+  "text": "I motori Diesel non necessitano di lubrificazione perché il gasolio funge anche da lubrificante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29104",
+  "quesito": 6138,
+  "text": "I motori a gas richiedono una maggior manutenzione rispetto a quelli a benzina o a gasolio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29105",
+  "quesito": 6139,
+  "text": "I motori a scoppio e quelli a ciclo Diesel sono ambedue motori a combustione interna",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29106",
+  "quesito": 6139,
+  "text": "Il motore Diesel è un motore a combustione interna",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29107",
+  "quesito": 6139,
+  "text": "I motori a combustione interna possono essere indifferentemente a due o a quattro tempi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29108",
+  "quesito": 6139,
+  "text": "I cilindri sono parti meccaniche caratteristiche dei motori a combustione interna",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29109",
+  "quesito": 6139,
+  "text": "Il motore a combustione interna trasforma energia termica in energia meccanica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29110",
+  "quesito": 6139,
+  "text": "Un motore a scoppio può essere alimentato sia con benzina sia con gas metano",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29111",
+  "quesito": 6139,
+  "text": "I pistoni sono organi tipici di un motore a combustione interna",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29112",
+  "quesito": 6139,
+  "text": "Le fasi di funzionamento di un motore a quattro tempi sono: aspirazione, compressione, scoppio (o combustione) e scarico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29113",
+  "quesito": 6139,
+  "text": "L’albero a camme comanda l’apertura e la chiusura delle valvole",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29114",
+  "quesito": 6139,
+  "text": "Le valvole della distribuzione sono almeno due per ogni cilindro",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29115",
+  "quesito": 6139,
+  "text": "La valvola a farfalla di un motore a scoppio fa entrare nei cilindri la quantità di aria richiesta in base alla posizione del pedale dell’acceleratore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29116",
+  "quesito": 6139,
+  "text": "La rottura della cinghia dentata o della catena di distribuzione può recare gravi danni agli organi interni del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29117",
+  "quesito": 6139,
+  "text": "La catena della distribuzione collega l’albero motore con l’albero della distribuzione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29118",
+  "quesito": 6139,
+  "text": "Nei motori a scoppio, i cilindri aspirano miscela di aria e benzina oppure aria e metano o aria e GPL",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29119",
+  "quesito": 6139,
+  "text": "Il motore a scoppio è un motore a combustione interna",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29120",
+  "quesito": 6139,
+  "text": "Un motore ad accensione comandata non può essere del tipo a ciclo Otto (a scoppio)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29121",
+  "quesito": 6139,
+  "text": "Tutti i motori a combustione interna sono dotati di iniettori",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29122",
+  "quesito": 6139,
+  "text": "Le candele a scintilla sono utilizzate sia nei motori a scoppio che in quelli Diesel",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29123",
+  "quesito": 6139,
+  "text": "Le bielle uniscono i pistoni con l’albero a camme",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29124",
+  "quesito": 6139,
+  "text": "Il movimento dei pistoni è un moto rotatorio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29125",
+  "quesito": 6139,
+  "text": "I motori a combustione interna trasformano la forza motrice in calore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29126",
+  "quesito": 6139,
+  "text": "Sono ad accensione spontanea tutti i motori dotati di candele a scintilla",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29127",
+  "quesito": 6139,
+  "text": "I cilindri di un motore a combustione interna devono essere sempre in numero pari",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29128",
+  "quesito": 6139,
+  "text": "Se il motore è a combustione interna non ha bisogno della marmitta",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29129",
+  "quesito": 6139,
+  "text": "Soltanto il motore Diesel è un motore a combustione interna",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29130",
+  "quesito": 6139,
+  "text": "Soltanto il motore a scoppio è un motore a combustione interna",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29131",
+  "quesito": 6139,
+  "text": "Il \"battito in testa\" è indice del fatto che i pistoni vanno a colpire la testata a ogni giro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29132",
+  "quesito": 6139,
+  "text": "A seguito della rottura della cinghia della distribuzione, il motore non viene più raffreddato adeguatamente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29133",
+  "quesito": 6139,
+  "text": "In linea teorica, il motore Diesel ha un rendimento peggiore di quello a scoppio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29134",
+  "quesito": 6140,
+  "text": "Il numero massimo dei giri del motore Diesel è sensibilmente inferiore rispetto a quello possibile nel motore a scoppio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29135",
+  "quesito": 6140,
+  "text": "I motori Diesel sono provvisti di un regolatore dei giri a funzionamento automatico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29136",
+  "quesito": 6140,
+  "text": "Il motore Diesel non è \"autoregolante\" per quanto riguarda il numero di giri al minuto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29137",
+  "quesito": 6140,
+  "text": "Il numero di giri a cui funziona, in genere, un motore a scoppio è più elevato rispetto a quello di un motore Diesel",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29138",
+  "quesito": 6140,
+  "text": "I motori Diesel sono motori ad accensione spontanea",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29139",
+  "quesito": 6140,
+  "text": "Non tutti i motori Diesel hanno le stesse modalità di accensione del gasolio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29140",
+  "quesito": 6140,
+  "text": "Nei motori Diesel, in luogo della catena o della cinghia della distribuzione, può trovarsi un collegamento costituito da ingranaggi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29141",
+  "quesito": 6140,
+  "text": "Le termocandele funzionano con corrente a bassa tensione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29142",
+  "quesito": 6140,
+  "text": "Il gasolio ha una combustione più lenta rispetto alla benzina",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29143",
+  "quesito": 6140,
+  "text": "L’iniezione del gasolio è tanto più anticipata quanto più veloce è la rotazione del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29144",
+  "quesito": 6140,
+  "text": "Le termocandele si spengono subito dopo l’avviamento del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29145",
+  "quesito": 6140,
+  "text": "Le candele di preaccensione si trovano sul cruscotto di un veicolo con motore Diesel",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29146",
+  "quesito": 6140,
+  "text": "Se un cilindro di un motore Diesel ha 4 valvole, generalmente sono tutte di aspirazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29147",
+  "quesito": 6140,
+  "text": "Se il silenziatore di un motore Diesel non funziona bene, è necessario \"strozzare\" leggermente il tubo di scarico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29148",
+  "quesito": 6140,
+  "text": "Le termocandele facilitano l’avviamento dei motori a scoppio durante la stagione fredda",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29149",
+  "quesito": 6140,
+  "text": "Le termocandele di un motore Diesel rimangono accese finché la temperatura dell’acqua di raffreddamento raggiunge gli 80°C",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29150",
+  "quesito": 6140,
+  "text": "In alcuni motori Diesel più performanti, le termocandele sono sostituite da candele a scintilla",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29151",
+  "quesito": 6140,
+  "text": "Un motore a ciclo Diesel non può essere ad accensione spontanea",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29152",
+  "quesito": 6140,
+  "text": "Un motore Diesel ha, in genere, rendimento molto più basso di uno a benzina",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29153",
+  "quesito": 6141,
+  "text": "In un motore a scoppio, il pedale dell’acceleratore influisce sulla posizione della valvola a farfalla",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29154",
+  "quesito": 6141,
+  "text": "I motori a scoppio sono motori ad accensione comandata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29155",
+  "quesito": 6141,
+  "text": "Il motore a scoppio può funzionare anche con alimentazione a metano o a GPL",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29156",
+  "quesito": 6141,
+  "text": "Le candele a scintilla sono caratteristiche di un motore a scoppio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29157",
+  "quesito": 6141,
+  "text": "Nel motore a scoppio, l’accensione del carburante (scintilla della candela) è tanto più anticipata quanto più veloce è la rotazione del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29158",
+  "quesito": 6141,
+  "text": "Nei moderni motori a scoppio, in luogo delle candele vengono impiegati gli iniettori",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29159",
+  "quesito": 6141,
+  "text": "In un motore a scoppio la miscela benzina-aria si realizza nel serbatoio del carburante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29160",
+  "quesito": 6141,
+  "text": "L’anticipo dell’accensione nel motore a scoppio deve diminuire man mano che aumenta il numero dei giri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29161",
+  "quesito": 6141,
+  "text": "Se il motore a scoppio funziona a metano, non ha bisogno della marmitta catalitica",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29162",
+  "quesito": 6141,
+  "text": "Se il motore a scoppio funziona a GPL, non ha bisogno della marmitta catalitica",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29163",
+  "quesito": 6142,
+  "text": "Il motore a gas metano è un motore a combustione interna",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29164",
+  "quesito": 6142,
+  "text": "Il gas metano è meno inquinante della benzina e del gasolio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29165",
+  "quesito": 6142,
+  "text": "Il motore a GPL è un motore a combustione interna",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29166",
+  "quesito": 6142,
+  "text": "Il GPL è meno inquinante della benzina e del gasolio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29167",
+  "quesito": 6142,
+  "text": "Sono a combustione interna solo i motori funzionanti a gas metano o a GPL",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29168",
+  "quesito": 6142,
+  "text": "Il metano è più economico, ma è più inquinante della benzina",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29169",
+  "quesito": 6142,
+  "text": "Il GPL è un gas liquido e quindi si può introdurre nel serbatoio della benzina",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29170",
+  "quesito": 6142,
+  "text": "Il GPL è un gas liquido non a pressione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29171",
+  "quesito": 6143,
+  "text": "Un veicolo ibrido può essere dotato di un motore a scoppio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29172",
+  "quesito": 6143,
+  "text": "Un veicolo ibrido può essere dotato di un motore Diesel",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29173",
+  "quesito": 6143,
+  "text": "Un veicolo ibrido è dotato anche di un motore elettrico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29174",
+  "quesito": 6143,
+  "text": "Un veicolo ibrido è un veicolo a propulsione mista",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29175",
+  "quesito": 6143,
+  "text": "I veicoli ibridi sono meno inquinanti degli altri tipi, ad eccezione di quelli elettrici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29176",
+  "quesito": 6143,
+  "text": "Un veicolo ibrido ha due motori, uno a combustione interna (scoppio o Diesel) ed uno elettrico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29177",
+  "quesito": 6143,
+  "text": "Sono veicoli ibridi quelli che hanno il motore funzionante a idrogeno",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29178",
+  "quesito": 6143,
+  "text": "Un veicolo ibrido è dotato di due motori: uno a scoppio ed uno a gas metano",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29179",
+  "quesito": 6143,
+  "text": "Un veicolo ibrido è dotato solo di due motori elettrici: uno ad alta tensione ed uno a bassa tensione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29180",
+  "quesito": 6143,
+  "text": "Un veicolo ibrido è molto economico, ma è più inquinante degli altri veicoli",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29181",
+  "quesito": 6143,
+  "text": "I veicoli ibridi hanno motori adatti a funzionare solo con temperature esterne elevate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29182",
+  "quesito": 6143,
+  "text": "I veicoli ibridi devono avere trazione a quattro ruote motrici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29183",
+  "quesito": 6144,
+  "text": "Il motore elettrico non è un motore a combustione interna",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29184",
+  "quesito": 6144,
+  "text": "Il motore elettrico viene in genere raffreddato ad aria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29185",
+  "quesito": 6144,
+  "text": "Un motore elettrico trasforma energia elettromagnetica in forza motrice",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29186",
+  "quesito": 6144,
+  "text": "I filobus sono veicoli con motore elettrico, alimentati da una rete di distribuzione di elettricità installata sulla strada",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29187",
+  "quesito": 6144,
+  "text": "Un autoveicolo con trazione elettrica alimentato da accumulatori, rispetto ad uno a combustione interna, è generalmente meno veloce, meno potente, con un’autonomia più limitata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29188",
+  "quesito": 6144,
+  "text": "Il motore elettrico è un motore a combustione esterna",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29189",
+  "quesito": 6144,
+  "text": "Un motore elettrico trasforma la forza motrice in energia elettromagnetica",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29190",
+  "quesito": 6144,
+  "text": "I pistoni sono organi tipici dei motori elettrici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29191",
+  "quesito": 6144,
+  "text": "I motori elettrici sono dotati di cambio di velocità a tre marce",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29192",
+  "quesito": 6144,
+  "text": "I motori elettrici sono motori ad accensione spontanea",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29193",
+  "quesito": 6145,
+  "text": "Il motore a combustione interna che fornisce potenza agli autoveicoli, trasforma l’energia termica ricavata dal combustibile, in energia meccanica disponibile alle ruote",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29194",
+  "quesito": 6145,
+  "text": "I cilindri di un motore sono raggruppati in un unico blocco metallico di fusione che prende il nome di monoblocco",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29195",
+  "quesito": 6145,
+  "text": "I cilindri di un motore hanno la funzione di camera di espansione dei gas e di guida per i pistoni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29196",
+  "quesito": 6145,
+  "text": "Il motore a scoppio è detto anche \"ad accensione comandata\"",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29197",
+  "quesito": 6145,
+  "text": "Il motore Diesel è detto anche \"ad accensione spontanea\"",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29198",
+  "quesito": 6145,
+  "text": "Il motore a scoppio funziona aspirando e comprimendo una miscela di aria e benzina",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29199",
+  "quesito": 6145,
+  "text": "Il motore Diesel funziona aspirando e comprimendo solo aria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29200",
+  "quesito": 6145,
+  "text": "Il motore a combustione interna che fornisce potenza agli autoveicoli, trasforma l’energia meccanica in energia termica",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29201",
+  "quesito": 6145,
+  "text": "Il motore a scoppio funziona aspirando e comprimendo solo aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29202",
+  "quesito": 6145,
+  "text": "Il motore Diesel funziona aspirando e comprimendo una miscela di aria e gasolio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29203",
+  "quesito": 6145,
+  "text": "Il motore Diesel è detto anche motore \"ad accensione comandata\"",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29204",
+  "quesito": 6145,
+  "text": "Il motore a scoppio è detto anche \"ad accensione spontanea\"",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29205",
+  "quesito": 6145,
+  "text": "Il motore Diesel funziona ad un regime di giri più elevato di quello a scoppio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29206",
+  "quesito": 6146,
+  "text": "La potenza rappresenta il lavoro compiuto nell’unità di tempo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29207",
+  "quesito": 6146,
+  "text": "Il consumo specifico di un motore rappresenta la quantità di combustibile necessaria per la produzione di una unità di potenza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29208",
+  "quesito": 6146,
+  "text": "L’anticipo dell’iniezione del gasolio nei motori Diesel serve a favorire la completa combustione del gasolio stesso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29209",
+  "quesito": 6146,
+  "text": "Per un rendimento ottimale del motore occorre tenerlo sempre al massimo dei giri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29210",
+  "quesito": 6146,
+  "text": "Per un rendimento ottimale del motore occorre tenerlo sempre al minimo dei giri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29211",
+  "quesito": 6146,
+  "text": "La potenza di un motore si indica in Volt",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29212",
+  "quesito": 6147,
+  "text": "Il motore Diesel è un motore ad accensione spontanea",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29213",
+  "quesito": 6147,
+  "text": "Il motore Diesel utilizza il gasolio come combustibile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29214",
+  "quesito": 6147,
+  "text": "Il motore Diesel è alimentato solo per iniezione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29215",
+  "quesito": 6147,
+  "text": "Nel motore Diesel la combustione avviene per autoaccensione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29216",
+  "quesito": 6147,
+  "text": "Nel motore Diesel la combustione avviene grazie all’iniezione del gasolio in ambiente ad alta temperatura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29217",
+  "quesito": 6147,
+  "text": "Il motore Diesel può funzionare indifferentemente a gasolio o a benzina",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29218",
+  "quesito": 6147,
+  "text": "Il motore Diesel utilizza la miscela creata nel carburatore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29219",
+  "quesito": 6147,
+  "text": "Il motore Diesel utilizza il gasolio perché è molto infiammabile a temperatura ambiente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29220",
+  "quesito": 6147,
+  "text": "Il motore Diesel è un motore in cui l'accensione del carburante avviene per mezzo della scintilla delle candele",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29221",
+  "quesito": 6147,
+  "text": "Il motore Diesel è dotato di un impianto di accensione che genera la scintilla agli elettrodi delle candele",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29222",
+  "quesito": 6148,
+  "text": "Nel motore Diesel, le fasi di funzionamento si susseguono nell'ordine: aspirazione, compressione, combustione e scarico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29223",
+  "quesito": 6148,
+  "text": "Nel motore Diesel l'aspirazione, prodotta dalla discesa del pistone, permette l'ingresso nel cilindro della sola aria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29224",
+  "quesito": 6148,
+  "text": "Nel motore Diesel la compressione, dovuta alla risalita del pistone, comprime fortemente l'aria facendola surriscaldare",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29225",
+  "quesito": 6148,
+  "text": "Nel motore Diesel, la combustione avviene per iniezione del gasolio in ambiente ad alta temperatura che ne provoca l'autoaccensione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29226",
+  "quesito": 6148,
+  "text": "Nel motore Diesel, le fasi di funzionamento si susseguono nel seguente ordine: aspirazione, combustione, scarico e compressione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29227",
+  "quesito": 6148,
+  "text": "Nel motore Diesel, la fase di aspirazione provoca l'ingresso della miscela nei cilindri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29228",
+  "quesito": 6148,
+  "text": "Nel motore Diesel, la combustione avviene a bassa temperatura per migliorare il rendimento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29229",
+  "quesito": 6149,
+  "text": "Il motore Diesel può essere progettato con due diverse modalità di iniezione del combustibile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29230",
+  "quesito": 6149,
+  "text": "Il motore Diesel può essere ad iniezione diretta",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29231",
+  "quesito": 6149,
+  "text": "Il motore Diesel può essere ad iniezione indiretta",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29232",
+  "quesito": 6149,
+  "text": "Nel motore Diesel ad iniezione diretta, il gasolio viene iniettato direttamente nella camera di combustione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29233",
+  "quesito": 6149,
+  "text": "Nel motore Diesel ad iniezione indiretta, il gasolio viene iniettato in una precamera di combustione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29234",
+  "quesito": 6149,
+  "text": "Nel motore Diesel ad iniezione diretta, il gasolio viene prima iniettato nella precamera di combustione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29236",
+  "quesito": 6149,
+  "text": "Il motore Diesel prevede l'uso delle candele che generano la scintilla che fa accendere il gasolio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29237",
+  "quesito": 6149,
+  "text": "Il motore Diesel ad iniezione indiretta ha un rendimento migliore di quello ad iniezione diretta",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29238",
+  "quesito": 6149,
+  "text": "Il motore Diesel ad iniezione indiretta è meno inquinante rispetto a quello ad iniezione diretta",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29239",
+  "quesito": 6150,
+  "text": "L'autoregolatore del numero di giri impedisce al motore Diesel di superare il regime massimo di giri del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29240",
+  "quesito": 6150,
+  "text": "L'autoregolatore del numero di giri del motore Diesel impedisce che, in fase di accelerazione, il numero di giri salga ad un valore pericoloso per l’integrità del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29241",
+  "quesito": 6150,
+  "text": "In un motore Diesel, l'autoregolatore del numero di giri serve ad anticipare la mandata del gasolio agli iniettori",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29242",
+  "quesito": 6150,
+  "text": "In un motore Diesel, l'autoregolatore del numero di giri può essere sostituito dal limitatore di velocità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29243",
+  "quesito": 6151,
+  "text": "Il motore Diesel si differenzia dal motore a benzina poiché, nella fase di aspirazione, aspira solo aria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29244",
+  "quesito": 6151,
+  "text": "Il motore Diesel si differenzia dal motore a benzina in quanto ha un maggior rapporto di compressione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29245",
+  "quesito": 6151,
+  "text": "Il motore Diesel si differenzia dal motore a benzina poiché la combustione avviene per effetto di accensione spontanea del gasolio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29246",
+  "quesito": 6151,
+  "text": "Il motore Diesel si differenzia dal motore a benzina poiché, nella fase di aspirazione, non aspira solo aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29247",
+  "quesito": 6151,
+  "text": "Il motore Diesel si differenzia dal motore a benzina perché non può funzionare senza candele a scintilla",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29248",
+  "quesito": 6151,
+  "text": "Il motore Diesel si differenzia dal motore a benzina poiché ha un rendimento notevolmente peggiore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29249",
+  "quesito": 6151,
+  "text": "Il motore Diesel si differenzia dal motore a benzina perché funziona a un numero di giri notevolmente più elevato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29250",
+  "quesito": 6151,
+  "text": "Il motore Diesel si differenzia dal motore a benzina perché funziona molto bene anche con temperature esterne molto basse",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29251",
+  "quesito": 6152,
+  "text": "Se il rendimento di un motore aumenta, il suo consumo specifico di combustibile diminuisce",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29252",
+  "quesito": 6152,
+  "text": "La benzina ha un punto di infiammabilità inferiore a quello del gasolio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29253",
+  "quesito": 6152,
+  "text": "In un motore a quattro tempi, l'albero motore compie due giri per completare un singolo ciclo di funzionamento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29254",
+  "quesito": 6152,
+  "text": "La cilindrata di un motore è data dalla somma dei volumi interni dei singoli cilindri, calcolata nel momento in cui i pistoni si trovano in corrispondenza del punto morto inferiore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29255",
+  "quesito": 6152,
+  "text": "Se il rendimento di un motore aumenta, anche il suo consumo specifico di combustibile cresce",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29256",
+  "quesito": 6152,
+  "text": "I cilindri sono elementi mobili del motore che scorrono in apposite sedi ricavate nel monoblocco",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29257",
+  "quesito": 6153,
+  "text": "Un motore a combustione interna ha lo scopo di trasformare l'energia termica in energia meccanica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29258",
+  "quesito": 6153,
+  "text": "La fumosità di un motore a gasolio è indicativa di una cattiva combustione e può essere causata da incrostazioni presenti sugli iniettori, che impediscono la corretta nebulizzazione del combustibile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29259",
+  "quesito": 6153,
+  "text": "Durante il funzionamento di un motore, il calore che non viene trasformato in energia meccanica viene ceduto all'esterno, tramite l'impianto di raffreddamento, per evitarne il surriscaldamento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29260",
+  "quesito": 6153,
+  "text": "Il motore a quattro tempi è un tipo di motore termico in grado di utilizzare vari tipi di combustibili, come benzina, gasolio, metano, gpl, alcool",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29261",
+  "quesito": 6153,
+  "text": "I veicoli equipaggiati con motori a combustione interna trasformano l’energia termica prodotta dalla combustione in energia meccanica disponibile alle ruote",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29262",
+  "quesito": 6153,
+  "text": "In un motore a gasolio, la pompa di iniezione ha il compito di prelevare il gasolio dal serbatoio e inviarlo a bassa pressione agli iniettori",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29263",
+  "quesito": 6153,
+  "text": "Un motore a gasolio può funzionare bene anche a benzina, ma in tal caso è meglio non percorrere tragitti oltre i duecento chilometri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29264",
+  "quesito": 6153,
+  "text": "A differenza di quello a scoppio, il motore Diesel non necessita di filtro dell'aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29265",
+  "quesito": 6153,
+  "text": "A differenza di quello a scoppio, il motore Diesel non necessita di filtro del combustibile",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29266",
+  "quesito": 6153,
+  "text": "Il motore Diesel è in genere più silenzioso di quello a scoppio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29267",
+  "quesito": 6154,
+  "text": "In un motore a gasolio, il turbocompressore, sfruttando i gas di scarico, consente di aumentare la quantità di aria immessa nella camera di combustione al fine di migliorare la combustione ed aumentare la potenza erogata, a parità di consumo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29268",
+  "quesito": 6154,
+  "text": "A parità di potenza erogata, un motore turbocompresso consuma meno combustibile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29269",
+  "quesito": 6154,
+  "text": "I motori turbocompressi consentono di recuperare parte dell'energia che va normalmente dispersa attraverso i gas di scarico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29270",
+  "quesito": 6154,
+  "text": "La sovralimentazione aumenta la densità dell'aria immessa nei cilindri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29271",
+  "quesito": 6154,
+  "text": "Compito dell'intercooler è quello di abbassare la temperatura dell'aria in uscita dal turbocompressore, in modo da aumentare il rendimento del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29272",
+  "quesito": 6154,
+  "text": "I motori dotati di turbocompressore necessitano di un doppio silenziatore (marmitta potenziata)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29273",
+  "quesito": 6154,
+  "text": "Il turbocompressore aumenta la potenza del motore, ma ne peggiora il rendimento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29274",
+  "quesito": 6154,
+  "text": "Il turbocompressore aumenta la potenza del motore, ma ne aumenta il consumo specifico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29275",
+  "quesito": 6154,
+  "text": "Compito dell'intercooler è quello di abbassare la temperatura del liquido di raffreddamento del motore, soprattutto nelle zone con climi caldi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29276",
+  "quesito": 6154,
+  "text": "Il turbocompressore può essere utilizzato solo su motori di piccola cilindrata (massimo 2000 cm3)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29277",
+  "quesito": 6155,
+  "text": "Compito degli organi di scarico di un veicolo è quello di convogliare i gas di scarico verso l'esterno",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29278",
+  "quesito": 6155,
+  "text": "Compito degli organi di scarico di un veicolo è quello di abbassare la temperatura dei gas di scarico convogliati verso l'esterno",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29279",
+  "quesito": 6155,
+  "text": "Compito degli organi di scarico di un veicolo è quello di abbassare la pressione dei gas di scarico convogliati verso l'esterno, in modo da ridurre il rumore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29280",
+  "quesito": 6155,
+  "text": "La marmitta deve essere sempre sostituita quando presenta crepe o rotture, anche se piccole",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29281",
+  "quesito": 6155,
+  "text": "Se la marmitta deve essere sostituita, quella nuova deve sempre essere di tipo omologato per lo specifico veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29282",
+  "quesito": 6155,
+  "text": "Se la marmitta deve essere sostituita, quella nuova può essere di qualunque tipo, purché la sua lunghezza sia uguale o inferiore a quella vecchia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29283",
+  "quesito": 6155,
+  "text": "La marmitta deve essere sostituita a ogni revisione del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29284",
+  "quesito": 6155,
+  "text": "In un motore Diesel, la marmitta deve essere sostituita ogni due anni o ogni 25000 chilometri, perché il nerofumo tende a intasarla",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29285",
+  "quesito": 6155,
+  "text": "La marmitta forata può essere riparata con del silicone sigillante, senza che sia necessario sostituirla",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29286",
+  "quesito": 6156,
+  "text": "L'impianto di alimentazione del motore Diesel ha il compito di gestire la mandata del gasolio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29287",
+  "quesito": 6156,
+  "text": "L'impianto di alimentazione del motore Diesel può comprendere iniettori pompa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29288",
+  "quesito": 6156,
+  "text": "L'impianto di alimentazione del motore Diesel è dotato di un filtro del gasolio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29289",
+  "quesito": 6156,
+  "text": "L'impianto di alimentazione del motore Diesel comprende anche degli iniettori che polverizzano il gasolio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29290",
+  "quesito": 6156,
+  "text": "L'impianto di alimentazione del motore Diesel può essere dotato di una pompa di iniezione che invia gasolio ad alta pressione agli iniettori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29291",
+  "quesito": 6156,
+  "text": "L'impianto di alimentazione del motore Diesel è dotato di una pompa di alimentazione che invia il gasolio ad alta pressione agli iniettori",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29292",
+  "quesito": 6156,
+  "text": "L'impianto di alimentazione del motore Diesel prevede un filtro a cartuccia che deve essere sostituito ad ogni rifornimento di carburante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29293",
+  "quesito": 6156,
+  "text": "L'impianto di alimentazione del motore Diesel è dotato di pompa di iniezione che aspira gasolio dal serbatoio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29294",
+  "quesito": 6156,
+  "text": "L'impianto di alimentazione del motore Diesel è dotato di un filtro aria che deve essere sostituito ad ogni rifornimento di carburante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29295",
+  "quesito": 6156,
+  "text": "L’impianto di alimentazione del motore Diesel è regolato direttamente dal conducente per mezzo di appositi interruttori posti sul cruscotto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29296",
+  "quesito": 6157,
+  "text": "I motori Diesel sono dotati di filtro dell’aria e filtro del gasolio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29297",
+  "quesito": 6157,
+  "text": "Nei motori Diesel l’acceleratore regola la quantità di gasolio che viene iniettata nei cilindri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29298",
+  "quesito": 6157,
+  "text": "Il filtro dell’aria di un motore Diesel deve periodicamente essere controllato, sostituendo se necessario la cartuccia filtrante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29299",
+  "quesito": 6157,
+  "text": "Il \"Common-rail\" è un sistema di iniezione a controllo elettronico per motori Diesel, che consente una altissima pressione di iniezione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29300",
+  "quesito": 6157,
+  "text": "La cartuccia dei filtri del gasolio deve essere sostituita periodicamente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29301",
+  "quesito": 6157,
+  "text": "Il motore Diesel può anche essere alimentato con BioDiesel",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29302",
+  "quesito": 6157,
+  "text": "Le candelette di un motore Diesel servono per permettere le prime accensioni del gasolio nei cilindri a motore freddo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29303",
+  "quesito": 6157,
+  "text": "In un motore Diesel la combustione del gasolio avviene grazie al suo surriscaldamento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29304",
+  "quesito": 6157,
+  "text": "In un motore Diesel a iniezione diretta, il gasolio è iniettato direttamente nel cilindro",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29305",
+  "quesito": 6157,
+  "text": "In un motore Diesel a iniezione indiretta, il gasolio è iniettato in una precamera esterna al cilindro",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29306",
+  "quesito": 6157,
+  "text": "Il motore Diesel può essere alimentato anche con bioetanolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29307",
+  "quesito": 6157,
+  "text": "Le candelette di un motore Diesel servono, a motore caldo, per regolarizzare le accensioni del gasolio quando il motore ruota a regime di potenza massima",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29308",
+  "quesito": 6157,
+  "text": "In un comune motore Diesel il gasolio viene iniettato nei cilindri alla pressione di circa 25 Bar",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29309",
+  "quesito": 6157,
+  "text": "La pompa di iniezione del motore Diesel viene fatta funzionare da una cinghia trapezoidale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29310",
+  "quesito": 6157,
+  "text": "Quando la temperatura esterna è molto fredda è bene alimentare il motore Diesel con una miscela di gasolio (70%) e benzina o alcool (30%)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29311",
+  "quesito": 6157,
+  "text": "La cartuccia dei filtri del gasolio deve essere sostituita ad ogni revisione periodica del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29312",
+  "quesito": 6157,
+  "text": "In un motore Diesel a iniezione indiretta, il gasolio è iniettato direttamente nel cilindro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29314",
+  "quesito": 6157,
+  "text": "Il motore Diesel ha maggiori problemi di rendimento in altitudine rispetto al motore a scoppio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29315",
+  "quesito": 6158,
+  "text": "In un motore Diesel, se la pompa di alimentazione ha funzionamento elettrico, può trovarsi immersa all’interno del serbatoio del combustibile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29316",
+  "quesito": 6158,
+  "text": "In un motore Diesel, la pompa di alimentazione a bassa pressione spinge il combustibile dal serbatoio alla pompa di iniezione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29317",
+  "quesito": 6158,
+  "text": "In un motore Diesel, la pompa di alimentazione di un motore Diesel è azionata dal motore o dalla pompa di iniezione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29318",
+  "quesito": 6158,
+  "text": "In un motore Diesel, la pompa di iniezione spinge il gasolio in pressione agli iniettori nella quantità richiesta dal pedale dell’acceleratore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29319",
+  "quesito": 6158,
+  "text": "In un motore Diesel, se la pompa di alimentazione cessa di funzionare, il motore si arresta",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29320",
+  "quesito": 6158,
+  "text": "In un motore Diesel, ogni 10 rifornimenti di combustibile è necessario ripulire il filtro della pompa di alimentazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29321",
+  "quesito": 6158,
+  "text": "In un motore Diesel, quando il clima è molto freddo, la pompa di alimentazione del combustibile deve essere accesa dal conducente con apposito pulsante, alcuni secondi prima della messa in moto del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29322",
+  "quesito": 6158,
+  "text": "In un motore Diesel, la pompa di alimentazione a bassa pressione deve essere posizionata sul veicolo in un punto lontano da fonti di calore, oppure deve essere opportunamente coibentata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29323",
+  "quesito": 6158,
+  "text": "In un motore Diesel, la pompa di alimentazione a bassa pressione è dotata di anticongelatore da attivare durante la stagione fredda",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29324",
+  "quesito": 6158,
+  "text": "In un motore Diesel, la pompa di alimentazione del combustibile a funzionamento elettrico non può mai trovarsi nel serbatoio a causa del pericolo d’incendio che ciò comporterebbe",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29325",
+  "quesito": 6159,
+  "text": "Tutti i motori Diesel sono dotati di regolatore del numero di giri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29326",
+  "quesito": 6159,
+  "text": "In un motore Diesel, l’iniezione del gasolio a controllo elettronico permette di regolare la quantità di gasolio iniettato ed anche la tempistica dell’iniezione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29327",
+  "quesito": 6159,
+  "text": "In un motore Diesel, sui veicoli dotati di iniettori pompa non è montata la pompa di iniezione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29328",
+  "quesito": 6159,
+  "text": "In un motore Diesel, gli iniettori pompa dei motori Diesel di ultima generazione sono a controllo elettronico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29329",
+  "quesito": 6159,
+  "text": "In un motore Diesel, gli iniettori sregolati causano una cattiva combustione del gasolio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29330",
+  "quesito": 6159,
+  "text": "In un motore Diesel, gli iniettori sregolati causano un maggior consumo di combustibile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29331",
+  "quesito": 6159,
+  "text": "In un motore Diesel, gli iniettori sregolati causano un maggior inquinamento atmosferico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29332",
+  "quesito": 6159,
+  "text": "La regolazione elettronica dell’iniezione è applicabile solo ai motori a scoppio perché il gasolio è troppo lento ad incendiarsi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29333",
+  "quesito": 6159,
+  "text": "Gli iniettori pompa dei motori Diesel possono essere solo ad azionamento meccanico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29334",
+  "quesito": 6159,
+  "text": "In un motore Diesel, gli iniettori sregolati causano un peggior comfort di marcia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29335",
+  "quesito": 6159,
+  "text": "In un motore Diesel, gli iniettori sregolati sono segnalati da una spia verde che si accende sul cruscotto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29336",
+  "quesito": 6159,
+  "text": "In un motore Diesel, la pulizia degli iniettori sregolati può avvenire marciando in discesa a motore spento per poche centinaia di metri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29337",
+  "quesito": 6159,
+  "text": "In un motore Diesel, la quantità di gasolio iniettata può essere regolata manualmente dal conducente tramite manopola posta sul cruscotto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29338",
+  "quesito": 6159,
+  "text": "In un motore Diesel, la pulizia degli iniettori sregolati può avvenire con motore acceso, veicolo in folle e acceleratore premuto a fondo per una decina di secondi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29339",
+  "quesito": 6160,
+  "text": "In un motore Diesel, la pompa di iniezione in linea serve a inviare il gasolio agli iniettori, sotto forte pressione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29340",
+  "quesito": 6160,
+  "text": "In un motore Diesel, la pompa di iniezione in linea, comandata dal pedale dell'acceleratore, permette di regolare la quantità di gasolio da inviare agli iniettori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29341",
+  "quesito": 6160,
+  "text": "In un motore Diesel, la pompa di iniezione in linea regola, fra l'altro, il momento opportuno per l'invio del gasolio agli iniettori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29342",
+  "quesito": 6160,
+  "text": "In un motore Diesel, la pompa di iniezione in linea è dotata di elementi pompanti (uno per ogni cilindro)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29343",
+  "quesito": 6160,
+  "text": "In un motore Diesel, la pompa di iniezione in linea è dotata di un albero a camme",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29344",
+  "quesito": 6160,
+  "text": "In un motore Diesel, la pompa di iniezione in linea è dotata di un'asta a cremagliera che è comandata dal pedale dell'acceleratore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29345",
+  "quesito": 6160,
+  "text": "In un motore Diesel, la pompa di iniezione in linea è equipaggiata con un regolatore di giri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29346",
+  "quesito": 6160,
+  "text": "In un motore Diesel, la pompa di iniezione in linea è dotata di un dispositivo di anticipo automatico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29347",
+  "quesito": 6160,
+  "text": "In un motore Diesel, la pompa di iniezione in linea aspira il gasolio dal serbatoio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29348",
+  "quesito": 6160,
+  "text": "In un motore Diesel, la pompa di iniezione in linea invia anche l'olio lubrificante alle parti in movimento del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29349",
+  "quesito": 6160,
+  "text": "In un motore Diesel, la pompa di iniezione in linea prende movimento dagli alberi della distribuzione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29350",
+  "quesito": 6160,
+  "text": "In un motore Diesel, la pompa di iniezione in linea alimenta la portata dell'acqua di raffreddamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29351",
+  "quesito": 6160,
+  "text": "In un motore Diesel, la pompa di iniezione in linea ha un solo elemento pompante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29352",
+  "quesito": 6160,
+  "text": "In un motore Diesel, la pompa di iniezione in linea serve ad inviare, sotto forte pressione, l'olio agli elementi frenanti delle ruote",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29353",
+  "quesito": 6160,
+  "text": "In un motore Diesel, la pompa di iniezione in linea deve essere sostituita ogni 25000 chilometri circa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29354",
+  "quesito": 6160,
+  "text": "In un motore Diesel, la pompa di iniezione in linea è dotata di una candeletta di preaccensione per ciascun iniettore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29355",
+  "quesito": 6161,
+  "text": "In un motore Diesel, gli elementi pompanti di una pompa di iniezione in linea prendono movimento dall'albero a camme della pompa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29356",
+  "quesito": 6161,
+  "text": "In un motore Diesel, gli elementi pompanti di una pompa di iniezione in linea sono in numero uguale ai cilindri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29357",
+  "quesito": 6161,
+  "text": "In un motore Diesel, gli elementi pompanti di una pompa di iniezione in linea comprimono il gasolio ad alta pressione destinato agli iniettori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29358",
+  "quesito": 6161,
+  "text": "In un motore Diesel, gli elementi pompanti di una pompa di iniezione in linea sono sempre in numero pari",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29359",
+  "quesito": 6161,
+  "text": "In un motore Diesel, gli elementi pompanti di una pompa di iniezione in linea devono essere smontati e puliti ogni 30 giorni circa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29360",
+  "quesito": 6161,
+  "text": "In un motore Diesel, gli elementi pompanti non necessitano di manutenzione se si utilizza bioDiesel",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29361",
+  "quesito": 6162,
+  "text": "Nei motori Diesel, l'anticipo automatico serve ad anticipare la mandata del gasolio agli iniettori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29362",
+  "quesito": 6162,
+  "text": "Nei motori Diesel, l'anticipo automatico serve a garantire una buona combustione del gasolio anche ad elevato numero di giri del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29363",
+  "quesito": 6162,
+  "text": "Nei motori Diesel, l'anticipo automatico entra in funzione all'aumentare del numero dei giri del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29364",
+  "quesito": 6162,
+  "text": "Nei motori Diesel, l'anticipo automatico gestisce l'innesto della frizione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29365",
+  "quesito": 6162,
+  "text": "Nei motori Diesel, l'anticipo automatico gestisce l'innesto delle marce alte del cambio di velocità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29366",
+  "quesito": 6162,
+  "text": "Nei motori Diesel, l'anticipo automatico attiva le candele di accensione del gasolio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29367",
+  "quesito": 6163,
+  "text": "In un motore Diesel, gli iniettori iniettano nei cilindri gasolio ad alta pressione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29368",
+  "quesito": 6163,
+  "text": "In un motore Diesel, gli iniettori sono dotati di un dispositivo che polverizza il gasolio in ingresso nei cilindri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29369",
+  "quesito": 6163,
+  "text": "In un motore Diesel, gli iniettori devono essere periodicamente controllati",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29370",
+  "quesito": 6163,
+  "text": "In un motore Diesel, gli iniettori sono spesso controllati elettronicamente da una centralina",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29371",
+  "quesito": 6163,
+  "text": "In un motore Diesel, il controllo elettronico degli iniettori permette di stabilire tempi e durata dell'iniezione del gasolio nei cilindri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29372",
+  "quesito": 6163,
+  "text": "In un motore Diesel, gli iniettori iniettano gasolio nei cilindri a bassa pressione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29373",
+  "quesito": 6163,
+  "text": "In un motore Diesel, gli iniettori si trovano incorporati nella pompa di iniezione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29374",
+  "quesito": 6163,
+  "text": "In un motore Diesel, gli iniettori iniettano periodicamente olio lubrificante nel cilindro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29375",
+  "quesito": 6163,
+  "text": "In un motore Diesel, gli iniettori cessano di iniettare gasolio dieci secondi dopo lo spegnimento del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29376",
+  "quesito": 6164,
+  "text": "Il motore Diesel aspira aria mentre il gasolio viene introdotto nei cilindri dagli iniettori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29377",
+  "quesito": 6164,
+  "text": "I motori Diesel sono sempre dotati di iniettori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29378",
+  "quesito": 6164,
+  "text": "Se gli iniettori di un motore Diesel gocciolano, il motore emette fumo nero",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29379",
+  "quesito": 6164,
+  "text": "Nel motore Diesel, la combustione avviene in \"eccesso d’aria\"",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29380",
+  "quesito": 6164,
+  "text": "In un motore Diesel, si possono trovare gli iniettori-pompa, dispositivi che rendono inutile la presenza della pompa di iniezione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29381",
+  "quesito": 6164,
+  "text": "Il Common-rail è un dispositivo che permette l’iniezione del gasolio nei cilindri ad altissima pressione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29382",
+  "quesito": 6164,
+  "text": "In un motore Diesel, gli iniettori possono essere a comando meccanico od elettronico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29383",
+  "quesito": 6164,
+  "text": "In un motore Diesel, gli iniettori ricevono il gasolio in pressione dalla pompa di iniezione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29384",
+  "quesito": 6164,
+  "text": "Nel sistema di iniezione \"Common-rail\", gli iniettori sono a comando elettronico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29385",
+  "quesito": 6164,
+  "text": "Il gasolio iniettato nei cilindri di un motore Diesel deve essere finemente polverizzato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29386",
+  "quesito": 6164,
+  "text": "Gli iniettori di un motore Diesel hanno una pressione di iniezione che aumenta con l'aumentare della velocità del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29387",
+  "quesito": 6164,
+  "text": "Il motore Diesel è in genere munito di una candeletta di preriscaldamento posta vicino alla presa d’aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29388",
+  "quesito": 6164,
+  "text": "Se gli iniettori di un motore Diesel \"gocciolano\", devono essere puliti con acqua e ammoniaca",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29389",
+  "quesito": 6164,
+  "text": "Gli iniettori ricevono il combustibile da una pompa a bassa pressione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29390",
+  "quesito": 6164,
+  "text": "Se gli iniettori di un motore gocciolano vanno avvitati meglio nelle loro sedi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29391",
+  "quesito": 6164,
+  "text": "Un motore Diesel è munito di almeno una candela per cilindro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29392",
+  "quesito": 6164,
+  "text": "Il motore Diesel funziona bene solo con poca aria aspirata dai cilindri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29393",
+  "quesito": 6164,
+  "text": "I motori Diesel di ultima generazione hanno l’accensione delle candele controllata elettronicamente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29394",
+  "quesito": 6164,
+  "text": "Nei motori Diesel più potenti, il gasolio viene iniettato a bassa pressione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29395",
+  "quesito": 6164,
+  "text": "I motori Diesel per autoveicoli lavorano normalmente ad alto numero di giri (4000-5000 giri/min)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29396",
+  "quesito": 6164,
+  "text": "Il controllo elettronico dell’iniezione di combustibile è possibile solo nei motori a scoppio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29397",
+  "quesito": 6165,
+  "text": "L'iniezione gestita dall'impianto Common-rail fornisce una elevatissima pressione del gasolio, anche a bassi giri del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29398",
+  "quesito": 6165,
+  "text": "L'iniezione gestita dall'impianto Common-rail comporta un'elevatissima pressione del gasolio all'interno di un condotto comune (Rail)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29399",
+  "quesito": 6165,
+  "text": "In un motore Diesel, l'iniezione gestita dall'impianto Common-rail permette una riduzione dei consumi e delle emissioni nocive",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29400",
+  "quesito": 6165,
+  "text": "Il Common-rail è un impianto di iniezione del gasolio di tipo puramente meccanico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29401",
+  "quesito": 6165,
+  "text": "In un motore Diesel, l'alimentazione gestita dall'impianto Common-rail determina un'iniezione di gasolio a bassa pressione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29402",
+  "quesito": 6165,
+  "text": "L'iniezione gestita dall'impianto Common-rail penalizza la coppia motrice ai bassi regimi di giri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29403",
+  "quesito": 6166,
+  "text": "In un motore Diesel, il sistema di iniezione Common-rail è dotato di due circuiti del combustibile: uno a bassa ed uno ad alta pressione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29404",
+  "quesito": 6166,
+  "text": "In un motore Diesel, il sistema di iniezione Common-rail è dotato di una pompa che invia il gasolio ad elevatissima pressione agli elettroiniettori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29405",
+  "quesito": 6166,
+  "text": "In un motore Diesel, il sistema di iniezione Common-rail ha un condotto comune (Common-rail o flauto) che contiene il combustibile inviato dalla pompa ad alta pressione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29406",
+  "quesito": 6166,
+  "text": "In un motore Diesel, il sistema di iniezione Common-rail è dotato di una centralina che elabora i dati dei sensori per gestire al meglio gli elettroiniettori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29407",
+  "quesito": 6166,
+  "text": "In un motore Diesel, il sistema di iniezione Common-rail permette, per mezzo degli elettroiniettori, un'iniezione di carburante estremamente precisa nella quantità e nei tempi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29408",
+  "quesito": 6166,
+  "text": "In un motore Diesel, il sistema di iniezione Common-rail è dotato di una pompa a bassa pressione che invia direttamente il carburante agli elettroiniettori",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29409",
+  "quesito": 6166,
+  "text": "In un motore Diesel, il sistema di iniezione Common-rail è dotato di una pompa a bassa pressione che determina la quantità di carburante da iniettare",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29410",
+  "quesito": 6166,
+  "text": "In un motore Diesel, il sistema di iniezione Common-rail sfrutta l'aria compressa per la gestione degli iniettori",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29411",
+  "quesito": 6166,
+  "text": "In un motore Diesel, il sistema di iniezione Common-rail permette di aumentare la pressione di iniezione al variare del numero dei giri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29412",
+  "quesito": 6166,
+  "text": "Il sistema di iniezione Common-rail inietta il combustibile nel condotto di aspirazione per ottenere una miglior miscelazione del gasolio con l'aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29413",
+  "quesito": 6167,
+  "text": "In un motore Diesel, gli elettroiniettori servono a iniettare gasolio nei cilindri in maniera precisa sia nei tempi che nella quantità",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29414",
+  "quesito": 6167,
+  "text": "In un motore Diesel, gli elettroiniettori sono comandati dalla centralina elettronica, e possono iniettare il carburante nei cilindri in più mandate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29415",
+  "quesito": 6167,
+  "text": "In un motore Diesel, gli elettroiniettori sono più precisi rispetto agli iniettori meccanici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29416",
+  "quesito": 6167,
+  "text": "In un motore Diesel, gli elettroiniettori effettuano una preiniezione e successivamente l'iniezione principale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29417",
+  "quesito": 6167,
+  "text": "In un motore Diesel, grazie alla gestione della centralina elettronica, gli elettroiniettori sono montati sulla testata del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29418",
+  "quesito": 6167,
+  "text": "In un motore Diesel, gli elettroiniettori determinano la pressione di iniezione per mezzo di una molla tarata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29419",
+  "quesito": 6167,
+  "text": "In un motore Diesel, gli elettroiniettori sono comandati meccanicamente dall'albero a camme della pompa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29420",
+  "quesito": 6167,
+  "text": "In un motore Diesel, gli elettroiniettori, se malfunzionanti, possono essere riparati dal conducente purché sia dotato degli idonei strumenti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29421",
+  "quesito": 6167,
+  "text": "In un motore Diesel, gli elettroiniettori sono alimentati da una batteria loro dedicata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29422",
+  "quesito": 6167,
+  "text": "In un motore Diesel, gli elettroiniettori aumentano i consumi del veicolo perché utilizzano elettricità per il loro funzionamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29423",
+  "quesito": 6168,
+  "text": "In un motore Diesel, il sistema d’iniezione multijet ottimizza la combustione del gasolio nei cilindri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29424",
+  "quesito": 6168,
+  "text": "In un motore Diesel, il sistema d’iniezione multijet riduce l’inquinamento acustico causato dal motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29425",
+  "quesito": 6168,
+  "text": "In un motore Diesel, il sistema d’iniezione multijet riduce l’inquinamento atmosferico causato dal motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29426",
+  "quesito": 6168,
+  "text": "In un motore Diesel, il sistema d’iniezione multijet arriva fino a 8 iniezioni per ciclo di funzionamento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29427",
+  "quesito": 6168,
+  "text": "In un motore Diesel, il sistema d’iniezione multijet permette una riduzione dei consumi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29428",
+  "quesito": 6168,
+  "text": "In un motore Diesel, il sistema d’iniezione multijet abbassa l’inquinamento acustico causato dal motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29429",
+  "quesito": 6168,
+  "text": "In un motore Diesel, il sistema d’iniezione multijet aumenta la potenza del motore aumentandone notevolmente i consumi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29430",
+  "quesito": 6168,
+  "text": "I motori che adottano il sistema d’iniezione multijet sono generalmente appartenenti alle categorie antinquinamento euro zero o euro uno",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29431",
+  "quesito": 6168,
+  "text": "In un motore Diesel, il sistema d’iniezione multijet è usato solo nei motori a benzina turbocompressi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29432",
+  "quesito": 6168,
+  "text": "In un motore Diesel, il sistema d’iniezione multijet ha sempre due iniezioni di gasolio nel ciclo di funzionamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29433",
+  "quesito": 6169,
+  "text": "I combustibili, miscelati con l’opportuna quantità d’aria e successivamente incendiati, forniscono l’energia necessaria al funzionamento del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29434",
+  "quesito": 6169,
+  "text": "In altitudine, dove la pressione dell’aria è inferiore, diminuisce il rendimento del motore, soprattutto se è di tipo a scoppio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29435",
+  "quesito": 6169,
+  "text": "Il motore Diesel ha, in linea di principio, un rendimento migliore di quello a scoppio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29436",
+  "quesito": 6169,
+  "text": "La benzina è più volatile del gasolio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29437",
+  "quesito": 6169,
+  "text": "Il bioDiesel è una miscela di gasolio ordinario e olio vegetale combustibile, utilizzato nell’ottica di ridurre l’inquinamento atmosferico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29438",
+  "quesito": 6169,
+  "text": "Con la sigla B10 si individua un bioDiesel composto dal 10% di olio vegetale e dal 90% di gasolio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29439",
+  "quesito": 6169,
+  "text": "I combustibili, miscelati con l’opportuna quantità di vapore e successivamente incendiati, forniscono l’energia necessaria al funzionamento del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29440",
+  "quesito": 6169,
+  "text": "In altitudine, dove la pressione dell’aria è inferiore, diminuisce il rendimento del motore, soprattutto se è di tipo Diesel",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29441",
+  "quesito": 6169,
+  "text": "Il motore a scoppio ha, in linea di principio, un rendimento migliore di quello Diesel",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29442",
+  "quesito": 6169,
+  "text": "Il gasolio è più volatile della benzina",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29443",
+  "quesito": 6169,
+  "text": "Con la sigla B10 si individua un combustibile composto dal 10% di gasolio ordinario e dal 90% di olio vegetale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29444",
+  "quesito": 6169,
+  "text": "Il gasolio può essere miscelato con una buona percentuale di alcool, nell’ottica di ridurre l’inquinamento atmosferico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29445",
+  "quesito": 6169,
+  "text": "Il bioDiesel è un combustibile prodotto in raffinerie che hanno la certificazione ambientale di limitato inquinamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29446",
+  "quesito": 6170,
+  "text": "La sigla GPL identifica il gas di petrolio liquefatto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29447",
+  "quesito": 6170,
+  "text": "Il GPL è una miscela di idrocarburi che viene resa liquida a bassa pressione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29448",
+  "quesito": 6170,
+  "text": "Il GPL è un carburante poco inquinante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29449",
+  "quesito": 6170,
+  "text": "Il GPL può avere un avviamento a freddo difficoltoso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29450",
+  "quesito": 6170,
+  "text": "Il metano, per essere usato quale combustibile per autoveicoli, deve essere fortemente compresso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29451",
+  "quesito": 6170,
+  "text": "Il metano non dà generalmente problemi nell'avviamento a freddo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29452",
+  "quesito": 6170,
+  "text": "Il metano deve essere immagazzinato in serbatoi costituiti da bombole molto pesanti e resistenti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29453",
+  "quesito": 6170,
+  "text": "La sigla GPL identifica il gasolio con particolato limitato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29454",
+  "quesito": 6170,
+  "text": "Il GPL è un carburante più inquinante del gasolio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29455",
+  "quesito": 6170,
+  "text": "Il GPL è una miscela di idrocarburi che viene resa liquida ad alta pressione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29456",
+  "quesito": 6170,
+  "text": "Il GPL ha un buon avviamento a freddo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29457",
+  "quesito": 6170,
+  "text": "Il metano, per essere usato quale combustibile per autoveicoli, deve essere compresso a circa 4 bar",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29458",
+  "quesito": 6170,
+  "text": "A parità di volume del serbatoio di un autoveicolo, il \"pieno\" di metano compresso garantisce una maggior autonomia di viaggio rispetto alla benzina",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29459",
+  "quesito": 6170,
+  "text": "Il metano si miscela male con l’aria e quindi brucia emettendo maggiori residui inquinanti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29460",
+  "quesito": 6171,
+  "text": "Non è opportuno sostituire un fusibile con uno di amperaggio diverso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29461",
+  "quesito": 6171,
+  "text": "Tutti i fusibili sono raccolti in uno o più contenitori facilmente accessibili",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29462",
+  "quesito": 6171,
+  "text": "Ogni fusibile è distinto dagli altri per il colore e per il numero scritto sulla sua parte in plastica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29463",
+  "quesito": 6171,
+  "text": "Il fusibile è un dispositivo in grado di interrompere il flusso di corrente a un apparato se questa supera una soglia prefissata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29464",
+  "quesito": 6171,
+  "text": "I fusibili sono costituiti da un contenitore al cui interno è presente un filo metallico dimensionato in modo tale da fondere se la corrente che lo attraversa supera un valore limite",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29465",
+  "quesito": 6171,
+  "text": "La posizione della scatola dei fusibili è indicata sul libretto di uso e manutenzione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29466",
+  "quesito": 6171,
+  "text": "La parte isolante dei fusibili ha in genere colori differenti a seconda del loro amperaggio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29467",
+  "quesito": 6171,
+  "text": "Sui fusibili si trova scritto il valore del loro amperaggio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29468",
+  "quesito": 6171,
+  "text": "Il valore dell’amperaggio di un fusibile è un numero seguito dalla lettera A maiuscola",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29469",
+  "quesito": 6171,
+  "text": "L’impianto elettrico di un autoveicolo è suddiviso in sezioni, ciascuna protetta dal proprio fusibile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29470",
+  "quesito": 6171,
+  "text": "I circuiti elettrici dell’autoveicolo sono raramente protetti da un fusibile",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29471",
+  "quesito": 6171,
+  "text": "I fusibili sono sostituibili solo in officina",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29472",
+  "quesito": 6171,
+  "text": "Se non si dispone di un fusibile sostitutivo uguale, occorre sostituire quello guasto con uno di amperaggio minore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29473",
+  "quesito": 6171,
+  "text": "Tutti i fusibili vanno sostituiti ogni volta che si effettua la revisione periodica del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29474",
+  "quesito": 6171,
+  "text": "Il fusibile è un dispositivo idraulico che è in grado di proteggere l'impianto di lubrificazione da eventuali sovrappressioni",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29475",
+  "quesito": 6171,
+  "text": "Sui fusibili si trova scritto il valore del loro voltaggio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29476",
+  "quesito": 6171,
+  "text": "Il valore del voltaggio di un fusibile è un numero seguito dalla lettera V maiuscola",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29477",
+  "quesito": 6171,
+  "text": "I fusibili di colore rosso possono essere sostituiti solo da addetti delle officine specializzate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29478",
+  "quesito": 6171,
+  "text": "Se lo stesso fusibile brucia spesso è bene sostituirlo con uno di amperaggio inferiore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29479",
+  "quesito": 6171,
+  "text": "Se lo stesso fusibile brucia spesso è bene sostituirlo con un cavallotto di filo elettrico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29480",
+  "quesito": 6171,
+  "text": "La sostituzione di un fusibile va fatta con la chiave del quadro inserita, in modo da vedere subito se si è operato correttamente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29481",
+  "quesito": 6171,
+  "text": "Nei veicoli pesanti, tutti i fusibili hanno di norma il medesimo amperaggio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29482",
+  "quesito": 6171,
+  "text": "I fusibili hanno una specifica polarità e vanno pertanto infilati nella loro sede con un verso preciso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29483",
+  "quesito": 6171,
+  "text": "I veicoli dotati di motore Diesel non hanno fusibili perché non necessitano di impianto di accensione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29484",
+  "quesito": 6172,
+  "text": "In molti casi la stessa cinghia trapezoidale che comanda l’alternatore mette in movimento anche la pompa centrifuga del liquido di raffreddamento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29485",
+  "quesito": 6172,
+  "text": "L’alternatore viene azionato da una o più cinghie trapezoidali",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29486",
+  "quesito": 6172,
+  "text": "L’alternatore è un generatore di corrente alternata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29487",
+  "quesito": 6172,
+  "text": "Se l’alternatore è guasto si accende una spia rossa situata sul cruscotto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29488",
+  "quesito": 6172,
+  "text": "Se l’alternatore genera poca corrente è possibile che la cinghia trapezoidale si sia allentata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29489",
+  "quesito": 6172,
+  "text": "La corrente generata dall’alternatore, per essere accumulata dalla batteria, deve venire raddrizzata, cioè trasformata in corrente continua",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29490",
+  "quesito": 6172,
+  "text": "Il buon funzionamento dell’alternatore si controlla per mezzo di una spia luminosa posta sul cruscotto, che deve rimanere spenta",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29491",
+  "quesito": 6172,
+  "text": "I moderni alternatori hanno incorporato un raddrizzatore che rende continua la corrente in uscita",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29492",
+  "quesito": 6172,
+  "text": "L’autista deve verificare periodicamente lo stato di carica dell’alternatore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29493",
+  "quesito": 6172,
+  "text": "Alcuni motori Diesel sono privi di alternatore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29494",
+  "quesito": 6172,
+  "text": "Nei motori a scoppio o Diesel, l’alternatore sostituisce la batteria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29495",
+  "quesito": 6172,
+  "text": "Nei motori a scoppio o Diesel, l’alternatore fornisce la corrente per il motore, mentre la batteria produce quella per le luci e per i servizi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29496",
+  "quesito": 6172,
+  "text": "Se l’alternatore è guasto si accende una spia arancione situata sul cruscotto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29497",
+  "quesito": 6172,
+  "text": "Quando l’alternatore si guasta, il motore si spegne di colpo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29498",
+  "quesito": 6172,
+  "text": "L’alternatore fornisce corrente alternativamente al motore o alla batteria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29499",
+  "quesito": 6172,
+  "text": "Mediante un pulsante situato sul cruscotto, l’autista decide se l’alternatore deve fornire corrente al motore o alla batteria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29500",
+  "quesito": 6172,
+  "text": "L’alternatore funziona anche a motore spento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29501",
+  "quesito": 6173,
+  "text": "Sia il motore a scoppio che quello Diesel sono dotati del motorino d’avviamento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29502",
+  "quesito": 6173,
+  "text": "Il motorino d’avviamento viene alimentato dalla corrente fornita dalla batteria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29503",
+  "quesito": 6173,
+  "text": "Se il motorino di avviamento non funziona, ciò può dipendere dal fatto che la batteria è scarica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29504",
+  "quesito": 6173,
+  "text": "Se il motorino di avviamento funziona, ma il motore non gira, può darsi che il pignoncino o il suo cuscinetto reggi-spinta si siano rotti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29505",
+  "quesito": 6173,
+  "text": "Su alcuni veicoli a motore Diesel, il motorino di avviamento è alimentato dal gasolio proveniente dal serbatoio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29506",
+  "quesito": 6173,
+  "text": "In caso di emergenza, il motorino d’avviamento può essere azionato con apposita manovella",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29507",
+  "quesito": 6173,
+  "text": "Il motorino d’avviamento non è presente sugli autoveicoli con cambio automatico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29508",
+  "quesito": 6173,
+  "text": "Il motorino d’avviamento può essere utilizzato facendolo girare al contrario, per potenziare l’effetto frenante del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29509",
+  "quesito": 6174,
+  "text": "La batteria viene mantenuta carica dall’alternatore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29510",
+  "quesito": 6174,
+  "text": "La corrente erogata dalla batteria è sempre continua",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29511",
+  "quesito": 6174,
+  "text": "La corrente erogata dalla batteria è a bassa tensione ed è continua",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29512",
+  "quesito": 6174,
+  "text": "Alcune batterie richiedono periodicamente verifica ed eventuale aggiunta di acqua distillata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29513",
+  "quesito": 6174,
+  "text": "Molte batterie non richiedono particolare manutenzione (batterie sigillate) salvo mantenerle pulite, asciutte e con i morsetti ingrassati",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29514",
+  "quesito": 6174,
+  "text": "La batteria deve essere tenuta pulita, asciutta e sui morsetti deve essere periodicamente messo un apposito grasso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29515",
+  "quesito": 6174,
+  "text": "Il peso delle batterie incide negativamente sulle prestazioni di un autoveicolo con motore elettrico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29516",
+  "quesito": 6174,
+  "text": "L’impianto elettrico di un veicolo pesante funziona generalmente con tensione di 24 volts",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29517",
+  "quesito": 6174,
+  "text": "La batteria dell’impianto elettrico di un autoveicolo è un generatore di corrente alternata a bassa tensione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29518",
+  "quesito": 6174,
+  "text": "Quando l’alternatore si guasta, la batteria si scarica di colpo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29519",
+  "quesito": 6174,
+  "text": "In caso di emergenza, negli elementi della batteria può essere aggiunto liquido antigelo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29520",
+  "quesito": 6174,
+  "text": "L’acqua distillata che si aggiunge nella batteria deve avere temperatura superiore ai 25°",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29521",
+  "quesito": 6174,
+  "text": "Non si può aggiungere acqua distillata alla batteria se il motore è ancora caldo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29522",
+  "quesito": 6174,
+  "text": "Se l’alternatore non funziona, per alcuni chilometri si possono collegare direttamente tra loro i due poli della batteria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29523",
+  "quesito": 6174,
+  "text": "La batteria fornisce corrente al solo motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29524",
+  "quesito": 6174,
+  "text": "La batteria eroga corrente quando il motore è in funzione, mentre si stacca automaticamente a motore fermo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29525",
+  "quesito": 6174,
+  "text": "La batteria dell’impianto elettrico di un autoveicolo è un accumulatore di corrente alternata a bassa tensione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29526",
+  "quesito": 6175,
+  "text": "Gli organi di accensione di un motore a scoppio hanno il compito di produrre una scintilla elettrica per incendiare la miscela aria-benzina",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29527",
+  "quesito": 6175,
+  "text": "Gli organi di accensione di un motore Diesel hanno il compito di produrre una scintilla elettrica per incendiare il gasolio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29528",
+  "quesito": 6175,
+  "text": "Nel motore Diesel ogni cilindro necessita di due candele di accensione, perché il gasolio brucia meno rapidamente della benzina",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29529",
+  "quesito": 6175,
+  "text": "Le candele dei motori Diesel devono essere più resistenti al calore di quelle dei motori a scoppio, a causa della maggior temperatura di funzionamento del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29530",
+  "quesito": 6176,
+  "text": "L'alternatore è un dispositivo che trasforma energia meccanica in energia elettrica sotto forma di corrente alternata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29531",
+  "quesito": 6176,
+  "text": "L’accensione della spia sul cruscotto raffigurante una batteria indica che bisogna immediatamente fermarsi per evitare danni all’impianto elettrico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29532",
+  "quesito": 6177,
+  "text": "Gli organi di trasmissione del moto servono a trasmettere il moto di rotazione del motore alle ruote motrici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29533",
+  "quesito": 6177,
+  "text": "Fanno parte degli organi di trasmissione del moto la frizione, il cambio, il differenziale e la coppia conica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29534",
+  "quesito": 6177,
+  "text": "L’albero di trasmissione non è presente se trazione e motore sono posteriori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29535",
+  "quesito": 6177,
+  "text": "Sui veicoli pesanti, l’albero di trasmissione è generalmente realizzato in più tronconi collegati da giunti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29536",
+  "quesito": 6177,
+  "text": "L’albero di trasmissione non è presente se la trazione è posteriore ed il motore è posizionato nella parte anteriore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29537",
+  "quesito": 6177,
+  "text": "Gli organi di trasmissione del moto servono a tenere informata l’azienda sulla posizione del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29538",
+  "quesito": 6177,
+  "text": "Fa parte degli organi di trasmissione del moto il sistema satellitare GPS",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29539",
+  "quesito": 6177,
+  "text": "Fanno parte degli organi di trasmissione del moto le balestre, il volante e il limitatore di velocità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29540",
+  "quesito": 6177,
+  "text": "Gli organi di trasmissione del moto non sono necessari a bordo dei veicoli elettrici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29541",
+  "quesito": 6178,
+  "text": "In un veicolo munito di trasmissione integrale permanente è necessaria la presenza di tre differenziali",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29542",
+  "quesito": 6178,
+  "text": "La frizione è un dispositivo che consente all'albero motore di girare senza trasmettere il movimento agli organi di trasmissione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29543",
+  "quesito": 6178,
+  "text": "Gli organi della trasmissione del moto presenti negli autoveicoli sono l'insieme di organi che hanno lo scopo di trasferire la potenza generata dal motore alle ruote",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29544",
+  "quesito": 6178,
+  "text": "Il cambio, variando il numero di giri tra albero motore e albero di trasmissione, consente di utilizzare sempre il motore ad un regime di rotazione vicino a quello di potenza massima",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29545",
+  "quesito": 6178,
+  "text": "Il cambio dei veicoli elettrici ha in genere più rapporti di quello montato sui veicoli con motore a scoppio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29546",
+  "quesito": 6178,
+  "text": "La frizione è un dispositivo che permette di variare il rapporto tra il numero dei giri dell’albero motore ed il numero dei giri dell’albero di trasmissione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29547",
+  "quesito": 6179,
+  "text": "La frizione consente l’innesto o il disinnesto del motore con gli altri organi di trasmissione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29548",
+  "quesito": 6179,
+  "text": "Quando il pedale della frizione è sollevato, la frizione è innestata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29549",
+  "quesito": 6179,
+  "text": "Quando il pedale della frizione è sollevato la frizione è disinnestata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29550",
+  "quesito": 6179,
+  "text": "La frizione è posta tra il cambio e l’albero di trasmissione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29551",
+  "quesito": 6180,
+  "text": "Sono organi di trasmissione: la frizione, il cambio, l’albero di trasmissione ed il differenziale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29552",
+  "quesito": 6180,
+  "text": "La frizione serve a collegare in modo graduale il motore con il cambio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29553",
+  "quesito": 6180,
+  "text": "La frizione è un meccanismo che funziona per attrito",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29554",
+  "quesito": 6180,
+  "text": "La frizione è generalmente autoregolante al fine di recuperare il gioco dovuto all’usura delle guarnizione d’attrito (ferodi), in caso contrario deve venire periodicamente \"registrata\" in officina",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29555",
+  "quesito": 6180,
+  "text": "Se la frizione slitta è possibile che sia entrato olio dal motore o dal cambio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29556",
+  "quesito": 6180,
+  "text": "Se la frizione slitta è possibile che il materiale d’attrito del disco sia usurato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29557",
+  "quesito": 6180,
+  "text": "Se la frizione slitta è possibile che il disco sia imbrattato dall’olio del servocomando",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29558",
+  "quesito": 6180,
+  "text": "Se la frizione slitta è possibile che sia guasto il sistema di molle dello spingi-disco",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29559",
+  "quesito": 6180,
+  "text": "Se la frizione slitta e non si interviene è possibile che si verifichino danni maggiori a causa del surriscaldamento di tutto il meccanismo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29560",
+  "quesito": 6180,
+  "text": "Se la frizione è a dischi multipli può essere del tipo \"a bagno d’olio\"",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29561",
+  "quesito": 6180,
+  "text": "Se la frizione è a disco unico è normalmente del tipo \"a secco\"",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29562",
+  "quesito": 6180,
+  "text": "La frizione monodisco a secco è costituita da un grande disco di acciaio le cui superfici sono fornite di una guarnizione di attrito (ferodo)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29563",
+  "quesito": 6180,
+  "text": "Alcuni autoveicoli sono dotati di frizione a dischi multipli",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29564",
+  "quesito": 6180,
+  "text": "Nei mezzi pesanti la frizione viene comandata da un pedale, che aziona un servocomando che spesso utilizza aria compressa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29565",
+  "quesito": 6180,
+  "text": "In molti autocarri e autobus di media portata, il pedale della frizione agisce su un servocomando a funzionamento idraulico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29566",
+  "quesito": 6180,
+  "text": "A bordo di molti autobus, la trasmissione idraulica sostituisce la frizione ed il cambio meccanico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29567",
+  "quesito": 6180,
+  "text": "Se la trasmissione è idraulica non esistono la frizione meccanica e il relativo pedale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29568",
+  "quesito": 6180,
+  "text": "Con la frizione automatica, per ottenere la partenza del veicolo è sufficiente accelerare",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29569",
+  "quesito": 6180,
+  "text": "Per evitare lo slittamento in fase di partenza, la frizione può essere sostituita da un collegamento a ingranaggi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29570",
+  "quesito": 6180,
+  "text": "La frizione serve a mettere in collegamento direttamente il motore con gli assi delle ruote motrici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29571",
+  "quesito": 6180,
+  "text": "Il disco della frizione è in acciaio spazzolato ed è privo di qualsiasi rivestimento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29572",
+  "quesito": 6180,
+  "text": "Se la frizione è automatica il pedale è sostituito da un interruttore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29573",
+  "quesito": 6180,
+  "text": "La frizione ed il riduttore si trovano tra il cambio ed il differenziale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29574",
+  "quesito": 6180,
+  "text": "Se la frizione tende a slittare bisogna circolare senza cambiare mai marcia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29575",
+  "quesito": 6180,
+  "text": "Se la frizione slitta può essere opportuno introdurvi gesso o sabbia dall’apposito sportellino",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29576",
+  "quesito": 6180,
+  "text": "E' sempre bene mantenere il piede appoggiato sulla frizione durante la marcia, in modo da velocizzare le cambiate di marcia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29577",
+  "quesito": 6180,
+  "text": "La frizione è l’organo di trasmissione principale del cambio automatico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29578",
+  "quesito": 6180,
+  "text": "I veicoli con 4 ruote motrici non necessitano di frizione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29579",
+  "quesito": 6180,
+  "text": "I veicoli con doppio asse sterzante sono dotati di due frizioni separate",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29580",
+  "quesito": 6180,
+  "text": "Durante i mesi invernali vi è il rischio che la frizione si blocchi per formazione di ghiaccio al suo interno",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29581",
+  "quesito": 6180,
+  "text": "Se la frizione diventa \"troppo dura\" è bene togliere una delle sue molle di regolazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29582",
+  "quesito": 6180,
+  "text": "La frizione è raffreddata da apposita ventola",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29583",
+  "quesito": 6180,
+  "text": "In discesa è bene viaggiare con frizione premuta per ottenere un risparmio di carburante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29584",
+  "quesito": 6180,
+  "text": "In discesa è bene viaggiare con frizione premuta per evitarne il surriscaldamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29585",
+  "quesito": 6180,
+  "text": "La frizione a dischi multipli viene utilizzata se il cambio di velocità ha più di 4 marce",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29586",
+  "quesito": 6180,
+  "text": "Il pedale della frizione va spinto con molta gradualità e va invece lasciato con movimento rapido e secco",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29587",
+  "quesito": 6181,
+  "text": "Il cambio serve a variare il rapporto fra i giri del motore ed i giri dell’albero di trasmissione e, di conseguenza, delle ruote motrici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29588",
+  "quesito": 6181,
+  "text": "In prima marcia, il numero di giri in uscita dal cambio è inferiore al numero di giri del motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29589",
+  "quesito": 6181,
+  "text": "Il sincronizzatore rende più agevole e silenzioso l’innesto delle marce",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29590",
+  "quesito": 6181,
+  "text": "Nei veicoli pesanti, il cambio è spesso munito di riduttore che raddoppia di fatto il numero delle marce",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29591",
+  "quesito": 6181,
+  "text": "Nei veicoli pesanti, il riduttore del cambio consente di adattare più facilmente la potenza del motore alla variazione degli sforzi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29592",
+  "quesito": 6181,
+  "text": "Il cambio non ha mai due marce con lo stesso rapporto di giri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29593",
+  "quesito": 6181,
+  "text": "Il cambio di un veicolo pesante ha in genere più marce di quello di una autovettura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29594",
+  "quesito": 6181,
+  "text": "Nei veicoli pesanti, il cambio è di norma munito di riduttore che serve a diminuire il numero delle marce disponibili",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29595",
+  "quesito": 6181,
+  "text": "Il cambio serve a variare il rapporto fra il numero di giri dell’albero di trasmissione e quello dei semiassi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29596",
+  "quesito": 6181,
+  "text": "Il cambio è posto tra l’albero motore e la frizione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29597",
+  "quesito": 6181,
+  "text": "Il cambio non ha mai più di 6 marce",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29598",
+  "quesito": 6181,
+  "text": "In prima marcia, il numero di giri in uscita dal cambio è superiore al numero di giri del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29599",
+  "quesito": 6181,
+  "text": "I veicoli eccezionali non sono dotati di cambio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29600",
+  "quesito": 6182,
+  "text": "L’uso del cambio consente al conducente di variare la forza di trazione in relazione al carico del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29601",
+  "quesito": 6182,
+  "text": "Il cambio serve a variare il rapporto tra i giri del motore ed i giri dell’albero di trasmissione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29602",
+  "quesito": 6182,
+  "text": "Il cambio permette di trasmettere alle ruote una forza variabile a seconda della marcia innestata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29603",
+  "quesito": 6182,
+  "text": "Più piccola è la marcia che si inserisce, più alta è la forza di spunto del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29604",
+  "quesito": 6182,
+  "text": "Quanto più \"ridotte\" sono le marce, tanto più elevata è la forza di trazione trasmessa alle ruote",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29605",
+  "quesito": 6182,
+  "text": "In genere, nei veicoli \"pesanti\", la leva del cambio non agisce direttamente sul selettore delle marce, bensì su di un servocomando di tipo pneumatico o idraulico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29606",
+  "quesito": 6182,
+  "text": "Il cambio contiene olio lubrificante nel quale sono parzialmente immersi gli ingranaggi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29607",
+  "quesito": 6182,
+  "text": "Se il cambio è molto rumoroso, è possibile che ciò sia dovuto a mancanza di olio all'interno della sua scatola",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29608",
+  "quesito": 6182,
+  "text": "Se il cambio è molto rumoroso, può essere che qualche cuscinetto degli ingranaggi si sia usurato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29609",
+  "quesito": 6182,
+  "text": "Il cambio dei veicoli pesanti può talvolta avere più di dieci marce",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29610",
+  "quesito": 6182,
+  "text": "Il cambio automatico rende più uniforme la velocità del veicolo, anche durante i cambi di marcia",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29611",
+  "quesito": 6182,
+  "text": "La scatola del cambio contiene olio lubrificante che deve venire sostituito periodicamente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29612",
+  "quesito": 6182,
+  "text": "La scatola del cambio contiene olio lubrificante il cui livello deve essere periodicamente controllato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29613",
+  "quesito": 6182,
+  "text": "I gruppi \"epicicloidali\" sono sistemi di ingranaggi di cui sono dotati alcuni cambi di veicoli pesanti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29614",
+  "quesito": 6182,
+  "text": "Se un ingranaggio grande ne fa girare uno piccolo, l’ingranaggio piccolo ruota con un numero di giri maggiore dell'ingranaggio grande (moltiplicatore)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29615",
+  "quesito": 6182,
+  "text": "Se un ingranaggio piccolo ne fa girare uno più grande, l’ingranaggio grande ruota con un numero di giri minore dell'ingranaggio piccolo (riduttore)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29616",
+  "quesito": 6182,
+  "text": "Se un ingranaggio ne fa girare un altro delle stesse dimensioni, tutti e due gli ingranaggi ruotano con la stessa velocità (rapporto di parità)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29617",
+  "quesito": 6182,
+  "text": "In uscita dal cambio di velocità può talvolta trovarsi il rallentatore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29618",
+  "quesito": 6182,
+  "text": "Il cambio è un meccanismo che permette alle ruote di girare più velocemente del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29619",
+  "quesito": 6182,
+  "text": "Il cambio dei veicoli pesanti ha normalmente due sole marce, una normale e una ridotta",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29620",
+  "quesito": 6182,
+  "text": "Più alta è la marcia che si innesta, più alta è la forza di trazione trasmessa alle ruote",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29621",
+  "quesito": 6182,
+  "text": "Le marce ridotte sono quelle che trasmettono alle ruote motrici una minore forza di trazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29622",
+  "quesito": 6182,
+  "text": "Quando un veicolo molto carico percorre una salita si usano sempre le marce più alte",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29623",
+  "quesito": 6182,
+  "text": "Per effettuare uno spunto in salita con il veicolo carico è necessario inserire una marcia adeguatamente alta",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29624",
+  "quesito": 6182,
+  "text": "Quando si necessita di un cambio silenzioso, le ruote dentate sono sostituite da innesti a frizione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29625",
+  "quesito": 6182,
+  "text": "I cambi automatici possono avere al massimo 5 marce",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29626",
+  "quesito": 6182,
+  "text": "Per risparmiare carburante è bene cambiare marcia senza usare la frizione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29627",
+  "quesito": 6182,
+  "text": "Scalando una marcia si diminuisce il regime di giri del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29628",
+  "quesito": 6182,
+  "text": "Innestando una marcia più alta si aumenta il regime di giri del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29629",
+  "quesito": 6182,
+  "text": "Per sfruttare l’effetto frenante del motore occorre usare marce alte",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29630",
+  "quesito": 6182,
+  "text": "Tramite il contagiri posto sul cruscotto, è possibile conoscere il numero di giri delle ruote motrici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29631",
+  "quesito": 6182,
+  "text": "Il turbocompressore del motore entra in azione quando si innesta una marcia superiore alla terza",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29632",
+  "quesito": 6182,
+  "text": "Alcuni veicoli per cava e cantiere hanno il cambio raffreddato ad acqua",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29633",
+  "quesito": 6182,
+  "text": "Il cambio serve a mantenere la velocità rotativa dell’albero di trasmissione costante, indipendentemente dal numero dei giri del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29634",
+  "quesito": 6182,
+  "text": "Il cambio automatico deve essere disinserito nelle discese ripide",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29635",
+  "quesito": 6183,
+  "text": "Se il veicolo è a trazione integrale, significa che tutte le ruote sono motrici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29636",
+  "quesito": 6183,
+  "text": "\"Trazione anteriore\" significa che sono motrici le sole ruote di uno o più assi anteriori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29637",
+  "quesito": 6183,
+  "text": "\"Trazione posteriore\" significa che sono motrici le sole ruote di uno o più assi posteriori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29638",
+  "quesito": 6183,
+  "text": "In genere, i veicoli pesanti sono a trazione anteriore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29639",
+  "quesito": 6183,
+  "text": "I veicoli dotati di cambio automatico sono in genere a trazione integrale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29640",
+  "quesito": 6183,
+  "text": "I veicoli a trazione posteriore devono forzatamente avere motore anteriore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29641",
+  "quesito": 6184,
+  "text": "La coppia conica è costituita da due ingranaggi sempre in presa, chiamati pignone e corona",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29642",
+  "quesito": 6184,
+  "text": "La coppia conica serve, tra l’altro, a ridurre la velocità delle ruote rispetto a quella dell’albero motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29643",
+  "quesito": 6184,
+  "text": "La coppia conica serve, tra l’altro, a deviare di 90° il moto rotatorio dell’albero di trasmissione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29644",
+  "quesito": 6184,
+  "text": "La coppia conica è in genere utilizzata nei veicoli con motore anteriore e trazione posteriore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29645",
+  "quesito": 6184,
+  "text": "Una delle caratteristiche della coppia conica è il rapporto al ponte",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29647",
+  "quesito": 6184,
+  "text": "La coppia conica serve, tra l’altro, ad aumentare la velocità delle ruote rispetto a quella dell’albero motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29648",
+  "quesito": 6184,
+  "text": "La coppia conica serve, tra l’altro, a deviare di 60° il moto rotatorio dell’albero di trasmissione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29649",
+  "quesito": 6184,
+  "text": "La coppia conica è inserita manualmente dall’autista grazie a un comando posto sul cruscotto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29650",
+  "quesito": 6184,
+  "text": "Nella coppia conica, il pignone trasmette il moto alla corona grazie a un disco a frizione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29652",
+  "quesito": 6185,
+  "text": "Il sincronizzatore è un dispositivo che facilita l'accoppiamento degli ingranaggi del cambio durante il passaggio da una marcia all'altra",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29653",
+  "quesito": 6185,
+  "text": "Durante la percorrenza di una curva, il differenziale consente di trasferire parte della velocità di rotazione dalla ruota motrice interna a quella esterna alla curva",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29654",
+  "quesito": 6185,
+  "text": "La funzione del cambio di velocità è quella di modificare la potenza erogabile alle ruote per vincere più facilmente le resistenze all'avanzamento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29655",
+  "quesito": 6185,
+  "text": "Il differenziale è un meccanismo che consente di evitare lo strisciamento delle ruote durante la percorrenza di una curva",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29656",
+  "quesito": 6185,
+  "text": "Nei veicoli pesanti le variazioni di massa tra veicolo carico e veicolo scarico sono significative e quindi vengono utilizzati cambi con un numero di rapporti superiore ai cambi utilizzati nei veicoli leggeri",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29657",
+  "quesito": 6185,
+  "text": "Nei cambi montati sui veicoli pesanti, lo splitter è una levetta posizionata sotto il pomello del cambio che consente di scegliere tra un gruppo di marce \"veloci\" e uno di \"lente\"",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29659",
+  "quesito": 6185,
+  "text": "Il differenziale consente di mantenere una trazione ottimale del veicolo anche su terreni con scarsa aderenza",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29660",
+  "quesito": 6185,
+  "text": "Durante la percorrenza di una curva, il differenziale consente di trasferire parte della velocità di rotazione dalla ruota motrice esterna a quella interna alla curva",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29661",
+  "quesito": 6185,
+  "text": "Il sincronizzatore è un dispositivo che fa parte del cambio di velocità e che consente di far girare l'albero motore e quello di trasmissione alla stessa velocità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29662",
+  "quesito": 6185,
+  "text": "Se un cambio di velocità è dotato di sincronizzatori delle marce, diventa inutile la presenza della frizione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29663",
+  "quesito": 6186,
+  "text": "Il volano è un pesante disco, collegato all'albero motore, che serve come base di appoggio per il disco della frizione, nonché per avviare e per regolarizzare la rotazione dell'albero motore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29664",
+  "quesito": 6186,
+  "text": "Il volano serve ad aumentare la velocità di rotazione del motore quando il veicolo deve effettuare grossi sforzi (ad esempio: salita ripida)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29665",
+  "quesito": 6187,
+  "text": "Ogni asse motore è dotato di un differenziale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29666",
+  "quesito": 6187,
+  "text": "Il differenziale trasmette il moto alle ruote tramite due semiassi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29667",
+  "quesito": 6187,
+  "text": "Il differenziale è un ripartitore di giri tra le ruote motrici di uno stesso asse",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29668",
+  "quesito": 6187,
+  "text": "Il differenziale contiene olio lubrificante che deve venire periodicamente sostituito",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29669",
+  "quesito": 6187,
+  "text": "Il differenziale permette alle ruote motrici di avere diversa velocità una rispetto all’altra",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29670",
+  "quesito": 6187,
+  "text": "L’albero di trasmissione deve essere molto rigido per impedire le oscillazioni del differenziale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29671",
+  "quesito": 6187,
+  "text": "Il differenziale non può essere sull'asse delle ruote direttrici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29672",
+  "quesito": 6187,
+  "text": "Il differenziale non si trova mai sui veicoli adatti a percorsi fuori-strada perché è troppo delicato e potrebbe essere danneggiato dai sobbalzi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29673",
+  "quesito": 6187,
+  "text": "Se un asse è dotato di ruote gemellate deve avere due differenziali",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29674",
+  "quesito": 6187,
+  "text": "Il differenziale non viene montato sui veicoli da cava o cantiere perché è troppo delicato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29675",
+  "quesito": 6187,
+  "text": "Al posto del differenziale può essere montata la coppia conica",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29676",
+  "quesito": 6187,
+  "text": "Se il cambio è automatico, il differenziale è inserito al suo interno",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29677",
+  "quesito": 6188,
+  "text": "La frizione fa parte degli organi di trasmissione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29678",
+  "quesito": 6188,
+  "text": "La frizione può essere di tipo monodisco a secco",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29679",
+  "quesito": 6188,
+  "text": "In alcuni autoveicoli la frizione si innesta automaticamente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29680",
+  "quesito": 6188,
+  "text": "In alcuni autoveicoli il comando della frizione è automatico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29681",
+  "quesito": 6188,
+  "text": "La frizione può essere ad attrito meccanico, idraulica, elettroidraulica o elettromagnetica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29682",
+  "quesito": 6188,
+  "text": "La frizione può essere del tipo a disco unico o a dischi multipli",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29683",
+  "quesito": 6188,
+  "text": "La frizione a dischi multipli è adatta soprattutto per i veicoli di massa e/o potenza elevate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29684",
+  "quesito": 6188,
+  "text": "La frizione può essere di tipo automatico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29685",
+  "quesito": 6188,
+  "text": "La frizione a dischi multipli può essere a secco oppure a bagno d'olio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29686",
+  "quesito": 6188,
+  "text": "La frizione può anche essere a comando idraulico oppure pneumo-idraulico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29687",
+  "quesito": 6188,
+  "text": "Nei veicoli provvisti di cambio automatico la frizione deve essere del tipo ad attrito e a disco singolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29688",
+  "quesito": 6188,
+  "text": "La frizione fa parte degli organi di sospensione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29689",
+  "quesito": 6188,
+  "text": "Non esistono frizioni comandate automaticamente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29690",
+  "quesito": 6188,
+  "text": "La frizione a dischi multipli non viene mai montata sui veicoli pesanti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29691",
+  "quesito": 6189,
+  "text": "La frizione consente di collegare e scollegare il motore con gli altri organi di trasmissione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29692",
+  "quesito": 6189,
+  "text": "La frizione consente di far partire il veicolo collegando gradualmente l'albero motore con le ruote motrici attraverso gli organi di trasmissione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29693",
+  "quesito": 6189,
+  "text": "La frizione consente di tenere in funzionamento il motore quando il veicolo è fermo con marcia inserita",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29694",
+  "quesito": 6189,
+  "text": "Le masse centrifughe che innestano la frizione automatica si spostano verso l'interno quando i giri del motore diminuiscono",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29696",
+  "quesito": 6189,
+  "text": "Il comando idraulico della frizione sfrutta la pressione dell'olio per ridurre lo sforzo del conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29697",
+  "quesito": 6189,
+  "text": "La frizione consente di cambiare marcia quando il veicolo è in movimento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29698",
+  "quesito": 6189,
+  "text": "La frizione deve essere innestata in maniera graduale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29699",
+  "quesito": 6189,
+  "text": "L'innesto della frizione automatica può avvenire tramite lo spostamento di masse centrifughe",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29700",
+  "quesito": 6189,
+  "text": "Il piede sinistro del conducente, quando non agisce sul comando per effettuare un cambio di marcia, non deve appoggiare sul pedale della frizione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29701",
+  "quesito": 6189,
+  "text": "La frizione può essere comandata automaticamente tramite un controllo elettronico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29702",
+  "quesito": 6189,
+  "text": "L'innesto della frizione automatica può essere di tipo elettromagnetico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29703",
+  "quesito": 6189,
+  "text": "L'innesto e il disinnesto della frizione automatica può avvenire tramite lo spostamento di masse centrifughe",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29704",
+  "quesito": 6189,
+  "text": "Le masse centrifughe che innestano la frizione automatica si spostano verso l'esterno quando i giri del motore aumentano",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29705",
+  "quesito": 6189,
+  "text": "La frizione permette di effettuare una partenza graduale con un veicolo carico di merce",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29706",
+  "quesito": 6189,
+  "text": "Per migliorare la postura di guida, il conducente deve tenere appoggiato il piede sinistro sul pedale della frizione durante la marcia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29707",
+  "quesito": 6189,
+  "text": "Le masse centrifughe che innestano la frizione automatica si spostano verso l'interno quando i giri del motore aumentano",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29708",
+  "quesito": 6189,
+  "text": "Le masse centrifughe che innestano la frizione automatica si spostano verso l'esterno quando i giri del motore diminuiscono",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29709",
+  "quesito": 6189,
+  "text": "Le masse centrifughe che innestano la frizione automatica non si spostano quando i giri del motore diminuiscono",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29710",
+  "quesito": 6189,
+  "text": "La frizione serve a dirigere il veicolo durante la marcia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29711",
+  "quesito": 6189,
+  "text": "Le masse centrifughe che innestano la frizione automatica non si spostano quando i giri del motore aumentano",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29712",
+  "quesito": 6189,
+  "text": "Un veicolo dotato di frizione automatica ha sempre una portata minore di un veicolo a frizione comandata dal conducente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29713",
+  "quesito": 6189,
+  "text": "L'innesto della frizione automatica può avvenire tramite lo spostamento di leve telescopiche",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29714",
+  "quesito": 6189,
+  "text": "Il disinnesto della frizione automatica avviene tramite lo spostamento di giunti cardanici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29715",
+  "quesito": 6189,
+  "text": "L'innesto della frizione automatica può essere solo di tipo idraulico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29716",
+  "quesito": 6189,
+  "text": "Il comando idraulico della frizione migliora la stabilità del veicolo in curva",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29717",
+  "quesito": 6189,
+  "text": "Il comando idraulico della frizione sfrutta la pressione dell'aria per ridurre lo sforzo del conducente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29718",
+  "quesito": 6189,
+  "text": "La frizione consente di connettere e disconnettere gradualmente il motore con la pompa di iniezione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29719",
+  "quesito": 6189,
+  "text": "La frizione non consente di cambiare marcia quando il veicolo è in movimento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29720",
+  "quesito": 6189,
+  "text": "Il comando idraulico della frizione sfrutta la pressione dell'olio motore per ridurre lo sforzo del conducente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29721",
+  "quesito": 6189,
+  "text": "La frizione si dice \"innestata\" quando il pedale che la comanda è abbassato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29722",
+  "quesito": 6189,
+  "text": "La frizione si dice \"innestata\" quando il pedale che la comanda è premuto a fondo dal conducente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29723",
+  "quesito": 6189,
+  "text": "Tutti i veicoli che non sono dotati di pedale della frizione sono detti \"a presa diretta\"",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29724",
+  "quesito": 6190,
+  "text": "Lo spingidisco fa parte dei componenti della frizione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29725",
+  "quesito": 6190,
+  "text": "Il piatto spingidisco fa parte degli organi di trasmissione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29726",
+  "quesito": 6190,
+  "text": "Il comando idraulico della frizione consente di ridurre lo sforzo del conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29727",
+  "quesito": 6190,
+  "text": "Se il veicolo è dotato di frizione automatica il pedale della frizione non esiste",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29728",
+  "quesito": 6190,
+  "text": "In tutti gli autoveicoli è presente il pedale della frizione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29729",
+  "quesito": 6190,
+  "text": "Lo spingidisco fa parte dei componenti del differenziale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29730",
+  "quesito": 6190,
+  "text": "Lo spingidisco fa parte dei componenti dei freni a tamburo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29731",
+  "quesito": 6190,
+  "text": "Il disco della frizione non deve mai entrare in contatto col volano",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29732",
+  "quesito": 6190,
+  "text": "Il piatto spingidisco fa parte degli organi di sospensione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29733",
+  "quesito": 6190,
+  "text": "Il piatto spingidisco fa parte degli organi di frenatura",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29734",
+  "quesito": 6190,
+  "text": "La frizione può essere del tipo a dischi variabili",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29735",
+  "quesito": 6190,
+  "text": "La frizione a dischi multipli può essere a secco oppure a bagno d'acqua",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29736",
+  "quesito": 6190,
+  "text": "La frizione a dischi multipli può essere solo a secco",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29737",
+  "quesito": 6190,
+  "text": "La frizione a dischi multipli può essere montata solo su veicoli dotati di cambio automatico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29738",
+  "quesito": 6190,
+  "text": "Se il veicolo non ha il pedale della frizione allora è anche sprovvisto di cambio di velocità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29739",
+  "quesito": 6190,
+  "text": "Se il veicolo è dotato di frizione automatica il pedale della frizione viene bloccato in posizione abbassata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29740",
+  "quesito": 6190,
+  "text": "Se il veicolo è dotato di frizione automatica il pedale della frizione viene bloccato in posizione alzata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29741",
+  "quesito": 6190,
+  "text": "Se il veicolo è dotato di frizione automatica il pedale della frizione non esiste e il veicolo è privo di cambio di velocità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29742",
+  "quesito": 6190,
+  "text": "Se il veicolo è dotato di frizione automatica il veicolo è privo di cambio di velocità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29743",
+  "quesito": 6191,
+  "text": "La frizione consente di connettere e disconnettere gradualmente il motore con le ruote motrici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29744",
+  "quesito": 6191,
+  "text": "Il pedale della frizione comanda il cuscinetto reggispinta della frizione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29745",
+  "quesito": 6191,
+  "text": "Il ferodo presente sul disco della frizione è soggetto a usura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29746",
+  "quesito": 6191,
+  "text": "Lo stato di usura della frizione dipende anche dallo stile di guida del conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29747",
+  "quesito": 6191,
+  "text": "Il sovraccarico del veicolo usura maggiormente la frizione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29748",
+  "quesito": 6191,
+  "text": "Periodicamente può essere necessario registrare la corsa del pedale della frizione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29749",
+  "quesito": 6191,
+  "text": "Il pedale della frizione è alzato quando la frizione è innestata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29750",
+  "quesito": 6191,
+  "text": "Il disco della frizione è collegato permanentemente all'albero primario del cambio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29751",
+  "quesito": 6191,
+  "text": "Il pedale della frizione può comandare il cuscinetto reggispinta con dispositivi di tipo idraulico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29752",
+  "quesito": 6191,
+  "text": "Il pedale della frizione può comandare il cuscinetto reggispinta con dispositivi di tipo pneumatico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29753",
+  "quesito": 6191,
+  "text": "Il pedale della frizione può comandare il cuscinetto reggispinta con dispositivi di tipo meccanico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29754",
+  "quesito": 6191,
+  "text": "Il disco della frizione, a frizione innestata (pedale alzato), entra in contatto col volano",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29755",
+  "quesito": 6191,
+  "text": "Il ferodo presente sul disco della frizione può usurarsi causando lo slittamento del disco sul volano",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29756",
+  "quesito": 6191,
+  "text": "Il pedale della frizione deve essere rilasciato gradualmente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29757",
+  "quesito": 6191,
+  "text": "Nei veicoli pesanti, il comando idraulico della frizione riduce lo sforzo del conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29758",
+  "quesito": 6191,
+  "text": "La frizione a comando pneumo-idraulico non è idonea all’uso sui veicoli industriali",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29759",
+  "quesito": 6191,
+  "text": "Un veicolo provvisto di frizione a comando pneumo-idraulico deve essere lasciato in sosta col cambio con la prima marcia inserita",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29760",
+  "quesito": 6191,
+  "text": "Durante la marcia del veicolo la frizione è staccata dal volano",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29761",
+  "quesito": 6191,
+  "text": "Il conducente non può intervenire sul comando della frizione se la stessa è di tipo pneumo-idraulico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29762",
+  "quesito": 6191,
+  "text": "Il pedale della frizione può comandare il cuscinetto reggispinta con dispositivi di tipo a vite senza fine",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29763",
+  "quesito": 6191,
+  "text": "Il disco della frizione è collegato permanentemente all'albero secondario del cambio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29764",
+  "quesito": 6191,
+  "text": "Il disco della frizione è collegato permanentemente all'albero ausiliario del cambio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29765",
+  "quesito": 6191,
+  "text": "Il pedale della frizione comanda i satelliti del differenziale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29766",
+  "quesito": 6191,
+  "text": "Il ferodo presente sul disco della frizione deve essere periodicamente ingrassato e oliato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29767",
+  "quesito": 6191,
+  "text": "Il ferodo presente sul disco della frizione deve essere periodicamente pulito con benzina",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29768",
+  "quesito": 6191,
+  "text": "Periodicamente è necessario ingrassare il disco della frizione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29769",
+  "quesito": 6191,
+  "text": "Periodicamente è necessario allentare le molle dello spingidisco della frizione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29770",
+  "quesito": 6191,
+  "text": "Per mantenere efficiente la frizione è necessario sostituire l'olio dell'impianto frenante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29771",
+  "quesito": 6191,
+  "text": "Per mantenere efficiente la frizione è necessario sostituire l'olio del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29772",
+  "quesito": 6191,
+  "text": "Per mantenere efficiente la frizione è necessario controllare il livello dell'olio tramite l'apposita asta graduata",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29773",
+  "quesito": 6191,
+  "text": "Il ferodo presente sul disco della frizione non è soggetto a usura",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29774",
+  "quesito": 6191,
+  "text": "Se il veicolo ha la frizione automatica, non è necessario provvedere alla manutenzione della frizione stessa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29775",
+  "quesito": 6191,
+  "text": "La frizione non ha bisogno di manutenzione in quanto è autoregistrante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29776",
+  "quesito": 6191,
+  "text": "I veicoli dotati di frizione automatica sono maggiormente soggetti a ribaltamento in curva",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "11",
+  "code": "29777",
+  "quesito": 6191,
+  "text": "Il pedale della frizione può essere rilasciato bruscamente dal conducente in fase di partenza",
+  "risposta": false,
+  "image": null
+ }
+]

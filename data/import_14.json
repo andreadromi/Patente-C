@@ -1,0 +1,1754 @@
+[
+ {
+  "argomentoCode": "14",
+  "code": "30246",
+  "quesito": 6224,
+  "text": "Il sistema di frenatura consente di trasformare in calore l'energia cinetica posseduta da un veicolo in movimento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30247",
+  "quesito": 6224,
+  "text": "Il sistema di frenatura pneumatico di tipo continuo ed automatico, installato sui veicoli pesanti, ha tempi di risposta più lenti rispetto ai sistemi di frenatura idraulici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30248",
+  "quesito": 6224,
+  "text": "Il sistema di frenatura di soccorso di un veicolo ha il compito di garantire l'arresto di emergenza in caso di avaria del sistema di servizio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30249",
+  "quesito": 6224,
+  "text": "Il sistema di frenatura di un veicolo pesante può essere di tipo pneumatico integrale o pneumoidraulico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30250",
+  "quesito": 6224,
+  "text": "Il sistema di frenatura pneumatico di un rimorchio consente la frenatura automatica di emergenza in caso di sganciamento accidentale dalla motrice",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30251",
+  "quesito": 6224,
+  "text": "Il compressore di un impianto di frenatura, ha il compito di inviare continuamente aria compressa nei serbatoi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30252",
+  "quesito": 6224,
+  "text": "La valvola di sicurezza contenuta nel regolatore di pressione di un impianto di frenatura pneumatico è tarata a una pressione compresa tra il valore minimo di funzionamento dell'impianto e il valore massimo a cui corrisponde l'apertura della valvola di scarico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30253",
+  "quesito": 6224,
+  "text": "I dispositivi di frenatura obbligatori per un autoveicolo sono il freno di servizio ed il freno a mano, che funge sempre anche da freno di soccorso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30254",
+  "quesito": 6224,
+  "text": "Il dispositivo antibloccaggio in frenata ABS impedisce il bloccaggio delle ruote in caso di frenatura, purché il fondo stradale non sia innevato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30255",
+  "quesito": 6224,
+  "text": "L’impianto di frenatura pneumoidraulico è sempre munito di un serbatoio ad azoto compresso per imprimere maggior potenza frenante all’impianto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30256",
+  "quesito": 6225,
+  "text": "Nei veicoli con impianti di frenatura dotati di ABS viene mantenuta la stabilità direzionale in frenata",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30257",
+  "quesito": 6225,
+  "text": "Nei veicoli con impianti di frenatura dotati di ABS si ottiene in genere una riduzione delle distanze di frenatura, soprattutto in condizioni di scarsa aderenza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30258",
+  "quesito": 6225,
+  "text": "In un impianto frenante pneumatico, il regolatore di pressione ha il compito di mantenere l'impianto ad una pressione non superiore a un limite prefissato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30259",
+  "quesito": 6225,
+  "text": "Il regolatore di pressione di un impianto frenante pneumatico o pneumoidraulico comprende una valvola di ritenuta, che impedisce la caduta di pressione dell'impianto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30260",
+  "quesito": 6225,
+  "text": "Il regolatore di pressione di un impianto frenante pneumatico o pneumoidraulico comprende una valvola di scarico, che scarica in atmosfera l'aria in eccesso quando si è raggiunto il valore di pressione massimo stabilito",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30261",
+  "quesito": 6225,
+  "text": "Il regolatore di pressione di un impianto frenante pneumatico o pneumoidraulico comprende una valvola di sicurezza, che scarica l'aria in atmosfera nel caso di avarie del dispositivo che abbiano causato anomali aumenti di pressione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30262",
+  "quesito": 6225,
+  "text": "Fa parte del freno a disco di un autoveicolo, un disco metallico che gira solidale con la ruota",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30263",
+  "quesito": 6225,
+  "text": "E' parte del freno a disco di un autoveicolo, una pinza che contiene gli elementi d'attrito e, tramite un sistema idraulico, permette di stringerli fortemente al disco durante la frenatura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30264",
+  "quesito": 6225,
+  "text": "Fanno parte del freno a disco i pistoncini, azionati da una pompa idraulica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30265",
+  "quesito": 6225,
+  "text": "Il sistema ABS, evitando il bloccaggio delle ruote in caso di energica frenata, consente di non far diminuire l'aderenza con il fondo stradale, riducendo così lo spazio di arresto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30266",
+  "quesito": 6225,
+  "text": "E' parte del freno a tamburo, un'asta con puntale a cuneo che, spinta da una membrana, permette di schiacciare le ganasce contro i tamburi generando attrito",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30267",
+  "quesito": 6225,
+  "text": "Nei freni a tamburo, le ganasce sono ricoperte di guarnizione di attrito (ferodo)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30268",
+  "quesito": 6225,
+  "text": "I freni a disco possono essere del tipo autoventilato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30269",
+  "quesito": 6225,
+  "text": "Il regolatore di pressione di un impianto frenante pneumatico o pneumoidraulico è collegato direttamente alla catena di distribuzione del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30270",
+  "quesito": 6225,
+  "text": "Il regolatore di pressione di un impianto frenante pneumatico o pneumoidraulico ha il compito di inviare aria in pressione direttamente agli elementi frenanti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30271",
+  "quesito": 6225,
+  "text": "Fanno parte del freno a disco i pistoncini, azionati direttamente dall'aria compressa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30272",
+  "quesito": 6225,
+  "text": "Il sistema ABS rende inutile la presenza del freno di soccorso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30273",
+  "quesito": 6225,
+  "text": "E' parte del freno a tamburo un disco metallico attorno al quale si stringono le ganasce ricoperte di guarnizione di attrito (ferodo)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30274",
+  "quesito": 6225,
+  "text": "I freni a disco e quelli a tamburo sono costruttivamente uguali, a parte il tipo di guarnizione di attrito usata in ciascuno dei due",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30275",
+  "quesito": 6225,
+  "text": "Nei veicoli pesanti di maggiori dimensioni (M3 ed N3), su ogni ruota sono montati insieme sia un freno a disco che uno a tamburo, per avere una maggior potenza frenante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30276",
+  "quesito": 6225,
+  "text": "In un impianto frenante pneumatico, il regolatore di pressione ha il compito di mantenere l'impianto a una pressione sempre superiore a 18 bar",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30277",
+  "quesito": 6225,
+  "text": "I freni a tamburo possono essere del tipo autoventilato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30278",
+  "quesito": 6225,
+  "text": "I freni a tamburo non possono essere montati su veicoli dotati di rallentatore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30279",
+  "quesito": 6225,
+  "text": "I freni a disco non possono essere montati su veicoli dotati di rallentatore elettromagnetico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30280",
+  "quesito": 6226,
+  "text": "La frenatura pneumatica è tipica dei veicoli di massa elevata, per i quali è necessaria una grande potenza frenante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30281",
+  "quesito": 6226,
+  "text": "Nella frenatura pneumoidraulica sono presenti sia un circuito idraulico che uno pneumatico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30282",
+  "quesito": 6226,
+  "text": "La frenatura di stazionamento di un autoveicolo con frenatura pneumatica, avviene per svuotamento di una camera del bielemento frenante (contenente aria compressa a veicolo sfrenato)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30283",
+  "quesito": 6226,
+  "text": "La forza necessaria alla frenatura di stazionamento di un autoveicolo con frenatura pneumatica è di tipo meccanico ed è garantita da molle",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30284",
+  "quesito": 6226,
+  "text": "In un autoveicolo devono essere presenti ed efficienti il freno di servizio, quello di stazionamento e quello di soccorso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30285",
+  "quesito": 6226,
+  "text": "Se si è alla guida di un autoveicolo di recente costruzione, la rottura del tubo dell’aria dei freni della ruota anteriore destra ci permette comunque di raggiungere un’officina, anche se a velocità estremamente ridotta",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30286",
+  "quesito": 6226,
+  "text": "Sugli autoveicoli di massa superiore a 3,5 tonnellate, il freno di soccorso interviene automaticamente in caso di malore del conducente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30287",
+  "quesito": 6226,
+  "text": "La frenatura di stazionamento e quella di soccorso sono due diversi modi di definire lo stesso tipo di frenatura",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30288",
+  "quesito": 6226,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, la condotta automatica del freno non è mai in pressione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30289",
+  "quesito": 6226,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, la condotta moderabile del freno è sempre in pressione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30290",
+  "quesito": 6226,
+  "text": "Non esistono circuiti frenanti di tipo pneumoidraulico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30291",
+  "quesito": 6226,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, la rottura del tubo dell’aria dei freni della ruota anteriore destra richiede l’arresto immediato del veicolo, ovunque ci si trovi, con contestuale richiesta di soccorso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30292",
+  "quesito": 6227,
+  "text": "L’azionamento del freno di stazionamento comporta l’espulsione dell’aria dal bielemento frenante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30293",
+  "quesito": 6227,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, all'interno dei serbatoi dell'aria può depositarsi, per condensazione, una certa quantità di acqua",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30294",
+  "quesito": 6227,
+  "text": "Nella manutenzione ordinaria degli autoveicoli dotati di frenatura pneumatica, è buona norma spurgare periodicamente i serbatoi dell’aria compressa, eliminando l’acqua eventualmente formatasi per condensazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30295",
+  "quesito": 6227,
+  "text": "Occorre sempre controllare che la pressione nei serbatoi principali dell’impianto frenante pneumatico non scenda al di sotto del valore minimo previsto dalla casa costruttrice del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30296",
+  "quesito": 6227,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, il distributore a mano permette la frenatura di stazionamento immettendo aria nei bielementi frenanti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30297",
+  "quesito": 6227,
+  "text": "In caso di svuotamento dei serbatoi dell'aria compressa l'autoveicolo rimane sfrenato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30298",
+  "quesito": 6227,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, la presenza di acqua nei serbatoi è utile perché aumenta la pressione dell'aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30299",
+  "quesito": 6227,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, l’azionamento del freno di stazionamento può essere effettuato anche con veicolo in marcia",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30300",
+  "quesito": 6227,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, occorre sempre controllare che la pressione nei serbatoi principali dell’impianto frenante sia pari a quella delle sospensioni pneumatiche",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30301",
+  "quesito": 6228,
+  "text": "La frenatura di un veicolo avviene grazie alla trasformazione della sua energia cinetica in calore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30302",
+  "quesito": 6228,
+  "text": "La frenatura di servizio è ripartita su tutte le ruote del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30303",
+  "quesito": 6228,
+  "text": "La frenatura degli autoveicoli è in genere ottenuta mediante freni ad attrito",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30304",
+  "quesito": 6228,
+  "text": "La massima forza frenante applicabile all’autoveicolo è pari al suo peso aderente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30305",
+  "quesito": 6228,
+  "text": "L’ABS permette di sfruttare al meglio la forza frenante disponibile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30306",
+  "quesito": 6228,
+  "text": "Per ottenere una buona frenatura occorre evitare il bloccaggio delle ruote",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30307",
+  "quesito": 6228,
+  "text": "La distribuzione dei pesi sul veicolo influisce sulla frenatura",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30308",
+  "quesito": 6228,
+  "text": "L’ABS permette di raddoppiare la forza frenante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30309",
+  "quesito": 6228,
+  "text": "La distanza di frenatura minima si ottiene con il bloccaggio di tutte le ruote",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30310",
+  "quesito": 6228,
+  "text": "La distribuzione dei pesi sul veicolo non influisce sulla frenatura",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30311",
+  "quesito": 6228,
+  "text": "La massima forza frenante applicabile all’autoveicolo è pari a metà del suo peso aderente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30312",
+  "quesito": 6228,
+  "text": "Il riscaldamento dei freni ne migliora la funzionalità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30313",
+  "quesito": 6228,
+  "text": "I freni dei veicoli di massa complessiva a pieno carico superiore a 7,5 tonnellate sono raffreddati ad acqua",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30314",
+  "quesito": 6228,
+  "text": "Sui veicoli a 3 assi, la frenatura è ripartita tra l’asse anteriore e uno dei due assi posteriori",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30315",
+  "quesito": 6229,
+  "text": "Gli autoveicoli devono essere dotati di 3 sistemi di frenatura: servizio, soccorso, stazionamento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30316",
+  "quesito": 6229,
+  "text": "La frenatura di stazionamento di un autoveicolo deve essere ad azione puramente meccanica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30317",
+  "quesito": 6229,
+  "text": "La frenatura di servizio degli autoveicoli deve agire su tutte le ruote",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30318",
+  "quesito": 6229,
+  "text": "La frenatura di servizio degli autoveicoli deve essere moderabile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30319",
+  "quesito": 6229,
+  "text": "La frenatura di servizio degli autoveicoli deve essere azionabile dal conducente dal proprio posto di guida senza togliere le mani dal volante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30320",
+  "quesito": 6229,
+  "text": "La frenatura di soccorso deve essere moderabile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30321",
+  "quesito": 6229,
+  "text": "La frenatura di soccorso viene normalmente realizzata con l’uso \"a fondo\" del freno di stazionamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30322",
+  "quesito": 6229,
+  "text": "La frenatura di stazionamento è in genere conglobata col servofreno",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30323",
+  "quesito": 6229,
+  "text": "La frenatura di servizio degli autoveicoli deve essere di tipo \"a impulsi\"",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30324",
+  "quesito": 6229,
+  "text": "Il comando del freno di stazionamento è lo stesso del freno di servizio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30325",
+  "quesito": 6229,
+  "text": "Su tutti gli autoveicoli devono essere presenti idonei cunei per il fermo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30326",
+  "quesito": 6230,
+  "text": "Fanno parte dell’impianto di frenatura pneumatico il compressore e i serbatoi dell’aria compressa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30327",
+  "quesito": 6230,
+  "text": "Quando il veicolo è in marcia, nell’impianto di frenatura pneumatico deve esservi sempre aria in pressione nel tratto di impianto compreso tra il compressore e il distributore duplex",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30328",
+  "quesito": 6230,
+  "text": "Nell’impianto di frenatura pneumoidraulico (freno misto), i convertitori trasformano la pressione dell’aria in pressione idraulica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30329",
+  "quesito": 6230,
+  "text": "L’impianto di frenatura pneumatico integrale o quello pneumoidraulico, sono divisi in più sezioni indipendenti, una per le ruote anteriori, una per quelle posteriori ed eventualmente una per il rimorchio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30330",
+  "quesito": 6230,
+  "text": "Nei veicoli con impianto di frenatura ad aria compressa, appositi dispositivi modulatori regolano la pressione dell’aria diretta agli elementi frenanti dell’asse posteriore in base al carico del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30331",
+  "quesito": 6230,
+  "text": "Se l’impianto di frenatura pneumatica o pneumoidraulica non è in pressione, il veicolo non può essere messo in movimento perché non è possibile disinserire il freno di stazionamento a molla",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30332",
+  "quesito": 6230,
+  "text": "Se l’impianto di frenatura è tipo pneumatico, prima della partenza è necessario accertarsi che nei serbatoi vi sia pressione sufficiente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30333",
+  "quesito": 6230,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, se si verifica una perdita di aria in una sezione dell’impianto di frenatura, le altre sezioni possono funzionare regolarmente; tale struttura costituisce il \"freno di soccorso\"",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30334",
+  "quesito": 6230,
+  "text": "A partire dalla valvola protezione serbatoi, l’impianto di frenatura di servizio ad aria compressa è costituito da due sezioni distinte più una eventuale per il rimorchio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30335",
+  "quesito": 6230,
+  "text": "In caso di avaria in una sezione dei freni, anche se le altre sezioni funzionano, non si deve intraprendere un nuovo viaggio se non si è provveduto alla riparazione del guasto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30336",
+  "quesito": 6230,
+  "text": "I serbatoi dell’aria dei veicoli dotati di frenatura pneumatica o pneumoidraulica, sono normalmente: uno per ogni sezione dell’impianto, uno per i servizi ed eventualmente per le sospensioni pneumatiche",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30337",
+  "quesito": 6230,
+  "text": "I serbatoi dell’aria compressa degli impianti di frenatura dei mezzi pesanti sono dotati di un dispositivo per lo scarico dell’acqua di condensa accumulatasi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30338",
+  "quesito": 6230,
+  "text": "Gli elementi frenanti dei mezzi pesanti sono costituiti da tamburi e ganasce o da disco e pastiglie",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30339",
+  "quesito": 6230,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, il modulatore di frenata regola automaticamente la pressione dell’aria inviata agli elementi frenanti in base al carico del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30340",
+  "quesito": 6230,
+  "text": "Negli impianti di frenatura pneumatica, l’anticongelatore è necessario perché l’aria, quando è molto fredda, ha poca pressione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30341",
+  "quesito": 6230,
+  "text": "Gli impianti di frenatura di tipo pneumoidraulico non possono essere utilizzati su veicoli per trasporto persone per motivi di sicurezza",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30342",
+  "quesito": 6230,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, il dispositivo modulatore di pressione in funzione del carico esclude l’ABS quando il veicolo è molto carico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30343",
+  "quesito": 6230,
+  "text": "Il freno automatico è presente su tutti gli autocarri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30344",
+  "quesito": 6230,
+  "text": "In caso di avaria in una sezione dell’impianto di frenatura ad aria, il veicolo può venire usato normalmente perché i freni restano sempre pienamente efficienti grazie all'altra sezione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30345",
+  "quesito": 6230,
+  "text": "In un impianto di frenatura pneumoidraulico, è l’olio che comprime l’aria diretta agli elementi frenanti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30346",
+  "quesito": 6230,
+  "text": "In un impianto di frenatura pneumoidraulico, gli elementi frenanti sono sempre del tipo a disco e pastiglie, negli impianti pneumatici integrali sono invece solamente di tipo a tamburo e ganasce",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30347",
+  "quesito": 6230,
+  "text": "Il compressore dell’impianto di frenatura pneumatico è azionato dal motorino di avviamento dell’autocarro",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30348",
+  "quesito": 6230,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, quando cessa la frenatura, l’aria compressa si scarica dai freni attraverso il tubo di scappamento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30349",
+  "quesito": 6230,
+  "text": "Gli impianti frenanti ad aria compressa non possono essere dotati di ABS",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30350",
+  "quesito": 6230,
+  "text": "In un impianto di frenatura pneumoidraulico, l’olio dei convertitori pneumoidraulici viene raffreddato in apposito radiatore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30351",
+  "quesito": 6230,
+  "text": "In un impianto di frenatura pneumatico, il compressore dell’aria viene attivato dal conducente alla partenza tramite apposito pulsante posto sul cruscotto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30352",
+  "quesito": 6230,
+  "text": "In un impianto di frenatura pneumatico per veicoli molto pesanti, l’aria compressa viene sostituita con azoto compresso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30353",
+  "quesito": 6231,
+  "text": "Il freno di stazionamento dei veicoli dotati di freni pneumatici agisce solo sulle ruote posteriori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30354",
+  "quesito": 6231,
+  "text": "Il freno di stazionamento dei veicoli dotati di freni pneumatici è un freno ad azione meccanica e si attiva scaricando l’aria dai bielementi a molla",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30355",
+  "quesito": 6231,
+  "text": "Il freno di stazionamento dei veicoli dotati di freni pneumatici cessa la sua azione quando, tramite il distributore a mano, gli viene inviata aria compressa",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30356",
+  "quesito": 6231,
+  "text": "Il freno di stazionamento dei veicoli dotati di freni pneumatici, se moderabile, può essere utilizzato per la frenatura di soccorso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30357",
+  "quesito": 6231,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, il freno di stazionamento, si inserisce quando il freno a molla riceve aria dal distributore a mano",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30358",
+  "quesito": 6231,
+  "text": "Il freno di stazionamento dei veicoli dotati di freni pneumatici, se non moderabile, può fare parte dell’impianto di frenatura di soccorso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30359",
+  "quesito": 6231,
+  "text": "Il freno di stazionamento dei veicoli dotati di freni pneumatici, può essere azionato solo da un pedale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30360",
+  "quesito": 6231,
+  "text": "Il freno di stazionamento a molla dei veicoli dotati di freni pneumatici, cessa di funzionare se i serbatoi dell’aria compressa non sono carichi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30361",
+  "quesito": 6232,
+  "text": "Nei veicoli dotati di frenatura ad aria compressa, il modulatore della frenata è situato tra il distributore duplex e gli elementi frenanti posteriori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30362",
+  "quesito": 6232,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, agendo sul pedale del freno, il distributore duplex invia aria compressa in due sezioni dell’impianto non comunicanti tra loro",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30363",
+  "quesito": 6232,
+  "text": "I sistemi di frenatura pneumatica di servizio e di soccorso dei veicoli pesanti prevedono almeno due serbatoi per l’aria compressa, un distributore duplex e una sezione di tubazioni indipendenti per ciascuno dei due assi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30364",
+  "quesito": 6232,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, il distributore duplex serve, tra l’altro, a regolare la pressione dell’aria inviata agli elementi frenanti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30365",
+  "quesito": 6232,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, il distributore duplex invia aria alla stessa pressione agli elementi frenanti anteriori e posteriori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30366",
+  "quesito": 6232,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, il distributore duplex ha due comandi: uno a pedale e l’altro a mano",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30367",
+  "quesito": 6232,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, il distributore duplex invia aria compressa alternativamente ai due serbatoi principali",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30368",
+  "quesito": 6232,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, il distributore duplex raddoppia la pressione dell’aria quando il veicolo è carico e sta percorrendo una discesa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30369",
+  "quesito": 6232,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, il distributore duplex serve a inviare differente pressione agli elementi frenanti anteriori o posteriori",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30370",
+  "quesito": 6232,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, il distributore duplex non può garantire la frenatura di soccorso",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30371",
+  "quesito": 6233,
+  "text": "Nei veicoli dotati di frenatura ad aria compressa, il modulatore di frenata è situato tra il distributore duplex e gli elementi frenanti dell’asse posteriore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30372",
+  "quesito": 6233,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, il modulatore di frenata in funzione del carico ha il compito di ridurre la pressione dell’aria inviata agli elementi frenanti dell’asse posteriore quando il veicolo non circola a pieno carico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30373",
+  "quesito": 6233,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, il modulatore di frenata in funzione del carico ha il compito di evitare frenate a ruote bloccate",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30374",
+  "quesito": 6233,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica e sospensioni a balestra, il modulatore di frenata in funzione del carico è normalmente fissato al telaio del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30375",
+  "quesito": 6233,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, il modulatore di frenata in funzione del carico può essere a comando pneumatico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30376",
+  "quesito": 6233,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, il modulatore di frenata in funzione del carico viene inserito e disinserito dal conducente a mezzo di apposito pulsante",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30377",
+  "quesito": 6233,
+  "text": "Il modulatore di frenata in funzione del carico non può essere montato su veicoli dotati di ABS",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30378",
+  "quesito": 6233,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, il modulatore di frenata in funzione del carico è normalmente fissato sull’assale delle ruote",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30379",
+  "quesito": 6233,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, il modulatore di frenata in funzione del carico può essere a comando idraulico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30380",
+  "quesito": 6233,
+  "text": "Il modulatore di frenata in funzione del carico necessita di raffreddamento ad aria",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30381",
+  "quesito": 6234,
+  "text": "L’essiccatore o l’anticongelatore si trovano tra il compressore ed i serbatoi dell’aria compressa dell’impianto di frenatura pneumatico o pneumoidraulico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30382",
+  "quesito": 6234,
+  "text": "L’essiccatore o l’anticongelatore di cui sono dotati gli impianti di frenatura ad aria compressa, evitano che si formino cristalli di ghiaccio nelle tubazioni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30383",
+  "quesito": 6234,
+  "text": "L’essiccatore o l’anticongelatore di cui sono dotati gli impianti di frenatura ad aria compressa, evitano che si formino particelle di ghiaccio nelle valvole",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30384",
+  "quesito": 6234,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, l’essiccatore può essere raggruppato in un unico apparecchio assieme al regolatore di pressione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30385",
+  "quesito": 6234,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, l’essiccatore provvede anche al filtraggio dell’aria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30386",
+  "quesito": 6234,
+  "text": "L’anticongelatore impedisce il congelamento dell’aria nei serbatoi dei freni pneumatici e pneumoidraulici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30387",
+  "quesito": 6234,
+  "text": "Negli impianti di frenatura ad aria compressa, l’essiccatore serve a impedire che il compressore aspiri aria troppo umida",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30388",
+  "quesito": 6234,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica, l’essiccatore deve essere messo in funzione manualmente dal conducente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30389",
+  "quesito": 6234,
+  "text": "Nell’essiccatore di un impianto frenante pneumatico, una volta \"asciugata\" l’aria, vengono aggiunte piccole particelle di lubrificante per oliare le valvole del circuito dell’aria compressa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30390",
+  "quesito": 6234,
+  "text": "Nell’impianto di frenatura pneumatico, vi sono tanti essiccatori quanti sono i serbatoi dell’aria compressa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30391",
+  "quesito": 6235,
+  "text": "Negli impianti di frenatura ad aria compressa, il regolatore di pressione permette di mantenere l’aria dei circuiti frenanti ad una pressione compresa tra due valori, massimo e minimo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30392",
+  "quesito": 6235,
+  "text": "Negli impianti di frenatura ad aria compressa, il regolatore di pressione permette di evitare sovrappressioni nell’impianto",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30393",
+  "quesito": 6235,
+  "text": "Negli impianti di frenatura ad aria compressa, il regolatore di pressione è dotato di una valvola di sicurezza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30394",
+  "quesito": 6235,
+  "text": "Negli impianti di frenatura ad aria compressa, il regolatore di pressione prevede anche fasi di funzionamento a vuoto del compressore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30395",
+  "quesito": 6235,
+  "text": "Negli impianti di frenatura ad aria compressa, il regolatore di pressione prevede anche fasi in cui scarica aria in atmosfera",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30396",
+  "quesito": 6235,
+  "text": "Negli impianti di frenatura ad aria compressa, il regolatore di pressione permette di mantenere l’aria dei circuiti frenanti alla pressione fissa di quindici bar",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30397",
+  "quesito": 6235,
+  "text": "Negli impianti di frenatura ad aria compressa, il regolatore di pressione ha il compito di regolare il valore della pressione dell’aria inviata agli elementi frenanti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30398",
+  "quesito": 6235,
+  "text": "Negli impianti di frenatura ad aria compressa, il regolatore di pressione ha il compito di regolare il valore della pressione dell’aria all'interno delle sospensioni pneumatiche",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30399",
+  "quesito": 6235,
+  "text": "Negli impianti di frenatura ad aria compressa, il regolatore di pressione non è necessario se il veicolo è dotato di sospensioni pneumatiche",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30400",
+  "quesito": 6235,
+  "text": "Negli impianti di frenatura ad aria compressa, il regolatore di pressione è comandato dal conducente attraverso apposito \"manettino\" posto sul cruscotto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30401",
+  "quesito": 6236,
+  "text": "Gli elementi frenanti dei veicoli stradali possono essere del tipo a tamburo e ganasce dotate di guarnizione di attrito (ferodo)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30402",
+  "quesito": 6236,
+  "text": "Gli elementi frenanti dei veicoli stradali possono essere del tipo a disco e pastiglie dotate di guarnizione di attrito (ferodo)",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30403",
+  "quesito": 6236,
+  "text": "Gli elementi frenanti dei veicoli stradali pesanti sono del tipo ad attrito",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30404",
+  "quesito": 6236,
+  "text": "Gli elementi frenanti dei veicoli possono avere problemi di surriscaldamento",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30405",
+  "quesito": 6236,
+  "text": "Gli elementi frenanti dei veicoli, trasformano l’energia cinetica posseduta dal veicolo in calore da disperdere in atmosfera",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30406",
+  "quesito": 6236,
+  "text": "Gli elementi frenanti possono essere del tipo a disco e ganasce dotate di guarnizione di attrito (ferodo)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30407",
+  "quesito": 6236,
+  "text": "Gli elementi frenanti possono essere del tipo a ganasce e pastiglie dotate di guarnizione di attrito (ferodo)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30408",
+  "quesito": 6236,
+  "text": "Gli elementi frenanti dei veicoli possono avere problemi di eccessiva ventilazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30409",
+  "quesito": 6236,
+  "text": "Gli elementi frenanti dei veicoli stradali pesanti sono del tipo elettromagnetico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30410",
+  "quesito": 6236,
+  "text": "I veicoli stradali di massa complessiva a pieno carico superiore a 7,5 tonnellate, devono essere dotati di elementi frenanti raffreddati a liquido",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30411",
+  "quesito": 6236,
+  "text": "I veicoli stradali di massa complessiva a pieno carico superiore a 3,5 tonnellate, non possono essere dotati di elementi frenanti autoventilanti per pericolo di rottura del disco",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30413",
+  "quesito": 6237,
+  "text": "Il freno di tipo pneumoidraulico funziona grazie all'azione combinata dell'aria e dell'olio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30414",
+  "quesito": 6237,
+  "text": "L'impianto di frenatura di tipo pneumoidraulico è composto, tra l'altro, da un compressore, da alcuni serbatoi d’accumulo per l’aria compressa e dai convertitori pneumoidraulici",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30415",
+  "quesito": 6237,
+  "text": "Se l'impianto di frenatura è del tipo pneumoidraulico, l’aria compressa viene inviata dal distributore ai convertitori",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30416",
+  "quesito": 6237,
+  "text": "Le ganasce di un impianto di frenatura pneumoidraulico, vengono allargate da due pistoncini spinti dalla pressione idraulica",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30417",
+  "quesito": 6237,
+  "text": "Sugli autoveicoli dotati di frenatura pneumoidraulica, il convertitore pneumoidraulico sfrutta la pressione dell’aria per mettere in pressione uno speciale liquido idraulico che agisce sugli elementi frenanti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30418",
+  "quesito": 6237,
+  "text": "Sugli autoveicoli dotati di frenatura pneumoidraulica, il liquido del convertitore pneumoidraulico è sostanzialmente incomprimibile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30419",
+  "quesito": 6237,
+  "text": "Negli autoveicoli dotati di frenatura pneumoidraulica, il liquido del convertitore pneumoidraulico va periodicamente sostituito",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30420",
+  "quesito": 6237,
+  "text": "Negli autoveicoli dotati di frenatura pneumoidraulica, può essere necessario rabboccare periodicamente il liquido del convertitore pneumoidraulico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30421",
+  "quesito": 6237,
+  "text": "Un autocarro pesante non può avere i freni pneumoidraulici perché troppo elastici",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30422",
+  "quesito": 6237,
+  "text": "Gli impianti di frenatura pneumoidraulici, detti anche freni misti, funzionano con una miscela di aria e olio preparata dal distributore duplex",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30423",
+  "quesito": 6237,
+  "text": "Negli impianti di frenatura pneumoidraulici, deve essere presente un miscelatore per l’aria e l’olio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30424",
+  "quesito": 6237,
+  "text": "Se si verifica una perdita di olio dai freni pneumoidraulici, il conducente può convertire il funzionamento dei freni a pneumatico integrale escludendo i convertitori",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30425",
+  "quesito": 6237,
+  "text": "Sugli autoveicoli dotati di frenatura pneumoidraulica, il convertitore di pressione pneumoidraulico, serve a trasformare la pressione di un liquido in aria fortemente compressa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30426",
+  "quesito": 6237,
+  "text": "Sugli autoveicoli dotati di frenatura pneumoidraulica, il convertitore di pressione pneumoidraulico è posto tra il compressore ed i serbatoi dell’aria compressa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30427",
+  "quesito": 6237,
+  "text": "Sugli autoveicoli dotati di frenatura pneumoidraulica, l’olio dell’impianto frenante pneumoidraulico serve a mantenere ben lubrificati gli elementi frenanti, anche nelle forti discese",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30428",
+  "quesito": 6237,
+  "text": "Gli autoveicoli dotati di impianto frenante pneumoidraulico non possono essere atti al traino",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30429",
+  "quesito": 6238,
+  "text": "Sui veicoli pesanti, il compressore dell’impianto di frenatura pneumatico o pneumoidraulico prende in genere movimento dal motore del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30430",
+  "quesito": 6238,
+  "text": "Sui veicoli pesanti, il compressore dell’impianto di frenatura pneumatico o pneumoidraulico aspira aria dall'esterno attraverso un filtro e la invia a pressione verso i serbatoi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30431",
+  "quesito": 6238,
+  "text": "Sui veicoli pesanti, il compressore dell’impianto di frenatura pneumatico o pneumoidraulico necessita di raffreddamento e lubrificazione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30432",
+  "quesito": 6238,
+  "text": "Sui veicoli pesanti, il compressore dell’impianto di frenatura pneumatico o pneumoidraulico è alimentato con il combustibile del motore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30433",
+  "quesito": 6238,
+  "text": "Sui veicoli pesanti, il compressore dell’impianto di frenatura pneumatico o pneumoidraulico è alimentato da miscela al 4% di olio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30434",
+  "quesito": 6238,
+  "text": "Sugli autoveicoli dotati di frenatura pneumoidraulica, il compressore può essere utilizzato come freno motore, invertendone il senso di rotazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30435",
+  "quesito": 6239,
+  "text": "Eventuali formazioni di ghiaccio nelle tubazioni dei freni ad aria compressa possono bloccare le valvole del regolatore di pressione e del distributore duplex",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30436",
+  "quesito": 6239,
+  "text": "Il sistema frenante antibloccaggio ruote ABS (Antilock Braking System), evita il bloccaggio delle ruote, ottimizzando la frenata e migliorando la dirigibilità del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30437",
+  "quesito": 6239,
+  "text": "Negli autoveicoli dotati di frenatura pneumoidraulica, è bene effettuare periodicamente lo spurgo dell’acqua di condensa formatasi nei serbatoi per evitare il pericolo che si formi del ghiaccio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30438",
+  "quesito": 6239,
+  "text": "Sugli autoveicoli dotati di frenatura pneumoidraulica, all’avviamento del veicolo, può essere necessario un breve lasso di tempo perché il compressore dell'impianto di frenatura ricarichi i serbatoi dell’aria compressa dei freni fino alla pressione minima di esercizio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30439",
+  "quesito": 6239,
+  "text": "Sugli autoveicoli dotati di frenatura pneumoidraulica, il sistema ABS consente alle ruote di bloccarsi anche quando la pressione nei serbatoi è molto bassa",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30440",
+  "quesito": 6239,
+  "text": "I freni a disco vengono impiegati soltanto sulle autovetture",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30441",
+  "quesito": 6239,
+  "text": "I freni a disco sono poco usati sui veicoli industriali perché scaldano troppo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30442",
+  "quesito": 6239,
+  "text": "Come sui treni, anche su tutti gli autobus è obbligatorio un freno di emergenza a disposizione dei viaggiatori",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30443",
+  "quesito": 6239,
+  "text": "Sugli autobus deve essere presente, a disposizione dei passeggeri, un martelletto, posto in una cassetta con vetro a frantumazione, che permetta di azionare i freni di emergenza in caso di incendio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30444",
+  "quesito": 6240,
+  "text": "Negli impianti di frenatura ad aria compressa, è presente un indicatore di pressione per ciascuna sezione dell’impianto di frenatura di servizio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30445",
+  "quesito": 6240,
+  "text": "Negli impianti di frenatura ad aria compressa, l’indicatore di pressione è integrato da una spia rossa che segnala la bassa pressione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30446",
+  "quesito": 6240,
+  "text": "Negli impianti di frenatura ad aria compressa, il pedale del freno comanda un distributore che invia l’aria agli elementi frenanti a pressione moderabile",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30447",
+  "quesito": 6240,
+  "text": "Negli impianti di frenatura ad aria compressa, la pressione dell’aria nei serbatoi dei freni viene mantenuta alla giusta pressione da un regolatore automatico di pressione",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30448",
+  "quesito": 6240,
+  "text": "Negli impianti di frenatura ad aria compressa, la pressione dell’aria negli elementi frenanti è tanto più elevata, quanto maggiore è la pressione esercitata sul pedale del freno",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30449",
+  "quesito": 6240,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica o pneumoidraulica, per evitare che, in caso di rottura della condotta che porta aria ai serbatoi, tutti i serbatoi dell’impianto frenante si svuotino, tra regolatore di pressione e serbatoi è inserita una particolare valvola a più vie",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30450",
+  "quesito": 6240,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica o pneumoidraulica, la pressione dell’aria nei serbatoi dei freni ad aria compressa deve essere più alta se il veicolo è molto carico",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30451",
+  "quesito": 6240,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica o pneumoidraulica, la pressione dell’aria nei serbatoi dei freni pneumatici deve essere più bassa se il veicolo viaggia a vuoto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30452",
+  "quesito": 6240,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica o pneumoidraulica, in caso di perdita di pressione da una sezione dell’impianto ad aria compressa, il freno automatico blocca istantaneamente l’autoveicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30453",
+  "quesito": 6240,
+  "text": "Gli impianti frenanti ad aria compressa sono dotati di un serbatoio dell’aria per ogni ruota",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30454",
+  "quesito": 6240,
+  "text": "Negli impianti frenanti ad aria compressa, il conducente regola la pressione dell’aria della frenatura di servizio tramite un apposito \"manettino\" posto sul cruscotto",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30455",
+  "quesito": 6240,
+  "text": "Sugli autoveicoli dotati di frenatura pneumatica o pneumoidraulica, a seconda della forza frenante richiesta, l’autista può selezionare la modalità di frenatura \"continua\" o quella \"moderabile\"",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30456",
+  "quesito": 6241,
+  "text": "Negli impianti di frenatura ad aria compressa, il collegamento tra motrice e rimorchio prevede un collegamento meccanico, uno pneumatico e uno elettrico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30457",
+  "quesito": 6241,
+  "text": "Negli impianti di frenatura ad aria compressa, il collegamento pneumatico tra motrice e rimorchio è realizzato mediante due tubi flessibili e due coppie di semigiunti omologati",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30458",
+  "quesito": 6241,
+  "text": "Negli impianti di frenatura ad aria compressa dotati di ABS, il collegamento tra motrice e rimorchio deve prevedere anche uno specifico collegamento elettrico per l’ABS stesso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30459",
+  "quesito": 6241,
+  "text": "Negli impianti di frenatura ad aria compressa, le due coppie di semigiunti che realizzano il collegamento pneumatico tra motrice e rimorchio hanno colore differente tra loro",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30460",
+  "quesito": 6241,
+  "text": "Negli impianti di frenatura ad aria compressa, l’autista che realizzi il collegamento pneumatico tra motrice e rimorchio deve indossare idonei guanti protettivi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30461",
+  "quesito": 6241,
+  "text": "Negli impianti di frenatura ad aria compressa, il collegamento pneumatico tra motrice e rimorchio è realizzato mediante tubi rigidi e due giunti di accoppiamento di colore verde",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30462",
+  "quesito": 6241,
+  "text": "Negli impianti di frenatura ad aria compressa, il collegamento pneumatico tra motrice e rimorchio può essere di tipo \"wireless\" (senza fili)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30463",
+  "quesito": 6241,
+  "text": "Negli impianti di frenatura ad aria compressa, il collegamento tra motrice e rimorchio prevede un collegamento idraulico, uno pneumatico e uno elettrico di tipo wireless (senza fili)",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30464",
+  "quesito": 6241,
+  "text": "Negli impianti di frenatura ad aria compressa, il collegamento pneumatico tra motrice e rimorchio è realizzato mediante quattro tubi flessibili e quattro coppie di semigiunti omologati",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "14",
+  "code": "30465",
+  "quesito": 6241,
+  "text": "Negli impianti di frenatura ad aria compressa, il collegamento pneumatico tra motrice e rimorchio deve essere realizzato da operaio specializzato in officina opportunamente attrezzata e autorizzata",
+  "risposta": false,
+  "image": null
+ }
+]

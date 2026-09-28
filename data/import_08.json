@@ -1,0 +1,434 @@
+[
+ {
+  "argomentoCode": "08",
+  "code": "28683",
+  "quesito": 6110,
+  "text": "In un veicolo pesante, lo specchio retrovisore esterno principale destro permette la visione indiretta di un tratto di strada retrostante, a destra del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28684",
+  "quesito": 6110,
+  "text": "In un veicolo pesante, lo specchio retrovisore grandangolare consente di allargare l'angolo di visibilità controllato dal retrovisore principale",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28685",
+  "quesito": 6110,
+  "text": "In un veicolo pesante, lo specchio d'accostamento permette di visualizzare la zona sottostante la portiera lato passeggero",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28686",
+  "quesito": 6110,
+  "text": "In un veicolo pesante, lo specchio anteriore permette di vedere meglio la parte bassa della zona anteriore del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28687",
+  "quesito": 6110,
+  "text": "In un veicolo pesante, lo specchio retrovisore esterno principale sinistro permette la visione indiretta di un tratto di strada retrostante, a sinistra del veicolo",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28688",
+  "quesito": 6110,
+  "text": "In un veicolo pesante, lo specchio retrovisore esterno principale destro permette la visione indiretta anche di un tratto di strada retrostante, a sinistra del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28689",
+  "quesito": 6110,
+  "text": "In un veicolo pesante, lo specchio retrovisore grandangolare consente al conducente di visualizzare il tetto del veicolo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28690",
+  "quesito": 6110,
+  "text": "In un veicolo pesante, lo specchio d'accostamento permette di visualizzare la zona sottostante la portiera lato conducente",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28691",
+  "quesito": 6110,
+  "text": "In un veicolo pesante, gli specchi retrovisori possono essere integralmente sostituiti da telecamere",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28692",
+  "quesito": 6110,
+  "text": "In un veicolo pesante, lo specchio retrovisore esterno deve essere chiuso quando si circola in autostrada",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28693",
+  "quesito": 6111,
+  "text": "Il campo di visibilità in un autoveicolo può essere limitato, tra l'altro, dai montanti della carrozzeria",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28694",
+  "quesito": 6111,
+  "text": "Il campo di visibilità in un autoveicolo può essere limitato, tra l'altro, a causa dell'altezza del veicolo stesso",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28695",
+  "quesito": 6111,
+  "text": "Il campo di visibilità in un autoveicolo può essere limitato, tra l'altro, dalla cattiva disposizione del carico",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28696",
+  "quesito": 6111,
+  "text": "Il campo di visibilità in un autoveicolo può essere limitato, tra l'altro, dall'assenza del lunotto posteriore",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28697",
+  "quesito": 6111,
+  "text": "Il campo di visibilità in un autoveicolo può essere limitato, tra l'altro, dalla presenza del lunotto posteriore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28698",
+  "quesito": 6111,
+  "text": "Il campo di visibilità in un autoveicolo può essere limitato, tra l'altro, da specchi retrovisori troppo grandi",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28699",
+  "quesito": 6111,
+  "text": "Il campo di visibilità in un autoveicolo può essere limitato, tra l'altro, dai tergicristallo",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28700",
+  "quesito": 6111,
+  "text": "Il campo di visibilità in un autoveicolo può essere limitato, tra l'altro, dalla presenza dell'estintore",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28701",
+  "quesito": 6111,
+  "text": "Il campo di visibilità in un autoveicolo può essere limitato, tra l'altro, dal parabrezza realizzato con vetro temperato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28702",
+  "quesito": 6112,
+  "text": "Per garantire una miglior visibilità diretta della strada, è necessario evitare di lasciare sul cruscotto cartine, agende, appunti, in particolare se di colore chiaro, perché potrebbero creare pericolosi riflessi sul parabrezza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28703",
+  "quesito": 6112,
+  "text": "Per garantire una miglior visibilità diretta della strada, è necessario sostituire le spazzole tergicristallo quando non sono più in buono stato di efficienza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28704",
+  "quesito": 6112,
+  "text": "Per garantire una miglior visibilità diretta della strada, è necessario evitare di tenere accese le luci interne del veicolo nelle ore di buio, perché limitano l'adattamento dell'occhio alla visione notturna",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28705",
+  "quesito": 6112,
+  "text": "Per garantire una miglior visibilità diretta della strada, è necessario evitare l’appannamento del parabrezza e delle vetrate laterali",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28706",
+  "quesito": 6112,
+  "text": "Per garantire una miglior visibilità diretta della strada, è necessario che il sedile di guida sia regolato correttamente in altezza",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28707",
+  "quesito": 6112,
+  "text": "La visibilità indiretta attraverso specchi o telecamere consente di vedere zone altrimenti non visibili direttamente dal conducente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28708",
+  "quesito": 6112,
+  "text": "Alla guida di un mezzo pesante bisogna considerare che la visibilità indiretta attraverso specchi o telecamere, lascia comunque delle \"zone d’ombra\" (angoli morti della visuale) dove non è possibile scorgere veicoli o pedoni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28709",
+  "quesito": 6112,
+  "text": "La visibilità indiretta attraverso specchi o telecamere è efficace solo se gli stessi sono orientati correttamente",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28710",
+  "quesito": 6112,
+  "text": "La corretta regolazione degli specchietti retrovisori dei mezzi pesanti è un elemento fondamentale per la riduzione degli incidenti che li vedono coinvolti",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28711",
+  "quesito": 6112,
+  "text": "Per una corretta regolazione degli specchi retrovisori dei mezzi pesanti, bisogna considerare che la visibilità della parte laterale destra della strada è particolarmente importante",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28712",
+  "quesito": 6112,
+  "text": "Per garantire una miglior visibilità diretta della strada è necessario evitare di usare le alette parasole",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28713",
+  "quesito": 6112,
+  "text": "Per garantire una miglior visibilità diretta della strada è necessario accendere le luci interne del veicolo in ogni condizione di scarsa visibilità",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28714",
+  "quesito": 6112,
+  "text": "Per garantire una miglior visibilità diretta della strada è necessario sostituire le spazzole tergicristallo ad ogni cambio del filtro del gasolio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28715",
+  "quesito": 6112,
+  "text": "Per garantire una miglior visibilità diretta della strada è necessario oscurare completamente i finestrini laterali destri quando il sole tramonta da quel lato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28716",
+  "quesito": 6112,
+  "text": "Per garantire una miglior visibilità diretta della strada è necessario pulire la parte interna del parabrezza con un panno leggermente cosparso di grasso siliconato",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28717",
+  "quesito": 6112,
+  "text": "La visibilità indiretta attraverso specchi o telecamere consente di annullare totalmente le \"zone d’ombra\", coprendo tutti gli angoli morti della visuale della strada",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28718",
+  "quesito": 6112,
+  "text": "Gli specchi retrovisori non devono essere orientati prima di partire, ma solo dopo aver percorso alcuni chilometri, per fare in modo che il veicolo si assesti",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28719",
+  "quesito": 6112,
+  "text": "Per una corretta regolazione degli specchi retrovisori dei mezzi pesanti occorre considerare le condizioni atmosferiche, in particolar modo il vento",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28720",
+  "quesito": 6112,
+  "text": "Per una corretta regolazione degli specchi retrovisori dei mezzi pesanti bisogna tenere presente l'eventualità che il conducente indossi occhiali da vista",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28721",
+  "quesito": 6112,
+  "text": "Gli specchi retrovisori dei mezzi pesanti si orientano automaticamente all'atto dell'inserimento della carta tachigrafica nel cronotachigrafo digitale",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28729",
+  "quesito": 6114,
+  "text": "La presenza di un rimorchio agganciato rende ancora più importante il corretto orientamento degli specchi retrovisori esterni",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28730",
+  "quesito": 6114,
+  "text": "Durante il rientro in corsia di marcia dopo un sorpasso, la presenza di un rimorchio agganciato, obbliga il conducente a verificare con attenzione, attraverso gli specchi retrovisori destri, la posizione del rimorchio rispetto al veicolo sorpassato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28731",
+  "quesito": 6114,
+  "text": "A bordo di un autotreno, durante le svolte a destra nei centri urbani, è fondamentale controllare attraverso gli specchi che il rimorchio non invada i marciapiedi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28732",
+  "quesito": 6114,
+  "text": "A bordo di un autotreno, durante le svolte a destra nei centri urbani, è fondamentale controllare attraverso gli specchi che il rimorchio non vada a urtare ciclisti o ciclomotoristi presenti nelle vicinanze",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28733",
+  "quesito": 6114,
+  "text": "A bordo di un autoarticolato, durante le svolte a destra nei centri urbani, è fondamentale controllare attraverso gli specchi che il rimorchio non invada i marciapiedi",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28734",
+  "quesito": 6114,
+  "text": "A bordo di un autoarticolato, durante le svolte a destra nei centri urbani, è fondamentale controllare attraverso gli specchi che il rimorchio non vada a urtare ciclisti o ciclomotoristi presenti nelle vicinanze",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28735",
+  "quesito": 6114,
+  "text": "A bordo di un autotreno o di un autoarticolato, durante le svolte a sinistra all’uscita di una strada stretta, l’autista deve tenere presente il pericolo che rappresenta, in quanto perde visibilità dagli specchi posti sul lato destro per effetto della maggior rotazione della motrice rispetto al rimorchio o al semirimorchio",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28736",
+  "quesito": 6114,
+  "text": "Durante il rientro in corsia di marcia dopo un sorpasso, la presenza di un semirimorchio agganciato, obbliga il conducente a verificare con attenzione, attraverso gli specchi retrovisori destri, la posizione del semirimorchio rispetto al veicolo sorpassato",
+  "risposta": true,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28737",
+  "quesito": 6114,
+  "text": "In presenza di un rimorchio agganciato, lo stesso deve essere dotato di specchi esterni orientati verso la motrice",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28738",
+  "quesito": 6114,
+  "text": "A bordo di un autotreno o di un autoarticolato deve essere montata una telecamera che mostri all’autista il retro del rimorchio se il complesso veicolare è più lungo di 15,50 metri",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28739",
+  "quesito": 6114,
+  "text": "A bordo di un autotreno o di un autoarticolato, durante le svolte a sinistra all’uscita di una strada stretta, gli specchi posti sul lato destro sono realizzati in modo da permettere sempre una completa visibilità dell’estremità destra del rimorchio o del semirimorchio",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28740",
+  "quesito": 6114,
+  "text": "A bordo di un autotreno o di un autoarticolato devono essere montati per legge specchi retrovisori maggiorati di tipo omologato specificamente per il traino",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28741",
+  "quesito": 6114,
+  "text": "L’autista di un autotreno, dopo aver agganciato la motrice deve, prima di iniziare il viaggio, sostituire i normali specchi retrovisori con quelli specifici previsti per il traino",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28742",
+  "quesito": 6114,
+  "text": "L’autista di un autotreno, dopo aver agganciato la motrice deve, prima di iniziare il viaggio, allargare gli specchi retrovisori, portandoli sulla specifica posizione \"traino\", prevista dalle norme di circolazione",
+  "risposta": false,
+  "image": null
+ },
+ {
+  "argomentoCode": "08",
+  "code": "28743",
+  "quesito": 6114,
+  "text": "Il rimorchio o semirimorchio agganciato non peggiora la visibilità posteriore della strada al conducente perché non è mai più largo della motrice o del trattore",
+  "risposta": false,
+  "image": null
+ }
+]

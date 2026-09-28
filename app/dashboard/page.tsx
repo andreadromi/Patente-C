@@ -6,7 +6,7 @@ import { Truck, LogOut, Trash2, ChevronLeft, ChevronRight, RotateCcw, Graduation
 import { BottomNav } from '@/components/BottomNav'
 import { Avviso, IconaAvviso } from '@/components/Avviso'
 import { NOME_APP } from '@/lib/app'
-import { DOMANDE_PER_ESAME, DURATA_ESAME, ERRORI_AMMESSI } from '@/lib/esame'
+import { DOMANDE_PER_ESAME, DURATA_ESAME } from '@/lib/esame'
 
 interface Simulation { id: string; number: number; titolo: string | null }
 interface UserSim { id: string; simulationId: string; status: string; passed: boolean | null; score: number | null; errors: number | null; startedAt: string | null }
@@ -148,7 +148,7 @@ export default function DashboardPage() {
         </div>
         <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ fontSize: 17, fontWeight: 800 }}>{esameInCorso ? "Riprendi l'esame" : 'Esame reale'}</div>
-          <div style={{ fontSize: 13.5, fontWeight: 600, opacity: 0.85 }}>{erroreEsame || `${DOMANDE_PER_ESAME} domande · ${DURATA_ESAME / 60} min · max ${ERRORI_AMMESSI} errori`}</div>
+          <div style={{ fontSize: 13.5, fontWeight: 600, opacity: 0.85 }}>{erroreEsame || `${DOMANDE_PER_ESAME} domande · ${DURATA_ESAME / 60} minuti`}</div>
         </div>
         <ChevronRight size={19} color="rgba(255,255,255,0.9)" />
       </button>
