@@ -7,8 +7,9 @@
  *   una per quesito); ognuno ha la sua icona;
  * - ogni domanda ha un numero unico, il suo quesito, un testo, una risposta
  *   V/F e un argomento che esiste; le figure stanno in public/figure/;
- * - ogni domanda sta in una e una sola simulazione fissa: nessuna resta
- *   fuori, nessuna si ripete, nessuna simulazione supera le 40 domande.
+ * - ogni simulazione fissa ha 40 domande, tutte diverse; ogni domanda sta
+ *   almeno in una simulazione, e ne escono due volte solo quelle che servono
+ *   a riempire i posti (le simulazioni per 40, meno le domande dell'archivio).
  *
  * Uso: npm run verifica
  */
@@ -47,20 +48,25 @@ for (const d of domande) {
 
 const volte = new Map<string, number>()
 for (const s of sims) {
-  if (s.domande.length > DOMANDE_PER_ESAME) problemi.push(`simulazione ${s.number}: ${s.domande.length} domande`)
+  if (s.domande.length !== DOMANDE_PER_ESAME) problemi.push(`simulazione ${s.number}: ${s.domande.length} domande, non ${DOMANDE_PER_ESAME}`)
+  if (new Set(s.domande).size !== s.domande.length) problemi.push(`simulazione ${s.number}: una domanda due volte`)
   for (const c of s.domande) {
     if (!codici.has(c)) problemi.push(`simulazione ${s.number}: la domanda ${c} non esiste`)
     volte.set(c, (volte.get(c) ?? 0) + 1)
   }
 }
 const fuori = [...codici].filter(c => !volte.has(c))
-const ripetute = [...volte].filter(([, n]) => n > 1).map(([c]) => c)
 if (fuori.length) problemi.push(`${fuori.length} domande in nessuna simulazione: ${fuori.slice(0, 20).join(', ')}`)
-if (ripetute.length) problemi.push(`${ripetute.length} domande ripetute: ${ripetute.slice(0, 20).join(', ')}`)
+// Due volte solo quelle che riempiono i posti, e mai più di due
+const doppie = [...volte.values()].filter(n => n === 2).length
+const posti = sims.length * DOMANDE_PER_ESAME
+const attese = Math.max(0, posti - codici.size)
+if ([...volte.values()].some(n => n > 2) || doppie !== attese)
+  problemi.push(`${doppie} domande in due simulazioni, ne servono ${attese}; più di due volte: ${[...volte].filter(([, n]) => n > 2).map(([c]) => c).slice(0, 20).join(', ') || 'nessuna'}`)
 
 if (problemi.length) {
   console.error('❌ Archivio:')
   for (const p of problemi.slice(0, 100)) console.error('  -', p)
   process.exit(1)
 }
-console.log(`✅ ${argomenti.length} argomenti (${somma} domande a scheda), ${domande.length} domande, ${sims.length} simulazioni: ogni domanda in una sola`)
+console.log(`✅ ${argomenti.length} argomenti (${somma} domande a scheda), ${domande.length} domande, ${sims.length} simulazioni da ${DOMANDE_PER_ESAME}: ogni domanda almeno in una, ${doppie} in due`)

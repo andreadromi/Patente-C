@@ -1,6 +1,6 @@
 import { PrismaClient } from '@prisma/client'
 import type { ImportedQuestion } from '../lib/seed-core'
-import { clearUserData, readArgomenti, readImportedQuestions, readSimulations, seedAdmin, seedQuestions, seedSimulations } from '../lib/seed-core'
+import { clearUserData, readArgomenti, readImportedQuestions, readSimulations, seedAdmin, seedQuestions, seedSimulations, simulazioniDaAggiornare } from '../lib/seed-core'
 import { PRIMO_NUMERO_MANUALE } from '../lib/esame-generato'
 
 const prisma = new PrismaClient()
@@ -74,16 +74,19 @@ async function main() {
   }
 
   // Archivio a posto: restano da sistemare le simulazioni mancanti, quelle
-  // scollegate dalle domande (`questions: '[]'`) e quelle di troppo, rimaste
-  // da un archivio precedente. Il confronto è sul numero atteso, non su una
+  // scollegate dalle domande (`questions: '[]'`), quelle di troppo, rimaste
+  // da un archivio precedente, e quelle con domande diverse da data/ (per
+  // esempio portate da 39 a 40). Il confronto è sul numero atteso, non su una
   // soglia fissa: con più simulazioni del previsto un `<` non se ne accorge.
   // Quelle create a mano dall'admin non stanno nel file e non si contano.
   const simAttese = readSimulations().length
   const sFisse = await prisma.simulation.count({ where: { generata: false, number: { lt: PRIMO_NUMERO_MANUALE } } })
   const brokenSims = await prisma.simulation.count({ where: { questions: '[]' } })
-  if (sFisse !== simAttese || brokenSims > 0) {
-    const { created, skipped, rimosse } = await seedSimulations(prisma)
+  const diverse = await simulazioniDaAggiornare(prisma)
+  if (sFisse !== simAttese || brokenSims > 0 || diverse.length > 0) {
+    const { created, skipped, rimosse, allungati } = await seedSimulations(prisma)
     console.log(`✅ ${created} simulazioni ricostruite${rimosse ? `, ${rimosse} obsolete rimosse` : ''}${skipped.length ? ` (saltate: ${skipped.join(', ')})` : ''}`)
+    if (diverse.length) console.log(`   ${diverse.length} con domande cambiate; ${allungati} tentativi in corso con le domande nuove`)
   } else {
     console.log('✅ DB allineato all\'archivio — nulla da fare')
   }

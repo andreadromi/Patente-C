@@ -91,13 +91,15 @@ canale, senza colori nuovi né dettagli inventati (ogni valore resta fra quelli 
 intorno nell'originale ingrandito). I margini restano quelli del listato: nell'app ogni figura è
 grande come nel PDF, solo più nitida.
 
-### Le simulazioni: tutte le domande, nessuna ripetuta
+### Le simulazioni: tutte le domande, 40 per volta
 
-**80 simulazioni fisse** coprono l'archivio **una volta sola**: ogni domanda sta in una e una sola
-simulazione, nessuna resta fuori e nessuna si ripete. Ognuna ha 39 o 40 domande, e ogni argomento
-vi entra in proporzione a quante domande ha; dentro un argomento le domande dello stesso quesito
-si alternano con quelle degli altri, così una simulazione non ha dieci affermazioni sullo stesso
-cartello. Chi le finisce tutte ha visto ogni domanda esattamente una volta.
+**80 simulazioni fisse da 40 domande**, come la scheda d'esame, coprono tutto l'archivio: ogni
+domanda sta almeno in una simulazione, e ogni argomento vi entra in proporzione a quante domande
+ha; dentro un argomento le domande dello stesso quesito si alternano con quelle degli altri, così
+una simulazione non ha dieci affermazioni sullo stesso cartello. Le 3.161 domande non bastano per
+80 × 40 = 3.200 posti: le 39 simulazioni che resterebbero a 39 prendono una domanda in più da una
+simulazione lontana, dell'argomento che lì è più scarso e di un quesito che lì non c'è. Chi le
+finisce tutte ha visto ogni domanda, e solo quelle 39 due volte.
 
 Le simulazioni sono sempre in modalità Studio, con la correzione subito, e non hanno soglia:
 contano gli errori, argomento per argomento. Si lasciano a metà e si riprendono quando si vuole.
@@ -128,11 +130,14 @@ tipologie), su tutte le 3.456 domande (testo e V/F) e su tutte le 414 figure.
 `quiz_estrai.py` si ferma se una domanda non ha testo o V/F, se un numero si ripete, se una figura
 non trova la sua domanda, o se nel PDF ci sono più quesiti o numeri di quanti ne ha letti.
 `archivio_scrivi.py` si ferma se trova un capitolo sconosciuto, un argomento con meno quesiti di
-quante domande dà all'esame, o simulazioni con domande ripetute o mancanti. `npm run verifica`
+quante domande dà all'esame, o simulazioni che non hanno 40 domande diverse, lasciano fuori una
+domanda o ne ripetono più di quante servono a riempire i posti. `npm run verifica`
 rifà i controlli leggendo `data/` come la legge il seed.
 
 Il seed (`prisma/seed.ts`, condiviso con `/api/admin/seed`) confronta il DB con `data/` riga per
-riga e lo riscrive solo se differisce.
+riga e lo riscrive solo se differisce. Se cambiano solo le simulazioni le riscrive senza toccare lo
+storico: i tentativi finiti restano come sono stati fatti, quelli in corso su una simulazione che ha
+solo guadagnato domande prendono la lista nuova, con le risposte già date.
 
 ---
 

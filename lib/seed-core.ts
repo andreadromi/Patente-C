@@ -33,7 +33,7 @@ export interface ArgomentoSeed {
 export interface SimulationSeed {
   number: number
   titolo?: string
-  /** Numeri delle domande (40), gli stessi del listato. */
+  /** Numeri delle domande (40, tutte diverse), gli stessi del listato. */
   domande: string[]
 }
 
@@ -121,8 +121,13 @@ export async function seedQuestions(prisma: PrismaClient): Promise<number> {
  * Ricostruisce le simulazioni fisse collegandole alle domande presenti a DB.
  * Usa `upsert` sul numero della simulazione: gli id restano stabili e lo
  * storico degli utenti (UserSimulation) non viene perso.
+ *
+ * Un tentativo tiene la sua lista di domande (`questionOrder`): quelli finiti
+ * restano come sono stati fatti. Quelli in corso su una simulazione che ha
+ * solo guadagnato domande (una da 39 portata a 40) prendono la lista nuova:
+ * le risposte date valgono ancora, e la domanda in più si trova da fare.
  */
-export async function seedSimulations(prisma: PrismaClient): Promise<{ created: number; skipped: number[]; rimosse: number }> {
+export async function seedSimulations(prisma: PrismaClient): Promise<{ created: number; skipped: number[]; rimosse: number; allungati: number }> {
   const simData = readSimulations()
 
   // Simulazioni rimaste da un archivio precedente: puntando a domande non più
@@ -130,8 +135,13 @@ export async function seedSimulations(prisma: PrismaClient): Promise<{ created: 
   const rimosse = await rimuoviSimulazioniObsolete(prisma, simData.map(s => s.number))
   const righe = await prisma.question.findMany({ select: { id: true, code: true } })
   const perCodice = new Map(righe.map(r => [r.code, r]))
+  const esistenti = new Map((await prisma.simulation.findMany({
+    where: { number: { in: simData.map(s => s.number) } },
+    select: { id: true, number: true, questions: true },
+  })).map(s => [s.number, s]))
 
   let created = 0
+  let allungati = 0
   const skipped: number[] = []
   for (const sim of simData) {
     const scelte = sim.domande.map(c => perCodice.get(c)).filter((d): d is NonNullable<typeof d> => !!d)
@@ -148,8 +158,52 @@ export async function seedSimulations(prisma: PrismaClient): Promise<{ created: 
       create: { number: sim.number, ...data },
     })
     created++
+
+    const prima = esistenti.get(sim.number)
+    if (prima && prima.questions !== data.questions && soloAggiunte(prima.questions, data.questions)) {
+      const { count } = await prisma.userSimulation.updateMany({
+        where: { simulationId: prima.id, status: 'IN_PROGRESS', questionOrder: prima.questions },
+        data: { questionOrder: data.questions },
+      })
+      allungati += count
+    }
   }
-  return { created, skipped, rimosse }
+  return { created, skipped, rimosse, allungati }
+}
+
+/** Vero se la lista nuova (JSON di id) contiene tutte le domande della vecchia. */
+function soloAggiunte(vecchia: string, nuova: string) {
+  try {
+    const ids = new Set<string>(JSON.parse(nuova))
+    return (JSON.parse(vecchia) as string[]).every(id => ids.has(id))
+  } catch {
+    return false
+  }
+}
+
+/**
+ * I numeri delle simulazioni fisse che a DB non hanno esattamente le domande
+ * di `simulations.json`, nello stesso ordine (o che a DB mancano): il seed
+ * le riscrive anche quando l'archivio delle domande è già a posto.
+ */
+export async function simulazioniDaAggiornare(prisma: PrismaClient): Promise<number[]> {
+  const attese = readSimulations()
+  const righe = await prisma.question.findMany({ select: { id: true, code: true } })
+  const codiceDi = new Map(righe.map(r => [r.id, r.code]))
+  const aDb = new Map((await prisma.simulation.findMany({
+    where: { generata: false, number: { in: attese.map(s => s.number) } },
+    select: { number: true, questions: true },
+  })).map(s => [s.number, s.questions]))
+  return attese.filter(sim => {
+    const questions = aDb.get(sim.number)
+    if (!questions) return true
+    try {
+      const codici = (JSON.parse(questions) as string[]).map(id => codiceDi.get(id) ?? '')
+      return codici.join('\u0000') !== sim.domande.join('\u0000')
+    } catch {
+      return true
+    }
+  }).map(sim => sim.number)
 }
 
 /** Cancella le simulazioni che non stanno più in `simulations.json`. */

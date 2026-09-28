@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
-import { clearUserData, seedAdmin, seedQuestions, seedSimulations, readImportedQuestions, readSimulations } from '@/lib/seed-core'
+import { clearUserData, seedAdmin, seedQuestions, seedSimulations, readImportedQuestions, readSimulations, simulazioniDaAggiornare } from '@/lib/seed-core'
 
 // Questa rotta, con force, cancella risposte e punti deboli e reimporta
 // l'archivio: e' esposta su internet come tutto il resto dell'app. Un valore
@@ -21,8 +21,8 @@ export async function POST(request: NextRequest) {
     const sCount = await prisma.simulation.count({ where: { generata: false } })
     const brokenSims = await prisma.simulation.count({ where: { questions: '[]' } })
 
-    // Skip se l'archivio è già quello ufficiale e le simulazioni sono collegate
-    if (!force && qCount === attese && sCount >= simAttese && brokenSims === 0) {
+    // Skip se l'archivio è già quello ufficiale e le simulazioni sono collegate e uguali a data/
+    if (!force && qCount === attese && sCount >= simAttese && brokenSims === 0 && (await simulazioniDaAggiornare(prisma)).length === 0) {
       return NextResponse.json({ message: 'Già completo', domande: qCount, simulazioni: sCount })
     }
 

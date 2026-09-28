@@ -29,10 +29,13 @@ Uscita:
     public/figure/               le figure che le domande usano, rese nitide per il
                                  telefono da scripts/figure_nitide.py (stesso nome)
 
-Le simulazioni coprono l'archivio **una volta sola**: ogni domanda sta in una
-e una sola simulazione, nessuna resta fuori e nessuna si ripete. Sono tante
-quante servono con 40 domande l'una, divise in parti uguali (39 o 40
-ciascuna), e ogni argomento vi entra in proporzione a quante domande ha.
+Le simulazioni hanno **40 domande ciascuna**, come la scheda d'esame, e
+coprono tutto l'archivio: ogni domanda sta in almeno una simulazione. Sono
+tante quante servono con 40 domande l'una, e ogni argomento vi entra in
+proporzione a quante domande ha. Le domande non bastano per riempirle tutte
+senza ripeterne nessuna (3.161 per 80 simulazioni da 40, cioè 3.200 posti):
+quelle che resterebbero a 39 prendono una domanda in più da un'altra
+simulazione (vedi completa), e solo quelle poche escono due volte.
 Dentro un argomento le domande dello stesso quesito si alternano con quelle
 degli altri, così una simulazione non ha dieci affermazioni sullo stesso
 cartello. L'ordine è mescolato con un seme fisso: rifare l'archivio dà sempre
@@ -173,7 +176,7 @@ def alternate(domande, rnd):
 
 def simulazioni(domande):
     """
-    Divide tutte le domande in simulazioni da al più 40, senza ripetizioni.
+    Divide tutte le domande in simulazioni da 40.
 
     Ogni domanda riceve una posizione (j + 0,5) / n dentro il suo argomento,
     dove j è il suo posto nella fila dell'argomento e n le sue domande:
@@ -181,6 +184,9 @@ def simulazioni(domande):
     proporzione alla loro grandezza, e ogni blocco di 40 ne contiene una quota
     giusta di ciascuno. Blocchi vicini della fila dell'argomento hanno quesiti
     diversi, perché nella fila i quesiti si danno il turno.
+
+    La fila si taglia in blocchi uguali, da 39 o 40 domande senza ripetizioni;
+    poi completa porta a 40 quelli da 39.
     """
     rnd = random.Random(SEME)
     posizionate = []
@@ -196,9 +202,11 @@ def simulazioni(domande):
     totale = len(posizionate)
     quante = -(-totale // DOMANDE_PER_SIMULAZIONE)  # arrotondato per eccesso
     confini = [round(k * totale / quante) for k in range(quante + 1)]
+    blocchi = [[n for _, _, n in posizionate[confini[k]:confini[k + 1]]] for k in range(quante)]
+    completa(blocchi, domande, [n for _, _, n in posizionate])
+
     sims = []
-    for k in range(quante):
-        blocco = [n for _, _, n in posizionate[confini[k]:confini[k + 1]]]
+    for blocco in blocchi:
         # Dentro la simulazione le domande vanno per argomento, nell'ordine della scheda
         blocco.sort(key=lambda n: (ordine[argomento_di[n]], n))
         numero = len(sims) + 1
@@ -206,23 +214,74 @@ def simulazioni(domande):
     return sims
 
 
+def completa(blocchi, domande, fila):
+    """
+    Porta a 40 i blocchi da 39, con una domanda presa da un altro blocco.
+
+    La domanda in più è dell'argomento che nel blocco è più sotto la sua quota
+    (40 per la sua parte dell'archivio), di un quesito che nel blocco non c'è,
+    e viene dal blocco più lontano: chi fa le simulazioni in fila la ritrova il
+    più tardi possibile. Ogni domanda esce al massimo due volte. I blocchi già
+    da 40 restano come sono.
+    """
+    per_numero = {d['numero']: d for d in domande}
+    per_argomento = {}
+    for d in domande:
+        per_argomento.setdefault(d['argomento'], []).append(d['numero'])
+    quanti = len(blocchi)
+    casa = {n: k for k, blocco in enumerate(blocchi) for n in blocco}
+    prese = set()
+    for k, blocco in enumerate(blocchi):
+        if len(blocco) >= DOMANDE_PER_SIMULAZIONE:
+            continue
+        nel_blocco = Counter(per_numero[n]['argomento'] for n in blocco)
+        quesiti = {per_numero[n]['quesito'] for n in blocco}
+
+        def sotto_quota(c):
+            return DOMANDE_PER_SIMULAZIONE * len(per_argomento[c]) / len(fila) - nel_blocco[c]
+
+        def distanza(n):
+            return min(abs(casa[n] - k), quanti - abs(casa[n] - k))
+
+        # Prima l'argomento più sotto la sua quota (a pari merito il primo della
+        # scheda), con un quesito nuovo per il blocco; se non ce n'è, anche un
+        # quesito che il blocco ha già
+        candidate = []
+        for quesito_nuovo in (True, False):
+            for codice in sorted(CODICI, key=lambda c: (-sotto_quota(c), CODICI.index(c))):
+                candidate = [n for n in per_argomento[codice] if n not in prese and casa[n] != k
+                             and not (quesito_nuovo and per_numero[n]['quesito'] in quesiti)]
+                if candidate:
+                    break
+            if candidate:
+                break
+        scelta = max(candidate, key=lambda n: (distanza(n), -n))
+        blocco.append(scelta)
+        prese.add(scelta)
+
+
 def controlla_simulazioni(domande, sims):
     problemi = []
     tutti = [str(d['numero']) for d in domande]
     usati = [c for s in sims for c in s['domande']]
     conta = Counter(usati)
-    doppi = sorted(c for c, n in conta.items() if n > 1)
-    if doppi:
-        problemi.append(f'domande ripetute nelle simulazioni: {doppi[:20]}')
+    storte = [s['number'] for s in sims if len(s['domande']) != DOMANDE_PER_SIMULAZIONE]
+    if storte:
+        problemi.append(f'simulazioni che non hanno {DOMANDE_PER_SIMULAZIONE} domande: {storte[:20]}')
+    dentro = [s['number'] for s in sims if len(set(s['domande'])) != len(s['domande'])]
+    if dentro:
+        problemi.append(f'simulazioni con una domanda due volte: {dentro[:20]}')
     fuori = sorted(set(tutti) - set(usati))
     if fuori:
         problemi.append(f'domande rimaste fuori dalle simulazioni: {fuori[:20]}')
     estranei = sorted(set(usati) - set(tutti))
     if estranei:
         problemi.append(f'numeri inesistenti nelle simulazioni: {estranei[:20]}')
-    misure = {len(s['domande']) for s in sims}
-    if sims and (max(misure) > DOMANDE_PER_SIMULAZIONE or max(misure) - min(misure) > 1):
-        problemi.append(f'simulazioni di misura irregolare: {sorted(misure)}')
+    # Le ripetute sono solo quelle che servono a riempire i posti: una volta in più ciascuna
+    doppie = sum(1 for n in conta.values() if n == 2)
+    if any(n > 2 for n in conta.values()) or doppie != len(usati) - len(tutti):
+        problemi.append(f'domande ripetute più del necessario: {doppie} due volte, '
+                        f'{sum(1 for n in conta.values() if n > 2)} più di due')
     return problemi
 
 
@@ -269,8 +328,9 @@ def main():
         dell_argomento = [d for d in domande if d['argomento'] == codice]
         q = len({d['quesito'] for d in dell_argomento})
         print(f'   {codice} {nome}: {len(dell_argomento)} domande in {q} quesiti, {n_esame} all\'esame')
-    misure = sorted({len(s['domande']) for s in sims})
-    print(f'✅ {len(sims)} simulazioni da {" o ".join(map(str, misure))} domande, ogni domanda in una sola')
+    doppie = sum(1 for n in Counter(c for s in sims for c in s['domande']).values() if n == 2)
+    print(f'✅ {len(sims)} simulazioni da {DOMANDE_PER_SIMULAZIONE} domande: ogni domanda almeno in una, '
+          f'{doppie} in due per riempire i posti')
 
 
 def scrivi(path, dati):
