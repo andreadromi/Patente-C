@@ -1,0 +1,17 @@
+node_modules/
+.next/
+.vercel/
+*.log
+
+# variabili d'ambiente
+.env
+.env.local
+.env.vercel
+
+# artefatti di build
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# file intermedi dell'estrazione dei quiz (scripts/quiz_estrai.py)
+/build/
+__pycache__/
