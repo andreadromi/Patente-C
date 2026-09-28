@@ -173,42 +173,46 @@ export default function FocusStudyPage() {
   return (
     <div style={{height:'100dvh',background:'var(--bg)',color:'var(--text)',fontFamily:'system-ui,-apple-system,sans-serif',display:'flex',flexDirection:'column',overflow:'hidden'}}>
 
-      {/* Header */}
-      <div style={{padding:'10px 16px',borderBottom:'1px solid var(--border)',display:'flex',alignItems:'center',justifyContent:'space-between',flexShrink:0}}>
-        <div style={{display:'flex',alignItems:'center',gap:8,minWidth:0}}>
-          <button onClick={()=>router.back()} aria-label="Indietro" style={{background:'none',border:'none',cursor:'pointer',padding:4,color:'var(--text3)',display:'flex'}}>
-            <ChevronLeft size={20}/>
-          </button>
-          <div style={{minWidth:0}}>
-            <div style={{fontSize:16,color:'var(--text)',fontWeight:800,maxWidth:190,overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}}>
-              {nomeBreve(code, nomeArgomento)}
-            </div>
-            <div style={{fontSize:13.5,color:'var(--text3)',fontWeight:600,fontVariantNumeric:'tabular-nums',whiteSpace:'nowrap'}}>
-              {currentIdx+1} di {total}
+      {/* Intestazione, una fascia sola: l'argomento, i numeri che scorrono
+          sotto la capsula (il pallino dice com'è andata) e l'avanzamento */}
+      <div style={{background:'var(--card)',boxShadow:'var(--ombra)',position:'relative',zIndex:1,flexShrink:0}}>
+        <div style={{padding:'10px 16px 2px',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+          <div style={{display:'flex',alignItems:'center',gap:8,minWidth:0}}>
+            <button onClick={()=>router.back()} aria-label="Indietro" style={{background:'none',border:'none',cursor:'pointer',padding:4,color:'var(--text3)',display:'flex'}}>
+              <ChevronLeft size={20}/>
+            </button>
+            <div style={{minWidth:0}}>
+              <div style={{fontSize:16,color:'var(--text)',fontWeight:800,maxWidth:190,overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}}>
+                {nomeBreve(code, nomeArgomento)}
+              </div>
+              <div style={{fontSize:13.5,color:'var(--text3)',fontWeight:600,fontVariantNumeric:'tabular-nums',whiteSpace:'nowrap'}}>
+                {currentIdx+1} di {total}
+              </div>
             </div>
           </div>
-        </div>
-        <div style={{display:'flex',alignItems:'center',gap:6}}>
-          {answeredCount > 0 && (
-            <button onClick={()=>setChiediRiavvio(true)} title="Ricomincia l'argomento da capo"
-              style={{padding:'5px 8px',borderRadius:8,border:'1px solid var(--border)',background:'transparent',color:'var(--text3)',cursor:'pointer',fontFamily:'inherit',display:'flex',alignItems:'center',gap:4,fontSize:13.5,fontWeight:700}}>
-              <RotateCcw size={13}/>Ricomincia
+          <div style={{display:'flex',alignItems:'center',gap:6}}>
+            {answeredCount > 0 && (
+              <button onClick={()=>setChiediRiavvio(true)} title="Ricomincia l'argomento da capo"
+                style={{padding:'5px 8px',borderRadius:8,border:'1px solid var(--border)',background:'transparent',color:'var(--text3)',cursor:'pointer',fontFamily:'inherit',display:'flex',alignItems:'center',gap:4,fontSize:13.5,fontWeight:700}}>
+                <RotateCcw size={13}/>Ricomincia
+              </button>
+            )}
+            <button onClick={()=>router.back()}
+              style={{padding:'5px 10px',borderRadius:8,border:'1px solid var(--border)',background: isAllDone ? 'var(--accent)' : 'transparent',color: isAllDone ? '#fff' : 'var(--text3)',fontSize:13.5,fontWeight:700,cursor:'pointer',fontFamily:'inherit'}}>
+              {isAllDone ? 'Termina' : 'Esci'}
             </button>
-          )}
-          <button onClick={()=>router.back()}
-            style={{padding:'5px 10px',borderRadius:8,border:'1px solid var(--border)',background: isAllDone ? 'var(--accent)' : 'transparent',color: isAllDone ? '#fff' : 'var(--text3)',fontSize:13.5,fontWeight:700,cursor:'pointer',fontFamily:'inherit'}}>
-            {isAllDone ? 'Termina' : 'Esci'}
-          </button>
+          </div>
+        </div>
+        <Numeri totale={questions.length} corrente={currentIdx} onScegli={setCurrentIdx}
+          esito={idx => {
+            const q = questions[idx]
+            if (!data(answers[q.id])) return 'vuota'
+            return answers[q.id] === q.risposta ? 'giusta' : 'sbagliata'
+          }} />
+        <div style={{height:3,background:'var(--surface)'}}>
+          <div style={{height:'100%',background:'var(--accent)',width:`${Math.round(answeredCount / total * 100)}%`,transition:'width 0.3s'}} />
         </div>
       </div>
-
-      {/* Numeri che scorrono: il corrente al centro, il colore dice com'è andata */}
-      <Numeri totale={questions.length} corrente={currentIdx} onScegli={setCurrentIdx}
-        esito={idx => {
-          const q = questions[idx]
-          if (!data(answers[q.id])) return 'vuota'
-          return answers[q.id] === q.risposta ? 'giusta' : 'sbagliata'
-        }} />
 
       {/* Corpo: il riquadro della domanda prende lo spazio libero, sempre lo
           stesso, e VERO/FALSO stanno sempre allo stesso posto, con o senza figura */}

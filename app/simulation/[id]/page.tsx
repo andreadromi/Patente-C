@@ -230,43 +230,43 @@ export default function SimulationPage() {
   return (
     <div style={{height:'100dvh',background:'var(--bg)',color:'var(--text)',fontFamily:'system-ui,-apple-system,sans-serif',display:'flex',flexDirection:'column',overflow:'hidden'}}>
 
-      {/* Header: l'argomento della domanda aperta, e nell'esame il tempo */}
-      <div style={{padding:'10px 16px',borderBottom:'1px solid var(--border)',display:'flex',alignItems:'center',justifyContent:'space-between',flexShrink:0}}>
-        <div style={{minWidth:0,flex:1,marginRight:6}}>
-          <div style={{fontSize:16,fontWeight:800,color:'var(--text)',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis'}}>
-            {nomeBreve(current.argomentoCode, current.argomento)}
-          </div>
-          <div style={{fontSize:13,fontWeight:600,color:'var(--text3)',whiteSpace:'nowrap',fontVariantNumeric:'tabular-nums'}}>
-            Domanda {currentIdx+1} di {total}
-          </div>
-        </div>
-        <div style={{display:'flex',alignItems:'center',gap:8,flexShrink:0}}>
-          {reale && (
-            <div style={{display:'flex',alignItems:'center',gap:5,color:timerColor}}>
-              <Clock size={14}/>
-              <span style={{fontSize:17,fontWeight:900,fontVariantNumeric:'tabular-nums'}}>{formatTime(timeLeft)}</span>
+      {/* Intestazione, una fascia sola: l'argomento della domanda aperta (e
+          nell'esame il tempo), i numeri che scorrono sotto la capsula e
+          l'avanzamento. In Studio il pallino sotto ogni numero dice com'è andata */}
+      <div style={{background:'var(--card)',boxShadow:'var(--ombra)',position:'relative',zIndex:1,flexShrink:0}}>
+        <div style={{padding:'10px 16px 2px',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+          <div style={{minWidth:0,flex:1,marginRight:6}}>
+            <div style={{fontSize:16,fontWeight:800,color:'var(--text)',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis'}}>
+              {nomeBreve(current.argomentoCode, current.argomento)}
             </div>
-          )}
-          <button onClick={()=>{ setPaused(true); setChiediUscita(true) }}
-            style={{padding:'5px 10px',borderRadius:8,border:'1px solid var(--border)',background:'transparent',color:'var(--text3)',fontSize:13.5,fontWeight:700,cursor:'pointer',fontFamily:'inherit'}}>
-            Esci
-          </button>
+            <div style={{fontSize:13,fontWeight:600,color:'var(--text3)',whiteSpace:'nowrap',fontVariantNumeric:'tabular-nums'}}>
+              Domanda {currentIdx+1} di {total}
+            </div>
+          </div>
+          <div style={{display:'flex',alignItems:'center',gap:8,flexShrink:0}}>
+            {reale && (
+              <div style={{display:'flex',alignItems:'center',gap:5,color:timerColor}}>
+                <Clock size={14}/>
+                <span style={{fontSize:17,fontWeight:900,fontVariantNumeric:'tabular-nums'}}>{formatTime(timeLeft)}</span>
+              </div>
+            )}
+            <button onClick={()=>{ setPaused(true); setChiediUscita(true) }}
+              style={{padding:'5px 10px',borderRadius:8,border:'1px solid var(--border)',background:'transparent',color:'var(--text3)',fontSize:13.5,fontWeight:700,cursor:'pointer',fontFamily:'inherit'}}>
+              Esci
+            </button>
+          </div>
+        </div>
+        <Numeri totale={questions.length} corrente={currentIdx} onScegli={setCurrentIdx}
+          esito={idx => {
+            const q = questions[idx]
+            if (!risposta(answers[q.id])) return 'vuota'
+            if (!studyMode) return 'data'
+            return answers[q.id] === q.risposta ? 'giusta' : 'sbagliata'
+          }} />
+        <div style={{height:3,background:'var(--surface)'}}>
+          <div style={{height:'100%',background:'var(--accent)',width:`${progressPct}%`,transition:'width 0.3s'}} />
         </div>
       </div>
-
-      {/* Progress */}
-      <div style={{height:3,background:'var(--border)',flexShrink:0}}>
-        <div style={{height:'100%',background:'var(--accent)',width:`${progressPct}%`,transition:'width 0.3s'}} />
-      </div>
-
-      {/* Numeri che scorrono: il corrente al centro; in Studio il colore dice anche com'è andata */}
-      <Numeri totale={questions.length} corrente={currentIdx} onScegli={setCurrentIdx}
-        esito={idx => {
-          const q = questions[idx]
-          if (!risposta(answers[q.id])) return 'vuota'
-          if (!studyMode) return 'data'
-          return answers[q.id] === q.risposta ? 'giusta' : 'sbagliata'
-        }} />
 
       {/* Corpo: il riquadro della domanda prende lo spazio libero, sempre lo
           stesso, e VERO/FALSO stanno sempre allo stesso posto, con o senza figura */}
