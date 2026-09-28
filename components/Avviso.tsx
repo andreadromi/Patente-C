@@ -5,8 +5,10 @@ interface Azione { label: string; onClick: () => void; tono?: 'accent' | 'red'; 
 
 /**
  * Le conferme dell'app: un pannello che sale dal basso, con un'icona grande,
- * un titolo, una riga sola di testo e due pulsanti larghi. Prende il posto
- * delle finestre del browser (confirm) e dei riquadri pieni di scritte.
+ * un titolo, una riga sola di testo e i pulsanti larghi, tutti uguali di
+ * forma perché si veda che si toccano: pieno quello principale, bordato la
+ * seconda strada, grigio quello che torna indietro. Prende il posto delle
+ * finestre del browser (confirm) e dei riquadri pieni di scritte.
  * Toccando fuori, o col tasto Esc, si chiude come "Annulla".
  */
 export function Avviso({ icona, titolo, testo, conferma, secondaria, annulla, errore, onChiudi }: {
@@ -14,7 +16,7 @@ export function Avviso({ icona, titolo, testo, conferma, secondaria, annulla, er
   titolo: string
   testo?: ReactNode
   conferma: Azione
-  /** Una seconda strada, meno importante: un pulsante di solo testo */
+  /** Una seconda strada: un pulsante bordato del suo colore, fra il principale e "Annulla" */
   secondaria?: Azione
   annulla: string
   errore?: string
@@ -27,6 +29,7 @@ export function Avviso({ icona, titolo, testo, conferma, secondaria, annulla, er
   }, [onChiudi])
 
   const colore = conferma.tono === 'red' ? 'var(--red)' : 'var(--accent)'
+  const coloreSecondaria = secondaria?.tono === 'red' ? 'var(--red)' : 'var(--accent)'
   return (
     <div onClick={onChiudi} role="presentation"
       style={{ position: 'fixed', inset: 0, zIndex: 50, background: 'rgba(20,26,48,0.45)', backdropFilter: 'blur(6px)', WebkitBackdropFilter: 'blur(6px)', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', animation: 'velo .2s ease-out' }}>
@@ -49,7 +52,7 @@ export function Avviso({ icona, titolo, testo, conferma, secondaria, annulla, er
           </button>
           {secondaria && (
             <button onClick={secondaria.onClick} disabled={secondaria.disabled}
-              style={{ height: 50, borderRadius: 18, border: 'none', background: 'transparent', color: secondaria.tono === 'red' ? 'var(--red)' : 'var(--accent)', fontSize: 16.5, fontWeight: 800, cursor: 'pointer', fontFamily: 'inherit' }}>
+              style={{ height: 56, borderRadius: 18, border: `2px solid ${coloreSecondaria}`, background: 'var(--card)', color: coloreSecondaria, fontSize: 17, fontWeight: 800, cursor: secondaria.disabled ? 'default' : 'pointer', opacity: secondaria.disabled ? 0.6 : 1, fontFamily: 'inherit' }}>
               {secondaria.label}
             </button>
           )}
