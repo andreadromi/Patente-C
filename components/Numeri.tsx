@@ -29,14 +29,23 @@ const LATO = 38
 const ALTEZZA = 60
 /** Fermo da tanto così, lo scorrimento col dito è finito: si apre la domanda al centro. */
 const FERMO_MS = 140
+/**
+ * Fin qui il dito può scivolare (in punti) ed è ancora un tocco sul numero:
+ * sul telefono, ai bordi soprattutto, un tocco si sposta sempre un poco, e il
+ * browser lo prende per uno scorrimento e dà alla striscia l'inerzia.
+ */
+const TOCCO_PX = 24
+/** Un dito giù più a lungo di così non è un tocco. */
+const TOCCO_MS = 700
 
 /**
  * I numeri delle domande, ognuno nel suo rettangolo, in una striscia che
  * scorre col dito come il selettore dell'ora di un telefono: il rettangolo
  * al centro è la domanda aperta, pieno di cobalto e più grande; scorrendo,
  * il centro passa da un numero all'altro, e dove ci si ferma si apre quella
- * domanda. Un tocco su un numero porta dritti lì. Gli altri rettangoli
- * dicono com'è andata (vedi RETTANGOLO) e sfumano verso i bordi.
+ * domanda. Un tocco su un numero porta dritti lì, anche se il dito scivola
+ * un poco. Gli altri rettangoli dicono com'è andata (vedi RETTANGOLO) e
+ * sfumano verso i bordi.
  *
  * Senza sfondo né bordi suoi: sta dentro la fascia dell'intestazione.
  */
@@ -54,11 +63,16 @@ export function Numeri({ totale, corrente, esito, onScegli }: {
   const correnteRef = useRef(corrente)
   const scegliRef = useRef(onScegli)
   useEffect(() => { correnteRef.current = corrente; scegliRef.current = onScegli })
-  // Solo uno scorrimento partito dal dito (o dalla rotella) sceglie una domanda.
-  // Gli altri, quelli dell'app (Succ, un tocco, la risposta) e quelli del
-  // browser che riaggancia i numeri dopo un cambio di misura, non aprono
+  // Solo un trascinamento vero col dito (o la rotella) sceglie la domanda che
+  // si ferma al centro. Gli altri scorrimenti, quelli dell'app (Succ, un
+  // tocco, la risposta) e quelli del browser, che riaggancia i numeri dopo un
+  // cambio di misura o dà l'inerzia a un tocco un po' scivolato, non aprono
   // nulla: se lasciano al centro un altro numero, la striscia torna alla domanda aperta.
   const dalDito = useRef(false)
+  // Il dito sulla striscia: dove e quando è sceso, su quale numero, e se ha trascinato
+  const tocco = useRef<{ x: number; y: number; t: number; idx: number | null; trascina: boolean } | null>(null)
+  // Quando un tocco ha già aperto il suo numero: il click che il browser manda subito dopo non serve
+  const apertoDalTocco = useRef(-Infinity)
   const fermo = useRef<ReturnType<typeof setTimeout> | null>(null)
   const primaVolta = useRef(true)
 
@@ -84,29 +98,81 @@ export function Numeri({ totale, corrente, esito, onScegli }: {
     primaVolta.current = false
   }, [corrente, margine])
 
+  const alCentro = (s: HTMLDivElement) => Math.max(0, Math.min(totale - 1, Math.round(s.scrollLeft / POSTO)))
+
+  // A striscia ferma: dopo un trascinamento si apre la domanda al centro,
+  // altrimenti la striscia torna a quella aperta. Col dito ancora giù non si
+  // decide niente: ci pensa il dito quando si alza.
+  function controlla() {
+    const s = striscia.current
+    if (!s || tocco.current) return
+    const i = alCentro(s)
+    const aperta = correnteRef.current
+    if (dalDito.current) {
+      dalDito.current = false
+      if (i !== aperta) scegliRef.current(i)
+    } else if (i !== aperta) {
+      s.scrollTo({ left: aperta * POSTO, behavior: 'smooth' })
+    }
+  }
+
+  function aspettaFermo() {
+    if (fermo.current) clearTimeout(fermo.current)
+    fermo.current = setTimeout(controlla, FERMO_MS)
+  }
+
   function scorre() {
     const s = striscia.current
     if (!s) return
-    const i = Math.max(0, Math.min(totale - 1, Math.round(s.scrollLeft / POSTO)))
-    setCentro(i)
-    if (fermo.current) clearTimeout(fermo.current)
-    fermo.current = setTimeout(() => {
-      const aperta = correnteRef.current
-      if (dalDito.current) {
-        dalDito.current = false
-        if (i !== aperta) scegliRef.current(i)
-      } else if (i !== aperta) {
-        s.scrollTo({ left: aperta * POSTO, behavior: 'smooth' })
-      }
-    }, FERMO_MS)
+    setCentro(alCentro(s))
+    aspettaFermo()
   }
 
-  const dito = () => { dalDito.current = true }
+  function giu(e: React.TouchEvent) {
+    const p = e.touches[0]
+    const numero = (e.target as HTMLElement).closest<HTMLElement>('[data-idx]')
+    tocco.current = {
+      x: p.clientX, y: p.clientY, t: e.timeStamp, idx: numero ? Number(numero.dataset.idx) : null,
+      // con due dita non è un tocco su un numero
+      trascina: e.touches.length > 1,
+    }
+  }
+
+  function muove(e: React.TouchEvent) {
+    const tc = tocco.current
+    const p = e.touches[0]
+    if (!tc || tc.trascina || !p) return
+    const dx = Math.abs(p.clientX - tc.x)
+    if (dx > TOCCO_PX || Math.abs(p.clientY - tc.y) > TOCCO_PX) {
+      tc.trascina = true
+      // di lato trascina la striscia: dove si ferma, si apre
+      if (dx > TOCCO_PX) dalDito.current = true
+    }
+  }
+
+  function su(e: React.TouchEvent) {
+    const tc = tocco.current
+    tocco.current = null
+    if (tc && !tc.trascina && tc.idx !== null && e.timeStamp - tc.t < TOCCO_MS) {
+      // Un tocco, anche un po' scivolato: si apre il numero toccato, e
+      // l'inerzia che il browser avesse dato alla striscia non sceglie niente
+      dalDito.current = false
+      apertoDalTocco.current = e.timeStamp
+      scegliRef.current(tc.idx)
+    }
+    aspettaFermo()
+  }
+
+  function annullato() {
+    tocco.current = null
+    aspettaFermo()
+  }
   const bordi = 'linear-gradient(to right, transparent 0, #000 56px, #000 calc(100% - 56px), transparent 100%)'
 
   return (
     <div ref={striscia} role="group" aria-label="Domande" onScroll={scorre}
-      onPointerDown={dito} onTouchStart={dito} onWheel={dito}
+      onTouchStart={giu} onTouchMove={muove} onTouchEnd={su} onTouchCancel={annullato}
+      onWheel={() => { dalDito.current = true }}
       style={{
         height: ALTEZZA, flexShrink: 0, overflowX: 'auto', overflowY: 'hidden', scrollbarWidth: 'none',
         scrollSnapType: margine ? 'x mandatory' : 'none', overscrollBehaviorX: 'contain', maskImage: bordi, WebkitMaskImage: bordi,
@@ -114,7 +180,12 @@ export function Numeri({ totale, corrente, esito, onScegli }: {
       <div style={{ display: 'flex', height: '100%', width: 'max-content' }}>
         <div style={{ flex: '0 0 auto', width: margine }} />
         {Array.from({ length: totale }, (_, idx) => (
-          <button key={idx} onClick={() => { dalDito.current = false; onScegli(idx) }} aria-label={`Domanda ${idx + 1}`} aria-current={idx === corrente ? 'step' : undefined}
+          <button key={idx} data-idx={idx} aria-label={`Domanda ${idx + 1}`} aria-current={idx === corrente ? 'step' : undefined}
+            onClick={e => {
+              if (e.timeStamp - apertoDalTocco.current < 800) return
+              dalDito.current = false
+              onScegli(idx)
+            }}
             style={{
               flex: '0 0 auto', width: POSTO, height: '100%', padding: 0, border: 'none', background: 'transparent',
               display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', fontFamily: 'inherit', scrollSnapAlign: 'center',
