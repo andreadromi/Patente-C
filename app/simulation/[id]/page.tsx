@@ -231,9 +231,9 @@ export default function SimulationPage() {
     <div style={{height:'100dvh',background:'var(--bg)',color:'var(--text)',fontFamily:'system-ui,-apple-system,sans-serif',display:'flex',flexDirection:'column',overflow:'hidden'}}>
 
       {/* Intestazione, una fascia sola: l'argomento della domanda aperta (e
-          nell'esame il tempo), i numeri che scorrono sotto la capsula e, sul
-          bordo basso, la linea dell'avanzamento. In Studio il colore del
-          numero dice com'è andata */}
+          nell'esame il tempo), i numeri nei loro rettangoli che scorrono e,
+          sul bordo basso, la linea dell'avanzamento. Il colore del
+          rettangolo dice com'è andata (all'esame solo se è data) */}
       <div style={{background:'var(--card)',boxShadow:'var(--ombra)',position:'relative',zIndex:1,flexShrink:0}}>
         <div style={{padding:'12px 16px 2px',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
           <div style={{minWidth:0,flex:1,marginRight:10}}>

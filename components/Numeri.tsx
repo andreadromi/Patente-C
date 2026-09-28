@@ -1,35 +1,44 @@
 'use client'
-import { useEffect, useLayoutEffect, useRef, useState } from 'react'
+import { CSSProperties, useEffect, useLayoutEffect, useRef, useState } from 'react'
 
 /** Com'è andata una domanda: in Studio giusta o sbagliata, all'esame solo data o no. */
 export type EsitoNumero = 'vuota' | 'data' | 'giusta' | 'sbagliata'
 
-const COLORE: Record<EsitoNumero, string> = {
-  vuota: 'var(--text3)',
-  data: 'var(--text)',
-  giusta: 'var(--green)',
-  sbagliata: 'var(--red)',
+/**
+ * Il rettangolo di ogni numero, come i pulsanti di VERO e FALSO: bianco
+ * quando è da fare, tinto di verde o di rosso com'è andata (Studio), di
+ * cobalto chiaro quando è data all'esame.
+ */
+const RETTANGOLO: Record<EsitoNumero, CSSProperties> = {
+  vuota: { background: 'var(--card)', borderColor: 'var(--border)', color: 'var(--text3)' },
+  data: { background: 'rgba(var(--accent-rgb),0.08)', borderColor: 'rgba(var(--accent-rgb),0.3)', color: 'var(--accent-scuro)' },
+  giusta: { background: 'var(--green-dim)', borderColor: 'rgba(var(--green-rgb),0.35)', color: 'var(--green)' },
+  sbagliata: { background: 'var(--red-dim)', borderColor: 'rgba(var(--red-rgb),0.35)', color: 'var(--red)' },
+}
+/** Quello al centro: pieno di cobalto, più grande, col numero bianco. */
+const AL_CENTRO: CSSProperties = {
+  background: 'linear-gradient(135deg, var(--accent-scuro), var(--accent))', borderColor: 'transparent', color: '#fff',
+  fontWeight: 900, transform: 'scale(1.2)', boxShadow: '0 2px 6px rgba(var(--accent-rgb),0.35)',
 }
 
-/** Ogni numero ha il suo posto, sempre largo uguale: il numero idx sta sotto la capsula quando lo scorrimento vale idx * POSTO. */
-const POSTO = 44
-const ALTEZZA = 52
-/** Altezza a cui stanno i numeri e la capsula: a metà striscia. */
-const RIGA = ALTEZZA / 2
-const CAPSULA = { larghezza: 50, altezza: 36 }
-/** Fermo da tanto così, lo scorrimento col dito è finito: si apre la domanda sotto la capsula. */
+/** Ogni numero ha il suo posto, sempre largo uguale: il numero idx sta al centro quando lo scorrimento vale idx * POSTO. */
+const POSTO = 48
+/** Il lato del rettangolo; quello al centro, ingrandito, resta dentro il suo posto. */
+const LATO = 38
+/** Alta abbastanza perché il rettangolo al centro e la sua ombra non tocchino i bordi (la striscia scorre, e taglia quello che esce). */
+const ALTEZZA = 60
+/** Fermo da tanto così, lo scorrimento col dito è finito: si apre la domanda al centro. */
 const FERMO_MS = 140
 
 /**
- * I numeri delle domande, come il selettore dell'ora di un telefono: una
- * capsula cobalto sta ferma al centro e i numeri le scorrono sotto. Quello
- * nella capsula è la domanda aperta, bianco e più grande; scorrendo col dito,
- * dove ci si ferma si apre quella domanda, e un tocco su un numero porta
- * dritti lì. Gli altri numeri sono tutti della stessa grandezza e sfumano
- * verso i bordi; com'è andata lo dice il loro colore: verde giusta e rosso
- * sbagliata (Studio), scuro data (esame), grigio ancora da fare.
+ * I numeri delle domande, ognuno nel suo rettangolo, in una striscia che
+ * scorre col dito come il selettore dell'ora di un telefono: il rettangolo
+ * al centro è la domanda aperta, pieno di cobalto e più grande; scorrendo,
+ * il centro passa da un numero all'altro, e dove ci si ferma si apre quella
+ * domanda. Un tocco su un numero porta dritti lì. Gli altri rettangoli
+ * dicono com'è andata (vedi RETTANGOLO) e sfumano verso i bordi.
  *
- * Senza sfondo né bordi: sta dentro la fascia dell'intestazione.
+ * Senza sfondo né bordi suoi: sta dentro la fascia dell'intestazione.
  */
 export function Numeri({ totale, corrente, esito, onScegli }: {
   totale: number
@@ -38,9 +47,9 @@ export function Numeri({ totale, corrente, esito, onScegli }: {
   onScegli: (idx: number) => void
 }) {
   const striscia = useRef<HTMLDivElement>(null)
-  // Spazio vuoto ai due capi, mezza striscia: anche il primo e l'ultimo numero arrivano nella capsula
+  // Spazio vuoto ai due capi, mezza striscia: anche il primo e l'ultimo numero arrivano al centro
   const [margine, setMargine] = useState(0)
-  // Il numero che in questo momento sta sotto la capsula (mentre scorre, può non essere quello aperto)
+  // Il numero che in questo momento sta al centro (mentre scorre, può non essere quello aperto)
   const [centro, setCentro] = useState(corrente)
   const correnteRef = useRef(corrente)
   const scegliRef = useRef(onScegli)
@@ -48,7 +57,7 @@ export function Numeri({ totale, corrente, esito, onScegli }: {
   // Solo uno scorrimento partito dal dito (o dalla rotella) sceglie una domanda.
   // Gli altri, quelli dell'app (Succ, un tocco, la risposta) e quelli del
   // browser che riaggancia i numeri dopo un cambio di misura, non aprono
-  // nulla: se lasciano la capsula fuori posto, la striscia torna alla domanda aperta.
+  // nulla: se lasciano al centro un altro numero, la striscia torna alla domanda aperta.
   const dalDito = useRef(false)
   const fermo = useRef<ReturnType<typeof setTimeout> | null>(null)
   const primaVolta = useRef(true)
@@ -96,40 +105,32 @@ export function Numeri({ totale, corrente, esito, onScegli }: {
   const bordi = 'linear-gradient(to right, transparent 0, #000 56px, #000 calc(100% - 56px), transparent 100%)'
 
   return (
-    <div style={{ position: 'relative', height: ALTEZZA, flexShrink: 0 }}>
-      <div aria-hidden style={{
-        position: 'absolute', left: '50%', top: RIGA - CAPSULA.altezza / 2, width: CAPSULA.larghezza, height: CAPSULA.altezza,
-        marginLeft: -CAPSULA.larghezza / 2, borderRadius: CAPSULA.altezza / 2, pointerEvents: 'none',
-        background: 'linear-gradient(135deg, var(--accent-scuro), var(--accent))', boxShadow: '0 4px 12px rgba(var(--accent-rgb),0.35)',
-      }} />
-      <div ref={striscia} role="group" aria-label="Domande" onScroll={scorre}
-        onPointerDown={dito} onTouchStart={dito} onWheel={dito}
-        style={{
-          position: 'relative', height: '100%', overflowX: 'auto', overflowY: 'hidden', scrollbarWidth: 'none',
-          scrollSnapType: margine ? 'x mandatory' : 'none', overscrollBehaviorX: 'contain', maskImage: bordi, WebkitMaskImage: bordi,
-        }}>
-        <div style={{ display: 'flex', height: '100%', width: 'max-content' }}>
-          <div style={{ flex: '0 0 auto', width: margine }} />
-          {Array.from({ length: totale }, (_, idx) => {
-            const inCapsula = idx === centro
-            return (
-              <button key={idx} onClick={() => { dalDito.current = false; onScegli(idx) }} aria-label={`Domanda ${idx + 1}`} aria-current={idx === corrente ? 'step' : undefined}
-                style={{
-                  flex: '0 0 auto', width: POSTO, height: '100%', padding: 0, border: 'none', background: 'transparent',
-                  position: 'relative', cursor: 'pointer', fontFamily: 'inherit', scrollSnapAlign: 'center',
-                }}>
-                <span style={{
-                  position: 'absolute', left: '50%', top: RIGA, transform: 'translate(-50%, -50%)', lineHeight: 1,
-                  fontSize: inCapsula ? 20 : 16, fontWeight: inCapsula ? 900 : 700, fontVariantNumeric: 'tabular-nums',
-                  color: inCapsula ? '#fff' : COLORE[esito(idx)], transition: 'font-size .15s ease, color .15s ease',
-                }}>
-                  {idx + 1}
-                </span>
-              </button>
-            )
-          })}
-          <div style={{ flex: '0 0 auto', width: margine }} />
-        </div>
+    <div ref={striscia} role="group" aria-label="Domande" onScroll={scorre}
+      onPointerDown={dito} onTouchStart={dito} onWheel={dito}
+      style={{
+        height: ALTEZZA, flexShrink: 0, overflowX: 'auto', overflowY: 'hidden', scrollbarWidth: 'none',
+        scrollSnapType: margine ? 'x mandatory' : 'none', overscrollBehaviorX: 'contain', maskImage: bordi, WebkitMaskImage: bordi,
+      }}>
+      <div style={{ display: 'flex', height: '100%', width: 'max-content' }}>
+        <div style={{ flex: '0 0 auto', width: margine }} />
+        {Array.from({ length: totale }, (_, idx) => (
+          <button key={idx} onClick={() => { dalDito.current = false; onScegli(idx) }} aria-label={`Domanda ${idx + 1}`} aria-current={idx === corrente ? 'step' : undefined}
+            style={{
+              flex: '0 0 auto', width: POSTO, height: '100%', padding: 0, border: 'none', background: 'transparent',
+              display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', fontFamily: 'inherit', scrollSnapAlign: 'center',
+            }}>
+            <span style={{
+              width: LATO, height: LATO, borderRadius: 11, borderWidth: 1.5, borderStyle: 'solid',
+              display: 'flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: 15, fontWeight: 800, lineHeight: 1, fontVariantNumeric: 'tabular-nums',
+              transition: 'transform .18s ease, background-color .15s ease, border-color .15s ease, color .15s ease, box-shadow .15s ease',
+              ...RETTANGOLO[esito(idx)], ...(idx === centro ? AL_CENTRO : null),
+            }}>
+              {idx + 1}
+            </span>
+          </button>
+        ))}
+        <div style={{ flex: '0 0 auto', width: margine }} />
       </div>
     </div>
   )

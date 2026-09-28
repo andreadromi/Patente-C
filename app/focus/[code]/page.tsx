@@ -174,9 +174,9 @@ export default function FocusStudyPage() {
   return (
     <div style={{height:'100dvh',background:'var(--bg)',color:'var(--text)',fontFamily:'system-ui,-apple-system,sans-serif',display:'flex',flexDirection:'column',overflow:'hidden'}}>
 
-      {/* Intestazione, una fascia sola: l'argomento, i numeri che scorrono
-          sotto la capsula (il colore dice com'è andata) e, sul bordo basso,
-          la linea dell'avanzamento. Uguale a quella delle simulazioni: a
+      {/* Intestazione, una fascia sola: l'argomento, i numeri nei loro
+          rettangoli che scorrono (il colore dice com'è andata) e, sul bordo
+          basso, la linea dell'avanzamento. Uguale a quella delle simulazioni: a
           destra le pillole, Ricomincia (solo l'icona: chiede conferma) ed Esci */}
       <div style={{background:'var(--card)',boxShadow:'var(--ombra)',position:'relative',zIndex:1,flexShrink:0}}>
         <div style={{padding:'12px 16px 2px',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
