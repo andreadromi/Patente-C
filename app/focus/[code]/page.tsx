@@ -174,7 +174,7 @@ export default function FocusStudyPage() {
     <div style={{height:'100dvh',background:'var(--bg)',color:'var(--text)',fontFamily:'system-ui,-apple-system,sans-serif',display:'flex',flexDirection:'column',overflow:'hidden'}}>
 
       {/* Intestazione, una fascia sola: l'argomento, i numeri che scorrono
-          sotto la capsula (il pallino dice com'è andata) e l'avanzamento */}
+          sotto la capsula (il colore dice com'è andata) e l'avanzamento */}
       <div style={{background:'var(--card)',boxShadow:'var(--ombra)',position:'relative',zIndex:1,flexShrink:0}}>
         <div style={{padding:'10px 16px 2px',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
           <div style={{display:'flex',alignItems:'center',gap:8,minWidth:0}}>

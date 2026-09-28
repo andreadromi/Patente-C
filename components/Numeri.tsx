@@ -4,18 +4,18 @@ import { useEffect, useRef, useState } from 'react'
 /** Com'è andata una domanda: in Studio giusta o sbagliata, all'esame solo data o no. */
 export type EsitoNumero = 'vuota' | 'data' | 'giusta' | 'sbagliata'
 
-const PALLINO: Record<EsitoNumero, string> = {
-  vuota: 'transparent',
-  data: 'var(--accent)',
+const COLORE: Record<EsitoNumero, string> = {
+  vuota: 'var(--text3)',
+  data: 'var(--text)',
   giusta: 'var(--green)',
   sbagliata: 'var(--red)',
 }
 
 /** Ogni numero ha il suo posto, sempre largo uguale: il numero idx sta sotto la capsula quando lo scorrimento vale idx * POSTO. */
 const POSTO = 44
-const ALTEZZA = 58
-/** Altezza a cui stanno i numeri e la capsula; il pallino dell'esito sta sotto, fuori dalla capsula. */
-const RIGA = 24
+const ALTEZZA = 52
+/** Altezza a cui stanno i numeri e la capsula: a metà striscia. */
+const RIGA = ALTEZZA / 2
 const CAPSULA = { larghezza: 50, altezza: 36 }
 /** Fermo da tanto così, lo scorrimento col dito è finito: si apre la domanda sotto la capsula. */
 const FERMO_MS = 140
@@ -25,9 +25,9 @@ const FERMO_MS = 140
  * capsula cobalto sta ferma al centro e i numeri le scorrono sotto. Quello
  * nella capsula è la domanda aperta, bianco e più grande; scorrendo col dito,
  * dove ci si ferma si apre quella domanda, e un tocco su un numero porta
- * dritti lì. Gli altri numeri sono tutti uguali, grigi, e sfumano verso i
- * bordi; com'è andata lo dice il pallino sotto: verde giusta e rosso
- * sbagliata (Studio), cobalto data (esame), nessuno se è ancora da fare.
+ * dritti lì. Gli altri numeri sono tutti della stessa grandezza e sfumano
+ * verso i bordi; com'è andata lo dice il loro colore: verde giusta e rosso
+ * sbagliata (Studio), scuro data (esame), grigio ancora da fare.
  *
  * Senza sfondo né bordi: sta dentro la fascia dell'intestazione.
  */
@@ -112,14 +112,10 @@ export function Numeri({ totale, corrente, esito, onScegli }: {
                 <span style={{
                   position: 'absolute', left: '50%', top: RIGA, transform: 'translate(-50%, -50%)', lineHeight: 1,
                   fontSize: inCapsula ? 20 : 16, fontWeight: inCapsula ? 900 : 700, fontVariantNumeric: 'tabular-nums',
-                  color: inCapsula ? '#fff' : 'var(--text3)', transition: 'font-size .15s ease, color .15s ease',
+                  color: inCapsula ? '#fff' : COLORE[esito(idx)], transition: 'font-size .15s ease, color .15s ease',
                 }}>
                   {idx + 1}
                 </span>
-                <span aria-hidden style={{
-                  position: 'absolute', left: '50%', bottom: 6, width: 5, height: 5, marginLeft: -2.5, borderRadius: '50%',
-                  background: PALLINO[esito(idx)],
-                }} />
               </button>
             )
           })}

@@ -232,7 +232,7 @@ export default function SimulationPage() {
 
       {/* Intestazione, una fascia sola: l'argomento della domanda aperta (e
           nell'esame il tempo), i numeri che scorrono sotto la capsula e
-          l'avanzamento. In Studio il pallino sotto ogni numero dice com'è andata */}
+          l'avanzamento. In Studio il colore del numero dice com'è andata */}
       <div style={{background:'var(--card)',boxShadow:'var(--ombra)',position:'relative',zIndex:1,flexShrink:0}}>
         <div style={{padding:'10px 16px 2px',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
           <div style={{minWidth:0,flex:1,marginRight:6}}>
