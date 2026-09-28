@@ -61,6 +61,27 @@ body > div { animation: entra .28s cubic-bezier(.2, .8, .2, 1); }
 @keyframes sale { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 .scheda { box-shadow: var(--ombra); animation: sale .35s cubic-bezier(.2, .8, .2, 1) backwards; }
 
+/* Linea di avanzamento (components/Avanzamento): entra da zero, cresce con un
+   piccolo rimbalzo a ogni risposta, e un riflesso le passa sopra ogni tanto */
+.avanzamento {
+  position: relative; height: 100%; border-radius: inherit; overflow: hidden;
+  background: linear-gradient(90deg, var(--accent-scuro), var(--accent) 60%, var(--accent2));
+  transition: width .7s cubic-bezier(.34, 1.4, .64, 1);
+  animation: avanzamento-entra .9s cubic-bezier(.22, 1, .36, 1) backwards;
+}
+.avanzamento::after {
+  content: ''; position: absolute; top: 0; bottom: 0; left: 0; width: 45%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+  transform: translateX(-100%);
+  animation: avanzamento-riflesso 3.2s ease-in-out 1s infinite;
+}
+@keyframes avanzamento-entra { from { width: 0; } }
+@keyframes avanzamento-riflesso { 0% { transform: translateX(-100%); } 55%, 100% { transform: translateX(240%); } }
+@media (prefers-reduced-motion: reduce) {
+  .avanzamento { transition: none; animation: none; }
+  .avanzamento::after { display: none; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }

@@ -10,6 +10,7 @@ import { Avviso, IconaAvviso } from '@/components/Avviso'
 import { Domanda } from '@/components/Domanda'
 import { VeroFalso } from '@/components/VeroFalso'
 import { Numeri } from '@/components/Numeri'
+import { Avanzamento } from '@/components/Avanzamento'
 
 interface QuestionItem {
   id: string; code: string; text: string; image: string | null
@@ -223,7 +224,6 @@ export default function SimulationPage() {
   if (!current) return null
 
   const answeredCount = questions.filter(q => risposta(answers[q.id])).length
-  const progressPct = total ? Math.round((answeredCount/total)*100) : 0
   const timerColor = timeLeft<300 ? 'var(--red)' : timeLeft<600 ? 'var(--amber)' : 'var(--accent)'
   const bloccata = rivelate.has(current.id)
 
@@ -263,9 +263,7 @@ export default function SimulationPage() {
             if (!studyMode) return 'data'
             return answers[q.id] === q.risposta ? 'giusta' : 'sbagliata'
           }} />
-        <div style={{height:3,background:'var(--surface)'}}>
-          <div style={{height:'100%',background:'var(--accent)',width:`${progressPct}%`,transition:'width 0.3s'}} />
-        </div>
+        <Avanzamento fatte={answeredCount} totale={total} />
       </div>
 
       {/* Corpo: il riquadro della domanda prende lo spazio libero, sempre lo

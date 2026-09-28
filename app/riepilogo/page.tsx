@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { Play, ChevronRight, RotateCcw, GraduationCap, Layers, TrendingDown, ClipboardList } from 'lucide-react'
@@ -16,11 +16,6 @@ interface CoperturaArgomento { code: string; name: string; affrontate: number; t
 interface Copertura { affrontate: number; totale: number; argomenti: CoperturaArgomento[] }
 interface ArgomentoStat { code: string; name: string; corrette: number; totali: number; accuratezza: number | null; deboli: number }
 interface Statistiche { argomenti: ArgomentoStat[] }
-
-/** Le simulazioni si mostrano a tappe di dieci. */
-const PER_BLOCCO = 10
-
-type StatoSim = 'ok' | 'ko' | 'corso' | 'da'
 
 /**
  * All'esame si passa con al massimo 4 errori su 40: il 90% di risposte
@@ -44,9 +39,6 @@ export default function RiepilogoPage() {
   const [foglio, setFoglio] = useState<'argomenti' | 'fatica' | 'esami' | null>(null)
   const [creando, setCreando] = useState(false)
   const [errore, setErrore] = useState<string | null>(null)
-  // Tappa aperta nel percorso: finché non se ne tocca una, quella dove si è arrivati
-  const [blocco, setBlocco] = useState<number | null>(null)
-  const stripRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     Promise.all([
@@ -106,15 +98,6 @@ export default function RiepilogoPage() {
     if (eg) { setEsami(eg.esami || []); setCopertura(eg.copertura || null) }
   }
 
-  // La tappa aperta sta al centro della striscia: all'arrivo e a ogni tocco.
-  // Si sposta solo la striscia, non la pagina.
-  useEffect(() => {
-    const striscia = stripRef.current
-    const scheda = striscia?.querySelector<HTMLElement>('[aria-pressed="true"]')
-    if (!striscia || !scheda) return
-    striscia.scrollTo({ left: scheda.offsetLeft - (striscia.clientWidth - scheda.offsetWidth) / 2, behavior: blocco === null ? 'auto' : 'smooth' })
-  }, [loading, blocco])
-
   if (loading) return (
     <div style={{ height:'100dvh', background:'var(--bg)', display:'flex', alignItems:'center', justifyContent:'center' }}>
       <div style={{ width:36, height:36, border:'3px solid var(--border)', borderTopColor:'var(--accent)', borderRadius:'50%', animation:'spin 0.8s linear infinite' }}/>
@@ -139,16 +122,6 @@ export default function RiepilogoPage() {
   const daIniziare = daRiprendere ? null : simulations.find(s => !getLast(s.id)) || null
   const invito = daRiprendere || daIniziare
 
-  const statoSim = (id: string): StatoSim => {
-    const l = getLast(id)
-    if (!l) return 'da'
-    if (l.status === 'COMPLETED') return (l.errors ?? 0) === 0 ? 'ok' : 'ko'
-    return 'corso'
-  }
-  const blocchi: Simulation[][] = []
-  for (let i = 0; i < simulations.length; i += PER_BLOCCO) blocchi.push(simulations.slice(i, i + PER_BLOCCO))
-  const bloccoDiInvito = invito ? Math.floor(simulations.findIndex(s => s.id === invito.id) / PER_BLOCCO) : 0
-  const bloccoAttivo = blocco ?? Math.max(0, bloccoDiInvito)
 
   // Solo gli argomenti dove serve davvero tornarci: sotto il 95% si è vicini
   // o sotto il 90% che serve all'esame. Elencare anche quelli al 100%
@@ -167,7 +140,6 @@ export default function RiepilogoPage() {
       <style>{`
         .riga { transition: background 0.12s; }
         .riga:active { background: var(--surface); }
-        .striscia { scrollbar-width: none; }
       `}</style>
 
       <div style={{ padding:'18px 18px 10px', flexShrink:0 }}>
@@ -245,76 +217,6 @@ export default function RiepilogoPage() {
           )
         })()}
 
-        {/* Le simulazioni come un percorso a tappe, da dieci. La striscia dice a
-            che punto è ogni tappa; toccandone una, sotto compaiono le sue
-            simulazioni. Tutti i quadratini insieme non si leggerebbero. */}
-        {simulations.length > 0 && (
-          <div style={{ display:'flex', alignItems:'baseline', justifyContent:'space-between', padding:'0 4px 8px' }}>
-            <span style={{ fontSize:17, fontWeight:800, color:'var(--text)', letterSpacing:-0.2 }}>
-              Il percorso
-            </span>
-          </div>
-        )}
-        {simulations.length === 0 ? (
-          <div style={{ background:'var(--card)', border:'1px solid var(--border)', borderRadius:16, padding:'28px 20px', textAlign:'center', color:'var(--text3)', fontSize:14.5 }}>
-            Nessuna simulazione disponibile.
-          </div>
-        ) : (
-          <>
-            <div ref={stripRef} className="striscia" style={{ position:'relative', display:'flex', gap:10, overflowX:'auto', scrollSnapType:'x mandatory', margin:'-8px -16px 0', padding:'8px 16px 20px' }}>
-              {blocchi.map((b, i) => {
-                const stati = b.map(sim => statoSim(sim.id))
-                const fatte = stati.filter(x => x === 'ok' || x === 'ko').length
-                const attivo = i === bloccoAttivo
-                const finito = fatte === b.length
-                return (
-                  <button key={i} data-blocco={i} onClick={() => setBlocco(i)} aria-pressed={attivo} aria-label={`Simulazioni ${b[0].number}–${b[b.length - 1].number}: ${fatte} di ${b.length} fatte`}
-                    style={{
-                      flex:'0 0 auto', width:124, scrollSnapAlign:'center', textAlign:'left', cursor:'pointer', fontFamily:'inherit',
-                      background: attivo ? 'var(--accent)' : 'var(--card)',
-                      border: attivo ? '1px solid var(--accent)' : '1px solid var(--border)',
-                      borderRadius:20, padding:'14px 14px 14px',
-                      boxShadow: attivo ? '0 8px 20px rgba(var(--accent-rgb),0.28)' : 'var(--ombra)',
-                    }}>
-                    {/* Il nome è l'intervallo stesso: le simulazioni che contiene */}
-                    <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:6, marginBottom:12 }}>
-                      <span style={{ fontSize:20, fontWeight:900, letterSpacing:-0.4, color: attivo ? '#fff' : 'var(--text)', fontVariantNumeric:'tabular-nums' }}>{b[0].number}–{b[b.length - 1].number}</span>
-                    </div>
-                    <div style={{ display:'flex', alignItems:'center', gap:8 }}>
-                      <div style={{ flex:1, height:6, borderRadius:3, background: attivo ? 'rgba(255,255,255,0.28)' : 'var(--surface)', overflow:'hidden' }}>
-                        <div style={{ width:`${(fatte / b.length) * 100}%`, height:'100%', borderRadius:3, background: attivo ? '#fff' : finito ? 'var(--green)' : 'var(--accent)' }}/>
-                      </div>
-                    </div>
-                  </button>
-                )
-              })}
-            </div>
-
-            {/* Le simulazioni della tappa scelta */}
-            <div key={bloccoAttivo} className="scheda" style={{ background:'var(--card)', border:'1px solid var(--border)', borderRadius:18, padding:12 }}>
-              <div style={{ display:'grid', gridTemplateColumns:'repeat(5, 1fr)', gap:8 }}>
-                {(blocchi[bloccoAttivo] ?? []).map((sim, j) => {
-                  const last = getLast(sim.id)
-                  const st = statoSim(sim.id)
-                  const href = (st === 'ok' || st === 'ko') && last ? `/user-simulations/${last.id}/report` : `/simulation/${sim.id}`
-                  const colore = st === 'ok' ? 'var(--green)' : st === 'ko' ? 'var(--red)' : st === 'corso' ? 'var(--accent)' : 'var(--text2)'
-                  const errori = last?.errors ?? 0
-                  const descr = st === 'ok' || st === 'ko' ? `${errori} ${errori === 1 ? 'errore' : 'errori'}` : st === 'corso' ? 'in corso' : 'da fare'
-                  return (
-                    <Link key={sim.id} href={href} aria-label={`Simulazione ${sim.number}: ${descr}`} className="tocco"
-                      style={{ textDecoration:'none', display:'block', animation:`sale .3s cubic-bezier(.2,.8,.2,1) ${j * 25}ms backwards` }}>
-                      {/* Riquadro neutro: l'esito lo dicono il colore del numero e il pallino */}
-                      <div style={{ borderRadius:14, height:60, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:6, background:'var(--surface)' }}>
-                        <div style={{ fontSize:20, fontWeight:900, color:colore, lineHeight:1, fontVariantNumeric:'tabular-nums' }}>{sim.number}</div>
-                        <span style={{ width:6, height:6, borderRadius:3, background: st === 'da' ? 'transparent' : colore }}/>
-                      </div>
-                    </Link>
-                  )
-                })}
-              </div>
-            </div>
-          </>
-        )}
       </div>
 
       <BottomNav active="riepilogo" />

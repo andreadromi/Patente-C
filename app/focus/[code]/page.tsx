@@ -7,6 +7,7 @@ import { Avviso, IconaAvviso } from '@/components/Avviso'
 import { Domanda } from '@/components/Domanda'
 import { VeroFalso } from '@/components/VeroFalso'
 import { Numeri } from '@/components/Numeri'
+import { Avanzamento } from '@/components/Avanzamento'
 
 interface Question { id: string; code: string; text: string; risposta: boolean; image: string | null }
 type Answers = Record<string, boolean|null>
@@ -209,9 +210,7 @@ export default function FocusStudyPage() {
             if (!data(answers[q.id])) return 'vuota'
             return answers[q.id] === q.risposta ? 'giusta' : 'sbagliata'
           }} />
-        <div style={{height:3,background:'var(--surface)'}}>
-          <div style={{height:'100%',background:'var(--accent)',width:`${Math.round(answeredCount / total * 100)}%`,transition:'width 0.3s'}} />
-        </div>
+        <Avanzamento fatte={answeredCount} totale={total} />
       </div>
 
       {/* Corpo: il riquadro della domanda prende lo spazio libero, sempre lo

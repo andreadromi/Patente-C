@@ -145,7 +145,7 @@ riga e lo riscrive solo se differisce.
 - **Punti Deboli**: le risposte sbagliate (non quelle lasciate in bianco), per tornarci sopra:
   ognuna esce dopo 3 risposte giuste di fila.
 - **Riepilogo**: copertura dell'archivio, Esame reale, pannelli per argomento, dove si fa più
-  fatica, esami fatti, e le simulazioni a tappe di dieci.
+  fatica, esami fatti.
 - **Report**: esito, giuste/sbagliate/in bianco, argomento per argomento, e le domande una per una
   con la risposta data e quella giusta.
 
