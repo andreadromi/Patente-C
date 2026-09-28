@@ -231,27 +231,27 @@ export default function SimulationPage() {
     <div style={{height:'100dvh',background:'var(--bg)',color:'var(--text)',fontFamily:'system-ui,-apple-system,sans-serif',display:'flex',flexDirection:'column',overflow:'hidden'}}>
 
       {/* Intestazione, una fascia sola: l'argomento della domanda aperta (e
-          nell'esame il tempo), i numeri che scorrono sotto la capsula e
-          l'avanzamento. In Studio il colore del numero dice com'è andata */}
+          nell'esame il tempo), i numeri che scorrono sotto la capsula e, sul
+          bordo basso, la linea dell'avanzamento. In Studio il colore del
+          numero dice com'è andata */}
       <div style={{background:'var(--card)',boxShadow:'var(--ombra)',position:'relative',zIndex:1,flexShrink:0}}>
-        <div style={{padding:'10px 16px 2px',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
-          <div style={{minWidth:0,flex:1,marginRight:6}}>
-            <div style={{fontSize:16,fontWeight:800,color:'var(--text)',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis'}}>
+        <div style={{padding:'12px 16px 2px',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+          <div style={{minWidth:0,flex:1,marginRight:10}}>
+            <div style={{fontSize:17,fontWeight:800,letterSpacing:-0.2,color:'var(--text)',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis'}}>
               {nomeBreve(current.argomentoCode, current.argomento)}
             </div>
             <div style={{fontSize:13,fontWeight:600,color:'var(--text3)',whiteSpace:'nowrap',fontVariantNumeric:'tabular-nums'}}>
               Domanda {currentIdx+1} di {total}
             </div>
           </div>
-          <div style={{display:'flex',alignItems:'center',gap:8,flexShrink:0}}>
+          <div style={{display:'flex',alignItems:'center',gap:10,flexShrink:0}}>
             {reale && (
               <div style={{display:'flex',alignItems:'center',gap:5,color:timerColor}}>
                 <Clock size={14}/>
                 <span style={{fontSize:17,fontWeight:900,fontVariantNumeric:'tabular-nums'}}>{formatTime(timeLeft)}</span>
               </div>
             )}
-            <button onClick={()=>{ setPaused(true); setChiediUscita(true) }}
-              style={{padding:'5px 10px',borderRadius:8,border:'1px solid var(--border)',background:'transparent',color:'var(--text3)',fontSize:13.5,fontWeight:700,cursor:'pointer',fontFamily:'inherit'}}>
+            <button className="pillola" onClick={()=>{ setPaused(true); setChiediUscita(true) }}>
               Esci
             </button>
           </div>

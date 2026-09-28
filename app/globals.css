@@ -21,6 +21,7 @@
   --accent2: #4A78E0;
   --accent-scuro: #173A94;
   --accent-rgb: 31, 79, 196;
+  --accent2-rgb: 74, 120, 224;
   /* FALSO scelto in modalità Esame: ardesia scura, ben distinta dal VERO
      cobalto, così il rosso resta solo "sbagliato" */
   --falso: #4E5872;
@@ -61,26 +62,50 @@ body > div { animation: entra .28s cubic-bezier(.2, .8, .2, 1); }
 @keyframes sale { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 .scheda { box-shadow: var(--ombra); animation: sale .35s cubic-bezier(.2, .8, .2, 1) backwards; }
 
-/* Linea di avanzamento (components/Avanzamento): entra da zero, cresce con un
-   piccolo rimbalzo a ogni risposta, e un riflesso le passa sopra ogni tanto */
+/* Linea di avanzamento (components/Avanzamento), sul bordo basso
+   dell'intestazione da un lato all'altro. Il binario è un filo di cobalto
+   chiaro, il pieno è cobalto sfumato con un leggero bagliore: entra da zero,
+   cresce con un piccolo rimbalzo a ogni risposta, e ogni tanto un riflesso
+   gli passa sopra (un secondo strato di sfondo che scorre: così la punta
+   luminosa può uscire dal pieno) */
+.avanzamento-binario { position: relative; height: 5px; margin-top: 4px; background: rgba(var(--accent-rgb), 0.12); }
 .avanzamento {
-  position: relative; height: 100%; border-radius: inherit; overflow: hidden;
-  background: linear-gradient(90deg, var(--accent-scuro), var(--accent) 60%, var(--accent2));
+  position: relative; height: 100%; border-radius: 0 3px 3px 0;
+  background:
+    linear-gradient(90deg, transparent 40%, rgba(255, 255, 255, 0.55) 50%, transparent 60%) no-repeat,
+    linear-gradient(90deg, var(--accent-scuro), var(--accent) 55%, var(--accent2));
+  background-size: 300% 100%, 100% 100%;
+  background-position: 100% 0, 0 0;
+  box-shadow: 0 0 9px rgba(var(--accent2-rgb), 0.75);
   transition: width .7s cubic-bezier(.34, 1.4, .64, 1);
-  animation: avanzamento-entra .9s cubic-bezier(.22, 1, .36, 1) backwards;
+  animation: avanzamento-entra .9s cubic-bezier(.22, 1, .36, 1) backwards, avanzamento-riflesso 3.6s ease-in-out 1.2s infinite;
 }
-.avanzamento::after {
-  content: ''; position: absolute; top: 0; bottom: 0; left: 0; width: 45%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
-  transform: translateX(-100%);
-  animation: avanzamento-riflesso 3.2s ease-in-out 1s infinite;
+/* A ogni risposta la punta si accende per un attimo, e corre col pieno che cresce */
+.avanzamento-lampo {
+  position: absolute; right: -3px; top: 50%; width: 11px; height: 11px; margin-top: -5.5px; border-radius: 50%;
+  background: radial-gradient(closest-side, #fff 35%, rgba(var(--accent2-rgb), 0.9) 70%, rgba(var(--accent2-rgb), 0));
+  box-shadow: 0 0 12px 3px rgba(var(--accent2-rgb), 0.7);
+  pointer-events: none; opacity: 0;
+  animation: avanzamento-lampo 1.1s ease-out;
 }
 @keyframes avanzamento-entra { from { width: 0; } }
-@keyframes avanzamento-riflesso { 0% { transform: translateX(-100%); } 55%, 100% { transform: translateX(240%); } }
+@keyframes avanzamento-riflesso { 0% { background-position: 100% 0, 0 0; } 60%, 100% { background-position: 0 0, 0 0; } }
+@keyframes avanzamento-lampo { 0% { opacity: 0; transform: scale(.4); } 20% { opacity: 1; transform: scale(1.15); } 100% { opacity: 0; transform: scale(.7); } }
 @media (prefers-reduced-motion: reduce) {
   .avanzamento { transition: none; animation: none; }
-  .avanzamento::after { display: none; }
+  .avanzamento-lampo { display: none; }
 }
+
+/* I pulsanti dell'intestazione (Esci, Ricomincia, Termina): pillole piene,
+   senza bordo; .piena per quello che conclude */
+.pillola {
+  height: 34px; padding: 0 14px; border-radius: 17px; border: none; flex-shrink: 0;
+  display: inline-flex; align-items: center; gap: 5px;
+  background: var(--surface); color: var(--text2);
+  font-family: inherit; font-size: 14px; font-weight: 700; white-space: nowrap; cursor: pointer;
+}
+.pillola.piena { background: var(--accent); color: #fff; box-shadow: 0 3px 10px rgba(var(--accent-rgb), 0.3); }
+.pillola.tonda { width: 34px; padding: 0; justify-content: center; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }

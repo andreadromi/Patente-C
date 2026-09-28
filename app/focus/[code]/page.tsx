@@ -175,31 +175,26 @@ export default function FocusStudyPage() {
     <div style={{height:'100dvh',background:'var(--bg)',color:'var(--text)',fontFamily:'system-ui,-apple-system,sans-serif',display:'flex',flexDirection:'column',overflow:'hidden'}}>
 
       {/* Intestazione, una fascia sola: l'argomento, i numeri che scorrono
-          sotto la capsula (il colore dice com'è andata) e l'avanzamento */}
+          sotto la capsula (il colore dice com'è andata) e, sul bordo basso,
+          la linea dell'avanzamento. Uguale a quella delle simulazioni: a
+          destra le pillole, Ricomincia (solo l'icona: chiede conferma) ed Esci */}
       <div style={{background:'var(--card)',boxShadow:'var(--ombra)',position:'relative',zIndex:1,flexShrink:0}}>
-        <div style={{padding:'10px 16px 2px',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
-          <div style={{display:'flex',alignItems:'center',gap:8,minWidth:0}}>
-            <button onClick={()=>router.back()} aria-label="Indietro" style={{background:'none',border:'none',cursor:'pointer',padding:4,color:'var(--text3)',display:'flex'}}>
-              <ChevronLeft size={20}/>
-            </button>
-            <div style={{minWidth:0}}>
-              <div style={{fontSize:16,color:'var(--text)',fontWeight:800,maxWidth:190,overflow:'hidden',textOverflow:'ellipsis',whiteSpace:'nowrap'}}>
-                {nomeBreve(code, nomeArgomento)}
-              </div>
-              <div style={{fontSize:13.5,color:'var(--text3)',fontWeight:600,fontVariantNumeric:'tabular-nums',whiteSpace:'nowrap'}}>
-                {currentIdx+1} di {total}
-              </div>
+        <div style={{padding:'12px 16px 2px',display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+          <div style={{minWidth:0,flex:1,marginRight:10}}>
+            <div style={{fontSize:17,fontWeight:800,letterSpacing:-0.2,color:'var(--text)',whiteSpace:'nowrap',overflow:'hidden',textOverflow:'ellipsis'}}>
+              {nomeBreve(code, nomeArgomento)}
+            </div>
+            <div style={{fontSize:13,fontWeight:600,color:'var(--text3)',whiteSpace:'nowrap',fontVariantNumeric:'tabular-nums'}}>
+              Domanda {currentIdx+1} di {total}
             </div>
           </div>
-          <div style={{display:'flex',alignItems:'center',gap:6}}>
+          <div style={{display:'flex',alignItems:'center',gap:8,flexShrink:0}}>
             {answeredCount > 0 && (
-              <button onClick={()=>setChiediRiavvio(true)} title="Ricomincia l'argomento da capo"
-                style={{padding:'5px 8px',borderRadius:8,border:'1px solid var(--border)',background:'transparent',color:'var(--text3)',cursor:'pointer',fontFamily:'inherit',display:'flex',alignItems:'center',gap:4,fontSize:13.5,fontWeight:700}}>
-                <RotateCcw size={13}/>Ricomincia
+              <button className="pillola tonda" onClick={()=>setChiediRiavvio(true)} aria-label="Ricomincia" title="Ricomincia l'argomento da capo">
+                <RotateCcw size={16} strokeWidth={2.4}/>
               </button>
             )}
-            <button onClick={()=>router.back()}
-              style={{padding:'5px 10px',borderRadius:8,border:'1px solid var(--border)',background: isAllDone ? 'var(--accent)' : 'transparent',color: isAllDone ? '#fff' : 'var(--text3)',fontSize:13.5,fontWeight:700,cursor:'pointer',fontFamily:'inherit'}}>
+            <button className={isAllDone ? 'pillola piena' : 'pillola'} onClick={()=>router.back()}>
               {isAllDone ? 'Termina' : 'Esci'}
             </button>
           </div>
