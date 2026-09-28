@@ -145,9 +145,12 @@ export default function ReportPage() {
                         <IconaArgomento code={d.argomentoCode} size={24}/>
                         <span style={{fontSize:13,fontWeight:800,color:'var(--accent)',letterSpacing:0.4}}>{d.code}</span>
                       </div>
+                      {/* Cornice uguale per tutte le figure, qualunque forma abbiano */}
                       {d.figura && (
-                        // eslint-disable-next-line @next/next/no-img-element -- figure del listato, dimensioni variabili
-                        <img src={`/figure/${d.figura}`} alt="Figura della domanda" style={{display:'block',maxWidth:'100%',maxHeight:140,margin:'4px auto 10px',objectFit:'contain'}}/>
+                        <div style={{height:120,display:'flex',alignItems:'center',justifyContent:'center',margin:'4px 0 10px'}}>
+                          {/* eslint-disable-next-line @next/next/no-img-element -- figure del listato, dimensioni variabili */}
+                          <img src={`/figure/${d.figura}`} alt="Figura della domanda" style={{display:'block',maxWidth:'100%',maxHeight:'100%',objectFit:'contain'}}/>
+                        </div>
                       )}
                       <p style={{fontSize:15.5,fontWeight:700,color:'var(--text)',margin:'0 0 10px',lineHeight:1.45}}>{d.testo}</p>
                       {/* La risposta data e quella giusta, in parole */}

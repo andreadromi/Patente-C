@@ -65,7 +65,7 @@ export function Avviso({ icona, titolo, testo, conferma, secondaria, annulla, er
 
 /** L'icona tonda dell'avviso: un cerchio chiaro col simbolo nel colore del tono. */
 export function IconaAvviso({ children, tono = 'accent' }: { children: ReactNode; tono?: 'accent' | 'red' | 'amber' | 'green' }) {
-  const rgb = tono === 'red' ? 'var(--red-rgb)' : tono === 'amber' ? '224, 112, 58' : tono === 'green' ? 'var(--green-rgb)' : 'var(--accent-rgb)'
+  const rgb = tono === 'red' ? 'var(--red-rgb)' : tono === 'amber' ? 'var(--amber-rgb)' : tono === 'green' ? 'var(--green-rgb)' : 'var(--accent-rgb)'
   return (
     <div style={{ width: 76, height: 76, borderRadius: '50%', background: `rgba(${rgb},0.12)`, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       {children}

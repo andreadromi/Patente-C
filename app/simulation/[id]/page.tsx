@@ -288,10 +288,11 @@ export default function SimulationPage() {
         </div>
       </div>
 
-      {/* Corpo */}
-      <div style={{flex:1,overflowY:'auto',padding:'16px 16px 8px'}}>
-        <Domanda codice={current.code} testo={current.text} figura={current.image} />
-        <VeroFalso key={current.id}
+      {/* Corpo: il riquadro della domanda prende lo spazio libero, sempre lo
+          stesso, e VERO/FALSO stanno sempre allo stesso posto, con o senza figura */}
+      <div style={{flex:1,minHeight:0,display:'flex',flexDirection:'column',gap:12,padding:'16px 16px 10px'}}>
+        <Domanda key={`domanda-${current.id}`} riempi codice={current.code} testo={current.text} figura={current.image} />
+        <VeroFalso key={`risposta-${current.id}`}
           risposta={answers[current.id]}
           giusta={current.risposta}
           correzione={studyMode}

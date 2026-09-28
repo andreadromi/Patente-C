@@ -6,8 +6,10 @@ import { ReactNode } from 'react'
  *
  * `correzione` (Studio): la risposta data si colora di verde se giusta, di
  * rosso se sbagliata, e quella giusta si vede comunque, bordata di verde.
- * Senza correzione (esame) la scelta è solo evidenziata: cobalto il VERO,
- * ardesia il FALSO, così il rosso resta solo per "sbagliato".
+ * Sotto, la riga della correzione ha sempre il suo posto, anche vuota:
+ * comparendo non sposta niente. Senza correzione (esame) la scelta è solo
+ * evidenziata: arancio il VERO, ardesia il FALSO, così il rosso resta solo
+ * per "sbagliato".
  */
 export function VeroFalso({ risposta, giusta, correzione, bloccato, onRispondi, sotto }: {
   risposta: boolean | null | undefined
@@ -19,7 +21,7 @@ export function VeroFalso({ risposta, giusta, correzione, bloccato, onRispondi, 
 }) {
   const data = risposta === true || risposta === false
   return (
-    <>
+    <div style={{ flexShrink: 0 }}>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
         {([true, false] as const).map(val => {
           const scelta = risposta === val
@@ -46,12 +48,12 @@ export function VeroFalso({ risposta, giusta, correzione, bloccato, onRispondi, 
           )
         })}
       </div>
-      {correzione && data && (
-        <div style={{ marginTop: 12, fontSize: 15, fontWeight: 800, color: risposta === giusta ? 'var(--green)' : 'var(--red)' }}>
-          {risposta === giusta ? 'Giusto' : `Sbagliato: è ${giusta ? 'VERA' : 'FALSA'}`}
+      {correzione && (
+        <div aria-live="polite" style={{ height: 22, marginTop: 10, fontSize: 15, fontWeight: 800, color: risposta === giusta ? 'var(--green)' : 'var(--red)' }}>
+          {data && (risposta === giusta ? 'Giusto' : `Sbagliato: è ${giusta ? 'VERA' : 'FALSA'}`)}
         </div>
       )}
       {sotto}
-    </>
+    </div>
   )
 }

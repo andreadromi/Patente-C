@@ -10,7 +10,7 @@ le coprono tutte senza ripeterne nessuna, lo studio argomento per argomento, i p
 l'Esame reale nella forma della Motorizzazione.
 
 È la stessa app del simulatore per il consulente automobilistico, adattata a questo esame, con
-un suo colore (viola) e una sua icona (il camion).
+un suo colore (l'arancio dei mezzi pesanti e della segnaletica) e una sua icona (il camion).
 
 **Stack:** Next.js · TypeScript · Prisma · PostgreSQL (Neon) · Vercel
 

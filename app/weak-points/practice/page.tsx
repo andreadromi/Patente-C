@@ -94,26 +94,29 @@ export default function WPPracticePage() {
         </div>
       </div>
 
-      <div style={{flex:1,overflowY:'auto',padding:'20px 16px'}}>
-        <Domanda codice={current.code} etichetta={nomeBreve(current.argomentoCode, current.argomento)}
+      {/* Il riquadro prende lo spazio libero, sempre lo stesso: VERO/FALSO e la
+          riga sotto stanno sempre allo stesso posto, con o senza figura */}
+      <div style={{flex:1,minHeight:0,display:'flex',flexDirection:'column',gap:12,padding:'16px 16px 6px'}}>
+        <Domanda key={`domanda-${current.weakPointId}`} riempi codice={current.code} etichetta={nomeBreve(current.argomentoCode, current.argomento)}
           testo={current.text} figura={current.image} />
 
-        <VeroFalso key={current.weakPointId}
+        {/* Corretta appena data: prima di rispondere la riga della correzione è vuota, ma c'è */}
+        <VeroFalso key={`risposta-${current.weakPointId}`}
           risposta={feedback?.risposta}
           giusta={feedback?.correctAnswer ?? true}
-          correzione={!!feedback}
+          correzione
           bloccato={!!feedback}
           onRispondi={handleAnswer}
-          sotto={feedback?.removed && (
-            <div style={{marginTop:4,fontSize:14,fontWeight:700,color:'var(--green)'}}>Tolta dai punti deboli: 3 giuste di fila</div>
-          )}
+          sotto={
+            <div style={{height:44,display:'flex',alignItems:'center',justifyContent:'space-between',gap:10}}>
+              <span style={{fontSize:14,fontWeight:700,color:'var(--green)'}}>{feedback?.removed ? 'Tolta dai punti deboli' : ''}</span>
+              <button onClick={next} disabled={!feedback}
+                style={{visibility: feedback ? 'visible' : 'hidden',height:40,padding:'0 18px',borderRadius:12,border:'1.5px solid var(--border)',background:'transparent',color:'var(--text)',fontSize:14.5,fontWeight:700,cursor:'pointer',fontFamily:'inherit',flexShrink:0}}>
+                Prossima →
+              </button>
+            </div>
+          }
         />
-
-        {feedback && (
-          <button onClick={next} style={{width:'100%',marginTop:14,padding:'12px',borderRadius:12,border:'1.5px solid var(--border)',background:'transparent',color:'var(--text)',fontSize:14.5,fontWeight:600,cursor:'pointer',fontFamily:'inherit'}}>
-            Prossima →
-          </button>
-        )}
       </div>
 
       <BottomNav active="deboli" />

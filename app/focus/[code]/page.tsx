@@ -2,7 +2,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { useParams, useRouter } from 'next/navigation'
 import { ChevronLeft, ChevronRight, RotateCcw, Trophy, History } from 'lucide-react'
-import { Numeri } from '@/components/Stato'
 import { nomeBreve } from '@/lib/argomenti'
 import { Avviso, IconaAvviso } from '@/components/Avviso'
 import { Domanda } from '@/components/Domanda'
@@ -152,6 +151,17 @@ export default function FocusStudyPage() {
 
   const isAllDone = questions.length > 0 && questions.every(q => data(answers[q.id]))
 
+  // Argomento finito: il risultato sale in un pannello, all'ultima risposta o
+  // aprendo un argomento già finito. Sta sopra la pagina e non la sposta;
+  // chiuso, si rivedono le domande
+  const [mostraFine, setMostraFine] = useState(false)
+  const finitoRef = useRef<boolean | null>(null)
+  useEffect(() => {
+    if (loading) return
+    if (isAllDone && finitoRef.current !== true) setMostraFine(true)
+    finitoRef.current = isAllDone
+  }, [isAllDone, loading])
+
   if (loading) return (
     <div style={{height:'100dvh',background:'var(--bg)',display:'flex',alignItems:'center',justifyContent:'center'}}>
       <div style={{width:32,height:32,border:'3px solid var(--border)',borderTopColor:'var(--accent)',borderRadius:'50%',animation:'spin 0.8s linear infinite'}}/>
@@ -221,40 +231,11 @@ export default function FocusStudyPage() {
         </div>
       </div>
 
-      {/* Corpo scrollabile */}
-      <div style={{flex:1,overflowY:'auto',padding:'14px 16px'}}>
-
-        {/* Argomento completato: il risultato in grande, e le due strade */}
-        {isAllDone && (() => {
-          const pctGiuste = total > 0 ? Math.round((corrette / total) * 100) : 0
-          return (
-            <div className="scheda" style={{background:'var(--card)',border:'1px solid var(--border)',borderRadius:22,padding:'22px 18px 18px',marginBottom:14,textAlign:'center'}}>
-              <div style={{display:'flex',justifyContent:'center',marginBottom:12}}>
-                <IconaAvviso tono="green"><Trophy size={34} color="var(--green)" strokeWidth={2.2}/></IconaAvviso>
-              </div>
-              <div style={{fontSize:23,fontWeight:900,color:'var(--text)',letterSpacing:-0.4}}>Argomento completato</div>
-              {/* All'esame passa chi sbaglia al massimo 4 domande su 40, il 90% giuste */}
-              <div style={{fontSize:44,fontWeight:900,color:pctGiuste >= 90 ? 'var(--green)' : 'var(--amber)',lineHeight:1.1,margin:'6px 0 14px',fontVariantNumeric:'tabular-nums'}}>{pctGiuste}%</div>
-              <Numeri voci={[
-                { n: corrette, label: 'Giuste', colore: 'var(--green)' },
-                { n: total - corrette, label: 'Sbagliate', colore: 'var(--red)' },
-              ]}/>
-              <div style={{display:'flex',gap:8,marginTop:16}}>
-                <button onClick={()=>setChiediRiavvio(true)}
-                  style={{flex:1,height:52,borderRadius:16,border:'none',background:'var(--accent)',color:'#fff',fontSize:16,fontWeight:800,cursor:'pointer',fontFamily:'inherit',display:'flex',alignItems:'center',justifyContent:'center',gap:6}}>
-                  <RotateCcw size={16}/>Ricomincia
-                </button>
-                <button onClick={()=>router.back()}
-                  style={{flex:1,height:52,borderRadius:16,border:'none',background:'var(--surface)',color:'var(--text)',fontSize:16,fontWeight:700,cursor:'pointer',fontFamily:'inherit'}}>
-                  Argomenti
-                </button>
-              </div>
-            </div>
-          )
-        })()}
-
-        <Domanda codice={current.code} testo={current.text} figura={current.image} />
-        <VeroFalso key={current.id}
+      {/* Corpo: il riquadro della domanda prende lo spazio libero, sempre lo
+          stesso, e VERO/FALSO stanno sempre allo stesso posto, con o senza figura */}
+      <div style={{flex:1,minHeight:0,display:'flex',flexDirection:'column',gap:12,padding:'14px 16px 10px'}}>
+        <Domanda key={`domanda-${current.id}`} riempi codice={current.code} testo={current.text} figura={current.image} />
+        <VeroFalso key={`risposta-${current.id}`}
           risposta={answers[current.id]}
           giusta={current.risposta}
           correzione
@@ -284,6 +265,23 @@ export default function FocusStudyPage() {
           <History size={17}/>Ripreso dalla domanda {currentIdx+1}
         </div>
       )}
+
+      {/* Argomento completato: il risultato, e le strade */}
+      {mostraFine && isAllDone && (() => {
+        const pctGiuste = total > 0 ? Math.round((corrette / total) * 100) : 0
+        return (
+          <Avviso
+            icona={<IconaAvviso tono="green"><Trophy size={32} color="var(--green)" strokeWidth={2.2}/></IconaAvviso>}
+            titolo="Argomento completato"
+            // All'esame passa chi sbaglia al massimo 4 domande su 40: il 90% giuste
+            testo={<><strong style={{ color: pctGiuste >= 90 ? 'var(--green)' : 'var(--amber)' }}>{pctGiuste}%</strong> di risposte giuste: {corrette} su {total}.</>}
+            conferma={{ label: 'Ricomincia', onClick: () => { setMostraFine(false); setChiediRiavvio(true) } }}
+            secondaria={{ label: 'Torna agli argomenti', onClick: () => router.back() }}
+            annulla="Rivedi le domande"
+            onChiudi={() => setMostraFine(false)}
+          />
+        )
+      })()}
 
       {/* Conferma: ricomincia da capo */}
       {chiediRiavvio && (

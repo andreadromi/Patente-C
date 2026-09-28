@@ -18,10 +18,10 @@ import {
  * trasporto, consegna delle merci), la sicurezza (incidente, ruote, pesi,
  * visibilità, carico, aggancio) e la tecnica del veicolo (motore, freni,
  * pneumatici, manutenzione). Diciassette tinte diverse sarebbero un
- * arcobaleno che non si legge; nessuna è il viola dell'accento.
+ * arcobaleno che non si legge; nessuna è l'arancio dell'accento.
  */
 const REGOLE = '#2F6BD8'    // blu, come i segnali d'obbligo
-const SICUREZZA = '#E0673A' // corallo
+const SICUREZZA = '#A0359A' // prugna
 const TECNICA = '#1B8FA0'   // ottanio
 
 interface Aspetto { breve: string; Icona: LucideIcon; colore: string }
