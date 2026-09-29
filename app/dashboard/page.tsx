@@ -128,8 +128,10 @@ export default function DashboardPage() {
           {[
             { n: completed, label: 'Fatte', color: 'var(--accent)' },
             { n: passed, label: 'Perfette', color: 'var(--green)' },
-            // Non "da fare": accanto alle schede numerate si confondeva col numero di una simulazione
-            { n: copertura && copertura.totale ? `${Math.round((copertura.affrontate / copertura.totale) * 100)}%` : '0%', label: 'Archivio', color: 'var(--text2)' },
+            // Le domande del listato già viste in una simulazione o in un esame, in
+            // percentuale ("viste", come nel Riepilogo). Non "da fare": accanto alle
+            // schede numerate si confondeva col numero di una simulazione
+            { n: copertura && copertura.totale ? `${Math.round((copertura.affrontate / copertura.totale) * 100)}%` : '0%', label: 'Viste', color: 'var(--text2)' },
           ].map((s, i) => (
             <div key={i} style={{ flex: 1, background: '#fff', borderRadius: 14, padding: '12px 8px', textAlign: 'center', boxShadow: '0 4px 16px rgba(0,0,0,0.10)' }}>
               <div style={{ fontSize: 26, fontWeight: 900, color: s.color }}>{s.n}</div>
