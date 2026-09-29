@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import { BookOpen, Target, RotateCcw, Sparkles } from 'lucide-react'
+import { BookOpen, Target, RotateCcw } from 'lucide-react'
 import { Avviso, IconaAvviso } from '@/components/Avviso'
 import { Stato } from '@/components/Stato'
 import { BottomNav } from '@/components/BottomNav'
@@ -52,24 +52,23 @@ export default function WeakPointsPage() {
         )}
       </div>
 
-      {/* Contenuto */}
-      <div style={{ flex:1, display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:'0 24px', gap:20 }}>
-        {total === 0 ? (
-          <Stato
-            icona={<IconaAvviso tono="green"><Sparkles size={34} color="var(--green)" strokeWidth={2.2}/></IconaAvviso>}
-            titolo="Niente da ripassare"
-            testo="Le risposte sbagliate finiscono qui."
-            principale={{ label: 'Vai ai quiz', onClick: () => router.push('/dashboard') }}
-          />
-        ) : (
-          <Stato
-            icona={<IconaAvviso tono="amber"><BookOpen size={34} color="var(--amber)" strokeWidth={2.2}/></IconaAvviso>}
-            titolo={`${total} da ripassare`}
-            testo="Ognuna esce dopo 3 risposte giuste di fila."
-            principale={{ label: "Inizia l'allenamento", icona: <Target size={20}/>, onClick: () => router.push('/weak-points/practice') }}
-          />
-        )}
-      </div>
+      {/* Contenuto: come lo stato vuoto del Riepilogo, a tutta larghezza, con
+          l'icona della sezione (il libro della barra in basso) in cobalto */}
+      {total === 0 ? (
+        <Stato
+          icona={<IconaAvviso><BookOpen size={32} color="var(--accent)" strokeWidth={2.1}/></IconaAvviso>}
+          titolo="Niente da ripassare"
+          testo="Le risposte sbagliate finiscono qui."
+          principale={{ label: 'Vai ai quiz', onClick: () => router.push('/dashboard') }}
+        />
+      ) : (
+        <Stato
+          icona={<IconaAvviso><BookOpen size={32} color="var(--accent)" strokeWidth={2.1}/></IconaAvviso>}
+          titolo={`${total} da ripassare`}
+          testo="Ognuna esce dopo 3 risposte giuste di fila."
+          principale={{ label: "Inizia l'allenamento", icona: <Target size={20}/>, onClick: () => router.push('/weak-points/practice') }}
+        />
+      )}
 
       {/* Bottom nav */}
       <BottomNav active="deboli"/>
