@@ -11,7 +11,7 @@ export async function GET(request: NextRequest) {
     orderBy: { startedAt: 'desc' },
     select: {
       id: true, simulationId: true, status: true,
-      passed: true, score: true, errors: true, startedAt: true
+      passed: true, score: true, errors: true, startedAt: true, completedAt: true
     }
   })
 

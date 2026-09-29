@@ -104,8 +104,7 @@ finisce tutte ha visto ogni domanda, e solo quelle 39 due volte.
 Le simulazioni sono sempre in modalità Studio, con la correzione subito, e non hanno soglia:
 contano gli errori, argomento per argomento. Si lasciano a metà e si riprendono quando si vuole.
 
-Per la prova nella forma esatta dell'esame c'è l'**Esame reale**, in cima alla Home e nel
-Riepilogo: 40 domande pescate a caso, ogni argomento con la sua quota e ogni domanda da un quesito
+Per la prova nella forma esatta dell'esame c'è l'**Esame reale**, in cima alla Home: 40 domande pescate a caso, ogni argomento con la sua quota e ogni domanda da un quesito
 diverso (le affermazioni dello stesso quesito si risponderebbero a vicenda), 40 minuti che corrono
 anche a pagina chiusa, correzione alla fine, superato con al massimo 4 errori. Come all'esame, le
 risposte si cambiano fino alla consegna, e allo scadere del tempo l'esame si consegna da solo.
@@ -149,8 +148,10 @@ solo guadagnato domande prendono la lista nuova, con le risposte già date.
 - **Esame**: 40 domande vero/falso con le loro figure, 40 minuti, al massimo 4 errori.
 - **Punti Deboli**: le risposte sbagliate (non quelle lasciate in bianco), per tornarci sopra:
   ognuna esce dopo 3 risposte giuste di fila.
-- **Riepilogo**: copertura dell'archivio, Esame reale, pannelli per argomento, dove si fa più
-  fatica, esami fatti.
+- **Riepilogo**: come si va, senza ripetere la Home. Sei pronto? (superate almeno 3 delle ultime
+  5 prove: quasi; tutte e 5: pronto) con gli errori delle ultime 10 prove e la linea dei 4; le
+  simulazioni da rifare (più di 4 errori); gli argomenti più deboli, e tutti in un pannello; gli
+  esami fatti.
 - **Report**: esito, giuste/sbagliate/in bianco, argomento per argomento, e le domande una per una
   con la risposta data e quella giusta.
 

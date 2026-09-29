@@ -2,15 +2,17 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { Play, ChevronRight, RotateCcw, GraduationCap, Layers, TrendingDown, ClipboardList } from 'lucide-react'
+import { ChevronRight, RotateCcw, ClipboardList, Layers, ChartNoAxesColumn } from 'lucide-react'
 import { BottomNav } from '@/components/BottomNav'
 import { Avviso, IconaAvviso } from '@/components/Avviso'
 import { Foglio } from '@/components/Foglio'
 import { IconaArgomento } from '@/components/IconaArgomento'
-import { DOMANDE_PER_ESAME, DURATA_ESAME } from '@/lib/esame'
+import { Stato } from '@/components/Stato'
+import { DURATA_ESAME, ERRORI_AMMESSI } from '@/lib/esame'
+import { nomeBreve } from '@/lib/argomenti'
 
 interface Simulation { id: string; number: number; titolo: string | null; tipo: string }
-interface UserSim { id: string; simulationId: string; status: string; passed: boolean | null; score: number | null; errors: number | null; startedAt: string | null }
+interface UserSim { id: string; simulationId: string; status: string; passed: boolean | null; score: number | null; errors: number | null; startedAt: string | null; completedAt: string | null }
 interface Esame { id: string; number: number; titolo: string | null; tipo: string }
 interface CoperturaArgomento { code: string; name: string; affrontate: number; totale: number }
 interface Copertura { affrontate: number; totale: number; argomenti: CoperturaArgomento[] }
@@ -27,6 +29,33 @@ function coloreAccuratezza(pct: number) {
   return 'var(--red)'
 }
 
+/** Quante prove finite servono per dire se si è pronti, e su quante si giudica. */
+const PROVE_PER_VERDETTO = 3
+const PROVE_GIUDICATE = 5
+/** Le prove nelle barre dell'andamento. */
+const PROVE_IN_GRAFICO = 10
+/** Le simulazioni da rifare che stanno nella scheda; le altre in un pannello. */
+const DA_RIFARE_IN_VISTA = 8
+
+const VERDETTI = {
+  pronto: { label: 'Pronto', colore: 'var(--green)', sfondo: 'var(--green-dim)' },
+  quasi: { label: 'Quasi', colore: 'var(--amber)', sfondo: 'var(--amber-dim)' },
+  no: { label: 'Non ancora', colore: 'var(--red)', sfondo: 'var(--red-dim)' },
+}
+
+const scheda = { background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 22, padding: '14px 16px', marginBottom: 10 } as const
+const titoloScheda = { fontSize: 17, fontWeight: 900, letterSpacing: -0.3, color: 'var(--text)' } as const
+
+/**
+ * Il Riepilogo dice come si va, la Home è dove si comincia: qui niente che
+ * la Home mostra già (i numeri, l'Esame reale, la simulazione da riprendere).
+ * Una pagina corta, di schede che compaiono solo quando hanno qualcosa da dire:
+ *  - Sei pronto? il verdetto sulle ultime prove finite e gli errori delle
+ *    ultime dieci, con la linea dei 4 errori che all'esame non si superano;
+ *  - Da rifare: le simulazioni finite con più di 4 errori, un tocco e si rifanno;
+ *  - Argomenti: i più deboli, e tutti in un pannello;
+ *  - I tuoi esami: lo storico degli Esami reali.
+ */
 export default function RiepilogoPage() {
   const router = useRouter()
   const [simulations, setSimulations] = useState<Simulation[]>([])
@@ -35,10 +64,8 @@ export default function RiepilogoPage() {
   const [loading, setLoading] = useState(true)
   const [esami, setEsami] = useState<Esame[]>([])
   const [copertura, setCopertura] = useState<Copertura | null>(null)
-  // Il pannello aperto dal basso: argomenti, dove si fa fatica, esami
-  const [foglio, setFoglio] = useState<'argomenti' | 'fatica' | 'esami' | null>(null)
-  const [creando, setCreando] = useState(false)
-  const [errore, setErrore] = useState<string | null>(null)
+  // Il pannello aperto dal basso
+  const [foglio, setFoglio] = useState<'argomenti' | 'rifare' | 'esami' | null>(null)
 
   useEffect(() => {
     Promise.all([
@@ -64,22 +91,6 @@ export default function RiepilogoPage() {
   // consegna alla prima apertura. Le simulazioni si riprendono quando si vuole.
   const scaduto = (u: UserSim, tipo: string) =>
     tipo === 'reale' && u.status === 'IN_PROGRESS' && !!u.startedAt && Date.now() - new Date(u.startedAt).getTime() >= DURATA_ESAME * 1000
-  // Al massimo un esame a metà: il suo pulsante lo riprende
-  const realeInCorso = esami.find(e => {
-    const l = getLast(e.id)
-    return !!l && l.status === 'IN_PROGRESS' && !scaduto(l, e.tipo)
-  }) || null
-
-  const nuovoEsame = async () => {
-    if (realeInCorso) { router.push(`/simulation/${realeInCorso.id}`); return }
-    setCreando(true); setErrore(null)
-    try {
-      const r = await fetch('/api/esami-generati', { method: 'POST' })
-      const d = await r.json().catch(() => ({}))
-      if (!r.ok || !d.id) { setErrore(d.error || 'Non sono riuscito a comporre l\'esame'); setCreando(false); return }
-      router.push(`/simulation/${d.id}`)
-    } catch { setErrore('Errore di connessione'); setCreando(false) }
-  }
 
   // Annullare un esame chiede conferma con l'avviso dell'app
   const [daAnnullare, setDaAnnullare] = useState<string | null>(null)
@@ -101,157 +112,194 @@ export default function RiepilogoPage() {
   if (loading) return (
     <div style={{ height:'100dvh', background:'var(--bg)', display:'flex', alignItems:'center', justifyContent:'center' }}>
       <div style={{ width:36, height:36, border:'3px solid var(--border)', borderTopColor:'var(--accent)', borderRadius:'50%', animation:'spin 0.8s linear infinite' }}/>
-      <style>{`@keyframes spin{to{transform:rotate(360deg)}}`}</style>
     </div>
   )
 
-  // Conta le simulazioni, non i tentativi: rifacendo la stessa simulazione i
-  // numeri salirebbero oltre il totale.
-  const ultimi = simulations.map(sim => getLast(sim.id)).filter(Boolean) as UserSim[]
-  const completate = ultimi.filter(u => u.status === 'COMPLETED')
-  // Senza soglia: "perfette" sono le simulazioni finite senza errori
-  const perfette = completate.filter(u => (u.errors ?? 0) === 0).length
-  const inCorso = ultimi.filter(u => u.status === 'IN_PROGRESS')
+  // Le prove finite, simulazioni ed esami, dalla più vecchia alla più recente.
+  // Superata come all'esame: al massimo 4 errori (sbagliate o in bianco).
+  const quando = (u: UserSim) => new Date(u.completedAt ?? u.startedAt ?? 0).getTime()
+  const prove = userSims.filter(u => u.status === 'COMPLETED' && u.errors !== null).sort((a, b) => quando(a) - quando(b))
+  const superata = (u: UserSim) => (u.errors ?? 0) <= ERRORI_AMMESSI
+  const giudicate = prove.slice(-PROVE_GIUDICATE)
+  const superate = giudicate.filter(superata).length
+  // Pronto: le ultime 5 tutte superate. Quasi: almeno 3 delle ultime 5
+  const verdetto = prove.length < PROVE_PER_VERDETTO ? null
+    : prove.length >= PROVE_GIUDICATE && superate === PROVE_GIUDICATE ? VERDETTI.pronto
+    : superate >= 3 ? VERDETTI.quasi
+    : VERDETTI.no
+  const inGrafico = prove.slice(-PROVE_IN_GRAFICO)
+  const mediaErrori = inGrafico.reduce((n, u) => n + (u.errors ?? 0), 0) / Math.max(1, inGrafico.length)
+  // La scala delle barre: almeno il doppio della soglia, così la linea dei 4 sta a metà
+  const scala = Math.max(ERRORI_AMMESSI * 2, ...inGrafico.map(u => u.errors ?? 0))
 
-  // Un solo invito in testa: riprendere quella lasciata a metà, oppure
-  // iniziare la prima mai svolta. Serve soprattutto a chi apre la pagina
-  // la prima volta e si troverebbe davanti solo un elenco.
-  const daRiprendere = inCorso.length
-    ? simulations.find(s => s.id === inCorso[0].simulationId) || null
-    : null
-  const daIniziare = daRiprendere ? null : simulations.find(s => !getLast(s.id)) || null
-  const invito = daRiprendere || daIniziare
+  // Le simulazioni da rifare: l'ultimo tentativo è finito con più di 4 errori.
+  // Una già ricominciata non c'è: la si sta rifacendo.
+  const daRifare = simulations
+    .map(s => ({ s, ultimo: getLast(s.id) }))
+    .filter((x): x is { s: Simulation; ultimo: UserSim } => x.ultimo?.status === 'COMPLETED' && (x.ultimo.errors ?? 0) > ERRORI_AMMESSI)
+    .sort((a, b) => (b.ultimo.errors ?? 0) - (a.ultimo.errors ?? 0) || a.s.number - b.s.number)
 
-
-  // Solo gli argomenti dove serve davvero tornarci: sotto il 95% si è vicini
-  // o sotto il 90% che serve all'esame. Elencare anche quelli al 100%
-  // sotto il titolo "dove fai più fatica" non avrebbe senso.
-  const puntiDeboli = (stat?.argomenti ?? [])
-    .filter(a => a.totali > 0 && a.accuratezza !== null && a.accuratezza < 95)
+  // Gli argomenti più deboli: sotto il 95% si è vicini o sotto il 90% che serve all'esame
+  const deboli = (stat?.argomenti ?? [])
+    .filter(a => a.accuratezza !== null && a.accuratezza < 95)
     .sort((a, b) => (a.accuratezza ?? 0) - (b.accuratezza ?? 0))
-    .slice(0, 5)
-  // Tutto l'archivio: "affrontata" vuol dire risposta in un esame o in una
-  // simulazione, almeno una volta.
-  const pctArchivio = copertura?.totale ? Math.round((copertura.affrontate / copertura.totale) * 100) : 0
-  const archivioCompleto = !!copertura && copertura.totale > 0 && copertura.affrontate === copertura.totale
+    .slice(0, 3)
+  const conRisposte = (stat?.argomenti ?? []).some(a => a.accuratezza !== null)
+  const perCodice = new Map((stat?.argomenti ?? []).map(a => [a.code, a]))
+  const tuttiArgomenti = copertura?.argomenti ?? (stat?.argomenti ?? []).map(a => ({ code: a.code, name: a.name, affrontate: 0, totale: 0 }))
+
+  const unDecimale = (n: number) => n.toLocaleString('it-IT', { maximumFractionDigits: 1 })
+  const tessera = (s: Simulation, errori: number) => (
+    <Link key={s.id} href={`/simulation/${s.id}`} className="tocco" aria-label={`Rifai la simulazione ${s.number}: ${errori} errori`}
+      style={{ textDecoration:'none', height:60, borderRadius:14, border:'1.5px solid rgba(var(--red-rgb),0.35)', background:'var(--red-dim)', color:'var(--red)', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', gap:1 }}>
+      <span style={{ fontSize:20, fontWeight:900, lineHeight:1, fontVariantNumeric:'tabular-nums' }}>{s.number}</span>
+      <span style={{ fontSize:12, fontWeight:700, opacity:0.85 }}>{errori} errori</span>
+    </Link>
+  )
 
   return (
     <div style={{ height:'100dvh', background:'var(--bg)', color:'var(--text)', fontFamily:'system-ui,-apple-system,sans-serif', display:'flex', flexDirection:'column', overflow:'hidden' }}>
-      <style>{`
-        .riga { transition: background 0.12s; }
-        .riga:active { background: var(--surface); }
-      `}</style>
 
       <div style={{ padding:'18px 18px 10px', flexShrink:0 }}>
         <h1 style={{ fontSize:30, fontWeight:900, margin:0, letterSpacing:-1, textTransform:'uppercase' }}>RIEPILOGO</h1>
       </div>
 
-      <div style={{ flex:1, overflowY:'auto', padding:'0 16px 16px' }}>
+      {prove.length === 0 ? (
+        // Ancora niente di finito: un invito solo, al posto di schede vuote
+        <Stato
+          icona={<IconaAvviso><ChartNoAxesColumn size={32} color="var(--accent)" strokeWidth={2.4}/></IconaAvviso>}
+          titolo="Qui vedrai come vai"
+          testo="Finisci una simulazione o un Esame reale: il riepilogo si riempie da solo."
+          principale={{ label: 'Vai alle simulazioni', onClick: () => router.push('/dashboard') }}
+        />
+      ) : (
+        <div style={{ flex:1, overflowY:'auto', padding:'0 16px 16px' }}>
 
-        {/* Colpo d'occhio: tre numeri soli, che non escono mai dal riquadro */}
-        <div className="scheda" style={{ background:'var(--card)', border:'1px solid var(--border)', borderRadius:22, display:'grid', gridTemplateColumns:'1fr 1fr 1fr', marginBottom:10 }}>
-          {[
-            { label:'Archivio', n:`${pctArchivio}%`, colore: archivioCompleto ? 'var(--green)' : 'var(--accent)' },
-            { label:'Fatte', n:completate.length, colore:'var(--text)' },
-            { label:'Perfette', n:perfette, colore:'var(--green)' },
-          ].map((c, i) => (
-            <div key={c.label} style={{ padding:'14px 8px 13px', textAlign:'center', borderLeft: i ? '1px solid var(--border)' : 'none' }}>
-              <div style={{ fontSize:28, fontWeight:900, letterSpacing:-0.8, color:c.colore, lineHeight:1.1, fontVariantNumeric:'tabular-nums' }}>{c.n}</div>
-              <div style={{ fontSize:14, fontWeight:700, color:'var(--text3)', marginTop:2 }}>{c.label}</div>
+          {/* Sei pronto? Il verdetto e, sotto, gli errori prova per prova */}
+          <div className="scheda" style={scheda}>
+            <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:10 }}>
+              <span style={titoloScheda}>Sei pronto?</span>
+              {verdetto && (
+                <span style={{ padding:'5px 12px', borderRadius:999, background:verdetto.sfondo, color:verdetto.colore, fontSize:14, fontWeight:900 }}>{verdetto.label}</span>
+              )}
             </div>
-          ))}
-        </div>
+            <div style={{ fontSize:14, fontWeight:600, color:'var(--text2)', marginTop:4 }}>
+              {verdetto
+                ? <>Superate <strong style={{ color:'var(--text)' }}>{superate} delle ultime {giudicate.length}</strong> prove</>
+                : <>Ancora {PROVE_PER_VERDETTO - prove.length} {PROVE_PER_VERDETTO - prove.length === 1 ? 'prova' : 'prove'} e ti dico se sei pronto</>}
+            </div>
 
-        {/* L'Esame reale: 40 domande come il giorno dell'esame. Se ce n'è uno
-            a metà, il riquadro lo riprende */}
-        {copertura && (
-          <button onClick={nuovoEsame} disabled={creando} className="tocco"
-            style={{ width:'100%', display:'flex', alignItems:'center', gap:12, textAlign:'left', border:'none', borderRadius:22, padding:'14px 16px', marginBottom:10, background:'var(--accent)', color:'#fff', cursor: creando ? 'default' : 'pointer', fontFamily:'inherit', opacity: creando ? 0.7 : 1, boxShadow:'0 8px 20px rgba(var(--accent-rgb),0.25)' }}>
-            <div style={{ width:42, height:42, borderRadius:'50%', background:'rgba(255,255,255,0.2)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-              <GraduationCap size={21} color="#fff"/>
+            {/* Una barra per prova, la più recente a destra: alta quanto gli
+                errori, verde fino a 4, rossa oltre. Un tocco apre la correzione */}
+            <div style={{ position:'relative', height:72, marginTop:14, paddingRight:22, display:'grid', gridTemplateColumns:`repeat(${PROVE_IN_GRAFICO}, 1fr)`, alignItems:'end' }}>
+              <div aria-hidden style={{ position:'absolute', left:0, right:22, bottom:`${(ERRORI_AMMESSI / scala) * 100}%`, borderTop:'1.5px dashed var(--text4)' }} />
+              <span aria-hidden style={{ position:'absolute', right:0, bottom:`calc(${(ERRORI_AMMESSI / scala) * 100}% - 8px)`, fontSize:12, fontWeight:800, color:'var(--text3)' }}>{ERRORI_AMMESSI}</span>
+              {Array.from({ length: PROVE_IN_GRAFICO - inGrafico.length }, (_, i) => <span key={`vuota-${i}`} />)}
+              {inGrafico.map((u, i) => {
+                const errori = u.errors ?? 0
+                return (
+                  <Link key={u.id} href={`/user-simulations/${u.id}/report`} className="tocco"
+                    aria-label={`${i === inGrafico.length - 1 ? 'Ultima prova' : 'Prova'}: ${errori} errori`}
+                    style={{ height:'100%', display:'flex', alignItems:'flex-end', justifyContent:'center' }}>
+                    <span style={{ width:'56%', height:`${Math.max(6, (errori / scala) * 100)}%`, borderRadius:'6px 6px 3px 3px', background: errori <= ERRORI_AMMESSI ? 'var(--green)' : 'var(--red)' }} />
+                  </Link>
+                )
+              })}
             </div>
-            <div style={{ flex:1, minWidth:0 }}>
-              <div style={{ fontSize:17, fontWeight:800 }}>{realeInCorso ? "Riprendi l'esame" : 'Esame reale'}</div>
-              <div style={{ fontSize:13.5, fontWeight:600, opacity:0.85 }}>{realeInCorso ? (realeInCorso.titolo || 'lasciato a metà') : `${DOMANDE_PER_ESAME} domande · ${DURATA_ESAME / 60} minuti`}</div>
+            <div style={{ display:'flex', justifyContent:'space-between', fontSize:12, fontWeight:700, color:'var(--text3)', marginTop:6 }}>
+              <span>Errori per prova · media {unDecimale(mediaErrori)}</span>
+              <span>ultima →</span>
             </div>
-            <ChevronRight size={19} color="rgba(255,255,255,0.9)"/>
-          </button>
-        )}
-        {errore && <div style={{ fontSize:14.5, color:'var(--red)', margin:'0 4px 10px', fontWeight:700 }}>{errore}</div>}
+          </div>
 
-        {/* Da dove ripartire */}
-        {invito && (
-          <Link href={`/simulation/${invito.id}`} className="tocco" style={{ textDecoration:'none', display:'flex', alignItems:'center', gap:12, background:'var(--card)', border:'1px solid var(--border)', borderRadius:20, padding:'12px 14px', marginBottom:10, boxShadow:'var(--ombra)' }}>
-            <div style={{ width:40, height:40, borderRadius:'50%', background:'rgba(var(--accent-rgb),0.12)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-              <Play size={16} color="var(--accent)" fill="var(--accent)"/>
+          {/* Da rifare: solo le simulazioni andate male, le peggiori prima */}
+          {daRifare.length > 0 && (
+            <div className="scheda" style={scheda}>
+              <div style={{ display:'flex', alignItems:'baseline', justifyContent:'space-between', gap:10, marginBottom:10 }}>
+                <span style={titoloScheda}>Da rifare</span>
+                <span style={{ fontSize:13, fontWeight:700, color:'var(--text3)' }}>più di {ERRORI_AMMESSI} errori</span>
+              </div>
+              <div style={{ display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:8 }}>
+                {(daRifare.length > DA_RIFARE_IN_VISTA ? daRifare.slice(0, DA_RIFARE_IN_VISTA - 1) : daRifare)
+                  .map(({ s, ultimo }) => tessera(s, ultimo.errors ?? 0))}
+                {daRifare.length > DA_RIFARE_IN_VISTA && (
+                  <button onClick={() => setFoglio('rifare')} className="tocco"
+                    style={{ height:60, borderRadius:14, border:'none', background:'var(--surface)', color:'var(--text2)', fontSize:17, fontWeight:900, cursor:'pointer', fontFamily:'inherit' }}>
+                    +{daRifare.length - (DA_RIFARE_IN_VISTA - 1)}
+                  </button>
+                )}
+              </div>
             </div>
-            <div style={{ flex:1, minWidth:0 }}>
-              <div style={{ fontSize:16, fontWeight:800, color:'var(--text)' }}>{daRiprendere ? 'Riprendi' : 'Inizia'} la simulazione {invito.number}</div>
-              <div style={{ fontSize:13.5, fontWeight:600, color:'var(--text3)' }}>{daRiprendere ? 'lasciata a metà' : 'la prima da fare'}</div>
-            </div>
-            <ChevronRight size={18} color="var(--text3)"/>
-          </Link>
-        )}
+          )}
 
-        {/* I dettagli non allungano la pagina: ogni riga apre il suo pannello */}
-        {(() => {
-          const righe = [
-            copertura && copertura.argomenti.length > 0 && { id:'argomenti' as const, Icona:Layers, titolo:'Per argomento' },
-            puntiDeboli.length > 0 && { id:'fatica' as const, Icona:TrendingDown, titolo:'Dove fai più fatica' },
-            esami.length > 0 && { id:'esami' as const, Icona:ClipboardList, titolo:'I tuoi esami' },
-          ].filter(Boolean) as { id: 'argomenti' | 'fatica' | 'esami'; Icona: typeof Layers; titolo: string }[]
-          if (!righe.length) return null
-          return (
-            <div className="scheda" style={{ background:'var(--card)', border:'1px solid var(--border)', borderRadius:20, padding:'2px 14px', marginBottom:18 }}>
-              {righe.map((r, i) => (
-                <button key={r.id} onClick={() => setFoglio(r.id)} className="tocco"
-                  style={{ width:'100%', display:'flex', alignItems:'center', gap:12, height:60, background:'none', border:'none', borderTop: i ? '1px solid var(--border)' : 'none', cursor:'pointer', fontFamily:'inherit', padding:0, textAlign:'left' }}>
-                  <div style={{ width:36, height:36, borderRadius:12, background:'rgba(var(--accent-rgb),0.10)', display:'flex', alignItems:'center', justifyContent:'center', flexShrink:0 }}>
-                    <r.Icona size={18} color="var(--accent)"/>
+          {/* Argomenti: i più deboli in vista, tutti nel pannello */}
+          {tuttiArgomenti.length > 0 && (
+            <div className="scheda" style={{ ...scheda, padding:'14px 16px 2px' }}>
+              <span style={titoloScheda}>Argomenti</span>
+              {deboli.length === 0 ? (conRisposte && (
+                <div style={{ fontSize:14.5, fontWeight:700, color:'var(--green)', margin:'6px 0 12px' }}>Tutti sopra il 95% di risposte giuste</div>
+              )) : deboli.map(a => (
+                <Link key={a.code} href={`/focus/${a.code}`} className="tocco" style={{ textDecoration:'none', display:'flex', alignItems:'center', gap:12, padding:'10px 0' }}>
+                  <IconaArgomento code={a.code} size={34}/>
+                  <div style={{ flex:1, minWidth:0 }}>
+                    <div style={{ fontSize:15.5, fontWeight:700, color:'var(--text)', whiteSpace:'nowrap', overflow:'hidden', textOverflow:'ellipsis' }}>{nomeBreve(a.code, a.name)}</div>
+                    <div style={{ height:5, borderRadius:3, background:'var(--surface)', marginTop:6, overflow:'hidden' }}>
+                      <div style={{ width:`${a.accuratezza}%`, height:'100%', borderRadius:3, background:coloreAccuratezza(a.accuratezza ?? 0) }} />
+                    </div>
                   </div>
-                  <span style={{ flex:1, fontSize:16, fontWeight:700, color:'var(--text)' }}>{r.titolo}</span>
-                  <ChevronRight size={18} color="var(--text3)"/>
-                </button>
+                  <span style={{ fontSize:16, fontWeight:900, color:coloreAccuratezza(a.accuratezza ?? 0), fontVariantNumeric:'tabular-nums', minWidth:44, textAlign:'right' }}>{a.accuratezza}%</span>
+                </Link>
               ))}
+              <button onClick={() => setFoglio('argomenti')} className="tocco"
+                style={{ width:'100%', display:'flex', alignItems:'center', gap:12, height:52, background:'none', border:'none', borderTop:'1px solid var(--border)', cursor:'pointer', fontFamily:'inherit', padding:0, textAlign:'left' }}>
+                <Layers size={18} color="var(--accent)"/>
+                <span style={{ flex:1, fontSize:15.5, fontWeight:700, color:'var(--text)' }}>Tutti gli argomenti</span>
+                <ChevronRight size={18} color="var(--text3)"/>
+              </button>
             </div>
-          )
-        })()}
+          )}
 
-      </div>
+          {/* Lo storico degli Esami reali */}
+          {esami.length > 0 && (
+            <button onClick={() => setFoglio('esami')} className="scheda tocco"
+              style={{ ...scheda, width:'100%', display:'flex', alignItems:'center', gap:12, height:58, padding:'0 16px', cursor:'pointer', fontFamily:'inherit', textAlign:'left' }}>
+              <ClipboardList size={18} color="var(--accent)"/>
+              <span style={{ flex:1, fontSize:15.5, fontWeight:700, color:'var(--text)' }}>I tuoi esami</span>
+              <ChevronRight size={18} color="var(--text3)"/>
+            </button>
+          )}
+        </div>
+      )}
 
       <BottomNav active="riepilogo" />
 
-      {foglio === 'argomenti' && copertura && (
-        <Foglio titolo="Per argomento" sottotitolo="Domande viste almeno una volta" onChiudi={() => setFoglio(null)}>
-          {copertura.argomenti.map((a, i) => {
-            const pctArgomento = a.totale ? Math.round((a.affrontate / a.totale) * 100) : 0
-            const fatto = a.affrontate === a.totale
+      {foglio === 'argomenti' && (
+        <Foglio titolo="Tutti gli argomenti" sottotitolo="Risposte giuste e domande viste" onChiudi={() => setFoglio(null)}>
+          {tuttiArgomenti.map((a, i) => {
+            const s = perCodice.get(a.code)
+            const acc = s?.accuratezza ?? null
             return (
               <Link key={a.code} href={`/focus/${a.code}`} className="tocco" style={{ textDecoration:'none', display:'flex', alignItems:'center', gap:12, padding:'12px 0', borderTop: i ? '1px solid var(--border)' : 'none' }}>
                 <IconaArgomento code={a.code} size={40}/>
                 <div style={{ flex:1, minWidth:0 }}>
-                  <div style={{ fontSize:16, fontWeight:700, color:'var(--text)', lineHeight:1.25 }}>{a.name}</div>
-                  <div style={{ fontSize:14, fontWeight:600, color:'var(--text3)', fontVariantNumeric:'tabular-nums' }}>{a.affrontate.toLocaleString('it-IT')} di {a.totale.toLocaleString('it-IT')} domande</div>
+                  <div style={{ fontSize:16, fontWeight:700, color:'var(--text)', lineHeight:1.25 }}>{nomeBreve(a.code, a.name)}</div>
+                  <div style={{ fontSize:14, fontWeight:600, color:'var(--text3)', fontVariantNumeric:'tabular-nums' }}>
+                    {a.totale > 0 ? `viste ${a.affrontate.toLocaleString('it-IT')} di ${a.totale.toLocaleString('it-IT')}` : ''}
+                    {s && s.deboli > 0 ? `${a.totale > 0 ? ' · ' : ''}${s.deboli} da ripassare` : ''}
+                  </div>
                 </div>
-                <span style={{ fontSize:18, fontWeight:900, color: fatto ? 'var(--green)' : 'var(--accent)', fontVariantNumeric:'tabular-nums' }}>{pctArgomento}%</span>
+                <span style={{ fontSize:18, fontWeight:900, color: acc === null ? 'var(--text4)' : coloreAccuratezza(acc), fontVariantNumeric:'tabular-nums' }}>{acc === null ? '—' : `${acc}%`}</span>
               </Link>
             )
           })}
         </Foglio>
       )}
 
-      {foglio === 'fatica' && (
-        <Foglio titolo="Dove fai più fatica" sottotitolo="Risposte giuste, argomento per argomento" onChiudi={() => setFoglio(null)}>
-          {puntiDeboli.map((a, i) => (
-            <Link key={a.code} href={`/focus/${a.code}`} className="tocco" style={{ textDecoration:'none', display:'flex', alignItems:'center', gap:12, padding:'12px 0', borderTop: i ? '1px solid var(--border)' : 'none' }}>
-              <IconaArgomento code={a.code} size={40}/>
-              <div style={{ flex:1, minWidth:0 }}>
-                <div style={{ fontSize:16, fontWeight:700, color:'var(--text)', lineHeight:1.25 }}>{a.name}</div>
-                <div style={{ fontSize:14, fontWeight:600, color:'var(--text3)', fontVariantNumeric:'tabular-nums' }}>{a.deboli > 0 ? `${a.deboli} da ripassare` : `${a.corrette} di ${a.totali} giuste`}</div>
-              </div>
-              <span style={{ fontSize:18, fontWeight:900, color: coloreAccuratezza(a.accuratezza ?? 0), fontVariantNumeric:'tabular-nums' }}>{a.accuratezza}%</span>
-            </Link>
-          ))}
+      {foglio === 'rifare' && (
+        <Foglio titolo="Da rifare" sottotitolo={`Simulazioni con più di ${ERRORI_AMMESSI} errori`} onChiudi={() => setFoglio(null)}>
+          <div style={{ display:'grid', gridTemplateColumns:'repeat(4, 1fr)', gap:8, padding:'4px 0 8px' }}>
+            {daRifare.map(({ s, ultimo }) => tessera(s, ultimo.errors ?? 0))}
+          </div>
         </Foglio>
       )}
 
